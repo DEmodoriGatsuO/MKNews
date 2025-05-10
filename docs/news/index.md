@@ -10,7 +10,7 @@
 **Tags:** AI, LLM
 
 **Digest:**
-4070 Ti SuperでLLMを動かすため、Attention計算の無駄を省くP2Pキャッシュ構想を提案。Open Transformer DB (OTD) は、中間層をキャッシュし、多層検索で再利用。ローカルキャッシュ(llama.cpp, FAISS)から始め、P2P共有、プライバシー制御まで段階的に開発。現在はローカルPoCで、SHA256によるキャッシュ検証中。今後は類似度検索や再利用率の定量化を目指します。
+4070 Ti SUPERでLLMを動かすため、Attention計算の無駄を減らす「Open Transformer DB（OTD）」を構想。中間状態をP2Pで共有し、ローカルキャッシュ、ベクトルDB、P2Pの多層構造で推論コスト削減と再現性向上を目指します。ローカルPoC（llama.cpp + FAISS）から着手し、最終的に分散キャッシュ共有ネットワークを目指します。
 
 ---
 
@@ -20,7 +20,7 @@
 **Tags:** Gemini, 生成AI, ChatGPT
 
 **Digest:**
-生成AIの「嘘」問題は過去のものになりつつあります。GitHubの「Hallucination Leaderboard」で、ChatGPTなど主要モデルのハルシネーション率を比較、1%前後に改善。以前は20-30%だったものが、進化を遂げています。事実性評価や信頼性スコアで各モデルの性能を客観的に把握できます。
+生成AIの「嘘」問題は過去のものになりつつあります。GitHubの「Hallucination Leaderboard」で各モデルのハルシネーション率を比較した結果、以前は20〜30%だったものが、最新モデルでは1%前後に改善。実在しない情報を生成する現象（ハルシネーション）は、AIの進化により大幅に軽減されています。
 
 ---
 
@@ -30,7 +30,7 @@
 **Tags:** Python, maya, LLM, ollama
 
 **Digest:**
-Maya 2026上で、ローカルLLMのOllamaを利用したチャットボットを構築する方法を紹介。Pythonライブラリollama-pythonを使用し、Ollamaをインストール。サンプルコードでは、ollama.chat()で応答を取得するChatBotクラスと、GUIを作成。gemma3モデルを使用し、Mayaに関する質問に答えるチャットボットを実装しています。
+WindowsとMaya 2026環境で、ローカルLLMのOllamaをMaya上で使用する方法を紹介。Ollamaとollama-pythonをインストールし、Pythonコードでチャットボットを作成。`ollama.chat()` で応答を取得し、PySide6でGUIを構築。メイン処理でチャットボットを起動し、Maya上で質問応答を行うことが可能です。
 
 ---
 
@@ -40,7 +40,7 @@ Maya 2026上で、ローカルLLMのOllamaを利用したチャットボット�
 **Tags:** 文書分類, LLM, ollama
 
 **Digest:**
-OllamaとMistralモデルをDockerで動かす方法を紹介。8GB VRAMと16GBメモリ目安。WebUIやAPI利用が可能。API利用が推奨され、簡潔な質問が精度向上に繋がる。JSON形式の回答は不安定だが、シンプルな指示でバッチ処理への応用も可能。人材や商材の抽出など、特定のタスクではそこそこの精度を発揮。商用利用可で、使い方次第では実用的なLLMとして活用できる。
+OllamaとMistralモデルをDockerで動かす手順を紹介。VRAM8GB以上必要。Web UIとAPIで利用でき、APIの方が安定。ブラウザUIはキャッシュの影響あり。質問は簡潔に、回答形式は文末指示が有効。JSON形式の指示は精度が低い。メールからのデータ抽出は比較的得意。Mistral 7bはChatGPT4に劣るが、工夫次第でバッチ処理に活用可能。
 
 ---
 
@@ -50,7 +50,7 @@ OllamaとMistralモデルをDockerで動かす方法を紹介。8GB VRAMと16GB�
 **Tags:** OpenAI, Databricks, gpt-4o-mini-tts
 
 **Digest:**
-OpenAI Cookbook更新を受け、動画理解にGPT-4o mini TTSモデルを使用。インコ動画をGPT-4oで分析し、デイビッド・アッテンボロー風のナレーションを作成。次に、`gpt-4o-mini-tts`で音声生成し、動画に重ね合わせました。音声のスタイルも細かく指定し、最終的な動画を公開しています。
+OpenAI Cookbook更新で、動画理解にGPT-4o mini TTSモデルを適用。インコ動画を使い、OpenCVでフレームを抽出しGPT-4oでナレーション生成、指示に基づき音声化。iMovieで動画と音声を合成し、YouTubeで公開。Databricks環境で動作し、詳細はQiita記事で解説。
 
 ---
 
@@ -63,6 +63,6 @@ OpenAI Cookbook更新を受け、動画理解にGPT-4o mini TTSモデルを使�
 **Tags:** Advanced (300), Amazon Bedrock, Amazon Nova, Responsible AI, Technical How-to
 
 **Digest:**
-メディア・エンタメ業界で、Amazon Bedrockと生成AI、LLMを活用しマーケティングキャンペーンの効果を予測・最適化するソリューションを紹介。ソーシャルメディアデータから感情分析を行い、AIがコンテンツ生成、効果予測を実施。これにより、ブランドへの感情を把握し、費用対効果の高いマーケティング戦略を構築可能に。Anthropic Claude 3.5 Sonnet等LLMも利用。
+メディア・エンタメ業界で、AIとLLMを活用したマーケティングインテリジェンスを紹介。Amazon Bedrockを用いて、ソーシャルメディア分析、コンテンツ生成、キャンペーン効果予測を実現。課題解決のため、感情分析でブランドへの世論を把握し、ターゲットコンテンツを生成、実行前の効果予測でコスト削減とインパクト最大化を目指します。Anthropic Claude 3.5 Sonnet等LLMを利用し、データに基づいた意思決定を支援します。
 
 ---
