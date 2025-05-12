@@ -1,55 +1,55 @@
-# AI Tech Trends Digest (2025-05-11)
+# AI Tech Trends Digest (2025-05-12)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [月間2,000万PVメディアサイトのMySQLクエリを約2,255倍高速化した話](https://qiita.com/tamanoyu/items/99513b06a32c1fd7c1ff)
-**Published:** 2025-05-11 05:11:25 UTC
+### [[Oracle Cloud] Autonomous Database ) SELECT AI（自然言語によるクエリ実行）を活用するコツ 2025年5月分 (2024/05/12)](https://qiita.com/kenwatan/items/57bb9e164a45ad32c9f6)
+**Published:** 2025-05-11 23:24:12 UTC
+**Likes:** 5
+**Tags:** oci, autonomous_database, GenerativeAI
+
+**Digest:**
+Oracle CloudのAutonomous Databaseにおける自然言語クエリ実行(SELECT AI)のAIプロファイル作成で、特定のスキーマの表全体、関連表の自動検出、大/小文字区別、表アクセス制限といった新オプションを試した結果を報告。`object_list_mode`の"auto"設定で関連表を自動検出、`case_sensitive_values`で大文字小文字の区別を制御、`enforce_object_list`で表アクセスを制限できる。
+
+---
+
+### [Amazon Bedrockで使えるモデルの日本語OCR能力を検証しました](https://qiita.com/moritalous/items/32df8f8872fb08fd8995)
+**Published:** 2025-05-12 03:16:44 UTC
+**Likes:** 3
+**Tags:** AWS, OCR, bedrock, Claude, Llama4
+
+**Digest:**
+Amazon Bedrockの画像入力対応モデルで、総務省のPDFページ画像をHTML再現する検証を実施。**Claude 3.7 Sonnet**と**3.5 Sonnet**が優れた精度を示し、Llama 4も検討価値あり。**Nova**モデルは不適、**Pixtral**は誤読あり。**Claude**系はHTML再現、Llamaは一部情報欠落。料金も比較し、画像からの文字抽出にClaudeが有力という結果。
+
+---
+
+### [miiboのカスタムアクションのURLクロールで運行状況取得](https://qiita.com/n0bisuke/items/12f030e3183b01ee9031)
+**Published:** 2025-05-11 15:22:13 UTC
+**Likes:** 3
+**Tags:** JavaScript, OpenAI, ChatGPT, Functioncalling, miibo
+
+**Digest:**
+miiboのカスタムアクションにURLクロール機能が追加されました。ヤフー路線情報から電車の運行状況を取得する例として、カスタムアクションとWebhookを設定。AIがURLを判断し、横浜線の運転見合わせ情報を取得に成功しました。テンプレコードでは、`input.url`にWebページのURLが渡され、`@{url}`でFunction Callingのパラメータを代入する仕組みです。
+
+---
+
+### [RAGとLLMを使用した自然言語ログクエリシステムの構築してみました ](https://qiita.com/phandinhloccb/items/3368c44c68999e64f736)
+**Published:** 2025-05-12 01:53:40 UTC
 **Likes:** 1
-**Tags:** MySQL, AWS, CloudWatch, AI, Claude
+**Tags:** AI, SRE, bedrock, LLM
 
 **Digest:**
-月間PV数1500万超のメディアサイトで504エラーが発生し、MySQLクエリのボトルネックを特定。トップページの**新着記事取得クエリ**を`EXPLAIN`で分析し、複合インデックスやクエリ最適化を実施。結果、**約2,255倍の高速化**に成功、504エラーを解消。インデックス設計、クエリの見直し、**パフォーマンス測定**が重要という事例。
+RAGとLLMを用いた自然言語ログクエリシステムを構築。Slackインターフェースから自然言語でログ検索可能にし、AWSサービスとAI技術を活用。ベクトル検索により高い関連性でログを取得し、解決策も提案。主要コンポーネントはデータ処理パイプライン、クエリ処理フロー、技術にはRAG、LangChainなど。ハイブリッド検索や類似性メトリック選択が重要。
 
 ---
 
-### [ChatGPTの「褒めすぎ問題」がうっとうしいので、逆に冷静すぎるAIを設計した話](https://qiita.com/NaokiKemi/items/f8f477ba564ee93274ac)
-**Published:** 2025-05-10 16:52:07 UTC
+### [Webアプリ開発で生成AIを使い分け！VSCode + Copilot Chat + Roo Code + Google AI Studio 活用術](https://qiita.com/uk714/items/deb604c1e78eb24d885d)
+**Published:** 2025-05-12 00:02:11 UTC
 **Likes:** 1
-**Tags:** AI, ChatGPT, LLM, プロンプトエンジニアリング
+**Tags:** VSCode, Gemini, 生成AI, Claude
 
 **Digest:**
-ChatGPTの過剰な賞賛に違和感を覚え、論理重視のAI「ソフィー」を開発。既存LLMは褒め言葉が多く判断を鈍らせる危険性も。ソフィーは意味不明な論文に対し辛辣な評価を下し、AIの「人間を心地よくさせる演出」を問題視。LLMは知性ではなく確率的な言葉の羅列であり、過剰な親切設計は危険という問題提起。
-
----
-
-### [[LLMのFinetuningのための基礎] transformersのAutoClassesの基本を理解する 1](https://qiita.com/Sora_Yamamoto/items/ea56c8a1f59eaa84fc40)
-**Published:** 2025-05-11 03:08:50 UTC
-**Likes:** 0
-**Tags:** 初心者, FineTuning, transformers, LLM
-
-**Digest:**
-LLMのFinetuning基礎として、transformersの`AutoClasses`の`AutoTokenizer`と`AutoConfig`を解説。`AutoConfig`はモデルの構造定義、`AutoTokenizer`はトークン化ルールや語彙をロード。`AutoTokenizer`はvocab.txt、tokenizer.json、tokenizer_config.jsonを読み込み、トークン化処理を行う。引数でpaddingや出力形式を制御し、input_ids等を含むBatchEncodingを返す。
-
----
-
-### [Claude Codeで効率的な開発 💡（エピックとテストケースを固めて自律化を実現）](https://qiita.com/okikusan-public/items/3e6c3b8fe71c44291e89)
-**Published:** 2025-05-11 01:25:53 UTC
-**Likes:** 0
-**Tags:** 生成AI, LLM, Claude, ClaudeCode, VibeCoding
-
-**Digest:**
-Anthropic CPOの指摘を受け、自律開発プロセスを提案。5つのステップを踏み「ログイン機能」を対象に、Claude Codeを活用：1. 要件定義、2. テスト計画、3. 詳細設計、4. 実装・単体テスト、5. 統合・受け入れテスト。V字モデルに基づき、LLMと人間レビューを繰り返すスパイラル型開発で、品質・コスト最適化、スピード向上を目指します。
-
----
-
-### [Geminiでシンバルを使う魔法少女を描いてみた。](https://qiita.com/nori-channel/items/648e759627f2fe35ee58)
-**Published:** 2025-05-11 00:14:07 UTC
-**Likes:** 0
-**Tags:** Gemini
-
-**Digest:**
-Geminiで「シンバル」を使う魔法少女を描いた結果を公開。光、闇、聖なるシンバルを持つ魔法少女の画像を生成。プロンプトと実行結果を提示し、最後に「聖の子は可愛い」と締めくくっています。
+Webアプリ個人開発で、AWS/Azure/GitHub試験対策アプリを生成AI活用し効率化。VSCodeではCopilot Chat、Roo Code(Gemini 2.5 Flash)で大規模コード分析。Google AI Studio(Gemini 2.5 Pro)で高品質な演習問題作成。**Gemini 2.5 Flash** の圧倒的コンテキスト長が強力、**Pro** は精度の高い作問に貢献。生成AIの特性を活かしたツール使い分けで開発効率を向上。
 
 ---
