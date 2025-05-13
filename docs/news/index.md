@@ -1,36 +1,16 @@
-# AI Tech Trends Digest (2025-05-12)
+# AI Tech Trends Digest (2025-05-13)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [[Oracle Cloud] Autonomous Database ) SELECT AI（自然言語によるクエリ実行）を活用するコツ 2025年5月分 (2024/05/12)](https://qiita.com/kenwatan/items/57bb9e164a45ad32c9f6)
-**Published:** 2025-05-11 23:24:12 UTC
-**Likes:** 5
-**Tags:** oci, autonomous_database, GenerativeAI
-
-**Digest:**
-Oracle Cloud Autonomous DatabaseのSELECT AIで、AIプロファイル作成時の新オプションを試した。特定スキーマの表全体を対象、関連表の自動検出、大/小文字区別の設定、表アクセスの制限が可能。`object_list_mode` を `auto` にすると関連表を自動検出、`case_sensitive_values` で大文字小文字区別、`enforce_object_list` で表アクセス制限を制御できる。
-
----
-
 ### [Amazon Bedrockで使えるモデルの日本語OCR能力を検証しました](https://qiita.com/moritalous/items/32df8f8872fb08fd8995)
 **Published:** 2025-05-12 03:16:44 UTC
-**Likes:** 4
+**Likes:** 7
 **Tags:** AWS, OCR, bedrock, Claude, Llama4
 
 **Digest:**
-Amazon Bedrockの画像入力対応モデルを検証し、PDFの画像をHTMLで再現する実験を実施。Claude 3.7/3.5 Sonnetが正確に文字を抽出し、Llama 4も健闘。一方、NovaモデルやPixtralは日本語性能が課題に。料金比較も提示し、画像からの文字列抽出にはClaudeが有力という結果でした。
-
----
-
-### [miiboのカスタムアクションのURLクロールで運行状況取得](https://qiita.com/n0bisuke/items/12f030e3183b01ee9031)
-**Published:** 2025-05-11 15:22:13 UTC
-**Likes:** 3
-**Tags:** JavaScript, OpenAI, ChatGPT, Functioncalling, miibo
-
-**Digest:**
-miiboのカスタムアクションにURLクロール機能が追加され、Webページ情報を取得可能に。ヤフー路線情報から電車の運行状況を取得するデモでは、AIがURLを判別し、横浜線の遅延状況をリアルタイムに取得することに成功しました。Webhook設定でカスタムアクションと連携し、Function CallingでURLパラメータを渡しています。
+Amazon Bedrockの画像入力対応モデルで、総務省のPDF画像からHTML再現を検証。Claude 3.7 Sonnetと3.5 Sonnetが文字抽出に優れ、Llama 4も良好。Novaモデルは不正確。Pixtral Largeは日本語に課題。費用対効果を考慮すると、Llama 4も選択肢。
 
 ---
 
@@ -40,7 +20,7 @@ miiboのカスタムアクションにURLクロール機能が追加され、Web
 **Tags:** AI, SRE, bedrock, LLM
 
 **Digest:**
-LLM初心者による自然言語ログクエリシステム構築の記録。**RAG**と**LLM**を活用し、Slackで自然言語検索を実現。**AWS**上で、ログを構造化、ベクトル化し、**OpenSearch**で検索。結果は、高い関連性と意味理解を示し、ハイブリッド検索で精度向上。ベクトル埋め込みの選択的利用、余弦類似度、k値調整が重要。今後は、IaC化、自動アラート、マルチモーダル化などを計画。
+RAGとLLMを用いた自然言語ログクエリシステムを構築。Slackインターフェースからログを検索でき、バックエンドが複雑さを処理。AWSサービスとAI技術を駆使し、**OpenSearch** でベクトル検索、**Bedrock** のClaudeで要約。ログメッセージのみをベクトル化し、ハイブリッド検索で精度向上。余弦類似度、k値調整も実施。今後はTerraformによるIaC化、アラート生成、マルチモーダル対応などを目指す。
 
 ---
 
@@ -50,12 +30,52 @@ LLM初心者による自然言語ログクエリシステム構築の記録。**
 **Tags:** Webアプリケーション, Swichbot, Claude
 
 **Digest:**
-Switchbot温湿度計のデータを可視化するウェブサイトを6時間で構築。**生成AIを活用**し、Switchbot APIから取得したデータをAWSのサーバーレス構成で処理、CloudFrontで公開。ChatGPTで構成を相談、Claude3.7 sonnetでコードを生成し高速なプロトタイピングを実現。要件定義やレビュー、修正には人間の工夫が必要だが、**開発速度は格段に向上**した。
+Switchbotの温湿度計データを可視化するウェブサイトを、約6時間で作成。**生成AI**を活用し、API連携からAWSのサーバレス構成を構築しました。**ChatGPT**で構成を検討、**Claude 3 Sonnet**でコーディングを高速化。要件定義や修正には人間の工夫が必要ながら、プロトタイピングのスピードは格段に向上。
+
+---
+
+### [OpenAI: AGIまであと9年？OpenAIがアインシュタインをエミュレートする理由](https://qiita.com/RepKuririn/items/450fafda9a5183e0ec93)
+**Published:** 2025-05-13 00:26:12 UTC
+**Likes:** 0
+**Tags:** OpenAI, agi, 生成AI, ChatGPT, AIエージェント
+
+**Digest:**
+OpenAI研究者の講演内容を基に、AIの進化を解説。AIは「テスト時間」の思考力を高め、強化学習を重視。約9年後には、科学的発見を行うAI実現を予測。倫理的課題も提起しつつ、科学研究や社会に革命をもたらす可能性を示唆。
+
+---
+
+### [OpenAI: どのようにOpenAIはDeep Research を設計・開発したのか？](https://qiita.com/RepKuririn/items/20e3855d2c03d2b7d86b)
+**Published:** 2025-05-12 23:23:29 UTC
+**Likes:** 0
+**Tags:** 開発, OpenAI, ChatGPT, DeepResearch
+
+**Digest:**
+OpenAIのDeep Researchは、ChatGPT内で動作する最新エージェント技術です。多段階のオンラインリサーチを自律的に行い、引用付きの高品質なレポートを数分で生成します。GPT-3.5をベースに、ウェブブラウジングとデータ分析に特化。学術研究やビジネス、旅行計画など多岐にわたり活用可能。今後の展望として、信頼性向上、メインモデルとの統合、プライベートデータへの対応などが計画されています。
 
 ---
 
 ## Latest News from RSS Feeds
 
+
+### [Build an intelligent community agent to revolutionize IT support with Amazon Q Business](https://aws.amazon.com/blogs/machine-learning/build-an-intelligent-community-agent-to-revolutionize-it-support-with-amazon-q-business/)
+**Source:** AWS ML Blog
+**Published:** 2025-05-12 17:34:46 UTC
+**Tags:** Amazon Q, Amazon Q Business, Intermediate (200), Security & Governance, Technical How-to
+
+**Digest:**
+Amazon Q Businessを活用し、IT部門の課題解決を効率化する方法を紹介。Amazon Qは、既存のドキュメントやJiraとの連携により、エラー理解、診断、対応策の提示、チケット作成を支援。**Amazon Qの主なメリットは、スケーラビリティ、生産性向上、自然言語理解、カスタマイズ性**。S3やWebクローラーを活用し、Jiraプラグインでチケット管理も可能に。
+
+---
+
+### [新世代の Windows エクスペリエンスの紹介](https://blogs.windows.com/japan/2025/05/13/introducing-a-new-generation-of-windows-experiences/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-05-13 00:47:28 UTC
+**Tags:** Windows, Windows 11, Copilot+ PC, Windows Insider Program, Windows PC
+
+**Digest:**
+Microsoftは、2025年5月6日に新世代Windowsエクスペリエンスを発表。Copilot+ PC向けに、設定へのAIエージェント追加、改善されたWindows Search、クリックして実行の機能強化、フォト/ペイント/Snipping Toolの新機能、アクセシビリティ向上などを提供。Windows Insider Programを通じて順次展開。スタートメニュー、エクスプローラー、メモ帳のAIアクション、Copilot on Windows、NPU活用アプリ、Microsoft Storeも刷新。
+
+---
 
 ### [法人向け Surface: Copilot+ PC のポートフォリオを拡充](https://blogs.windows.com/japan/2025/05/12/expanding-the-surface-for-business-copilot-pc-portfolio/)
 **Source:** Windows Blog for Japan
@@ -63,27 +83,17 @@ Switchbot温湿度計のデータを可視化するウェブサイトを6時間�
 **Tags:** Surface
 
 **Digest:**
-マイクロソフトは、AI対応の法人向け「Surface Pro 12インチ」と「Surface Laptop 13インチ」を発表。Snapdragon X Plusプロセッサ搭載で、高いパフォーマンスと最大23時間のバッテリー駆動を実現。セキュリティを重視し、Windows HelloやMicrosoft Plutonを搭載。Copilot+ PCで、AIを活用した効率的な業務を支援。7月22日発売予定。
+マイクロソフトは、AI 搭載 Windows 11 PC の需要に応え、Copilot+ PC ポートフォリオを拡充。法人向けに、より薄型軽量で最大 23 時間のバッテリー寿命を実現した Surface Laptop 13 インチと、Surface Pro 12 インチを発表。Snapdragon X Plus プロセッサと NPU 搭載で、高いパフォーマンスとセキュリティを提供。Windows Hello、Pluton プロセッサによるセキュリティ強化も特徴で、7 月 22 日に発売予定です。
 
 ---
 
-### [People Skills の一般提供開始と新しい Skills エージェントを発表](https://blogs.windows.com/japan/2025/05/12/announcing-people-skills-general-availability-and-new-skills-agent/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-05-12 00:52:44 UTC
-**Tags:** Copilot, Viva Insights
+### [一時アクセスパスを利用したWindows Autopilotキッティング](https://blog.jbs.co.jp/entry/2025/05/13/085725)
+**Source:** JBS Blog
+**Published:** 2025-05-12 23:57:25 UTC
+**Tags:** Windows, Intune, Windows Hello for Business, Azure
 
 **Digest:**
-マイクロソフトは、**People Skills** の一般提供を開始。これは、Microsoft 365 Copilot や Viva に統合され、従業員のスキルを AI で推論・可視化する新機能です。2025 年 5 月に Copilot と Viva 向け、同年 6 月に Skills エージェントが提供開始予定。リーダーは人材を見つけ、従業員は自己成長に役立てられます。プライバシー保護も重視され、スキル分類やサードパーティ統合も可能。
-
----
-
-### [AI 導入スコアの一般提供を開始](https://blogs.windows.com/japan/2025/05/12/announcing-general-availability-of-ai-adoption-score/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-05-12 00:52:36 UTC
-**Tags:** Copilot
-
-**Digest:**
-マイクロソフトが、Microsoft 365 Copilot の導入状況を評価する「AI 導入スコア」の一般提供を開始。組織内でのCopilot利用状況を評価し、類似組織との比較が可能。週3日以上Copilot利用でスコア100を目指す。機能別利用状況や組織メッセージによる導入促進も可能。AI導入スコアレポートで、効果的な活用を支援します。
+Windows Autopilotのキッティングが、一時アクセスパスで簡素化。**管理者**や**第三者**が**ユーザーパスワード**を知らなくても、安全に**デバイス**設定が可能に。これにより、セキュリティを保ちながら、より簡単に**初期設定**を進められます。
 
 ---
 
@@ -93,16 +103,6 @@ Switchbot温湿度計のデータを可視化するウェブサイトを6時間�
 **Tags:** Azure, Terraform
 
 **Digest:**
-TerraformでAzureリソースを構築後、状態はterraform.tfstateに保存されます。Azure PortalでTerraform管理のリソースを変更すると、Terraform再実行時に変更が上書きされ、Portalでの変更は失われます。Terraform管理のリソース変更は、定義ファイルに反映させ、terraform applyで適用し、クラウド...
-
----
-
-### [【vSphere Replication】拡張レプリケーション導入時の注意点](https://blog.jbs.co.jp/entry/2025/05/12/102411)
-**Source:** JBS Blog
-**Published:** 2025-05-12 01:24:11 UTC
-**Tags:** VMware, vSphere, vSphere Replication, Disaster Recovery
-
-**Digest:**
-vSphere Replicationの拡張レプリケーションに関する記事のダイジェストです。従来のレプリケーションとの比較に加え、導入時に発生しうる問題点について解説しています。仮想マシンの保護、災害対策（BCDR）の実現に向けた、検討ポイントが示唆されている内容です。
+TerraformでAzureリソースを構築後、ポータルから変更すると、Terraformで管理されなくなるため注意が必要です。Terraformは状態を`terraform.tfstate`に保持し、`terraform apply`実行時に差分を検出し元の状態に戻します。ポータル変更後はTerraform定義を修正し、`terraform apply`で設定を反映させましょう。
 
 ---
