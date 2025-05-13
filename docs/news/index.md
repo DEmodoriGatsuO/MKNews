@@ -4,23 +4,33 @@
 ## Top Tech Articles from Qiita
 
 
-### [Amazon Bedrockで使えるモデルの日本語OCR能力を検証しました](https://qiita.com/moritalous/items/32df8f8872fb08fd8995)
-**Published:** 2025-05-12 03:16:44 UTC
-**Likes:** 7
-**Tags:** AWS, OCR, bedrock, Claude, Llama4
+### [RunPod で Qwen 3-4B を激安サーバーレスホスティング](https://qiita.com/zawatti/items/84cf54e43e60af1b9c56)
+**Published:** 2025-05-13 02:06:46 UTC
+**Likes:** 6
+**Tags:** API, サーバーレス, セルフホスト, LLM, Qwen
 
 **Digest:**
-Amazon Bedrockの画像入力対応モデルで、総務省のPDF画像からHTML再現を検証。Claude 3.7 Sonnetと3.5 Sonnetが文字抽出に優れ、Llama 4も良好。Novaモデルは不正確。Pixtral Largeは日本語に課題。費用対効果を考慮すると、Llama 4も選択肢。
+RunpodとQwen3-4Bモデルを組み合わせた、サーバーレスAPI構築とチャットUI統合を紹介。RunpodのGPUサーバーレス環境で、Qwen3-4Bをセルフホストし、ストリーミング対応のチャットUIと連携。Hugging Faceからモデルを選択、Dockerイメージ設定、フロントエンドとの統合方法を解説。RTX4090で1秒0.046円と低コストも魅力。
 
 ---
 
-### [RAGとLLMを使用した自然言語ログクエリシステムの構築してみました ](https://qiita.com/phandinhloccb/items/3368c44c68999e64f736)
-**Published:** 2025-05-12 01:53:40 UTC
+### [はじめての Model Context Protocol (MCP)【第19回】私たちはどう向き合う？ MCP時代のユーザーリテラシー](https://qiita.com/QueryPie/items/42f01daa99d92267f448)
+**Published:** 2025-05-12 10:36:24 UTC
 **Likes:** 2
-**Tags:** AI, SRE, bedrock, LLM
+**Tags:** 初心者, AI, MCP, LLM, ModelContextProtocol
 
 **Digest:**
-RAGとLLMを用いた自然言語ログクエリシステムを構築。Slackインターフェースからログを検索でき、バックエンドが複雑さを処理。AWSサービスとAI技術を駆使し、**OpenSearch** でベクトル検索、**Bedrock** のClaudeで要約。ログメッセージのみをベクトル化し、ハイブリッド検索で精度向上。余弦類似度、k値調整も実施。今後はTerraformによるIaC化、アラート生成、マルチモーダル対応などを目指す。
+AI時代の「読み・書き・そろばん」として、AI、データ、批判的思考、対話術、セキュリティ、アルゴリズムを理解する「MCP時代のユーザーリテラシー」を解説。LLMの特性や限界、データ収集とプライバシー、AI生成コンテンツへの警戒、プロンプトエンジニアリング、サイバーセキュリティ意識が重要。アルゴリズムによる影響も理解し、主体的に情報を選択する必要がある。
+
+---
+
+### [簡単なサンプルで理解する、Model Context Protocol (MCP)](https://qiita.com/t_shi/items/e11feb2182484652447e)
+**Published:** 2025-05-12 14:26:24 UTC
+**Likes:** 1
+**Tags:** Python, 初心者, MCP, 生成AI, LLM
+
+**Digest:**
+Antropic社のMCP解説記事のダイジェストです。MCPは、AIと外部データソース連携の標準規格で、LLMとツールを統合する「USBポート」を目指しています。記事では、スクレイピングMCP ServerとMCP Clientの連携サンプルを紹介。MCP ClientとMCP ServerのIF仕様、LLMとの連携シーケンス、FastAPI MCPを活用した実装方法を解説しています。
 
 ---
 
@@ -30,27 +40,17 @@ RAGとLLMを用いた自然言語ログクエリシステムを構築。Slackイ
 **Tags:** Webアプリケーション, Swichbot, Claude
 
 **Digest:**
-Switchbotの温湿度計データを可視化するウェブサイトを、約6時間で作成。**生成AI**を活用し、API連携からAWSのサーバレス構成を構築しました。**ChatGPT**で構成を検討、**Claude 3 Sonnet**でコーディングを高速化。要件定義や修正には人間の工夫が必要ながら、プロトタイピングのスピードは格段に向上。
+Switchbot温湿度計のデータを可視化するウェブサイトを6時間で構築。**生成AI**を活用し、Switchbot APIから取得したデータをAWSサーバーレス構成で処理、**ECharts**でグラフ表示しています。**ChatGPT**で構成を相談し、**Claude3.7sonnet**で高速プロトタイピングを実現。要件定義とレビュー、修正は人間が行う必要があり、AIの癖への対応も必要ですが、開発スピードは格段に向上したとのことです。
 
 ---
 
-### [OpenAI: AGIまであと9年？OpenAIがアインシュタインをエミュレートする理由](https://qiita.com/RepKuririn/items/450fafda9a5183e0ec93)
-**Published:** 2025-05-13 00:26:12 UTC
+### [Anthropic: Anthropic CPOが語るボトムアップでAIプロダクトを開発する方法](https://qiita.com/RepKuririn/items/ef6eb53edd77569c2d30)
+**Published:** 2025-05-13 05:35:24 UTC
 **Likes:** 0
-**Tags:** OpenAI, agi, 生成AI, ChatGPT, AIエージェント
+**Tags:** 開発, 生成AI, Anthropic, Claude, AIエージェント
 
 **Digest:**
-OpenAI研究者の講演内容を基に、AIの進化を解説。AIは「テスト時間」の思考力を高め、強化学習を重視。約9年後には、科学的発見を行うAI実現を予測。倫理的課題も提起しつつ、科学研究や社会に革命をもたらす可能性を示唆。
-
----
-
-### [OpenAI: どのようにOpenAIはDeep Research を設計・開発したのか？](https://qiita.com/RepKuririn/items/20e3855d2c03d2b7d86b)
-**Published:** 2025-05-12 23:23:29 UTC
-**Likes:** 0
-**Tags:** 開発, OpenAI, ChatGPT, DeepResearch
-
-**Digest:**
-OpenAIのDeep Researchは、ChatGPT内で動作する最新エージェント技術です。多段階のオンラインリサーチを自律的に行い、引用付きの高品質なレポートを数分で生成します。GPT-3.5をベースに、ウェブブラウジングとデータ分析に特化。学術研究やビジネス、旅行計画など多岐にわたり活用可能。今後の展望として、信頼性向上、メインモデルとの統合、プライベートデータへの対応などが計画されています。
+Anthropic CPO Mike Krieger氏の講演ダイジェスト。AI製品開発はボトムアップ型に変化し、MCPのような標準化が重要。AIコーディングは組織効率に影響、エージェント連携では情報開示の課題も。思考パートナーとしての活用や社会的可視性も重要。計算資源配分や研究と製品のバランスが課題で、ユーザビリティ改善が求められる。
 
 ---
 
@@ -63,7 +63,17 @@ OpenAIのDeep Researchは、ChatGPT内で動作する最新エージェント技
 **Tags:** Amazon Q, Amazon Q Business, Intermediate (200), Security & Governance, Technical How-to
 
 **Digest:**
-Amazon Q Businessを活用し、IT部門の課題解決を効率化する方法を紹介。Amazon Qは、既存のドキュメントやJiraとの連携により、エラー理解、診断、対応策の提示、チケット作成を支援。**Amazon Qの主なメリットは、スケーラビリティ、生産性向上、自然言語理解、カスタマイズ性**。S3やWebクローラーを活用し、Jiraプラグインでチケット管理も可能に。
+AWSのAmazon Q Businessを活用し、ITサポートの課題解決を効率化する方法を紹介。Amazon Q Businessは、既存ドキュメントやJiraとの連携により、エラー理解、診断、修復手順、チケット作成を支援。**自然言語処理**で直感的な対話が可能。**S3**、**Webクローラー**、**Jira**プラグインと連携し、IT担当者の生産性向上、情報検索の効率化、チケット管理の自動化を実現します。
+
+---
+
+### [新しい Copilot+ PC、法人向け Surface Pro 12 インチ、法人向け Surface Laptop 13 インチで生産性を最大化](https://blogs.windows.com/japan/2025/05/13/amplify-productivity-with-new-copilot-pcs-surface-pro-for-business-and-surface-l/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-05-13 02:39:20 UTC
+**Tags:** Surface, Copilot
+
+**Digest:**
+マイクロソフトは、AIを最大限に活用できる「Copilot+ PC」として、法人向けSurface Laptop 13インチとSurface Pro 12インチを発表。Snapdragon X Plusプロセッサ搭載で、長時間バッテリーと高速処理を実現。Windows Studio エフェクトやCopilotキーを搭載し、ローカルAIによる効率化も促進。堅牢なセキュリティと、現場での使いやすさを両立し、7月22日より順次発売予定です。
 
 ---
 
@@ -73,7 +83,7 @@ Amazon Q Businessを活用し、IT部門の課題解決を効率化する方法�
 **Tags:** Windows, Windows 11, Copilot+ PC, Windows Insider Program, Windows PC
 
 **Digest:**
-Microsoftは、2025年5月6日に新世代Windowsエクスペリエンスを発表。Copilot+ PC向けに、設定へのAIエージェント追加、改善されたWindows Search、クリックして実行の機能強化、フォト/ペイント/Snipping Toolの新機能、アクセシビリティ向上などを提供。Windows Insider Programを通じて順次展開。スタートメニュー、エクスプローラー、メモ帳のAIアクション、Copilot on Windows、NPU活用アプリ、Microsoft Storeも刷新。
+Windowsの次世代体験を紹介。Copilot+ PC向けに、設定へのAIエージェント追加、クリックして実行の機能拡張、フォト/ペイント/Snipping Toolの新機能、ナレーターの強化などを発表。Windows Insider Programで順次提供され、スタートメニューの刷新やエクスプローラーのAIアクションも追加。さらに、NPUを活用したサードパーティアプリやMicrosoft Storeの進化も。
 
 ---
 
@@ -83,7 +93,17 @@ Microsoftは、2025年5月6日に新世代Windowsエクスペリエンスを発�
 **Tags:** Surface
 
 **Digest:**
-マイクロソフトは、AI 搭載 Windows 11 PC の需要に応え、Copilot+ PC ポートフォリオを拡充。法人向けに、より薄型軽量で最大 23 時間のバッテリー寿命を実現した Surface Laptop 13 インチと、Surface Pro 12 インチを発表。Snapdragon X Plus プロセッサと NPU 搭載で、高いパフォーマンスとセキュリティを提供。Windows Hello、Pluton プロセッサによるセキュリティ強化も特徴で、7 月 22 日に発売予定です。
+マイクロソフトは、AI対応のCopilot+ PCとして、法人向けSurfaceのSurface Pro 12インチとSurface Laptop 13インチを発表。Snapdragon X Plusプロセッサ搭載で、高いパフォーマンスと最大23時間のバッテリー駆動を実現。セキュリティを重視し、Windows HelloやPlutonセキュリティプロセッサを採用。AIを活用したWindows検索や、Intuneによる管理も容易。7月22日発売で、持続可能性も考慮した設計。
+
+---
+
+### [Power Appsでアプリの起動と同時にフローを実行する](https://blog.jbs.co.jp/entry/2025/05/13/125108)
+**Source:** JBS Blog
+**Published:** 2025-05-13 03:51:08 UTC
+**Tags:** Power Apps, Power Automate
+
+**Digest:**
+Power Appsでアプリ起動時にPower Automateフローを動かせば、データ更新やTeams投稿取得が可能になります。通常、Power Appsの「データの追加」では扱えないデータも、フロー連携で実現できます。この記事では、Power Appsアプリ起動時にフローを実行するための設定方法を紹介しています。
 
 ---
 
@@ -93,16 +113,6 @@ Microsoftは、2025年5月6日に新世代Windowsエクスペリエンスを発�
 **Tags:** Windows, Intune, Windows Hello for Business, Azure
 
 **Digest:**
-Windows Autopilotのキッティングが、一時アクセスパスで簡素化。**管理者**や**第三者**が**ユーザーパスワード**を知らなくても、安全に**デバイス**設定が可能に。これにより、セキュリティを保ちながら、より簡単に**初期設定**を進められます。
-
----
-
-### [TerraformでAzureリソース構築後にAzure Potal上から変更を加えた場合の動作](https://blog.jbs.co.jp/entry/2025/05/12/140115)
-**Source:** JBS Blog
-**Published:** 2025-05-12 05:01:15 UTC
-**Tags:** Azure, Terraform
-
-**Digest:**
-TerraformでAzureリソースを構築後、ポータルから変更すると、Terraformで管理されなくなるため注意が必要です。Terraformは状態を`terraform.tfstate`に保持し、`terraform apply`実行時に差分を検出し元の状態に戻します。ポータル変更後はTerraform定義を修正し、`terraform apply`で設定を反映させましょう。
+Windows Autopilotが一時アクセスパスに対応し、キッティング作業が簡素化されました。これにより、管理者や第三者は、ユーザーのパスワードを知ることなく、デバイスの安全な設定が可能になりました。セキュリティを保ちつつ、効率的な展開を実現します。
 
 ---
