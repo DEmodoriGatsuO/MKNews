@@ -1,68 +1,68 @@
-# AI Tech Trends Digest (2025-05-18)
+# AI Tech Trends Digest (2025-05-19)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [GMKtec EVO-X2のLLMの動作を軽く確認しました](https://qiita.com/mocketech/items/db596f56e286a04ef55e)
-**Published:** 2025-05-17 08:41:29 UTC
-**Likes:** 2
-**Tags:** Ryzen, LLM, rtx4060ti, EVO-X2
+### [【EULA】AWSにホストされているLLMのEULA読んでみた](https://qiita.com/ryu-ki/items/8425190915f85c266564)
+**Published:** 2025-05-18 23:34:15 UTC
+**Likes:** 4
+**Tags:** AWS, 初心者, やってみた, bedrock, Claude
 
 **Digest:**
-GMKtec EVO-X2でAMD Ryzen AI MAX+ 395を試用。LM Studioでモデルを実行し、AMD Radeon 8060S搭載と比較のためBTOマシンと比較。結果、EVO-X2は9.30 tokens/sec、BTOマシンは21.1 tokens/secと差が出た。VRAMを活かせるBTOマシン構成も有効で、用途に応じて使い分けられそうだ。
+Amazon BedrockのAnthropic（Claude）のEULAは、AIサービス特有の条件やクラウド環境での責任分担を明記。**利用条件の明確化、法的保護、責任範囲、権利と義務を定義**。アウトプットの所有権はお客様、Anthropicはモデルトレーニングに使用せず。**アウトプットの適切性評価は自己責任、競合製品開発やリバースエンジニアリングは禁止**。紛争は仲裁で解決、集団訴訟の権利を放棄。
 
 ---
 
-### [Serverless MLレコメンデーション：LLMを活用した自身でモデルを持たない、レコメンデーションの実装](https://qiita.com/yongyong/items/71a9dd65a649f2a225b8)
-**Published:** 2025-05-17 11:22:42 UTC
-**Likes:** 1
-**Tags:** recipe, Recommendation, serverless, LLM
-
-**Digest:**
-CookLabは、LLMを活用したServerless MLで、ユーザーの意図、好みに合わせ、YouTube・Instagram・Webのレシピを提案。Goで構築、コールドスタート問題をLLMで解決。レシピ検索クエリ生成、並列検索で高速化。セール情報も加味したランキングで、コスト削減と幅広いレシピ提案を実現。今後はファインチューニングでレイテンシ改善を目指す。
-
----
-
-### [従来OCRはもう古い？Gemini 2.5 Proが切り拓く次世代AI OCRの実力](https://qiita.com/Dinn/items/a0cd504003b272c9b8ee)
-**Published:** 2025-05-18 04:59:28 UTC
+### [github x make.com x Dify 連携で自動コメントの作成](https://qiita.com/kazuharu2022/items/f74b21d036fba0051152)
+**Published:** 2025-05-19 03:56:55 UTC
 **Likes:** 0
-**Tags:** AI, OCR, Gemini, LLM, AI活用
+**Tags:** GitHub, docstring, OpenAI, Dify, Make.com
 
 **Digest:**
-Google Gemini 2.5 Pro (05/06) は、従来のOCRを超える文書理解能力を持つ次世代AI。YouTube動画の文字起こしやPDF要約、手書きメモの100%認識も可能で、Google AI StudioやPython SDKで利用できます。青空文庫の古典文学OCRや、PPT、数式画像OCRでも高い精度を示し、企業での契約書分析、業務帳票のDX、マルチメディア連携など、幅広い応用が期待されています。
+現場エンジニアの負担軽減のため、**Make.com** で **GitHub** リポジトリに **docstring** を自動追加する実証実験を開始。 **OpenAI** と **Dify** を連携し、Pythonファイルからdocstringを生成、GitHub API経由でPull Request発行を目指します。今回の実験では単一ファイルで、GitHub API経由でコンテンツリスト取得、ファイル抽出、Dify API呼び出し、Pull Request発行までを行います。
 
 ---
 
-### [『Obsidian×Cursor活用法』へのアーキテクチャ的回答：QSA/ZLDが実現するLLM時代の知的生産システム](https://qiita.com/hann-solo/items/e9f7313377125e79aa6f)
-**Published:** 2025-05-18 03:56:40 UTC
+### [LLMエージェントとツール操作の融合](https://qiita.com/riita10069/items/8e515e652f999edcb027)
+**Published:** 2025-05-19 02:43:08 UTC
 **Likes:** 0
-**Tags:** cursor, Obsidian, 生成AI, LLM
+**Tags:** LLM
 
 **Digest:**
-Shin氏の記事を基に、エンジニアが自身の思考を構造化し知的資産を構築する「QSA/ZLDフレームワーク」を提案。**QSA（問い、構造、答え、思考）**サイクルで思考を構造化し、**ZLD（構造化知識ユニット）**として管理、LLM活用を促進。**SUI（協調的思考OS）**でLLMとの協調を強化し、**iPS（設計ガイドライン）**で構造設計を支援。これにより、思考の再現性や再利用性を高め、知的生産性を向上させる。
+大規模言語モデル（LLM）とツールの統合研究が進み、Tool Learning with Foundation Models論文が包括的な調査を実施。LLMに電卓や検索エンジン等の外部ツールを使わせ、問題解決能力向上を目指す。ReActは思考と行動を交互に生成し、Toolformerは自己学習でAPI利用を学習。GorillaはAPI呼び出し精度を向上。AutoGPTやVoyagerはマルチエージェントや環境インタラクションを重視。模倣学習、強化学習、自己学習でツール使用を習得。エージェントアーキテクチャは役割、記憶、計画、行動のモジュールで構成。
 
 ---
 
-### [第26回 ChatGPTでconfigを作成してネットワークを構築](https://qiita.com/infra-blog/items/b7e9748c9ef8b372f831)
-**Published:** 2025-05-18 03:49:09 UTC
+### [今更だからこそRAGを作ってみよう~GCPオンリー編~](https://qiita.com/tamaloon/items/c944deb02954372ccb90)
+**Published:** 2025-05-19 01:52:37 UTC
 **Likes:** 0
-**Tags:** Network, 自動化, OpenAI, ChatGPT
+**Tags:** rag, GoogleCloud, LLM
 
 **Digest:**
-生成AIでネットワークエンジニアが構築に使えるか検証。ChatGPTに構成図からコンフィグ作成を指示し、HSRP設定でActive/Standbyの切り替わりを確認。最初の指示の具体性が重要で、AIは全てを理解しないため、人間の確認と判断が不可欠。最終的にHSRP機能、疎通、NAT変換を確認し検証成功。AI活用には要件把握とコミュニケーションスキルが重要となる。
+GCP上でRAGシステムを構築。SlackとNotion連携し、NotionデータをSlackで検索可能に。データ取得はCloud Schedulerで定期的にNotion DBをベクトル化、データ検索はSlackメンションをトリガーにCloud RunがGeminiで回答。BigQuery MLで埋め込み、構造化出力を活用。BigQueryの外部モデル、ベクトルインデックス作成、Cloud Runデプロイも解説。
+
+---
+
+### [GeminiとCopilotでコンピュータを使う魔法少女を描いてみた。](https://qiita.com/nori-channel/items/cfef0d987b30dede66f3)
+**Published:** 2025-05-18 18:37:59 UTC
+**Likes:** 0
+**Tags:** Gemini, copilot
+
+**Digest:**
+GeminiとCopilotを用いて、コンピュータを使う魔法少女をテーマにしたイラストを生成。プロンプトは「光」「闇」「聖なる」のコンピュータを使用する魔法少女で、それぞれのイメージを描写。結果として、光の魔法少女が特に可愛らしいとの評価。これらの作品が、何らかの形で役立つことを期待している。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [SharePoint に関する2025年春のアップデート情報](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/05/sharepoint-2025-718d.html)
-**Source:** SharePoint Technical Notes
-**Published:** 2025-05-17 07:33:14 UTC
-**Tags:** Microsoft 365 - SharePoint
+### [Nutanix環境におけるController VMが持つ役割](https://blog.jbs.co.jp/entry/2025/05/19/102454)
+**Source:** JBS Blog
+**Published:** 2025-05-19 01:24:54 UTC
+**Tags:** Tech, Nutanix
 
 **Digest:**
-2025年春にOneDriveとSharePointの**新機能**発表、**UI**刷新を含む**大規模アップデート**が実施されます。これにより、**コラボレーション**機能強化や**ファイル管理**の効率化が期待されます。詳細な情報は、Microsoft公式からの今後の発表に注目しましょう。
+Nutanix環境におけるCVM（Controller VM）は、分散ストレージの管理とI/O処理を担う重要な役割を果たします。各ノードに配置され、データ配置、重複排除、圧縮などの機能を提供し、仮想マシンのパフォーマンスを最適化します。CVMは、Nutanixの基盤を支える中心的な存在と言えるでしょう。
 
 ---
