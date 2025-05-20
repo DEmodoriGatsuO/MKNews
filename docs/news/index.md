@@ -10,7 +10,7 @@
 **Tags:** Azure, AI, OpenAI, AzureAISearch
 
 **Digest:**
-Microsoft Build 2025で、Azure AI Searchが**Agentic retrieval**をプレビュー。AIエージェントが複雑なクエリを分解し、最大40%精度向上を目指します。また、ADLS Gen2での**ドキュメントレベルアクセス制御**、マルチベクター、セマンティックランキング統合なども強化。Azure Logic Apps連携やマルチモーダル検索も可能に。さらに、GenAIプロンプトスキルやドキュメントレイアウトスキルも追加されました。
+Microsoft Build 2025 で、Azure AI Search が大幅に進化。**Agentic retrieval** が実装され、AIエージェントが複雑な質問に最大40%精度向上。さらに、**ドキュメントレベルのアクセス権限管理**がADLS Gen2で可能に。マルチベクター、セマンティックランキング、Logic Apps統合、マルチモーダル検索、GenAIプロンプトスキルなど、様々な機能がプレビューで利用可能に。
 
 ---
 
@@ -20,7 +20,7 @@ Microsoft Build 2025で、Azure AI Searchが**Agentic retrieval**をプレビュ
 **Tags:** Python, AI, MCP, LLM, ModelContextProtocol
 
 **Digest:**
-OpenAI APIを使い、Pythonコードからgpt-3.5-turboに猫のジョークを依頼。**APIキー**と**.envファイル**、**JSON**形式のレスポンス、APIコールの仕組みを体験。**HTTP POST**リクエストで指示を送信し、AIの応答を取得、**プロンプト**と**max_tokens**を設定。API利用状況（トークン数）も確認。次回はプロンプトエンジニアリングについて解説予定。
+OpenAI APIとPythonでAI対話を実現。`gpt-3.5-turbo` を使用し、APIキーを `.env` ファイルと `.gitignore` で安全管理。JSON形式のレスポンスからAIのメッセージとトークン数を取り出す。HTTPリクエスト、APIコール、プロンプト、`first_ai_dialogue.py` の作成を通じて、AIとの初対話に成功。次回はプロンプトエンジニアリングを学習。
 
 ---
 
@@ -30,7 +30,7 @@ OpenAI APIを使い、Pythonコードからgpt-3.5-turboに猫のジョークを
 **Tags:** Python, Google, 障害調査, Gemini, 思考
 
 **Digest:**
-Gemini 2.5の「ThinkingConfig」を活用し、AIの内部思考を可視化して障害分析を深めた事例を紹介。Webアプリ「MyApp」の認証エラーに対し、AIは思考ステップを記録し、原因分析の妥当性評価や追加対策案を提案。API仕様の明確化やヘッダー検証の自動化など、予防的対策の重要性を示唆。実装例としてPythonコードも提示。
+Gemini 2.5の「ThinkingConfig」はAI思考を可視化し、障害分析を多角的に支援。架空Webアプリの認証エラー分析で、内部思考過程から「ヘッダー検証自動化」「モニタリング強化」等の追加対策案を提案。AIは原因評価、対策評価、水平展開の可能性検討を行い、分析力向上やチーム内議論活性化に貢献。最終判断はエンジニアの経験と組み合わせるべき。
 
 ---
 
@@ -40,7 +40,7 @@ Gemini 2.5の「ThinkingConfig」を活用し、AIの内部思考を可視化し
 **Tags:** Security, AI, 生成AI, ChatGPT, LLM
 
 **Digest:**
-AIチャットボット開発で直面した「プロンプトインジェクション」問題。悪意ある入力でAIの内部情報漏洩や意図しない動作を招く危険性があります。対策として、正規表現は限界があり、AIの前に「プロンプト判定AI」を設置する手法を紹介。これにより、誤検知なく安全な運用を実現し、UX向上にも繋がります。
+AIチャットボット開発で直面する「プロンプトインジェクション」の脅威を紹介。悪意ある入力でAIのルールやビジネスモデルが漏洩する危険性に対し、著者はAIの前に別のAI（プロンプト判定AI）を配置する対策を提案。キーワード検出の限界を克服し、安定稼働を実現。自作アプリでの実装例も公開し、対策の有効性を示唆。
 
 ---
 
@@ -50,7 +50,7 @@ AIチャットボット開発で直面した「プロンプトインジェクシ
 **Tags:** Django, AI, cursor, LLM, GeminiPro
 
 **Digest:**
-LLMを活用した機能開発で、**プロンプトエンジニアリング**と**ルールファイル**、**要件定義**を工夫し、ほとんど人の手を介さずに開発に成功。**「自律実行ガイドライン」**で開発プロセスと停止条件を規定し、**テストコード**で間違いを検知、**PRDファイル**で要件定義と完了条件を明記。その結果、API開発で1回の介入のみで完了し、エラーもAIが自己解決。LLMの仕組み理解が重要と述べられています。
+LLMとルールファイル、テストコード、PRDを組み合わせ、ほぼ人の介入なしで機能開発に成功。プロンプトエンジニアリングが有効で、要件定義に基づきAIが自律的に進み、テストエラーも自己修正。停止条件設定で暴走を回避し、人間への質問を組み込むことで、より安全な開発を実現。LLMの特性理解が重要で、今後はチームのアーキテクチャに合わせた制御を目指す。
 
 ---
 
@@ -63,26 +63,7 @@ LLMを活用した機能開発で、**プロンプトエンジニアリング**�
 **Tags:** Amazon Bedrock, Amazon Bedrock Guardrails, Amazon Bedrock Knowledge Bases, Customer Solutions, Generative AI
 
 **Digest:**
-HERE Technologiesは、AWS Generative AI Innovation Centerと協業し、JavaScript API向けのAIコーディングアシスタントを開発。Amazon Bedrockを活用し、自然言語から地図表示を生成する。RAG、Guardrails、Claudeモデルを組み合わせ、ドキュメントを参照してコードを生成。質問応答、スコープフィルタリング、コードテンプレートにより、開発者体験を向上させています。
-
----
-
-### [Multi-agent orchestration, maker controls, and more: Microsoft Copilot Studio announcements at Microsoft Build 2025](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/multi-agent-orchestration-maker-controls-and-more-microsoft-copilot-studio-announcements-at-microsoft-build-2025/)
-**Source:** Microsoft 365 Blog
-**Published:** 2025-05-19 23:21:43 UTC
-
-**Digest:**
-Microsoft Build 2025で発表されたMicrosoft Copilot Studioの新機能を紹介。目玉は、複数エージェントを連携させる「マルチエージェントオーケストレーション」。開発者向けツールも強化され、Copilot Studioの可能性がさらに広がる。詳細はMicrosoft 365 Blogの記事で確認を。
-
----
-
-### [Introducing Microsoft 365 Copilot Tuning, multi-agent orchestration, and more from Microsoft Build 2025](https://www.microsoft.com/en-us/microsoft-365/blog/2025/05/19/introducing-microsoft-365-copilot-tuning-multi-agent-orchestration-and-more-from-microsoft-build-2025/)
-**Source:** Microsoft 365 Blog
-**Published:** 2025-05-19 16:00:00 UTC
-**Tags:** Agents, AI
-
-**Digest:**
-Microsoft Build 2025 で、Microsoft は「Microsoft 365 Copilot Tuning」を発表しました。これは、Microsoft Copilot Studio の新機能で、企業が自社のデータ、ワークフロー、プロセスを用いて AI モデルを調整できるローコードツールです。これにより、組織は AI を活用し、業務効率をさらに向上させることが期待できます。
+HERE TechnologiesとAWS Generative AI Innovation Centerは、開発者の生産性向上を目指し、HERE Maps API向けに生成AIコーディングアシスタントを共同開発。Amazon BedrockとRAGを活用し、自然言語での質問をHTML/JavaScriptコードに変換、インタラクティブな地図表示を実現。APIドキュメントとサンプルを学習し、質問のスコープフィルタリングやClaude 3モデルによるコード生成を行い、開発者のオンボーディングを支援します。
 
 ---
 
@@ -92,7 +73,7 @@ Microsoft Build 2025 で、Microsoft は「Microsoft 365 Copilot Tuning」を発
 **Tags:** AI, Azure AI, Azure AI Foundry, DALL-E3, Python, 生成AI
 
 **Digest:**
-Azure OpenAI Serviceの限定プレビュー「GPT-Image-1」について、その概要と使い方を解説。GPT-Image-1は、画像生成モデルであり、その特徴や実践的な利用方法を詳細に説明します。本記事では、この革新的な技術の全体像と、具体的な活用方法を明らかにしていきます。
+Azure OpenAI Serviceの限定プレビュー「GPT-Image-1」を紹介。画像生成モデルの特徴と使い方を解説します。本記事では、その概要から実践的な利用方法まで、多角的にアプローチ。
 
 ---
 
@@ -102,7 +83,7 @@ Azure OpenAI Serviceの限定プレビュー「GPT-Image-1」について、そ�
 **Tags:** Nutanix, Nutanix CE, Nutanix Files, HCI
 
 **Digest:**
-Nutanix Community Edition (CE) でのNutanix Files構築手順を解説。 Part1では、Nutanix Filesの概要とFSVMデプロイ準備を紹介。具体的には、Nutanix Filesの概要説明、インストール、事前準備としてファイルのダウンロード、FSVMデプロイ前の設定を行います。Nutanix CE環境でファイルサーバを構築するための第一歩です。
+Nutanix Community Edition (CE) で Nutanix Files を構築し、動作検証する手順を紹介する記事のダイジェストです。 Part1 では、Nutanix Files の概要と FSVM のデプロイ準備について解説します。具体的には、Nutanix Files のダウンロードや FSVM のデプロイ前設定など、インストールに必要な事前準備を説明します。
 
 ---
 
@@ -112,6 +93,6 @@ Nutanix Community Edition (CE) でのNutanix Files構築手順を解説。 Part1
 **Tags:** Power Platform, Power Automate, Power Apps
 
 **Digest:**
-Power AppsとTeams連携で改行が消える問題に対し、メッセージを整える解決策を紹介。Power Appsで改行文字を認識させ、Teamsに正しく表示させるための工夫を解説します。具体的には、Substitute関数などを活用し、改行を保持する方法を説明します。
+Power AppsとMicrosoft Teams連携で改行が消える問題への対処法を紹介。Power Appsで作成したテキストをTeamsへ送信する際、改行コードを正しく処理し、メッセージの見た目を保つための具体的な解決策を解説します。Teams上での表示を整えるための工夫が凝らされています。
 
 ---
