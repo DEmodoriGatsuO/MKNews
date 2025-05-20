@@ -12,6 +12,8 @@ nav:
     - Overview: news/index.md
   - Archive:
     - '2025-05-19': archive/AI-Tech-Trends-Digest-20250519.md
+  - Microsoft:
+    - 'Build 2025': archive/Build-2025.md
   - About: about.md
 
 # Theme Configuration
