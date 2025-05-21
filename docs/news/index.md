@@ -1,98 +1,198 @@
-# AI Tech Trends Digest (2025-05-20)
+# AI Tech Trends Digest (2025-05-21)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [【Build 2025 速報】Azure AI Search が Agentic retrieval を実装しマネージド Agentic RAG が可能に ほか](https://qiita.com/nohanaga/items/f374b5baecf441695b50)
-**Published:** 2025-05-19 22:08:58 UTC
-**Likes:** 5
-**Tags:** Azure, AI, OpenAI, AzureAISearch
+### [CloudFlare Workers×Slack API×GitHub APIで技術記事ドラフト作成Botをつくってみた](https://qiita.com/sekineck/items/2680630e659026fcf337)
+**Published:** 2025-05-20 08:57:23 UTC
+**Likes:** 6
+**Tags:** GitHub, Slack, OpenAI, CloudflareWorkers
 
 **Digest:**
-Microsoft Build 2025 で、Azure AI Search が大幅に進化。**Agentic retrieval** が実装され、AIエージェントが複雑な質問に最大40%精度向上。さらに、**ドキュメントレベルのアクセス権限管理**がADLS Gen2で可能に。マルチベクター、セマンティックランキング、Logic Apps統合、マルチモーダル検索、GenAIプロンプトスキルなど、様々な機能がプレビューで利用可能に。
+Cloudflare Workers を使用し、Slack からのテーマを基に、OpenAI で技術記事のドラフトを自動生成・GitHub に保存・Slack 通知する Bot を構築。Cloudflare Workers、OpenAI API、GitHub API を利用。TypeScript で実装し、ローカル開発、環境変数の設定を経てデプロイ。Slack コマンドで起動し、記事が自動生成される様子を紹介。
 
 ---
 
-### [PythonとOpenAI APIで実践！はじめてのMCP開発入門 【第4回】コードでAIと初対話！PythonからOpenAI APIへシンプルなリクエストを送信、JSONレスポンスを体験](https://qiita.com/QueryPie/items/e2310f2cd42f72bb9028)
-**Published:** 2025-05-19 14:48:42 UTC
-**Likes:** 2
+### [PythonとOpenAI APIで実践！MCP開発入門【第5回】AIを操る「呪文」？ プロンプトエンジニアリングの基礎と効果的な指示の黄金律（ゼロ/ワン/フューショットの概念も）](https://qiita.com/QueryPie/items/a5109167e85731a96ee8)
+**Published:** 2025-05-20 08:34:08 UTC
+**Likes:** 4
 **Tags:** Python, AI, MCP, LLM, ModelContextProtocol
 
 **Digest:**
-OpenAI APIとPythonでAI対話を実現。`gpt-3.5-turbo` を使用し、APIキーを `.env` ファイルと `.gitignore` で安全管理。JSON形式のレスポンスからAIのメッセージとトークン数を取り出す。HTTPリクエスト、APIコール、プロンプト、`first_ai_dialogue.py` の作成を通じて、AIとの初対話に成功。次回はプロンプトエンジニアリングを学習。
+AI開発の第5回では、GPTのような大規模言語モデル(LLM)の能力を最大限に引き出す「プロンプトエンジニアリング」を解説。明確な指示やコンテキストが重要で、ゼロ/ワン/フューショットといったテクニックを紹介。Pythonコード例で実践し、区切り文字活用や試行錯誤も推奨。効果的なプロンプトはAIとの「対話の設計図」であり、次回はMCPによるJSON設計でのコンテキスト情報提供を解説。
 
 ---
 
-### [Geminiの思考機能を検証してみた：障害分析への活用可能性](https://qiita.com/Tadataka_Takahashi/items/ea66188cb71d36335eaf)
-**Published:** 2025-05-19 12:48:06 UTC
+### [Microsoft Build 2025 Day1 サム・アルトマン対談パート感想](https://qiita.com/hikiroku/items/87d172279da7acd89898)
+**Published:** 2025-05-20 09:22:35 UTC
+**Likes:** 3
+**Tags:** MSBuild, イベントレポート, OpenAI
+
+**Digest:**
+Microsoft Build Day1のKeynoteでは、Azure AI Foundryが印象的でした。MicrosoftはAIエージェントによる変革を推進し、開発者支援を目指しています。OpenAIのサム・アルトマン氏は、コーディングにおけるAIの進化は「最大の変革」と述べ、変化の速さへの対応を強調。GitHub連携によるタスク委譲や、開発計画への組み込みが重要と語りました。
+
+---
+
+### [手を動かして学ぶ！MCPステップバイステップ実践ガイド for Beginners - Vol.5 ねらいうち！URLで指定したMCPモデル情報だけを取得する](https://qiita.com/QueryPie/items/9790cd1efaeb9a20f3ab)
+**Published:** 2025-05-20 07:57:04 UTC
+**Likes:** 3
+**Tags:** Python, 初心者, AI, MCP, LLM
+
+**Digest:**
+MCPステップバイステップVol.5では、URLパスパラメータで特定のMCPモデル情報を取得。サーバー(Flask)を改良し、URLでデバイスIDを指定可能に。クライアント(requests)でIDを指定して情報を取得し、JSON形式で表示。URL例: ```/devices/THERMO-001-A```でデバイス情報をピンポイント取得。
+
+---
+
+### [【Claude 3.7sonnet】フィットネスアプリ開発レポート!](https://qiita.com/shimizu_432/items/74680bed4660f0eb4d2a)
+**Published:** 2025-05-21 00:00:25 UTC
 **Likes:** 2
-**Tags:** Python, Google, 障害調査, Gemini, 思考
+**Tags:** 初心者, 生成AI, Claude, claude3.7sonnet
 
 **Digest:**
-Gemini 2.5の「ThinkingConfig」はAI思考を可視化し、障害分析を多角的に支援。架空Webアプリの認証エラー分析で、内部思考過程から「ヘッダー検証自動化」「モニタリング強化」等の追加対策案を提案。AIは原因評価、対策評価、水平展開の可能性検討を行い、分析力向上やチーム内議論活性化に貢献。最終判断はエンジニアの経験と組み合わせるべき。
-
----
-
-### [🔍プロンプトインジェクションとは？AIアプリ開発者が知っておくべき対策法](https://qiita.com/kikudesuyo/items/29c05a6e31cb54aae19e)
-**Published:** 2025-05-19 06:37:27 UTC
-**Likes:** 2
-**Tags:** Security, AI, 生成AI, ChatGPT, LLM
-
-**Digest:**
-AIチャットボット開発で直面する「プロンプトインジェクション」の脅威を紹介。悪意ある入力でAIのルールやビジネスモデルが漏洩する危険性に対し、著者はAIの前に別のAI（プロンプト判定AI）を配置する対策を提案。キーワード検出の限界を克服し、安定稼働を実現。自作アプリでの実装例も公開し、対策の有効性を示唆。
-
----
-
-### [Cursorで「Plan→Imp→Debug」を全自動化してほぼ無介入でAPIを完成させたった](https://qiita.com/yheihei/items/058d5d6ed934f7e8887a)
-**Published:** 2025-05-19 14:12:37 UTC
-**Likes:** 1
-**Tags:** Django, AI, cursor, LLM, GeminiPro
-
-**Digest:**
-LLMとルールファイル、テストコード、PRDを組み合わせ、ほぼ人の介入なしで機能開発に成功。プロンプトエンジニアリングが有効で、要件定義に基づきAIが自律的に進み、テストエラーも自己修正。停止条件設定で暴走を回避し、人間への質問を組み込むことで、より安全な開発を実現。LLMの特性理解が重要で、今後はチームのアーキテクチャに合わせた制御を目指す。
+Claude 3.7 sonnet を使用したアプリ開発の第5弾、最終回（今のところ）はフィットネスアプリ。Reactで作成された過去作を踏まえ、React以外の言語での開発を試みた。しかし、エラーが多発し、HTML/CSS/JavaScriptでのWebアプリ作成は未完に。結果、Reactは得意だが、他の言語は苦手という気づきを得た。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [HERE Technologies boosts developer productivity with new generative AI-powered coding assistant](https://aws.amazon.com/blogs/machine-learning/here-technologies-boosts-developer-productivity-with-new-generative-ai-powered-coding-assistant/)
+### [Gemini がよりパーソナルに、プロアクティブに、そしてパワフルに進化](https://blog.google/intl/ja-jp/company-news/technology/gemini-app-updates-io-2025/)
+**Source:** Google Japan Blog
+**Published:** 2025-05-21 18:01:00 UTC
+**Tags:** AI
+
+**Digest:**
+AIアシスタントが、あなたの世界を理解し、次なる行動を予測しながら、創造性、学習、探求をサポートします。パーソナライズされた体験を提供し、あなたの興味関心に寄り添いながら、新たな発見を促すでしょう。
+
+---
+
+### [普遍的な AI アシスタントの実現に向けた Google のビジョン](https://blog.google/intl/ja-jp/company-news/technology/google-deepmindgemini-universal-ai-assistant/)
+**Source:** Google Japan Blog
+**Published:** 2025-05-21 17:41:00 UTC
+**Tags:** AI
+
+**Digest:**
+Googleは、AIモデル「Gemini」を「ワールドモデル」へ進化させ、現実世界の多様な側面をシミュレーションする能力を獲得させます。これにより、Geminiは自律的な計画立案や、新たな体験の創出が可能になる見込みです。
+
+---
+
+### [Gemini 2.5: さらに進化した、これまでで最も高性能なモデル](https://blog.google/intl/ja-jp/company-news/technology/google-gemini-updates-io-2025/)
+**Source:** Google Japan Blog
+**Published:** 2025-05-21 17:22:00 UTC
+**Tags:** AI
+
+**Digest:**
+Gemini 2.5 Proはコーディングに最適と評価され、Flashも進化。今回、Pro向け実験的強化推論モード「Deep Think」など新機能が追加されました。これらのアップデートにより、Geminiシリーズは更なる能力向上を目指しています。
+
+---
+
+### [Google アカウントと PayPay を連携してショッピングをもっと快適に](https://blog.google/intl/ja-jp/feed/google-account-paypay/)
+**Source:** Google Japan Blog
+**Published:** 2025-05-21 13:00:00 UTC
+**Tags:** Google Pay
+
+**Digest:**
+本日よりPayPayアカウントとGoogleアカウントの連携が開始。Google PayでPayPayを支払い手段として利用可能になり、オンライン決済がよりスムーズになります。Chrome上での支払い時などに、PayPay残高や登録済みのカードを素早く選択でき、利便性が向上します。
+
+---
+
+### [Google I/O 2025: 研究が現実に](https://blog.google/intl/ja-jp/company-news/inside-google/google-io-2025-keynote-sundar-pichai/)
+**Source:** Google Japan Blog
+**Published:** 2025-05-21 09:17:00 UTC
+**Tags:** Search, Google Cloud, Company announcements, AI
+
+**Digest:**
+Googleは、AIモデル「Gemini」をより有用にするための取り組みを発表しました。これは、Geminiの性能向上や機能拡充、そしてより多くの人々がAIの恩恵を受けられるようにするための様々な施策を含みます。具体的な内容は明らかにされていませんが、Geminiの進化に期待が高まります。
+
+---
+
+### [Build a domain‐aware data preprocessing pipeline: A multi‐agent collaboration approach](https://aws.amazon.com/blogs/machine-learning/build-a-domain%E2%80%90aware-data-preprocessing-pipeline-a-multi%E2%80%90agent-collaboration-approach/)
 **Source:** AWS ML Blog
-**Published:** 2025-05-19 17:41:23 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Guardrails, Amazon Bedrock Knowledge Bases, Customer Solutions, Generative AI
+**Published:** 2025-05-20 18:40:04 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Agents, Technical How-to, AI/ML, Generative AI
 
 **Digest:**
-HERE TechnologiesとAWS Generative AI Innovation Centerは、開発者の生産性向上を目指し、HERE Maps API向けに生成AIコーディングアシスタントを共同開発。Amazon BedrockとRAGを活用し、自然言語での質問をHTML/JavaScriptコードに変換、インタラクティブな地図表示を実現。APIドキュメントとサンプルを学習し、質問のスコープフィルタリングやClaude 3モデルによるコード生成を行い、開発者のオンボーディングを支援します。
+保険業界の非構造化データ処理課題に対し、マルチエージェントパイプラインを提案。Amazon Bedrock を活用し、分類、変換、メタデータ抽出を自動化。多種多様なデータ形式に対応し、精度向上とインサイト創出を促進。専門エージェントで効率化を図り、人手による検証と改善を繰り返すことで、データ品質と自動化を進化させ、最終的に S3 データレイクに集約し、不正検知や顧客分析に活用する。
 
 ---
 
-### [Azure OpenAI ServiceのGPT-Image-1を徹底解説](https://blog.jbs.co.jp/entry/2025/05/20/134318)
-**Source:** JBS Blog
-**Published:** 2025-05-20 04:43:18 UTC
-**Tags:** AI, Azure AI, Azure AI Foundry, DALL-E3, Python, 生成AI
+### [Automating complex document processing: How Onity Group built an intelligent solution using Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/automating-complex-document-processing-how-onity-group-built-an-intelligent-solution-using-amazon-bedrock/)
+**Source:** AWS ML Blog
+**Published:** 2025-05-20 18:11:21 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Textract, Artificial Intelligence, Customer Solutions, Generative BI, AI/ML, AWS Customer, Generative AI
 
 **Digest:**
-Azure OpenAI Serviceの限定プレビュー「GPT-Image-1」を紹介。画像生成モデルの特徴と使い方を解説します。本記事では、その概要から実践的な利用方法まで、多角的にアプローチ。
+Onity Groupは、Amazon Bedrockを活用し、住宅ローンサービスにおける文書処理を効率化しました。AWSのAI/MLと生成AIを組み合わせ、複雑な文書から情報を抽出し、コスト50%削減、精度20%向上を達成。手書き文字や公証、リーガルシールなどの課題も解決し、様々な文書処理を自動化しました。Raghavendra Chinhalli氏とPriyatham Minnamareddy氏もその効果を評価しています。
 
 ---
 
-### [Nutanix Community EditionでNutanix Files使ってみた Part1](https://blog.jbs.co.jp/entry/2025/05/20/092505)
-**Source:** JBS Blog
-**Published:** 2025-05-20 00:25:05 UTC
-**Tags:** Nutanix, Nutanix CE, Nutanix Files, HCI
+### [Fuel your creativity with new generative media  models and tools](https://blog.google/technology/ai/generative-media-models-io-2025/)
+**Source:** Google DeepMind
+**Published:** 2025-05-20 17:45:00 UTC
+**Tags:** Google Labs, Google DeepMind, AI
 
 **Digest:**
-Nutanix Community Edition (CE) で Nutanix Files を構築し、動作検証する手順を紹介する記事のダイジェストです。 Part1 では、Nutanix Files の概要と FSVM のデプロイ準備について解説します。具体的には、Nutanix Files のダウンロードや FSVM のデプロイ前設定など、インストールに必要な事前準備を説明します。
+最新の生成AIツールを試そう！Googleは画像生成AI「Imagen 4」と動画生成AI「Veo 3」を発表。Metaからは、AIが複雑な動画を生成できる「Flow」が登場。これらの革新的な生成メディアツールを、今すぐ体験してみてはいかがでしょうか。
 
 ---
 
-### [Power Automate：Power Appsで入力した改行ありのテキストをTeamsへ改行ありで投稿させる方法](https://blog.jbs.co.jp/entry/2025/05/19/160903)
-**Source:** JBS Blog
-**Published:** 2025-05-19 07:09:03 UTC
-**Tags:** Power Platform, Power Automate, Power Apps
+### [Introducing Google AI Ultra: The best of Google AI in one subscription](https://blog.google/products/google-one/google-ai-ultra/)
+**Source:** Google DeepMind
+**Published:** 2025-05-20 17:45:00 UTC
+**Tags:** Google One, Chrome, Google DeepMind, Gemini, Gemini App, Gemini Models
 
 **Digest:**
-Power AppsとMicrosoft Teams連携で改行が消える問題への対処法を紹介。Power Appsで作成したテキストをTeamsへ送信する際、改行コードを正しく処理し、メッセージの見た目を保つための具体的な解決策を解説します。Teams上での表示を整えるための工夫が凝らされています。
+Google AI Ultraについて解説。Googleの最新AIサブスクリプションで、最も高性能なモデルとプレミアム機能への最上位アクセスを提供します。Google AI Ultraは、AI技術の最新トレンドを体験できる、注目のサービスです。
+
+---
+
+### [Our vision for building a universal AI assistant](https://blog.google/technology/google-deepmind/gemini-universal-ai-assistant/)
+**Source:** Google DeepMind
+**Published:** 2025-05-20 17:45:00 UTC
+**Tags:** Gemini App, Gemini Models, Google DeepMind, AI
+
+**Digest:**
+Google I/Oで、Googleは大規模言語モデルGeminiを「世界モデル」へと拡張する構想を発表しました。これは、より広範な情報と世界を理解する能力を獲得することを目指し、AI技術の進化を示すものです。
+
+---
+
+### [Gemini 2.5: Our most intelligent models are getting even better](https://blog.google/technology/google-deepmind/google-gemini-updates-io-2025/)
+**Source:** Google DeepMind
+**Published:** 2025-05-20 17:45:00 UTC
+**Tags:** Gemini Models, Google DeepMind, AI
+
+**Digest:**
+Google I/O 2025で、Gemini 2.5モデルシリーズのアップデートを発表しました。さらに、2.5 Pro向け実験的な拡張推論モード「Deep Think」を公開。AIモデルの性能向上を目指し、より高度な推論能力の実装に焦点を当てています。
+
+---
+
+### [SynthID Detector — a new portal to help identify AI-generated content](https://blog.google/technology/ai/google-synthid-ai-content-detector/)
+**Source:** Google DeepMind
+**Published:** 2025-05-20 17:45:00 UTC
+**Tags:** Google DeepMind, AI
+
+**Digest:**
+Google I/Oで発表されたSynthID Detectorポータルについて紹介します。このツールは、オンラインコンテンツがどのように生成されたかを理解するのに役立ちます。SynthID Detectorは、AI生成コンテンツの起源を明らかにし、透明性を向上させるための取り組みの一環です。
+
+---
+
+### [【Microsoft×生成AI連載】【やってみた】Microsoft Copilot Studioでプロンプトアクションを作成してみた](https://blog.jbs.co.jp/entry/2025/05/21/090107)
+**Source:** JBS Blog
+**Published:** 2025-05-21 00:01:07 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, Microsoft×生成AI連載, 生成AI
+
+**Digest:**
+Microsoft Copilot Studioでプロンプトアクションを作成した連載記事。2025年5月9日時点の情報で、AIエージェントやCopilot Studio初心者にも役立つ内容。プロンプトアクションの作成方法、利用シーン、メリット、注意点などを解説しています。
+
+---
+
+### [SharePoint の通知機能の廃止](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/05/sharepoint-787d.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-05-20 10:01:05 UTC
+**Tags:** Microsoft 365 - SharePoint
+
+**Digest:**
+Microsoftは、SharePointの通知機能廃止を発表しました。従来の通知システムは、新機能との重複や効率性の問題から、2024年8月12日に段階的に廃止され、最終的には完全に利用できなくなります。SharePointの利用者は、Microsoft Teamsなどの代替手段への移行が推奨されています。
 
 ---
