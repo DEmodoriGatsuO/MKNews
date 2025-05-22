@@ -1,56 +1,56 @@
-# AI Tech Trends Digest (2025-05-21)
+# AI Tech Trends Digest (2025-05-22)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [CloudFlare Workers×Slack API×GitHub APIで技術記事ドラフト作成Botをつくってみた](https://qiita.com/sekineck/items/2680630e659026fcf337)
-**Published:** 2025-05-20 08:57:23 UTC
-**Likes:** 6
-**Tags:** GitHub, Slack, OpenAI, CloudflareWorkers
+### [手軽に最新LLM！OllamaとQwen3でローカルAI環境を構築する方法](https://qiita.com/Nakamura-Kaito/items/a135d2c5ecef753ec8be)
+**Published:** 2025-05-21 07:58:11 UTC
+**Likes:** 13
+**Tags:** AI, apiテスト, LLM, ollama, Qwen3
 
 **Digest:**
-Cloudflare Workers を使用し、Slack からのテーマを基に、OpenAI で技術記事のドラフトを自動生成・GitHub に保存・Slack 通知する Bot を構築。Cloudflare Workers、OpenAI API、GitHub API を利用。TypeScript で実装し、ローカル開発、環境変数の設定を経てデプロイ。Slack コマンドで起動し、記事が自動生成される様子を紹介。
+ローカルLLM、Qwen3をOllamaで動かし、ApidogでAPIテストする方法を紹介。必要な準備、Hugging Faceからのモデルダウンロード、Ollamaでの実行手順を解説。Qwen3-4Bは高性能で、思考モードも搭載。ApidogでAPIを叩き、temperature等のパラメータ調整で応答を最適化。プライバシー保護、オフライン利用、低コストが魅力。
 
 ---
 
-### [PythonとOpenAI APIで実践！MCP開発入門【第5回】AIを操る「呪文」？ プロンプトエンジニアリングの基礎と効果的な指示の黄金律（ゼロ/ワン/フューショットの概念も）](https://qiita.com/QueryPie/items/a5109167e85731a96ee8)
-**Published:** 2025-05-20 08:34:08 UTC
+### [Google Gen AI SDK で MCP ツール呼び出しを試してみる！](https://qiita.com/te_yama/items/3282e0f1aeabe854a9bf)
+**Published:** 2025-05-21 23:28:51 UTC
 **Likes:** 4
+**Tags:** Python, MCP, Gemini, GoogleCloud
+
+**Digest:**
+Google Gen AI SDKでMCPを試した結果です。環境構築後、Gemini APIやVertex AIを使って、ローカルMCPサーバーを介してツールを呼び出す実装を行いました。`gen_uuidv4`、`get_current_time`、`get_weather`などのツール定義により、プロンプトに応じた適切な応答が得られ、MCPサポートの有効性が確認できました。エージェント型アプリ開発に役立ちます。
+
+---
+
+### [PythonとOpenAI APIで実践！MCP開発入門【第6回】 MCPの核心技術！AIの理解を深める「コンテキスト情報」のJSON設計パターンとPythonでの実装](https://qiita.com/QueryPie/items/306a8eae03da19a1838a)
+**Published:** 2025-05-21 08:00:57 UTC
+**Likes:** 3
 **Tags:** Python, AI, MCP, LLM, ModelContextProtocol
 
 **Digest:**
-AI開発の第5回では、GPTのような大規模言語モデル(LLM)の能力を最大限に引き出す「プロンプトエンジニアリング」を解説。明確な指示やコンテキストが重要で、ゼロ/ワン/フューショットといったテクニックを紹介。Pythonコード例で実践し、区切り文字活用や試行錯誤も推奨。効果的なプロンプトはAIとの「対話の設計図」であり、次回はMCPによるJSON設計でのコンテキスト情報提供を解説。
+AI開発第6回は、プロンプトの限界を超える「構造化コンテキスト」技術を解説。JSON設計パターンとPythonでの構築方法、OpenAI APIへの組み込みを説明し、AIの理解を深める。ユーザープロファイル、会話履歴、外部データ、タスク指示を構造化し、より高度な応答を実現。コンテキストとトークン数のバランスが重要で、次回は実践的なアプリケーション構築演習。
 
 ---
 
-### [Microsoft Build 2025 Day1 サム・アルトマン対談パート感想](https://qiita.com/hikiroku/items/87d172279da7acd89898)
-**Published:** 2025-05-20 09:22:35 UTC
-**Likes:** 3
-**Tags:** MSBuild, イベントレポート, OpenAI
-
-**Digest:**
-Microsoft Build Day1のKeynoteでは、Azure AI Foundryが印象的でした。MicrosoftはAIエージェントによる変革を推進し、開発者支援を目指しています。OpenAIのサム・アルトマン氏は、コーディングにおけるAIの進化は「最大の変革」と述べ、変化の速さへの対応を強調。GitHub連携によるタスク委譲や、開発計画への組み込みが重要と語りました。
-
----
-
-### [手を動かして学ぶ！MCPステップバイステップ実践ガイド for Beginners - Vol.5 ねらいうち！URLで指定したMCPモデル情報だけを取得する](https://qiita.com/QueryPie/items/9790cd1efaeb9a20f3ab)
-**Published:** 2025-05-20 07:57:04 UTC
-**Likes:** 3
-**Tags:** Python, 初心者, AI, MCP, LLM
-
-**Digest:**
-MCPステップバイステップVol.5では、URLパスパラメータで特定のMCPモデル情報を取得。サーバー(Flask)を改良し、URLでデバイスIDを指定可能に。クライアント(requests)でIDを指定して情報を取得し、JSON形式で表示。URL例: ```/devices/THERMO-001-A```でデバイス情報をピンポイント取得。
-
----
-
-### [【Claude 3.7sonnet】フィットネスアプリ開発レポート!](https://qiita.com/shimizu_432/items/74680bed4660f0eb4d2a)
-**Published:** 2025-05-21 00:00:25 UTC
+### [Gemini API ＆ SDK が MCP 対応したので試す（Node.js を利用）【Google I/O 2025】](https://qiita.com/youtoy/items/fd1b123c3f7fc3516264)
+**Published:** 2025-05-21 12:31:14 UTC
 **Likes:** 2
-**Tags:** 初心者, 生成AI, Claude, claude3.7sonnet
+**Tags:** Node.js, googleio, MCP, Gemini, GoogleIO2025
 
 **Digest:**
-Claude 3.7 sonnet を使用したアプリ開発の第5弾、最終回（今のところ）はフィットネスアプリ。Reactで作成された過去作を踏まえ、React以外の言語での開発を試みた。しかし、エラーが多発し、HTML/CSS/JavaScriptでのWebアプリ作成は未完に。結果、Reactは得意だが、他の言語は苦手という気づきを得た。
+Google I/O 2025 で発表された「Gemini API & SDK の MCP 対応」をNode.jsで試す記事。公式ドキュメントを参照し、JavaScriptサンプルコードを参考に実装。`@google/genai` と `@modelcontextprotocol/sdk` を利用し、Gemini API キーを設定。MCPサーバーにパス情報を問い合わせるコードを実行し、Geminiからのレスポンスを確認。音楽生成、Live API、URL contextなどの実験的機能にも言及。
+
+---
+
+### [Gemini API を開発環境で使うための手順（React + Vite）](https://qiita.com/kikotkk/items/c49970c40ded5496688a)
+**Published:** 2025-05-21 11:44:16 UTC
+**Likes:** 2
+**Tags:** API, AI, Gemini
+
+**Digest:**
+React（Vite）でGemini APIを利用し、英単語検索アプリを構築する方法を解説。Google Cloudでプロジェクト作成、APIキー取得後、`gemini-1.5-flash`モデルを使い、ReactコンポーネントからAPIを呼び出す。プロンプトで出力形式を指定し、APIからの応答を整形して表示。無料枠で利用可能だが、エラー時はモデル切り替えや再実行を試す。
 
 ---
 
@@ -63,7 +63,7 @@ Claude 3.7 sonnet を使用したアプリ開発の第5弾、最終回（今の�
 **Tags:** AI
 
 **Digest:**
-AIアシスタントが、あなたの世界を理解し、次なる行動を予測しながら、創造性、学習、探求をサポートします。パーソナライズされた体験を提供し、あなたの興味関心に寄り添いながら、新たな発見を促すでしょう。
+AIアシスタントが、あなたの世界を理解し、次なる行動を予測し始めました。創造性、学習、探求を促すこのアシスタントは、まさに次世代のツールです。ユーザーのニーズに応え、よりパーソナルな体験を提供することを目指しています。
 
 ---
 
@@ -73,7 +73,7 @@ AIアシスタントが、あなたの世界を理解し、次なる行動を予
 **Tags:** AI
 
 **Digest:**
-Googleは、AIモデル「Gemini」を「ワールドモデル」へ進化させ、現実世界の多様な側面をシミュレーションする能力を獲得させます。これにより、Geminiは自律的な計画立案や、新たな体験の創出が可能になる見込みです。
+Googleは、AIモデルGeminiを、世界をシミュレーションし自律的な計画や新たな体験を生成する「ワールドモデル」へ進化させます。これにより、AIは現実世界の複雑さを理解し、より高度なタスクを自律的に実行できるようになる見込みです。
 
 ---
 
@@ -83,7 +83,7 @@ Googleは、AIモデル「Gemini」を「ワールドモデル」へ進化させ
 **Tags:** AI
 
 **Digest:**
-Gemini 2.5 Proはコーディングに最適と評価され、Flashも進化。今回、Pro向け実験的強化推論モード「Deep Think」など新機能が追加されました。これらのアップデートにより、Geminiシリーズは更なる能力向上を目指しています。
+GoogleのGemini 2.5 Proは、コーディング性能で高評価を得ており、2.5 Flashも進化を続けています。今回、Gemini 2.5 Pro向けに、実験的な強化推論モード「Deep Think」を含む新機能を追加しました。
 
 ---
 
@@ -93,7 +93,7 @@ Gemini 2.5 Proはコーディングに最適と評価され、Flashも進化。�
 **Tags:** Google Pay
 
 **Digest:**
-本日よりPayPayアカウントとGoogleアカウントの連携が開始。Google PayでPayPayを支払い手段として利用可能になり、オンライン決済がよりスムーズになります。Chrome上での支払い時などに、PayPay残高や登録済みのカードを素早く選択でき、利便性が向上します。
+本日、PayPayアカウントとGoogleアカウントの連携が開始されました。これにより、Google Pay上でPayPayを支払い方法として選択可能になり、Chrome上でのオンライン決済がよりスムーズに。利便性向上を目指し、連携により決済体験が改善されます。
 
 ---
 
@@ -103,96 +103,66 @@ Gemini 2.5 Proはコーディングに最適と評価され、Flashも進化。�
 **Tags:** Search, Google Cloud, Company announcements, AI
 
 **Digest:**
-Googleは、AIモデル「Gemini」をより有用にするための取り組みを発表しました。これは、Geminiの性能向上や機能拡充、そしてより多くの人々がAIの恩恵を受けられるようにするための様々な施策を含みます。具体的な内容は明らかにされていませんが、Geminiの進化に期待が高まります。
+Googleは、Gemini をより有用にするための取り組みを発表しました。具体的な内容は言及されていませんが、AI モデル Gemini の機能向上を目指しているようです。これにより、Gemini を利用したサービスやアプリが、さらに便利になることが期待されます。
 
 ---
 
-### [Build a domain‐aware data preprocessing pipeline: A multi‐agent collaboration approach](https://aws.amazon.com/blogs/machine-learning/build-a-domain%E2%80%90aware-data-preprocessing-pipeline-a-multi%E2%80%90agent-collaboration-approach/)
+### [Integrate Amazon Bedrock Agents with Slack](https://aws.amazon.com/blogs/machine-learning/integrate-amazon-bedrock-agents-with-slack/)
 **Source:** AWS ML Blog
-**Published:** 2025-05-20 18:40:04 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Agents, Technical How-to, AI/ML, Generative AI
+**Published:** 2025-05-21 19:54:03 UTC
+**Tags:** Amazon API Gateway, Amazon Bedrock Agents, Amazon Simple Queue Service (SQS), Artificial Intelligence, AWS Lambda, AWS Secrets Manager, Generative AI, Intermediate (200), Technical How-to
 
 **Digest:**
-保険業界の非構造化データ処理課題に対し、マルチエージェントパイプラインを提案。Amazon Bedrock を活用し、分類、変換、メタデータ抽出を自動化。多種多様なデータ形式に対応し、精度向上とインサイト創出を促進。専門エージェントで効率化を図り、人手による検証と改善を繰り返すことで、データ品質と自動化を進化させ、最終的に S3 データレイクに集約し、不正検知や顧客分析に活用する。
+企業が生成AIを導入する中、SlackなどのチャットサービスにカスタムAIエージェントを統合する重要性が増しています。AWSのAmazon Bedrock AgentsをSlackに統合するソリューションを紹介。CloudFormationテンプレートを使って、Slackアプリを作成し、API Gateway、Lambda、SQSを活用して、天気情報取得などの機能を実現します。設定後、Slack内で@virtual-meteorologistと呼び出し、会話形式でAIを活用できます。
 
 ---
 
-### [Automating complex document processing: How Onity Group built an intelligent solution using Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/automating-complex-document-processing-how-onity-group-built-an-intelligent-solution-using-amazon-bedrock/)
+### [Secure distributed logging in scalable multi-account deployments using Amazon Bedrock and LangChain](https://aws.amazon.com/blogs/machine-learning/secure-distributed-logging-in-scalable-multi-account-deployments-using-amazon-bedrock-and-langchain/)
 **Source:** AWS ML Blog
-**Published:** 2025-05-20 18:11:21 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Textract, Artificial Intelligence, Customer Solutions, Generative BI, AI/ML, AWS Customer, Generative AI
+**Published:** 2025-05-21 16:46:26 UTC
+**Tags:** Amazon Bedrock, AWS Identity and Access Management (IAM), Generative AI, Technical How-to
 
 **Digest:**
-Onity Groupは、Amazon Bedrockを活用し、住宅ローンサービスにおける文書処理を効率化しました。AWSのAI/MLと生成AIを組み合わせ、複雑な文書から情報を抽出し、コスト50%削減、精度20%向上を達成。手書き文字や公証、リーガルシールなどの課題も解決し、様々な文書処理を自動化しました。Raghavendra Chinhalli氏とPriyatham Minnamareddy氏もその効果を評価しています。
+Amazon Bedrockの多重アカウント環境でのデータプライバシー保護について解説。顧客データは各アカウントに隔離、運用アカウントでAmazon Bedrockを管理します。LangChainのコールバックを利用し、各顧客アカウントのCloudWatchにログを記録することで、厳格なデータ境界を維持。AWS STSのAssumeRoleで安全なクロスアカウントアクセスを実現し、高いセキュリティと運用効率を両立しています。
 
 ---
 
-### [Fuel your creativity with new generative media  models and tools](https://blog.google/technology/ai/generative-media-models-io-2025/)
-**Source:** Google DeepMind
-**Published:** 2025-05-20 17:45:00 UTC
-**Tags:** Google Labs, Google DeepMind, AI
-
-**Digest:**
-最新の生成AIツールを試そう！Googleは画像生成AI「Imagen 4」と動画生成AI「Veo 3」を発表。Metaからは、AIが複雑な動画を生成できる「Flow」が登場。これらの革新的な生成メディアツールを、今すぐ体験してみてはいかがでしょうか。
-
----
-
-### [Introducing Google AI Ultra: The best of Google AI in one subscription](https://blog.google/products/google-one/google-ai-ultra/)
-**Source:** Google DeepMind
-**Published:** 2025-05-20 17:45:00 UTC
-**Tags:** Google One, Chrome, Google DeepMind, Gemini, Gemini App, Gemini Models
-
-**Digest:**
-Google AI Ultraについて解説。Googleの最新AIサブスクリプションで、最も高性能なモデルとプレミアム機能への最上位アクセスを提供します。Google AI Ultraは、AI技術の最新トレンドを体験できる、注目のサービスです。
-
----
-
-### [Our vision for building a universal AI assistant](https://blog.google/technology/google-deepmind/gemini-universal-ai-assistant/)
-**Source:** Google DeepMind
-**Published:** 2025-05-20 17:45:00 UTC
-**Tags:** Gemini App, Gemini Models, Google DeepMind, AI
-
-**Digest:**
-Google I/Oで、Googleは大規模言語モデルGeminiを「世界モデル」へと拡張する構想を発表しました。これは、より広範な情報と世界を理解する能力を獲得することを目指し、AI技術の進化を示すものです。
-
----
-
-### [Gemini 2.5: Our most intelligent models are getting even better](https://blog.google/technology/google-deepmind/google-gemini-updates-io-2025/)
-**Source:** Google DeepMind
-**Published:** 2025-05-20 17:45:00 UTC
-**Tags:** Gemini Models, Google DeepMind, AI
-
-**Digest:**
-Google I/O 2025で、Gemini 2.5モデルシリーズのアップデートを発表しました。さらに、2.5 Pro向け実験的な拡張推論モード「Deep Think」を公開。AIモデルの性能向上を目指し、より高度な推論能力の実装に焦点を当てています。
-
----
-
-### [SynthID Detector — a new portal to help identify AI-generated content](https://blog.google/technology/ai/google-synthid-ai-content-detector/)
-**Source:** Google DeepMind
-**Published:** 2025-05-20 17:45:00 UTC
-**Tags:** Google DeepMind, AI
-
-**Digest:**
-Google I/Oで発表されたSynthID Detectorポータルについて紹介します。このツールは、オンラインコンテンツがどのように生成されたかを理解するのに役立ちます。SynthID Detectorは、AI生成コンテンツの起源を明らかにし、透明性を向上させるための取り組みの一環です。
-
----
-
-### [【Microsoft×生成AI連載】【やってみた】Microsoft Copilot Studioでプロンプトアクションを作成してみた](https://blog.jbs.co.jp/entry/2025/05/21/090107)
+### [カスタムドメインをAzure Communication Servicesに連携する方法（1）](https://blog.jbs.co.jp/entry/2025/05/22/142139)
 **Source:** JBS Blog
-**Published:** 2025-05-21 00:01:07 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, Microsoft×生成AI連載, 生成AI
+**Published:** 2025-05-22 05:21:39 UTC
+**Tags:** Azure, Azure Communication Services
 
 **Digest:**
-Microsoft Copilot Studioでプロンプトアクションを作成した連載記事。2025年5月9日時点の情報で、AIエージェントやCopilot Studio初心者にも役立つ内容。プロンプトアクションの作成方法、利用シーン、メリット、注意点などを解説しています。
+Azure Communication Servicesでカスタムドメインを連携させる手順を解説。まず、ドメインの所有権を検証し、DNSレコードを設定します。次に、Azure portalでカスタムドメインを構成し、TLS/SSL証明書を適用することで、安全な通信環境を構築します。これにより、独自ドメインでのメール送信などが可能になります。
 
 ---
 
-### [SharePoint の通知機能の廃止](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/05/sharepoint-787d.html)
-**Source:** SharePoint Technical Notes
-**Published:** 2025-05-20 10:01:05 UTC
-**Tags:** Microsoft 365 - SharePoint
+### [Semantic Kernel Agent Frameworkを使ったマルチエージェントのオーケストレーション、並列での複数エージェントの実行](https://blog.jbs.co.jp/entry/2025/05/22/105459)
+**Source:** JBS Blog
+**Published:** 2025-05-22 01:54:59 UTC
+**Tags:** マルチエージェント, AI Agent, Multi-Agent, Semantic Kernel, Azure OpenAI, LLM, 大規模言語モデル
 
 **Digest:**
-Microsoftは、SharePointの通知機能廃止を発表しました。従来の通知システムは、新機能との重複や効率性の問題から、2024年8月12日に段階的に廃止され、最終的には完全に利用できなくなります。SharePointの利用者は、Microsoft Teamsなどの代替手段への移行が推奨されています。
+Microsoftの「Semantic Kernel Agent Framework」が一般提供開始。AIエージェント向けフレームワークで、今回のアップデートではマルチエージェントのオーケストレーション機能が強化されました。記事では、並列処理などのオーケストレーションパターン、実行環境、サンプルコード、回答例が紹介されています。
+
+---
+
+### [Azure AI Foundryを活用したLLM最適化とファインチューニング実践ガイド](https://blog.jbs.co.jp/entry/2025/05/22/095011)
+**Source:** JBS Blog
+**Published:** 2025-05-22 00:50:11 UTC
+**Tags:** Azure AI Foundry, Fine-Tuning, LoRA, LLM, Azure AI, AI, GPT-4o, Tech
+
+**Digest:**
+ChatGPTなどのLLMは公開情報で学習しますが、企業独自の機密情報は含まれません。このため、企業導入ニーズが高まるも、汎用LLMでは精度不足が課題です。解決策として、ドメイン特化型モデルのアップデート手法、LoRA（Low-Rank Adaptation）などが注目されています。
+
+---
+
+### [Microsoft Entra Connectのコネクタアカウントの権限不足によるエラー Permission issue 8344 の対処方法 その２](https://blog.jbs.co.jp/entry/2025/05/21/165337)
+**Source:** JBS Blog
+**Published:** 2025-05-21 07:53:37 UTC
+**Tags:** Azure AD Connect, Microsoft Entra Connect, オンプレミス, Active Directory Domain Services
+
+**Digest:**
+以前解説したコネクタアカウント権限不足エラー「Permission issue 8344」の解決策が、それでも解決しない場合の対処法を解説。今回は、より強固な権限付与でこのエラーを解消します。
 
 ---
