@@ -1,68 +1,55 @@
-# AI Tech Trends Digest (2025-05-24)
+# AI Tech Trends Digest (2025-05-25)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [生成AIに「要件定義プロンプト」を作らせてみたら、未来が見えた話](https://qiita.com/rawajifu8752/items/759af7da8bc536f813a3)
-**Published:** 2025-05-23 06:42:34 UTC
-**Likes:** 7
-**Tags:** AI, Gemini, 要件定義書, プロンプトエンジニアリング
+### [DifyでつくったAIが壊れた専門家になってしまったときの対処法](https://qiita.com/umeee/items/1e25731cc8cfd3a079e2)
+**Published:** 2025-05-25 04:41:07 UTC
+**Likes:** 2
+**Tags:** AI, プロンプト, OpenAI, LLM, Dify
 
 **Digest:**
-生成AIに「要件定義プロンプト」を作らせる実験で未来が見えた。Geminiに質の高い要件定義書を学習させ、汎用的なプロンプトを生成。役割設定とGem機能の活用が鍵。これにより、要件定義の質向上と効率化を実現、様々なタスクへの応用も可能。
+DifyでIPA情報に詳しいAIチャットボットを構築するも、IPAの説明ばかりする「IPA紹介おじさん」に。原因はプロンプトのバイアスと判明し、修正。ナレッジベース参照を補足とし、質問への回答を重視するよう調整。結果、IT課題への回答を得ることに成功。Difyでは、contextに頼りすぎず、指示を明確にすることが重要。
 
 ---
 
-### [CursorのClaude Sonnet4がSonnet3.7よりもお得な件](https://qiita.com/morry_48/items/a1fd32f91814f4274651)
-**Published:** 2025-05-23 06:15:04 UTC
-**Likes:** 3
-**Tags:** ポエム, AI, cursor, Claude
+### [どんなインプットも読みやすいHTML+CSSのレポートにするプロンプト文](https://qiita.com/oichan00/items/ef2c158e165152f2083d)
+**Published:** 2025-05-25 02:20:22 UTC
+**Likes:** 2
+**Tags:** HTML, レポート, 業務効率化, LLM, nori式プロンプト集
 
 **Digest:**
-Cursor AIで、高性能LLM「Sonnet 4」が利用可能になりました。なんと、gpt-4.5-previewの1/100の消費量で利用でき、GPT-3.7よりもリクエスト消費量が少ないという驚きのコスパです。これにより、複雑なタスクもSonnet 4をメインに利用できると期待されています。
+高品質なビジネスレポートを自動生成するプロンプトの紹介。プロフェッショナルなデザインと論理的な文章構成で、読解力向上、業務効率化を実現。Apple製品風のデザイン、固定サイドバー、HTML+CSSでの表現が特徴。新社会人にも理解しやすい平易な解説、1000-2000文字の詳細な内容で、時間短縮と品質向上を両立します。
 
 ---
 
-### [MCPお試し最短手順　～僕の名前は「ブラッド・ピット」です～](https://qiita.com/quittardis/items/a3ba1cc395bcb1c29570)
-**Published:** 2025-05-23 10:27:02 UTC
+### [GitHub IssueをAIが無料で自動解決できるOpenHands Resolver](https://qiita.com/kotauchisunsun/items/f273da34ee9e40407af8)
+**Published:** 2025-05-24 10:01:11 UTC
+**Likes:** 2
+**Tags:** GitHub, Gemini, Devin, OpenHands, AICoding
+
+**Digest:**
+AIコーディングツールは、VSCodeプラグイン型（Github Copilotなど）と非VSCode型に大別。OpenHandsは、GithubのIssueからプルリクエストを自動生成する機能「OpenHands Resolver」を提供し、Google Geminiの無料枠で利用可能。設定は、Github Actionsワークフロー、Gemini APIキー、GitHub PATトークンを設定する3ステップです。
+
+---
+
+### [ミャクミャク盗んだ人を特定しようとしてみた](https://qiita.com/tamachan_DXQ/items/963863332967304ae680)
+**Published:** 2025-05-24 09:16:27 UTC
+**Likes:** 2
+**Tags:** 初心者, プロンプト, Gemini
+
+**Digest:**
+2025年大阪・関西万博で「ミャクミャク」のぬいぐるみが盗まれたという報道を受け、筆者はGeminiに犯人特定を試みたが、英語での回答や謎の呪文のような文字列が表示される事態に。翻訳設定の問題かと思いつつ、Geminiの珍現象に困惑し、その原因を考察している。
+
+---
+
+### [【完全保存版】プログラミング不要！45分で作る「賢すぎる」お問い合わせAIボット 〜あなたの会社でも実現できる問い合わせ自動化の世界〜](https://qiita.com/sogengineer/items/cb0011cd3b4fcfc74bfe)
+**Published:** 2025-05-24 16:05:10 UTC
 **Likes:** 1
-**Tags:** MCP, Claude
+**Tags:** AI, チャットボット, 業務効率化, LLM, Dify
 
 **Digest:**
-MCPお試し最短手順。PowerShellで`uv`をインストール後、Node.jsを公式サイトからダウンロード＆インストール。次に、Claude Desktopをダウンロードし、`claude_desktop_config.json`を編集してMCPサーバーを追加。Claudeを再起動し、「MCPを使って、デスクトップ上のファイルをリストアップして」と試す。これでClaudeからWindowsファイルを操作可能に。
-
----
-
-### [# OpenAIの動画生成AI「Sora」を実際に触ってみた 〜動画生成 AI 入門時の実践メモ〜  ](https://qiita.com/dnp-mitsuishi/items/faad652fb707ee818c3b)
-**Published:** 2025-05-23 08:04:12 UTC
-**Likes:** 1
-**Tags:** 使ってみた, OpenAI, sora, ChatGPT, 動画生成AI
-
-**Digest:**
-OpenAIの動画生成AI「Sora」の実践メモです。2024年12月に一般公開され、ChatGPT有料ユーザーが利用可能に。拡散モデルとTransformerモデルが核となるSoraで、テキストから高品質な動画を生成。2025年1月時点では、クレジット制で利用。ホラー短編動画制作に挑戦し、プロンプト作成、ストーリーボード活用、編集機能を駆使。苦手な点も発見。
-
----
-
-### [PythonとOpenAI APIで実践！はじめてのMCP開発入門【第8回】AIの応答（JSON）を徹底解析！エラーコードの理解とPythonでの堅牢なエラーハンドリング入門](https://qiita.com/QueryPie/items/6e252dfd6f755924f363)
-**Published:** 2025-05-23 07:29:04 UTC
-**Likes:** 1
-**Tags:** Python, AI, MCP, LLM, ModelContextProtocol
-
-**Digest:**
-AI開発第8回では、OpenAI APIレスポンス（JSON）の詳細、finish_reasonやトークン数の解析、Pythonでの堅牢なエラーハンドリングを解説。APIエラー（400, 401, 429等）への対応、try-except構文、カスタム例外クラス、ロギングの重要性を示します。安定したAIアプリケーション開発に必須の知識です。
-
----
-
-## Latest News from RSS Feeds
-
-
-### [Principal Financial Group increases Voice Virtual Assistant performance using Genesys, Amazon Lex, and Amazon QuickSight](https://aws.amazon.com/blogs/machine-learning/principal-financial-group-increases-voice-virtual-assistant-performance-using-genesys-amazon-lex-and-amazon-quicksight/)
-**Source:** AWS ML Blog
-**Published:** 2025-05-23 16:02:19 UTC
-**Tags:** Amazon Lex, Amazon QuickSight, Contact Center, Customer Solutions, Amazon Quicksight, AWS Lambda
-
-**Digest:**
-Principal Financial Groupは、Amazon LexとGenesys Cloudを活用し、顧客対応を近代化。Amazon QuickSightダッシュボードで、音声バーチャルアシスタント(VA)のパフォーマンスを可視化し、改善に役立てています。顧客の意図理解、自己解決、効率的なコールルーティングを実現し、顧客体験向上を目指しています。Amazon S3やAthena、Glueも活用し、VAのパフォーマンス分析を行っています。
+この記事は、プログラミング不要で45分で作成できる、賢いAI問い合わせボットの作り方を紹介。FAQの自動化、繰り返し対応の削減、顧客満足度向上を目指します。Difyというノーコードツールを使用し、HP情報を学習させてAIを構築。RAGやベクトル検索技術で意味を理解し、的確な回答を生成。効果として年間96時間の時間削減、19.2万円のコスト削減が見込めます。
 
 ---
