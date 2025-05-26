@@ -1,55 +1,78 @@
-# AI Tech Trends Digest (2025-05-25)
+# AI Tech Trends Digest (2025-05-26)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [DifyでつくったAIが壊れた専門家になってしまったときの対処法](https://qiita.com/umeee/items/1e25731cc8cfd3a079e2)
-**Published:** 2025-05-25 04:41:07 UTC
-**Likes:** 2
-**Tags:** AI, プロンプト, OpenAI, LLM, Dify
+### [安全なMCPへの第一歩 : Authorization の仕様を理解する](https://qiita.com/icoxfog417/items/ef2c3382056968032dd5)
+**Published:** 2025-05-25 07:51:13 UTC
+**Likes:** 44
+**Tags:** Security, MCP, GenerativeAI
 
 **Digest:**
-DifyでIPA情報に詳しいAIチャットボットを構築するも、IPAの説明ばかりする「IPA紹介おじさん」に。原因はプロンプトのバイアスと判明し、修正。ナレッジベース参照を補足とし、質問への回答を重視するよう調整。結果、IT課題への回答を得ることに成功。Difyでは、contextに頼りすぎず、指示を明確にすることが重要。
+MCPのAuthorization機能がOAuth 2.1ベースで実装され、GitHub/PostgreSQLのConfigファイルに平文で記述されるuser/password問題が解決へ。認可にPKCE必須、OpenID Connectとの連携、そしてProtected Resource Metadata (PRM)による効率化も期待。AWSでの実装例も紹介され、安全なMCP利用に向けた動きが進んでいます。
 
 ---
 
-### [どんなインプットも読みやすいHTML+CSSのレポートにするプロンプト文](https://qiita.com/oichan00/items/ef2c158e165152f2083d)
-**Published:** 2025-05-25 02:20:22 UTC
-**Likes:** 2
-**Tags:** HTML, レポート, 業務効率化, LLM, nori式プロンプト集
+### [嫁にアラームを止められるので、僕しか解除できないアプリをAIに作ってもらった話](https://qiita.com/kilalabu/items/ab36490cdc965ed13aea)
+**Published:** 2025-05-25 08:48:06 UTC
+**Likes:** 3
+**Tags:** Android, AI, cursor, Gemini, ChatGPT
 
 **Digest:**
-高品質なビジネスレポートを自動生成するプロンプトの紹介。プロフェッショナルなデザインと論理的な文章構成で、読解力向上、業務効率化を実現。Apple製品風のデザイン、固定サイドバー、HTML+CSSでの表現が特徴。新社会人にも理解しやすい平易な解説、1000-2000文字の詳細な内容で、時間短縮と品質向上を両立します。
+朝活の敵、妻のアラーム停止に対抗し、PINコード解除式アラームアプリ『めざLock』をAI活用で開発。要件定義にGemini、機能実装はCline、設計改善にDeepWiki、UIデザインはv0、UI改善はGemini、アイコン作成はChatGPT/Geminiで実現。実質1日で完成し、AIの進化を実感。
 
 ---
 
-### [GitHub IssueをAIが無料で自動解決できるOpenHands Resolver](https://qiita.com/kotauchisunsun/items/f273da34ee9e40407af8)
-**Published:** 2025-05-24 10:01:11 UTC
+### [Tips: claude-code.nvimを使ってNeovimでClaude Codeを使いやすくする](https://qiita.com/getty104/items/00256804c47e216d702a)
+**Published:** 2025-05-25 13:35:41 UTC
 **Likes:** 2
-**Tags:** GitHub, Gemini, Devin, OpenHands, AICoding
+**Tags:** tips, neovim, 生成AI, LLM, Claude
 
 **Digest:**
-AIコーディングツールは、VSCodeプラグイン型（Github Copilotなど）と非VSCode型に大別。OpenHandsは、GithubのIssueからプルリクエストを自動生成する機能「OpenHands Resolver」を提供し、Google Geminiの無料枠で利用可能。設定は、Github Actionsワークフロー、Gemini APIキー、GitHub PATトークンを設定する3ステップです。
+AnthropicのClaude Opus 4とSonnet 4リリースを受け、NeovimユーザーがClaude Codeを導入したTipsを紹介。Claude CodeはLLMを活用した自律コーディングツールで、Neovimプラグインで連携可能。Claude Maxプランでの利用がお勧め。VSCodeとの使い分けが解消され、Neovim上でAIコーディングが完結。Claude 4によるアウトプット向上も実感。NeovimユーザーはぜひClaude Codeを試してみて下さい。
 
 ---
 
-### [ミャクミャク盗んだ人を特定しようとしてみた](https://qiita.com/tamachan_DXQ/items/963863332967304ae680)
-**Published:** 2025-05-24 09:16:27 UTC
-**Likes:** 2
-**Tags:** 初心者, プロンプト, Gemini
-
-**Digest:**
-2025年大阪・関西万博で「ミャクミャク」のぬいぐるみが盗まれたという報道を受け、筆者はGeminiに犯人特定を試みたが、英語での回答や謎の呪文のような文字列が表示される事態に。翻訳設定の問題かと思いつつ、Geminiの珍現象に困惑し、その原因を考察している。
-
----
-
-### [【完全保存版】プログラミング不要！45分で作る「賢すぎる」お問い合わせAIボット 〜あなたの会社でも実現できる問い合わせ自動化の世界〜](https://qiita.com/sogengineer/items/cb0011cd3b4fcfc74bfe)
-**Published:** 2025-05-24 16:05:10 UTC
+### [DatabricksでClaude Sonnet 4がサポートされました！](https://qiita.com/taka_yayoi/items/0f40228bf2bf26688ab8)
+**Published:** 2025-05-25 11:56:05 UTC
 **Likes:** 1
-**Tags:** AI, チャットボット, 業務効率化, LLM, Dify
+**Tags:** Databricks, Anthropic, Claude4
 
 **Digest:**
-この記事は、プログラミング不要で45分で作成できる、賢いAI問い合わせボットの作り方を紹介。FAQの自動化、繰り返し対応の削減、顧客満足度向上を目指します。Difyというノーコードツールを使用し、HP情報を学習させてAIを構築。RAGやベクトル検索技術で意味を理解し、的確な回答を生成。効果として年間96時間の時間削減、19.2万円のコスト削減が見込めます。
+AWSとAzureの東京リージョンで、Claude Sonnet 4の利用が確認されました。Databricks環境でネイティブに利用可能で、Playgroundでの動作も問題ありません。詳細はこちらの記事を参照ください。
+
+---
+
+### [【Google Colab】OpenAI APIの「TypeError: Client.init() got an unexpected keyword argument 'proxies'」エラー解消法](https://qiita.com/hirahira_blog/items/5ed7e34a962355eeb21a)
+**Published:** 2025-05-25 08:35:33 UTC
+**Likes:** 1
+**Tags:** Python, OpenAI, GoogleColaboratory
+
+**Digest:**
+「LangChainとLangGraph」のハンズオンでOpenAIエラー発生。Google Colabで、古いバージョンと新しいSDK構文の競合が原因。解決策は、OpenAI関連パッケージの完全アンインストール、ランタイム再起動、指定バージョンの再インストール。これによりエラーが解消し、同様の事象への対処法も確立しました。
+
+---
+
+## Latest News from RSS Feeds
+
+
+### [Power Automate Desktopを使ったOutlookメールのPDF化手法](https://blog.jbs.co.jp/entry/2025/05/26/130222)
+**Source:** JBS Blog
+**Published:** 2025-05-26 04:02:22 UTC
+**Tags:** Power Automate Desktop, Microsoft Outlook, Power Automate, PDF
+
+**Digest:**
+Microsoft Power Automate Desktopを活用し、OutlookメールをPDFとして自動保存する方法を紹介します。PC操作を効率化し、メール整理をスムーズに進めます。これにより、メール管理の負担を軽減し、業務効率を格段に向上させることが可能です。
+
+---
+
+### [Azure Red Hat Enterprise Linux 仮想マシンのディスク操作手順～データディスク～](https://blog.jbs.co.jp/entry/2025/05/26/095846)
+**Source:** JBS Blog
+**Published:** 2025-05-26 00:58:46 UTC
+**Tags:** Azure, Linux, RHEL
+
+**Digest:**
+AzureのRHEL9 VM（LVM構成）で、データディスクの管理方法を紹介。具体的には、データディスクの追加、拡張、アンマウントの手順を解説します。LVMを利用することで柔軟なディスク管理が可能になり、Azure環境でのリソース活用に役立ちます。
 
 ---
