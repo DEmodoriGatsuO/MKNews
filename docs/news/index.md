@@ -1,78 +1,78 @@
-# AI Tech Trends Digest (2025-05-26)
+# AI Tech Trends Digest (2025-05-27)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [安全なMCPへの第一歩 : Authorization の仕様を理解する](https://qiita.com/icoxfog417/items/ef2c3382056968032dd5)
-**Published:** 2025-05-25 07:51:13 UTC
-**Likes:** 44
-**Tags:** Security, MCP, GenerativeAI
+### [[Amazon Bedrock]MCPサーバーでビジネス課題を解決する](https://qiita.com/Syoitu/items/718d2c4e3d07affd9edf)
+**Published:** 2025-05-26 11:46:38 UTC
+**Likes:** 6
+**Tags:** AI, lambda, MCP, bedrock, Claude
 
 **Digest:**
-MCPのAuthorization機能がOAuth 2.1ベースで実装され、GitHub/PostgreSQLのConfigファイルに平文で記述されるuser/password問題が解決へ。認可にPKCE必須、OpenID Connectとの連携、そしてProtected Resource Metadata (PRM)による効率化も期待。AWSでの実装例も紹介され、安全なMCP利用に向けた動きが進んでいます。
+AWSのMCPサーバーを営業部門に導入し、ECデータ分析に活用した事例を紹介。課題は、商談でのインサイト伝達の難しさ。AWS MCP ServersのBedrock Knowledge Bases RetrievalとLambda MCP Serverを活用し、Claude Desktopに接続。IAM設定、タグ設定、設定ファイル編集を行い、Claude Opus4で商品分析レポート作成に成功。データ活用の可能性を広げ、導入の推進力を高める重要性を示唆しています。
 
 ---
 
-### [嫁にアラームを止められるので、僕しか解除できないアプリをAIに作ってもらった話](https://qiita.com/kilalabu/items/ab36490cdc965ed13aea)
-**Published:** 2025-05-25 08:48:06 UTC
+### [（2025/05最新版）生成AI × コーディングのツール・エージェントまとめ](https://qiita.com/nokonoko_1203/items/7c66435c73672b447928)
+**Published:** 2025-05-27 03:31:41 UTC
 **Likes:** 3
-**Tags:** Android, AI, cursor, Gemini, ChatGPT
+**Tags:** AI, VSCode, OpenAI, LLM, AIエージェント
 
 **Digest:**
-朝活の敵、妻のアラーム停止に対抗し、PINコード解除式アラームアプリ『めざLock』をAI活用で開発。要件定義にGemini、機能実装はCline、設計改善にDeepWiki、UIデザインはv0、UI改善はGemini、アイコン作成はChatGPT/Geminiで実現。実質1日で完成し、AIの進化を実感。
+2025/05版AIコーディングツールまとめ。**GitHub Copilot**は行補完・チャット・エージェント機能、**Windsurf**は高速タブ補完が特徴。**OpenAI Codex**と**Jules**はGitHub連携でコード修正、**Claude Code**はCLIでコード修正可能。**Claude Code Action**はGitHub統合、**GitHub Copilot Coding Agent**も。APIキー課金が課題も、理想的なVibe Coding手法構築が期待される。
 
 ---
 
-### [Tips: claude-code.nvimを使ってNeovimでClaude Codeを使いやすくする](https://qiita.com/getty104/items/00256804c47e216d702a)
-**Published:** 2025-05-25 13:35:41 UTC
-**Likes:** 2
-**Tags:** tips, neovim, 生成AI, LLM, Claude
+### [PythonとOpenAI APIで実践！はじめてのMCP開発入門【第9回】MCP活用プログラミング(1) - ユーザー嗜好コンテキストでパーソナライズする「おすすめ記事生成AI」](https://qiita.com/QueryPie/items/c3096d3d5b1dc690e9a0)
+**Published:** 2025-05-26 11:21:31 UTC
+**Likes:** 3
+**Tags:** Python, AI, MCP, LLM, ModelContextProtocol
 
 **Digest:**
-AnthropicのClaude Opus 4とSonnet 4リリースを受け、NeovimユーザーがClaude Codeを導入したTipsを紹介。Claude CodeはLLMを活用した自律コーディングツールで、Neovimプラグインで連携可能。Claude Maxプランでの利用がお勧め。VSCodeとの使い分けが解消され、Neovim上でAIコーディングが完結。Claude 4によるアウトプット向上も実感。NeovimユーザーはぜひClaude Codeを試してみて下さい。
+AI開発第9回では、**ユーザー嗜好情報（コンテキスト）**をJSON形式で設計し、OpenAI APIと連携して、パーソナライズされた技術記事をおすすめするプログラムを構築。Pythonで動的プロンプトを生成し、コンテキストを活用してAIの応答を制御、トークン効率にも配慮。  ユーザーの知識レベルや好みに合わせたレコメンデーションを実現します。  次回は会話履歴を活用したチャットボット開発へ。
 
 ---
 
-### [DatabricksでClaude Sonnet 4がサポートされました！](https://qiita.com/taka_yayoi/items/0f40228bf2bf26688ab8)
-**Published:** 2025-05-25 11:56:05 UTC
+### [Amplify Gen2のAI Kitで本日時点で未対応のClaude 4を使う方法](https://qiita.com/moritalous/items/5b23ca17aa9950da020f)
+**Published:** 2025-05-27 03:56:37 UTC
 **Likes:** 1
-**Tags:** Databricks, Anthropic, Claude4
+**Tags:** AWS, amplify, bedrock, Claude
 
 **Digest:**
-AWSとAzureの東京リージョンで、Claude Sonnet 4の利用が確認されました。Databricks環境でネイティブに利用可能で、Playgroundでの動作も問題ありません。詳細はこちらの記事を参照ください。
+Amplify Gen2でClaude 4対応に挑戦。ReactとTypeScriptでViteプロジェクトを作成し、AI機能を追加。初期は簡単だったが、未対応モデル利用でハマり、リージョンを跨ぐクロスリージョン推論で苦戦。最終的に`@aws-amplify/backend-ai`でLambdaハンドラーを定義し、IAMロールを調整することでClaude 4のクロスリージョン推論に成功した。
 
 ---
 
-### [【Google Colab】OpenAI APIの「TypeError: Client.init() got an unexpected keyword argument 'proxies'」エラー解消法](https://qiita.com/hirahira_blog/items/5ed7e34a962355eeb21a)
-**Published:** 2025-05-25 08:35:33 UTC
+### [不定形性専門家混合(IMoE: Indefinacy Mixture of Experts)技術メモ](https://qiita.com/peony_snow/items/ab793b2efae0d2857245)
+**Published:** 2025-05-26 14:38:38 UTC
 **Likes:** 1
-**Tags:** Python, OpenAI, GoogleColaboratory
+**Tags:** Python, MachineLearning, PyTorch, MixtureOfExperts, LLM
 
 **Digest:**
-「LangChainとLangGraph」のハンズオンでOpenAIエラー発生。Google Colabで、古いバージョンと新しいSDK構文の競合が原因。解決策は、OpenAI関連パッケージの完全アンインストール、ランタイム再起動、指定バージョンの再インストール。これによりエラーが解消し、同様の事象への対処法も確立しました。
+六花牡丹氏の技術メモ「IMoE」は、脳神経の成長過程と確率グラフ理論に着想を得た、Expertsの数を動的に変える**不定形性専門家混合**に関するもの。**Erdős-Rényi-Gilbert model** から **Bianconi-Barabási model** への遷移を模倣し、エントロピーに基づく「自信」でExpert選択を制御。計算効率と、脳の推論メカニズム再現を目指す。GPU高速化のため、index_add_処理などを工夫。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Power Automate Desktopを使ったOutlookメールのPDF化手法](https://blog.jbs.co.jp/entry/2025/05/26/130222)
-**Source:** JBS Blog
-**Published:** 2025-05-26 04:02:22 UTC
-**Tags:** Power Automate Desktop, Microsoft Outlook, Power Automate, PDF
+### [JBS のユースケースに見る、Copilot＋ PC が拡張する人間の可能性 〜障がいの有無に関わらず、すべての人が活躍できる社会に向けて〜](https://blogs.windows.com/japan/2025/05/27/jbs-use-cases-show-human-potential-extended-by-copilot-pc/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-05-27 02:50:56 UTC
+**Tags:** Surface, Copilot
 
 **Digest:**
-Microsoft Power Automate Desktopを活用し、OutlookメールをPDFとして自動保存する方法を紹介します。PC操作を効率化し、メール整理をスムーズに進めます。これにより、メール管理の負担を軽減し、業務効率を格段に向上させることが可能です。
+JBSは、Microsoft Partner of the Year受賞企業として、障がい者雇用支援にCopilot+ PCを活用。ライブキャプションで聴覚障がい者のコミュニケーションを円滑化、リコール機能で発達障がい者の情報整理を支援し、業務効率化を実現。個別ニーズに合わせた支援で、誰もが活躍できる環境を目指す取り組みを紹介しています。
 
 ---
 
-### [Azure Red Hat Enterprise Linux 仮想マシンのディスク操作手順～データディスク～](https://blog.jbs.co.jp/entry/2025/05/26/095846)
+### [Fabric Copilot は何ができるの？ ～Power BI編～](https://blog.jbs.co.jp/entry/2025/05/27/084811)
 **Source:** JBS Blog
-**Published:** 2025-05-26 00:58:46 UTC
-**Tags:** Azure, Linux, RHEL
+**Published:** 2025-05-26 23:48:11 UTC
+**Tags:** Microsoft Fabric, Copilot, Power BI
 
 **Digest:**
-AzureのRHEL9 VM（LVM構成）で、データディスクの管理方法を紹介。具体的には、データディスクの追加、拡張、アンマウントの手順を解説します。LVMを利用することで柔軟なディスク管理が可能になり、Azure環境でのリソース活用に役立ちます。
+Microsoft Fabric CopilotのPower BI機能解説。前提としてFabric環境とPower BIの基本知識が必要です。レポート自動生成、データ要約・説明、深掘りや追加質問が可能。Fabric Copilotを活用し、Power BIでのデータ分析を効率化できます。
 
 ---
