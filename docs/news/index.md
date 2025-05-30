@@ -1,148 +1,138 @@
-# AI Tech Trends Digest (2025-05-29)
+# AI Tech Trends Digest (2025-05-30)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [BedrockナレッジベースでClaude Sonnet 4が使いたい！](https://qiita.com/har1101/items/1732a69e44dfeac0bb91)
-**Published:** 2025-05-28 16:34:51 UTC
-**Likes:** 9
-**Tags:** AWS, bedrock, Claude, KnowledgeBaseForAmazonBedrock
+### [PythonとOpenAI APIで実践！はじめてのMCP開発入門【第12回】プロンプトエンジニアリング実践(2) - 複雑な指示もAIに理解させる「ステップバック」と「思考の連鎖（CoT）」概念の実装ヒント](https://qiita.com/QueryPie/items/3b17ea40c42c9c99b188)
+**Published:** 2025-05-29 14:38:16 UTC
+**Likes:** 5
+**Tags:** Python, AI, MCP, LLM, ModelContextProtocol
 
 **Digest:**
-Claude Sonnet 4をAmazon Bedrockのナレッジベース基盤モデルに設定すると、公式未対応ながら、カスタムプロンプト必須のエラーが発生。  オーケストレーションと生成プロンプトの両方で、`$query$`、`$search_results$`、`$output_format_instructions$`、`$conversation_history$`の4変数の明示的な指定が必要。  デフォルトプロンプトに不足分を追加し、無事動作を確認した。
+AIに「深く考えさせる」プロンプトエンジニアリングの応用として、ステップバック・プロンプティングと思考の連鎖（CoT）を紹介。前者は抽象化による推論、後者は思考過程の明示化でLLMの推論能力を高める。Python実装例も提示。高性能モデル選択やトークン消費への配慮が重要。APIキー管理など次回予告も。
 
 ---
 
-### [手を動かして学ぶ！MCPステップバイステップ実践ガイド for Beginners - Vol.9 集大成！MCP連携コマンドラインツール（一覧表示＆検索）を作る](https://qiita.com/QueryPie/items/1936e8b4facf604bf96d)
-**Published:** 2025-05-29 01:37:06 UTC
-**Likes:** 3
-**Tags:** Python, 初心者, AI, MCP, LLM
+### [MCPで研究！Notion+Jupyter+Google ScholarでAIに勝手に実験してもらおう！](https://qiita.com/kyuko/items/1c46cd596492c4416936)
+**Published:** 2025-05-30 03:52:29 UTC
+**Likes:** 1
+**Tags:** Jupyter, MCP, Notion, 生成AI, Claude
 
 **Digest:**
-「手を動かして学ぶ！MCPステップバイステップ実践ガイド」の集大成として、APIキー認証を活用したコマンドラインツールを開発。Pythonのargparseモジュールでコマンドと引数を扱い、デバイス一覧表示やID指定での情報取得を実現。エラー処理も組み込み、lsやgitのようなツールを自作する楽しさを体験。サーバーの起動確認後、実際にツールを実行し、機能を確認しました。
+MCP（Model Context Protocol）を使ってClaude Desktopに研究をさせてみた。論文検索、Jupyterでの実験、Notionでの結果まとめをAIが自律的に実施。実験テーマはニューラルネットワークの活性化関数による学習効率の変化。研究の各段階をこなし、結果をNotionに報告。まだ課題はあるものの、MCPの汎用性やAIの可能性を感じる結果となった。
 
 ---
 
-### [PythonとOpenAI APIで実践！はじめてのMCP開発入門【第11回】プロンプトエンジニアリング実践(1) - AIの能力を引き出す「ロールプロンプティング」と「システムメッセージ」の戦略的活用法](https://qiita.com/QueryPie/items/a0f5f35fb0db7a43bac8)
-**Published:** 2025-05-28 14:57:00 UTC
-**Likes:** 3
-**Tags:** Python, AWS, MCP, LLM, ModelContextProtocol
+### [資料に命を吹き込むAI！NotebookLMが描く、もっと「伝わる」コミュニケーション](https://qiita.com/dnp_wada/items/7e7c7fc451302d4f005b)
+**Published:** 2025-05-30 01:20:19 UTC
+**Likes:** 1
+**Tags:** LLM, NotebookLM
 
 **Digest:**
-AI開発の第11回では、AIに個性と専門性を与える「システムメッセージ」と「ロールプロンプティング」を紹介。システムメッセージでAIの役割や応答を定義し、ロールプロンプティングで特定の役割を演じさせ、Pythonで実装。これらのテクニックにより、AIの挙動を精密に制御し、AIアプリケーションの品質向上を図ります。具体的なコード例や、トークン効率、実験の重要性についても解説。
+NotebookLMは、資料をアップロードすると、内容を理解し、2人の話者によるポッドキャスト形式の音声概要を生成するAIツール。資料の文脈や意図を汲み取り、研修、プロジェクト共有、提案書作成、社内広報など、多岐にわたる業務での活用が期待できる。ポジティブなフィードバックによる学習効果向上や、組織文化の醸成にも貢献する可能性を秘めています。
 
 ---
 
-### [【AIが超進化？！】話題のMCPを世界一分かりやすく解説](https://qiita.com/zukizukizukizuki/items/032f4b9be717acb533f7)
-**Published:** 2025-05-28 12:31:23 UTC
-**Likes:** 2
-**Tags:** AI, MCP, Gemini, ChatGPT, LLM
+### [ターミナルからGeminiに話しかける(curl)](https://qiita.com/tukiyo3/items/1fad9cfdc9f33dcff454)
+**Published:** 2025-05-30 04:29:31 UTC
+**Likes:** 0
+**Tags:** curl, Gemini
 
 **Digest:**
-MCPはAIの能力を拡張する「AIの執事」で、PC操作や情報収集を可能にします。AIと連携し、PC内ファイル操作、ウェブ情報収集、アプリ連携などを実現。ローカル実行でプライバシー保護、APIコスト削減も。Open InterpreterやAnythingLLMなど多様なツールがあり、GUIベースなら始めやすい。AI活用の幅を広げるMCPの世界へ踏み出しましょう。
+Google AI StudioでAPIキーを取得し、Geminiモデルを利用する`gemini.sh`スクリプトを紹介。APIキーを環境変数に設定し、curlコマンドでGemini APIにリクエストを送信。引数で質問を指定し、改行コードを処理して結果を表示。`sh gemini.sh 今日の天気`のように使用でき、数秒で応答を得られます。
 
 ---
 
-### [Claude Opus 4でゲーム開発を革命的に効率化した話 - AIとの対話だけで3時間でゲームをリリース!?](https://qiita.com/f_uto/items/53fddf2ea7e3ba6b6988)
-**Published:** 2025-05-28 06:52:13 UTC
-**Likes:** 2
-**Tags:** JavaScript, game, 生成AI, Claude, Claude4
+### [PowerShellでOllamaの全モデルを一括アップデートする方法（Windows編）](https://qiita.com/kotai2003/items/90a0f6d0d1567ca660fc)
+**Published:** 2025-05-30 04:02:34 UTC
+**Likes:** 0
+**Tags:** PowerShell, LLM, ollama, LocalLLM
 
 **Digest:**
-AI「Claude Opus 4」を使い、**コーディング不要でWebゲームを3時間で開発**した事例を紹介。弾幕シューティングなど4種のゲームを**プロンプトとコピペのみ**で作成。AIがコード生成、バグ修正、ゲームバランス調整まで行い、開発時間を大幅短縮。**GitHub Actionsによる自動デプロイ**も実現。プロンプトエンジニアリングが鍵で、開発プロセスに変革をもたらす。
+WindowsのOllamaでダウンロード済みのモデルを一括更新するには、PowerShellで`ollama list`と`ollama pull`を組み合わせたコマンドを実行します。これにより、公開モデルを一度に最新バージョンへアップデートできます。ただし、Modelfileで作成したカスタムモデルは手動での更新が必要、Ollama起動確認も忘れずに。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [飲食店のクーポン表示など Google ビジネス プロフィールの便利な新機能のご紹介](https://blog.google/intl/ja-jp/products/explore-get-answers/business-profile-updates/)
-**Source:** Google Japan Blog
-**Published:** 2025-05-28 10:00:00 UTC
-**Tags:** Search, Small Business
-
-**Digest:**
-Google検索やGoogleマップで表示されるお店の正確な情報は、予約や来店に不可欠です。Googleは、ビジネスオーナーがお店の情報を簡単に更新できる機能を開発中。これは、顧客がお店を探す際に、**Google検索** や **Googleマップ** で正しい **お店の詳細** を確認し、来店意欲を高めるために重要です。
-
----
-
-### [Part 3: Building an AI-powered assistant for investment research with multi-agent collaboration in Amazon Bedrock and Amazon Bedrock Data Automation](https://aws.amazon.com/blogs/machine-learning/part-3-building-an-ai-powered-assistant-for-investment-research-with-multi-agent-collaboration-in-amazon-bedrock-and-amazon-bedrock-data-automation/)
+### [Revolutionizing earth observation with geospatial foundation models on AWS](https://aws.amazon.com/blogs/machine-learning/revolutionizing-earth-observation-with-geospatial-foundation-models-on-aws/)
 **Source:** AWS ML Blog
-**Published:** 2025-05-28 18:39:06 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Agents, Financial Services
+**Published:** 2025-05-29 21:16:44 UTC
+**Tags:** Advanced (300), Amazon OpenSearch Service, Amazon SageMaker, Amazon SageMaker AI, Foundation models, Geospatial ML with Amazon SageMaker, Technical How-to
 
 **Digest:**
-Amazon Bedrockのマルチエージェントコラボレーション機能を用いた投資調査アシスタントを構築。複数のAIサブエージェントが連携し、金融ニュース分析、株価評価、ポートフォリオ最適化を支援。監督エージェントが複雑な質問を分解し、専門タスクを委任。Amazon Bedrock Data Automation（BDA）でマルチモーダルデータから洞察を生成。LLMにNova understanding modelsを利用。
+地理空間データ向けTransformerモデル（**GeoFM**）は、大陸規模の地球表面マッピングを実現する新技術。Amazon SageMakerで、Clay Foundationのモデルを用いて、森林破壊の検出など、様々な用途に活用可能。衛星画像の前処理、エンベディング生成、類似検索、変化検出、カスタムMLモデルのファインチューニングといった手順で、地理空間データの分析に役立ちます。Amazon OpenSearch ServerlessやLanceDBなどのベクトルデータベースも利用できます。
 
 ---
 
-### [A generative AI prototype with Amazon Bedrock transforms life sciences and the genome analysis process](https://aws.amazon.com/blogs/machine-learning/a-generative-ai-prototype-with-amazon-bedrock-transforms-life-sciences-and-the-genome-analysis-process/)
+### [Create an agentic RAG application for advanced knowledge discovery with LlamaIndex, and Mistral in Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/create-an-agentic-rag-application-for-advanced-knowledge-discovery-with-llamaindex-and-mistral-in-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-05-28 18:36:14 UTC
-**Tags:** Advanced (300), Amazon API Gateway, Amazon Athena, Amazon Bedrock, Amazon DynamoDB, Amazon Simple Storage Service (S3), AWS Amplify, AWS AppSync, AWS Lambda, Customer Enablement, Customer Solutions, How-To, Technical How-to, AIML, Generative AI, HCLS, life sciences, machine-learning, Natural Language Processing
+**Published:** 2025-05-29 20:10:51 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Knowledge Bases, Technical How-to
 
 **Digest:**
-バイオ医薬品開発は10年以上、20億ドル超のコスト、90%以上の失敗率を伴う高リスクなプロセスです。AWSは製薬会社のM2Mプロセスを効率化するため、大規模言語モデル（LLM）とAmazon Bedrockを活用したテキストto SQLパイプラインを構築。ゲノムデータに対し、自然言語で質問しSQLを生成するAIアシスタントを開発、研究を加速し、創薬の可能性を広げます。
+Agentic RAGアプリケーションは、外部知識取得と自律エージェント機能を統合したAIの高度なアプローチです。LlamaIndexフレームワークを用い、Mistral Large 2 FM on Amazon Bedrockを活用。GitHub、Arxiv、TechCrunch、DuckDuckGo等のAPIとRAGフレームワークを連携し、Amazon OpenSearch ServerlessやBedrock Knowledge Basesと連携したドキュメント統合も可能です。エージェントフローはAgentRunnerとAgentWorkerで構成され、複雑なタスクの実行、API連携、コンテキストに応じた応答を実現します。
 
 ---
 
-### [Gemma 3 27B model now available on Amazon Bedrock Marketplace and Amazon SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/gemma-3-27b-model-now-available-on-amazon-bedrock-marketplace-and-amazon-sagemaker-jumpstart/)
+### [Text-to-image basics with Amazon Nova Canvas](https://aws.amazon.com/blogs/machine-learning/text-to-image-basics-with-amazon-nova-canvas/)
 **Source:** AWS ML Blog
-**Published:** 2025-05-28 18:30:05 UTC
-**Tags:** Amazon Bedrock, Amazon SageMaker, Announcements, Generative AI, Technical How-to
+**Published:** 2025-05-29 19:29:49 UTC
+**Tags:** Amazon Nova, Best Practices, Foundational (100), Generative AI, Python, Technical How-to
 
 **Digest:**
-Amazon Bedrock MarketplaceとSageMaker JumpStartで、Googleの高性能LLM「Gemma 3 27B Instruct」モデルが利用可能に。270億パラメータのモデルで、テキストと画像入力に対応し、長文処理や多言語サポートが特徴です。AWS上で生成AIソリューション構築を加速できます。BedrockまたはSageMaker UI、Python SDKでデプロイし、チャットボット等に応用できます。
+Amazon BedrockのAmazon Nova Canvasは、テキストから高品質な画像を生成するAIモデルです。本記事は、初心者向けにNova Canvasの使い方を解説し、Amazon Bedrockでのセットアップ、画像生成プロセス、プロンプトの基本、CFGスケール、シード値などを説明。Pythonスクリプトによるコード例も紹介し、AWS料金についても触れています。
 
 ---
 
-### [Building a multimodal RAG based application using Amazon Bedrock Data Automation and Amazon Bedrock Knowledge Bases](https://aws.amazon.com/blogs/machine-learning/building-a-multimodal-rag-based-application-using-amazon-bedrock-data-automation-and-amazon-bedrock-knowledge-bases/)
+### [Real-world applications of Amazon Nova Canvas for interior design and product photography](https://aws.amazon.com/blogs/machine-learning/real-world-applications-of-amazon-nova-canvas-for-interior-design-and-product-photography/)
 **Source:** AWS ML Blog
-**Published:** 2025-05-28 16:53:27 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Generative AI, Intermediate (200)
+**Published:** 2025-05-29 19:26:14 UTC
+**Tags:** Amazon Bedrock, Amazon Nova, Amazon SageMaker AI, Customer Solutions, Generative AI, Intermediate (200), Technical How-to
 
 **Digest:**
-Amazon Bedrock Data AutomationとKnowledge Basesを活用した、マルチモーダルコンテンツ処理アプリケーションを紹介。様々なファイル形式を自動処理し、自然言語での質問応答を実現。医療、金融、法律、メディアなど多業種でのユースケースを紹介し、RAGベースのQ&A機能で情報検索を効率化。AWS CDKによるデプロイ手順、前提条件、GitHubリポジトリも公開。
+Amazon Nova Canvasを活用し、ビジネス課題を解決する方法を解説。インテリアデザインではセグメンテーションによる画像加工で、製品写真ではアウトペインティングで背景を変え、制作コストを削減。Pythonコード例も紹介し、AWSアカウントとBedrockアクセスが前提。Nova Canvasは、時間とコストを削減し、多様なビジュアルコンテンツ作成を可能にします。
 
 ---
 
-### [Tailoring foundation models for your business needs: A comprehensive guide to RAG, fine-tuning, and hybrid approaches](https://aws.amazon.com/blogs/machine-learning/tailoring-foundation-models-for-your-business-needs-a-comprehensive-guide-to-rag-fine-tuning-and-hybrid-approaches/)
-**Source:** AWS ML Blog
-**Published:** 2025-05-28 16:50:20 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon SageMaker AI, Amazon SageMaker JumpStart, Artificial Intelligence, Foundation models, Intermediate (200), Technical How-to
-
-**Digest:**
-AWSのFoundation Model（FM）活用戦略として、**RAG、ファインチューニング、ハイブリッド**の3手法を紹介。Amazon BedrockでRAGを容易化し、SageMakerでファインチューニングとハイブリッドを実装。評価指標にはBERTScore、LLM評価スコア、推論時間、コスト分析を用い、RAGが低コストながらハイブリッドと同等の性能を示した。GitHubリポジトリでコード公開。
-
----
-
-### [Highlights from the Dialogues stage at I/O 2025](https://blog.google/technology/developers/google-io-2025-dialogues-ai-quantum-storytelling/)
-**Source:** Google DeepMind
-**Published:** 2025-05-28 16:14:00 UTC
-**Tags:** Gemini App, Google DeepMind, Developers, AI
-
-**Digest:**
-Google I/O 2025のDialoguesステージでは、Googleのリーダーとビジョナリーが集結しました。今後の展望や技術革新について活発な議論が交わされ、AIや次世代技術に関する発表に大きな注目が集まりました。
-
----
-
-### [AvePoint Cloud Governanceでメタデータを利用した台帳管理を行う方法](https://blog.jbs.co.jp/entry/2025/05/29/145836)
+### [PowerShellによるTeamsアプリ設定の一括変更手順](https://blog.jbs.co.jp/entry/2025/05/30/131003)
 **Source:** JBS Blog
-**Published:** 2025-05-29 05:58:36 UTC
-**Tags:** Microsoft 365, AvePoint, ACG
+**Published:** 2025-05-30 04:10:03 UTC
+**Tags:** Microsoft 365, Microsoft Team, PowerShell
 
 **Digest:**
-AvePoint Cloud Governance（ACG）管理者を対象とした記事のダイジェストです。ACGでチームやサイトの棚卸を行う際、例外的な管理が発生しがちですが、データ一貫性維持のためにはメタデータ活用が重要です。本記事では、ACGのメタデータ機能を使い、台帳管理を一元化する方法を紹介します。
+Teamsアプリ管理を効率化！PowerShellスクリプトでアプリ中心の管理をスムーズに行う方法を解説。Teamsアプリごとの可用性設定が面倒な方に、PowerShellを活用した一括設定手順を紹介し、手間を省きます。
 
 ---
 
-### [SharePoint リストに添付されたファイルをPythonで取得する方法](https://blog.jbs.co.jp/entry/2025/05/29/140554)
+### [Azureのリージョン一覧をExcelで利用できるようにする方法](https://blog.jbs.co.jp/entry/2025/05/30/114759)
 **Source:** JBS Blog
-**Published:** 2025-05-29 05:05:54 UTC
-**Tags:** SharePoint, API, Python, Azure Key Vault
+**Published:** 2025-05-30 02:47:59 UTC
+**Tags:** Azure, Power Query
 
 **Digest:**
-SharePoint REST APIを利用し、PythonでSharePointリストに格納された添付ファイルの情報を取得する方法を紹介しています。具体的には、REST APIを用いて、添付ファイル名やURLなどの詳細を効率的に取得する方法を解説しているようです。
+PowerShellのGet-AzLocationコマンドレットとPower Queryを活用し、Azureリージョンの情報をExcelで利用可能にする方法を解説。PowerShellでリージョン情報を取得し、Power Queryでデータ整形することで、リージョン名、対応サービス、可用性ゾーンなどをExcelで可視化・分析できます。
+
+---
+
+### [【Microsoft×生成AI連載】【Agents】Researcher Agentを使ってみた](https://blog.jbs.co.jp/entry/2025/05/30/090501)
+**Source:** JBS Blog
+**Published:** 2025-05-30 00:05:01 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, Microsoft×生成AI連載, 生成AI
+
+**Digest:**
+マイクロソフトの生成AI連載、今回はMicrosoft 365 Copilotの**宣言型エージェント**と**カスタムエンジンエージェント**について解説。2025年5月21日時点の情報で、**Researcher Agent**はFrontierプログラムのものです。機能、ライセンス、料金は変更の可能性あり。前回までの連載では**Researcher Agent**の紹介や利用、追加、実行、最新情報の調査などを行いました。
+
+---
+
+### [ショートカットでのAzure Virtual Desktopへの接続を試してみた](https://blog.jbs.co.jp/entry/2025/05/29/160027)
+**Source:** JBS Blog
+**Published:** 2025-05-29 07:00:27 UTC
+**Tags:** AVD, Tech, 仮想デスクトップ, VDI, Azure, URI, Uniform Resource Identifier スキーム
+
+**Digest:**
+2023年にMicrosoftが公開したAzure Virtual Desktop (AVD) 用URIスキームを使うと、ショートカットからAVDに直接接続可能に！ クライアントアプリを使わず、URI（URL）形式で接続できます。 今回は、そのURIの作成方法とショートカット設定について解説します。 ID取得やURI作成の手順、ショートカットの作成・配置方法についても触れます。
 
 ---
