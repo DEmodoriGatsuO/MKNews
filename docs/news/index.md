@@ -1,118 +1,68 @@
-# AI Tech Trends Digest (2025-05-31)
+# AI Tech Trends Digest (2025-06-01)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [【unsloth + Gemma3】RAG時代終了か？高精度・高速LLMモデルをローカルPCで爆速FTする！](https://qiita.com/ryosuke_ohori/items/7b0f14d8f6e0668fd979)
-**Published:** 2025-05-30 16:35:12 UTC
-**Likes:** 32
-**Tags:** Python, 自然言語処理, AI, Gemma, LLM
+### [NotebookLM×Claude×draw.ioでkintone営業支援パックの構成図を自動生成してみた](https://qiita.com/kanekoh/items/a323409d28a68254484e)
+**Published:** 2025-05-31 13:47:56 UTC
+**Likes:** 7
+**Tags:** kintone, Draw.io, Claude, NotebookLM
 
 **Digest:**
-株式会社ulusageの生成AIが、UnslothAIとGemma 3を組み合わせたLLMファインチューニング効率化を解説。UnslothAIは高速化、メモリ効率改善、長文対応に優れ、Gemma 3はオープンソースで多様なモデルサイズとマルチモーダル、多言語対応が特徴です。両者の相乗効果で、限られたリソースでも高品質なカスタムAI開発が可能になります。
+kintone営業支援パックのシステム構成図を、NotebookLMとClaudeを使いdraw.ioで自動生成する試みを報告。NotebookLMでkintoneヘルプ情報をまとめ、Claudeでdraw.io用XMLを生成。draw.ioに貼り付ければ図が完成。構成要素や関係性を可視化し、効率的な図作成に役立つ。アイコンも使用し分かりやすく、微調整で完成度を高められる。
 
 ---
 
-### [生成AIモデルの新たな評価軸を求めて：水平思考クイズで「人間らしさ」を測ってみる](https://qiita.com/dnp-ashida/items/ed4ce81a849e6d165e2e)
-**Published:** 2025-05-30 07:26:00 UTC
+### [Claude CodeにIssueのタスクを遂行→PRの作成まで行なってもらう](https://qiita.com/getty104/items/e706923b66f4659dec24)
+**Published:** 2025-06-01 00:37:34 UTC
+**Likes:** 3
+**Tags:** LLM, Claude, AIエージェント, ClaudeCode, バイブコーディング
+
+**Digest:**
+Claude Codeを用いて、IssueからPR作成までを自動化するワークフローを構築。GitHub CLIを導入し、`/user:exec-issue ISSUE番号`で実行できるカスタムコマンドを定義。Issue内容を理解し、ブランチ作成、タスク実行、テスト追加、PR作成までを行います。レビューはGemini Code Assist for GitHubを利用。AIによる開発自動化と、Issueをしっかり書くことによるドキュメント化のメリットを実感しています。
+
+---
+
+### [Claude 4プロンプトエンジニアリング完全ガイド：初心者から上級者まで](https://qiita.com/syukan3/items/70ed29a4403b83b35add)
+**Published:** 2025-05-31 23:32:01 UTC
 **Likes:** 1
-**Tags:** 評価指標, 生成AI, Claude, GPT-4o, gemini-2.5-flash
+**Tags:** AI, ChatGPT, LLM, prompt_engineering, Claude
 
 **Digest:**
-生成AIモデルの評価軸を探る実験として、水平思考クイズ「ウミガメのスープ」を様々なモデルで検証。Gemini 2.5 Flashが短時間で正解も、既知の可能性あり。GPT-4o miniは惜しい推論力、Claude 3.5 Haikuは曖昧ながら創造的モードで核心に迫る。人間の認知能力を測る新たな指標となりうる一方、AIが知らない問題での検証が今後の課題。
+次世代AIモデルClaude 4（Opus 4、Sonnet 4）の性能を引き出すプロンプトエンジニアリング解説。明確で具体的な指示、コンテキスト・例示の提供が重要。出力フォーマット制御や思考機能活用、段階的思考プロセス設計、コンテキスト階層化など高度なテクニックを紹介。曖昧な指示やコンテキスト不足に注意し、テンプレート活用でClaude 4を最大限に活用できる。
 
 ---
 
-### [AutoGen の SocietyOfMindAgent によるネスト型マルチエージェント構成(GraphFlow)](https://qiita.com/nohanaga/items/50e973cb9ed3cc2a7436)
-**Published:** 2025-05-30 07:21:43 UTC
+### [Google Colabで購入履歴RAGシステムを構築【OpenAI API + FAISS】](https://qiita.com/kira33/items/3467f9a7acf239bfafd9)
+**Published:** 2025-05-31 20:06:56 UTC
 **Likes:** 1
-**Tags:** Microsoft, OpenAI, AutoGen
+**Tags:** データ分析, AI, GoogleColaboratory, rag, LLM
 
 **Digest:**
-AutoGen v0.5.6のGraphFlowで、マルチエージェント構成の複雑なワークフローを構築。小説家、批判・肯定的評価チーム、要約エージェントを組み合わせ、RoundRobinGroupChatとSocietyOfMindAgentを駆使して、異世界転生小説の執筆と評価を行う。並行ファンアウト/インや、集約結果に基づくLLM生成も実現。自律性とワークフローの融合で、多様な可能性を模索。
+UdemyのRAG実装講座を基に、購入履歴検索・分析システムをGoogle Colabで構築。OpenAI APIとFAISSを活用し、ベクトル化とセマンティック検索で関連情報を抽出、gpt-3.5-turboで回答生成。サンプルデータで動作確認し、約0.5円の低コストを実現。今後はAmazon購入履歴への応用を目指す。
 
 ---
 
-### [Geminiで人形を使う魔法少女を描いてみた。](https://qiita.com/nori-channel/items/a868f9ae648e4c25ca49)
-**Published:** 2025-05-31 05:42:42 UTC
-**Likes:** 0
-**Tags:** Gemini
+### [Claude Code を AWS Bedrock とプロファイル指定で活用する方法](https://qiita.com/syukan3/items/a307d1ede930f59ab5af)
+**Published:** 2025-05-31 13:30:04 UTC
+**Likes:** 1
+**Tags:** AWS, bedrock, LLM, Claude, ClaudeCode
 
 **Digest:**
-Geminiで魔法少女イラストを生成する試み。プロンプト「聖なる人形を使う魔法少女を描いてください」を実行し、結果として可愛らしいイラストが得られた。Geminiによる画像生成の可能性を示唆し、何かの役に立てばという期待が込められたシンプルなまとめです。
-
----
-
-### [Snowflake経由でClaudeのTool Useを試す](https://qiita.com/abe_masanori/items/62e9e0f9bb157141310d)
-**Published:** 2025-05-31 03:34:07 UTC
-**Likes:** 0
-**Tags:** Snowflake, Claude, AIエージェント
-
-**Digest:**
-Snowflake CortexのAnthropic ClaudeでTool Use機能の動作確認を実施。日本語での質問では外部ツールが実行されず、結果に基づいた回答も得られなかった。`tool_choice`を`auto`にするとツールが選択されない、外部ツールの結果を`messages`に加えても上手くいかない。Snowflake版と本家のTool Useの違いも感じられ、まともに動いていないという結果になった。
+Anthropicのコマンドラインツール「Claude Code」をAmazon Bedrockで利用する方法を解説。Node.js、AWS CLI、Bedrock権限が前提。AWSプロファイルを作成し、環境変数を設定後、`AWS_PROFILE`を指定して実行。認証エラーやモデル指定の問題を解決し、Python APIクライアント作成など、実際の利用例も紹介。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Deploy Amazon SageMaker Projects with Terraform Cloud](https://aws.amazon.com/blogs/machine-learning/deploy-amazon-sagemaker-projects-with-terraform-cloud/)
-**Source:** AWS ML Blog
-**Published:** 2025-05-30 17:27:16 UTC
-**Tags:** Amazon SageMaker, Amazon SageMaker Data & AI Governance, Amazon SageMaker Studio, Technical How-to
+### [AI 時代の SharePoint, OneDrive, Teams におけるコンテンツガバナンスの最新情報](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/05/ai-sharepoint-o-c711.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-05-31 12:59:47 UTC
+**Tags:** Microsoft 365 - SharePoint, OneDrive / OneDrive for Business
 
 **Digest:**
-Amazon SageMaker ProjectsをTerraform Cloudで利用する方法を紹介。CloudFormationへの依存を排除し、AWS Service Catalog Engine for Terraform Cloudを活用します。必要なAWSアカウント設定やTerraform Cloudの準備、GitHubリポジトリからのテンプレート利用手順を解説。Terraformのみでカスタムプロジェクトテンプレートをデプロイし、SageMaker Studioからプロジェクト作成可能になります。
-
----
-
-### [How ZURU improved the accuracy of floor plan generation by 109% using Amazon Bedrock and Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/how-zuru-improved-the-accuracy-of-floor-plan-generation-by-109-using-amazon-bedrock-and-amazon-sagemaker/)
-**Source:** AWS ML Blog
-**Published:** 2025-05-30 17:18:24 UTC
-**Tags:** Amazon Bedrock, Amazon SageMaker, Customer Solutions
-
-**Digest:**
-ZURU Techは、建築設計プラットフォームDreamcatcherで、LLMを活用したテキストからの間取り図生成を開発。AWSとの協業で、自然言語からの間取り図生成を実現、Prompt EngineeringやLlama 3BでのFine-tuningを試行。評価フレームワークで精度を検証し、Claude 3.5 SonnetによるPrompt Engineering、Llama 3.1 8BのFull Fine-tuningで精度向上を確認。
-
----
-
-### [Going beyond AI assistants: Examples from Amazon.com reinventing industries with generative AI](https://aws.amazon.com/blogs/machine-learning/going-beyond-ai-assistants-examples-from-amazon-com-reinventing-industries-with-generative-ai/)
-**Source:** AWS ML Blog
-**Published:** 2025-05-30 17:10:35 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Machine Learning, Artificial Intelligence, Generative AI, Retail
-
-**Digest:**
-Amazonは、Amazon RufusやAmazon Seller Assistantのような会話型アシスタントに加え、大規模な業務効率化を実現する非会話型生成AIを活用。**商品リスト作成やAmazon Pharmacyでの処方箋処理、レビューの要約、広告クリエイティブ**など、様々な分野でLLM（大規模言語モデル）を活用し、顧客体験を向上させています。AWSのサービスを活用し、高品質な結果とコスト効率を両立しています。
-
----
-
-### [Architect a mature generative AI foundation on AWS](https://aws.amazon.com/blogs/machine-learning/architect-a-mature-generative-ai-foundation-on-aws/)
-**Source:** AWS ML Blog
-**Published:** 2025-05-30 17:02:37 UTC
-**Tags:** Best Practices, Generative AI, Intermediate (200), Thought Leadership
-
-**Digest:**
-生成AIアプリケーション構築には複雑なワークフロー、安全対策、運用基盤が不可欠。 企業は、開発の効率化、リスク軽減、コスト最適化のため、基盤をサービスとして提供する「ジェネレーティブAIプラットフォーム」を導入。Hub、Gateway、Orchestrationなどの主要コンポーネントで構成され、Centralized、Decentralized、Federatedの運用モデルに対応し、GenAIOpsによる運用も重要です。
-
----
-
-### [Using Amazon OpenSearch ML connector APIs](https://aws.amazon.com/blogs/machine-learning/using-amazon-opensearch-ml-connector-apis/)
-**Source:** AWS ML Blog
-**Published:** 2025-05-30 15:57:21 UTC
-**Tags:** Amazon Comprehend, Amazon OpenSearch Service, Amazon Titan, Intermediate (200), Technical How-to
-
-**Digest:**
-Amazon OpenSearch でのデータ拡張のため、Amazon Comprehend を使った言語検出や、Amazon Bedrock の Titan Text Embeddings v2 を使った埋め込み作成とセマンティック検索を実装する方法を紹介。必要な IAM ロール設定や、OpenSearch ML コネクタの設定、Ingest Pipeline を用いたデータ処理の詳細を解説。SageMaker ノートブックでデモ実行可能。
-
----
-
-### [Microsoft 365 Copilot の新機能 | 2025 年 5 月](https://blogs.windows.com/japan/2025/05/30/whats-new-in-microsoft-365-copilot-may-2025/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-05-30 07:58:41 UTC
-**Tags:** Copilot, What's new in Copilot
-
-**Digest:**
-5月版Microsoft 365 Copilot最新情報：**Copilotアプリ**更新、**Create**エクスペリエンス、**Copilot Notebooks**が一般提供開始。**Microsoft Purview DLP**機能拡張、**Copilot Analytics**統合、**Copilot Chat**安全強化。**OneNote**や**Word**、**Outlook**での新機能も。管理者は**エージェント管理**や**メッセージ消費レポート**で利用状況を把握可能。
+Microsoft 365 Community Conference 2024 がラスベガスで開催。5月初旬、Power Platform、Microsoft Teams、SharePoint などの最新情報が発表されました。AI 関連の機能強化や、開発者向けのセッションも充実し、多くの参加者が活発に情報交換を行いました。
 
 ---
