@@ -1,68 +1,68 @@
-# AI Tech Trends Digest (2025-06-01)
+# AI Tech Trends Digest (2025-06-02)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [NotebookLM×Claude×draw.ioでkintone営業支援パックの構成図を自動生成してみた](https://qiita.com/kanekoh/items/a323409d28a68254484e)
-**Published:** 2025-05-31 13:47:56 UTC
+### [年間1億円の損失を防いだLLMガードレール技術！【大手企業が隠したがるAIリスクの安全対策】](https://qiita.com/ryosuke_ohori/items/8d746209a4179758f661)
+**Published:** 2025-06-02 01:42:06 UTC
 **Likes:** 7
-**Tags:** kintone, Draw.io, Claude, NotebookLM
+**Tags:** Python, AI, リスク管理, LLM, Guardrails
 
 **Digest:**
-kintone営業支援パックのシステム構成図を、NotebookLMとClaudeを使いdraw.ioで自動生成する試みを報告。NotebookLMでkintoneヘルプ情報をまとめ、Claudeでdraw.io用XMLを生成。draw.ioに貼り付ければ図が完成。構成要素や関係性を可視化し、効率的な図作成に役立つ。アイコンも使用し分かりやすく、微調整で完成度を高められる。
+LLMの安全性を確保する「ガードレール」について、株式会社ulusageの生成AIが解説。ガードレールは入力検証と出力フィルタリングがあり、リスクを低減し、コンプライアンス、運用コスト削減、開発速度向上、顧客満足度向上に貢献。Guardrails AIとNVIDIA NeMo Guardrailsの比較、有害コンテンツ検出バリデータの実装方法を紹介。
 
 ---
 
-### [Claude CodeにIssueのタスクを遂行→PRの作成まで行なってもらう](https://qiita.com/getty104/items/e706923b66f4659dec24)
-**Published:** 2025-06-01 00:37:34 UTC
-**Likes:** 3
-**Tags:** LLM, Claude, AIエージェント, ClaudeCode, バイブコーディング
-
-**Digest:**
-Claude Codeを用いて、IssueからPR作成までを自動化するワークフローを構築。GitHub CLIを導入し、`/user:exec-issue ISSUE番号`で実行できるカスタムコマンドを定義。Issue内容を理解し、ブランチ作成、タスク実行、テスト追加、PR作成までを行います。レビューはGemini Code Assist for GitHubを利用。AIによる開発自動化と、Issueをしっかり書くことによるドキュメント化のメリットを実感しています。
-
----
-
-### [Claude 4プロンプトエンジニアリング完全ガイド：初心者から上級者まで](https://qiita.com/syukan3/items/70ed29a4403b83b35add)
-**Published:** 2025-05-31 23:32:01 UTC
+### [PythonのLLMをopenllmetryで計測する (GCP Cloud Trace)](https://qiita.com/nakamasato/items/924cbd781f3457fdff62)
+**Published:** 2025-06-02 00:34:23 UTC
 **Likes:** 1
-**Tags:** AI, ChatGPT, LLM, prompt_engineering, Claude
+**Tags:** Python, GoogleCloud, LLM, openllmetry, traceloop
 
 **Digest:**
-次世代AIモデルClaude 4（Opus 4、Sonnet 4）の性能を引き出すプロンプトエンジニアリング解説。明確で具体的な指示、コンテキスト・例示の提供が重要。出力フォーマット制御や思考機能活用、段階的思考プロセス設計、コンテキスト階層化など高度なテクニックを紹介。曖昧な指示やコンテキスト不足に注意し、テンプレート活用でClaude 4を最大限に活用できる。
+LLMアプリのレイテンシ増大に対応するため、OpenTelemetryベースのObservabilityツール「openllmetry」を紹介。Flaskアプリに導入することで、LLM呼び出しをTracingできます。DatadogやGoogle Cloud等のExporterに対応し、Tracing、Metrics、Loggingを連携。OpenAI、Anthropic、LangChain、LangGraphの呼び出しも自動計装され、Cloud Traceで可視化されます。
 
 ---
 
-### [Google Colabで購入履歴RAGシステムを構築【OpenAI API + FAISS】](https://qiita.com/kira33/items/3467f9a7acf239bfafd9)
-**Published:** 2025-05-31 20:06:56 UTC
+### [GeminiとDiscordで好きなキャラクターのAIを作って会話しよう](https://qiita.com/nekono84/items/979deab0586a2ba1400d)
+**Published:** 2025-06-01 06:56:05 UTC
 **Likes:** 1
-**Tags:** データ分析, AI, GoogleColaboratory, rag, LLM
+**Tags:** Python, AI, discord, Gemini, 生成AI
 
 **Digest:**
-UdemyのRAG実装講座を基に、購入履歴検索・分析システムをGoogle Colabで構築。OpenAI APIとFAISSを活用し、ベクトル化とセマンティック検索で関連情報を抽出、gpt-3.5-turboで回答生成。サンプルデータで動作確認し、約0.5円の低コストを実現。今後はAmazon購入履歴への応用を目指す。
+AIでゲームやアニメの**キャラクター**になりきって会話する試みを紹介。Google Gemini APIとDiscord Botを連携し、Pythonで実装。**キャル**（プリンセスコネクト）を例に、キャラクター設定をAIに与え、会話を実現。Groqなどを使い、キャラクターの情報を収集。著作権に注意し、非営利での個人利用を推奨しています。
 
 ---
 
-### [Claude Code を AWS Bedrock とプロファイル指定で活用する方法](https://qiita.com/syukan3/items/a307d1ede930f59ab5af)
-**Published:** 2025-05-31 13:30:04 UTC
-**Likes:** 1
-**Tags:** AWS, bedrock, LLM, Claude, ClaudeCode
+### [ROS2 × LangChain で「自然言語で絵を描く」AI エージェントを作ってみた 🐢](https://qiita.com/Sorge_255_ipo/items/c54eabdd4d45b76b642f)
+**Published:** 2025-06-02 04:56:05 UTC
+**Likes:** 0
+**Tags:** ROS, turtlesim, LangChain, LLM, AIエージェント
 
 **Digest:**
-Anthropicのコマンドラインツール「Claude Code」をAmazon Bedrockで利用する方法を解説。Node.js、AWS CLI、Bedrock権限が前提。AWSプロファイルを作成し、環境変数を設定後、`AWS_PROFILE`を指定して実行。認証エラーやモデル指定の問題を解決し、Python APIクライアント作成など、実際の利用例も紹介。
+ROS 2 の TurtleSim を自然言語で操作する AI エージェント「turtlesim_agent」を解説。LLMとLangChainのAgent機構を活用し、「正三角形を描いて」といった指示でカメを動かし図形を描画。Python関数群（移動、描画、計算等）をツールとしてLLMに渡し、思考・実行を実現。ツール定義の具体例として、移動距離を指定する`make_move_linear_tool`を紹介。コードはGitHubで公開。
+
+---
+
+### [KonnectのAI ManagerでLLMの利用状況を可視化する](https://qiita.com/ipppppei/items/b6f525df80eb1af5635a)
+**Published:** 2025-06-02 04:51:06 UTC
+**Likes:** 0
+**Tags:** Kong, KongGateway, LLM, konnect
+
+**Digest:**
+Kong KonnectのAI Managerがリリースされ、API Gateway経由でのLLM利用を簡単に設定、可視化、分析可能に。OpenAIやCohereなどのLLMプロバイダーを登録し、経路や認証を設定することで利用を開始。トラフィック、トークン数、エラー率、利用者の分析が可能で、Consumer単位でのアクセス状況も確認できます。設定変更は手動が必要ですが、LLMの利用管理に役立ちそうです。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [AI 時代の SharePoint, OneDrive, Teams におけるコンテンツガバナンスの最新情報](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/05/ai-sharepoint-o-c711.html)
-**Source:** SharePoint Technical Notes
-**Published:** 2025-05-31 12:59:47 UTC
-**Tags:** Microsoft 365 - SharePoint, OneDrive / OneDrive for Business
+### [【Exchange Online】ユーザーメールボックスを共有メールボックスへ変換する方法と注意点](https://blog.jbs.co.jp/entry/2025/06/02/111856)
+**Source:** JBS Blog
+**Published:** 2025-06-02 02:18:56 UTC
+**Tags:** Exchange Online, Tech
 
 **Digest:**
-Microsoft 365 Community Conference 2024 がラスベガスで開催。5月初旬、Power Platform、Microsoft Teams、SharePoint などの最新情報が発表されました。AI 関連の機能強化や、開発者向けのセッションも充実し、多くの参加者が活発に情報交換を行いました。
+Microsoft Exchange Onlineの共有メールボックスは、複数ユーザーでのメール共有を可能にし、共同作業を効率化します。ユーザーメールボックスを共有メールボックスへ変換することも可能で、本記事ではその手順と注意点を解説。変換方法や、変換前に確認すべきポイントを理解し、スムーズな移行を目指しましょう。
 
 ---
