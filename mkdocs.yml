@@ -11,6 +11,7 @@ nav:
   - News Feed:
     - Overview: news/index.md
   - Archive:
+    - '-2025-06-03': archive/202506.md
     - '2025-05-19': archive/AI-Tech-Trends-Digest-20250519.md
   - Microsoft:
     - 'Build 2025': archive/Build-2025.md
