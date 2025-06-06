@@ -1,56 +1,56 @@
-# AI Tech Trends Digest (2025-06-05)
+# AI Tech Trends Digest (2025-06-06)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Gemini x Stitchを使って、デザインセンス皆無の男がイケてるUI生成の限界に挑戦してみる](https://qiita.com/zawatti/items/aa761adbb4829c0f89d4)
-**Published:** 2025-06-04 23:58:24 UTC
-**Likes:** 5
-**Tags:** UI, Gemini, 生成AI, Sticth, nolimit
+### [【Node.js】 OpenAI Agents SDK の TypeScript版で MCPサーバーのツールを使う](https://qiita.com/youtoy/items/c2215b5bf2c903fc62bc)
+**Published:** 2025-06-05 16:10:13 UTC
+**Likes:** 1
+**Tags:** JavaScript, Node.js, MCP, OpenAI, OpenAIAgentsSDK
 
 **Digest:**
-GoogleのUI生成ツール「Stitch」で非デザイナーがUI生成に挑戦。Geminiとの壁打ちで「イケてるUI」の定義を深め、ユーザーの目的を明確化。枕販売サイトのUIをStitchで生成し、トップページと商品詳細ページを作成。V0でも試すと指示に従ったUIが生成され、AIとの協働でイケてるUIの要件定義が成功した。
+OpenAIのTypeScript版 Agents SDKとMCPサーバーを組み合わせた試用記事。既存のPython版SDKとの比較や、公式サンプルを参考に、ファイルシステム操作を試行。ファイル作成、内容の要約など指示通り動作し、成功。プロンプトの工夫で精度向上も。GPT-4oなどの新モデルも試したい。
 
 ---
 
-### [PythonとOpenAI APIで実践！はじめてのMCP開発入門【第16回】Python x OpenAI APIで個人情報・機密データを扱うためのセキュリティ実装5選](https://qiita.com/QueryPie/items/03b575921448fdc1c7a3)
-**Published:** 2025-06-04 14:56:02 UTC
-**Likes:** 5
+### [PythonとOpenAI APIで実践！はじめてのMCP開発入門【第17回】もう怖くない！OpenAI APIのレートリミット(429エラー)をPythonで華麗にかわす方法](https://qiita.com/QueryPie/items/189b9b222ae07b31dc3d)
+**Published:** 2025-06-05 14:42:44 UTC
+**Likes:** 1
 **Tags:** Python, AI, MCP, LLM, ModelContextProtocol
 
 **Digest:**
-PythonとOpenAI APIを用いたAIアプリ開発のセキュリティについて解説。個人情報保護法を意識し、データマスキングや仮名化による無害化、コンテキスト管理でのデータ最小化、OpenAIのオプトアウト申請やAzure OpenAIの検討を推奨。APIキーをサーバーサイドで管理し、ロギングと異常検知も重要。最終チェックリストも提示し、安全なAI開発を促しています。
+OpenAI APIのレートリミット対策として、PythonとOpenAI APIを用いた実践的なテクニックを解説。第17回では、429エラーへの対応として、エクスポネンシャルバックオフとジッターを実装、リトライストームを回避する戦略を紹介。APIの利用上限確認やキューイング、非同期処理、キャッシュ活用など、設計上の工夫も提示。次回はGPTモデルの最適化について。
 
 ---
 
-### [MCP Servers (Figma & Github & FileSystem) による 新たな"Figma To Flutter"](https://qiita.com/eno49conan/items/8435128f6632db69836f)
-**Published:** 2025-06-04 10:42:02 UTC
-**Likes:** 4
-**Tags:** AI, Flutter, MCP, Figma, Claude
+### [エージェントの構築パート2: DatabricksとOpenAI Agents SDKを用いたマルチエージェントアプリケーションの構築とデプロイ](https://qiita.com/taka_yayoi/items/43ce628d2b97e5c1f094)
+**Published:** 2025-06-06 05:31:21 UTC
+**Likes:** 0
+**Tags:** マルチエージェントシステム, OpenAI, Databricks, エージェント
 
 **Digest:**
-MCP（Model Context Protocol）を活用し、Figma、Github、ローカルファイルシステムを連携させる開発フローを構築。Claude DesktopでFigma UIを基にFlutterコードを生成し、Github Issueを参照してローカルファイルを更新。開発初期は指示不足で課題も、詳細指示とGithub MCP導入で改善。FigmaとGithub設定後、簡潔な指示でコード生成に成功。
+DatabricksとOpenAIを活用したマルチエージェントアプリ構築を紹介。単一エージェントの限界を克服し、**データインテリジェンス**と**マーケットインテリジェンス**を組み合わせ、連携するマルチエージェントシステムを構築。トリアージ、エンタープライズ、マーケットの各エージェントが協調し、複雑な質問に対応。CLIツールとStreamlitアプリでアクセス可能。**代理認証**によりデータガバナンスを強化、企業データへの安全なアクセスを実現。
 
 ---
 
-### [【Node.js】 OpenAI Agents SDK の TypeScript版で Hello World とサンプルを軽く試す](https://qiita.com/youtoy/items/0972e1f4ba5213f76cb1)
-**Published:** 2025-06-04 16:04:31 UTC
-**Likes:** 2
-**Tags:** JavaScript, Node.js, OpenAI, AIエージェント, OpenAIAgentsSDK
+### [LLMが「勝手に創作」してしまう問題とStructured Outputによる制御術](https://qiita.com/_shun/items/a1bee37843a15f182430)
+**Published:** 2025-06-06 04:35:10 UTC
+**Likes:** 0
+**Tags:** pydantic, データ品質, LLM, システム統合, StructuredOutputs
 
 **Digest:**
-OpenAI Agents SDK の TypeScript版を試した話。まず、公式ポストと日本語対応のドキュメントを紹介。Python版の経験を踏まえ、TypeScript版で「Hello World」を実行し、`@openai/agents` をインストール。APIキー設定後、サンプルコードで俳句作成を試みる。さらに、github のサンプルから関数を使った例を試し、東京とニューヨークの天気情報を取得。最終的に、TypeScript版の可能性を確認し、今後の試用を示唆している。
+LLMの創造性ゆえに生じる、意図しない出力やデータ形式の逸脱が問題に。Structured Outputという「出力の檻」を設け、JSON Schema等で形式を厳格に定義することで、データの整合性確保と品質管理を実現。PydanticとOpenAIの組み合わせが有効。パフォーマンスへの影響や、創造性が必要な場面との使い分けも重要。
 
 ---
 
-### [AI投資チャレンジ #01 - 30代エンジニアが100万を一億円にする話](https://qiita.com/aug/items/8b62dfe37c097355f0be)
-**Published:** 2025-06-04 13:57:39 UTC
-**Likes:** 2
-**Tags:** ポエム, AI, 生成AI, Claude, DeepResearch
+### [Microsoft  Clarity MCPサーバーをClaude Desktop for Macで使ってみる](https://qiita.com/hosaka_/items/dbe68c95a85d69ba7bca)
+**Published:** 2025-06-06 02:28:16 UTC
+**Likes:** 0
+**Tags:** Microsoft, MCP, GA4, Claude, ClaudeDesktop
 
 **Digest:**
-30代ITエンジニアaug氏が、AI投資で100万円を3年で1億円にする計画を開始。20代のFX失敗から学び、AI活用を決意。Claude 4を選び、Deep Researchでネットキャッシュ比率に着目した投資手法を構築。スクリーニングで23社の小型株を発見し、PCや証券口座を準備。AI分析と人間判断を組み合わせ、目標達成を目指す。
+Microsoft Clarityの無料Web分析ツールをClaude Desktopで活用する実験。Clarity MCPサーバーを導入し、APIトークン取得や設定を経て、メディア別流入分析に成功。しかし、特定ページの詳細分析は困難で、ClarityのAPI制約から複雑な分析は難しいと判明。GA4のMCPサーバー自作も示唆。
 
 ---
 
@@ -63,66 +63,96 @@ OpenAI Agents SDK の TypeScript版を試した話。まず、公式ポストと
 **Tags:** AI
 
 **Digest:**
-Googleが、生成AIなど最先端技術で社会課題解決を目指すイベント「The Beyond Series: Research@Tokyo」を開催。東京で、AIを活用した未来共創をテーマに研究開発を紹介しました。長年のAI研究を基盤とし、社会への貢献を展望。AIの可能性を広げ、未来を共創する取り組みを発信しました。
+本日、Googleは東京で「The Beyond Series」を開催し、生成AIなど最先端技術による社会課題解決への取り組みを発表しました。長年のAI研究を通じ、未来を共創するビジョンを提示。具体的には、AIを活用した研究開発の成果や、AIがもたらす可能性について議論されました。
 
 ---
 
-### [Impel enhances automotive dealership customer experience with fine-tuned LLMs on Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/impel-enhances-automotive-dealership-customer-experience-with-fine-tuned-llms-on-amazon-sagemaker/)
+### [Modernize and migrate on-premises fraud detection machine learning workflows to Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/modernize-and-migrate-on-premises-fraud-detection-machine-learning-workflows-to-amazon-sagemaker/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-04 21:20:47 UTC
-**Tags:** Amazon SageMaker AI, Customer Solutions, Intermediate (200)
+**Published:** 2025-06-05 16:40:32 UTC
+**Tags:** Amazon SageMaker, Amazon SageMaker AI, Amazon SageMaker Autopilot, Artificial Intelligence, Customer Solutions, Experience-Based Acceleration
 
 **Digest:**
-Impelは、自動車販売向けAIソリューション「Sales AI」で顧客体験を向上。Amazon SageMaker AIでMeta Llamaモデルをファインチューニングし、精度20%向上とコスト削減を実現。SageMaker LMIコンテナ、AWQ、LoRAを活用し、顧客との対話の要約、フォローアップ、パーソナライズされた応答を強化。より安全でカスタマイズ可能なドメイン特化型モデルへの移行を成功させ、AIの活用を拡大しています。
+Radialは、3PL大手で、Amazon SageMakerを活用し、不正検知MLワークフローをモダナイズしました。オンプレミス環境の課題、スケーラビリティとメンテナンスの難しさを解決するため、AWSのEBAプログラムを通じてMLOpsを構築。SageMakerとCI/CDパイプラインにより、モデル開発・デプロイ時間を大幅短縮し、不正検知の進化に迅速に対応できるようになりました。
 
 ---
 
-### [How climate tech startups are building foundation models with Amazon SageMaker HyperPod](https://aws.amazon.com/blogs/machine-learning/how-climate-tech-startups-are-building-foundation-models-with-amazon-sagemaker-hyperpod/)
+### [Contextual retrieval in Anthropic using Amazon Bedrock Knowledge Bases](https://aws.amazon.com/blogs/machine-learning/contextual-retrieval-in-anthropic-using-amazon-bedrock-knowledge-bases/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-04 16:07:46 UTC
-**Tags:** Best Practices, Responsible AI, Startup, Sustainability
+**Published:** 2025-06-05 16:30:55 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon Machine Learning, Foundation models, Generative AI, Intermediate (200)
 
 **Digest:**
-気候変動問題に取り組むClimate techスタートアップは、温室効果ガス削減や適応策に特化した技術革新で持続可能な社会を目指す。2024年の気候災害による被害額は4170億ドルを超え、生成AIを活用しFoundation Model（FM）を開発。AWSのSageMaker HyperPodは、大規模データ処理を高速化し、Orbital MaterialsやHum.AIなどが活用。気候予測、新素材開発、生態系分析などで、時間とコストを削減しながら革新的なソリューションを生み出している。
+Amazon BedrockでのRAG改善手法を紹介。従来のRAGの課題であるコンテキストの喪失を、AnthropicのClaudeを用いて解決。カスタムチャンキングで各チャンクにコンテキスト情報を付与し、より正確な情報 retrieval を実現。RAGASフレームワークで性能を評価し、デフォルトと比較、改善効果を検証しています。
 
 ---
 
-### [Supercharge your development with Claude Code and Amazon Bedrock prompt caching](https://aws.amazon.com/blogs/machine-learning/supercharge-your-development-with-claude-code-and-amazon-bedrock-prompt-caching/)
+### [Run small language models cost-efficiently with AWS Graviton and Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/run-small-language-models-cost-efficiently-with-aws-graviton-and-amazon-sagemaker-ai/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-04 16:04:04 UTC
-**Tags:** Amazon Bedrock, Artificial Intelligence, Foundation models, Generative AI, Technical How-to
+**Published:** 2025-06-05 16:16:20 UTC
+**Tags:** Amazon SageMaker, Amazon SageMaker AI, Graviton
 
 **Digest:**
-Amazon Bedrockのプロンプトキャッシングが一般公開され、AIコーディングアシスタントClaude Codeと組み合わせることで、高速なレスポンスとコスト削減を実現。Claude Codeはコードの記述、修正、テスト実行などを効率化し、プロンプトキャッシングにより、大規模コードベースでの繰り返し作業のコストと時間を大幅に削減。また、MCPとの連携で、開発環境に合わせたカスタマイズも可能。
+Amazon SageMaker AIは、LLMを低コストで実行するため、Gravitonプロセッサ搭載のインスタンスをサポート。CPUハードウェアの革新により、小規模LLMのホスティングが可能に。Llama.cppを使い、ARM64アーキテクチャ対応のDockerコンテナを構築、GGUF形式モデルをデプロイ。パフォーマンス最適化には、バッチ処理やプロンプトキャッシングが有効です。
 
 ---
 
-### [リサーチツール および アナリスト が、Microsoft 365 Copilot において一般提供開始となりました。](https://blogs.windows.com/japan/2025/06/05/researcher-and-analyst-are-now-generally-available-in-microsoft-365-copilot/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-06-05 04:04:53 UTC
-**Tags:** Copilot, Analyst
+### [The latest AI news we announced in May](https://blog.google/technology/ai/google-ai-updates-may-2025/)
+**Source:** Google DeepMind
+**Published:** 2025-06-05 18:30:00 UTC
+**Tags:** Search, Android, Google One, Google Ads, Google DeepMind, Google Labs, Shopping, Gemini, AI, Gemini App
 
 **Digest:**
-Microsoft 365 Copilot向けに、業務特化の推論エージェント「リサーチツール」と「アナリスト」が一般提供開始されました。複雑な調査やデータ分析を数分で完了可能にし、OpenAIのモデルを活用しています。Microsoft 365 Copilotライセンス所有者は、両ツールを月最大25件のクエリで利用できます。利用開始は簡単で、サンプルプロンプトも用意されています。
+Googleは2025年5月、AI分野で最新アップデートを発表しました。具体的な内容は不明ですが、AI技術の進展を示す重要な動きです。GoogleのAI戦略や、今後提供されるであろう新機能に注目が集まっています。今後の動向から目が離せません。
 
 ---
 
-### [Snowflake Summit 2025 現地レポート Day3](https://blog.jbs.co.jp/entry/2025/06/05/132608)
+### [TDEを有効にしたデータベースを別マシンで復元する](https://blog.jbs.co.jp/entry/2025/06/06/143258)
 **Source:** JBS Blog
-**Published:** 2025-06-05 04:26:08 UTC
-**Tags:** Snowflake, dbt
+**Published:** 2025-06-06 05:32:58 UTC
+**Tags:** SQLデータベース, SQL Server, RDBMS
 
 **Digest:**
-Snowflake Summit 2024現地レポート、Data＆AI事業部の谷尾がお届けします。3日目は、Capital OneによるApache Iceberg活用や、Cortex AISQL、Native Semantic Viewsなど高度な分析に関する新機能発表がありました。熱気に溢れる会場の様子や、Keynote、ランチの様子も報告します。
+TDE（透過的データ暗号化）を有効にしたデータベースを、別のマシンで復元しようとしたところ、通常の手順ではうまくいかない問題が発生しました。原因を調査した結果、TDE有効時の復元には特別な手順が必要だと判明しました。
 
 ---
 
-### [Snowflake Summit 2025 現地レポート Day2](https://blog.jbs.co.jp/entry/2025/06/04/192910)
+### [Teamsアプリの管理方法が“アプリ中心”へ ─ 管理者が押さえておきたい設定と統合管理のメリット](https://blog.jbs.co.jp/entry/2025/06/06/101104)
 **Source:** JBS Blog
-**Published:** 2025-06-04 10:29:10 UTC
-**Tags:** snowflake
+**Published:** 2025-06-06 01:11:04 UTC
+**Tags:** Microsoft Teams, Microsoft 365, Tech
 
 **Digest:**
-Snowflake Summit 2025 in サンフランシスコ現地レポート。Data&AI事業部の和村氏が参加し、6/2-5の4日間で開催中。500以上のセッションと190以上のパートナーが集結する大規模イベントです。2日目の様子を伝えます。Platform Keynoteや、ANOMALIES、ADAPTIVE COMPUTE、SIMPLIFIED INGEST、PRICING、SNOWFLAKE HORIZONなどのキーワードが並び、今後のSnowflakeの進化に期待が高まります。
+Microsoft Teamsアプリ管理が進化！アプリ中心管理で変更点や新機能が登場。Microsoft 365アプリとの統一管理も実現し、Teamsアプリの効率的な運用が可能に。今後は、Teamsアプリの管理が一層スムーズになるでしょう。
+
+---
+
+### [【Microsoft×生成AI連載】【SharePoint】ページ作成機能を試してみた](https://blog.jbs.co.jp/entry/2025/06/06/090303)
+**Source:** JBS Blog
+**Published:** 2025-06-06 00:03:03 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載, SharePoint
+
+**Digest:**
+Microsoft SharePoint OnlineでCopilotのページ作成機能を試用した連載記事です。テンプレートまたはプロンプトからページを作成し、その利用シーン、メリット、注意点を解説しています。過去の連載記事へのリンクもあり、SharePointでのCopilot活用法が網羅的に紹介されています。
+
+---
+
+### [Azure Red Hat Enterprise Linux 仮想マシン導入ポイント～その１～](https://blog.jbs.co.jp/entry/2025/06/05/163208)
+**Source:** JBS Blog
+**Published:** 2025-06-05 07:32:08 UTC
+**Tags:** Azure, Linux, RHEL
+
+**Digest:**
+Azure上のRHEL VMは、**Red Hat** のライセンスとサポートが利用可能です。**カスタマーポータル** からの情報収集や、**Red Hat Insights** によるシステム状態の確認が重要です。これらツールを活用することで、デプロイ後の運用を効率化し、安定稼働を実現できます。
+
+---
+
+### [Azure OpenAI Serviceのモデルルーターについて](https://blog.jbs.co.jp/entry/2025/06/05/150734)
+**Source:** JBS Blog
+**Published:** 2025-06-05 06:07:34 UTC
+**Tags:** AI, Azure, Azure OpenAI, LLM, Tech, 生成AI, 大規模言語モデル
+
+**Digest:**
+Azure OpenAI Serviceのモデルルーター機能を試用した記録です。この機能は、複数のモデルの中から最適なモデルを自動選択し、タスク実行を効率化します。記事では、モデルルーターの構成方法や具体的な利用例、得られた知見などを中心に解説します。
 
 ---
