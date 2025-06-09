@@ -1,55 +1,78 @@
-# AI Tech Trends Digest (2025-06-08)
+# AI Tech Trends Digest (2025-06-09)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [CursorのRuleTypeとは？](https://qiita.com/OtsukaTomoaki/items/b363de543251b11b3d98)
-**Published:** 2025-06-07 07:14:21 UTC
+### [ChatGPTに「U理論で整理して」と言ってみたら、開発の視点が変わった件](https://qiita.com/dnp_wada/items/7705c86e191cc432d40b)
+**Published:** 2025-06-08 08:00:28 UTC
+**Likes:** 3
+**Tags:** 開発プロセス, 開発手法, LLM, プロンプトエンジニアリング, U理論
+
+**Digest:**
+エンジニアが本質的な開発を行うために、MITのU理論が有効です。コールセンター業務での生成AI活用を例に、既存手法では効率化に留まる一方、U理論に基づくと、顧客体験や組織文化の変革、人間の役割再定義といった深い利活用が可能になるという内容です。プロンプトに「U理論で整理を」と加えるだけで、AIの回答も変わることを示唆しています。
+
+---
+
+### [Claude Code×JetBrains IDE「最強のふたり」](https://qiita.com/nattogohan123/items/012501ae645a340931e4)
+**Published:** 2025-06-09 03:17:51 UTC
 **Likes:** 1
-**Tags:** プログラミング, AI, cursor, LLM, cline
+**Tags:** Ruby, Python, JetBrains, AI, Claude
 
 **Digest:**
-CursorのAIコーディングエディタ、そのルール機能（Rule）解説。プロジェクトごとのコーディング規約をAIに指示するテンプレートで、`.mdc`ファイルで記述。Rule Typeは4種類あり、適用タイミングを制御可能。Always、Auto Attached、Agent Requested、Manualを使い分け、AIの挙動を細かくカスタマイズすることで、AIとの開発をより効率的に行えます。
+JetBrains公式代理店NATTOSYSTEMが、AIコーディングアシスタント「Claude Code」とJetBrains IDEの連携を紹介。Claude Codeは、**200Kトークン**対応のコード特化AIで、自然言語からのコード生成、多言語対応が特徴です。**JetBrains IDE**との相性が良く、プラグインインストールとショートカットで起動。IDEの診断情報共有や差分表示など、効率的なコーディングを支援。
 
 ---
 
-### [Claude APIとGitHub Actionsでコードレビューを自動化してみた](https://qiita.com/zumax/items/052f7de0930e1dcdea96)
-**Published:** 2025-06-08 04:55:40 UTC
-**Likes:** 0
-**Tags:** CICD, GitHubActions, Claude
+### [【LLM運用最前線】Fine-tuningで崩れる安全ガードレールを防ぐ実践ガイド](https://qiita.com/ke-suke-Soft/items/703d5779178daf8fd87a)
+**Published:** 2025-06-08 16:05:07 UTC
+**Likes:** 1
+**Tags:** ファインチューニング, LLM, データ類似度
 
 **Digest:**
-AnthropicのClaude APIとGitHubを統合し、コードレビューなどを自動化。Claude Code GitHub Actionsを使い、PR作成やIssueをコードに変換可能。CLAUDE.mdでコードスタイルや基準を定義し、APIキーはSecretsで管理。GitHub Actionsのコストに注意し、CI費用も考慮。
+2025年6月発表の論文「Why LLM Safety Guardrails Collapse After Fine-tuning」を解説。LLMの安全ガードレールは、Fine-tuning後に「脅威モデル」に基づき崩壊しやすく、特に「下流FTデータ」所有者による攻撃リスクを分析。類似度分析に基づき、計算複雑度とスケーラビリティ、Hugging Face Trainerでの実装連携、課題と運用ワークフロー強化策を提示しています。
 
 ---
 
-### [Google Prompting Essentialsまとめ 　生成AIから望む結果を得るためのプロンプト。](https://qiita.com/udkun/items/99b0a0e17d88defccce9)
-**Published:** 2025-06-08 03:57:03 UTC
-**Likes:** 0
-**Tags:** 初心者, Gemini, 生成AI, ChatGPT, 生成AIプロンプトエンジニア
+### [Claude Pro($20)プランでClaude Code並列バイブコーディングをやってみた](https://qiita.com/ko-hi-san/items/e06e76338b71027c9121)
+**Published:** 2025-06-08 12:50:02 UTC
+**Likes:** 1
+**Tags:** AI, Claude, AI駆動開発, ClaudeCode
 
 **Digest:**
-ChatGPTやGeminiなど生成AI普及で、プロンプトの書き方が重要に。Googleのガイドを基に、効果的なプロンプト構成を解説。**タスク（ペルソナ、形式指定）、コンテキスト（状況の詳細）、参照（関連情報）**を明示し、**反復（タスク分割、情報追加）**で改善。これらの視点を意識することで、AIとの協働をより良いものにすることが可能です。
+6/5にClaude ProプランでClaude Codeが利用可能になり、Git worktreeを使った並列開発を試した報告。Anthropic公式推奨のGit worktreeを活用し、複数ブランチで並列開発を実現。IDEにCursorとGit Worktree Managerを使用し、Claude Codeを起動。アカウント認証やターミナル設定を経て、複数のウィンドウで同時開発が可能に。今後はGitHub Issueへの対応や安定したコード作成に挑戦する。
 
 ---
 
-### [Geminiでネコと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/332030534b49afff8224)
-**Published:** 2025-06-08 01:15:48 UTC
-**Likes:** 0
-**Tags:** Gemini
+### [MastraとGeminiとMCPサーバでAIエージェントをサクッと作成する](https://qiita.com/poruruba/items/c9ba5461a69091ed6d87)
+**Published:** 2025-06-08 11:58:29 UTC
+**Likes:** 1
+**Tags:** Node.js, MCP, Gemini, AIエージェント, Mastra
 
 **Digest:**
-Geminiを使って、聖なるネコと遊ぶ魔法少女のイラストを生成した事例です。プロンプトは「聖なるネコと遊ぶ魔法少女を描いてください」で、生成された画像も公開。AIによる画像生成の試みとして、可愛らしい結果が得られました。何かの役に立てば幸いです。
+Mastraを用いて、チャット画面風のAIエージェントを構築する記事です。MCPサーバとMastraサーバ、Web API/Webページを連携させ、Google GeminiをAIプロバイダとして利用します。MCPサーバにはBrave SearchやGoogle Map APIを組み込み、WebアプリではMastraのClient-JSでAPIキーを指定してチャットを実現。Githubにソースコードが公開されています。
 
 ---
 
-### [llm](https://qiita.com/ikegami-t/items/d8a02ceeb7c592833fa5)
-**Published:** 2025-06-07 15:47:15 UTC
-**Likes:** 0
-**Tags:** LLM
+## Latest News from RSS Feeds
+
+
+### [App SDK更新による画面キャプチャブロックを回避する方法](https://blog.jbs.co.jp/entry/2025/06/09/135321)
+**Source:** JBS Blog
+**Published:** 2025-06-09 04:53:21 UTC
+**Tags:** intune, iOS, iPhone
 
 **Digest:**
-OLMo 2 32Bは、NVM Express (NVMe) Specification Revision 2.2に関する情報を提供。AIはPDFを直接読めないため、仕様書から情報を抽出し、C言語でのデータ構造を記述する方法を解説。特に、Get Ports Listのデータ構造を例に、GENCTRやNUMENTといったフィールドをC言語で表現するコード例を示唆しています。
+アプリSDK更新で画面キャプチャがブロックされる問題に対し、アプリ構成ポリシーで回避策を提示。画面キャプチャを妨げる動作を、アプリ構成ポリシーを適切に設定することで回避できます。詳細な手順は記事内で解説されています。
+
+---
+
+### [Copilot+PCのNPUを使ってLLMを動作させる手順](https://blog.jbs.co.jp/entry/2025/06/09/103347)
+**Source:** JBS Blog
+**Published:** 2025-06-09 01:33:47 UTC
+**Tags:** AI, Microsoft, 生成AI, NPU, Copilot+PC
+
+**Digest:**
+Copilot+ PC は、AI機能を強化したNPU搭載の高性能PC。ローカル環境でLLM（大規模言語モデル）を動かす手順を解説。本記事では、AMD Ryzen AI 9 HX 370搭載モデルでの実行方法を紹介。Lemonade SDK、AI Toolkit for VS Codeのインストール、カスタムモデルの実行など、具体的な手順を解説します。
 
 ---
