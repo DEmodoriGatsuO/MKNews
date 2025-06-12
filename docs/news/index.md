@@ -1,4 +1,4 @@
-# AI Tech Trends Digest (2025-06-11)
+# AI Tech Trends Digest (2025-06-12)
 
 
 ## Top Tech Articles from Qiita
@@ -6,51 +6,51 @@
 
 ### [OpenAI、最上位推論モデル「o3-pro」公開！ProユーザーとAPIから利用可能に！](https://qiita.com/ryosuke_ohori/items/359750938f984a6ff5e0)
 **Published:** 2025-06-11 09:39:57 UTC
-**Likes:** 7
+**Likes:** 8
 **Tags:** Python, AI, OpenAI, ChatGPT, LLM
 
 **Digest:**
-OpenAIの最新AIモデル、o3-proは、深い推論を重視したマルチモーダルモデル。20万トークンのコンテキストウィンドウとAPIを通じたツール連携が特徴。GPT-4.xや4oより高精度だが、高コストで遅延も。高度なコード生成や学術論文作成など、深い思考が求められる用途に最適。現時点では、ChatGPT Pro/Teamユーザーが利用可能。
+OpenAIの最新モデル「o3-pro」は、深い推論を重視したマルチモーダルモデル。20万トークンのコンテキストウィンドウとAPI連携ツールが特徴で、長い企画書やコード生成に有効です。RLによる学習で推論能力を高め、旧モデル比で約87%値下げも、コストは高め。APIアクセス可能で、複雑ビジネスロジック、コード生成、学術論文補助などに適しています。
 
 ---
 
-### [【入門】LLM + RAGを使って自社製品の質問に答えるAIを作ってみる](https://qiita.com/k_t_09099/items/f2a0ffb8576345a440f9)
-**Published:** 2025-06-10 13:36:58 UTC
+### [Dify: OCI Generative AIでRAGチャットボットを10分で作成してみる](https://qiita.com/yushibat/items/a661c29e8640224a7681)
+**Published:** 2025-06-12 02:36:04 UTC
+**Likes:** 5
+**Tags:** oracle, AI, oci, LLM, Dify
+
+**Digest:**
+Difyを使って、10分でRAGチャットボットを構築する方法を紹介。まず、チャットボットアプリを作成し、OCI Generative AIを利用できるようLLMを設定。APIキー設定後、ナレッジベースにドキュメントを登録し、チャットボットで参照するように設定します。最後にプロンプトを設定し、アプリを実行すると、登録ドキュメントを参照するチャットボットが完成します。
+
+---
+
+### [AI君が労ってくれるTodo管理アプリを作成しました。](https://qiita.com/07191970t/items/7634b8d64875a56cd37a)
+**Published:** 2025-06-11 15:31:35 UTC
+**Likes:** 4
+**Tags:** codepen, Gemini, ChatGPT, Dify
+
+**Digest:**
+小売業のtakuma氏が、多忙な業務を効率化するため、**ChatGPT**と**Dify**を活用した**Todo管理アプリ**を開発。ChatGPTでプロトタイプを**簡単**に作成し、Dify連携でAIによるタスク優先度指示機能を追加。**HTMLファイル**で動作させ、AIが労いの言葉を添えて上位5件を表示。今後はUI改善やプロンプト設計を深化させ、新たな**チャレンジ**を続ける。
+
+---
+
+### [AI投資チャレンジ #02 調査選別編 - 30代エンジニアが100万を一億円にする話](https://qiita.com/aug/items/5bbc2d51d65490c0506a)
+**Published:** 2025-06-11 11:31:40 UTC
 **Likes:** 2
-**Tags:** Python, rag, 生成AI, LLM
+**Tags:** ポエム, AI, 生成AI, Claude, DeepResearch
 
 **Digest:**
-RAG技術を用いたAI Q&Aシステム構築について解説。自社製品マニュアルなどの社内ドキュメントをLLMに学習させ、LangChainでRAGを実装。製品マニュアル、仕様書、トラブルシューティングDBを準備し、テキスト分割、ベクトル化、検索機作成、プロンプト定義を経て、質問に的確に回答するAIを構築。LangChainの活用で、LLMの知識を更新し、ハルシネーションを防ぐ。
+100万円を1億円にするAI投資チャレンジの第2話。スクリーニングで選ばれた福田組（1899）をClaude Codeで分析し、ネットキャッシュ比率1.77、37年勤続の社長、120年の歴史などを評価。AIの助言と自身の判断で新NISA成長投資枠を活用し、3〜5年の長期保有へ。誠実さなど価値観も重視し、AIとの協働による投資の可能性を探る。
 
 ---
 
-### [最新LLM研究まとめ：2025年4月](https://qiita.com/kittokito/items/212f285bcb5b77f3f395)
-**Published:** 2025-06-10 12:19:27 UTC
-**Likes:** 2
-**Tags:** 論文, 生成AI, LLM
-
-**Digest:**
-Airion株式会社での勉強会発表内容の備忘録。月ごとのLLM関連論文から6つをピックアップ。「推論モデルは思考を隠す」問題や、強化学習による簡潔な推論、AIの経験学習、マルチエージェント協調、RLVRの推論能力評価、スケーラブルな長期記憶を備えたAIエージェントMem0などを紹介。各論文の概要と、実用化に向けた展望を報告。
-
----
-
-### [o3-pro の API を Node.js で軽く試す【OpenAI】](https://qiita.com/youtoy/items/8d24a3ff445c08234944)
-**Published:** 2025-06-11 03:29:24 UTC
+### [PythonとOpenAI APIで実践！はじめてのMCP開発入門【シリーズ完走】ありがとう！MCP的思考で始める、あなたのAIプロジェクト設計図【Python/OpenAI】](https://qiita.com/QueryPie/items/9f9881accd83762ef5c9)
+**Published:** 2025-06-11 16:19:42 UTC
 **Likes:** 1
-**Tags:** JavaScript, Node.js, OpenAI, o3, o3-pro
+**Tags:** Python, AI, MCP, LLM, ModelContextProtocol
 
 **Digest:**
-ChatGPT Proプランと同時にAPI提供が開始された「o3-pro」をNode.jsで試した報告。**OpenAI**の**プレイグラウンド**で確認後、**Responses API**専用のo3-proを**openai**パッケージで利用。環境変数設定とサンプルコードを参考に、APIキーを使用して実行。無事o3-proがAPI経由で利用でき、トークン数も確認。今後は性能評価も予定。
-
----
-
-### [【2025年06月版】macOS への Claude Code のインストール / VSCode と Cursor への拡張インストール](https://qiita.com/nouernet/items/87d539b55722e47341cd)
-**Published:** 2025-06-11 01:08:41 UTC
-**Likes:** 1
-**Tags:** macOS, VSCode, cursor, Claude, ClaudeCode
-
-**Digest:**
-Claude Codeのインストール手順を解説。macOS 15.5環境で、まずnpmをインストール後、`npm install -g @anthropic-ai/claude-code` でパッケージを導入。次に、`claude "/login"` でログインし、認証コードを入力。VS CodeとCursorへの拡張機能インストールも完了。ターミナルで`claude`を実行し、`exit`で終了。
+「PythonとOpenAI API」開発入門の最終回。20回の連載で学んだ「MCP的思考」を軸に、LLM時代の開発姿勢を解説。**コンテキスト重視**、AIをコンポーネントとして扱い、反復的なチューニングを重視。**MCP（モデルコンテキストプロトコル）**を基盤に、設計図やアイデア例も提示。旅の終わりは創造の始まり、**Vision API**活用など、更なる学習も促しています。
 
 ---
 
@@ -63,7 +63,7 @@ Claude Codeのインストール手順を解説。macOS 15.5環境で、まずnp
 **Tags:** Android
 
 **Digest:**
-新しい通知機能、マルチタスクツール、強化された補聴器サポートが特徴の最新版が登場！より便利で洗練された機能で作業効率アップ間違いなし。作業を妨げない工夫が凝らされ、聴覚サポートも向上しています。ぜひ、この進化を体験してください。
+新機能満載！洗練された**通知機能**や作業効率を高める**マルチタスクツール**が登場。さらに、**補聴器サポート**も強化され、より快適な利用が可能になりました。ぜひこれらの新機能を体験して、日々の作業をよりスムーズに進めましょう。
 
 ---
 
@@ -73,7 +73,7 @@ Claude Codeのインストール手順を解説。macOS 15.5環境で、まずnp
 **Tags:** Pixel
 
 **Digest:**
-最新のGoogle Pixelは、カメラ機能の操作ガイドやアクセシビリティ向上機能を搭載し、ユーザー体験を向上させています。操作方法を分かりやすく解説するガイド機能が追加され、より多くの人が快適にPixelを利用できるようになりました。
+Google Pixel の最新機能を紹介。カメラ機能の操作ガイドで使いやすさを向上し、アクセシビリティも強化。ユーザーがより快適にPixelを利用できるよう、操作方法を分かりやすく解説しています。
 
 ---
 
@@ -83,86 +83,74 @@ Claude Codeのインストール手順を解説。macOS 15.5環境で、まずnp
 **Tags:** Android
 
 **Digest:**
-Google フォトが大幅アップデート！画像編集機能が進化、安全確認機能も向上し、さらにEmoji Kitchenに新しいステッカーが登場しました。使いやすくなった編集機能で写真のクオリティアップ、安全な写真管理、そして楽しいコミュニケーションを体験できます。
+Googleフォトが大幅アップデート！画像編集機能が向上し、安全確認機能も強化されました。さらに、Emoji Kitchenに新しいステッカーが登場。これらの新機能により、写真整理から編集、表現まで、より楽しく便利にGoogleフォトを活用できます。
 
 ---
 
-### [Automate customer support with Amazon Bedrock, LangGraph, and Mistral models](https://aws.amazon.com/blogs/machine-learning/automate-customer-support-with-amazon-bedrock-langgraph-and-mistral-models/)
+### [Adobe enhances developer productivity using Amazon Bedrock Knowledge Bases](https://aws.amazon.com/blogs/machine-learning/adobe-enhances-developer-productivity-using-amazon-bedrock-knowledge-bases/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-10 16:19:09 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Guardrails, Generative AI, Intermediate (200), Technical How-to
+**Published:** 2025-06-11 16:44:16 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon OpenSearch Service, Customer Solutions, Generative AI
 
 **Digest:**
-AIエージェントが顧客サポートを変革。Amazon BedrockとLangGraphを使い、Mistral Large 2やPixtral Largeで、チケット分類、注文情報抽出、損傷評価、回答生成を自動化。LangGraphは複雑なワークフローを構築し、Jiraとの連携も実現。不正返品の検出も可能。Responsible AIとして、Guardrailsで安全性を確保。Observabilityも重視。
+Adobeは、社内開発者の情報検索効率化のため、Amazon Bedrock Knowledge BasesとVector Engineを採用。これにより、20%の検索精度向上を実現し、開発者支援コストを削減。メタデータフィルタリングで検索を高度化し、ドキュメント検索エンジンを強化。固定サイズチャンキングとTitan V2モデルで効果を発揮。大規模なデータに対応するスケーラブルな検索システムを構築した。
 
 ---
 
-### [Build responsible AI applications with Amazon Bedrock Guardrails](https://aws.amazon.com/blogs/machine-learning/build-responsible-ai-applications-with-amazon-bedrock-guardrails/)
+### [Amazon Nova Lite enables Bito to offer a free tier option for its AI-powered code reviews](https://aws.amazon.com/blogs/machine-learning/amazon-nova-lite-enables-bito-to-offer-a-free-tier-option-for-its-ai-powered-code-reviews/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-10 16:16:32 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Guardrails, Generative AI, Intermediate (200), Technical How-to
+**Published:** 2025-06-11 16:33:01 UTC
+**Tags:** Amazon Bedrock, Amazon Nova, Customer Solutions, Generative AI
 
 **Digest:**
-Amazon Bedrock Guardrailsは、有害コンテンツや個人情報漏洩など、生成AIの課題に対応。MAPREやKONEなど多くの組織で採用され、モデル、プロンプト、アプリケーションの各レベルで安全対策を実施。本記事では、医療保険AIアシスタントを例に、コンテンツフィルタ、禁止トピック、単語フィルタ、PII保護、自動推論チェックなど、Guardrailsの設定方法を紹介。ApplyGuardrail APIによる外部モデルへの適用も可能で、安全なAIアプリケーション開発を支援。
+Bito社が提供するAIコードレビューツール「AI Code Review Agent」は、Amazon Nova Liteを活用し無料プランを実現。Amazon Bedrock上で動作し、高速かつ低コストで無料版のAIによるPR概要作成を可能に。有料プランではAnthropicのClaude 3.7 Sonnetを使用。これにより顧客獲得に成功し、開発者の生産性向上に貢献しています。
 
 ---
 
-### [Effective cost optimization strategies for Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/effective-cost-optimization-strategies-for-amazon-bedrock/)
+### [How Gardenia Technologies helps customers create ESG disclosure reports 75% faster using agentic generative AI on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/how-gardenia-technologies-helps-customers-create-esg-disclosure-reports-75-faster-using-agentic-generative-ai-on-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-10 16:13:36 UTC
-**Tags:** Amazon Bedrock, Best Practices, Cloud Cost Optimization, Generative AI, Generative AI*
+**Published:** 2025-06-11 16:23:28 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Agents, Amazon Textract, Customer Solutions, Intermediate (200), Sustainability, Technical How-to
 
 **Digest:**
-生成AIの利用拡大に伴い、コスト最適化が重要に。Amazon Bedrockでは、モデル選択、カスタマイズ、プロンプトエンジニアリング、効率的なエージェント設計など、様々な戦略で費用を削減可能。特に、モデルの選択肢やインテリジェントプロンプトルーティング、プロンプトの明確化と簡潔化が有効。さらに、キャッシュ機能も活用し、費用対効果の高いAIアプリケーションを構築しましょう。
+Gardenia Technologiesは、ESG報告の課題を解決するため、Amazon Bedrockの生成AIを活用したReport GenAIを開発。AIがデータ収集や報告書作成を自動化し、最大75%の時間短縮を目指します。RAGやtext-to-SQL技術を用いて、企業は手作業を減らし、戦略立案に注力できるようになります。
 
 ---
 
-### [How E.ON saves £10 million annually with AI diagnostics for smart meters powered by Amazon Textract](https://aws.amazon.com/blogs/machine-learning/how-e-on-saves-10-million-annually-with-ai-diagnostics-for-smart-meters-powered-by-amazon-textract/)
+### [NVIDIA Nemotron Super 49B and Nano 8B reasoning models now available in Amazon Bedrock Marketplace and Amazon SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-super-49b-and-nano-8b-reasoning-models-now-available-in-amazon-bedrock-marketplace-and-amazon-sagemaker-jumpstart/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-10 16:11:23 UTC
-**Tags:** Amazon Textract, Artificial Intelligence, Customer Solutions, Technical How-to
+**Published:** 2025-06-11 12:00:51 UTC
+**Tags:** Amazon Bedrock, Amazon Machine Learning, Amazon SageMaker JumpStart, Announcements
 
 **Digest:**
-ドイツのE.ONは、スマートメーターの遠隔診断にAWSのAmazon Textractを活用。顧客が7秒動画をアップロードし、MLでLED点滅パターンを解析。これにより、時間のかかる訪問を削減し、年間1000万ポンドのコスト削減を目指す。精度84%で、顧客満足度向上と運用効率化を実現する取り組みである。
+NVIDIAのLlama 3.3 Nemotron Super 49B V1とLlama 3.1 Nemotron Nano 8B V1が、Amazon Bedrock MarketplaceとSageMaker JumpStartで利用可能になりました。これらの推論モデルは、RAGやツール呼び出しなどのタスク向けに最適化されており、AWS上で生成AIの構築・実験・スケーリングを支援します。Bedrock Marketplaceでは、NVIDIA NIMを活用し簡単にデプロイできます。
 
 ---
 
-### [How we used generative media at I/O 2025](https://blog.google/technology/ai/generative-ai-io-keynote-2025/)
-**Source:** Google DeepMind
-**Published:** 2025-06-10 17:00:00 UTC
-**Tags:** Google DeepMind, AI
+### [Announcing the AI-Powered Search and Summary Components in Power Pages Component Library](https://www.microsoft.com/en-us/power-platform/blog/power-pages/announcing-the-ai-powered-search-and-summary-components-in-power-pages-component-library/)
+**Source:** Microsoft Power Automate Blog
+**Published:** 2025-06-11 12:30:46 UTC
 
 **Digest:**
-Google I/O 2025では、生成AIが大きな存在感を示しました。基調講演のカウントダウンから、スピーカーのタイトルカードに至るまで、生成AIがイベント全体を彩りました。
+Power Pagesのコンポーネントライブラリに、AIを活用した検索と要約コンポーネントが追加されました。これにより、開発者はジェネレーティブAI機能を簡単にドラッグ&ドロップできます。検索コンポーネントは自然言語で検索し、要約表示か検索結果ページへ誘導。要約コンポーネントはOData URLからページ内容を簡潔に表示し、ユーザーの理解とエンゲージメントを向上させます。フィードバックをお待ちしています。
 
 ---
 
-### [Azure AI SearchのカスタムスキルでマルチモーダルRAGを実現してみた](https://blog.jbs.co.jp/entry/2025/06/11/120849)
+### [Announcing the AI-Powered Search and Summary Components in Power Pages Component Library](https://www.microsoft.com/en-us/power-platform/blog/power-pages/announcing-the-ai-powered-search-and-summary-components-in-power-pages-component-library/)
+**Source:** Microsoft Power Platform Blog
+**Published:** 2025-06-11 12:30:46 UTC
+
+**Digest:**
+Power Pagesのコンポーネントライブラリに、AIを活用した「検索」と「要約」コンポーネントが追加されました。自然言語検索でページ内要約表示や、検索結果ページへのリダイレクトが可能に。また、ページコンテンツの要約を生成し表示する「要約」コンポーネントも利用できます。これにより、開発者はAI機能を簡単に組み込み、ユーザーエンゲージメント向上を図れます。
+
+---
+
+### [【AWS】Amazon Qの概要について](https://blog.jbs.co.jp/entry/2025/06/12/085707)
 **Source:** JBS Blog
-**Published:** 2025-06-11 03:08:49 UTC
-**Tags:** AI, Azure AI Search, Azure AI Foundry, Azure OpenAI, GPT-4o, マルチモーダルAI, 大規模言語モデル
+**Published:** 2025-06-11 23:57:07 UTC
+**Tags:** AWS, Amazon Q
 
 **Digest:**
-Azure AI Searchを用いて、PDFからテキストと画像（図表）を統合的に検索するマルチモーダルRAG基盤を構築する方法を紹介します。これにより、Azure AI Searchは、従来のテキスト検索に加え、画像情報も活用した高度な質問応答を実現します。
-
----
-
-### [Copilot プロンプト ギャラリーの利用方法](https://blog.jbs.co.jp/entry/2025/06/11/105012)
-**Source:** JBS Blog
-**Published:** 2025-06-11 01:50:12 UTC
-**Tags:** Copilot, AI, プロンプト, M365
-
-**Digest:**
-Microsoftが提供する「Copilot プロンプト ギャラリー」は、Copilotの活用を支援するツールです。仕事や業務に合わせたプロンプトを検索でき、効率的な活用を促進します。ギャラリーの利用手順やプロンプトの保存方法、おすすめの使い方が紹介されており、Copilot初心者から業務効率化を目指す方まで役立つでしょう。
-
----
-
-### [【Microsoft×生成AI連載】【やってみた】Copilot Studioでエージェントフローを作成してみた](https://blog.jbs.co.jp/entry/2025/06/11/085615)
-**Source:** JBS Blog
-**Published:** 2025-06-10 23:56:15 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
-
-**Digest:**
-Microsoft Copilot Studioで、**エージェントフロー**を構築し、**業務効率化**を目指す方法を解説。**自動化ワークフロー**を活用し、複雑なプロセスを簡素化するヒントを提供。Copilot Studioの機能を駆使し、日々の業務をよりスムーズに進めるための実践的な情報が満載です。
+AWSの「Amazon Q」について、その概要を解説します。Amazon Qは、生成AIを活用した対話型アシスタントで、様々な業務を効率化します。ドキュメント検索やコード生成、チャットボット機能などが特徴で、AWS環境における課題解決を強力に支援します。
 
 ---
