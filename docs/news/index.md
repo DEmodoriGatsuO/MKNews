@@ -1,156 +1,168 @@
-# AI Tech Trends Digest (2025-06-12)
+# AI Tech Trends Digest (2025-06-13)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [OpenAI、最上位推論モデル「o3-pro」公開！ProユーザーとAPIから利用可能に！](https://qiita.com/ryosuke_ohori/items/359750938f984a6ff5e0)
-**Published:** 2025-06-11 09:39:57 UTC
+### [【tmuxでClaude CodeのMaxプランでAI組織を動かし放題のローカル環境ができた〜〜〜！ので、やり方をシェア！！🔥🔥🔥🙌☺️】](https://qiita.com/akira_funakoshi/items/9f6c6605e925a88b9ac5)
+**Published:** 2025-06-12 17:00:48 UTC
+**Likes:** 19
+**Tags:** tmux, Claude, AIエージェント, ClaudeCode, AI組織
+
+**Digest:**
+AI組織で開発するシステムを構築し、環境構築方法を解説。複数のAIが分業し、社長AI、マネージャーAI、作業者AIが協力して開発を進めます。GitHubリポジトリからコードをクローンし、tmuxやClaude Code CLIをインストール後、スクリプトを実行してAIチームを起動。指示を入力すると、AIが各役割をこなし、最終的にアプリが完成します。
+
+---
+
+### [Claude CodeのAI組織が出来たので、歴史上の最強組織を参考に、AI組織フォーメーションを考えてみた👀](https://qiita.com/akira_funakoshi/items/756202bff0688411c4c5)
+**Published:** 2025-06-12 17:16:41 UTC
 **Likes:** 8
-**Tags:** Python, AI, OpenAI, ChatGPT, LLM
+**Tags:** AI, Claude, AIエージェント, ClaudeCode, AI組織
 
 **Digest:**
-OpenAIの最新モデル「o3-pro」は、深い推論を重視したマルチモーダルモデル。20万トークンのコンテキストウィンドウとAPI連携ツールが特徴で、長い企画書やコード生成に有効です。RLによる学習で推論能力を高め、旧モデル比で約87%値下げも、コストは高め。APIアクセス可能で、複雑ビジネスロジック、コード生成、学術論文補助などに適しています。
+AI組織の効率的運用を歴史上のチームを参考に考察。ローマ軍団型は標準化と自律性、モンゴル帝国型は機動力、ハンザ同盟型は連携、各AIの特性を活かす。新規案件獲得はヴェネツィア式、要件定義はサイバー・イエズス会式、実装はデジタル遊牧帝国式など、状況に応じたAI組織フォーメーションの使い分けを提唱。
 
 ---
 
-### [Dify: OCI Generative AIでRAGチャットボットを10分で作成してみる](https://qiita.com/yushibat/items/a661c29e8640224a7681)
-**Published:** 2025-06-12 02:36:04 UTC
-**Likes:** 5
-**Tags:** oracle, AI, oci, LLM, Dify
-
-**Digest:**
-Difyを使って、10分でRAGチャットボットを構築する方法を紹介。まず、チャットボットアプリを作成し、OCI Generative AIを利用できるようLLMを設定。APIキー設定後、ナレッジベースにドキュメントを登録し、チャットボットで参照するように設定します。最後にプロンプトを設定し、アプリを実行すると、登録ドキュメントを参照するチャットボットが完成します。
-
----
-
-### [AI君が労ってくれるTodo管理アプリを作成しました。](https://qiita.com/07191970t/items/7634b8d64875a56cd37a)
-**Published:** 2025-06-11 15:31:35 UTC
-**Likes:** 4
-**Tags:** codepen, Gemini, ChatGPT, Dify
-
-**Digest:**
-小売業のtakuma氏が、多忙な業務を効率化するため、**ChatGPT**と**Dify**を活用した**Todo管理アプリ**を開発。ChatGPTでプロトタイプを**簡単**に作成し、Dify連携でAIによるタスク優先度指示機能を追加。**HTMLファイル**で動作させ、AIが労いの言葉を添えて上位5件を表示。今後はUI改善やプロンプト設計を深化させ、新たな**チャレンジ**を続ける。
-
----
-
-### [AI投資チャレンジ #02 調査選別編 - 30代エンジニアが100万を一億円にする話](https://qiita.com/aug/items/5bbc2d51d65490c0506a)
-**Published:** 2025-06-11 11:31:40 UTC
+### [webサービスを成功させるために必要なClaude Code のAI組織形態を、フェーズ別/シチュエーション別で考えてみた🔥](https://qiita.com/akira_funakoshi/items/a67be1f2acbb32e6ec36)
+**Published:** 2025-06-12 18:24:21 UTC
 **Likes:** 2
-**Tags:** ポエム, AI, 生成AI, Claude, DeepResearch
+**Tags:** AI, Claude, AI駆動開発, ClaudeCode
 
 **Digest:**
-100万円を1億円にするAI投資チャレンジの第2話。スクリーニングで選ばれた福田組（1899）をClaude Codeで分析し、ネットキャッシュ比率1.77、37年勤続の社長、120年の歴史などを評価。AIの助言と自身の判断で新NISA成長投資枠を活用し、3〜5年の長期保有へ。誠実さなど価値観も重視し、AIとの協働による投資の可能性を探る。
+AI組織フォーメーションについて、あきらパパが歴史上の組織論を参考に考察。Claude Code MaxプランでAIインスタンスを動かし、0からWebサービス成功を目指す。アイデア検証、MVP開発、グロース、スケールと、フェーズごとの最適な組織形態を提言。人間はビジョン設定等に注力し、AIをパートナーとして活用。
 
 ---
 
-### [PythonとOpenAI APIで実践！はじめてのMCP開発入門【シリーズ完走】ありがとう！MCP的思考で始める、あなたのAIプロジェクト設計図【Python/OpenAI】](https://qiita.com/QueryPie/items/9f9881accd83762ef5c9)
-**Published:** 2025-06-11 16:19:42 UTC
-**Likes:** 1
-**Tags:** Python, AI, MCP, LLM, ModelContextProtocol
+### [歴史上の社会形成理論からシチュエーション別で効率的な10のClaude Code AI組織フォーメーションを考えてみた📝](https://qiita.com/akira_funakoshi/items/3b4b5f8644c5e6e12bae)
+**Published:** 2025-06-12 17:35:46 UTC
+**Likes:** 2
+**Tags:** AI, Claude, AIエージェント, ClaudeCode, AI組織
 
 **Digest:**
-「PythonとOpenAI API」開発入門の最終回。20回の連載で学んだ「MCP的思考」を軸に、LLM時代の開発姿勢を解説。**コンテキスト重視**、AIをコンポーネントとして扱い、反復的なチューニングを重視。**MCP（モデルコンテキストプロトコル）**を基盤に、設計図やアイデア例も提示。旅の終わりは創造の始まり、**Vision API**活用など、更なる学習も促しています。
+AI組織の社会形成モデルを提唱。モンテスキューの三権分立に着想を得て、AI三権分立やデジタル社会契約型など10種のモデルを提示。各モデルは、ガバナンス、顧客対応、リソース配分、スキル開発など、システム開発現場の10の状況に適用可能。多拠点開発やプロジェクト対立への活用も示唆。
+
+---
+
+### [契約書の行方を探せ！～契約書管理自動化への挑戦～文系人間、頑張る](https://qiita.com/fyuatan64/items/70cde67275582c75a4b9)
+**Published:** 2025-06-12 14:44:23 UTC
+**Likes:** 2
+**Tags:** OpenAI, #ProtoOut, ChatGPT, #自動化ツールっぽい, ＃契約書管理
+
+**Digest:**
+北の国のやまぴ氏による、リベート契約書の処理進捗管理自動化への挑戦。紙媒体の契約書管理に課題を感じ、Make、ChatGPT、スプレッドシート等を活用し、メール通知機能と進捗状況可視化を目指す。OpenAIとMicrosoft 365を連携、メール送信と「済」フラグ付与に成功。反省点とチャットボットへの更なる挑戦を語る。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Android 16 が登場](https://blog.google/intl/ja-jp/products/android-chrome-play/android-16/)
-**Source:** Google Japan Blog
-**Published:** 2025-06-11 17:00:00 UTC
-**Tags:** Android
+### [Microsoft recognized for second consecutive year as a Leader in the 2025 Gartner® Magic Quadrant™ for Data Science and Machine Learning Platforms](https://azure.microsoft.com/en-us/blog/microsoft-recognized-for-second-consecutive-year-as-a-leader-in-the-2025-gartner-magic-quadrant-for-data-science-and-machine-learning-platforms/)
+**Source:** Azure AI Blog
+**Published:** 2025-06-12 16:30:00 UTC
+**Tags:** AI + machine learning, Internet of things, Gartner® Magic Quadrant™
 
 **Digest:**
-新機能満載！洗練された**通知機能**や作業効率を高める**マルチタスクツール**が登場。さらに、**補聴器サポート**も強化され、より快適な利用が可能になりました。ぜひこれらの新機能を体験して、日々の作業をよりスムーズに進めましょう。
+Microsoftが2025年Gartner Magic Quadrantでリーダーに選出。Azure Machine Learningは、AIモデル構築と展開の包括的なツールを提供し、Azure AI Foundry、Microsoft Fabricと連携。**Foundry Agent Service** によるAIエージェントのオーケストレーション、**Azure AI Foundry** での**Model Leaderboard**、**Model Benchmarks**、**Model Router** の活用を推進。**Reinforcement Fine-Tuning** 等、AIモデルのカスタマイズも可能となり、顧客のAI活用を支援しています。
 
 ---
 
-### [6 月の Pixel Drop：カメラ機能のガイド、Android 16 などの機能アップデートをご紹介](https://blog.google/intl/ja-jp/products/devices-services/pixel-drop-june-2025/)
-**Source:** Google Japan Blog
-**Published:** 2025-06-11 17:00:00 UTC
-**Tags:** Pixel
-
-**Digest:**
-Google Pixel の最新機能を紹介。カメラ機能の操作ガイドで使いやすさを向上し、アクセシビリティも強化。ユーザーがより快適にPixelを利用できるよう、操作方法を分かりやすく解説しています。
-
----
-
-### [あなた好みにカスタマイズできる 5 つの新しい Android 機能をご紹介](https://blog.google/intl/ja-jp/products/android-chrome-play/new-android-features-june-2025/)
-**Source:** Google Japan Blog
-**Published:** 2025-06-11 16:00:00 UTC
-**Tags:** Android
-
-**Digest:**
-Googleフォトが大幅アップデート！画像編集機能が向上し、安全確認機能も強化されました。さらに、Emoji Kitchenに新しいステッカーが登場。これらの新機能により、写真整理から編集、表現まで、より楽しく便利にGoogleフォトを活用できます。
-
----
-
-### [Adobe enhances developer productivity using Amazon Bedrock Knowledge Bases](https://aws.amazon.com/blogs/machine-learning/adobe-enhances-developer-productivity-using-amazon-bedrock-knowledge-bases/)
+### [Accelerating Articul8’s domain-specific model development with Amazon SageMaker HyperPod](https://aws.amazon.com/blogs/machine-learning/accelerating-articul8s-domain-specific-model-development-with-amazon-sagemaker-hyperpod/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-11 16:44:16 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon OpenSearch Service, Customer Solutions, Generative AI
+**Published:** 2025-06-12 17:48:44 UTC
+**Tags:** Amazon SageMaker, Amazon SageMaker HyperPod, Artificial Intelligence, Foundation models, Generative AI, Technical How-to
 
 **Digest:**
-Adobeは、社内開発者の情報検索効率化のため、Amazon Bedrock Knowledge BasesとVector Engineを採用。これにより、20%の検索精度向上を実現し、開発者支援コストを削減。メタデータフィルタリングで検索を高度化し、ドキュメント検索エンジンを強化。固定サイズチャンキングとTitan V2モデルで効果を発揮。大規模なデータに対応するスケーラブルな検索システムを構築した。
+Articul8は、Amazon SageMaker HyperPodを活用し、ドメイン特化型モデル（DSM）のトレーニングを加速。95%以上のクラスター利用率と35%の生産性向上を達成しました。SageMaker HyperPodは、大規模モデルの効率的なトレーニング、自動化されたクラスター管理、そして92%の精度を誇るA8-SupplyChainなど、業界特化型AIモデルの開発を支援。AI展開時間を4分の1に短縮し、総所有コストを5分の1に削減しました。
 
 ---
 
-### [Amazon Nova Lite enables Bito to offer a free tier option for its AI-powered code reviews](https://aws.amazon.com/blogs/machine-learning/amazon-nova-lite-enables-bito-to-offer-a-free-tier-option-for-its-ai-powered-code-reviews/)
+### [How VideoAmp uses Amazon Bedrock to power their media analytics interface](https://aws.amazon.com/blogs/machine-learning/how-videoamp-uses-amazon-bedrock-to-power-their-media-analytics-interface/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-11 16:33:01 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, Customer Solutions, Generative AI
+**Published:** 2025-06-12 17:46:43 UTC
+**Tags:** Amazon Bedrock, Analytics, Artificial Intelligence, Customer Solutions, Data Science & Analytics for Media, Foundation models, Generative AI, Marketing & Advertising, Media & Entertainment
 
 **Digest:**
-Bito社が提供するAIコードレビューツール「AI Code Review Agent」は、Amazon Nova Liteを活用し無料プランを実現。Amazon Bedrock上で動作し、高速かつ低コストで無料版のAIによるPR概要作成を可能に。有料プランではAnthropicのClaude 3.7 Sonnetを使用。これにより顧客獲得に成功し、開発者の生産性向上に貢献しています。
+VideoAmpとAWSのGenAIICは、自然言語でメディア分析を行うチャットボットを開発。Amazon BedrockとAnthropicのLLMを活用し、SQL生成とデータ要約を実現。複雑なクエリに対応し、評価パイプラインも構築。これにより、VideoAmpはデータ分析を簡素化し、顧客が自然言語でインサイトを得られるAIアシスタントを提供します。
 
 ---
 
-### [How Gardenia Technologies helps customers create ESG disclosure reports 75% faster using agentic generative AI on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/how-gardenia-technologies-helps-customers-create-esg-disclosure-reports-75-faster-using-agentic-generative-ai-on-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-06-11 16:23:28 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Agents, Amazon Textract, Customer Solutions, Intermediate (200), Sustainability, Technical How-to
+### [LLM はウォール街の言葉を “読む” ことはできるが、その真意を理解できるのか? ファイナンシャル IQ のベンチマーク評価](https://blogs.windows.com/japan/2025/06/13/llms-can-read-but-can-they-understand-wall-street-benchmarking-their-financial-i/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-06-13 00:49:14 UTC
+**Tags:** Copilot, Agent
 
 **Digest:**
-Gardenia Technologiesは、ESG報告の課題を解決するため、Amazon Bedrockの生成AIを活用したReport GenAIを開発。AIがデータ収集や報告書作成を自動化し、最大75%の時間短縮を目指します。RAGやtext-to-SQL技術を用いて、企業は手作業を減らし、戦略立案に注力できるようになります。
+サンタクララ大学とマイクロソフトの研究は、LLMが金融分野のセンチメント分析で従来のNLPを上回り、Microsoft Copilotが有効と判明。  精度は向上も課題あり、Copilotの透明性・CSV対応改善を提言。事業部門別分析で株価変動との相関も示唆。LLMは専門家を補完し、財務分析の未来を形成する可能性を示唆した。
 
 ---
 
-### [NVIDIA Nemotron Super 49B and Nano 8B reasoning models now available in Amazon Bedrock Marketplace and Amazon SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-super-49b-and-nano-8b-reasoning-models-now-available-in-amazon-bedrock-marketplace-and-amazon-sagemaker-jumpstart/)
-**Source:** AWS ML Blog
-**Published:** 2025-06-11 12:00:51 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Amazon SageMaker JumpStart, Announcements
+### [Microsoft 365 Copilot Tuning の紹介](https://blogs.windows.com/japan/2025/06/13/introducing-microsoft-365-copilot-tuning/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-06-13 00:48:04 UTC
+**Tags:** Copilot, Agent
 
 **Digest:**
-NVIDIAのLlama 3.3 Nemotron Super 49B V1とLlama 3.1 Nemotron Nano 8B V1が、Amazon Bedrock MarketplaceとSageMaker JumpStartで利用可能になりました。これらの推論モデルは、RAGやツール呼び出しなどのタスク向けに最適化されており、AWS上で生成AIの構築・実験・スケーリングを支援します。Bedrock Marketplaceでは、NVIDIA NIMを活用し簡単にデプロイできます。
+Microsoft 365 Copilot Tuningは、ローコードツールで組織データを微調整し、専門タスクに対応するAIエージェントを構築可能。事前構築済みの「レシピ」で、データ収集を効率化し、データ選択やアクセス制御も容易に。Ernst & Young、McCarthy Tétrault、Land O'Lakesなどの事例を紹介し、早期アクセスプログラムを提供開始。
 
 ---
 
-### [Announcing the AI-Powered Search and Summary Components in Power Pages Component Library](https://www.microsoft.com/en-us/power-platform/blog/power-pages/announcing-the-ai-powered-search-and-summary-components-in-power-pages-component-library/)
-**Source:** Microsoft Power Automate Blog
-**Published:** 2025-06-11 12:30:46 UTC
+### [Build 2025: Microsoft 365 のエージェントに関する発表](https://blogs.windows.com/japan/2025/06/13/build-2025-agents-in-microsoft-365-announcements/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-06-13 00:46:44 UTC
+**Tags:** Copilot, Agent
 
 **Digest:**
-Power Pagesのコンポーネントライブラリに、AIを活用した検索と要約コンポーネントが追加されました。これにより、開発者はジェネレーティブAI機能を簡単にドラッグ&ドロップできます。検索コンポーネントは自然言語で検索し、要約表示か検索結果ページへ誘導。要約コンポーネントはOData URLからページ内容を簡潔に表示し、ユーザーの理解とエンゲージメントを向上させます。フィードバックをお待ちしています。
+Microsoft 365 Copilot Wave 2 Spring リリース発表に基づき、エージェントストアが一般提供開始。Copilot ChatでResearcherエージェント等を利用可能。6月には従業員セルフサービスエージェントとSkillsエージェントが提供開始予定。従業員セルフサービスは人事やIT関連タスクを簡素化、Skillsエージェントは専門知識を評価し、組織の人材計画に役立ちます。
 
 ---
 
-### [Announcing the AI-Powered Search and Summary Components in Power Pages Component Library](https://www.microsoft.com/en-us/power-platform/blog/power-pages/announcing-the-ai-powered-search-and-summary-components-in-power-pages-component-library/)
-**Source:** Microsoft Power Platform Blog
-**Published:** 2025-06-11 12:30:46 UTC
+### [Microsoft Build 2025: エージェントを活用して「フロンティア (先駆的)」な職場環境を構築する方法](https://blogs.windows.com/japan/2025/06/13/microsoft-build-2025-how-to-create-a-frontier-workplace-powered-by-agents/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-06-13 00:44:53 UTC
+**Tags:** Copilot, Agent
 
 **Digest:**
-Power Pagesのコンポーネントライブラリに、AIを活用した「検索」と「要約」コンポーネントが追加されました。自然言語検索でページ内要約表示や、検索結果ページへのリダイレクトが可能に。また、ページコンテンツの要約を生成し表示する「要約」コンポーネントも利用できます。これにより、開発者はAI機能を簡単に組み込み、ユーザーエンゲージメント向上を図れます。
+Microsoft Build 2025 で、マイクロソフトは人とAIエージェント協働の新たなビジョンを発表。フロンティア企業は、AI、オンデマンドインテリジェンス、チームを重視。Microsoft 365 CopilotのCopilot Chatやエージェントストアが登場し、Copilot Tuning機能でLLMをトレーニング可能に。Copilot Analyticsでパフォーマンス測定も。事例として、GMやHolland Americaなど、多くの企業がCopilotを活用。
 
 ---
 
-### [【AWS】Amazon Qの概要について](https://blog.jbs.co.jp/entry/2025/06/12/085707)
+### [Build 2025 で紹介された事例から学ぶ、従業員セルフサービス エージェントの効果](https://blogs.windows.com/japan/2025/06/13/learn-more-about-the-employee-self-service-agent-from-customers-and-partners-at/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-06-13 00:42:33 UTC
+**Tags:** Copilot, Agent
+
+**Digest:**
+2025年、Microsoft 365 Copilotに搭載される「従業員セルフサービスエージェント」が、人事・ITサービスを革新。AIを活用し、SharePoint、Workday、ServiceNowなどと連携、情報提供やタスク遂行を支援。  従業員の自己解決を促進し、人事・IT部門の負荷を軽減。24時間365日利用可能で、福利厚生やスキル習得にも対応予定。
+
+---
+
+### [Azure AI Foundry Agent Serviceでマルチエージェントを構築する](https://blog.jbs.co.jp/entry/2025/06/13/135008)
 **Source:** JBS Blog
-**Published:** 2025-06-11 23:57:07 UTC
-**Tags:** AWS, Amazon Q
+**Published:** 2025-06-13 04:50:08 UTC
+**Tags:** AI, Azure AI Foundry, Azure AI Foundry Agent Service, マルチエージェント, LLM, Azure OpenAI
 
 **Digest:**
-AWSの「Amazon Q」について、その概要を解説します。Amazon Qは、生成AIを活用した対話型アシスタントで、様々な業務を効率化します。ドキュメント検索やコード生成、チャットボット機能などが特徴で、AWS環境における課題解決を強力に支援します。
+Azure AI Foundry Agent Service で、シングルエージェントに加えてマルチエージェントの実装方法が紹介されています。 Python 3.11.9 と azure-ai-projects 1.0.0b11 を実行環境とし、Azure AI Foundry Agent Service の環境セットアップとエージェント作成の事前準備が必要です。 Azure AI アカウント所有者のアクセス許可が求められます。
+
+---
+
+### [【Microsoft×生成AI連載】【Power Platform】Power AppsでCopilotコントロールを使ってみた](https://blog.jbs.co.jp/entry/2025/06/13/085807)
+**Source:** JBS Blog
+**Published:** 2025-06-12 23:58:07 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, Microsoft×生成AI連載, 生成AI, Power Apps
+
+**Digest:**
+Power Apps の新機能、Copilotと「Copilotの回答」コントロールについて解説しています。Copilotは、AIを活用してアプリ開発を支援し、より迅速で効率的なものにします。「Copilotの回答」コントロールは、対話形式で情報を提供し、ユーザーエクスペリエンスを向上させることが期待されています。
+
+---
+
+### [【Azure】プライベート接続でLog Analyticsを活用する（構築編）](https://blog.jbs.co.jp/entry/2025/06/12/170836)
+**Source:** JBS Blog
+**Published:** 2025-06-12 08:08:36 UTC
+**Tags:** Azure, Azure Monitor, AMPLS, Azure Log Analytics, Microsoft
+
+**Digest:**
+前回に続き、Azure Monitor Private Link Scope (AMPLS) 設定手順を解説。Log Analyticsをプライベート接続で利用するため、AMPLS、プライベートエンドポイント、データ収集エンドポイント、データ収集ルール(DCR)を作成します。手順に沿ってこれらのリソースを構築し、Azure Monitorの安全な利用を実現します。
 
 ---
