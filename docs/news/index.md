@@ -1,55 +1,68 @@
-# AI Tech Trends Digest (2025-06-15)
+# AI Tech Trends Digest (2025-06-16)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [【WWDC25】iPhoneだけでLLM⁉︎ Foundation Modelsを“3行”で動かしてみた](https://qiita.com/takatein/items/fa28aa4ace902fd7a7cc)
-**Published:** 2025-06-14 14:45:05 UTC
+### [わずか50行！シンプルなModel Context Protocolを実装してAIの対話精度を上げる](https://qiita.com/QueryPie/items/a0cf45050f78adc2ad80)
+**Published:** 2025-06-15 09:40:14 UTC
 **Likes:** 3
-**Tags:** LLM, AppleIntelligence, iOS26, WWDC2025, FoundationModels
+**Tags:** AI, MCP, chatbot, LLM, ModelContextProtocol
 
 **Digest:**
-iPhoneで動作するApple IntelligenceのオンデバイスLLMは、Swift3行で実装可能。**インターネット接続不要** で、iPhone 15 Pro以降（A17 Pro/Mシリーズ）で3Bパラメータのモデルをオフライン推論。**Foundation Models** を使い、要約やリライトも可能。**Tool Calling** で簡易RAGも実現。Xcode 26βが必要で、**Private Cloud Compute** への自動フェイルオーバーも。
+AIチャットボット開発におけるコンテキスト管理の課題を解決する「Model Context Protocol (MCP)」を紹介。これは、AIに渡す情報をルール化する設計思想で、システムプロンプトと対話履歴の管理が重要。50行のPythonコードで、直近の会話を記憶し、一貫性のある応答を実現。dequeによる履歴管理で、トークン上限対策も。更なる発展として、履歴の要約やVector DB連携も可能。
 
 ---
 
-### [brew 一発で任意のプロジェクトに対応する「Multi-Claude」マルチエージェントシステムを作ってみた](https://qiita.com/sutaminajing40/items/bef8b822a1f58aac842a)
-**Published:** 2025-06-14 07:16:31 UTC
-**Likes:** 3
-**Tags:** tmux, Claude, AIエージェント, ClaudeCode, AI組織
+### [生成AIに学習教材を作らせて世界にたった一つだけのオーダーメイド教材を作る](https://qiita.com/kazunoriboy/items/d7b12a10fde2d5709552)
+**Published:** 2025-06-15 23:53:44 UTC
+**Likes:** 2
+**Tags:** 勉強法, 教材作成, LLM, AIエージェント, Manus
 
 **Digest:**
-「Multi-Claude」は、`brew install multi-claude` で簡単インストールできる、プロジェクトに最適化されたマルチエージェントシステムです。任意のディレクトリで `multi-claude` コマンドを実行すると、リポジトリを自動分析し、PRESIDENT, BOSS, WORKERが協調。従来の複雑なセットアップをワンコマンドで実現し、開発効率を向上させます。現在開発中で、コミュニティ参加を歓迎しています。
+Rust学習に興味を持ち、PHP経験者が**AIエージェント「Manus」**でオーダーメイド教材を作成し学習した体験談。書籍やチュートリアルの課題を解決するため、**Cursor**も活用。コンパクトで実践的な教材で効率的に学習でき、Geminiで次なる学習内容を相談。結果、AI活用学習は最適で、Githubで教材を公開。
 
 ---
 
-### [個人的ベスト LLMのObservabilityツール](https://qiita.com/Sora_Yamamoto/items/c5372f87f216aab81324)
-**Published:** 2025-06-15 04:21:33 UTC
-**Likes:** 0
-**Tags:** observability, LLM, LLMOps, arize_phoenix
+### [「なんかダサい」から抜け出す！個人開発アプリのUIをそれっぽく見せる、色彩計画とコンポーネント設計の記録【英語学習アプリ開発#5】](https://qiita.com/tama0931/items/b2f105d10b2da234998a)
+**Published:** 2025-06-15 15:56:14 UTC
+**Likes:** 2
+**Tags:** AI, Gemini, GeminiPro, GoogleAIStudio, AIエージェント
 
 **Digest:**
-LLM Observabilityツール、Self-hostが面倒な問題を解決する「phoenix」を紹介。Docker不要で、Notebook内でダッシュボード起動が可能。pipでインストールし、数行のコードでLangchainのトレースを実現。`register`で簡単設定、OpenAIなどのサードパーティライブラリも自動トレース。より柔軟なトレースも可能で、今後も活用したいツールです。
+個人開発中の英語学習アプリ『Re-Learn English』のUI改善報告。機能実装後の課題だったデザインを、プロのUI/UXデザイナー（AI）レビューのもと、**「黄昏の海辺 × リキッドグラス」**をコンセプトに刷新。Tailwind CSSで**リキッドグラス**カードを実装、背景にオーロラグラデーションを採用。ボタンアクションも最適化し、直感的な操作性を実現。**UI/UX**の改善でアプリの体験価値向上を目指す。
 
 ---
 
-### [[備忘録] Google Colab無料枠 (T4) でVLLMを使った日本語GPT-2を動かしてみた](https://qiita.com/Tadataka_Takahashi/items/6388c5e7ec7d72b322d1)
-**Published:** 2025-06-15 03:30:57 UTC
-**Likes:** 0
-**Tags:** Python, 日本語, T4, colaboratory, LLM
+### [【MCP Inspector】ローカルコンテナ環境のMCPサーバーをデバックする方法](https://qiita.com/eiji-noguchi/items/468bc09fcc2eca8f1d8a)
+**Published:** 2025-06-15 15:15:29 UTC
+**Likes:** 2
+**Tags:** MCP, WSL2, 生成AI, Claude
 
 **Digest:**
-Google Colaboratoryの無料枠T4 GPUで、VLLMを用いてrinna/japanese-gpt2-smallを動かす実践記録です。VLLMのインストール、サーバー起動、APIによる推論テストの手順を紹介。日本語GPT-2モデルの自然な出力と安定したAPI応答を確認。ただし、Colabの制約やメモリ不足に注意が必要で、Colab ProやGPU環境の整備が推奨されます。パラメータ調整も重要です。
+MCPサーバーのデバッグツール「MCP Inspector」の使い方を紹介。Anthropic公式ツールで、Dockerコンテナで動くMCPサーバーを対象に、接続方法やツールリスト表示、リクエストの確認方法を解説。Node.jsパッケージとして`npx @modelcontextprotocol/inspector`で実行。環境変数設定が重要で、AWS Lambda連携のサーバーを例に挙げています。
 
 ---
 
-### [初めてのハッカソンで最優秀賞 - 技術力に不安がある中でどう貢献したか](https://qiita.com/takah1r0_tt/items/5237bdc756cd51addffa)
-**Published:** 2025-06-15 03:05:22 UTC
-**Likes:** 0
-**Tags:** ハッカソン, LLM, AIエージェント, PKSHA
+### [Claude Code を Bedrock と連携させて使ってみた](https://qiita.com/YasuhiroKawano/items/bb32ca08e59d15a56c86)
+**Published:** 2025-06-16 03:21:23 UTC
+**Likes:** 1
+**Tags:** AWS, bedrock, Claude
 
 **Digest:**
-PKSHA主催ハッカソンで、アルゴリズムエンジニアが、**旅行プランAIエージェント「norun」**を開発し、**最優秀賞を受賞**。Webアプリ開発経験不足を、LLM設計、戦略立案、チーム支援でカバー。LLMの専門性を活かし、GPT-4o-search-previewとGoogle Maps APIを活用。**技術力に不安があっても、準備とチームワークで貢献できる**ことを体験談で語る。
+Amazon Bedrock と連携した Claude Code のインストールと設定方法の備忘録。`npm install`でインストール後、`CLAUDE_CODE_USE_BEDROCK=1`を設定し、モデルIDを指定。`AWS_PROFILE`と`AWS_REGION`を設定して`claude`コマンドで起動。`/cost`でコスト確認可能。Sonnet 4、Opus 4 などモデルごとの料金に注意。IDE用プラグインも。CLIでIDEに依存せず使えるのが特徴です。
+
+---
+
+## Latest News from RSS Feeds
+
+
+### [Veeamを使ってAmazon S3へバックアップしてみる第2弾 Veeam設定編](https://blog.jbs.co.jp/entry/2025/06/16/091010)
+**Source:** JBS Blog
+**Published:** 2025-06-16 00:10:10 UTC
+**Tags:** Veeam, AWS, Amazon S3
+
+**Digest:**
+Veeam Backup&ReplicationでAmazon S3にバックアップデータを保存する設定手順を紹介します。事前にバックアップリポジトリとしてS3を登録し、オブジェクトストレージウィザードで名前、アカウント、設定を指定します。マウントサーバーの設定後、コンポーネントを確認して設定を適用することで、S3へのバックアップが可能になります。
 
 ---
