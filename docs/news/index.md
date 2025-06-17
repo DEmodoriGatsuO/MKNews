@@ -1,68 +1,118 @@
-# AI Tech Trends Digest (2025-06-16)
+# AI Tech Trends Digest (2025-06-17)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [わずか50行！シンプルなModel Context Protocolを実装してAIの対話精度を上げる](https://qiita.com/QueryPie/items/a0cf45050f78adc2ad80)
-**Published:** 2025-06-15 09:40:14 UTC
-**Likes:** 3
-**Tags:** AI, MCP, chatbot, LLM, ModelContextProtocol
+### [Streamlit × LangGraphでHuman-in-the-loopを実現する](https://qiita.com/so-engineer/items/60c10b44cea3aebae0a1)
+**Published:** 2025-06-16 23:12:06 UTC
+**Likes:** 4
+**Tags:** Streamlit, 生成AI, LLM, LangGraph
 
 **Digest:**
-AIチャットボット開発におけるコンテキスト管理の課題を解決する「Model Context Protocol (MCP)」を紹介。これは、AIに渡す情報をルール化する設計思想で、システムプロンプトと対話履歴の管理が重要。50行のPythonコードで、直近の会話を記憶し、一貫性のある応答を実現。dequeによる履歴管理で、トークン上限対策も。更なる発展として、履歴の要約やVector DB連携も可能。
+StreamlitとLangGraphでHuman-in-the-loopを実現するWebアプリを開発。AIエージェントが判断に迷う場合にユーザーに判断を委ねる機能を実現。`interrupt`と`Command`を使い、Streamlitの`st.session_state`で状態管理。AIエージェントはWeb検索と人間のレビューを使い、追加情報が必要な場合にアラートを表示。リポジトリを公開。
 
 ---
 
-### [生成AIに学習教材を作らせて世界にたった一つだけのオーダーメイド教材を作る](https://qiita.com/kazunoriboy/items/d7b12a10fde2d5709552)
-**Published:** 2025-06-15 23:53:44 UTC
+### [AWSワードウルフやってみた！！](https://qiita.com/ts_pepeti/items/67d4f7a1e2cf9625b774)
+**Published:** 2025-06-17 03:55:51 UTC
 **Likes:** 2
-**Tags:** 勉強法, 教材作成, LLM, AIエージェント, Manus
+**Tags:** AWS, bedrock, Claude, AmazonQ, cline
 
 **Digest:**
-Rust学習に興味を持ち、PHP経験者が**AIエージェント「Manus」**でオーダーメイド教材を作成し学習した体験談。書籍やチュートリアルの課題を解決するため、**Cursor**も活用。コンパクトで実践的な教材で効率的に学習でき、Geminiで次なる学習内容を相談。結果、AI活用学習は最適で、Githubで教材を公開。
+AWS単語でワードウルフゲームを作成！ClineとBedrock with Claude 4を使い、AWSの用語で遊ぶアプリを開発。認証機能、ルーム一覧、ゲーム画面などを実装。開発期間1週間、費用は約$20。プロンプトは自然言語ベースで、AWS SAMやCognitoも活用。先祖返りや苦手な部分もあったが、Amazon Qとの併用でコスト削減も。EC2 vs Lambdaなどのお題例も紹介。
 
 ---
 
-### [「なんかダサい」から抜け出す！個人開発アプリのUIをそれっぽく見せる、色彩計画とコンポーネント設計の記録【英語学習アプリ開発#5】](https://qiita.com/tama0931/items/b2f105d10b2da234998a)
-**Published:** 2025-06-15 15:56:14 UTC
+### [Claudeの契約の仕方次第で切り替えるのに時間がかかる話](https://qiita.com/iwata-n/items/1e41dcb7c35e598a449e)
+**Published:** 2025-06-16 15:28:44 UTC
 **Likes:** 2
-**Tags:** AI, Gemini, GeminiPro, GoogleAIStudio, AIエージェント
+**Tags:** Claude
 
 **Digest:**
-個人開発中の英語学習アプリ『Re-Learn English』のUI改善報告。機能実装後の課題だったデザインを、プロのUI/UXデザイナー（AI）レビューのもと、**「黄昏の海辺 × リキッドグラス」**をコンセプトに刷新。Tailwind CSSで**リキッドグラス**カードを実装、背景にオーロラグラデーションを採用。ボタンアクションも最適化し、直感的な操作性を実現。**UI/UX**の改善でアプリの体験価値向上を目指す。
+Claude ProをAndroid定期購入すると割高で、Web版と価格差がある。MAXプランへの変更もWeb版が有利だが、Android版の契約が残っているとWeb版からのアップグレードができないという落とし穴が存在。Android版の期間が終了するまでWeb版への変更は待つ必要がある。
 
 ---
 
-### [【MCP Inspector】ローカルコンテナ環境のMCPサーバーをデバックする方法](https://qiita.com/eiji-noguchi/items/468bc09fcc2eca8f1d8a)
-**Published:** 2025-06-15 15:15:29 UTC
-**Likes:** 2
-**Tags:** MCP, WSL2, 生成AI, Claude
-
-**Digest:**
-MCPサーバーのデバッグツール「MCP Inspector」の使い方を紹介。Anthropic公式ツールで、Dockerコンテナで動くMCPサーバーを対象に、接続方法やツールリスト表示、リクエストの確認方法を解説。Node.jsパッケージとして`npx @modelcontextprotocol/inspector`で実行。環境変数設定が重要で、AWS Lambda連携のサーバーを例に挙げています。
-
----
-
-### [Claude Code を Bedrock と連携させて使ってみた](https://qiita.com/YasuhiroKawano/items/bb32ca08e59d15a56c86)
-**Published:** 2025-06-16 03:21:23 UTC
+### [音声入力でAIエージェントを動かすデスクトップアプリを作ったんだなも](https://qiita.com/hmkc1220/items/3dea024f489b9d9a24af)
+**Published:** 2025-06-16 16:45:53 UTC
 **Likes:** 1
-**Tags:** AWS, bedrock, Claude
+**Tags:** whisper, OpenAI, Gemini, Claude, AIエージェント
 
 **Digest:**
-Amazon Bedrock と連携した Claude Code のインストールと設定方法の備忘録。`npm install`でインストール後、`CLAUDE_CODE_USE_BEDROCK=1`を設定し、モデルIDを指定。`AWS_PROFILE`と`AWS_REGION`を設定して`claude`コマンドで起動。`/cost`でコスト確認可能。Sonnet 4、Opus 4 などモデルごとの料金に注意。IDE用プラグインも。CLIでIDEに依存せず使えるのが特徴です。
+音声入力ツールは進化し、Super WhisperやAqua Voiceは音声からテキスト、LLMによる加工を自動化。Open Super Whisper V2は、OpenAI Agents SDKとMCPを採用し、音声でツールを操る体験を提供。会議録音、メール作成、Web操作など、多様なAIエージェントが利用可能。OpenAI APIやLLMを活用し、音声入力から行動への変革を提案。
+
+---
+
+### [watsonx Orchestrate上のAgentで複数Geminiモデルでロードバランシングしてみる](https://qiita.com/haseshin/items/e31f3da8ea1c6413fc5c)
+**Published:** 2025-06-16 14:52:42 UTC
+**Likes:** 1
+**Tags:** ADK, Gemini, watsonxOrchestrate, AIAgent
+
+**Digest:**
+watsonx Orchestrateでカスタムモデルがサポートされ、OpenAIやGoogleなどの外部LLMを利用可能に。ADK1.5.0からはModel Policy機能でロードバランシングやフォールバックも実現。Geminiモデルを例に、ポリシー設定でモデルの動的切り替えを検証。エラー時の代替モデル指定も可能となり、LLMの可用性を向上させることが可能です。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Veeamを使ってAmazon S3へバックアップしてみる第2弾 Veeam設定編](https://blog.jbs.co.jp/entry/2025/06/16/091010)
-**Source:** JBS Blog
-**Published:** 2025-06-16 00:10:10 UTC
-**Tags:** Veeam, AWS, Amazon S3
+### [How Apollo Tyres is unlocking machine insights using agentic AI-powered Manufacturing Reasoner](https://aws.amazon.com/blogs/machine-learning/how-apollo-tyres-is-unlocking-machine-insights-using-agentic-ai-powered-manufacturing-reasoner/)
+**Source:** AWS ML Blog
+**Published:** 2025-06-16 17:22:05 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Machine Learning, Customer Solutions, Generative AI, Manufacturing
 
 **Digest:**
-Veeam Backup&ReplicationでAmazon S3にバックアップデータを保存する設定手順を紹介します。事前にバックアップリポジトリとしてS3を登録し、オブジェクトストレージウィザードで名前、アカウント、設定を指定します。マウントサーバーの設定後、コンポーネントを確認して設定を適用することで、S3へのバックアップが可能になります。
+インドのタイヤメーカー、Apollo Tyresは、Amazon Bedrockと生成AIを活用し、製造工程のデータ分析を革新。熟練の技術者向けに、自然言語で機械データからインサイトを得る「Manufacturing Reasoner」を開発しました。これにより、RCA（根本原因分析）の時間を最大7時間から10分に短縮、年間1500万円のコスト削減を見込んでいます。
+
+---
+
+### [Extend your Amazon Q Business with PagerDuty Advance data accessor](https://aws.amazon.com/blogs/machine-learning/extend-your-amazon-q-business-with-pagerduty-advance-data-accessor/)
+**Source:** AWS ML Blog
+**Published:** 2025-06-16 17:15:54 UTC
+**Tags:** Amazon Q, Amazon Q Business, Customer Solutions, Partner solutions, AI/ML, AIML, Generative AI
+
+**Digest:**
+PagerDuty AdvanceとAmazon Q Businessの連携を紹介。PagerDuty Advanceはインシデント管理を強化し、Amazon Qのデータアクセスで複数システム横断検索を実現。これにより、迅速な問題解決、MTTR短縮、コスト最適化、セキュリティ向上を実現。企業は、ランブックや関連情報を効率的に取得し、運用効率を向上。
+
+---
+
+### [Innovate business logic by implementing return of control in Amazon Bedrock Agents](https://aws.amazon.com/blogs/machine-learning/innovate-business-logic-by-implementing-return-of-control-in-amazon-bedrock-agents/)
+**Source:** AWS ML Blog
+**Published:** 2025-06-16 17:11:19 UTC
+**Tags:** Advanced (300), Amazon SageMaker, Artificial Intelligence, Learning Levels
+
+**Digest:**
+Amazon Bedrock Agents は、分散システムにおけるエージェント作成を簡素化し、"return of control"機能で複雑な相互作用を容易にします。本記事では、パーソナライズされた投資ポートフォリオの例として、AWS Lambda、AWS Step Functions、外部API、Streamlitアプリとの連携を解説。API呼び出しや長時間のタスクに有効で、セキュリティ、モニタリングなどの考慮事項も提示。
+
+---
+
+### [【OpManager使ってみた】第1回 OpManagerのインストール](https://blog.jbs.co.jp/entry/2025/06/17/130646)
+**Source:** JBS Blog
+**Published:** 2025-06-17 04:06:46 UTC
+**Tags:** Tech, OpManager, 監視, Windows
+
+**Digest:**
+ゾーホージャパンの監視ソフトウェア「OpManager」を紹介。第1回はインストール方法を解説します。OpManagerは、幅広い機器対応、豊富な監視項目、使いやすさが魅力。評価版をWindows Server 2022へ導入し、設定や監視機能について全5回で説明予定です。
+
+---
+
+### [【PowerShell】Active Directoryモジュールがない環境でActive Directoryのユーザー情報を取得する](https://blog.jbs.co.jp/entry/2025/06/17/091429)
+**Source:** JBS Blog
+**Published:** 2025-06-17 00:14:29 UTC
+**Tags:** PoweShell, Active Directory
+
+**Digest:**
+顧客環境でのモジュールインストールが困難なため、PowerShellモジュールを使わずにActive Directory（AD）のユーザー情報を取得する方法を検討しました。
+
+---
+
+### [【Windows 365】クラウドPCへのRDP接続許可設定について -IntuneからのPower Shellスクリプト配布による対応編-](https://blog.jbs.co.jp/entry/2025/06/16/162226)
+**Source:** JBS Blog
+**Published:** 2025-06-16 07:22:26 UTC
+**Tags:** Windows 365, Microsoft Intune
+
+**Digest:**
+Windows 365は、Azure上のWindows Desktopに接続するMicrosoftのVDIソリューションです。クラウドPCと呼ばれる仮想マシンが各ユーザーに割り当てられ、Windowsデバイスとして利用可能。セキュリティのため、すべてのクラウドPCでRDP接続に利用されるポート3389が既定でブロックされ、Intuneによる設定が必要となる仕様です。
 
 ---
