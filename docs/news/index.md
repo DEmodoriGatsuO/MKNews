@@ -1,118 +1,108 @@
-# AI Tech Trends Digest (2025-06-17)
+# AI Tech Trends Digest (2025-06-18)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Streamlit × LangGraphでHuman-in-the-loopを実現する](https://qiita.com/so-engineer/items/60c10b44cea3aebae0a1)
-**Published:** 2025-06-16 23:12:06 UTC
-**Likes:** 4
-**Tags:** Streamlit, 生成AI, LLM, LangGraph
+### [画像1枚でAIが場所を当てる？Gemini + Google Maps で作るリバースジオロケーションアプリ](https://qiita.com/zawatti/items/73162bedfef00f6490b6)
+**Published:** 2025-06-17 13:38:54 UTC
+**Likes:** 7
+**Tags:** AI, マルチモーダル, Gemini, ClaudeCode, LiveAPI
 
 **Digest:**
-StreamlitとLangGraphでHuman-in-the-loopを実現するWebアプリを開発。AIエージェントが判断に迷う場合にユーザーに判断を委ねる機能を実現。`interrupt`と`Command`を使い、Streamlitの`st.session_state`で状態管理。AIエージェントはWeb検索と人間のレビューを使い、追加情報が必要な場合にアラートを表示。リポジトリを公開。
+写真から場所を特定するWebアプリ「ReverseGeo」を開発。Gemini APIを活用し、画像をアップロードするとAIが場所を解析、地図表示や履歴管理も。**画像解析**、**リアルタイム解析**、**インタラクティブマップ**機能を搭載。多様なモードで精度を高め、**東京駅**や**エッフェル塔**など実地検証も。AIの**画像理解能力**の高さに感銘。オフライン対応や精度の向上を目指し、ゲーム感覚で楽しめるアプリです。
 
 ---
 
-### [AWSワードウルフやってみた！！](https://qiita.com/ts_pepeti/items/67d4f7a1e2cf9625b774)
-**Published:** 2025-06-17 03:55:51 UTC
+### [coder/claudecode.nvimを使うとNeovimとClaude CodeがIDE統合できて便利だった](https://qiita.com/getty104/items/c332e5f632da71523dbc)
+**Published:** 2025-06-17 09:17:45 UTC
+**Likes:** 6
+**Tags:** Vim, neovim, Claude, ClaudeCode
+
+**Digest:**
+以前NeovimでClaude Codeを使うプラグインとして`greggh/claude-code.nvim`を紹介しましたが、今回は`coder/claudecode.nvim`を紹介します。このプラグインはClaude CodeのIDE統合を実現し、Neovimと連携。コンテキスト送信や差分表示が可能で、ファイルツリープラグインとの連携も。NeovimでのClaude Code利用を格段に向上させるのでおすすめです。
+
+---
+
+### [ LLMに賢く質問するためのプロンプト技法｜生成AI活用ガイド](https://qiita.com/asodariyapradip/items/465f4a9487c8a0994abf)
+**Published:** 2025-06-17 13:36:57 UTC
+**Likes:** 3
+**Tags:** AI, 生成AI, ChatGPT, LLM, プロンプトエンジニアリング
+
+**Digest:**
+生成AIとLLM普及で注目される「プロンプトエンジニアリング」。初心者向けに、AIへの指示文「プロンプト」の書き方のコツを解説。Zero-shot、Few-shotなど5つの技法を日本の生活例で紹介し、具体的に書く、フォーマット指定、丁寧な口調が重要。天気や家計管理など、日常生活での活用例も提示しています。
+
+---
+
+### [ADKで再現！エヴァンゲリオン「マギシステム」の並列意思決定プロセス](https://qiita.com/nakayutthi/items/1328fa575f086d6aeecc)
+**Published:** 2025-06-17 10:49:44 UTC
+**Likes:** 3
+**Tags:** Python, エヴァンゲリオン, ADK, Gemini, AIエージェント
+
+**Digest:**
+エヴァンゲリオンの「マギ」システムを模倣し、GoogleのADKでAIエージェントを構築する方法を紹介。`LlmAgent`でメルキオール、バルタザール、キャスパーの各思考を定義し、`ParallelAgent`で並列実行。結果を`SequentialAgent`で集約し、最終判断を下す「並列ファンアウト/ギャザーパターン」を実装。ADKのUIで動作を確認し、多様な視点からの意思決定を実現する。
+
+---
+
+### [非技術者でもできる！Google AI Studioで始める超高速PoC開発！](https://qiita.com/kazu_ppp/items/1579484bd138f0170c10)
+**Published:** 2025-06-17 13:29:48 UTC
 **Likes:** 2
-**Tags:** AWS, bedrock, Claude, AmazonQ, cline
+**Tags:** AI, Gemini, PoC, AIコーディング, GoogleAIStudio
 
 **Digest:**
-AWS単語でワードウルフゲームを作成！ClineとBedrock with Claude 4を使い、AWSの用語で遊ぶアプリを開発。認証機能、ルーム一覧、ゲーム画面などを実装。開発期間1週間、費用は約$20。プロンプトは自然言語ベースで、AWS SAMやCognitoも活用。先祖返りや苦手な部分もあったが、Amazon Qとの併用でコスト削減も。EC2 vs Lambdaなどのお題例も紹介。
-
----
-
-### [Claudeの契約の仕方次第で切り替えるのに時間がかかる話](https://qiita.com/iwata-n/items/1e41dcb7c35e598a449e)
-**Published:** 2025-06-16 15:28:44 UTC
-**Likes:** 2
-**Tags:** Claude
-
-**Digest:**
-Claude ProをAndroid定期購入すると割高で、Web版と価格差がある。MAXプランへの変更もWeb版が有利だが、Android版の契約が残っているとWeb版からのアップグレードができないという落とし穴が存在。Android版の期間が終了するまでWeb版への変更は待つ必要がある。
-
----
-
-### [音声入力でAIエージェントを動かすデスクトップアプリを作ったんだなも](https://qiita.com/hmkc1220/items/3dea024f489b9d9a24af)
-**Published:** 2025-06-16 16:45:53 UTC
-**Likes:** 1
-**Tags:** whisper, OpenAI, Gemini, Claude, AIエージェント
-
-**Digest:**
-音声入力ツールは進化し、Super WhisperやAqua Voiceは音声からテキスト、LLMによる加工を自動化。Open Super Whisper V2は、OpenAI Agents SDKとMCPを採用し、音声でツールを操る体験を提供。会議録音、メール作成、Web操作など、多様なAIエージェントが利用可能。OpenAI APIやLLMを活用し、音声入力から行動への変革を提案。
-
----
-
-### [watsonx Orchestrate上のAgentで複数Geminiモデルでロードバランシングしてみる](https://qiita.com/haseshin/items/e31f3da8ea1c6413fc5c)
-**Published:** 2025-06-16 14:52:42 UTC
-**Likes:** 1
-**Tags:** ADK, Gemini, watsonxOrchestrate, AIAgent
-
-**Digest:**
-watsonx Orchestrateでカスタムモデルがサポートされ、OpenAIやGoogleなどの外部LLMを利用可能に。ADK1.5.0からはModel Policy機能でロードバランシングやフォールバックも実現。Geminiモデルを例に、ポリシー設定でモデルの動的切り替えを検証。エラー時の代替モデル指定も可能となり、LLMの可用性を向上させることが可能です。
+Google AI Studioは、非技術者でも爆速でAIアプリのPoC開発を可能にするツール。Googleが提供し、コードを書かずに仕様を記述するだけで、AIがコードを生成。スマホへのデプロイも簡単で、アイデアを素早く形にできる。OCR機能のPoCなど試せる例も紹介。PoC開発を加速させ、アイデア実現を支援する。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [How Apollo Tyres is unlocking machine insights using agentic AI-powered Manufacturing Reasoner](https://aws.amazon.com/blogs/machine-learning/how-apollo-tyres-is-unlocking-machine-insights-using-agentic-ai-powered-manufacturing-reasoner/)
+### [How Anomalo solves unstructured data quality issues to deliver trusted assets for AI with AWS](https://aws.amazon.com/blogs/machine-learning/how-anomalo-solves-unstructured-data-quality-issues-to-deliver-trusted-assets-for-ai-with-aws/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-16 17:22:05 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Machine Learning, Customer Solutions, Generative AI, Manufacturing
+**Published:** 2025-06-17 15:02:07 UTC
+**Tags:** Amazon Machine Learning, Customer Solutions, Generative AI
 
 **Digest:**
-インドのタイヤメーカー、Apollo Tyresは、Amazon Bedrockと生成AIを活用し、製造工程のデータ分析を革新。熟練の技術者向けに、自然言語で機械データからインサイトを得る「Manufacturing Reasoner」を開発しました。これにより、RCA（根本原因分析）の時間を最大7時間から10分に短縮、年間1500万円のコスト削減を見込んでいます。
+生成AIの革新を支えるのはデータ品質であり、AnomaloとAWSの連携が重要です。企業は、大量の非構造化データ（テキスト、画像など）の品質課題に直面しており、Anomaloを活用することで、データ抽出、コンプライアンス、品質管理を効率化できます。Amazon S3に格納されたデータを自動処理し、異常検知、PII保護、AWS BedrockによるLLM活用を実現、AIプロジェクトの成功に貢献します。
 
 ---
 
-### [Extend your Amazon Q Business with PagerDuty Advance data accessor](https://aws.amazon.com/blogs/machine-learning/extend-your-amazon-q-business-with-pagerduty-advance-data-accessor/)
+### [An innovative financial services leader finds the right AI solution: Robinhood and Amazon Nova](https://aws.amazon.com/blogs/machine-learning/an-innovative-financial-services-leader-finds-the-right-ai-solution-robinhood-and-amazon-nova/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-16 17:15:54 UTC
-**Tags:** Amazon Q, Amazon Q Business, Customer Solutions, Partner solutions, AI/ML, AIML, Generative AI
+**Published:** 2025-06-17 14:58:21 UTC
+**Tags:** Amazon Nova, Artificial Intelligence, Customer Solutions, Generative AI
 
 **Digest:**
-PagerDuty AdvanceとAmazon Q Businessの連携を紹介。PagerDuty Advanceはインシデント管理を強化し、Amazon Qのデータアクセスで複数システム横断検索を実現。これにより、迅速な問題解決、MTTR短縮、コスト最適化、セキュリティ向上を実現。企業は、ランブックや関連情報を効率的に取得し、運用効率を向上。
+Robinhoodは、AWSを活用し、AIによる金融サービスの民主化を目指しています。手数料無料取引で業界を革新し、2500万人以上の顧客を獲得。Amazon BedrockやNovaを使い、顧客データ保護を重視しながら、AI投資ツール「Cortex」などを開発。価格競争力も高め、高速かつ低コストなサービス提供を目指しています。
 
 ---
 
-### [Innovate business logic by implementing return of control in Amazon Bedrock Agents](https://aws.amazon.com/blogs/machine-learning/innovate-business-logic-by-implementing-return-of-control-in-amazon-bedrock-agents/)
+### [Build conversational interfaces for structured data using Amazon Bedrock Knowledge Bases](https://aws.amazon.com/blogs/machine-learning/build-conversational-interfaces-for-structured-data-using-amazon-bedrock-knowledge-bases/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-16 17:11:19 UTC
-**Tags:** Advanced (300), Amazon SageMaker, Artificial Intelligence, Learning Levels
+**Published:** 2025-06-17 14:52:46 UTC
+**Tags:** Advanced (300), Amazon Bedrock Knowledge Bases, Amazon Redshift, AWS Glue, Technical How-to, AI/ML, Generative AI
 
 **Digest:**
-Amazon Bedrock Agents は、分散システムにおけるエージェント作成を簡素化し、"return of control"機能で複雑な相互作用を容易にします。本記事では、パーソナライズされた投資ポートフォリオの例として、AWS Lambda、AWS Step Functions、外部API、Streamlitアプリとの連携を解説。API呼び出しや長時間のタスクに有効で、セキュリティ、モニタリングなどの考慮事項も提示。
+Amazon Bedrock Knowledge Basesは、自然言語での質問をSQLクエリに変換し、構造化データ分析を簡素化します。AWS Glue、Redshift、S3と連携し、会話形式でデータにアクセス可能。データガバナンスも確保。コード例とテンプレートで、対話型データインターフェースを迅速に構築できます。
 
 ---
 
-### [【OpManager使ってみた】第1回 OpManagerのインストール](https://blog.jbs.co.jp/entry/2025/06/17/130646)
-**Source:** JBS Blog
-**Published:** 2025-06-17 04:06:46 UTC
-**Tags:** Tech, OpManager, 監視, Windows
+### [We’re expanding our Gemini 2.5 family of models](https://blog.google/products/gemini/gemini-2-5-model-family-expands/)
+**Source:** Google DeepMind
+**Published:** 2025-06-17 16:00:00 UTC
+**Tags:** Gemini Models, Google DeepMind, AI
 
 **Digest:**
-ゾーホージャパンの監視ソフトウェア「OpManager」を紹介。第1回はインストール方法を解説します。OpManagerは、幅広い機器対応、豊富な監視項目、使いやすさが魅力。評価版をWindows Server 2022へ導入し、設定や監視機能について全5回で説明予定です。
+GoogleのGemini 2.5が進化！ 高速かつ低コストな「Flash-Lite」を含む、FlashとProの3モデルが利用可能になりました。Gemini 2.5 Flash-Liteは、最も費用対効果の高い2.5モデルとして登場し、Gemini 2.5シリーズ全体の性能向上に貢献しています。
 
 ---
 
-### [【PowerShell】Active Directoryモジュールがない環境でActive Directoryのユーザー情報を取得する](https://blog.jbs.co.jp/entry/2025/06/17/091429)
+### [【Microsoft×生成AI連載】【Word】WordのCopilot活用術：ドキュメントの要点整理術](https://blog.jbs.co.jp/entry/2025/06/18/085109)
 **Source:** JBS Blog
-**Published:** 2025-06-17 00:14:29 UTC
-**Tags:** PoweShell, Active Directory
+**Published:** 2025-06-17 23:51:09 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載, Word
 
 **Digest:**
-顧客環境でのモジュールインストールが困難なため、PowerShellモジュールを使わずにActive Directory（AD）のユーザー情報を取得する方法を検討しました。
-
----
-
-### [【Windows 365】クラウドPCへのRDP接続許可設定について -IntuneからのPower Shellスクリプト配布による対応編-](https://blog.jbs.co.jp/entry/2025/06/16/162226)
-**Source:** JBS Blog
-**Published:** 2025-06-16 07:22:26 UTC
-**Tags:** Windows 365, Microsoft Intune
-
-**Digest:**
-Windows 365は、Azure上のWindows Desktopに接続するMicrosoftのVDIソリューションです。クラウドPCと呼ばれる仮想マシンが各ユーザーに割り当てられ、Windowsデバイスとして利用可能。セキュリティのため、すべてのクラウドPCでRDP接続に利用されるポート3389が既定でブロックされ、Intuneによる設定が必要となる仕様です。
+Microsoft Wordで利用できるCopilot機能に焦点を当てた記事です。Word内でCopilotを活用することで、文書作成や編集作業を効率化できる可能性があります。具体的な機能やその利用方法については、記事内で詳しく解説していく予定です。
 
 ---
