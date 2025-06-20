@@ -1,118 +1,148 @@
-# AI Tech Trends Digest (2025-06-19)
+# AI Tech Trends Digest (2025-06-20)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [マイクロソフトCEOが言った”AIでSaaSアプリの消滅する”に関して](https://qiita.com/QueryPie/items/6c20485284f22a35ef73)
-**Published:** 2025-06-18 14:01:37 UTC
-**Likes:** 4
-**Tags:** AI, MCP, 生成AI, LLM
+### [「Claude Code」導入をめっちゃスムーズにする「ドキュメントの下地」を作るプロンプト](https://qiita.com/WdknWdkn/items/2755301aebff878e0075)
+**Published:** 2025-06-19 09:17:47 UTC
+**Likes:** 29
+**Tags:** プロジェクト管理, ドキュメント, 生成AI, Claude, ClaudeCode
 
 **Digest:**
-マイクロソフトCEOのナデラ氏は、SaaSの進化を「死んだ」と表現。AIエージェント台頭により、既存アプリのUI不要化、バックエンド崩壊を予測。ビジネスロジックはAI層へ移行し、課金モデルも変化。AIネイティブSaaSが台頭し、企業はAI活用で価値創造を。SaaS企業はAI化への対応が急務です。
+いえらぶGROUPのエンジニアが、AIによるコード生成・レビューの課題解決のため、Claude Codeの導入ハードルを下げる「初期設定プロンプト」を開発。既存ドキュメント探索、CLAUDE.mdへの追記、不足ドキュメント提案などを自動化し、開発者の「やってみる」を促進。結果、ドキュメント更新数2.7倍、レビュー短縮を実現。プロンプトを「運用装置」と捉え、心理的安全性を高めた。
 
 ---
 
-### [生成 AI は次にどの単語を選ぶ？ Gemini の logprobs 機能で確率を見てみよう！](https://qiita.com/te_yama/items/2fddfbf0a4078e7911c0)
-**Published:** 2025-06-18 13:52:15 UTC
-**Likes:** 3
-**Tags:** Python, Gemini, GoogleCloud, VertexAI, 生成AI
+### [GitHub Copilot Agent＋Claude Codeを併用してチーム開発を10倍効率化する方法](https://qiita.com/ShunnnEng/items/135ae1cb2eb5a85dd8f8)
+**Published:** 2025-06-19 08:44:06 UTC
+**Likes:** 1
+**Tags:** copilot, Claude, ClaudeCode
 
 **Digest:**
-Gemini APIの`logprobs`機能で、LLMがテキスト生成時にトークンごとの選択肢と確率を可視化。`response_logprobs`と`logprobs`設定で、AIの選択理由を理解。例えば「日本で一番高い山は？」への回答候補を分析し、生成AIの挙動解釈やデバッグ、チューニングに役立つ。多様な選択肢から確率的に単語が選ばれる過程を理解し、AIをより効果的に活用。
+GitHub Copilot AgentとClaude Codeを組み合わせ、チーム開発を劇的に効率化する方法を紹介。issue駆動のCopilot Agentはバグ修正やテストに、複雑な設計・実装はClaude Codeが担当。設計、実装、品質向上という3段階アプローチで、開発速度62.5%向上、バグ発生率60%削減を実現。役割分担、知識共有、継続的な学習が成功の鍵。
 
 ---
 
-### [OpenHands CLIでローカルLLM（Ollama・LiteLLM）を使ったAIエージェント開発入門](https://qiita.com/nokonoko_1203/items/7cbdb5d5e82b3c0a4f41)
-**Published:** 2025-06-18 13:40:52 UTC
-**Likes:** 3
-**Tags:** Python, LLM, litellm, ollama, OpenHands
-
-**Digest:**
-OpenHands CLIをローカルLLMで動かす方法を紹介。OllamaとLiteLLM Proxyを使用し、Qwen3 32Bモデルをローカル環境で実行する。設定は`~/.openhands/settings.json`で行い、LiteLLM経由なら柔軟な設定が可能。メリットはプライバシー保護、APIコスト不要、オフライン動作。デメリットは初期設定とハードウェアスペック。
-
----
-
-### [TRTCとChatGPT（OpenAI API）を連携して音声AIチャットを構築する手順](https://qiita.com/lbddk4/items/99322d5bff097ae1cec5)
-**Published:** 2025-06-19 05:34:36 UTC
+### [vibe coding+supabaseで匿名キーからのDBアクセスを無効にした話](https://qiita.com/numekudi/items/f6b2ccdcec198e9be774)
+**Published:** 2025-06-20 02:53:56 UTC
 **Likes:** 0
-**Tags:** 音声処理, RTC, OpenAI, AI会話アプリ, ChatGPT
+**Tags:** Security, Next.js, ReactRouter, Supabase, LLM
 
 **Digest:**
-Tencent Cloud TRTC SDKとOpenAI ChatGPT APIを連携し、Flutterでリアルタイム音声AIチャットを実現。TRTCで音声を収音し、ASRでテキスト化、ChatGPT（gpt-3.5-turbo）で対話、TTSで音声合成しTRTC経由で応答。OpenAI APIキー取得、Flutterでの音声送受信、PythonサーバーでのChatGPT連携、TTS、TRTCによる音声伝送と再生の流れを説明。
+Supabaseの`anon key`からDB操作権限を剥奪し、安全性を優先。クライアントサイドからの直接アクセスを禁止し、Next.jsのServer ComponentsやReact Routerのloader/actionで`service_role key`を用いてサーバーサイドでDB操作を行う構成を採用。これにより、BaaSをより堅牢に活用し、情報漏洩リスクを低減。これはBaaSの否定ではなく、より主体的な活用方法である。
 
 ---
 
-### [ネクストステップMCPセキュリティ:【第2回】コンテキスト汚染攻撃の全貌 - AIの記憶を狙う新たな脅威](https://qiita.com/QueryPie/items/dfac5ef56314d8a0ff38)
-**Published:** 2025-06-19 04:30:24 UTC
+### [Geminiでキツネと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/36e381cd6938896c05d5)
+**Published:** 2025-06-19 21:55:38 UTC
 **Likes:** 0
-**Tags:** Security, AI, MCP, LLM
+**Tags:** Gemini
 
 **Digest:**
-MCPの「コンテキスト汚染攻撃」は、AIの長期記憶であるコンテキストに悪意ある情報を注入し、判断を歪める高度な攻撃。プロンプトインジェクションを超え、長期的な影響と検知の難しさが特徴です。対策として、コンテキストの整合性検証、アクセス制御強化、定期的な再評価、設計段階からのセキュリティ組み込みが重要となります。
+Geminiで「水のキツネと遊ぶ魔法少女」を描画する実験を実施。プロンプトは「水のキツネと遊ぶ魔法少女を描いてください」で、その結果の画像を公開。可愛らしいイラストが生成された。何かのお役に立てれば、とのこと。
+
+---
+
+### [【賢いMCP-Slackボット開発連載-1】AIが会話をすぐ忘れる問題。「Model Context Protocol」で賢いボットの土台を築く](https://qiita.com/QueryPie/items/4955baf9d2dcbbf9775d)
+**Published:** 2025-06-19 16:16:53 UTC
+**Likes:** 0
+**Tags:** Python, Slack, MCP, LLM, ModelContextProtocol
+
+**Digest:**
+Slackボットが「忘れっぽい」問題を解決するため、**Model Context Protocol (MCP)**という設計思想を導入します。これは、LLMのステートレス性を補うもので、ボットの「記憶」と「思考」を設計します。MCPは、**システムプロンプト、短期記憶、長期記憶、動的コンテキスト**の4要素から成り、**Pythonで実装**することで、賢いSlackボット開発の土台を築きます。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Meeting summarization and action item extraction with Amazon Nova](https://aws.amazon.com/blogs/machine-learning/meeting-summarization-and-action-item-extraction-with-amazon-nova/)
+### [Build a scalable AI video generator using Amazon SageMaker AI and CogVideoX](https://aws.amazon.com/blogs/machine-learning/build-a-scalable-ai-video-generator-using-amazon-sagemaker-ai-and-cogvideox/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-18 16:13:36 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, Generative AI, Intermediate (200), Technical How-to, AI/ML
+**Published:** 2025-06-19 19:47:41 UTC
+**Tags:** Amazon SageMaker, Amazon SageMaker AI, Artificial Intelligence, Generative AI, Intermediate (200)
 
 **Digest:**
-Amazon Bedrockで利用可能なAmazon Novaモデルを活用し、会議の議事録から要約とアクションアイテムを生成する手法を解説。Prompt engineeringを用い、モデルの選定基準や性能を評価。Nova Premierは高い精度を示し、Nova Microは高速処理を実現。企業向けに、速度とコストを最適化するAmazon Novaの利点を紹介しています。
+AI/ML技術の進化による動画生成能力に着目し、AWS上でCogVideoXモデルを活用した動画生成ソリューションを紹介。Amazon S3、Fargate、SageMaker、Amazon Bedrockを連携し、テキストや画像から高品質な動画を生成。企業のマーケティングや教育分野での活用を想定。使いやすいStreamlit UIで操作し、動画制作の効率化と革新を促進します。
 
 ---
 
-### [Building a custom text-to-SQL agent using Amazon Bedrock and Converse API](https://aws.amazon.com/blogs/machine-learning/building-a-custom-text-to-sql-agent-using-amazon-bedrock-and-converse-api/)
+### [Building trust in AI: The AWS approach to the EU AI Act](https://aws.amazon.com/blogs/machine-learning/building-trust-in-ai-the-aws-approach-to-the-eu-ai-act/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-18 16:10:16 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Bedrock Knowledge Bases, Amazon DynamoDB, Amazon Machine Learning, AWS Lambda, Technical How-to
+**Published:** 2025-06-19 19:41:11 UTC
+**Tags:** Artificial Intelligence, Responsible AI
 
 **Digest:**
-自然言語からSQLを生成するText-to-SQLの課題に対し、Amazon BedrockとConverse APIを活用したカスタムエージェント「ConverseSQLAgent」を紹介。複雑なクエリやデータベース構造に対応するため、計画、自己修正、長期学習機能を実装。SQLAlchemyによる自己修正やDynamoDBを活用した長期記憶で精度向上を図り、AnthropicのClaude 3.5 Sonnetを利用。コードはGitHubで公開されており、デプロイとクリーンアップの手順も解説。
+EU AI Actへの対応が加速。調査では、欧州企業の68%が法規制理解に苦労し、40%がコンプライアンス費用に充当。AWSは、安全なAIソリューション提供のため、ISO/IEC 42001認証取得済。EU AI Actは2024年8月施行、2025年2月から禁止事項が適用。AWSは透明性確保、教育、ガバナンス支援を通じて、顧客のコンプライアンスを支援。
 
 ---
 
-### [Accelerate threat modeling with generative AI](https://aws.amazon.com/blogs/machine-learning/accelerate-threat-modeling-with-generative-ai/)
+### [Update on the AWS DeepRacer Student Portal](https://aws.amazon.com/blogs/machine-learning/update-on-the-aws-deepracer-student-portal/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-18 16:05:53 UTC
-**Tags:** Amazon Bedrock, Artificial Intelligence, Generative AI, Security, Technical How-to
+**Published:** 2025-06-19 19:29:01 UTC
+**Tags:** Announcements, Artificial Intelligence, AWS DeepRacer
 
 **Digest:**
-ジェネレーティブAIは、**脅威モデリング**を革新し、脆弱性の特定、攻撃シナリオ生成、緩和策の提供を自動化。**Threat Designer** は、アーキテクチャ図を分析し、大規模言語モデル(LLM)を活用して脅威を特定。時間や専門知識の壁を越え、**AI**による包括的なセキュリティ分析を実現し、開発の速度を落とさずに、より強固なシステム構築を可能にする。
+AWS DeepRacer Student Portalは2025年9月15日に終了。7月14日からは新規登録が停止され、既存ユーザーは9月まで利用可能。今後はAWS Solutions LibraryでDeepRacerが利用できるようになる。AI/ML教育の一環として、5月28日にジェネレーティブAIに焦点を当てた「AWS AI & ML Scholars」プログラムが再開。学習継続には、awsaimlscholars.comやAWS Skill Builderを活用。
 
 ---
 
-### [Azure Red Hat Enterprise Linux 仮想マシン導入ポイント～その2～](https://blog.jbs.co.jp/entry/2025/06/19/130612)
-**Source:** JBS Blog
-**Published:** 2025-06-19 04:06:12 UTC
-**Tags:** Azure, Linux, RHEL
+### [Accelerate foundation model training and inference with Amazon SageMaker HyperPod and Amazon SageMaker Studio](https://aws.amazon.com/blogs/machine-learning/accelerate-foundation-model-training-and-inference-with-amazon-sagemaker-hyperpod-and-amazon-sagemaker-studio/)
+**Source:** AWS ML Blog
+**Published:** 2025-06-19 19:26:44 UTC
+**Tags:** Amazon SageMaker, Amazon SageMaker AI, Amazon SageMaker HyperPod, Amazon SageMaker Studio, Artificial Intelligence, Intermediate (200)
 
 **Digest:**
-Azure上のRHEL VM設定について解説。SELinux、Firewalld、IPv6を無効化し、日本語環境を構築、パッケージをアップデートします。Azure環境でRHEL VMを最適化するための手順を簡潔にまとめました。
+大規模な生成AIモデルの学習には、SageMaker HyperPodとFSx for Lustreを活用し、耐障害性と高いスループットを実現します。SageMaker HyperPodは、障害発生時に自動修復し、学習の中断を最小限に抑えます。FSx for Lustreは、SageMaker StudioとHyperPod間の高速なデータ共有を可能にし、開発効率を向上。CloudFormationによる環境構築や、SLURMまたはAmazon EKSをオーケストレーターとして選択できます。
 
 ---
 
-### [Microsoft Entra Connect Health 管理者への通知について](https://blog.jbs.co.jp/entry/2025/06/19/090248)
-**Source:** JBS Blog
-**Published:** 2025-06-19 00:02:48 UTC
-**Tags:** Azure AD Connect, Azure AD, Microsoft Entra Connect, Microsoft Entra ID
+### [Surface Copilot+ PC で Windows 11 への移行を後押し](https://blogs.windows.com/japan/2025/06/20/accelerate-your-move-to-windows-11-with-surface-copilot-pcs/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-06-20 01:13:37 UTC
+**Tags:** Surface, Surface Copilot+ PC
 
 **Digest:**
-Microsoft Entra Connect Health（MECH）は、オンプレAD DSとEntra IDの同期を監視する重要ツール。プロキシ環境では設定が必要で、本記事では管理者へのエラー通知設定を解説。MECHの設定方法を説明し、実際の通知例を提示。
+2025年10月でWindows 10のサポートが終了。セキュリティと生産性向上のため、Windows 11への移行が重要です。Microsoft Surface Copilot+ PCは、Windows 11 Proとの連携により、セキュリティインシデントを削減し、導入も容易に。パフォーマンスも向上し、多様な働き方に対応、AI機能を活用できます。
 
 ---
 
-### [【AWS】AWS BudgetsレポートでAWSの利用状況を把握する](https://blog.jbs.co.jp/entry/2025/06/18/164606)
-**Source:** JBS Blog
-**Published:** 2025-06-18 07:46:06 UTC
-**Tags:** AWS, AWS Budgets
+### [手を動かして考える: Surface ペンのデジタル手描き入力](https://blogs.windows.com/japan/2025/06/20/hinking-by-hand-digital-inking-with-surface-pen/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-06-20 01:11:49 UTC
+**Tags:** Surface, Surface ペン
 
 **Digest:**
-AWS Budgetsは、AWS利用料金を管理するコスト管理ツールです。予算を設定し、利用状況とコストを追跡、予算超過のアラート設定やレポート作成が可能です。AWS Budgetsレポートを活用することで、AWS利用料金の現状把握に役立ちます。
+Surfaceペンのデジタル手書き入力は、アイデア創出、コラボレーション、イノベーションを促進。Surface MVPが、OneNoteやWhiteboardでのスケッチ、会議でのメモ活用、PowerPointへの注釈など、様々な場面での生産性向上を紹介。脳の活性化、スムーズなチームワーク、繊細な表現力も実現し、場所を選ばず創造性を高めるツールとして有効です。
+
+---
+
+### [Copilot+ PC で NPU を活用して生成 AI タスクを実行する](https://blogs.windows.com/japan/2025/06/20/leveraging-the-power-of-npu-to-run-gen-ai-tasks-on-copilot-pcs/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-06-20 01:10:18 UTC
+**Tags:** Surface, Copilot+ PC, NPU
+
+**Digest:**
+Microsoftは、Copilot+ PCでNPUを活用し、SLMを効率的に実行する方法を解説。Qualcomm AI Hubを利用し、Snapdragon X Plus搭載Surface Laptop 13インチでPhi-3.5モデルをローカル実行する事例を紹介。QNN SDK、Hugging Faceのトークナイザー、構成ファイルの準備、テストプロンプト実行の手順を説明し、エッジAIの実現可能性を示す。
+
+---
+
+### [【Microsoft×生成AI連載】【最新情報】Copilot Studioエージェントビルダーのナレッジにチャットとサイトが対応しより便利に](https://blog.jbs.co.jp/entry/2025/06/20/085940)
+**Source:** JBS Blog
+**Published:** 2025-06-19 23:59:40 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
+
+**Digest:**
+Microsoft Copilot Studioが進化！Teamsチャット、メール、SharePointサイトを知識源としてAIエージェントに統合可能になりました。最新機能により、AIエージェントはさらに便利に。記事では、Copilot Studioエージェントビルダーを使った具体的な作成手順も解説されています。
+
+---
+
+### [SharePoint Framework Extensions: フィールドカスタマイザーの廃止について](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/06/sharepoint-fram-7c2d.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-06-19 15:19:32 UTC
+**Tags:** Microsoft 365 - SharePoint, SharePoint Framework
+
+**Digest:**
+SharePoint Framework (SPFx) Extensions を活用したフィールドカスタマイズについて解説。フィールドカスタムizer を使用することで、SharePoint リストやライブラリの表示方法を柔軟に変更できます。これにより、データの表示や操作を向上させ、ユーザーエクスペリエンスを最適化することが可能です。
 
 ---
