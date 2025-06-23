@@ -1,68 +1,78 @@
-# AI Tech Trends Digest (2025-06-22)
+# AI Tech Trends Digest (2025-06-23)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Claude CodeをGoogle Cloud Shellから使ってみる](https://qiita.com/danishi/items/f5c0ba675e82b0d32d69)
-**Published:** 2025-06-22 02:47:14 UTC
-**Likes:** 3
-**Tags:** CloudShell, GoogleCloud, VertexAI, Claude, ClaudeCode
+### [AI Agent Manager (AAM) として生きていく : 作業環境とワークフローの設計](https://qiita.com/icoxfog417/items/f15e92f05b14411fd642)
+**Published:** 2025-06-22 15:37:26 UTC
+**Likes:** 19
+**Tags:** 機械学習, GenerativeAI, Claude, AmazonQ, ClaudeCode
 
 **Digest:**
-Claude CodeをGoogle Cloud Shellで利用する手順を紹介。Vertex AIモデルで、Cloud Shell上でClaude Codeをセットアップし、Google Cloudリソースを操作。予算アラート設定必須。Cloud Shell起動後、設定ファイル作成、npmでClaude Codeをインストール、起動し、追加コンテキストを与える。gcloudコマンドでStorageバケット作成やファイルアップロードも可能。Cloud Shellエディタでのコーディング支援にも活用。
+20XX年、AI Agentが開発の中心となり、AI Agent Manager（AAM）の役割が重要に。著者は、AI Agent をマネジメントするAAMとして、環境整備（コンテキスト付与、MCP Server活用）とワークフロー設計（タスクの明確化、PDCAサイクル）を実践。最終的には、AIエージェントの振る舞いを学習させるFine Tuningが重要になると提唱。AAMには、並行作業環境設計、コマンド設計、ナレッジ統合など、多様なスキルが求められる。
 
 ---
 
-### [【Claude Code】指示書が肥大化してきたので観点別に指示を分けて開発効率を改善した話](https://qiita.com/tomada/items/cec7f1eb2a5eb83b91f2)
-**Published:** 2025-06-21 14:36:05 UTC
+### [Snowflake Cortex AISQLのAI_AGG関数を試してみる](https://qiita.com/abe_masanori/items/18b143193c9f84a15a6c)
+**Published:** 2025-06-22 14:01:53 UTC
 **Likes:** 2
-**Tags:** 個人開発, 生成AI, Claude, AIエージェント, ClaudeCode
+**Tags:** Snowflake, LLM, SnowflakeCortex, AI_AGG
 
 **Digest:**
-Claude Code の指示書肥大化問題に対し、著者は「観点別ディレクトリ構造」を提案。Anthropic 社の AI エージェントで、デザインや SEO など専門家視点で指示を分割し、品質と効率を向上。`perspectives` ディレクトリが特に効果的で、デザインの一貫性や SEO 対策の精度アップを実感。今後は QA エンジニア観点なども追加予定。
+Snowflake Cortexの**AISQL**、特に**AI_AGG関数**を試用。レビューコメント要約、レビュー点分析など、SQL内でLLM機能を活用。AI_AGGは複数テキストの集約に有効だが、**プロンプト**にデータの意味を明記する必要あり。**null**は除外、複数列分析はJSON化で対応可能。Llama系LLM利用の可能性を示唆。大規模データへの対応も興味深い。消費トークンは確認可能で、0.2ドル程度のコストだった。
 
 ---
 
-### [さよなら、スクレイピングコード。可愛い犬AIが自律的にPCを操作するデスクトップマスコットの作り方【AIエージェント× MCP】](https://qiita.com/hiratsukaaa/items/3387c5b1746327c6954c)
-**Published:** 2025-06-21 22:53:46 UTC
+### [AIは、コーヒーの「心」を読めるか？- FlutterとGeminiで、最強の「AI焙煎メンター」を創る話【アプリ設計全公開】](https://qiita.com/takutosat/items/b157468eca9b2f412979)
+**Published:** 2025-06-23 04:00:55 UTC
 **Likes:** 1
-**Tags:** Python, AI, MCP, Gemini, Playwright
+**Tags:** AI, Firebase, Flutter, 個人開発, Gemini
 
 **Digest:**
-デスクトップで動作する犬AIエージェントの作り方を解説。GoogleのGemini 2.0とLangGraph、MCPを組み合わせ、自然言語で指示するとWeb検索やファイル操作を自律的に実行します。PlaywrightとFilesystem MCPを利用し、PythonのPyQt6でUIを構築。GitHubからクローン、APIキー設定、mcp_config.jsonの編集で簡単に試せます。
+手回し焙煎ログアプリ開発の記録。FlutterとFirebase、Gemini APIを使い、CRUD、AI分析、UI更新、入力体験を実装。設計はシンプルで拡張性あるFirestore、AI連携は非同期UXとStreamBuilder。Xcode警告やカレンダー表示問題も解決。M1/M2 Macでのpod、非同期UIの注意点などFlutter, Firebase開発のTipsを紹介。
 
 ---
 
-### [AI・機械学習　昨日、今日、明日](https://qiita.com/kaizen_nagoya/items/adb184c8fc7a65ac9756)
-**Published:** 2025-06-21 12:50:03 UTC
+### [【Claude Code】Vibe Codingで自分用のQiita分析ツールを作ってみた](https://qiita.com/ryu-ki/items/783397f8955acf8cd1f9)
+**Published:** 2025-06-22 23:50:04 UTC
 **Likes:** 1
-**Tags:** 機械学習, AI, MCP, DoCAP, LLM
+**Tags:** 初心者, やってみた, 個人開発, Claude, VibeCoding
 
 **Digest:**
-電総研での研修を振り返り、LISP CPUの存在に触れつつ、機械学習やLLMへの関心を表明。LLM研究会での学びや、不登校児童の博士論文構想に言及。ハードウェア進化よりも課題解決に注力し、戦争・飢餓地域での問題解決への意欲も示唆。
+Claude Codeを使用して、Qiita投稿分析ツールを開発した体験を紹介。**Claude Code**でPython、DuckDB、Streamlitを活用し、CLI版とWeb版ダッシュボードを完成。技術的なハードルを乗り越え、**アイデア具現化**の喜びを実感。開発者の役割は「How」から「What/Why」へシフト。CLAUDE.mdでのルール設定や段階的な指示が重要。**個人開発**の可能性を広げるAIツールとして、今後の活用に期待。
 
 ---
 
-### [社内リポジトリ管理の新選択肢：Forgejo - コーディングエージェント時代のGitHub Actions互換CI/CD](https://qiita.com/Maki-HamarukiLab/items/fce4dae5fae5c497585b)
-**Published:** 2025-06-21 10:35:04 UTC
+### [TDD（テスト駆動開発）を自動化するAIエージェント](https://qiita.com/ymgc3/items/185ae41978f83f0c4152)
+**Published:** 2025-06-22 08:53:23 UTC
 **Likes:** 1
-**Tags:** GitLab, GitHubActions, Claude, AIエージェント, AIコードアシスタント
+**Tags:** Python, TDD, AI, LLM, AIエージェント
 
 **Digest:**
-AIコーディング時代に対応するため、GitHub Actions互換のCI/CDシステム「Forgejo Actions」を内蔵した自己ホスト型GitサービスForgejoが注目されています。Claude CodeやOpenHandsなどのコーディングエージェントとの統合、GitLab CIからの移行優位性、オンプレミス運用の柔軟性が特徴です。GitHub Actions互換により、既存のエコシステムを活用し、データ統制とAI協働を両立する選択肢として期待されます。
+TDD自動化エージェントシステムは、自然言語での開発目標から、テスト生成、実装、リファクタリング、品質分析を自動化するAIです。unittest/pytest対応で、テストケース生成、最小実装、コード品質分析、自動リファクタリング、テスト実行・カバレッジ測定、レポート生成などを行います。設定ファイルで、最大サイクル数や品質閾値をYAML形式で管理します。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Microsoft Lists: iOSおよびAndroid用モバイルアプリが廃止へ](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/06/microsoft-list--caa9.html)
-**Source:** SharePoint Technical Notes
-**Published:** 2025-06-21 06:46:47 UTC
-**Tags:** Microsoft 365 - SharePoint, Microsoft Lists
+### [Surface のセキュリティ: 1 年を振り返って](https://blogs.windows.com/japan/2025/06/23/surfaceitpro-surface-security-year-in-review/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-06-23 05:34:18 UTC
+**Tags:** Surface, Surface security
 
 **Digest:**
-Microsoftは、AndroidとiOS向けに提供してきたMicrosoft To Doアプリについて、2024年5月6日にサポートを終了します。今後はOutlookアプリでのみ、タスク管理機能が利用可能になります。ユーザーは、Outlookへの移行を促されています。
+Microsoft Surface は、設計段階からのセキュリティを重視し、チップからクラウドまで安全なエクスペリエンスを提供。CISA の Secure by Design 誓約に準拠し、安全な開発ライフサイクルを構築。Rust を活用した UEFI、MCU、ドライバー開発でメモリ安全性を向上。Windows Hello や Microsoft Defender などの保護機能も提供。Copilot+ PC では Pluton セキュリティプロセッサを搭載し、デバイスの安全性を高めています。
+
+---
+
+### [【AWS】AWS Configでリソースタグのチェックをする-AWS Config有効化編-](https://blog.jbs.co.jp/entry/2025/06/23/090838)
+**Source:** JBS Blog
+**Published:** 2025-06-23 00:08:38 UTC
+**Tags:** AWS, AWS Config
+
+**Digest:**
+AWS Config マネージドルールでリソースタグをチェックする設定手順を紹介。今回は、AWS Config のセットアップ方法に焦点を当てています。タグの重要性に着目し、リソース管理におけるタグ活用の第一歩となる、Config の導入方法を解説します。
 
 ---
