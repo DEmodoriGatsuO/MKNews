@@ -1,118 +1,88 @@
-# AI Tech Trends Digest (2025-06-25)
+# AI Tech Trends Digest (2025-06-26)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Dify×LangSmithが実現！生成AIアプリをサクっと作ってしっかり監視【ツール紹介】](https://qiita.com/melhts/items/f5ca62a81549a400079a)
-**Published:** 2025-06-24 07:04:45 UTC
-**Likes:** 6
-**Tags:** 初心者, bedrock, observability, LLM, Dify
+### [Gemini CLI をさっそく試してみた！](https://qiita.com/youtoy/items/fa5b696b055ed4a992ec)
+**Published:** 2025-06-25 14:26:10 UTC
+**Likes:** 36
+**Tags:** Google, Gemini, AIエージェント, GeminiCLI
 
 **Digest:**
-Difyで作った生成AIアプリをLangSmithで監視する方法を紹介。初級エンジニアがLangSmithを使い、Difyアプリの「監視」機能では物足りなかったグラフのカスタマイズ性や詳細なログ・トレースを実装。APIキー設定後、トレースでアプリのふるまいを把握、モニタリングでメトリクス推移を可視化し、監視効率を向上させる。
+Googleが発表したオープンソースのAIエージェント「Gemini CLI」を試した記事。ターミナルでGeminiを使えるツールで、GitHubリポジトリからnpxで簡単に試せる。Googleアカウント認証後、コード生成を試すと、ファイル作成の許可を求められ、Node.jsのフィボナッチ数列出力プログラムを生成。無料アカウントでもGemini 2.5 Proが利用可能。ライセンスはApache 2.0。
 
 ---
 
-### [Claude Codeを実際のプロジェクトにうまく適用させていくTips10選](https://qiita.com/nokonoko_1203/items/67f8692a0a3ca7e621f3)
-**Published:** 2025-06-25 04:41:42 UTC
-**Likes:** 2
-**Tags:** MCP, LLM, ClaudeCode
+### [Gemini CLIの"強み"を知る！ Gemini CLIとClaude Codeを比較してみた](https://qiita.com/kyuko/items/b7f7336057859f5c9b4f)
+**Published:** 2025-06-25 18:59:24 UTC
+**Likes:** 17
+**Tags:** Gemini, AIエージェント, ClaudeCode, GeminiCLI
 
 **Digest:**
-AnthropicのAIエージェント「Claude Code」の効率的な使い方を紹介。コンテキスト喪失や嘘に悩む声に対応し、頻繁なアップデート、設計の分離、CLAUDE.mdでの設定、MCP拡張、レビュー、思考拡張、セキュリティ設定、Git Worktree、通知、カスタムコマンドが有効。特に、CLAUDE.mdでの英語思考・日本語応答設定や、MCPでのGitHub連携が役立つ。
+Googleからオープンソースのコーディングエージェント、**Gemini CLI**が発表されました。ターミナルから直接使えるGemini CLIは、Web検索機能とマルチモーダル処理が強みです。Claude Codeとの比較では、Web検索能力やPDFからのUI生成でGemini CLIが優位性を示しました。無料利用枠も魅力ですが、プレビュー期間限定とのことです。
 
 ---
 
-### [Claude Code コマンドチートシート完全ガイド](https://qiita.com/akira_papa_AI/items/d68782fbf03ffd9b2f43)
-**Published:** 2025-06-24 16:10:49 UTC
-**Likes:** 2
-**Tags:** Claude, ClaudeCode
+### [Claude Codeにレビューの指摘内容を修正してもらう](https://qiita.com/getty104/items/2d3617c09cfff4eb42f9)
+**Published:** 2025-06-25 06:58:28 UTC
+**Likes:** 11
+**Tags:** AI, LLM, Claude, ClaudeCode, バイブコーディング
 
 **Digest:**
-「Claude Code」は、AIアシスタントClaudeをコマンドラインで使えるツール。対話型REPLとSDKモードがあり、コード編集、ファイル操作、コマンド実行が可能。重要な注意点として、応答の確認と、権限管理が挙げられる。スラッシュコマンドやVimモードなど、豊富な機能が利用可能。設定ファイルで権限や環境変数を管理し、効率的な開発フローを構築できる。
+Claude Codeを用いて、GitHubのPRレビュー指摘内容を自動修正する方法を紹介。GitHub CLIでPR情報を取得し、カスタムコマンド`/fix-review-point`を定義。このコマンドは、未解決のレビューコメントを取得し、コード修正とコミット、PRへの反映を行います。`/exec-issue`と組み合わせ、Gemini Code Assistでのレビューを繰り返す開発フローで、効率的なコード修正を実現しています。
 
 ---
 
-### [「JSAI2025の学会の内容を広く浅く紹介」を拝聴して](https://qiita.com/kaizen_nagoya/items/0914685d4e33b5b1f179)
-**Published:** 2025-06-24 11:28:30 UTC
-**Likes:** 1
-**Tags:** AI, LLM
+### [Codex agent internet accessの設定がきえた!? (2025-06-25)](https://qiita.com/torifukukaiou/items/c319a3f520c035d60037)
+**Published:** 2025-06-25 13:21:01 UTC
+**Likes:** 5
+**Tags:** ポエム, OpenAI, codex, 猪木, 闘魂
 
 **Digest:**
-JSAI2025の講演を聴講し、品質管理、研究自動化、VLM、難病コーパス、AI scientist、深層基盤モデルなど、幅広いテーマについて感想を記録。社会性や安全性の視点、AIの戦争利用への言及の必要性、深層基盤モデルの数理的課題に触れています。140社の企業が出展し、今まで懐疑的だった学会への印象も変化したようです。
+AIエージェントCodexのインターネットアクセス設定が消えた件について。当初は存在した設定が、現在確認できない状況です。CodexはGitHub連携しプルリク候補作成するAgent。Agentのインターネットアクセスはgit cloneなどに必要ですが、設定画面が見当たらない。Twitterでも同様の報告があり、Plusプランでも利用できず、今後の動向に注目です。
 
 ---
 
-### [【コピペでOK】GitHub の Issue で HTML を自動修正！ 3ステップで試せる Claude Code × Github Actions で開発が爆速化](https://qiita.com/yamjun/items/8b4f8f2da49678ff8951)
-**Published:** 2025-06-25 04:52:51 UTC
-**Likes:** 0
-**Tags:** GitHub, GithubPages, GitHubActions, Claude, ClaudeCode
+### [CursorオタクがGemini-CLIを使ってみた感想](https://qiita.com/sora_akagami/items/aba7d6bf0222649ea8ca)
+**Published:** 2025-06-26 01:35:40 UTC
+**Likes:** 3
+**Tags:** ポエム, cursor, Gemini, gemini-cli
 
 **Digest:**
-「Claude Code」と「GitHub Actions」を連携し、GitHubのIssueに指示を書くだけで、AIがHTMLを自動修正し、GitHub Pagesに公開するフローを3ステップで解説。非エンジニアでもClaude Codeを体験可能。必要なのはGitHubアカウントとClaude APIキーで、APIの利用には課金が必要。サンプルリポジトリのFork、GitHub Appインストール、APIキー設定で完了します。
+Cursorオタクの赤神氏が、無料のGemini-CLIを試した記事。Node.js要件とコマンドで導入し、Googleアカウントで認証。UIは見づらいが、動作は高速。リファクタリングも優秀だが、複数行指示や操作性、プライバシー設定など不明点も。Cursorと比較し、モデル選択の自由度を重視する結論。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Google Earth 20 周年 : 心に残る瞬間を振り返る](https://blog.google/intl/ja-jp/products/explore-get-answers/google-earth-20-years-timeline/)
-**Source:** Google Japan Blog
-**Published:** 2025-06-24 18:02:00 UTC
-**Tags:** Maps, Google Earth
-
-**Digest:**
-Google Earthの歴史を振り返ります。1990年代の衛星画像技術から始まり、3D表示、ストリートビュー、タイムラプス機能などを実装し進化してきました。世界中の地理情報を可視化し、教育や探検に貢献、節目となるアップデートを重ね、現在も革新を続けています。
-
----
-
-### [Power Your LLM Training and Evaluation with the New SageMaker AI Generative AI Tools](https://aws.amazon.com/blogs/machine-learning/power-your-llm-training-and-evaluation-with-the-new-sagemaker-ai-generative-ai-tools/)
+### [Build an intelligent multi-agent business expert using Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/build-an-intelligent-multi-agent-business-expert-using-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-24 23:44:24 UTC
-**Tags:** Amazon SageMaker, Amazon SageMaker AI, Announcements, Artificial Intelligence, Generative AI
+**Published:** 2025-06-25 16:53:54 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Generative AI, Intermediate (200), Technical How-to
 
 **Digest:**
-Amazon SageMaker AIで、LLMの学習データ作成を効率化する「Text Ranking」と「Question and Answer」のUIテンプレートが登場。Text Rankingは、LLMの複数回答を評価し、RLHFに役立つ。Question and Answerは、質問と回答の**デモンストレーションデータ**を作成し、SFTに活用。これらのツールは、コンソールやAPIから設定可能。
+Amazon Bedrock Agentsの**マルチエージェントコラボレーション**を活用し、**製薬会社**の複雑な課題を解決する事例を紹介。R&D、法務、財務の**専門エージェント**が連携し、複数のデータソースから洞察を得ます。**Amazon Bedrock**の機能を活用し、複雑な質問への回答や、データサイロの解消、組織的な連携強化を実現します。
 
 ---
 
-### [Amazon Bedrock Agents observability using Arize AI](https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agents-observability-using-arize-ai/)
+### [Driving cost-efficiency and speed in claims data processing with Amazon Nova Micro and Amazon Nova Lite](https://aws.amazon.com/blogs/machine-learning/driving-cost-efficiency-and-speed-in-claims-data-processing-with-amazon-nova-micro-and-amazon-nova-lite/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-24 22:31:01 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Machine Learning, Artificial Intelligence, Generative AI, Intermediate (200)
+**Published:** 2025-06-25 16:50:00 UTC
+**Tags:** Amazon Bedrock, Amazon Nova, Artificial Intelligence, Foundation models, Generative AI
 
 **Digest:**
-Amazon Bedrock Agentsの運用課題を解決するArize AIとの統合を発表。**AIエージェントの可観測性**を高め、開発を加速します。Arize Phoenixを利用し、**トレース、評価、最適化**を実現。OpenInferenceを活用し、Amazon Bedrock Agentとのインタラクションを自動計測。**レイテンシ、トークン使用量、例外**などの主要指標を可視化し、AIアプリケーションの信頼性向上に貢献します。
+Amazonは、大規模なクレーム処理のため、AIを活用した要約ソリューションを開発。初期モデルはコストと遅延が課題だったが、Amazon Nova Lite/Microを評価した結果、大幅な高速化とコスト削減に成功。 特に長文ドキュメント処理に強みを発揮し、効率的なクレームレビューを実現。Amazon Novaモデルは、多様なモデルポートフォリオ、容易な統合、スケーラビリティを提供しています。
 
 ---
 
-### [How SkillShow automates youth sports video processing using Amazon Transcribe](https://aws.amazon.com/blogs/machine-learning/how-skillshow-automates-youth-sports-video-processing-using-amazon-transcribe/)
-**Source:** AWS ML Blog
-**Published:** 2025-06-24 15:28:59 UTC
-**Tags:** Amazon Transcribe, AWS Lambda, Customer Solutions, Media & Entertainment, Partner solutions, Sports
-
-**Digest:**
-2022年に375億ドルの市場規模だった**Youthスポーツ**動画制作の**SkillShow**は、AWSを活用し動画編集を自動化。**Amazon Transcribe**で音声認識、**S3**に動画を保存、**Lambda**で処理を効率化。3週間の編集期間を1日に短縮し、イベントあたり69クリップ中64クリップを正確に命名。コスト削減と業務拡大に成功し、市場ニーズに対応しています。
-
----
-
-### [NewDay builds A Generative AI based Customer service Agent Assist with over 90% accuracy](https://aws.amazon.com/blogs/machine-learning/newday-builds-a-generative-ai-based-customer-service-agent-assist-with-over-90-accuracy/)
-**Source:** AWS ML Blog
-**Published:** 2025-06-24 15:22:50 UTC
-**Tags:** Amazon Bedrock, Amazon Cognito, Artificial Intelligence, AWS Fargate, Contact Center, Customer Solutions, Financial Services, Generative AI
-
-**Digest:**
-NewDayは、カスタマーサービスを向上させるため、生成AIアシスタント「NewAssist」を開発しました。ハッカソンから生まれたこのツールは、Amazon Bedrockを基盤とし、エージェントの質問への迅速な回答を支援します。データ品質向上とユーザーの利用状況を理解することで精度を向上させ、現在150人以上のエージェントに展開。回答時間は大幅に短縮されました。
-
----
-
-### [【Microsoft×生成AI連載】【やってみた】Microsoft Copilot Studioエージェントビルダーで事前に作成したエージェントをPowerPointで利用してみた](https://blog.jbs.co.jp/entry/2025/06/25/090031)
+### [【Microsoft Fabric】仮想ネットワークデータゲートウェイを使ったデータソースへのプライベート接続](https://blog.jbs.co.jp/entry/2025/06/26/103551)
 **Source:** JBS Blog
-**Published:** 2025-06-25 00:00:31 UTC
-**Tags:** Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載, Copilot
+**Published:** 2025-06-26 01:35:51 UTC
+**Tags:** Microsoft Fabric
 
 **Digest:**
-Microsoft Copilot StudioのエージェントをPowerPointで利用する方法を紹介する記事です。久保田氏が、Microsoft Copilot Studioエージェントビルダーで作成したエージェントをPowerPointで活用する様子を解説。2025年6月16日時点の情報に基づき、Copilot StudioエージェントビルダーやOffice製品との連携に興味がある方へ向けた内容となっています。
+Microsoft Fabric は、データ統合、処理、分析、レポーティングを統合した企業向けSaaSプラットフォームです。今回は、Fabric の仮想ネットワークデータゲートウェイを利用して、プライベートエンドポイントを持つストレージアカウントに接続する方法を紹介します。Azure Portal でのリソースプロバイダー登録、サブネット作成、プライベートエンドポイント作成などの手順を解説しています。
 
 ---
