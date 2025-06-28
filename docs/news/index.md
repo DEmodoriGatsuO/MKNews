@@ -1,108 +1,78 @@
-# AI Tech Trends Digest (2025-06-27)
+# AI Tech Trends Digest (2025-06-28)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Gemini CLI を試したいので Claude Code でも同じことをしてみて感じた活路](https://qiita.com/hokutohagi/items/4eae63a48e74966aeebd)
-**Published:** 2025-06-26 15:25:02 UTC
-**Likes:** 9
-**Tags:** Gemini, Claude
-
-**Digest:**
-GoogleのGemini CLIとClaude Codeを、Remixプロジェクトの技術調査で比較検証。GeminiはREADME読み込みやnpmコマンド実行で技術スタックを分析、改善点を提案。Claudeは、セキュリティ脆弱性やテスト体制など多角的な調査で詳細な改善計画を提示。両者の特性を活かし、Geminiをオーケストレータ、Claudeを遊撃手として共存させ、開発効率向上を図る可能性を考察しています。
-
----
-
-### [Ryzen AI APU でローカルLLMを立ち上げる手順](https://qiita.com/y-mrkm/items/07a8e770decba227e0cc)
-**Published:** 2025-06-26 08:00:10 UTC
-**Likes:** 5
-**Tags:** Ryzen, ROCm, LLM, ollama, open-webui
-
-**Digest:**
-Ryzen AI 9 HX 370搭載ミニPCで、ollamaとopen-webuiを利用しチャット環境を構築。UbuntuにROCmを導入するため、BIOSのSecure Bootを無効化。ドライバインストール後、ollamaは環境変数設定、open-webuiはDockerで起動。ユーザー追加やモデル公開設定も必要。dGPUとの速度比較では劣るものの、96GBメモリを生かした活用を模索。
-
----
-
-### [Gemini CLI から Imagen を呼び出し！ MCPサーバー経由で画像生成](https://qiita.com/te_yama/items/db572cad90a3ae221847)
-**Published:** 2025-06-26 13:44:17 UTC
-**Likes:** 4
-**Tags:** MCP, Gemini, GoogleCloud, GeminiCLI
-
-**Digest:**
-Google Cloudの生成メディアAPI（Imagen、Veoなど）を利用できるMCP ServersをGemini CLIから利用する方法を紹介。リポジトリからインストールし、認証設定後、Gemini CLI設定でImagenを呼び出す。ローカル保存とGCS保存に対応しており、`~/.gemini/settings.json`で設定。プロンプトを入力して画像を生成し、期待通りの結果を得られました。
-
----
-
-### [Gemini CLIでMCPを使ってみた](https://qiita.com/n0bisuke/items/8686a74d8edcb5d29265)
-**Published:** 2025-06-27 03:30:49 UTC
-**Likes:** 3
-**Tags:** JavaScript, Node.js, MCP, Gemini, VibeCoding
-
-**Digest:**
-Gemini CLIでMCP設定を試しました。`npm install -g @google/gemini-cli`でインストール後、`~/.gemini/settings.json`を編集し、MCPサーバー設定を記述します。Node.jsで自作したQiitaとGyazoアップローダーを設定し、`/mcp`で確認。画像アップロードを試したところ、MCP経由でGyazoへのアップロードに成功しました。
-
----
-
-### [VSCodeで動かすGemini CLI](https://qiita.com/yukima77/items/1631d7cf21c2a6eadbc3)
-**Published:** 2025-06-26 06:33:14 UTC
+### [Slack API x gemini api でお問い合わせ工数削減作戦考えてみた](https://qiita.com/k_yamaki/items/4d1344985bd11b88627c)
+**Published:** 2025-06-27 23:11:28 UTC
 **Likes:** 2
-**Tags:** VSCode, Gemini, GeminiCLI
+**Tags:** GAS, Slack, slack-api, Gemini, 工数削減
 
 **Digest:**
-2025年6月リリースの「Gemini CLI」は、ターミナルでGemini 2.5 Proモデルを利用できるAIエージェント。本記事では、導入後のVisual Studio Codeターミナルでの動作結果を紹介。Gemini CLIをインストール後、VS Codeを起動し、ターミナルで`npx`コマンドを実行すると、無事起動することを確認しました。
+Govtech開発部の八巻氏が、Slackのお問い合わせを自動要約し、NotebookLMでナレッジ化する手順を公開。Slack APIとGemini API、GASを連携し、スレッド内容を要約してNotebookLMに学習させる。新卒時代の課題解決を目指し、問い合わせ対応の効率化と、エンジニア・営業間の工数削減に期待。
+
+---
+
+### [OpenAI の Deep research が API で使えるようになったので Node.js で軽く試してみた](https://qiita.com/youtoy/items/08ea6874ae49bbb66d87)
+**Published:** 2025-06-28 02:05:28 UTC
+**Likes:** 1
+**Tags:** JavaScript, Node.js, OpenAI, DeepResearch, DeepResearchAPI
+
+**Digest:**
+OpenAIのDeep research APIをNode.jsで試した記事です。公式ポストやクックブックを参照し、JavaScriptサンプルコードを参考にAPIを実装。モデルはo3-deep-researchを使用、1回のAPIリクエストで10ドル超の費用が発生。WebhooksやWeb検索機能にも触れ、API利用履歴も確認しました。
+
+---
+
+### [Gemini Gemsを使ってAIをカスタマイズしよう！実践的な活用法まとめ](https://qiita.com/YuukiYoshida/items/e5c9136f0da7c71a71ce)
+**Published:** 2025-06-27 09:49:23 UTC
+**Likes:** 1
+**Tags:** Google, Gems, AI, Gemini
+
+**Digest:**
+Google Geminiの「Gems」機能は、無料で使える自分専用AIアシスタント作成ツールです。特定の役割と指示を設定することで、**専門性**と**一貫性**のあるAIを生成。**ブログライター**や**コードレビューアー**など、様々な活用例があり、**具体的な指示**と**出力形式の指定**がポイント。**Gemsの活用**で業務効率化を目指しましょう。
+
+---
+
+### [Gemini-CLI あまりにポンコツな件](https://qiita.com/minorun0403/items/20efd5ff608d1f10795e)
+**Published:** 2025-06-27 08:14:27 UTC
+**Likes:** 1
+**Tags:** ポエム, マネジメント, AI, 個人開発, Gemini
+
+**Digest:**
+Gemini-CLIが「ポンコツ」でコード生成に難あり。特に既存ファイル編集でミスが多発。強みはファイル横断処理理解や改修設計。筆者は詳細設計まで指示し、実装は別のAIに依頼。大規模プロジェクト以外では非推奨。 Gemini-CLIで「実装」まで完結できる方法を模索中。
+
+---
+
+### [ChatGPTが意図しない要約・簡略化をしまくるから何とかしたい](https://qiita.com/uriri_hogepiyo/items/10a61925383b09977f3e)
+**Published:** 2025-06-28 05:52:24 UTC
+**Likes:** 0
+**Tags:** 要約, Gemini, ChatGPT, プロンプトエンジニアリング, HumanFeedback
+
+**Digest:**
+ChatGPTが仕様書編集で意図しない要約・省略を繰り返し、指示が全く通じない事態が発生。重要な情報である「前回からの変化」などを勝手に省略した。様々な指示を試すも改善せず、汎用的なチェックリストプロンプトの必要性を痛感。HF（ヒューマン・フィードバック）による「意図しない要約・簡略化の防止」を目指す。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Tailor responsible AI with new safeguard tiers in Amazon Bedrock Guardrails](https://aws.amazon.com/blogs/machine-learning/tailor-responsible-ai-with-new-safeguard-tiers-in-amazon-bedrock-guardrails/)
+### [AWS costs estimation using Amazon Q CLI and AWS Cost Analysis MCP](https://aws.amazon.com/blogs/machine-learning/aws-costs-estimation-using-amazon-q-cli-and-aws-cost-analysis-mcp/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-26 22:41:26 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Guardrails, Artificial Intelligence, Best Practices, Generative AI, Responsible AI, Technical How-to, Thought Leadership
+**Published:** 2025-06-27 16:34:01 UTC
+**Tags:** Amazon Q Developer, Best Practices, Generative AI, Technical How-to
 
 **Digest:**
-Amazon Bedrock Guardrailsに、用途に合わせて保護レベルを選べる「セーフガードティア」が登場。コンテンツフィルタと拒否トピックに対し、低レイテンシのClassicと、多言語対応・高精度なStandardを選択可能に。 Standardは多言語対応が強化され、Cross-Region Inferenceもサポート。AWSコンソールまたはSDKで設定し、テストデータで評価できます。
+Amazon Q Developer CLIとAWS Cost Analysis MCPサーバーでAWSインフラコストを分析する方法を解説。自然言語でコスト見積もり、レポート作成、最適化提案が可能に。セットアップ後、Webアプリやサーバーレス、マルチティアアーキテクチャなどのコストを分析し、PDF、DOCX、HTML形式で出力。ECサイトやデータ分析プラットフォームなど、実世界の事例も紹介。
 
 ---
 
-### [Structured data response with Amazon Bedrock: Prompt Engineering and Tool Use](https://aws.amazon.com/blogs/machine-learning/structured-data-response-with-amazon-bedrock-prompt-engineering-and-tool-use/)
-**Source:** AWS ML Blog
-**Published:** 2025-06-26 15:46:20 UTC
-**Tags:** Amazon Bedrock, Best Practices, Generative AI, Intermediate (200), Technical How-to
-
-**Digest:**
-Amazon Bedrockで構造化された応答を生成する2つの方法を紹介。1つは、プロンプトエンジニアリングで、明確なプロンプトでLLMのJSON出力を制御。もう1つは、Tool Useで、JSONスキーマをツール定義に統合し、API連携を容易にする。Claudeモデルのテストでは、Tool Useが優勢。構造化データは、APIやデータ活用に重要で、Bedrockで活用可能。
-
----
-
-### [Using Amazon SageMaker AI Random Cut Forest for NASA’s Blue Origin spacecraft sensor data](https://aws.amazon.com/blogs/machine-learning/using-amazon-sagemaker-ai-random-cut-forest-for-nasas-blue-origin-spacecraft-sensor-data/)
-**Source:** AWS ML Blog
-**Published:** 2025-06-26 15:41:46 UTC
-**Tags:** Aerospace & Satellite, Amazon SageMaker, Amazon SageMaker AI, Amazon Simple Storage Service (S3), Amazon VPC, Artificial Intelligence, Intermediate (200), Python, Technical How-to
-
-**Digest:**
-AWS SageMaker AI を利用し、NASAとBlue Originの月面着陸データから、宇宙機の異常を検出する手法を紹介。Random Cut Forest アルゴリズム（RCF）を用いて、位置、速度、姿勢データの異常を解析。データの前処理、RCFモデルの学習、バッチ処理による大規模データ対応、可視化、S3への保存を行い、宇宙ミッションの安全性向上に貢献します。
-
----
-
-### [Terraformにてwrite-only attributeを利用する](https://blog.jbs.co.jp/entry/2025/06/27/132841)
+### [IAM Identity Centerディレクトリを利用したユーザー管理](https://blog.jbs.co.jp/entry/2025/06/27/154311)
 **Source:** JBS Blog
-**Published:** 2025-06-27 04:28:41 UTC
-**Tags:** Azure, Terraform
+**Published:** 2025-06-27 06:43:11 UTC
+**Tags:** AWS, AWS IAM Identity Center, AWS Identity and Access Management
 
 **Digest:**
-Terraform v1.11.0で導入された「write-only attributes」機能を解説。秘匿性の高い属性値をTerraformステートファイルに保存しないようにできる新機能です。従来のステートファイル確認と、write-only属性適用後のステート比較を通して、その違いとメリットを検証します。
-
----
-
-### [【Microsoft×生成AI連載】Microsoft 365 Copilotの画像生成機能を使ってみた](https://blog.jbs.co.jp/entry/2025/06/27/090232)
-**Source:** JBS Blog
-**Published:** 2025-06-27 00:02:32 UTC
-**Tags:** Microsoft×生成AI連載, 生成AI, M365, Microsoft 365 Copilot, Microsoft Copilot
-
-**Digest:**
-マイクロソフトの生成AI連載記事、今回はMicrosoft 365 Copilotの画像生成機能に焦点を当てています。ブランドキット作成やロゴ・色・フォントの追加、画像の生成、ポスターやバナー作成について解説。利用シーン、メリット、注意点も紹介しており、Copilot Chatによる要約も掲載。過去連載記事へのリンクもあります。
+AWSの「IAM Identity Center」は、マルチアカウント環境でユーザーとアクセス権限を一元管理するサービスです。本記事では、有効化後のデフォルト設定であるAWS単体「IAM Identity Centerディレクトリ」を使ったユーザー管理方法に焦点を当てて解説します。
 
 ---
