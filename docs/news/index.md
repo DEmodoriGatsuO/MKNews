@@ -1,78 +1,55 @@
-# AI Tech Trends Digest (2025-06-28)
+# AI Tech Trends Digest (2025-06-29)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Slack API x gemini api でお問い合わせ工数削減作戦考えてみた](https://qiita.com/k_yamaki/items/4d1344985bd11b88627c)
-**Published:** 2025-06-27 23:11:28 UTC
+### [【AI駆動開発〜入門〜】Claude+Bolt+Netlifyで架空のレストランLPを要件定義から公開までやってみる](https://qiita.com/DoueKazuna/items/e78199a3dd233f3b9aea)
+**Published:** 2025-06-28 10:10:11 UTC
 **Likes:** 2
-**Tags:** GAS, Slack, slack-api, Gemini, 工数削減
+**Tags:** Netlify, Bolt, Claude, AI駆動開発, バイブコーディング
 
 **Digest:**
-Govtech開発部の八巻氏が、Slackのお問い合わせを自動要約し、NotebookLMでナレッジ化する手順を公開。Slack APIとGemini API、GASを連携し、スレッド内容を要約してNotebookLMに学習させる。新卒時代の課題解決を目指し、問い合わせ対応の効率化と、エンジニア・営業間の工数削減に期待。
+AI駆動開発を体験し、架空レストランのランディングページを爆速で制作。**Claude Sonnet 4**で要件定義を行い、ペルソナ設定やUI/UX、マーケティング戦略まで提案。**Bolt.new**でReactコンポーネントを生成し、**Netlify**で公開。Claudeの精度に驚き、ランディングページ制作はほぼAI任せ。今後は多ページやバックエンド開発にも挑戦し、開発パートナーとしてのAIの可能性を感じた。
 
 ---
 
-### [OpenAI の Deep research が API で使えるようになったので Node.js で軽く試してみた](https://qiita.com/youtoy/items/08ea6874ae49bbb66d87)
-**Published:** 2025-06-28 02:05:28 UTC
+### [コードは詩になった──AIと歩む、プログラマーの現在地](https://qiita.com/torifukukaiou/items/db8ecfb3d67ed6e6bca1)
+**Published:** 2025-06-28 08:33:32 UTC
+**Likes:** 2
+**Tags:** Qiita, ポエム, 猪木, 闘魂, GenerativeAI
+
+**Digest:**
+25年前はプログラミングを外部に聞くことが大問題だった。現代は、AIやSNSでコードを共有し、AIがメンターのようになる時代に。著者はAI「Codex」を使い、昔の価値観とのギャップを感じている。反復練習が主流だった学び方も変わり、プログラミングは詩であり、希望に満ちたものになった。
+
+---
+
+### [AWS Lambda から Gemini APIでマルチモーダル処理ハンズオン](https://qiita.com/tetutetu214/items/d4c5be5e7655c0f121de)
+**Published:** 2025-06-29 01:08:16 UTC
 **Likes:** 1
-**Tags:** JavaScript, Node.js, OpenAI, DeepResearch, DeepResearchAPI
+**Tags:** AWS, Gemini, GoogleCloud
 
 **Digest:**
-OpenAIのDeep research APIをNode.jsで試した記事です。公式ポストやクックブックを参照し、JavaScriptサンプルコードを参考にAPIを実装。モデルはo3-deep-researchを使用、1回のAPIリクエストで10ドル超の費用が発生。WebhooksやWeb検索機能にも触れ、API利用履歴も確認しました。
+AWS S3上のPDFをGeminiで要約するハンズオン。マルチモーダルAIに着目し、Google CloudとAWSのモデル比較も提示。S3バケット、Lambdaレイヤー、Lambda関数を構築し、Gemini APIを利用。PythonコードでS3からPDFを取得し、Geminiに要約を依頼。最終的に経歴書を要約する結果を得た。今後は要約の精度評価と自動化が課題。
 
 ---
 
-### [Gemini Gemsを使ってAIをカスタマイズしよう！実践的な活用法まとめ](https://qiita.com/YuukiYoshida/items/e5c9136f0da7c71a71ce)
-**Published:** 2025-06-27 09:49:23 UTC
+### [Windows + VSCode での Gemini CLI 導入手順](https://qiita.com/00b012deb7c8/items/d40d9e0fa42392a6539a)
+**Published:** 2025-06-28 11:37:47 UTC
 **Likes:** 1
-**Tags:** Google, Gems, AI, Gemini
+**Tags:** CLI, 初心者, VSCode, Gemini, 生成AI
 
 **Digest:**
-Google Geminiの「Gems」機能は、無料で使える自分専用AIアシスタント作成ツールです。特定の役割と指示を設定することで、**専門性**と**一貫性**のあるAIを生成。**ブログライター**や**コードレビューアー**など、様々な活用例があり、**具体的な指示**と**出力形式の指定**がポイント。**Gemsの活用**で業務効率化を目指しましょう。
+GoogleのAIエージェント「Gemini CLI」をWindows+VSCodeで導入する方法を紹介。Node.jsとGoogleアカウント、VSCodeが必須。ターミナルでgeminiコマンドを実行し、Google認証とテーマ設定後、対話モードで自然言語による操作が可能。コード生成やファイル操作、Google検索連携など、業務効率化に貢献。非対話モードも利用でき、開発作業を支援します。
 
 ---
 
-### [Gemini-CLI あまりにポンコツな件](https://qiita.com/minorun0403/items/20efd5ff608d1f10795e)
-**Published:** 2025-06-27 08:14:27 UTC
+### [o3 などにも対応した OpenAI の「Web search」ツール（Web検索）を Node.js ＋ Responses API で試す](https://qiita.com/youtoy/items/cfb5a544abb89a46bcbc)
+**Published:** 2025-06-28 09:55:36 UTC
 **Likes:** 1
-**Tags:** ポエム, マネジメント, AI, 個人開発, Gemini
+**Tags:** JavaScript, Node.js, OpenAI, ResponsesAPI, WebSearch
 
 **Digest:**
-Gemini-CLIが「ポンコツ」でコード生成に難あり。特に既存ファイル編集でミスが多発。強みはファイル横断処理理解や改修設計。筆者は詳細設計まで指示し、実装は別のAIに依頼。大規模プロジェクト以外では非推奨。 Gemini-CLIで「実装」まで完結できる方法を模索中。
-
----
-
-### [ChatGPTが意図しない要約・簡略化をしまくるから何とかしたい](https://qiita.com/uriri_hogepiyo/items/10a61925383b09977f3e)
-**Published:** 2025-06-28 05:52:24 UTC
-**Likes:** 0
-**Tags:** 要約, Gemini, ChatGPT, プロンプトエンジニアリング, HumanFeedback
-
-**Digest:**
-ChatGPTが仕様書編集で意図しない要約・省略を繰り返し、指示が全く通じない事態が発生。重要な情報である「前回からの変化」などを勝手に省略した。様々な指示を試すも改善せず、汎用的なチェックリストプロンプトの必要性を痛感。HF（ヒューマン・フィードバック）による「意図しない要約・簡略化の防止」を目指す。
-
----
-
-## Latest News from RSS Feeds
-
-
-### [AWS costs estimation using Amazon Q CLI and AWS Cost Analysis MCP](https://aws.amazon.com/blogs/machine-learning/aws-costs-estimation-using-amazon-q-cli-and-aws-cost-analysis-mcp/)
-**Source:** AWS ML Blog
-**Published:** 2025-06-27 16:34:01 UTC
-**Tags:** Amazon Q Developer, Best Practices, Generative AI, Technical How-to
-
-**Digest:**
-Amazon Q Developer CLIとAWS Cost Analysis MCPサーバーでAWSインフラコストを分析する方法を解説。自然言語でコスト見積もり、レポート作成、最適化提案が可能に。セットアップ後、Webアプリやサーバーレス、マルチティアアーキテクチャなどのコストを分析し、PDF、DOCX、HTML形式で出力。ECサイトやデータ分析プラットフォームなど、実世界の事例も紹介。
-
----
-
-### [IAM Identity Centerディレクトリを利用したユーザー管理](https://blog.jbs.co.jp/entry/2025/06/27/154311)
-**Source:** JBS Blog
-**Published:** 2025-06-27 06:43:11 UTC
-**Tags:** AWS, AWS IAM Identity Center, AWS Identity and Access Management
-
-**Digest:**
-AWSの「IAM Identity Center」は、マルチアカウント環境でユーザーとアクセス権限を一元管理するサービスです。本記事では、有効化後のデフォルト設定であるAWS単体「IAM Identity Centerディレクトリ」を使ったユーザー管理方法に焦点を当てて解説します。
+OpenAIのResponses APIを用いて、Web検索ツールをNode.jsで試した記事のダイジェストです。新モデルo3, o3-pro, o4-miniでWeb検索が可能になり、AIエージェントSDKの検索で良い結果を得ました。APIの料金体系や、過去の実験記録も掲載。JavaScript/TypeScriptのSDK情報も網羅的に取得でき、費用やモデルの制約についても言及しています。
 
 ---
