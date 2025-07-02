@@ -1,61 +1,71 @@
-# AI Tech Trends Digest (2025-07-01)
+# AI Tech Trends Digest (2025-07-02)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [【非エンジニア向け】営業こそGeminiを使おう！明日から試せる業務効率化シナリオ](https://qiita.com/hirokiii27/items/97866f584cfdddf23407)
-**Published:** 2025-06-30 09:51:53 UTC
-**Likes:** 13
-**Tags:** Google, tips, 効率化, AI, Gemini
-
-**Digest:**
-株式会社うるるの松下氏による記事のダイジェストです。営業組織でのGemini活用例として、商談準備の質とスピード向上、定型業務の自動化を紹介。Google Workspaceとの連携を活かし、DeepResearchで顧客リサーチ、カスタムAI「Gem」で商談フィードバックやキャリア相談などを提案。営業フロー別のAI活用表も提示、チーム全体の生産性向上を目指す内容です。
-
----
-
-### [Slack 問い合わせの「この人誰だっけ？」を撲滅！ Notion と Gemini で作る担当者自動メンション Bot](https://qiita.com/fujisho1216/items/e44e537e526788b6ebad)
-**Published:** 2025-06-30 06:31:48 UTC
+### [BedrockのPDFサポートについて検証しましたが、、](https://qiita.com/moritalous/items/54a3eb9a410a41d04b6c)
+**Published:** 2025-07-01 11:39:08 UTC
 **Likes:** 12
-**Tags:** 自動化, Slack, Gemini, Notion
+**Tags:** AWS, PDF, bedrock, Claude
 
 **Digest:**
-Slackでの問い合わせ対応を効率化するAI Botを開発。**Notion DB**を知識ベースに、**Gemini API**で問い合わせ内容から担当者を推定し、GASで実装。担当者への自動メンションを実現し、**サーバーレス**で手軽に運用可能。プロンプトの重要性、AIの精度はNotionの質に依存し、メンテナンスが必要。
+Amazon BedrockがClaudeモデルのアップデートを発表。**引用API**と**PDFサポート**が追加され、ClaudeがPDFからテキストだけでなく画像も認識可能に。Converse APIのPDFサポートとの違いは、後者はテキスト抽出のみなのに対し、新機能は画像化して処理するため、より高度な分析が可能。**InvokeModel API**または引用を有効にしたConverse APIで利用でき、検証結果も良好。
 
 ---
 
-### [Cloude Code を Emacs に統合して開発環境を便利にする](https://qiita.com/P-SiZK/items/4cdd1b304b3f7508b11b)
-**Published:** 2025-06-30 07:50:33 UTC
-**Likes:** 8
-**Tags:** Emacs, エディタ, AI, Claude, ClaudeCode
+### [LLMで気分の浮き沈みを可視化してみたら有用なデータが得られた！](https://qiita.com/gretchi/items/1cc791e8e5145c0250b9)
+**Published:** 2025-07-01 22:13:16 UTC
+**Likes:** 2
+**Tags:** フーリエ変換, 感情分析, OpenAI, ChatGPT, LLM
 
 **Digest:**
-EmacsでClaude Codeを使うためのパッケージ`claude-code-ide.el`を紹介。Elpacaでのパッケージ管理や、`flycheck`と連携したコード解析結果共有、クイック起動やファイル参照ショートカットなどの機能が利用可能。インストールにはEmacs28.1以上とClaude Code CLI、vterm、cmake、libtool-binが必要。設定後、Emacs内でClaude Codeが起動し、スムーズな連携が実現できます。
+約400日分のX投稿をLLMで分析し、情動、活動性など8項目の精神状態をスコアリング。過去の試行錯誤を経て、GPT-4o-miniのAPIを利用し、日ごとのツイートをCSV形式で入力、簡潔な指示で精度を向上させた。結果はCSV形式で出力され、評価の根拠も付記。
 
 ---
 
-### [新人エンジニアはAIをどのように活用すべきか 〜社内開発と個人開発での使い分けについて考えてみた〜](https://qiita.com/kurakyo18/items/24a8122d82d01025e9b2)
-**Published:** 2025-06-30 09:40:36 UTC
-**Likes:** 4
-**Tags:** AI, cursor, ChatGPT, Claude
+### [LangGraph体験(その2) : Geminiとしりとりで対戦するプログラムをLangGraphを使って書いてみた](https://qiita.com/steelpipe75/items/0b5948779c3c3485ba1d)
+**Published:** 2025-07-01 15:09:26 UTC
+**Likes:** 2
+**Tags:** Gemini, LangGraph
 
 **Digest:**
-AIツールの進化でエンジニアの働き方は変化し、特に新人には学習加速の味方となる。社内開発では機密情報に配慮しつつコード理解やデバッグ支援に活用、個人開発ではAIファーストで全工程をAIと協働。Claude CodeやCursorを駆使し、動くものから理解を深める学習法が重要。AIを使いこなし、基礎理解を深め、成長し続けるエンジニアを目指そう。
+LangGraphを用いてLLMと対戦するしりとりゲームを開発。ユーザー入力とAI（Gemini）の応答をLangGraphで状態遷移グラフとして実装。LLMを活用し、単語の「読み」を考慮したルールチェックを実現。AIの応答、ルール違反判定、ターン管理をノードで表現。最終的に、LangGraphの柔軟性を活かした、より自然な対戦を目指す。
 
 ---
 
-### [12歳の弟がClaude Codeでゲームを作った話！](https://qiita.com/ronitsachdev/items/f5608aa9c2576425e7d3)
-**Published:** 2025-06-30 07:49:03 UTC
-**Likes:** 4
-**Tags:** game, 初心者, AI, Claude, ClaudeCode
+### [[Mac]ClaudeCodeのStop Hooksを使ってユーザー応答待ちのとき「だけ」デスクトップ通知する](https://qiita.com/yheihei/items/4415759278d3686b6f2b)
+**Published:** 2025-07-02 02:43:26 UTC
+**Likes:** 1
+**Tags:** Anthropic, Claude, ClaudeCode
 
 **Digest:**
-12歳の弟が、プログラミング未経験ながら生成AI「Claude Code」を使い、Webサイト制作に挑戦。AIに質問しながらHTMLを学び、最終的にはクマがジャンプするミニゲームを完成させた。AIに「No！」と叱咤し修正を重ねる姿は、まるで強化学習。AIとの共同開発により、達成感とプログラミングの楽しさを体験。初心者でもAIを活用し、自分のイメージを形にできると実感した、という話。
+Claude CodeのHooksで、ユーザー応答待ちの通知をMacで実装。`Stop`フックでツール完了時にも通知される問題を、JSON処理ツール`jq`を用いて解決。アシスタントのメッセージタイプを判別し、テキスト応答時のみ通知するように。5秒待機して再確認する二段階検出で誤検出も防止。`settings.json`とシェルスクリプトで設定、Homebrewで`jq`インストールが必要。
+
+---
+
+### [AI時代にソフトウェアエンジニアが生き残る方法](https://qiita.com/ronitsachdev/items/a15eaaba1f02befeb54e)
+**Published:** 2025-07-02 05:59:00 UTC
+**Likes:** 0
+**Tags:** 初心者, AI, cursor, ChatGPT, Claude
+
+**Digest:**
+AI時代、AIエンジニアの需要は増加。AnthropicのClaude CodeとCursorを駆使し、設計レビュー、リファクタ、バグ調査を効率化。バックエンド、AWS、CI/CD等の基盤スキル習得が重要。ClaudeとCursorで学びながらアプリを開発、GitHubやQiitaで公開し経験を積むことが、AIを活かせる強いエンジニアへの道です。
 
 ---
 
 ## Latest News from RSS Feeds
 
+
+### [Building secure, scalable AI in the cloud with Microsoft Azure](https://azure.microsoft.com/en-us/blog/building-secure-scalable-ai-in-the-cloud-with-microsoft-azure/)
+**Source:** Azure AI Blog
+**Published:** 2025-07-01 15:00:00 UTC
+**Tags:** AI + machine learning, Analytics, Compute, Containers, Hybrid + multicloud, Management and governance, Security, Generative AI
+
+**Digest:**
+生成AIの導入は企業変革を促すが、Azureのようなクラウド基盤が不可欠。オンプレミス環境は制約が多く、72%がクラウド移行でAI導入の障壁が減少。Azureはセキュリティとスケーラビリティを提供し、データプライバシーや人材不足等の課題を解決。包括的なフレームワークでAIワークロードを保護し、イノベーションを加速、企業価値向上に貢献します。
+
+---
 
 ### [Google Pixel 9a、楽天モバイルで取扱開始](https://blog.google/intl/ja-jp/feed/pixel-9a-rakutenmobile/)
 **Source:** Google Japan Blog
@@ -63,7 +73,7 @@ AIツールの進化でエンジニアの働き方は変化し、特に新人に
 **Tags:** Pixel
 
 **Digest:**
-本日より、楽天モバイルでGoogle Pixel 9aの取り扱いが開始。洗練されたフラットデザインに、Aシリーズ史上最も明るいディスプレイを搭載。エントリーモデルながら、48MPメインカメラで美しい写真撮影が可能で、AI機能も充実。
+本日より、楽天モバイルでGoogle Pixel 9aの取り扱いが開始されました。洗練されたフラットデザインに、Aシリーズ史上最も明るいディスプレイを搭載。エントリーモデルながら、48MPメインカメラで美しい写真が撮れ、AI機能も充実しています。
 
 ---
 
@@ -73,86 +83,56 @@ AIツールの進化でエンジニアの働き方は変化し、特に新人に
 **Tags:** Chrome
 
 **Digest:**
-レノボから、AI機能を搭載した高性能Chromebook「Lenovo Chromebook Plus Gen 10」が登場。作業効率を向上させるための新機能が特徴です。
+レノボから高性能Chromebook「Chromebook Plus Gen 10」が登場。AI機能搭載で作業効率を向上させます。処理性能が高く、ビジネスやクリエイティブな作業を快適にサポート。
 
 ---
 
-### [Wear OS by Google 搭載の対応スマートウォッチで PASMO が使えるようになりました](https://blog.google/intl/ja-jp/products/android-chrome-play/wear-os-by-google-pasmo/)
-**Source:** Google Japan Blog
-**Published:** 2025-06-30 21:00:00 UTC
-**Tags:** Android
-
-**Digest:**
-Wear OS by Google 搭載スマートウォッチで、PASMOが利用可能に。Google Pixel Watchなど対応端末で、通勤や買い物時の決済、定期券の利用がよりスムーズになりました。普段使いの利便性が格段に向上しています。
-
----
-
-### [Build and deploy AI inference workflows with new enhancements to the Amazon SageMaker Python SDK](https://aws.amazon.com/blogs/machine-learning/build-and-deploy-ai-inference-workflows-with-new-enhancements-to-the-amazon-sagemaker-python-sdk/)
+### [Use Amazon SageMaker Unified Studio to build complex AI workflows using Amazon Bedrock Flows](https://aws.amazon.com/blogs/machine-learning/use-amazon-sagemaker-unified-studio-to-build-complex-ai-workflows-using-amazon-bedrock-flows/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-30 21:51:09 UTC
-**Tags:** Amazon SageMaker, Amazon SageMaker AI, Artificial Intelligence
+**Published:** 2025-07-01 20:42:28 UTC
+**Tags:** Amazon Bedrock, Amazon SageMaker Unified Studio, Intermediate (200), Technical How-to
 
 **Digest:**
-Amazon SageMaker Inferenceの新しいPython SDKにより、複数モデルを連携させたAIワークフロー構築・デプロイが簡素化。モデルを単一エンドポイントに統合し、より効率的な運用を実現。Amazon Searchでの活用例を紹介し、Pythonコードでワークフローを定義可能。開発・本番環境への迅速なデプロイや、個々のモデルまたはワークフロー全体の呼び出しに対応します。
+Amazon SageMaker Unified Studioを活用し、データ管理、AI/MLツール、ワークフローを統合するAIソリューション開発を紹介。金融機関の苦情参照システム構築例では、Amazon Bedrock Flow、知識ベース、エージェントを連携。SageMakerでプロンプト作成、チャットエージェント設定後、フローを作成しテスト。複雑なAIワークフローを迅速に開発・デプロイする方法を解説。
 
 ---
 
-### [Context extraction from image files in Amazon Q Business using LLMs](https://aws.amazon.com/blogs/machine-learning/context-extraction-from-image-files-in-amazon-q-business-using-llms/)
+### [Accelerating AI innovation: Scale MCP servers for enterprise workloads with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/accelerating-ai-innovation-scale-mcp-servers-for-enterprise-workloads-with-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-30 14:03:35 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Amazon Q, Amazon Q Business, Artificial Intelligence, Intermediate (200), AI/ML, Generative AI
+**Published:** 2025-07-01 18:16:51 UTC
+**Tags:** Amazon Bedrock, Amazon DynamoDB, Amazon Elastic Container Service, Artificial Intelligence, AWS Fargate, AWS PrivateLink, Elastic Load Balancing, Financial Services, Generative AI, Technical How-to
 
 **Digest:**
-Amazon Q BusinessのCDE機能を利用し、画像ファイルから情報を抽出する方法を紹介。Amazon S3の画像データを、AWS LambdaとAmazon Bedrockで分析し、テキスト化して検索可能に。これにより、図表やグラフの情報も検索でき、意思決定を支援。例として、地域の教育データ分析に活用し、質問応答の精度向上を実現。
+AnthropicのMCP（Model Context Protocol）は、様々なツール連携を可能にするオープンソースプロトコル。AWSのAmazon Bedrockを活用し、MCPサーバーを集中管理することで、企業内でのジェネレーティブAI活用の加速を目指す。金融サービスでのユースケースとして、注文執行を例に、効率的なAIエージェント開発とガバナンス強化を実現する。
 
 ---
 
-### [Build AWS architecture diagrams using Amazon Q CLI and MCP](https://aws.amazon.com/blogs/machine-learning/build-aws-architecture-diagrams-using-amazon-q-cli-and-mcp/)
+### [Choosing the right approach for generative AI-powered structured data retrieval](https://aws.amazon.com/blogs/machine-learning/choosing-the-right-approach-for-generative-ai-powered-structured-data-retrieval/)
 **Source:** AWS ML Blog
-**Published:** 2025-06-30 13:53:34 UTC
-**Tags:** Amazon Q Developer, Best Practices, Generative AI, Technical How-to, AI/ML
+**Published:** 2025-07-01 18:11:19 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon Q Business, Amazon QuickSight, Amazon Redshift, Amazon SageMaker AI, Generative AI, Generative BI, AI/ML, Amazon Machine Learning, Amazon Quicksight, Amazon SageMaker, Natural Language Processing
 
 **Digest:**
-Amazon Q Developer CLIとMCPを活用し、自然言語でAWSアーキテクチャ図を簡単に生成する方法を解説。AWS Diagram MCPサーバーとAWS Documentation MCPサーバーを連携し、**ベストプラクティス**に沿った図を数分で作成可能に。**EC2**や**S3**、**Lambda**など、様々なAWSサービスを用いた複雑なアーキテクチャ図も、プロンプトから生成できます。
+Amazon Web Services (AWS) は、LLMを活用した構造化データ検索の5つのパターンを紹介。Amazon Q Business を使った対話型インターフェース、QuickSightへの自然言語クエリ機能追加、BIと対話型AIの統合など、目的に応じた方法を提供。Amazon Bedrock Knowledge Bases を用いたtext-to-SQLやカスタム実装も可能。企業はSQL不要でデータにアクセスでき、意思決定を迅速化できます。
 
 ---
 
-### [AWS Weekly Roundup: Project Rainier, Amazon CloudWatch investigations, AWS MCP servers, and more (June 30, 2025)](https://aws.amazon.com/blogs/aws/aws-weekly-roundup-project-rainier-amazon-cloudwatch-investigations-aws-mcp-servers-and-more-june-30-2025/)
-**Source:** AWS News Blog
-**Published:** 2025-06-30 16:39:17 UTC
-**Tags:** Amazon Bedrock Guardrails, Amazon CloudWatch, Amazon Q Developer, Amazon Route 53, Amazon Simple Storage Service (S3), Announcements, AWS IoT Device Management, Launch, News, Week in Review
+### [Revolutionizing drug data analysis using Amazon Bedrock multimodal RAG capabilities](https://aws.amazon.com/blogs/machine-learning/revolutionizing-drug-data-analysis-using-amazon-bedrock-multimodal-rag-capabilities/)
+**Source:** AWS ML Blog
+**Published:** 2025-07-01 18:05:10 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Intermediate (200)
 
 **Digest:**
-シアトルでAWSの主要プロジェクト「Project Rainier」が発表。これはAIモデル訓練向けの世界最大級コンピューターで、AWSカスタム設計のTrainium2チップ搭載。先週は、Amazon S3アクセス、CloudWatchの異常検知、Bedrock Guardrailsなどがリリース。また、Q CLIやMCPサーバーを活用したコスト分析やデータベース開発も紹介。re:Inventなどのイベント情報も。
+Amazon Bedrock を活用した、製薬・ヘルスケア企業向けの高度なドキュメント分析ソリューションを紹介。多種多様なデータを効率的に処理するため、マルチモーダル検索、高度なチャンク化、引用機能を使用。複雑な研究文書からデータ駆動のインサイトを抽出、臨床試験データや分子図などの分析が可能。Amazon Bedrock Knowledge Bases を利用し、精度と効率を向上。
 
 ---
 
-### [【法人・教育機関向け】Surface 在庫一掃キャンペーン](https://blogs.windows.com/japan/2025/07/01/surface-stock-clearance-campaign/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-07-01 01:11:02 UTC
-**Tags:** Surface, Uncategorized
-
-**Digest:**
-法人・教育機関向けSurface在庫一掃キャンペーン！ **AI** 対応の**Surface Pro 10**、**Surface Laptop 6**など、**ハイブリッドワーク**を支える4製品が特別価格。**2 in 1 PC**や軽量モデル、**NPU**搭載の**AI**対応ノートPCで業務効率化。2025年7月～9月納品分が対象、詳細は記事にて。
-
----
-
-### [AWS Summit Japan 2025に行ってきました。~AWSの生成AIサービスの紹介を添えて~](https://blog.jbs.co.jp/entry/2025/07/01/120043)
+### [【Microsoft×生成AI連載】【Agents】Microsoft 365 Copilotのアナリスト エージェントを使ってみた](https://blog.jbs.co.jp/entry/2025/07/02/085130)
 **Source:** JBS Blog
-**Published:** 2025-07-01 03:00:43 UTC
-**Tags:** AWS, 生成AI, AWS Summit Japan2025
+**Published:** 2025-07-01 23:51:30 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, Microsoft×生成AI連載, 生成AI
 
 **Digest:**
-6月25、26日に幕張メッセで開催された「AWS Summit Japan 2025」のダイジェストです。AWSの生成AIサービスに注目し、Amazon Bedrock、AWS SageMakerが紹介されました。Bedrockは構築幅広く基盤モデルをカスタマイズでき、SageMakerは機械学習アルゴリズムの最適化と自動スケーリングが特徴です。
-
----
-
-### [Nutanix Guest Toolsのご紹介](https://blog.jbs.co.jp/entry/2025/07/01/095217)
-**Source:** JBS Blog
-**Published:** 2025-07-01 00:52:17 UTC
-**Tags:** Tech, Nutanix
-
-**Digest:**
-Nutanix Guest Tools (NGT) は、Nutanix環境で稼働する仮想マシン（VM）の機能を拡張するツールです。VMの性能向上や管理の簡素化に貢献し、具体的には、VMのシャットダウン、ファイル共有、ボリュームのスナップショットなどの機能を提供します。NGTのインストールは、Nutanix環境の運用効率を高める上で重要です。
+Microsoft 365 Copilotの「アナリスト エージェント」について、寺澤氏が解説。2025/6/25時点の情報で、機能や料金変更の可能性に言及。Researcher Agentの使用方法、エージェントの場所、実行、利用シーン、メリット、注意点、まとめを紹介。BizChatによる記事要約もおまけで提供。過去の連載記事へのリンクも掲載しています。
 
 ---
