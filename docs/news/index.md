@@ -1,138 +1,108 @@
-# AI Tech Trends Digest (2025-07-02)
+# AI Tech Trends Digest (2025-07-03)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [BedrockのPDFサポートについて検証しましたが、、](https://qiita.com/moritalous/items/54a3eb9a410a41d04b6c)
-**Published:** 2025-07-01 11:39:08 UTC
-**Likes:** 12
-**Tags:** AWS, PDF, bedrock, Claude
+### [AWS Customer Playbook Frameworkを元にしたMCPを作成してセキュリティの助言をもらおう！(w/ ClaudeCodeくん)](https://qiita.com/eisuke000000/items/14aafd61b3b1f899e843)
+**Published:** 2025-07-02 06:34:12 UTC
+**Likes:** 6
+**Tags:** AWS, Security, AI, MCP, Claude
 
 **Digest:**
-Amazon BedrockがClaudeモデルのアップデートを発表。**引用API**と**PDFサポート**が追加され、ClaudeがPDFからテキストだけでなく画像も認識可能に。Converse APIのPDFサポートとの違いは、後者はテキスト抽出のみなのに対し、新機能は画像化して処理するため、より高度な分析が可能。**InvokeModel API**または引用を有効にしたConverse APIで利用でき、検証結果も良好。
+AWS Customer Playbook FrameworkをClaudeと連携し、GitHub API経由でセキュリティガイダンスを提供するMCPを開発。約3時間で要件定義、簡易実装、GitHub API統合を実現。MCPは生成AIとアプリ・サービスを繋ぐ「共通言語」で、今回はS3やIAMなどAWSサービスに関する予防策をプレイブックから取得。ClaudeCodeとClaude Desktopを活用し、実用的なシステムを構築しました。
 
 ---
 
-### [LLMで気分の浮き沈みを可視化してみたら有用なデータが得られた！](https://qiita.com/gretchi/items/1cc791e8e5145c0250b9)
-**Published:** 2025-07-01 22:13:16 UTC
+### [【C#×Ollama】完全無料＆ローカルでAIチャットを作ってみた！！](https://qiita.com/Sakai_path/items/08427dadd8da9cc0b2b9)
+**Published:** 2025-07-02 07:05:33 UTC
 **Likes:** 2
-**Tags:** フーリエ変換, 感情分析, OpenAI, ChatGPT, LLM
+**Tags:** C#, AI, LLM, ollama, ローカルLLM
 
 **Digest:**
-約400日分のX投稿をLLMで分析し、情動、活動性など8項目の精神状態をスコアリング。過去の試行錯誤を経て、GPT-4o-miniのAPIを利用し、日ごとのツイートをCSV形式で入力、簡潔な指示で精度を向上させた。結果はCSV形式で出力され、評価の根拠も付記。
+ローカルLLM「Ollama」とC#のWinFormsで自作AIチャットアプリを構築する方法を紹介。Ollamaは無料、Windows/macOS/Linux対応でAPIサーバー内蔵。Visual Studioでフォームを作成し、OllamaClientクラスでAPIを呼び出す。Llama3やPhiモデルを利用可能だが、日本語対応は課題。記事では、Ollamaのインストールからアンインストール、モデル削除方法も解説。
 
 ---
 
-### [LangGraph体験(その2) : Geminiとしりとりで対戦するプログラムをLangGraphを使って書いてみた](https://qiita.com/steelpipe75/items/0b5948779c3c3485ba1d)
-**Published:** 2025-07-01 15:09:26 UTC
-**Likes:** 2
-**Tags:** Gemini, LangGraph
-
-**Digest:**
-LangGraphを用いてLLMと対戦するしりとりゲームを開発。ユーザー入力とAI（Gemini）の応答をLangGraphで状態遷移グラフとして実装。LLMを活用し、単語の「読み」を考慮したルールチェックを実現。AIの応答、ルール違反判定、ターン管理をノードで表現。最終的に、LangGraphの柔軟性を活かした、より自然な対戦を目指す。
-
----
-
-### [[Mac]ClaudeCodeのStop Hooksを使ってユーザー応答待ちのとき「だけ」デスクトップ通知する](https://qiita.com/yheihei/items/4415759278d3686b6f2b)
-**Published:** 2025-07-02 02:43:26 UTC
+### [Claude DesktopからDatabricksマネージドMCPサーバーへの接続](https://qiita.com/taka_yayoi/items/59cea4d9bab5e1893cff)
+**Published:** 2025-07-02 07:06:26 UTC
 **Likes:** 1
-**Tags:** Anthropic, Claude, ClaudeCode
+**Tags:** MCP, Databricks, Genie, Claude
 
 **Digest:**
-Claude CodeのHooksで、ユーザー応答待ちの通知をMacで実装。`Stop`フックでツール完了時にも通知される問題を、JSON処理ツール`jq`を用いて解決。アシスタントのメッセージタイプを判別し、テキスト応答時のみ通知するように。5秒待機して再確認する二段階検出で誤検出も防止。`settings.json`とシェルスクリプトで設定、Homebrewで`jq`インストールが必要。
+DatabricksマネージドMCPサーバーを外部ツールと連携する方法を解説。Claude DesktopでGenie、Unity Catalog関数、Vector Searchに接続し、データ分析を効率化。JSON設定とPAT認証で安全に連携。開発効率向上、柔軟な活用が可能。アクセストークン管理などセキュリティに注意し、Databricks管理のMCPサーバーのみ対応。
 
 ---
 
-### [AI時代にソフトウェアエンジニアが生き残る方法](https://qiita.com/ronitsachdev/items/a15eaaba1f02befeb54e)
-**Published:** 2025-07-02 05:59:00 UTC
+### [Gemini CLI を使おう！](https://qiita.com/koyo343/items/6181ed42d1ed70465979)
+**Published:** 2025-07-03 04:37:08 UTC
 **Likes:** 0
-**Tags:** 初心者, AI, cursor, ChatGPT, Claude
+**Tags:** Gemini, GeminiCLI
 
 **Digest:**
-AI時代、AIエンジニアの需要は増加。AnthropicのClaude CodeとCursorを駆使し、設計レビュー、リファクタ、バグ調査を効率化。バックエンド、AWS、CI/CD等の基盤スキル習得が重要。ClaudeとCursorで学びながらアプリを開発、GitHubやQiitaで公開し経験を積むことが、AIを活かせる強いエンジニアへの道です。
+2025年7月3日時点の情報として、Gemini CLIのインストール方法を紹介。WindowsとLinuxで動作確認済み、node v18以上の環境が必須です。インストールは`npm install -g @google/gemini-cli`で、`gemini`コマンドで起動。環境構築には注意が必要ですが、Gemini CLIを試す良い機会です。
+
+---
+
+### [【nvm on Fish Shell】Fish Shellでnvmをインストールする備忘録](https://qiita.com/KerorinNF/items/67e80b26cdb10c5ebc04)
+**Published:** 2025-07-03 03:03:04 UTC
+**Likes:** 0
+**Tags:** fish, nvm, fish-shell, Claude, ClaudeCode
+
+**Digest:**
+Claude CodeでWSLのFish Shellでnvmを使おうとした際、bashと異なり`.profile`が読み込まれないため、そのままでは起動時にnvmが読み込まれない問題が発生。解決策として、`fish-nvm`パッケージをインストールすることで、Fish Shellでもnvmコマンドが利用可能になります。インストールにはfisherまたはoh-my-fishを使用します。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Building secure, scalable AI in the cloud with Microsoft Azure](https://azure.microsoft.com/en-us/blog/building-secure-scalable-ai-in-the-cloud-with-microsoft-azure/)
-**Source:** Azure AI Blog
-**Published:** 2025-07-01 15:00:00 UTC
-**Tags:** AI + machine learning, Analytics, Compute, Containers, Hybrid + multicloud, Management and governance, Security, Generative AI
-
-**Digest:**
-生成AIの導入は企業変革を促すが、Azureのようなクラウド基盤が不可欠。オンプレミス環境は制約が多く、72%がクラウド移行でAI導入の障壁が減少。Azureはセキュリティとスケーラビリティを提供し、データプライバシーや人材不足等の課題を解決。包括的なフレームワークでAIワークロードを保護し、イノベーションを加速、企業価値向上に貢献します。
-
----
-
-### [Google Pixel 9a、楽天モバイルで取扱開始](https://blog.google/intl/ja-jp/feed/pixel-9a-rakutenmobile/)
-**Source:** Google Japan Blog
-**Published:** 2025-07-01 18:00:00 UTC
-**Tags:** Pixel
-
-**Digest:**
-本日より、楽天モバイルでGoogle Pixel 9aの取り扱いが開始されました。洗練されたフラットデザインに、Aシリーズ史上最も明るいディスプレイを搭載。エントリーモデルながら、48MPメインカメラで美しい写真が撮れ、AI機能も充実しています。
-
----
-
-### [新しい Chromebook Plus が登場： AI 機能でさらに便利に](https://blog.google/intl/ja-jp/products/android-chrome-play/chromebook-plus-lenovo-plusgen10/)
-**Source:** Google Japan Blog
-**Published:** 2025-07-01 12:06:00 UTC
-**Tags:** Chrome
-
-**Digest:**
-レノボから高性能Chromebook「Chromebook Plus Gen 10」が登場。AI機能搭載で作業効率を向上させます。処理性能が高く、ビジネスやクリエイティブな作業を快適にサポート。
-
----
-
-### [Use Amazon SageMaker Unified Studio to build complex AI workflows using Amazon Bedrock Flows](https://aws.amazon.com/blogs/machine-learning/use-amazon-sagemaker-unified-studio-to-build-complex-ai-workflows-using-amazon-bedrock-flows/)
+### [Optimize RAG in production environments using Amazon SageMaker JumpStart and Amazon OpenSearch Service](https://aws.amazon.com/blogs/machine-learning/optimize-rag-in-production-environments-using-amazon-sagemaker-jumpstart-and-amazon-opensearch-service/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-01 20:42:28 UTC
-**Tags:** Amazon Bedrock, Amazon SageMaker Unified Studio, Intermediate (200), Technical How-to
+**Published:** 2025-07-02 20:55:51 UTC
+**Tags:** Amazon OpenSearch Service, Amazon SageMaker Lakehouse, Best Practices, Intermediate (200)
 
 **Digest:**
-Amazon SageMaker Unified Studioを活用し、データ管理、AI/MLツール、ワークフローを統合するAIソリューション開発を紹介。金融機関の苦情参照システム構築例では、Amazon Bedrock Flow、知識ベース、エージェントを連携。SageMakerでプロンプト作成、チャットエージェント設定後、フローを作成しテスト。複雑なAIワークフローを迅速に開発・デプロイする方法を解説。
+生成AIによる顧客体験革新を支えるRAGは、LLMが外部知識を参照可能にする技術。Amazon SageMaker JumpStartとOpenSearch Serviceを組み合わせ、LangChainを用いてRAGアプリケーションを構築する手順を紹介。OpenSearchは効率的な検索性能、AWS連携、リアルタイム更新が強み。Hugging Faceのモデルを利用し、PDFローディング、テキスト分割、OpenSearchへの格納を実施。
 
 ---
 
-### [Accelerating AI innovation: Scale MCP servers for enterprise workloads with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/accelerating-ai-innovation-scale-mcp-servers-for-enterprise-workloads-with-amazon-bedrock/)
+### [Advancing AI agent governance with Boomi and AWS: A unified approach to observability and compliance](https://aws.amazon.com/blogs/machine-learning/advancing-ai-agent-governance-with-boomi-and-aws-a-unified-approach-to-observability-and-compliance/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-01 18:16:51 UTC
-**Tags:** Amazon Bedrock, Amazon DynamoDB, Amazon Elastic Container Service, Artificial Intelligence, AWS Fargate, AWS PrivateLink, Elastic Load Balancing, Financial Services, Generative AI, Technical How-to
+**Published:** 2025-07-02 19:22:05 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon CloudWatch, Amazon Data Firehose, Best Practices, Customer Solutions, Intermediate (200)
 
 **Digest:**
-AnthropicのMCP（Model Context Protocol）は、様々なツール連携を可能にするオープンソースプロトコル。AWSのAmazon Bedrockを活用し、MCPサーバーを集中管理することで、企業内でのジェネレーティブAI活用の加速を目指す。金融サービスでのユースケースとして、注文執行を例に、効率的なAIエージェント開発とガバナンス強化を実現する。
+BoomiとAWSが連携し、AIエージェントの管理ソリューション「Agent Control Tower」を発表。企業は運用、ガバナンス、セキュリティの課題に直面しており、Agent Control TowerはAmazon Bedrockと統合し、可視性、管理、コンプライアンスを提供。20,000以上の顧客を抱えるBoomiは、AIエージェントの管理とAWSでのAI導入を支援します。
 
 ---
 
-### [Choosing the right approach for generative AI-powered structured data retrieval](https://aws.amazon.com/blogs/machine-learning/choosing-the-right-approach-for-generative-ai-powered-structured-data-retrieval/)
-**Source:** AWS ML Blog
-**Published:** 2025-07-01 18:11:19 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon Q Business, Amazon QuickSight, Amazon Redshift, Amazon SageMaker AI, Generative AI, Generative BI, AI/ML, Amazon Machine Learning, Amazon Quicksight, Amazon SageMaker, Natural Language Processing
+### [The latest AI news we announced in June](https://blog.google/technology/ai/google-ai-updates-june-2025/)
+**Source:** Google DeepMind
+**Published:** 2025-07-02 16:00:00 UTC
+**Tags:** Search, Chromebooks, Google Labs, Developers, Google DeepMind, Learning & Education, Gemini, AI, Gemini App, Research, Health, Photos
 
 **Digest:**
-Amazon Web Services (AWS) は、LLMを活用した構造化データ検索の5つのパターンを紹介。Amazon Q Business を使った対話型インターフェース、QuickSightへの自然言語クエリ機能追加、BIと対話型AIの統合など、目的に応じた方法を提供。Amazon Bedrock Knowledge Bases を用いたtext-to-SQLやカスタム実装も可能。企業はSQL不要でデータにアクセスでき、意思決定を迅速化できます。
+Googleは2025年6月のAI最新情報を発表。大規模言語モデルの進化、画像生成技術の向上、AIを活用した検索機能の強化などが含まれる。また、これらのアップデートは、開発者向けツールやAPIの拡充、AI倫理に関する取り組みとも連携し、より高度で多様なAI体験をユーザーに提供することを目指している。
 
 ---
 
-### [Revolutionizing drug data analysis using Amazon Bedrock multimodal RAG capabilities](https://aws.amazon.com/blogs/machine-learning/revolutionizing-drug-data-analysis-using-amazon-bedrock-multimodal-rag-capabilities/)
-**Source:** AWS ML Blog
-**Published:** 2025-07-01 18:05:10 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Intermediate (200)
-
-**Digest:**
-Amazon Bedrock を活用した、製薬・ヘルスケア企業向けの高度なドキュメント分析ソリューションを紹介。多種多様なデータを効率的に処理するため、マルチモーダル検索、高度なチャンク化、引用機能を使用。複雑な研究文書からデータ駆動のインサイトを抽出、臨床試験データや分子図などの分析が可能。Amazon Bedrock Knowledge Bases を利用し、精度と効率を向上。
-
----
-
-### [【Microsoft×生成AI連載】【Agents】Microsoft 365 Copilotのアナリスト エージェントを使ってみた](https://blog.jbs.co.jp/entry/2025/07/02/085130)
+### [新しい Power Platform 管理センターの利用ガイド](https://blog.jbs.co.jp/entry/2025/07/03/123853)
 **Source:** JBS Blog
-**Published:** 2025-07-01 23:51:30 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, Microsoft×生成AI連載, 生成AI
+**Published:** 2025-07-03 03:38:53 UTC
+**Tags:** Power Platform, Live Support
 
 **Digest:**
-Microsoft 365 Copilotの「アナリスト エージェント」について、寺澤氏が解説。2025/6/25時点の情報で、機能や料金変更の可能性に言及。Researcher Agentの使用方法、エージェントの場所、実行、利用シーン、メリット、注意点、まとめを紹介。BizChatによる記事要約もおまけで提供。過去の連載記事へのリンクも掲載しています。
+Power Platform管理センターが操作性向上のため刷新されました。目的別の機能配置と、新旧比較表で変更点を解説。従来の管理ポータルと比較し、Power Apps、Power Automate、Dataverseなど、プラットフォーム全体の管理がより効率的に行えるようになりました。
+
+---
+
+### [Power Automate：Power Appsアプリを実行したユーザーの予定表に予定を入れる方法](https://blog.jbs.co.jp/entry/2025/07/03/095846)
+**Source:** JBS Blog
+**Published:** 2025-07-03 00:58:46 UTC
+**Tags:** Power Platform, Power Automate, Power Apps
+
+**Digest:**
+Power AutomateでPower Apps実行者のOutlook予定表に予定を追加する方法を解説。Power Automateの**トリガー**設定、**アクション**（**予定の作成**）、**動的コンテンツ**の設定を通して、Power Appsで入力された情報を元に**自動化**を実現。これにより、アプリ利用者のOutlook予定管理が効率化されます。
 
 ---
