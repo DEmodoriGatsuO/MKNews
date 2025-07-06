@@ -1,55 +1,55 @@
-# AI Tech Trends Digest (2025-07-05)
+# AI Tech Trends Digest (2025-07-06)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [初心者でも分かる！VSCodeでGemini CLIを使いこなす方法 - インストールから応用まで徹底解説](https://qiita.com/Nakamura-Kaito/items/122963855d7b1deb8a9d)
-**Published:** 2025-07-04 06:59:44 UTC
-**Likes:** 49
-**Tags:** Google, VSCode, Gemini, AIエージェント, GeminiCLI
-
-**Digest:**
-Google Geminiチームが開発した「Gemini CLI」は、開発者向けのコマンドラインAIツール。コード解析、自動化、マルチモーダルコンテンツ生成が可能で、大規模コードベースやDevOpsタスクをサポート。VSCodeとの統合でコード生成、理解、デバッグが効率化。インストールはnpmまたは直接実行で、Googleアカウントログインで手軽に利用開始できます。
-
----
-
-### [IoTデータをClaude 4 sonnetで分析するツールを作ってみた](https://qiita.com/duuuck/items/eb87514196d7f7abeb42)
-**Published:** 2025-07-05 04:00:47 UTC
+### [OpenAI API o3 deep researchを試してみた](https://qiita.com/tama_genai/items/fae479a11ae2592538fe)
+**Published:** 2025-07-06 03:58:56 UTC
 **Likes:** 1
-**Tags:** AWS, IoT, serverless, Claude
+**Tags:** Python, OpenAI, 生成AI, ChatGPT, LLM
 
 **Digest:**
-IoTデータの活用課題を解決するため、生成AIと自然言語処理で分析するツールを開発。DynamoDBに格納された温度・電力センサーデータを、Lambda関数とClaude APIを用いて分析します。ユーザーは自然言語で質問し、Chart.jsでグラフ表示された結果を得ます。室温と電気代の最適化など、専門知識不要でIoTデータから洞察を得ることが可能です。
+OpenAIのDeep Researchモデル「o3-deep-research」がAPIとして正式リリース。Pythonコードで試す手順を解説し、OpenAI APIキー取得、必要なパッケージインストール、サンプルコード実行を紹介。GPT-4.1との比較では、o3-deep-researchは高品質な要約と引用付きレポートを生成、実行時間は長くコストも高い。Dockerでの実行環境構築方法も説明。
 
 ---
 
-### [5万円のベビーモニターを回避すべく、自宅のカメラ×AIで「寝返り検知」を自作した話](https://qiita.com/engineer_reo/items/a6931e6b65db51665e8d)
-**Published:** 2025-07-04 14:14:59 UTC
+### [生成AIへのプロンプトエンジニアリングでドナ・ポールセン（SUIT）風の回答を作る](https://qiita.com/lazyK/items/3c95347385a52248bb18)
+**Published:** 2025-07-05 08:36:34 UTC
 **Likes:** 1
-**Tags:** C#, .NET, 個人開発, LINEmessagingAPI, Gemini
+**Tags:** Gemini, キャラクター, ChatGPT, プロンプトエンジニアリング, GeminiCLI
 
 **Digest:**
-ベビーモニターが高額なため、既存の[Tapo C210](https://www.tp-link.com/jp/smart-home/tapo/tapo-c210/) を活用し、寝返り検知システムを自作。C#とGemini APIを使い、RTSP配信される映像から赤ちゃんの寝返りを判定し、LINEで通知する。約5万円のベビーモニターに対し、既存のカメラと技術で機能を実現、無事成功した。
+Discord日報Botの日報が熱血すぎて鬱陶しいため、Netflixドラマ「SUITS」のドナ風にプロンプトを改良。GeminiCliとChatGPTを活用し、ウィットに富んだ口調を目指したものの、完全再現はならず。返答サンプルが重要と判明し、今後は別キャラ対応も検討。
 
 ---
 
-### [VS CodeでGemini CLIを使ってみた②（Gemini Code Assist Standard/Enterpriseを利用編）](https://qiita.com/teshi2020/items/2f3ec288bb836fde6d33)
-**Published:** 2025-07-05 04:17:39 UTC
-**Likes:** 0
-**Tags:** 初心者向け, VSCode, Gemini, GeminiCodeAssist, GeminiCLI
+### [家庭のお悩みGenUで解決してみた](https://qiita.com/zukutakuzu/items/4819878ea433890142e2)
+**Published:** 2025-07-05 06:59:30 UTC
+**Likes:** 1
+**Tags:** AWS, CloudFormation, 生成AI, Claude
 
 **Digest:**
-Gemini Code Assist Standard/Enterprise利用者は、Google Cloudプロジェクトの明示的な選択が必要です。VS Code拡張機能インストール後、エラーが出たら、Geminiパネルの設定からプロジェクトIDを入力するか、エラーメッセージ内のリンクからプロジェクトを選択します。新規作成の場合は、API有効化も必要です。Gemini CLIは`gcloud`不要でブラウザ認証で利用できます。
+朝の準備を視覚化するため、AWSの生成AIサンプル「GenU」をデプロイ。Windows、VSCode、AWS CLIなどを前提に、3コマンドでデプロイ可能。約10分で完了し、CloudFormationで確認。プロンプトで朝の準備イラストを生成したが、数字の順番や細部に課題。1回$10の料金。子供は興味を示したが、効果は持続せず、更なる改善を検討。
 
 ---
 
-### [Hugging Face Agents Course Unit1: Thought: Internal Reasoning and the ReAct Approach](https://qiita.com/i-yuki23/items/3bafcb1a25e74be762ae)
-**Published:** 2025-07-05 02:20:50 UTC
-**Likes:** 0
-**Tags:** huggingface, LLM, LLMエージェント
+### [Geminiに光速で質問できるChrome拡張機能を作ってみた](https://qiita.com/akiiiiita/items/f64a8664db2a5ab36946)
+**Published:** 2025-07-05 06:50:07 UTC
+**Likes:** 1
+**Tags:** JavaScript, Chrome, Gemini
 
 **Digest:**
-ReActは、LLMが**思考（Thought）→ 行動（Action）→ 観察（Observation）**を繰り返すフレームワーク。質問に対し、ツール（APIなど）をJSON形式で呼び出し、その結果をObservationとしてLLMに入力し、最終的な回答を得ます。具体例として、天気予報APIを用いてロンドンの天気を尋ねるプロセスを示しています。CoTとは異なり、エージェント的なシステム設計が特徴です。
+Geminiに素早く質問できるChrome拡張機能を開発！アドレスバーで`g`と入力し、質問を入力するだけでGeminiの回答を得られます。新しいタブを開く手間を省き、作業効率を向上。GitHubからソースコードをダウンロードし、デベロッパーモードでChromeにロードして利用できます。AI活用のヒントに、記事執筆にもGeminiが役立ちました。
+
+---
+
+### [054 AI屋さんの　Docker　Gemini CLI　LLMにトークン全文入力](https://qiita.com/bono0/items/dc105c6be3f4e0e39d32)
+**Published:** 2025-07-06 05:17:23 UTC
+**Likes:** 0
+**Tags:** Python, Web, LLM, gemini1.5pro, GeminiCLI
+
+**Digest:**
+Gemini CLIを安全に使うには、Google CloudのVertex AIとDockerの組み合わせが必須です。無料版やOS直接インストールは危険で、APIキー漏洩や環境汚染のリスクがあります。Dockerで環境を分離し、Vertex AIの強固な認証・権限管理を活用しましょう。ディレクトリのマウントでファイルのやり取りも可能です。
 
 ---
