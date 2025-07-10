@@ -1,128 +1,148 @@
-# AI Tech Trends Digest (2025-07-09)
+# AI Tech Trends Digest (2025-07-10)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [【ClaudeCode】大規模リポジトリで .claude ディレクトリを見失う？ルートからの誘導で解決した話](https://qiita.com/kurifumi/items/95caa20379c8961684e8)
-**Published:** 2025-07-08 12:40:10 UTC
-**Likes:** 8
-**Tags:** Claude, ClaudeCode
+### [AIコードレビューツール×LLM(ChatGPT等)でプルリク本文自動生成を実現させてみた。](https://qiita.com/kou_dv/items/f94bc1e8d7b3b82f06e3)
+**Published:** 2025-07-09 12:52:15 UTC
+**Likes:** 5
+**Tags:** GitHub, pullrequest, Gemini, GitHubActions, ChatGPT
 
 **Digest:**
-ClaudeCodeが`.claude/CLAUDE.md`を認識できない問題に対し、大規模リポジトリでのファイル数制限が原因と判明。**Google Vertex AI (Sonnet4/Opus4)**環境で、ルート直下に`.claude/CLAUDE.md`への誘導ファイル配置で対応。LSツールの出力制限で隠しディレクトリが見つけられないため、この対処法を採用。より良い解決策を模索中です。
+大学3年生の鈴木さんが、AIコードレビューツールCodeRabbitとLLMを連携させ、プルリク本文を自動生成するワークフローを構築。GitHub Actionsを使用し、CodeRabbitの要約とPRテンプレートを元にGeminiで本文を生成。PersonalAccessToken使用やプロンプトインジェクションリスクへの注意点も解説。今後は自動ラベリングや静的解析結果の追記も検討。
 
 ---
 
-### [爆速効率化！Claude AI ✕ ツールで変わるエンジニアの仕事術 〜MCP構築と実践勉強会〜の手順書](https://qiita.com/achanggg/items/44e730f03ad17916e61e)
-**Published:** 2025-07-08 13:13:36 UTC
+### [2025年AI開発の新常識！Context Engineering（コンテキストエンジニアリング）が変える開発現場](https://qiita.com/takuya77088/items/579cce606799e207a2c4)
+**Published:** 2025-07-09 06:25:07 UTC
+**Likes:** 4
+**Tags:** AI開発, LLM, カスタマイズされた, AIエージェント, ContextEngineering
+
+**Digest:**
+「コンテキストエンジニアリング」は、AI界隈で注目を集める技術で、Andrej Karpathyが提唱。プロンプトエンジニアリングを発展させ、LLMに適切な情報とツールを適切なタイミングで提供する技術。GoogleのNikolay Savinovは、AgentとContextの共生関係を説明。LangChainは、書き込み、選別、圧縮、隔離の4つの戦略を提示。Shopifyでは、従業員のAI活用能力を評価基準にするなど、企業での重要性が増している。
+
+---
+
+### [JavaScript30をTypeScriptで](https://qiita.com/makoto-ogata@github/items/5e71bcdf2b361b9c3379)
+**Published:** 2025-07-09 15:37:52 UTC
+**Likes:** 3
+**Tags:** JavaScript, TypeScript, Gemini
+
+**Digest:**
+人気教材「JavaScript30」をTypeScriptで実装する試み。GitHubのリポジトリをフォークし、`tsconfig.json`を設定して環境構築。最初の教材「JavaScript Drum Kit」をTypeScriptで記述し、`code`プロパティの使用など、オリジナルとの差分も説明。Geminiによるコードレビューも受け、改善点を見つけました。学習への活用と、AIによるレビューの進化を実感した結果となりました。
+
+---
+
+### [Claude Code Hooksで通知したときにVSCodeをアクティブにしてくれませんか！](https://qiita.com/hajimemath/items/256dfa78990c568eb600)
+**Published:** 2025-07-09 11:42:05 UTC
+**Likes:** 2
+**Tags:** VSCode, Claude, ClaudeCode, ClaudeCodeHooks
+
+**Digest:**
+Claude Code Hooksで通知を受け取れるようになったが、設定でスクリプトエディタに遷移してしまう問題があった。`.claude/settings.local.json`にosascriptコマンドを用いた設定を追加し、Macの通知とVSCodeのアクティブ化を実現。StopとNotificationフックで通知と同時にVSCodeがアクティブになる。
+
+---
+
+### [T5Gemmaが切り拓く次世代NLPの世界：Gemma×T5の実力を徹底解説！](https://qiita.com/bienhoa/items/9c701a48dcbd9f4b0cad)
+**Published:** 2025-07-10 00:28:02 UTC
 **Likes:** 1
-**Tags:** AI, MCP, Claude, AIエージェント, ClaudeCode
+**Tags:** 初心者, Gemini, T5, huggingface, Gemma
 
 **Digest:**
-2025年7月12日の勉強会資料。Node.js、Claude Desktop/Code、uvインストールが前提。MCP設定は、claude_desktop_config.json編集（Claude Desktop）または `claude mcp add` コマンド（Claude Code）で行う。FileSystem、Playwright、Obsidian、context7、MySQLなどMCP設定例とプロンプト例を紹介。禁止事項設定も解説。
-
----
-
-### [SnowflakeのQuickStart：Getting Started with Cortex Knowledge Extensions on Snowflake Marketplaceをやってみた](https://qiita.com/a-kamiya/items/fa630d133614ad5653aa)
-**Published:** 2025-07-08 10:01:16 UTC
-**Likes:** 1
-**Tags:** Snowflake, 公式ドキュメント, Streamlit, Claude, Streamlit_in_Snowflake
-
-**Digest:**
-Snowflake Discoverイベントのオンラインセッションに参加。公式ドキュメントを自然言語で質問できるチャット機能を試す。QuickStartの手順でエラー発生も、スキーマ名修正やパッケージインストールで解決。Streamlitアプリで「What is a view in Snowflake?」の質問に回答。日本語入力にはClaude先生の助けを借りて、翻訳機能を組み込んだ修正版コードで対応しました。
-
----
-
-### [Arweave関連の技術記事翻訳プロンプトの紹介と考察](https://qiita.com/nft/items/f4f0eb9fe3ffccbdbd54)
-**Published:** 2025-07-09 02:04:24 UTC
-**Likes:** 0
-**Tags:** Blockchain, DevRel, Ao, arweave, LLM
-
-**Digest:**
-Arweave関連テックブログ数百本の翻訳に、Claude Projectsとカスタムプロンプトを活用。Web版またはProjects推奨で、マークダウン化が重要。Claude Codeは精度低下。プロンプトは技術用語の扱い、文体、SEOを考慮。課題としてレート制限、辞書反映の不完全さ、手動割合の多さを指摘。今後はClaude Code Hooks活用も検討。
-
----
-
-### [Geminiでヘビと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/325737a48c4eaa5fbd81)
-**Published:** 2025-07-08 21:26:00 UTC
-**Likes:** 0
-**Tags:** Gemini
-
-**Digest:**
-Google Geminiで生成された、聖なるヘビと遊ぶ魔法少女のイラストを紹介。簡単なプロンプト「聖なるヘビと遊ぶ魔法少女を描いてください」の結果として、可愛らしい画像が出力されました。詳細なプロンプトと生成された画像が提示され、最後に「可愛い」というシンプルな感想で締めくくられています。
+GoogleのT5Gemmaは、Gemma 2をベースに、T5アーキテクチャを採用したエンコーダー・デコーダー型LLMです。軽量ながら高性能で、機械翻訳や要約に強み。Hugging Faceで利用可能。T5-SmallからT5-XLまで多様なモデルサイズを展開し、Multi-Query Attentionなどの最新技術も搭載。多言語処理やコーディング支援への応用も期待されています。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Accelerate AI development with Amazon Bedrock API keys](https://aws.amazon.com/blogs/machine-learning/accelerate-ai-development-with-amazon-bedrock-api-keys/)
-**Source:** AWS ML Blog
-**Published:** 2025-07-08 20:04:11 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Announcements, Artificial Intelligence, Foundation models
+### [Gemini が Wear OS by Google 搭載のスマートウォッチに登場](https://blog.google/intl/ja-jp/products/android-chrome-play/gemini-wear-os-watches/)
+**Source:** Google Japan Blog
+**Published:** 2025-07-09 23:01:00 UTC
+**Tags:** Android
 
 **Digest:**
-Amazon Bedrock に API キーが登場。認証プロセスを簡素化し、開発者は設定に時間を取られず開発に集中できます。長期的・短期的キーがあり、CamelAIのような企業は数分で顧客をオンボーディング可能に。Boto3 SDK等で簡単に利用開始でき、CloudTrailでログも記録。対応リージョンは多数。
+GoogleのGeminiが、Wear OS by Google搭載スマートウォッチに搭載されました。これにより、スマートウォッチ上でGeminiを活用し、質問への回答、テキスト生成、翻訳など、様々なタスクをこなせるようになります。音声入力にも対応しており、手軽に情報へアクセスできます。
 
 ---
 
-### [Accelerating data science innovation: How Bayer Crop Science used AWS AI/ML services to build their next-generation MLOps service](https://aws.amazon.com/blogs/machine-learning/accelerating-data-science-innovation-how-bayer-crop-science-used-aws-ai-ml-services-to-build-their-next-generation-mlops-service/)
+### [AWS AI infrastructure with NVIDIA Blackwell: Two powerful compute solutions for the next frontier of AI](https://aws.amazon.com/blogs/machine-learning/aws-ai-infrastructure-with-nvidia-blackwell-two-powerful-compute-solutions-for-the-next-frontier-of-ai/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-08 16:12:54 UTC
-**Tags:** Amazon API Gateway, Amazon EventBridge, Amazon Q, Amazon Q Business, Amazon Q Developer, Amazon SageMaker, Amazon SageMaker Data & AI Governance, Artificial Intelligence, Customer Solutions, Generative AI
+**Published:** 2025-07-09 21:01:52 UTC
+**Tags:** Amazon EC2, Announcements, Artificial Intelligence, Compute
 
 **Digest:**
-バイエルCrop Scienceは、世界的な人口増加に対応するため、再生型農業を推進。データ分析基盤としてAWSのSageMakerとAmazon Qを活用し、モデル学習を加速。Amazon Qによるコードドキュメント自動化により、開発者のオンボーディング時間70%減、生産性30%向上を見込む。これにより、50%の増産を目指す。
+AWSは、NVIDIA Grace Blackwell Superchipsを搭載したP6e-GB200 UltraServersと、Blackwell GPUを搭載したP6-B200インスタンスの一般提供を発表しました。これらのインスタンスは、大規模AIモデルのトレーニングとデプロイ向けに設計され、高速な推論を実現します。P6e-GB200は最大72基のGPUを搭載し、高度な液冷技術を採用。P6-B200は幅広いAIワークロードに対応し、Nitro Systemによるセキュリティと安定性も強化されています。Amazon SageMaker HyperPodやAmazon EKSでの利用も可能です。
 
 ---
 
-### [Combat financial fraud with GraphRAG on Amazon Bedrock Knowledge Bases](https://aws.amazon.com/blogs/machine-learning/combat-financial-fraud-with-graphrag-on-amazon-bedrock-knowledge-bases/)
+### [Unlock retail intelligence by transforming data into actionable insights using generative AI with Amazon Q Business](https://aws.amazon.com/blogs/machine-learning/unlock-retail-intelligence-by-transforming-data-into-actionable-insights-using-generative-ai-with-amazon-q-business/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-08 16:10:13 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon Machine Learning, Amazon Neptune Analytics, Technical How-to
+**Published:** 2025-07-09 20:11:39 UTC
+**Tags:** Amazon Q Business, Amazon QuickSight, Analytics, Artificial Intelligence, Generative AI, Intermediate (200), Retail, Technical How-to
 
 **Digest:**
-年間400億ドル超の金融詐欺に対抗するため、Amazon Bedrock Knowledge Bases GraphRAGが有効です。これは、従来のRAGの限界を克服し、Amazon Neptune Analyticsと組み合わせ、関係性を重視した詐欺検知を実現します。既存データから関係性を抽出し、自然言語で複雑な検索を可能に。分析者は直感的に不正パターンを発見でき、高度化する詐欺に対応できます。
+Amazon Q Business for Retail Intelligenceは、小売業向けにAIを活用したソリューションです。自然言語でデータ分析を可能にし、迅速な意思決定を支援します。Amazon Q Business、QuickSight、AWSサービスを連携し、78%の企業がAIを利用する現状に対応。データ統合、分析、可視化を実現し、役職別のインサイト提供と業務効率化を促進します。
 
 ---
 
-### [Classify call center conversations with Amazon Bedrock batch inference](https://aws.amazon.com/blogs/machine-learning/classify-call-center-conversations-with-amazon-bedrock-batch-inference/)
+### [Democratize data for timely decisions with text-to-SQL at Parcel Perform](https://aws.amazon.com/blogs/machine-learning/democratize-data-for-timely-decisions-with-text-to-sql-at-parcel-perform/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-08 16:05:33 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Artificial Intelligence, Intermediate (200)
+**Published:** 2025-07-09 16:51:35 UTC
+**Tags:** Amazon Athena, Amazon Bedrock, Amazon Bedrock Knowledge Bases, Business Intelligence, Customer Solutions, Generative AI, Intermediate (200), Supply Chain
 
 **Digest:**
-Amazon Bedrockのバッチ推論機能を活用し、AnthropicのClaude Haikuモデルでテキスト分類を行うソリューションを紹介。大量のリクエストに対応するため、オンデマンド価格より50%お得なバッチ推論が重要。**AWS**サービスで、**S3**へのデータ投入から、**Lambda**、**Bedrock**による分類、**QuickSight**での可視化までを自動化。**Synthetic data**生成や、**AWS CDK**によるインフラ管理も。
+Parcel Performは、AIを活用してeコマースのデータ分析を効率化。AWS上で構築されたシステムは、ビジネスチームが自然言語で質問すると、AIがSQLを生成し、Amazon Athenaでデータ取得。これにより、データチームの負担を軽減し、迅速な意思決定を支援。課題としては、曖昧な名前への対応、高コストなクエリへの対策、コスト追跡などが挙げられています。
 
 ---
 
-### [Effective cross-lingual LLM evaluation with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/effective-cross-lingual-llm-evaluation-with-amazon-bedrock/)
+### [Query Amazon Aurora PostgreSQL using Amazon Bedrock Knowledge Bases structured data](https://aws.amazon.com/blogs/machine-learning/query-amazon-aurora-postgresql-using-amazon-bedrock-knowledge-bases-structured-data/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-08 15:46:49 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Best Practices, Generative AI
+**Published:** 2025-07-09 16:48:35 UTC
+**Tags:** Amazon Aurora, Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon Redshift, Intermediate (200), Technical How-to
 
 **Digest:**
-Amazon Bedrock Evaluationsは、多言語LLM評価を効率化。LLMを評価者として活用し、時間とコストを削減しつつ品質を維持します。SEA-MTBenchデータセットを用い、英語とインドネシア語の評価プロンプトで検証、相関性の高さを確認。自動評価と人手評価を組み合わせ、LLMのバイアスを考慮し、品質を向上させます。
+Amazon Bedrock Knowledge Bases は、LLM を社内データに接続する RAG 機能を提供します。Aurora PostgreSQL データへの自然言語クエリを可能にするため、Redshift Zero-ETL を活用。Redshift にデータを同期し、Amazon Bedrock で構造化データソースとして設定。ユーザーは自然言語で質問し、SQL に変換され、回答を得られます。
 
 ---
 
-### [【Microsoft×生成AI連載】【やってみた】Microsoft 365 Copilot Chatのスケジュールされたプロンプト機能を紹介](https://blog.jbs.co.jp/entry/2025/07/09/090603)
+### [Configure fine-grained access to Amazon Bedrock models using Amazon SageMaker Unified Studio](https://aws.amazon.com/blogs/machine-learning/configure-fine-grained-access-to-amazon-bedrock-models-using-amazon-sagemaker-unified-studio/)
+**Source:** AWS ML Blog
+**Published:** 2025-07-09 16:45:56 UTC
+**Tags:** Amazon Bedrock, Amazon Machine Learning, Amazon SageMaker Unified Studio, Artificial Intelligence, AWS Identity and Access Management (IAM), Security, Identity, & Compliance, Technical How-to
+
+**Digest:**
+Amazon SageMaker Unified Studioは、安全なAI開発環境を提供し、Amazon BedrockモデルへのアクセスをIAMで細かく制御します。2025年ローンチの同環境は、企業向けに**機密データ保護**、コンプライアンス遵守、ユーザー信頼の確保を支援。IAMポリシーでモデルへのアクセスを制限し、**ロール**と**インラインポリシー**を使い、認可されたユーザーだけが特定モデルを利用可能に。これにより、開発者の柔軟性を保ちつつ、**強力なセキュリティ**を実現します。
+
+---
+
+### [終わりなきワークデイに立ち向かうための道筋 – Microsoft 365 Copilot と AI エージェントがもたらす新しい働き方](https://blogs.windows.com/japan/2025/07/10/how-microsoft-365-copilot-and-agents-help-tackle-the-infinite-workday/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-07-10 05:13:53 UTC
+**Tags:** Copilot, AI, Microsoft 365
+
+**Digest:**
+Microsoft 365 Copilot の記事では、現代の働き方が「終わりなきワークデイ」化している現状を指摘。AI活用で業務効率化を目指し、**80/20の法則**に基づき、インパクトのある20%の仕事に集中を促す。従来の組織図ではなく**ワークチャート**でチームを編成し、全従業員をAIエージェントを活用する**エージェントボス**として育成することが重要。
+
+---
+
+### [【Microsoft Fabric】セキュリティとプライバシー（概要編）](https://blog.jbs.co.jp/entry/2025/07/10/120511)
 **Source:** JBS Blog
-**Published:** 2025-07-09 00:06:03 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
+**Published:** 2025-07-10 03:05:11 UTC
+**Tags:** Microsoft Fabric
 
 **Digest:**
-Microsoft 365 Copilot Chatに、タスクを自動化する「スケジュールされたプロンプト」機能が登場。定型業務の効率化を目指すなら必見です。指定した時間にプロンプトを実行し、日報作成など反復タスクを自動化できます。業務効率化をしたい方におすすめです。
+Microsoft Fabricのセキュリティ概要を解説。データ暗号化、認証・アクセス管理、ネットワークセキュリティ、データ主権とコンプライアンスが重要。データ保護のため、暗号化、認証方法、ツール選定が不可欠です。Fabric構築におけるセキュリティ対策の概要をまとめた今回の記事では、注意点と実践方法を提示します。
 
 ---
 
-### [OpenAI Agents SDKでAIエージェントを構築する](https://blog.jbs.co.jp/entry/2025/07/08/163356)
+### [【Zscaler】Zscaler Private AccesのLog Streaming Service機能を利用する際のログロストの可能性](https://blog.jbs.co.jp/entry/2025/07/10/085214)
 **Source:** JBS Blog
-**Published:** 2025-07-08 07:33:56 UTC
-**Tags:** 大規模言語モデル, multi-agent, マルチエージェント, Azure OpenAI, AI Agent, OpenAI Agents SDK, MCP
+**Published:** 2025-07-09 23:52:14 UTC
+**Tags:** Zscaler
 
 **Digest:**
-OpenAI Agents SDKの基礎と活用方法を紹介。AIエージェント構築を容易にする軽量ツールで、Azure OpenAIリソースの利用とMCP（Multiple Choice Prompt）の活用方法を解説します。環境設定やサンプルコードを通じて、実践的なAIアプリ開発の第一歩を学べます。
+ZscalerのLog Streaming Service (LSS) でログロストが発生する問題について解説します。App Connectorとsyslogサーバー間のFWなどの機器がセッション情報を保持し、そのタイムアウト設定が24時間未満の場合に発生の可能性が。ZPA通信で一度切断後にタイムアウトを迎えるケースも。
 
 ---
