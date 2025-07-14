@@ -1,55 +1,98 @@
-# AI Tech Trends Digest (2025-07-13)
+# AI Tech Trends Digest (2025-07-14)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Windows での Claude Code利用が WSL不要になったので試してみた（ローカルインストールで試す）](https://qiita.com/youtoy/items/cee5b3cb3e8b438eec41)
-**Published:** 2025-07-12 09:33:58 UTC
-**Likes:** 16
-**Tags:** Windows, Node.js, npm, Claude, ClaudeCode
+### [R言語とLLMの連携](https://qiita.com/bob3bob3/items/b5b242c3f9466d140a64)
+**Published:** 2025-07-13 12:19:38 UTC
+**Likes:** 12
+**Tags:** R, 自然言語処理, 生成AI, LLM
 
 **Digest:**
-Windows版のClaude Codeがネイティブ対応し、WSL不要で利用可能に。npmでローカルインストールし、npxコマンドで起動。デフォルト設定でClaudeアカウントと紐付け、プロンプト入力画面に進み、フィボナッチ数列のNode.jsプログラム生成に成功。過去のテストでも利用しており、便利になったと述べています。
+第3回GenAIアナリティクス@東京でのLTを基に、R言語とLLM連携のパッケージを紹介。ellmerは基本パッケージ、tidyllmは設計思想の異なるLLM接続、rollamaはローカルLLM対応。chattrはRStudioでチャット、ganderはコード生成、mallは感情分析や翻訳が可能。具体例として、ellmerでGemini APIを使ったグラフ解析、データフレームでの俳句季語抽出、mallによる感情分析、翻訳、要素抽出を紹介。
 
 ---
 
-### [実録ClaudeCodeで会社HP立ち上げた全部詳細公開](https://qiita.com/cactaceae/items/6528cebca93e60da96f0)
-**Published:** 2025-07-12 09:10:48 UTC
-**Likes:** 3
-**Tags:** cloudflare, Svelte, AI開発, Hono, Claude
+### [【Dify】OCI Generative AI プラグインが画像入力に対応しました！](https://qiita.com/yushibats/items/b6ff584dfed888322ca8)
+**Published:** 2025-07-13 23:31:52 UTC
+**Likes:** 10
+**Tags:** oracle, oci, GenerativeAI, LLM, Dify
 
 **Digest:**
-うつ病休職中の石橋氏が、Claude Codeを活用しSvelteKit/Hono/Cloudflareで会社HPを約1ヶ月で開発。CloudflareとHono知識ゼロから、コードレビューなしで、E2Eテスト重視の品質管理を実現。フロントエンド、API、管理画面を構築し、合計121コミット、7万行以上のコード変更。Claude Code主導でデザイン調整と文言修正に注力し、ソロプレナーコミュニティも立ち上げ。
+DifyのOCI Generative AIプラグインが画像入力（Vision）に対応しました。Oracle Cloud Infrastructure（OCI）のLLMで、テキストに加え画像もプロンプトに含めて利用可能に。meta.llama-3.2-90b-vision-instructなど、👁VISIONアイコン付きのモデルが利用できます。チャットボットやワークフローで、画像とテキストを組み合わせたAI活用が可能です。
 
 ---
 
-### [【無料配布】Gemini CLIをWindowsでポータブル実行するバッチファイルを作った話【Node.js不要】](https://qiita.com/km170/items/e385e52cc7a9ccddc0aa)
-**Published:** 2025-07-13 03:04:03 UTC
+### [【生成AI】Gemini 2.5 ProでGoogle MapAPIによる人口増減のヒートマップが1時間で作れてしまった！](https://qiita.com/Tyamamoto1007/items/bf064c36a4a220bff9af)
+**Published:** 2025-07-13 13:58:45 UTC
+**Likes:** 8
+**Tags:** GoogleMapsAPI, データ分析, データビジュアリゼーション, Gemini, 生成AI
+
+**Digest:**
+八王子市の人口増減を調査するため、Gemini 2.5 Proを活用。約1時間でGoogle Map APIによるヒートマップを生成し、エクセルでは難しかった地理的特性の可視化に成功しました。手順の注意点を紹介します。
+
+---
+
+### [GPTやGeminiも40%の失敗率！最近話題の「ポチョムキン理解」を3分で解説](https://qiita.com/0xv80/items/c645e32b4ca3b6d4f168)
+**Published:** 2025-07-13 22:00:07 UTC
 **Likes:** 2
-**Tags:** AI, 個人開発, Gemini, AIエージェント, GeminiCLI
+**Tags:** AI, LLM, ハルシネーション, ポチョムキン理解
 
 **Digest:**
-Gemini CLIをWindowsで簡単に使えるポータブルバッチファイルを紹介。Node.js不要、管理者権限も不要でUSBメモリからも実行可能。Googleがgemini.jsを単独配布したことで実現。最新版のnode.exeとgemini.jsを自動ダウンロードし、ショートカットも作成。GitHubで公開中。1分60回、1日1000回の無料利用も可能。
+2025年発表の論文で注目された「ポチョムキン理解」とは、言葉の説明はできるが応用が利かない現象を指します。LLMが言葉の意味を深く理解せず、統計的パターンで生成するため起こり、18世紀の「見せかけの村」の逸話に由来します。ハルシネーション（誤った回答）とは異なり、説明自体は正しいのが特徴です。GPT-4o等でも、説明はできても応用で4割以上失敗する事例が見られます。
 
 ---
 
-### [vimで動くAIクライアントをさらに作りなおした](https://qiita.com/uesseu/items/41ea320b85fb26523aeb)
-**Published:** 2025-07-13 00:11:51 UTC
+### [マイクラBEで一括破壊アドオンを作ろうとした話](https://qiita.com/nullpocoffee/items/09018c9705daca826b84)
+**Published:** 2025-07-13 14:56:04 UTC
 **Likes:** 2
-**Tags:** Vim, AI, LLM
+**Tags:** JavaScript, minecraft, アドオン, Gemini, Minecraft-Bedrock
 
 **Digest:**
-Vim/Neovimで動くAIクライアント「ninco2.vim」を開発中。ツリー型UIや時間巻き戻し、Web検索、複数文脈協調などの新機能が特徴です。TypeScriptとdenopsで実装されており、移植性も高い。会話の操作や文脈のIO、ollama/openai API対応も。非エンジニアでも手軽に開発可能で、自由度の高い道具を目指しています。
+マイクラ統合版1.21.80サーバー向けに、Geminiを利用して一括破壊アドオンを開発。欲しい機能は有料のため自作を決意。統合版の仕様により、ホットキー設定などの自由なカスタマイズは困難だった。Geminiをコーディングパートナーとして活用しつつ、公式ドキュメントや自身の思考を組み合わせ、最終的に斧での葉っぱと原木の一括破壊、オンオフ切り替え機能を実装。
 
 ---
 
-### [ Difyのプラグインを開発する時に役に立つかもしれない情報](https://qiita.com/twsnmp/items/489c82d046be9c65f9fc)
-**Published:** 2025-07-12 22:04:28 UTC
-**Likes:** 2
-**Tags:** TWSNMP, LLM, ollama, Dify
+## Latest News from RSS Feeds
+
+
+### [Teams Phoneで特定の番号からの着信をブロックする](https://blog.jbs.co.jp/entry/2025/07/14/132758)
+**Source:** JBS Blog
+**Published:** 2025-07-14 04:27:58 UTC
+**Tags:** Teams Phone
 
 **Digest:**
-Difyプラグイン開発のノウハウを紹介。オープンソースAIプラットフォームDifyで、ネットワーク管理ソフトTWSNMP FC連携のプラグイン開発経験を基に、エラーの返し方、ログ出力、配列の応答方法、多言語対応、アイコン、プライバシーポリシー、GitHub自動公開、署名などについて解説。ローカル環境での開発、`dify plugin init` での初期化、`release.yml` での自動リリース設定など、実践的な情報が盛り込まれています。
+Teams Phoneで特定の番号からの着信を**ブロック**する方法を解説します。今回は**管理者**向けの設定方法に焦点を当て、**個人**設定についても触れます。これにより、不要な着信を効率的に**制御**し、業務効率を向上させることが可能です。
+
+---
+
+### [Copilot Studioでエージェントを作成してみた！ 実践編](https://blog.jbs.co.jp/entry/2025/07/14/110517)
+**Source:** JBS Blog
+**Published:** 2025-07-14 02:05:17 UTC
+**Tags:** Microsoft Copilot Studio, Microsoft 365 Copilot, Power Automate
+
+**Digest:**
+Copilot StudioでAIを活用した旅行プラン提案エージェントを構築する手順を紹介。具体的な例として、旅行プランを提案する「TravelAgent」を作成します。これにより、AIを活用して効率的に旅行計画を立てることが可能になります。
+
+---
+
+### [【 Microsoft Fabric 】日付を含むデータに休祝日を反映してみる 後編](https://blog.jbs.co.jp/entry/2025/07/14/085620)
+**Source:** JBS Blog
+**Published:** 2025-07-13 23:56:20 UTC
+**Tags:** Microsoft Fabric
+
+**Digest:**
+Microsoft Fabricは、MicrosoftのSaaS型データ分析基盤で、データ分析を手軽に試せるのが特徴です。本記事では、Fabricを用いて祝日データを東京都の降水量データに反映させる方法を解説。前編では降水量データのクリーニングとレイクハウスへの格納を行い、後編では祝日データを活用して日付データに祝日を付与する方法を説明します。
+
+---
+
+### [SharePoint: FAQ Webパーツ(プレビュー)](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/07/sharepoint-faq--aaf3.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-07-13 13:41:01 UTC
+**Tags:** Microsoft 365 - SharePoint, Microsoft 365 Copilot
+
+**Digest:**
+SharePointに、FAQ（よくある質問）Webパーツが追加されました。これにより、FAQコンテンツを簡単に作成し、チームサイトやコミュニケーションサイトで公開できます。質問と回答の表示、検索機能、カテゴリー分け、編集権限設定など、FAQ管理に必要な機能が搭載され、情報共有とアクセシビリティを向上させます。
 
 ---
