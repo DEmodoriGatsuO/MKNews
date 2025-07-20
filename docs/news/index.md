@@ -1,98 +1,55 @@
-# AI Tech Trends Digest (2025-07-19)
+# AI Tech Trends Digest (2025-07-20)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [OpenAIの「ChatGPT Agent」徹底解説：タスクを自律的にこなす次世代AIエージェントの正体](https://qiita.com/softbase/items/dbe0787cb94fae717dcb)
-**Published:** 2025-07-18 14:12:29 UTC
-**Likes:** 1
-**Tags:** Agent, OpenAI, ChatGPTagent
+### [ Pydantic AIで作る「曖昧レシピ明確化の仕組み」- 実装してみた](https://qiita.com/Tadataka_Takahashi/items/d681c52c5c6e835ce33c)
+**Published:** 2025-07-19 14:24:19 UTC
+**Likes:** 5
+**Tags:** Python, AI, 具体化, LLM, pydantic-ai
 
 **Digest:**
-OpenAIが発表した「ChatGPT Agent」は、自然言語指示で自律的にタスクを実行するAIエージェントです。Web検索やUI操作、資料作成などを自動化し、仮想環境で安全に動作。ベンチマークテストでも高い性能を示し、旅行計画や市場調査といった高負荷タスクの代行に最適です。有料プランで提供され、セキュリティ対策も施されています。
+Pydantic AIを用いて、曖昧な料理レシピを具体的に変換するシステムを構築。Pydanticモデルで出力形式を定義し、型安全な構造化出力を実現。Gemini AIを使用し、曖昧表現を時間やコツを含めた明確な指示に変換。Google Colabで実行可能で、システムプロンプトと非同期処理で精度と効率を向上。
 
 ---
 
-### [【SaaS開発】LLM WebアプリでCelery WorkerからDjango ORMを使う方法](https://qiita.com/nao_ikeda/items/ca3cc1e95546692ce943)
-**Published:** 2025-07-18 10:38:56 UTC
-**Likes:** 1
-**Tags:** Django, 設計, Docker, docker-compose, LLM
+### [【Claude Code】マネできる！個人開発するときに最初に用意したドキュメント24種と機能要件書を全公開](https://qiita.com/tomada/items/e27292b65f723c4633d9)
+**Published:** 2025-07-20 00:09:30 UTC
+**Likes:** 4
+**Tags:** 個人開発, 生成AI, Claude, AIエージェント, ClaudeCode
 
 **Digest:**
-Web機能(DRF)とLLM機能(Celery Worker)を環境分離し、共通のモデルをDjango ORMで共有する方法を紹介。モデルをライブラリ化し、DRF側でマイグレーション、Celery Worker側はデータ操作のみに。GitHubプライベートリポジトリからモデルをインストール。懸念点としてマイグレーションの競合やDjangoバージョン依存があり、デプロイ時の課題も。
+Claude Code で開発効率を上げるため、個人開発アプリ3つで培ったノウハウを基に、24個の設計ドキュメントを作成。技術設計15個、デザインシステム5個、ライブラリ対策4個で構成され、AIエージェントが迷わないようにCLAUDE.mdを司令塔に。実装前の準備で、開発中のずれをほぼゼロに。
 
 ---
 
-### [AIエンジニアへの道：データ操作からAIをマスターする30日間ロードマップ - 12日目](https://qiita.com/555hamano/items/64ef12484f3d55cd1f83)
-**Published:** 2025-07-18 06:39:47 UTC
+### [055 AI屋さんの　Gemini CLI　で　SaaS は死んだ　LLMにトークン全文入力](https://qiita.com/bono0/items/019f555e123b3f202279)
+**Published:** 2025-07-19 07:34:10 UTC
+**Likes:** 3
+**Tags:** Python, Web, LLM, gemini1.5pro, GeminiCLI
+
+**Digest:**
+Gemini CLIとLLMによりSaaSの利用・開発が変革。GUIの不自由さから解放され、自然言語でDB操作が可能に。Gemini CLIとの対話でCRM/ERPを構築、複数のSaaS統合や、機能追加も容易に。SaaSは「使う」から「創る」時代へ。LLMは新しいコンピューティングプラットフォームとなる。
+
+---
+
+### [「AIは方法の誤りに気づけない」問題、あなたのプロンプトは大丈夫？再確認のススメ](https://qiita.com/uriri_hogepiyo/items/ac31e3063ed087016063)
+**Published:** 2025-07-20 03:41:46 UTC
+**Likes:** 1
+**Tags:** AI, 問題解決, LLM, プロンプトエンジニアリング, AI活用
+
+**Digest:**
+AIの限界、特に「方法論の誤り」を指摘しない点を解消する「神プロンプト」を紹介。AIを「真のパートナー」にするため、AIに批判的評価をさせ、思考を深めるプロンプト構造を提案。プロンプト設計の限界を突破し、AIの知性を最大限に引き出す方法を解説しています。ソクラテス・メソッドも活用。
+
+---
+
+### [AIエンジニアへの道：データ操作からAIをマスターする30日間ロードマップ - 14日目](https://qiita.com/555hamano/items/f860330b5763d3672aef)
+**Published:** 2025-07-19 17:06:42 UTC
 **Likes:** 1
 **Tags:** Python, 初心者, データサイエンス, LLM, AIエンジニア
 
 **Digest:**
-AI学習12日目は画像データ前処理。**リサイズ**でサイズ統一、**正規化**で値の範囲調整、**データ拡張**で汎化能力向上を図る。PythonのOpenCV、Pillow、TensorFlow/Kerasを用いた実装例を紹介。特に、Kerasの`ImageDataGenerator`を活用し、水平反転、回転、ズームなどの拡張手法を学ぶ。
-
----
-
-### [【React×Gemini】 ReactでGemini APIのプロンプト登録と結果の表示を行う方法【初心者向け】](https://qiita.com/nagi-0106/items/9e2892beadad24a8df30)
-**Published:** 2025-07-19 05:53:27 UTC
-**Likes:** 0
-**Tags:** 初心者向け, AI, React, Gemini
-
-**Digest:**
-個人開発アプリで**Gemini API**を用いてAI回答を表示するReactアプリ実装の備忘録。**APIキー取得**、`Google Gen AI SDK`インストール、環境変数の設定が必要。**プロンプト**は定数とテンプレート文字列で作成。AIの出力結果は`response.text`で取得し、`useState`で表示。`response`を参照するとエラーになる点に注意。
-
----
-
-### [GPTsとQiita APIで最強の記事執筆アシスタントを作ろう！【Actions完全ガイド】](https://qiita.com/jyunya_1234/items/513f17795ff63b094edb)
-**Published:** 2025-07-19 04:32:04 UTC
-**Likes:** 0
-**Tags:** Qiita, API, OpenAI, GPTs
-
-**Digest:**
-ChatGPTのGPTsとQiita APIを連携し、記事作成を支援するアシスタントの作り方を解説。GPTsで構成案作成、タグ推薦、下書き自動投稿を実現。必要なのはChatGPT Plus等とQiitaアカウント、アクセストークン。API連携にはスキーマと指示設定が重要で、テストで動作確認。完成すれば、Qiita記事執筆を効率化する強力なツールとなる。
-
----
-
-## Latest News from RSS Feeds
-
-
-### [Build real-time travel recommendations using AI agents on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/build-real-time-travel-recommendations-using-ai-agents-on-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-07-18 16:18:32 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Bedrock Knowledge Bases, Technical How-to
-
-**Digest:**
-Amazon Bedrock を用いた旅行向けパーソナライズ AI ソリューションを紹介。顧客の嗜好やリアルタイム情報から、旅行代理店がオーダーメイド旅行パッケージを生成。Amazon Bedrock Knowledge Bases で旅行情報を、Agents でフライト詳細を、OpenSearch Serverless で検索を実現。AWS CloudFormation テンプレートでデプロイ、API Gateway, Lambda, DynamoDB, S3 なども活用。
-
----
-
-### [Deploy a full stack voice AI agent with Amazon Nova Sonic](https://aws.amazon.com/blogs/machine-learning/deploy-a-full-stack-voice-ai-agent-with-amazon-nova-sonic/)
-**Source:** AWS ML Blog
-**Published:** 2025-07-18 16:14:43 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, Telecommunications
-
-**Digest:**
-Amazon Nova Sonicを活用し、AWS CDKで構築されたAI通話センターエージェントを紹介。顧客対応の効率化とコスト削減を目指し、自然な会話を実現します。AnyTelco社の仮想エージェントTellyを例に、リアルタイムデータ連携や知識ベース検索など、柔軟なカスタマイズ方法を解説。デプロイ手順や、システムプロンプト、ツールの追加方法も提示。
-
----
-
-### [Manage multi-tenant Amazon Bedrock costs using application inference profiles](https://aws.amazon.com/blogs/machine-learning/manage-multi-tenant-amazon-bedrock-costs-using-application-inference-profiles/)
-**Source:** AWS ML Blog
-**Published:** 2025-07-18 16:11:22 UTC
-**Tags:** Amazon Bedrock, Technical How-to
-
-**Digest:**
-Amazon BedrockのマルチテナントAIサービスにおける、コスト管理とスケーラビリティ両立のためのソリューションを紹介。Amazon Bedrockのアプリケーション推論プロファイルを用いて、利用状況を詳細に追跡し、コストを正確に配分。CloudWatchダッシュボードとアラームで監視し、異常時にはSNS通知で対応。GitHubで提供されるサンプルソリューションで、Python環境と設定ファイル（config.json, models.json）の準備が必要。
-
----
-
-### [Power Automate：Teams内で同グループメンバーのみにメッセージを送信する](https://blog.jbs.co.jp/entry/2025/07/18/165253)
-**Source:** JBS Blog
-**Published:** 2025-07-18 07:52:53 UTC
-**Tags:** Power Platform, Power Automate
-
-**Digest:**
-Microsoft Teamsで、同じグループ内のメンバーだけにメッセージを送る方法を解説します。効率的なコミュニケーションのために、グループチャット機能を利用するステップを紹介します。これにより、必要な相手だけに情報を届け、情報伝達の効率化を図ることができます。
+AI学習ロードマップ14日間のまとめ。2週間で回帰、分類、CNN、次元削減、テキスト処理、画像前処理、時系列データ分析を習得。線形回帰やロジスティック回帰からCNNまで学び、データ準備からモデル選択、評価の基礎を習得。データ型対応や汎化能力、深層学習への橋渡しを経験。来週は教師なし学習や推薦システム、AI倫理に挑戦します。
 
 ---
