@@ -1,55 +1,55 @@
-# AI Tech Trends Digest (2025-07-20)
+# AI Tech Trends Digest (2025-07-21)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [ Pydantic AIで作る「曖昧レシピ明確化の仕組み」- 実装してみた](https://qiita.com/Tadataka_Takahashi/items/d681c52c5c6e835ce33c)
-**Published:** 2025-07-19 14:24:19 UTC
-**Likes:** 5
-**Tags:** Python, AI, 具体化, LLM, pydantic-ai
+### [Nelson（ネルソン）の確率力学を解説してみる](https://qiita.com/dc1394/items/851c810f90eb5578b3f7)
+**Published:** 2025-07-20 13:18:01 UTC
+**Likes:** 9
+**Tags:** Python, 物理学, 量子力学, ChatGPT, LLM
 
 **Digest:**
-Pydantic AIを用いて、曖昧な料理レシピを具体的に変換するシステムを構築。Pydanticモデルで出力形式を定義し、型安全な構造化出力を実現。Gemini AIを使用し、曖昧表現を時間やコツを含めた明確な指示に変換。Google Colabで実行可能で、システムプロンプトと非同期処理で精度と効率を向上。
+Nelsonの確率力学は、量子力学を隠れた変数理論として再構築し、ブラウン運動のような確率過程で粒子の運動をモデル化します。1960年代に提案され、シュレディンガー方程式を導出可能ですが、確率論的解釈を強調し、Wallstrom問題など批判も存在。一次元自由粒子や調和振動子への適用も可能で、数値シミュレーションも行われています。
 
 ---
 
-### [【Claude Code】マネできる！個人開発するときに最初に用意したドキュメント24種と機能要件書を全公開](https://qiita.com/tomada/items/e27292b65f723c4633d9)
-**Published:** 2025-07-20 00:09:30 UTC
-**Likes:** 4
-**Tags:** 個人開発, 生成AI, Claude, AIエージェント, ClaudeCode
+### [RTXからB200までのNVIDIA GPU10種でLLMファインチューニング速度を一斉比較](https://qiita.com/itokazu/items/992f4b87efadde4f3a1c)
+**Published:** 2025-07-20 14:20:03 UTC
+**Likes:** 2
+**Tags:** GPU, NVIDIA, FineTuning, LLM
 
 **Digest:**
-Claude Code で開発効率を上げるため、個人開発アプリ3つで培ったノウハウを基に、24個の設計ドキュメントを作成。技術設計15個、デザインシステム5個、ライブラリ対策4個で構成され、AIエージェントが迷わないようにCLAUDE.mdを司令塔に。実装前の準備で、開発中のずれをほぼゼロに。
+NVIDIA GPUの性能比較を実施。RTX 4090から最新のB200まで、RunpodクラウドでLLM学習速度を計測。A100を基準とし、RTX 5090がA100超え、コンシューマー向けGPUも健闘。B200は圧倒的性能も、コード最適化やメモリボトルネックの可能性を指摘。今後はマルチGPU、FP8/FP4、AMD GPUにも挑戦予定。
 
 ---
 
-### [055 AI屋さんの　Gemini CLI　で　SaaS は死んだ　LLMにトークン全文入力](https://qiita.com/bono0/items/019f555e123b3f202279)
-**Published:** 2025-07-19 07:34:10 UTC
-**Likes:** 3
-**Tags:** Python, Web, LLM, gemini1.5pro, GeminiCLI
-
-**Digest:**
-Gemini CLIとLLMによりSaaSの利用・開発が変革。GUIの不自由さから解放され、自然言語でDB操作が可能に。Gemini CLIとの対話でCRM/ERPを構築、複数のSaaS統合や、機能追加も容易に。SaaSは「使う」から「創る」時代へ。LLMは新しいコンピューティングプラットフォームとなる。
-
----
-
-### [「AIは方法の誤りに気づけない」問題、あなたのプロンプトは大丈夫？再確認のススメ](https://qiita.com/uriri_hogepiyo/items/ac31e3063ed087016063)
-**Published:** 2025-07-20 03:41:46 UTC
+### [Claude Codeでkiroのように要件定義してから、複数AIエージェントを並列で管理するnpmパッケージ「claude-code-composer」を作ったお](https://qiita.com/ai_tech_study_group/items/0cf671c014a2990af9fd)
+**Published:** 2025-07-21 00:32:27 UTC
 **Likes:** 1
-**Tags:** AI, 問題解決, LLM, プロンプトエンジニアリング, AI活用
+**Tags:** npm, Claude, Kiro
 
 **Digest:**
-AIの限界、特に「方法論の誤り」を指摘しない点を解消する「神プロンプト」を紹介。AIを「真のパートナー」にするため、AIに批判的評価をさせ、思考を深めるプロンプト構造を提案。プロンプト設計の限界を突破し、AIの知性を最大限に引き出す方法を解説しています。ソクラテス・メソッドも活用。
+Claude Codeの複数エージェント協調を実現するnpmパッケージ「claude-code-composer」が登場。`/composer`コマンドでタスク分割し、複数のAIが並行作業。要件定義から設計、実装まで体系化され、React + TypeScriptのTodoアプリ開発に活用可能。`npm install claude-code-composer`で即利用でき、大規模開発やモダン化プロジェクトにも貢献。
 
 ---
 
-### [AIエンジニアへの道：データ操作からAIをマスターする30日間ロードマップ - 14日目](https://qiita.com/555hamano/items/f860330b5763d3672aef)
-**Published:** 2025-07-19 17:06:42 UTC
+### [AIエンジニアへの道 - 15日目：AIの進化を加速させる！LLM（大規模言語モデル）とは何か？](https://qiita.com/555hamano/items/5fa139a284ef308725e0)
+**Published:** 2025-07-20 15:15:38 UTC
 **Likes:** 1
 **Tags:** Python, 初心者, データサイエンス, LLM, AIエンジニア
 
 **Digest:**
-AI学習ロードマップ14日間のまとめ。2週間で回帰、分類、CNN、次元削減、テキスト処理、画像前処理、時系列データ分析を習得。線形回帰やロジスティック回帰からCNNまで学び、データ準備からモデル選択、評価の基礎を習得。データ型対応や汎化能力、深層学習への橋渡しを経験。来週は教師なし学習や推薦システム、AI倫理に挑戦します。
+AI学習15日目は、LLM（大規模言語モデル）を解説。大量データ学習とTransformerによる自然言語処理能力が特徴で、文章生成、質問応答、翻訳などに活用。一方で、ハルシネーションやバイアス、計算コストなどの課題も。社会への影響は大きく、今後の発展が期待される。明日はNLPの感情分析を学習。
+
+---
+
+### [Gemini CLIのソースコードから学ぶAIエージェントの設計](https://qiita.com/Dinn/items/69065b360cc2170cce29)
+**Published:** 2025-07-20 11:29:46 UTC
+**Likes:** 1
+**Tags:** 設計, AI, Gemini, Claude, AIエージェント
+
+**Digest:**
+Googleの**Gemini CLI**は、オープンソースのAIエージェント型プログラミング支援ツールで、**Turnベースアーキテクチャ**を採用。各ターンでLLMが行動を決定し、**ツールシステム**で外部操作を実現。**ストリーミング**により、思考や実行をリアルタイム表示。安全性を考慮した設計で、**マルチターン処理**による自律的な作業継続を実現。
 
 ---
