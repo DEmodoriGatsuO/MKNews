@@ -1,118 +1,118 @@
-# AI Tech Trends Digest (2025-07-22)
+# AI Tech Trends Digest (2025-07-23)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [最近の生成AIが面白いので、"エンジニアあるある" の架空アニメOPを作ってみた話](https://qiita.com/sakes9/items/ad72467f799995fb6e89)
-**Published:** 2025-07-21 23:08:06 UTC
-**Likes:** 2
-**Tags:** AI, 生成AI, ChatGPT, LLM, AIエージェント
+### [Ryzen AI Max+ 395のLLMの動作速度を他の環境と比較してみました](https://qiita.com/mocketech/items/1c69ccf277aa7d4d818f)
+**Published:** 2025-07-22 06:15:33 UTC
+**Likes:** 4
+**Tags:** LLM, rtx4060ti, ollama, Ryzen_AI, mac_m4
 
 **Digest:**
-生成AIを活用した画像・動画生成の体験談。**画像生成**や**動画生成**AIで、**エンジニアあるある**をテーマにしたアニメ風OPを1日で作成。専門スキル不要で、**作業の並列化**による時短が魅力。AIは60点を目指し、複数生成からベストを選択、AIごとの強みを見極めることが重要。**Suno AI**での音楽作成や、動画のベストシーン切り取りも有効。
+Ryzen AI Max+ 395 (EVO-X2), RTX4060Ti (Galleria), M4搭載MacBook AirでGemma3 LLMの速度を比較。OllamaとLM Studioを使用し、Ubuntu上でDocker化。Galleriaが速いが、VRAM不足でEVO-X2が健闘。MacはMLXモデルが速いが、モデルサイズ大で速度低下。Ryzen AI Max+ 395はコスパ◎。NPU利用は今後の課題。
 
 ---
 
-### [Text-to-SQLについて考えていることをだらだらと書く](https://qiita.com/abe_masanori/items/a617bcd64708dabededf)
-**Published:** 2025-07-21 22:02:26 UTC
+### [CursorでKiroライクなスペック駆動開発をやってみる](https://qiita.com/tequila0725/items/241be34f5069d6e57aa3)
+**Published:** 2025-07-23 02:24:45 UTC
 **Likes:** 2
-**Tags:** データ分析, LLM, Text2SQL, Text-to-SQL
+**Tags:** cursor, LLM, 仕様書駆動開発, Kiro
 
 **Digest:**
-Text-to-SQLは自然言語でデータ分析を可能にする技術だが、サポート範囲は限定的で、仮説立案やアクション検討は含まない。必要なメタデータはビジネス名称に加え、計算ロジック、分析方法、セキュリティ情報など多岐に渡り、その管理場所が課題。データカタログ、DB/DWH、BIツール、セマンティックレイヤーが候補だが、各々課題があり、今後の展開が注目される。
+AmazonのKiro IDEに着想を得て、Cursorでスペック駆動開発に挑戦。要件定義、設計、実装計画、Issue作成、実行の5段階フローをProject Rulesで実現し、GitHub連携も。シンプルなTODOアプリ開発で、要件の明確化、自動生成ドキュメント、GitHub Issueによる進捗管理、段階的な確認による品質向上といったメリットが得られた。
 
 ---
 
-### [SORACOM MCP Server を Claude for Desktopで使う：セットアップから実践まで](https://qiita.com/yukima77/items/0af841f2c8bcf5cc5c31)
-**Published:** 2025-07-21 09:25:19 UTC
+### [AIエンジニアへの道 - 16日目：Transformerの衝撃！LLMの根幹をなす技術](https://qiita.com/555hamano/items/8049bd8b63839571cb11)
+**Published:** 2025-07-22 13:30:30 UTC
 **Likes:** 2
-**Tags:** SORACOM, MCP, Claude, ClaudeDesktop, SORACOMMCPServer
+**Tags:** Python, 初心者, データサイエンス, LLM, AIエンジニア
 
 **Digest:**
-ソラコムは、2025年のSORACOM Discoveryで「生成AI × IoT」戦略を発表。**SORACOM MCP Server** を使い、**Claude for Desktop** から自然言語でSORACOM APIを操作可能に。Node.jsとnpmでMCP Serverをインストールし、設定ファイルで連携。SORACOM APIキーも必要。これにより、SIM一覧表示や利用料金のグラフ表示など、IoTデータの可視化が実現します。
+16日目のAI学習では、LLMの基盤技術である**Transformer**を解説。RNN/LSTMの長距離依存性や並列処理の課題を、**Attention機構**で解決し、学習効率を向上させました。エンコーダーとデコーダー、マルチヘッドアテンションなどの構成要素を理解し、GPTなどのLLM発展への影響を学びました。
 
 ---
 
-### [Webのノイズからシグナルの抽出: Databricksベースのアプローチ](https://qiita.com/taka_yayoi/items/37772c4b66433da58ffc)
-**Published:** 2025-07-22 02:18:18 UTC
+### [AIエンジニアへの道 - 17日目：BERTとGPT！主要LLMモデルのアーキテクチャと特徴](https://qiita.com/555hamano/items/b74b845efd8b190a2696)
+**Published:** 2025-07-22 17:30:47 UTC
 **Likes:** 1
-**Tags:** Databricks, LLM, バッチ推論
+**Tags:** Python, 初心者, データサイエンス, LLM, AIエンジニア
 
 **Digest:**
-Databricks で Web データから洞察を抽出する技術ガイド。Web サイトからテキストを収集し、AI 関数でキーワード抽出やエンティティ認識を行う。並列処理、SBERT でのテキスト要約、LLM の活用が鍵。Databricks の LLM バッチ処理とモデルサービング機能を駆使し、効率的でスケーラブルなソリューションを実現。
+17日目は、TransformerベースのLLM、**BERT**と**GPT**を解説。BERTは双方向の文脈理解に優れ、文章理解に強い。GPTは単方向の文章生成に特化し、自然なテキスト生成が得意。両モデルはアーキテクチャと用途が異なり、BERTは検索や分類、GPTは対話やコンテンツ生成に活用される。使い分けが重要で、次回の感情分析学習に繋がる。
 
 ---
 
-### [AI Agent入門 第3部：ツール統合とWebUI - 高度なAI Agentシステム構築](https://qiita.com/pon-tanuki/items/80de99bb6fdbec59280e)
-**Published:** 2025-07-21 21:54:55 UTC
+### [Ollama + ContinueでVS CodeにローカルLLM開発環境を構築する (Windows / WSL両対応)](https://qiita.com/usxc/items/72c9dd16a261fc502f90)
+**Published:** 2025-07-22 17:27:39 UTC
 **Likes:** 1
-**Tags:** Python, OpenAI, Streamlit, LangChain, AIエージェント
+**Tags:** 初心者, VSCode, continue, LLM, ollama
 
 **Digest:**
-AI Agent開発の最終章では、計算・検索・分析を自動化し、**プロフェッショナルなWebUI**で操作できるシステムを構築します。**OpenAI Function Calling**と**Streamlit**を活用し、**高度な計算ツール**、**Web検索ツール（SerpAPI）**を統合した自律型エージェントを実装。従来のチャットボットを超える、問題を解決する真のAI Agentです。
+完全無料のローカルLLM開発環境を構築する方法を紹介。OllamaとVS Code拡張機能Continueを使用し、Windowsネイティブ環境とWSL環境でのセットアップ手順を解説。Llama 3 (8B)モデルをダウンロードし、VS CodeでContinue拡張機能をインストールすることで、AIとの対話やコード生成が可能になります。最終的に、役割に応じた専門モデルを使い分ける構成も提示しています。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Build an AI-powered automated summarization system with Amazon Bedrock and Amazon Transcribe using Terraform](https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-automated-summarization-system-with-amazon-bedrock-and-amazon-transcribe-using-terraform/)
+### [Beyond accelerators: Lessons from building foundation models on AWS with Japan’s GENIAC program](https://aws.amazon.com/blogs/machine-learning/beyond-accelerators-lessons-from-building-foundation-models-on-aws-with-japans-geniac-program/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-21 17:34:21 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Amazon Transcribe, Artificial Intelligence, Technical How-to
+**Published:** 2025-07-22 16:42:36 UTC
+**Tags:** Amazon Elastic Kubernetes Service, Amazon Machine Learning, Amazon SageMaker HyperPod, Artificial Intelligence, AWS ParallelCluster, Best Practices, AI/ML
 
 **Digest:**
-多くの組織が抱える非構造化データ活用の課題を解決するため、AWSの**Amazon Bedrock**と**Amazon Transcribe**を活用した、サーバーレスな音声要約システムを紹介。Terraformで実装され、**IaC**によるインフラガバナンスも実現。会議録音を自動で要約し、アクションアイテムを抽出することで、効率的な情報共有と意思決定を促進。これにより、会議後の時間削減、知識共有の向上、組織の連携強化に貢献します。
+2024年のMETIの「GENIAC」では、AWSがクラウドプロバイダーとして参画。12社にGPU/Trainium等の大規模リソースを提供し、基盤モデル（FM）開発を支援。AWSは、1000台以上のアクセラレータを管理し、SlurmベースのAWS ParallelClusterやSageMaker HyperPod等のリファレンスアーキテクチャを提供。顧客と連携し、コミュニケーション、ドキュメント、ワークショップを実施し、大規模LLM等のモデル開発を成功させ、知見を蓄積した。
 
 ---
 
-### [Kyruus builds a generative AI provider matching solution on AWS](https://aws.amazon.com/blogs/machine-learning/kyruus-builds-a-generative-ai-provider-matching-solution-on-aws/)
+### [Streamline deep learning environments with Amazon Q Developer and MCP](https://aws.amazon.com/blogs/machine-learning/streamline-deep-learning-environments-with-amazon-q-developer-and-mcp/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-21 17:23:36 UTC
-**Tags:** Amazon Bedrock, Amazon OpenSearch Service, Customer Solutions, Healthcare
+**Published:** 2025-07-22 14:52:50 UTC
+**Tags:** Amazon Q, Amazon Q Developer, Artificial Intelligence, AWS Deep Learning AMIs
 
 **Digest:**
-Kyruus Healthは、AIを活用した医療ナビゲーションソリューション「Guide」を開発。Amazon BedrockとOpenSearch Serviceを連携させ、自然言語で症状を記述するだけで適切な医療機関を検索可能に。AnthropicのClaude 3.5 Sonnetが症状を専門用語に変換し、医療専門家とのマッチングを実現。会員体験向上と予約率アップに貢献。
+Amazon Deep Learning Containers (DLC)のカスタマイズを、Amazon Q DeveloperとModel Context Protocol (MCP)サーバーで効率化。AWS DLCは、AI/ML環境構築の手間を軽減するが、カスタマイズには時間がかかる課題があった。Amazon QとMCPを活用したDLC MCPサーバーは、自然言語による操作でコンテナ作成、カスタマイズ、デプロイを自動化し、開発を加速する。
 
 ---
 
-### [Use generative AI in Amazon Bedrock for enhanced recommendation generation in equipment maintenance](https://aws.amazon.com/blogs/machine-learning/use-generative-ai-in-amazon-bedrock-for-enhanced-recommendation-generation-in-equipment-maintenance/)
-**Source:** AWS ML Blog
-**Published:** 2025-07-21 17:10:55 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon Nova, Amazon SageMaker Ground Truth, Experience-Based Acceleration, Generative AI, Manufacturing, Technical How-to, manufacturing, Recommendation Engine
+### [働きやすさが成果を変える! Surface 快適ワーク応援キャンペーン](https://blogs.windows.com/japan/2025/07/23/surface-comfortable-work-support-campaign/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-07-23 04:39:34 UTC
+**Tags:** Surface
 
 **Digest:**
-AWSで、サービスレポートから情報を抽出し、AIでメンテナンス推奨事項を生成するソリューションを紹介。Amazon BedrockのNova ProとRAGを活用し、Textractでレポートを標準化、ComprehendとTranslateで多言語対応。SageMaker Ground Truthで検証し、Terraformでデプロイ。GitHubリポジトリでコードを提供し、メンテナンス効率化とダウンタイム削減を目指します。
+法人・教育機関向け「Surface 快適ワーク応援キャンペーン」が開催。2025年8月20日～9月30日の納品分が対象で、Surface Pro (第11世代) - Intel、Surface Pro 10 with 5G、保証サービス、アクセサリをお得に購入できます。本体のみ、本体＋キーボード、保証、周辺機器の4つのプランから、ニーズに合わせて快適なワーク環境を構築しましょう。
 
 ---
 
-### [あなたのシステムは脆弱性だらけ？STIGで強化しよう！](https://blog.jbs.co.jp/entry/2025/07/22/131914)
+### [【Juniper Networks】MX204, QFX-110におけるvirtual-router、ルート再配布の設定例](https://blog.jbs.co.jp/entry/2025/07/23/130254)
 **Source:** JBS Blog
-**Published:** 2025-07-22 04:19:14 UTC
-**Tags:** セキュリティ, サイバー攻撃
+**Published:** 2025-07-23 04:02:54 UTC
+**Tags:** Juniper
 
 **Digest:**
-サイバー攻撃や情報漏洩対策が必須の現代、セキュリティ技術は重要です。STIGは、セキュリティ対策の指針となるもので、その目的や種類、実施方法を解説します。STIGを活用すれば、現状評価から手順導入、テスト、確認まで、セキュリティ対策を効率的に進めることができます。
+Juniper機器のrouting-instancesで仮想ルータ（virtual-router）を構築する設定例を紹介。仮想ルータの基本設定と、ルート再配布の設定例、ポリシーステートメントの設定についても解説します。複雑な設定をルータとルート再配布に分け、それぞれの設定方法を丁寧に説明しています。
 
 ---
 
-### [MudBlazor活用事例:おすすめコンポーネント5選](https://blog.jbs.co.jp/entry/2025/07/22/110041)
+### [Azure AI Agent ServiceでWEB検索結果を取り入れたAI回答を作る方法](https://blog.jbs.co.jp/entry/2025/07/23/113658)
 **Source:** JBS Blog
-**Published:** 2025-07-22 02:00:41 UTC
-**Tags:** Blazor, .NET, UI, UX
+**Published:** 2025-07-23 02:36:58 UTC
+**Tags:** 大規模言語モデル, Azure OpenAI, Azure AI Foundry Agent Service
 
 **Digest:**
-MudBlazorは、BlazorでモダンなUIを構築できる.NET向けライブラリです。豊富なUIコンポーネントと直感的な設計により、優れたユーザーエクスペリエンスを実現できます。DataGridやChatなど、おすすめコンポーネントを5選紹介し、吹き出し位置判別などカスタマイズ方法も解説しています。
+Azure OpenAIの回答にインターネット検索結果を統合する方法を解説。Azure AI Agent Serviceを用いて、Bing検索をエージェントに連携させる手順をAzureポータル操作と共に紹介します。設定の注意点や利用規約にも触れ、動作確認結果も提示。より包括的な情報源を活用し、AIの回答精度向上を目指します。
 
 ---
 
-### [【OpManager使ってみた】第4回 OpManagerでのリソース監視](https://blog.jbs.co.jp/entry/2025/07/22/092818)
+### [【Microsoft×生成AI連載】【最新情報】Microsoft Copilot Studioエージェントの構成要素を指示文内で直接指定可能に](https://blog.jbs.co.jp/entry/2025/07/23/090024)
 **Source:** JBS Blog
-**Published:** 2025-07-22 00:28:18 UTC
-**Tags:** Tech, OpManager, 監視, Windows
+**Published:** 2025-07-23 00:00:24 UTC
+**Tags:** Microsoft 365 Copilot, Microsoft Copilot, Microsoft Copilot Studio, Microsoft×生成AI連載, 生成AI, Copilot
 
 **Digest:**
-監視ソフト「OpManager」の連載第4回は、リソース監視設定を解説。CPUとメモリの閾値監視設定手順を紹介し、アラート発報確認まで行います。前回機器登録と死活監視設定が完了しており、今回は登録した機器のリソース監視設定について詳しく説明します。
+Microsoft Copilot Studioエージェントの最新機能を紹介する記事です（2025/7/15時点の情報）。Microsoft Copilot StudioやAIエージェントに興味のある方々へ、その最新機能、利用シーン、メリット、注意点などを解説します。本記事を通じて、AI活用の可能性を広げ、業務効率化のヒントを得てください。
 
 ---
