@@ -1,148 +1,118 @@
-# AI Tech Trends Digest (2025-07-24)
+# AI Tech Trends Digest (2025-07-25)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [AIエンジニアへの道 - 24日目：AIエンジニア必須！DockerとKubernetesで開発環境を構築](https://qiita.com/555hamano/items/a5025a9e07db2d7524f0)
-**Published:** 2025-07-23 20:00:41 UTC
-**Likes:** 3
-**Tags:** Python, 初心者, データサイエンス, LLM, AIエンジニア
-
-**Digest:**
-AIエンジニア必須のDockerとKubernetesを解説。Dockerは**コンテナ**技術で環境の再現性を高め、Kubernetesは**コンテナオーケストレーション**でスケーリングや高可用性を実現。AIモデルのデプロイ、運用基盤を構築し、開発効率を向上させる。
-
----
-
-### [「データと会話する」AIエージェントをさらに賢く！DataRobot予測AIを組み込む方法](https://qiita.com/DataRobot_PR/items/69617f4dfbf1c4345861)
-**Published:** 2025-07-23 20:47:03 UTC
+### [AI動画を作って気づいた「思い通りにいかない理由」──実体験で学んだこと、後悔したこと](https://qiita.com/sakes9/items/664bfcedc1492dac92e1)
+**Published:** 2025-07-24 23:42:18 UTC
 **Likes:** 2
-**Tags:** Python, DataRobot, LLM, 予測AI, AIエージェント
+**Tags:** AI, 生成AI, ChatGPT, LLM, AIエージェント
 
 **Digest:**
-DataRobot Japan副社長が、TTMDAIエージェントにDataRobot予測AIを組み込む方法を紹介。`tools.py`に関数を定義し、DataRobotデプロイIDを指定、必要なライブラリを`requirements.txt`に追加することで、AIエージェントがDataRobotの予測AIを活用可能に。これにより、より高度な分析やビジネスロジックの活用が実現します。関数名、docstring、型ヒントが重要です。
+生成AIによる動画制作の経験を振り返り、**高品質なアニメ風OP**制作での課題をまとめた記事。**プログラミング言語を擬人化**した映像作成で、曖昧なプロンプトや元画像の品質不足、キャラクターの一貫性、日本語プロンプトへの拘りが後悔点。一方、複数キャラの同時表現、シーン構成、アクションシーンの実現には技術的限界を感じた。AIの進化に期待しつつ、**詳細なプロンプト**と**元画像の重要性**を強調。
 
 ---
 
-### [AIエンジニアへの道 - 22日目：クラウドでAIを動かす！AWS、Azure、GCPのAIサービス比較](https://qiita.com/555hamano/items/be9fc0f8c6df158dedfb)
-**Published:** 2025-07-23 13:58:43 UTC
+### [Gemini CLI に関するあれこれ：これまで書いた記事で扱えてなかったいろいろな公式情報](https://qiita.com/youtoy/items/01b2ee2af19a4f610039)
+**Published:** 2025-07-24 14:16:48 UTC
 **Likes:** 2
-**Tags:** Python, 初心者, データサイエンス, LLM, AIエンジニア
+**Tags:** Google, Gemini, AIエージェント, GeminiCLI
 
 **Digest:**
-AI学習22日目は、AWS、Azure、GCPといった主要な**クラウドAIサービス**を比較。各社の特徴として、AWSは包括性、AzureはMicrosoft製品との連携、GCPはGoogleのAI技術が強み。AIモデル学習やデプロイに不可欠で、プロジェクト要件、予算、スキルセットで選択。**SageMaker**や**Vertex AI**などのサービス、**LLM**も比較検討。
+Gemini CLIに関する情報をまとめた記事です。公式ドキュメントのルートは`/docs`で、モデル学習へのデータ利用は、アカウントの種類やAPIキーによって異なり、個人向けは学習に利用される場合があります。扱えるファイルはテキスト、画像、PDF。設定の優先順位はコマンドライン引数が最も高く、設定ファイルは特定の場所に配置されます。アンインストール方法はインストール方法により異なり、npx使用時は注意が必要です。
 
 ---
 
-### [AIエンジニアへの道 - 18日目：LLMを動かす！Hugging Face Transformersライブラリ入門](https://qiita.com/555hamano/items/5e69a8689cd1c2b80601)
-**Published:** 2025-07-23 07:38:35 UTC
-**Likes:** 2
-**Tags:** Python, 初心者, データサイエンス, LLM, AIエンジニア
+### [🔥 爆速仕事術！NotebookLM × Geminiで情報整理＆アイデア出しが劇的に変わる！ 🔥](https://qiita.com/ttaka0954/items/f6082f123d48355985c0)
+**Published:** 2025-07-25 03:10:07 UTC
+**Likes:** 1
+**Tags:** Node.js, 初心者, 効率化, Gemini, 生成AI
 
 **Digest:**
-18日目は、LLMを動かすための「Hugging Face Transformers」ライブラリ入門。BERTやGPTなどのLLMを簡単に利用できるツールで、自然言語処理のデファクトスタンダードです。`pipeline`による感情分析、`AutoTokenizer`と`AutoModel`を使った推論を解説し、ファインチューニングの概念も紹介。明日からは感情分析の実装に進みます。
+Googleのツール、**NotebookLM**と**Gemini**の連携がもたらす効率化を紹介。NotebookLMで知識を蓄積し、**Gemini**がその情報を活用することで、情報収集、文章作成、アイデア出しが劇的に効率化されます。AIは人間の創造性を引き出すパートナーとなり、未来の働き方を革新します。
 
 ---
 
-### [AIエンジニアへの道 - 25日目：AIエージェントと自動化！MCP (Model Context Protocol) マスターへの道](https://qiita.com/555hamano/items/8deb1b2ffd460611014f)
-**Published:** 2025-07-23 20:10:18 UTC
+### [AIエンジニアへの道 - 30日目：【最終日】30日間でAIをマスター！未来のAIエンジニアへ](https://qiita.com/555hamano/items/89bd50a1ebdb5c532dae)
+**Published:** 2025-07-24 16:30:28 UTC
 **Likes:** 1
 **Tags:** Python, 初心者, データサイエンス, LLM, AIエンジニア
 
 **Digest:**
-25日目はAIエージェントと自動化がテーマ。大規模言語モデル（LLM）を自律的にタスク実行するツールとして活用するため、Anthropic社のModel Context Protocol（MCP）を解説。AIエージェントは、プランニング、記憶、ツール利用、推論で構成され、MCPはプロンプト設計、思考の可視化、記憶の効率化、出力形式制御に貢献。プロンプトエンジニアリング、ツール利用、記憶管理、評価改善が重要スキル。
+30日間AI学習ロードマップ最終日。AIの基礎からLLM、クラウド、MLOps、ポートフォリオ作成まで、広範な知識とスキルを習得。**学習意欲**と**粘り強さ**が未来のAIエンジニアへの道を開く。継続的な学習と実践、専門性深化が鍵。**プロンプトエンジニアリング**や**ファインチューニング**、倫理観も重要。未来へ向けて、頑張ってください！
+
+---
+
+### [AIエンジニアへの道 - 29日目：ポートフォリオ作成！あなたのAIスキルを最大限にアピールする方法](https://qiita.com/555hamano/items/c987404afc4b784ff55d)
+**Published:** 2025-07-24 16:28:19 UTC
+**Likes:** 1
+**Tags:** Python, 初心者, データサイエンス, LLM, AIエンジニア
+
+**Digest:**
+29日目は、AIスキルを最大限アピールするポートフォリオ作成がテーマ。**ポートフォリオ**は、**問題解決能力**や**コミュニケーション能力**を示す重要ツールで、個人プロジェクトやKaggle参加経験が評価されます。GitHubで公開し、質の高いREADMEで**工夫と学び**を表現。応募企業に合わせカスタマイズし、機密情報や著作権に注意。最終日に向け、これまでの学習成果をまとめましょう。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Customize Amazon Nova in Amazon SageMaker AI using Direct Preference Optimization](https://aws.amazon.com/blogs/machine-learning/customize-amazon-nova-in-amazon-sagemaker-ai-using-direct-preference-optimization/)
+### [Boost cold-start recommendations with vLLM on AWS Trainium](https://aws.amazon.com/blogs/machine-learning/boost-cold-start-recommendations-with-vllm-on-aws-trainium/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-23 19:08:16 UTC
-**Tags:** Amazon Nova, Amazon SageMaker AI, Artificial Intelligence, Foundation models, Intermediate (200)
+**Published:** 2025-07-24 20:17:18 UTC
+**Tags:** Artificial Intelligence, AWS Trainium
 
 **Digest:**
-Amazon Novaのモデルカスタマイズ機能を発表。Amazon SageMaker AIのレシピで、Nova Microなどを事前学習、ファインチューニング、アライメントできます。DPOを用いたカスタマイズでは、人間の好みに合わせた出力が可能で、SageMakerのトレーニングジョブを使用。Function callingに最適化し、F1スコア81%向上も実現。必要な前提条件として、SageMaker AIのクォータやIAMロールの設定が挙げられています。
+レコメンデーションシステムのコールドスタート問題に対し、AWS TrainiumとvLLM、LLMを活用した解決策を紹介。Llama 8B等のLLMでユーザーの興味を推測し、T5エンコーダーで埋め込みを作成。FAISSでコンテンツを検索し、効率的なレコメンドを実現。実験により、最適なモデル・エンコーダーの組み合わせを見つけ、コストとパフォーマンスのバランスを図る。Tensor Parallel Sizeの調整も重要。
 
 ---
 
-### [Multi-tenant RAG implementation with Amazon Bedrock and Amazon OpenSearch Service for SaaS using JWT](https://aws.amazon.com/blogs/machine-learning/multi-tenant-rag-implementation-with-amazon-bedrock-and-amazon-opensearch-service-for-saas-using-jwt/)
+### [Benchmarking Amazon Nova: A comprehensive analysis through MT-Bench and Arena-Hard-Auto](https://aws.amazon.com/blogs/machine-learning/benchmarking-amazon-nova-a-comprehensive-analysis-through-mt-bench-and-arena-hard-auto/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-23 16:44:31 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon OpenSearch Service, Technical How-to
+**Published:** 2025-07-24 18:39:08 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Amazon Machine Learning, Amazon Nova, Generative AI, Technical How-to, AI/ML
 
 **Digest:**
-大規模言語モデル(LLM)の活用を促進するため、RAGが注目されています。本記事では、マルチテナント環境における、JWTとFGACを活用したOpenSearch Serviceでのセキュアなデータ分離方法を紹介。Amazon Cognito、DynamoDB、Lambdaを連携し、テナントIDをJWTに付与、FGACでロールマッピングを実現。OpenSearch Serviceの3つの分離パターンに対応し、安全なRAG環境を構築します。
+大規模言語モデル（LLM）の評価には、人間評価に近づけるため、LLM自身を評価者とする手法が重要です。本記事では、Amazon NovaモデルをMT-BenchとArena-Hard-Autoを用いて評価。AnthropicのClaude 3.7 Sonnetを評価者とし、Nova Premierが最高スコア、Nova Pro、Lite、Microと続きました。Premierは一貫性も高く、LiteとMicroは低コストで高速。また、Arena-Hard-Autoはペア比較でモデルを評価します。
 
 ---
 
-### [Enhance generative AI solutions using Amazon Q index with Model Context Protocol – Part 1](https://aws.amazon.com/blogs/machine-learning/enhance-generative-ai-solutions-using-amazon-q-index-with-model-context-protocol-part-1/)
-**Source:** AWS ML Blog
-**Published:** 2025-07-23 16:40:40 UTC
-**Tags:** Amazon Q, Amazon Q Business, Artificial Intelligence, Best Practices
-
-**Digest:**
-AI活用で意思決定を強化するため、MCPとAmazon Q indexを連携。MCPはLLMを外部ツールに接続、Amazon Q indexはセマンティック検索でデータ検索を高速化します。ISVは顧客データに安全にアクセス可能。2つの連携パターンがあり、迅速な展開には直接検索、MCPで統合なら統一インターフェースが利点。AWSは相互運用性を強化中です。
-
----
-
-### [Listen to a conversation about the newest AI capabilities in Search.](https://blog.google/products/search/release-notes-podcast-search/)
-**Source:** Google DeepMind
-**Published:** 2025-07-23 19:00:00 UTC
-**Tags:** Search, Google DeepMind, AI
-
-**Digest:**
-Google AI: Release Notesの最新エピソードでは、Logan Kilpatrickが、検索で何十億もの人々が本当に何でも質問できるようにするための取り組みについて議論しています。AI技術を活用し、検索体験を革新することを目指しており、より高度な質問応答能力を実現するために研究開発が進められています。
-
----
-
-### [Surface Laptop with 5Gの登場: ビジネスのためのシームレスな接続性](https://blogs.windows.com/japan/2025/07/24/introducing-surface-laptop-5g-seamless-connectivity-built-for-business/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-07-24 04:06:13 UTC
-**Tags:** Surface, Surface Laptop 5G
-
-**Digest:**
-マイクロソフトは法人向け Surface Copilot+ PC ポートフォリオを拡充、5G対応のSurface Laptopを発表。Intel Core Ultra搭載、8月26日出荷開始。ダイナミックアンテナシステムによる安定した5G接続、NanoSIM/eSIM対応でグローバル利用も。セキュリティと管理機能を強化、Windows 10サポート終了に向けた移行を促進。日本国内では2025年9月2日出荷開始予定。
-
----
-
-### [Microsoft Sentinel をご利用のお客様向け Microsoft Defender ポータルへの移行計画](https://blogs.windows.com/japan/2025/07/23/planning-your-move-to-microsoft-defender-portal-for-all-microsoft-sentinel-custo/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-07-23 09:09:58 UTC
-**Tags:** Security, Defender, Sentinel
-
-**Digest:**
-Microsoftは、Microsoft SentinelをMicrosoft Defenderポータルに統合し、2026年7月1日までにAzureポータルでのSentinelを廃止します。これにより、SIEMとXDRの統合によるセキュリティオペレーションの効率化を目指します。単一UIでのインシデント管理やAI活用、SOCの最適化により、アナリストの効率性向上、迅速な対応を実現します。早期の移行計画と準備を推奨し、Microsoftの支援を活用できます。
-
----
-
-### [Terraformのcheckブロックを試してみた](https://blog.jbs.co.jp/entry/2025/07/24/114858)
+### [terraform testにてMockプロバイダーを試してみた](https://blog.jbs.co.jp/entry/2025/07/25/115959)
 **Source:** JBS Blog
-**Published:** 2025-07-24 02:48:58 UTC
+**Published:** 2025-07-25 02:59:59 UTC
 **Tags:** Azure, Terraform
 
 **Digest:**
-Terraform v1.5から導入された`check`ブロック機能を試します。これはTerraformモジュールやリソースのテストを可能にするもので、以前の`terraform test`に加えて選択肢が増えました。今回は、Azure App Serviceへの接続をテストするterraform定義ファイルを作成し、接続可否で挙動を確認します。
+Terraform v1.7で導入されたMockプロバイダーを使った`terraform test`を試す。事前準備としてTerraform定義ファイルとテストファイル(.tftest.hcl)を作成し、`terraform test`を実行。正しい設定と誤った設定でテストを実施し、結果を確認する。Mockプロバイダーにより、インフラ構成のテストが効率的に行えるようになった。
 
 ---
 
-### [NIST SP800-171を徹底解説!! ー SP800-53との比較 ー](https://blog.jbs.co.jp/entry/2025/07/24/095904)
+### [Azure AI Foundry Agent ServiceでMCP toolを利用するエージェントを作成する](https://blog.jbs.co.jp/entry/2025/07/25/095308)
 **Source:** JBS Blog
-**Published:** 2025-07-24 00:59:04 UTC
-**Tags:** セキュリティ, サイバー攻撃
+**Published:** 2025-07-25 00:53:08 UTC
+**Tags:** AI, AI Agent, Azure AI Foundry Agent Service, Azure AI, Azure OpenAI, LLM
 
 **Digest:**
-近年注目されるSP800は、NIST（米国国立標準技術研究所）が発行するセキュリティガイドライン群。製品選定で加点要素となることも。SP800-171やSP800-53が有名で、米連邦政府やパートナー企業のセキュリティ体制構築に活用されています。NISTはCSFやAI RMFも発行し、包括的なセキュリティ対策を支援しています。
+Azure AI Foundry Agent ServiceでModel Context Protocol (MCP) toolが利用可能になり、Python SDKを使ったエージェント実装を試す記事。環境変数設定、実装コード、実行結果、既存エージェント利用コードを解説。MCP toolを通して、Azure AI Foundryでエージェント開発が効率化されることが期待されます。
 
 ---
 
-### [AIエージェント実現にむけての一手　― Computer Useによる自動操作の検証](https://blog.jbs.co.jp/entry/2025/07/24/090336)
+### [【Microsoft×生成AI連載】People Skillsの紹介~Copilotで従業員のスキルを見える化~](https://blog.jbs.co.jp/entry/2025/07/25/090839)
 **Source:** JBS Blog
-**Published:** 2025-07-24 00:03:36 UTC
-**Tags:** Azure AI Foundry, LLM, AIエージェント, Computer Use, Responses API, Playwright, MCP
+**Published:** 2025-07-25 00:08:39 UTC
+**Tags:** Copilot, Copilot for Microsoft 365, Microsoft Copilot, Microsoft×生成AI連載
 
 **Digest:**
-Azure OpenAIの**Computer Use Preview**モデルと**Playwright**を連携させ、AIエージェントを構築する方法を紹介。ブラウザ操作を自動化し、Azure OpenAIで**プロンプト**を生成、Playwrightで**Webサイト**を操作することで、様々なタスクを効率化します。
+Microsoft 365 Copilotの新機能「People Skills」が正式リリース。AIがユーザーの**スキル**を自動解析し可視化、個人、チーム、組織の**スキル管理**を効率化します。これにより、**スキル**の把握と**活用**を促進し、より効果的な**人材**配置や**チーム**編成に役立つでしょう。
+
+---
+
+### [System Security Services Daemon（SSSD）によるRed Hat Enterprise Linuxのドメイン参加](https://blog.jbs.co.jp/entry/2025/07/24/152433)
+**Source:** JBS Blog
+**Published:** 2025-07-24 06:24:33 UTC
+**Tags:** RHEL, Linux, ドメイン
+
+**Digest:**
+RHELサーバーをActive Directoryドメインに参加させる手順を解説します。まず、必要なパッケージをインストールし、Kerberos認証を設定します。次に、Sambaの設定を行い、ドメイン参加のためのコマンドを実行します。最後に、設定が正しく反映されているか確認すれば、RHELサーバーがドメインに参加し、ユーザー認証などが可能になります。
 
 ---
