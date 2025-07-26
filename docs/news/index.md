@@ -1,118 +1,78 @@
-# AI Tech Trends Digest (2025-07-25)
+# AI Tech Trends Digest (2025-07-26)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [AI動画を作って気づいた「思い通りにいかない理由」──実体験で学んだこと、後悔したこと](https://qiita.com/sakes9/items/664bfcedc1492dac92e1)
-**Published:** 2025-07-24 23:42:18 UTC
+### [Amazon Bedrock AgentCoreのIdentityを深堀り！](https://qiita.com/moritalous/items/6c822e68404e93d326a4)
+**Published:** 2025-07-26 05:20:38 UTC
+**Likes:** 3
+**Tags:** AWS, cognito, OpenAI, bedrock, AgentCore
+
+**Digest:**
+AgentCoreまつりの記事。AgentCore Identityを活用し、AgentCore RuntimeからOpenAI APIキーやAgentCore GatewayのBearerトークンを安全に取得する方法を紹介。マネジメントコンソールでの設定と、`requires_api_key`、`requires_access_token`デコレーターによる実装を解説。CognitoのM2M認証による料金体系にも触れ、注意を促しています。
+
+---
+
+### [claude code : sub agent](https://qiita.com/Satoshi_Numasawa/items/2e6d9e33b5ef4f2527ec)
+**Published:** 2025-07-25 06:40:34 UTC
 **Likes:** 2
-**Tags:** AI, 生成AI, ChatGPT, LLM, AIエージェント
+**Tags:** command, Agents, Claude, ClaudeCode, subagent
 
 **Digest:**
-生成AIによる動画制作の経験を振り返り、**高品質なアニメ風OP**制作での課題をまとめた記事。**プログラミング言語を擬人化**した映像作成で、曖昧なプロンプトや元画像の品質不足、キャラクターの一貫性、日本語プロンプトへの拘りが後悔点。一方、複数キャラの同時表現、シーン構成、アクションシーンの実現には技術的限界を感じた。AIの進化に期待しつつ、**詳細なプロンプト**と**元画像の重要性**を強調。
+Claude Codeに`/agents`コマンドが追加され、sub agent機能が利用可能に。専門分野を持つサブエージェントは、独立したコンテキストで動作し、設定されたタスクに応じて自動実行されます。記事では、`/agents`でのsub agent作成手順を解説し、`review`機能の例を紹介。サブエージェントは、特定のツールとカスタムプロンプトを持ち、連携して連鎖も可能。パフォーマンスへの影響や、ベストプラクティスについても言及されています。
 
 ---
 
-### [Gemini CLI に関するあれこれ：これまで書いた記事で扱えてなかったいろいろな公式情報](https://qiita.com/youtoy/items/01b2ee2af19a4f610039)
-**Published:** 2025-07-24 14:16:48 UTC
-**Likes:** 2
-**Tags:** Google, Gemini, AIエージェント, GeminiCLI
-
-**Digest:**
-Gemini CLIに関する情報をまとめた記事です。公式ドキュメントのルートは`/docs`で、モデル学習へのデータ利用は、アカウントの種類やAPIキーによって異なり、個人向けは学習に利用される場合があります。扱えるファイルはテキスト、画像、PDF。設定の優先順位はコマンドライン引数が最も高く、設定ファイルは特定の場所に配置されます。アンインストール方法はインストール方法により異なり、npx使用時は注意が必要です。
-
----
-
-### [🔥 爆速仕事術！NotebookLM × Geminiで情報整理＆アイデア出しが劇的に変わる！ 🔥](https://qiita.com/ttaka0954/items/f6082f123d48355985c0)
-**Published:** 2025-07-25 03:10:07 UTC
+### [生成AIに“横断的な文脈”を渡すには？ポリレポ環境でできるちょっとした工夫](https://qiita.com/mgmgmogumi/items/75e0e71026c87bcfc2d6)
+**Published:** 2025-07-26 04:44:43 UTC
 **Likes:** 1
-**Tags:** Node.js, 初心者, 効率化, Gemini, 生成AI
+**Tags:** マイクロサービス, VSCode, 生成AI, Claude, cline
 
 **Digest:**
-Googleのツール、**NotebookLM**と**Gemini**の連携がもたらす効率化を紹介。NotebookLMで知識を蓄積し、**Gemini**がその情報を活用することで、情報収集、文章作成、アイデア出しが劇的に効率化されます。AIは人間の創造性を引き出すパートナーとなり、未来の働き方を革新します。
+マイクロサービス環境で複数リポジトリを扱う際、生成AI活用で課題が。MCPサーバー経由の情報収集はトークン消費や文脈欠落が発生。そこで、ローカルにリポジトリを集約し、VS CodeやIntelliJのワークスペースで横断的に開く工夫を。結果、AIがファイル間の関係を理解しやすくなり、依存関係分析などがスムーズに。環境整備が鍵であり、モノレポ的な活用も可能。
 
 ---
 
-### [AIエンジニアへの道 - 30日目：【最終日】30日間でAIをマスター！未来のAIエンジニアへ](https://qiita.com/555hamano/items/89bd50a1ebdb5c532dae)
-**Published:** 2025-07-24 16:30:28 UTC
+### [Claude Code最新のカスタムサブエージェント機能を試してみた](https://qiita.com/Dinn/items/d6ab5329a4ecfc3d6cf6)
+**Published:** 2025-07-26 04:39:54 UTC
 **Likes:** 1
-**Tags:** Python, 初心者, データサイエンス, LLM, AIエンジニア
+**Tags:** AI, LLM, Claude, AIエージェント
 
 **Digest:**
-30日間AI学習ロードマップ最終日。AIの基礎からLLM、クラウド、MLOps、ポートフォリオ作成まで、広範な知識とスキルを習得。**学習意欲**と**粘り強さ**が未来のAIエンジニアへの道を開く。継続的な学習と実践、専門性深化が鍵。**プロンプトエンジニアリング**や**ファインチューニング**、倫理観も重要。未来へ向けて、頑張ってください！
+Anthropic社のClaude Codeに新機能「カスタムサブエージェント」が登場。ユーザーが用途に合わせてサブエージェントを自由にカスタマイズ・作成できます。記事では、プロジェクト構造分析のエージェント作成手順や、並列実行、ツール選択、独立コンテキストといった仕組みを紹介。さらに、コミュニティが作成したサブエージェント集も紹介し、Claude Codeの可能性を広げている点をまとめています。
 
 ---
 
-### [AIエンジニアへの道 - 29日目：ポートフォリオ作成！あなたのAIスキルを最大限にアピールする方法](https://qiita.com/555hamano/items/c987404afc4b784ff55d)
-**Published:** 2025-07-24 16:28:19 UTC
+### [Claude DesktopとMCP（Model Context Protocol）で実現する次世代AI開発環境](https://qiita.com/k_nabe/items/72351cff0352ac29a239)
+**Published:** 2025-07-26 03:36:21 UTC
 **Likes:** 1
-**Tags:** Python, 初心者, データサイエンス, LLM, AIエンジニア
+**Tags:** GitHub, MCP, AI開発, Claude, 実装事例
 
 **Digest:**
-29日目は、AIスキルを最大限アピールするポートフォリオ作成がテーマ。**ポートフォリオ**は、**問題解決能力**や**コミュニケーション能力**を示す重要ツールで、個人プロジェクトやKaggle参加経験が評価されます。GitHubで公開し、質の高いREADMEで**工夫と学び**を表現。応募企業に合わせカスタマイズし、機密情報や著作権に注意。最終日に向け、これまでの学習成果をまとめましょう。
+Anthropic社のMCP（Model Context Protocol）を活用し、Claude Desktopを強力な開発環境にする方法を紹介。GitHub、データベース、ファイルシステムと連携し、コード例を交えて実装を解説。リアルタイムなコードレビュー、自動化されたレビュープロセス、データベース連携による生産性向上を実現。開発効率向上や品質向上への効果も示唆。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Boost cold-start recommendations with vLLM on AWS Trainium](https://aws.amazon.com/blogs/machine-learning/boost-cold-start-recommendations-with-vllm-on-aws-trainium/)
+### [Build an intelligent eDiscovery solution using Amazon Bedrock Agents](https://aws.amazon.com/blogs/machine-learning/build-an-intelligent-ediscovery-solution-using-amazon-bedrock-agents/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-24 20:17:18 UTC
-**Tags:** Artificial Intelligence, AWS Trainium
+**Published:** 2025-07-25 17:22:37 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Best Practices, Customer Solutions, Generative AI, Technical How-to
 
 **Digest:**
-レコメンデーションシステムのコールドスタート問題に対し、AWS TrainiumとvLLM、LLMを活用した解決策を紹介。Llama 8B等のLLMでユーザーの興味を推測し、T5エンコーダーで埋め込みを作成。FAISSでコンテンツを検索し、効率的なレコメンドを実現。実験により、最適なモデル・エンコーダーの組み合わせを見つけ、コストとパフォーマンスのバランスを図る。Tensor Parallel Sizeの調整も重要。
+Amazon Bedrock Agentsは、eDiscoveryにおける文書レビューを自動化し、弁護士の作業時間を大幅に削減します。複数のAIエージェントが並行して文書を分析し、契約内容抽出や機密情報の識別などを実行。これにより、レビュー時間を60～70%短縮し、正確性も維持。AWSインフラ構築の手順や、実装時の注意点についても言及されています。
 
 ---
 
-### [Benchmarking Amazon Nova: A comprehensive analysis through MT-Bench and Arena-Hard-Auto](https://aws.amazon.com/blogs/machine-learning/benchmarking-amazon-nova-a-comprehensive-analysis-through-mt-bench-and-arena-hard-auto/)
+### [How PerformLine uses prompt engineering on Amazon Bedrock to detect compliance violations](https://aws.amazon.com/blogs/machine-learning/how-performline-uses-prompt-engineering-on-amazon-bedrock-to-detect-compliance-violations/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-24 18:39:08 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Machine Learning, Amazon Nova, Generative AI, Technical How-to, AI/ML
+**Published:** 2025-07-25 17:03:23 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Prompt Management, Amazon Nova, Artificial Intelligence, AWS Lambda, Compliance, Customer Solutions, Generative AI, Serverless
 
 **Digest:**
-大規模言語モデル（LLM）の評価には、人間評価に近づけるため、LLM自身を評価者とする手法が重要です。本記事では、Amazon NovaモデルをMT-BenchとArena-Hard-Autoを用いて評価。AnthropicのClaude 3.7 Sonnetを評価者とし、Nova Premierが最高スコア、Nova Pro、Lite、Microと続きました。Premierは一貫性も高く、LiteとMicroは低コストで高速。また、Arena-Hard-Autoはペア比較でモデルを評価します。
-
----
-
-### [terraform testにてMockプロバイダーを試してみた](https://blog.jbs.co.jp/entry/2025/07/25/115959)
-**Source:** JBS Blog
-**Published:** 2025-07-25 02:59:59 UTC
-**Tags:** Azure, Terraform
-
-**Digest:**
-Terraform v1.7で導入されたMockプロバイダーを使った`terraform test`を試す。事前準備としてTerraform定義ファイルとテストファイル(.tftest.hcl)を作成し、`terraform test`を実行。正しい設定と誤った設定でテストを実施し、結果を確認する。Mockプロバイダーにより、インフラ構成のテストが効率的に行えるようになった。
-
----
-
-### [Azure AI Foundry Agent ServiceでMCP toolを利用するエージェントを作成する](https://blog.jbs.co.jp/entry/2025/07/25/095308)
-**Source:** JBS Blog
-**Published:** 2025-07-25 00:53:08 UTC
-**Tags:** AI, AI Agent, Azure AI Foundry Agent Service, Azure AI, Azure OpenAI, LLM
-
-**Digest:**
-Azure AI Foundry Agent ServiceでModel Context Protocol (MCP) toolが利用可能になり、Python SDKを使ったエージェント実装を試す記事。環境変数設定、実装コード、実行結果、既存エージェント利用コードを解説。MCP toolを通して、Azure AI Foundryでエージェント開発が効率化されることが期待されます。
-
----
-
-### [【Microsoft×生成AI連載】People Skillsの紹介~Copilotで従業員のスキルを見える化~](https://blog.jbs.co.jp/entry/2025/07/25/090839)
-**Source:** JBS Blog
-**Published:** 2025-07-25 00:08:39 UTC
-**Tags:** Copilot, Copilot for Microsoft 365, Microsoft Copilot, Microsoft×生成AI連載
-
-**Digest:**
-Microsoft 365 Copilotの新機能「People Skills」が正式リリース。AIがユーザーの**スキル**を自動解析し可視化、個人、チーム、組織の**スキル管理**を効率化します。これにより、**スキル**の把握と**活用**を促進し、より効果的な**人材**配置や**チーム**編成に役立つでしょう。
-
----
-
-### [System Security Services Daemon（SSSD）によるRed Hat Enterprise Linuxのドメイン参加](https://blog.jbs.co.jp/entry/2025/07/24/152433)
-**Source:** JBS Blog
-**Published:** 2025-07-24 06:24:33 UTC
-**Tags:** RHEL, Linux, ドメイン
-
-**Digest:**
-RHELサーバーをActive Directoryドメインに参加させる手順を解説します。まず、必要なパッケージをインストールし、Kerberos認証を設定します。次に、Sambaの設定を行い、ドメイン参加のためのコマンドを実行します。最後に、設定が正しく反映されているか確認すれば、RHELサーバーがドメインに参加し、ユーザー認証などが可能になります。
+PerformLineは、マーケティングコンプライアンス企業。Amazon Bedrockを活用し、AIでウェブコンテンツを分析し、コンプライアンスチェックを効率化。サーバーレスアーキテクチャで、ウェブページの動的解析、コスト最適化を実現。Prompt Managementやマルチパスインフェレンスで精度とコストを両立。15%の人手評価タスク削減、50%以上の重複処理削減を達成し、更なる機能拡張を計画している。
 
 ---
