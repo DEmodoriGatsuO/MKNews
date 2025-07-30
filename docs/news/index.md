@@ -1,128 +1,128 @@
-# AI Tech Trends Digest (2025-07-29)
+# AI Tech Trends Digest (2025-07-30)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [ LLMで作る「個人の好み×アイテム総当たりレコメンドシステム」- Pydantic AIで実装してみた](https://qiita.com/Tadataka_Takahashi/items/982fd5a84daf71b9df02)
-**Published:** 2025-07-28 11:51:02 UTC
-**Likes:** 2
-**Tags:** Python, レコメンド, LLM, pydantic-ai
+### [Elixirで手軽にLLMを使おう](https://qiita.com/t-yamanashi/items/09252bec9915e93abca8)
+**Published:** 2025-07-29 11:33:39 UTC
+**Likes:** 4
+**Tags:** Elixir, AI, LLM, ollama
 
 **Digest:**
-LLMとPydantic AIを用いた**レコメンドシステム**構築。ユーザーの好みと全アイテムを総当たりで分析し、**Pydantic AI**で構造化された詳細な理由とスコア、避けるべきアイテムを提示。**カレー専門店**での実装例では、ベジタリアン向けや激辛好き向けなど、多様なニーズに合わせたレコメンドを実現。LLMの**言語理解力**により、詳細な説明と柔軟なレコメンドが可能に。
+OllamaはローカルでLLMを実行できるツールで、プライバシー保護に優れています。Ubuntu環境でのインストールは`curl ... | sh`で、モデルダウンロード後、`ollama run gemma3:1b`で動作確認。Elixirプロジェクトへの導入には`{:ollama, "0.8.0"}`を`mix.exs`に追加し、`mix deps.get`で依存関係を取得。`Ollama.completion`でLLMと対話可能、RPI5では量子化モデルも利用できます。
 
 ---
 
-### [GeminiのCanvasで動く！カメラを使ったジェスチャー認識HTML](https://qiita.com/takatama/items/d4da6442038c7c05070a)
-**Published:** 2025-07-28 10:59:55 UTC
-**Likes:** 2
-**Tags:** JavaScript, Gemini, MediaPipe
+### [ハニーポット観測：LLMアプリケーションの構築フレームワーク(Langflow)を標的とする攻撃の観測状況](https://qiita.com/melymmt/items/0cec12f43189ab79564c)
+**Published:** 2025-07-30 00:24:43 UTC
+**Likes:** 3
+**Tags:** Security, honeypot, LLM, langflow
 
 **Digest:**
-GeminiのCanvasで、カメラを使ったWebアプリ開発が可能に。MediaPipeで手のジェスチャー認識も実現し、ピースサインなど6種類のサインに対応。HTMLコードを使い、Geminiに改造を依頼してスムーズな開発が可能です。MediaPipeは顔認識や物体検出など多様な機能を持ち、様々なアプリに応用できます。
+三菱電機が、LLMアプリケーション構築フレームワーク「Langflow」の脆弱性CVE-2025-3248を標的とした攻撃を観測。認証不足により任意のコード実行が可能で、CVSSv3スコア9.8の深刻な脆弱性です。攻撃者は/api/v1/validate/codeにPythonコードを送信し、/etc/passwdの内容を窃取しようとしていました。攻撃は米国とロシアからで、LLM関連ツールのセキュリティ対策の重要性を訴えています。
 
 ---
 
-### [AI エージェント開発の技術的負債を予防する : Amazon Bedrock AgentCore をゼロからまるっと体験](https://qiita.com/icoxfog417/items/f21bb92352277d2ddc66)
-**Published:** 2025-07-29 05:50:56 UTC
-**Likes:** 0
-**Tags:** AWS, GenerativeAI, StrandsAgents, AgentCore
+### [Claude Codeでソースコードを全部日本語にする](https://qiita.com/mjnfhbuvwebwfiejcnw/items/b499c137504f3e9eb8d7)
+**Published:** 2025-07-30 02:02:18 UTC
+**Likes:** 1
+**Tags:** Swift, 日本語プログラミング, Claude, AIエージェント, ClaudeCode
 
 **Digest:**
-AIエージェント開発の技術的負債を予防する「Amazon Bedrock AgentCore」を紹介。実装非依存のランタイム環境を提供し、LangChainなどのフレームワークを問わず利用可能。Code InterpreterやBrowserといったセキュアな実行環境も提供。2028年には業務の15%がAIエージェントで自律化すると予測され、負債蓄積対策が重要。
+日本語識別子プログラミングの実践として、SwiftUIチュートリアルソースコードの英語識別子をClaude Codeで日本語化に挑戦。型名、プロパティ名、メソッド名など広範囲に日本語化し、ファイル名変更も実施。プロンプトに注意点やXcodeプロジェクトファイルへの対応を指示。ウクライナ語やアラビア語でも同様に作業が完了。ソースコードリーディング、学習コンテンツとしての活用も期待できる。
 
 ---
 
-### [Claude Codeで実現！バラバラPDFを統一フォーマットに自動変換してみた](https://qiita.com/k_nabe/items/f0bbcf958871eba8b4c5)
-**Published:** 2025-07-29 02:31:36 UTC
-**Likes:** 0
-**Tags:** API, 業務自動化, Claude, 実装事例
+### [Claude Codeの頭が悪くなった？？AnthropicのDiscord日本語チャンネルで質問してみた（2025.7.30）](https://qiita.com/SFITB/items/9608d079f9aa925ca171)
+**Published:** 2025-07-29 20:49:07 UTC
+**Likes:** 1
+**Tags:** AI, discord, Anthropic, ClaudeCode
 
 **Digest:**
-PDFフォーマットの課題を、Claude×Claude Codeで20分で解決。要件定義、@docs参照、planモード活用で、バラバラなPDFを統一化するシステムを実装し、60倍の業務効率化を実現。OpenAIのStructured OutputでJSON構造化し、UIも完備。日本語フォント対応、OCR、非同期処理による高速化も。開発時間は20分で、ROIも抜群！
+X（旧Twitter）で、AnthropicのClaude Codeの性能低下に関する意見が拡散。GitHubのissueを根拠にv1.0.24へのダウングレードが提案されました。公式Discordの日本語チャンネルで質問したところ、7/30に回答があり、問題は他国では起きていない可能性、v1.0.24への対応でも解決しないことが判明しました。Discordは開発者と意見交換できる貴重な場です。
 
 ---
 
-### [〇〇コーディングを整理してみた](https://qiita.com/sm_beats_keys/items/489d4b8eb783e93416ff)
-**Published:** 2025-07-29 01:04:05 UTC
-**Likes:** 0
-**Tags:** AI, cursor, copilot, Claude, バイブコーディング
+### [claude codeの状況を可視化するccguiをつくった](https://qiita.com/jun910/items/f50c4a24e392751457a4)
+**Published:** 2025-07-29 07:06:34 UTC
+**Likes:** 1
+**Tags:** npm, Claude, ClaudeCode
 
 **Digest:**
-AIを活用したコーディング手法の分類。**AIコーディング**は、AIがコード提案や補完を行う開発スタイル。**エージェンティックコード**は、AIエージェントが自律的にタスクを実行し、自動化。**バイブコーディング**は、自然言語指示でコード生成し、試行錯誤するスタイル。**プロンプトエンジニアリング**は、AIへの指示を最適化する技術。
+Claude Codeの利用を効率化するGUIツール「CCGUI」が登場。**Claude Code** のセッション履歴を可視化し、使用量分析、プロジェクト管理を可能にします。**npm** パッケージとして提供され、インストールは簡単。**CC Vibe** 機能で爆速開発もサポート。開発過程でもClaude Codeを活用し、効果的な使い方のコツも紹介。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Build a drug discovery research assistant using Strands Agents and Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/build-a-drug-discovery-research-assistant-using-strands-agents-and-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-07-28 19:14:26 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Artificial Intelligence, Life Sciences, Technical How-to
+### [Scaling generative AI in the cloud: Enterprise use cases for driving secure innovation](https://azure.microsoft.com/en-us/blog/scaling-generative-ai-in-the-cloud-enterprise-use-cases-for-driving-secure-innovation/)
+**Source:** Azure AI Blog
+**Published:** 2025-07-29 15:00:00 UTC
+**Tags:** AI + machine learning, Internet of things, AI, Generative AI
 
 **Digest:**
-創薬研究を加速するため、GenentechやAstraZenecaはAIエージェントを活用。本記事では、Strands Agents SDKとAmazon Bedrockを用いて、複数のデータベースを検索しレポート生成する研究アシスタントを構築する方法を解説。AnthropicのClaudeモデルを使用し、MCPツールでarXiv、PubMedなどを連携。専門エージェントによる情報収集と報告書作成の流れを紹介。
+クラウド移行は、ビジネスにおけるAI活用を加速させる鍵です。Azureは、柔軟性、スケーラビリティ、ツールを提供し、RAG、エンタープライズワークフローへの統合、生成検索、AIエージェントなどのユースケースで企業変革を支援します。Azure AIサービスを活用することで、安全かつ迅速なAI導入を実現し、競争力を高めることができます。
 
 ---
 
-### [Amazon Nova Act SDK (preview): Path to production for browser automation agents](https://aws.amazon.com/blogs/machine-learning/amazon-nova-act-sdk-preview-path-to-production-for-browser-automation-agents/)
+### [Mistral-Small-3.2-24B-Instruct-2506 is now available on Amazon Bedrock Marketplace and Amazon SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/mistral-small-3-2-24b-instruct-2506-is-now-available-on-amazon-bedrock-marketplace-and-amazon-sagemaker-jumpstart/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-28 17:54:35 UTC
-**Tags:** Amazon Nova, Announcements
+**Published:** 2025-07-29 23:35:20 UTC
+**Tags:** Amazon Bedrock, Amazon SageMaker JumpStart
 
 **Digest:**
-Amazonは、ブラウザタスク自動化を実現するAgentic AI「Amazon Nova Act SDK」を発表、限定プレビューを開始しました。AWS IAM、S3、Bedrock AgentCore Browser Toolとの連携により、セキュアなブラウザ操作とデータ管理を実現。Pythonと自然言語でエージェントを記述し、CI/CDでデプロイ可能。金融、カスタマーサポート、QAなど幅広い業界で活用が見込まれます。
+Mistral AIの240億パラメータLLM、Mistral-Small-3.2-24B-Instruct-2506がAmazon SageMaker JumpStartとBedrock Marketplaceで利用可能に。命令追従性と繰り返しエラーを改善。画像・テキスト処理も可能に。SageMaker JumpStart UIやSDK、Amazon Bedrock Marketplaceから容易にデプロイでき、様々なユースケースで活用できます。
 
 ---
 
-### [Optimizing enterprise AI assistants: How Crypto.com uses LLM reasoning and feedback for enhanced efficiency](https://aws.amazon.com/blogs/machine-learning/optimizing-enterprise-ai-assistants-how-crypto-com-uses-llm-reasoning-and-feedback-for-enhanced-efficiency/)
+### [Generate suspicious transaction report drafts for financial compliance using generative AI](https://aws.amazon.com/blogs/machine-learning/generate-suspicious-transaction-report-drafts-for-financial-compliance-using-generative-ai/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-28 17:53:04 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Artificial Intelligence, Customer Solutions
+**Published:** 2025-07-29 18:57:44 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Agents, Artificial Intelligence, Generative AI, Technical How-to
 
 **Digest:**
-Crypto.comがAWS上で生成AIアシスタントを導入。大規模言語モデル（LLM）の性能向上にはフィードバックと推論が重要で、事実確認ツールによる批判や、Amazon Bedrockを用いたモデルの最適化ワークフローを解説。顧客からの問い合わせ分類を例に、エラー分析とプロンプト改善を繰り返し、精度向上を図っています。
+金融コンプライアンスの自動化は、AWSの生成AIで実現可能。Amazon Bedrockを活用し、疑わしい取引報告書（STR）の作成を効率化します。**Amazon Bedrock Knowledge BasesとAgents**が、LLMによるSTR草案生成を支援。ウェブサイトからの情報収集や、OpenSearch Serverlessによる知識ベースの検索も可能にし、コンプライアンス報告の精度と迅速性を向上させます。
 
 ---
 
-### [Build modern serverless solutions following best practices using Amazon Q Developer CLI and MCP](https://aws.amazon.com/blogs/machine-learning/build-modern-serverless-solutions-following-best-practices-using-amazon-q-developer-cli-and-mcp/)
+### [Fine-tune and deploy Meta Llama 3.2 Vision for generative AI-powered web automation using AWS DLCs, Amazon EKS, and Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/fine-tune-and-deploy-meta-llama-3-2-vision-for-generative-ai-powered-web-automation-using-aws-dlcs-amazon-eks-and-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-28 17:42:38 UTC
-**Tags:** Amazon Q, AWS Serverless Application Model, AWS Serverless Application Repository, Best Practices, Technical How-to
+**Published:** 2025-07-29 18:55:23 UTC
+**Tags:** Amazon Bedrock, Amazon Elastic Kubernetes Service, Artificial Intelligence, Generative AI, Intermediate (200)
 
 **Digest:**
-AWS Serverless MCPサーバーは、Amazon Q Developer CLIとModel Context Protocol (MCP)を活用し、AWS Lambda、API Gatewayなどのサーバーレスアプリ開発を加速します。自然言語でインフラ構成やアーキテクチャガイダンスを得られ、`get_iac_guidance`や`get_serverless_templates`などのツールで設計から開発、デプロイまでを効率化。AWSベストプラクティスに準拠し、開発サイクル全体を短縮します。
+大規模言語モデル(LLM)のファインチューニングは、AWS Deep Learning Containers (DLC)とAmazon EKSを活用し、コストを抑えながら専門タスク向けAIを実現する重要技術。本記事では、Llama-3.2-11B-Vision-InstructモデルをEKSでファインチューニングし、Amazon Bedrockでデプロイ、Web自動化ツールSeeActとの連携を実演。FSDPによるメモリ効率化や、EFAによる高速ネットワークも利用。
 
 ---
 
-### [【Microsoft Defender for Identity】正常性の問題：「NTLM監査が有効になっていません」の解決方法](https://blog.jbs.co.jp/entry/2025/07/29/131453)
+### [How Nippon India Mutual Fund improved the accuracy of AI assistant responses using advanced RAG methods on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/how-nippon-india-mutual-fund-improved-the-accuracy-of-ai-assistant-responses-using-advanced-rag-methods-on-amazon-bedrock/)
+**Source:** AWS ML Blog
+**Published:** 2025-07-29 14:57:29 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Guardrails, Amazon Bedrock Knowledge Bases, Amazon Machine Learning, Artificial Intelligence, Customer Solutions
+
+**Digest:**
+Nippon Life India Asset Managementは、Amazon Bedrock Knowledge Basesを活用し、RAG（Retrieval Augmented Generation）手法を用いて大規模文書からの情報検索精度を向上。複雑な質問を分割、検索結果を再ランキングする高度なRAG技術を採用。Amazon Textractで文書を解析し、セマンティックチャンキングやマルチクエリRAG、リランキングを組み合わせ、回答の正確性向上を目指しています。
+
+---
+
+### [Cloud Shell から Azure SQL Database の名前を変更する](https://blog.jbs.co.jp/entry/2025/07/30/125001)
 **Source:** JBS Blog
-**Published:** 2025-07-29 04:14:53 UTC
-**Tags:** Microsoft Defeder for Identity, セキュリティ, Tech
+**Published:** 2025-07-30 03:50:01 UTC
+**Tags:** Azure, Azure SQLDB, Azure SQL Database
 
 **Digest:**
-Microsoft Defender for Identity (MDI) は、オンプレミスActive Directory (AD) を保護するクラウドベースのセキュリティソリューションです。クラウドIDとAD IDのシグナルを統合し、高度な脅威を特定・検出・調査します。本記事では、MDI センサーインストール時に発生する「正常性の問題」のうち、「NTLM監査が有効になっていません」の解決方法について解説しています。
+Azure SQL Databaseのポイントインタイムリストアでは、リストア後のデータベース名を変更する必要があります。SSMS、SQLクエリ、AzureポータルのCloud Shellを利用した3つの方法を紹介。名前変更手順を理解し、スムーズなリストア作業を行いましょう。
 
 ---
 
-### [Red Hat Enterprise Linux 9でrootのSSHログインを無効にできない問題の原因と解決策](https://blog.jbs.co.jp/entry/2025/07/29/114820)
+### [【Microsoft×生成AI連載】Microsoft 365 Copilot の生成機能 – インフォグラフィック生成とドキュメントの下書き生成の活用例](https://blog.jbs.co.jp/entry/2025/07/30/090959)
 **Source:** JBS Blog
-**Published:** 2025-07-29 02:48:20 UTC
-**Tags:** RHEL, Red Hat Enterprise Linux, Tech
+**Published:** 2025-07-30 00:09:59 UTC
+**Tags:** Microsoft×生成AI連載, 生成AI, Copilot, Copilot for Microsoft 365, Microsoft 365 Copilot
 
 **Digest:**
-RHEL導入でroot SSHログインを無効化する際、構築作業で一時的に有効化後、設定変更が効かない問題が発生。原因は、`sshd_config`のIncludeディレクティブによる設定上書き。OSインストール時の設定が影響している場合も。解決策は、Includeの確認と、必要に応じた設定変更。
-
----
-
-### [AI Builderの感情分析を利用してFormsのアンケート結果を評価する](https://blog.jbs.co.jp/entry/2025/07/29/094840)
-**Source:** JBS Blog
-**Published:** 2025-07-29 00:48:40 UTC
-**Tags:** AI Builder, Power Automate, Power Platform
-
-**Digest:**
-AI BuilderはPower PlatformのノーコードAIツールで、感情分析など様々なAIモデルを簡単に構築できます。Formsアンケート結果を感情分析で評価する活用例を紹介。Power Automateフローを作成し、アンケートデータを分析することで、テキストの感情（ポジティブ、ネガティブ、ニュートラル）を把握できます。
+Microsoft 365 Copilot の生成機能、インフォグラフィック作成とドキュメント下書きに焦点を当てた記事。利用シーン、メリット、注意点も解説。本連載では、Copilot を活用した様々な生成機能をシリーズで紹介しており、過去記事へのリンクも掲載。
 
 ---
