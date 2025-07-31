@@ -1,128 +1,107 @@
-# AI Tech Trends Digest (2025-07-30)
+# AI Tech Trends Digest (2025-07-31)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Elixirで手軽にLLMを使おう](https://qiita.com/t-yamanashi/items/09252bec9915e93abca8)
-**Published:** 2025-07-29 11:33:39 UTC
+### [【テンプレ配布】Kiroの仕様駆動開発をClaude Codeで再現する方法！ドキュメント3点セットで実現](https://qiita.com/tomada/items/a67aa0739b95273bf487)
+**Published:** 2025-07-30 17:10:00 UTC
 **Likes:** 4
-**Tags:** Elixir, AI, LLM, ollama
+**Tags:** 生成AI, Claude, AIエージェント, ClaudeCode, Kiro
 
 **Digest:**
-OllamaはローカルでLLMを実行できるツールで、プライバシー保護に優れています。Ubuntu環境でのインストールは`curl ... | sh`で、モデルダウンロード後、`ollama run gemma3:1b`で動作確認。Elixirプロジェクトへの導入には`{:ollama, "0.8.0"}`を`mix.exs`に追加し、`mix deps.get`で依存関係を取得。`Ollama.completion`でLLMと対話可能、RPI5では量子化モデルも利用できます。
+AI開発ツールClaude Codeでの仕様駆動開発を紹介。AWS Kiroの「仕様駆動開発」に着想を得て、Claude Codeで要件定義、設計、タスク管理を自動生成するテンプレートを開発。`/kiro`コマンドで仕様書を生成し、**開発効率を向上**。**GitHubテンプレート**公開。これにより、**一貫性のあるコード生成**、**ブレない方向性**、**段階的な機能実装**が可能に。Todoアプリ作成例も示し、開発手法としての重要性を強調。
 
 ---
 
-### [ハニーポット観測：LLMアプリケーションの構築フレームワーク(Langflow)を標的とする攻撃の観測状況](https://qiita.com/melymmt/items/0cec12f43189ab79564c)
-**Published:** 2025-07-30 00:24:43 UTC
+### [OpenAI  Agents SDK for TypeScriptを使った音声エージェント開発](https://qiita.com/toshikifu/items/6692cfc53e79eb7331e5)
+**Published:** 2025-07-30 06:34:54 UTC
 **Likes:** 3
-**Tags:** Security, honeypot, LLM, langflow
+**Tags:** TypeScript, SDK, React, OpenAI, AIエージェント
 
 **Digest:**
-三菱電機が、LLMアプリケーション構築フレームワーク「Langflow」の脆弱性CVE-2025-3248を標的とした攻撃を観測。認証不足により任意のコード実行が可能で、CVSSv3スコア9.8の深刻な脆弱性です。攻撃者は/api/v1/validate/codeにPythonコードを送信し、/etc/passwdの内容を窃取しようとしていました。攻撃は米国とロシアからで、LLM関連ツールのセキュリティ対策の重要性を訴えています。
+OpenAI Agents SDK for TypeScriptを用いた音声エージェント開発を紹介。OpenAIのSDKでリッチなUIと低遅延音声チャットを構築、Next.jsでNext.jsのプロジェクト作成し、SDKとZodをインストール。クライアント用エフェメラルトークンを生成し、エージェントを作成、UIを実装。最終的に、サーバーサイドでトークンを自動取得するよう修正し、音声対話アプリを完成させた。
 
 ---
 
-### [Claude Codeでソースコードを全部日本語にする](https://qiita.com/mjnfhbuvwebwfiejcnw/items/b499c137504f3e9eb8d7)
-**Published:** 2025-07-30 02:02:18 UTC
-**Likes:** 1
-**Tags:** Swift, 日本語プログラミング, Claude, AIエージェント, ClaudeCode
+### [Geminiを使ってずんだもんと会話してみた](https://qiita.com/nakano0328/items/2c4542fc97417f9e015d)
+**Published:** 2025-07-30 16:34:53 UTC
+**Likes:** 2
+**Tags:** Python, AI, Gemini, VOICEVOX
 
 **Digest:**
-日本語識別子プログラミングの実践として、SwiftUIチュートリアルソースコードの英語識別子をClaude Codeで日本語化に挑戦。型名、プロパティ名、メソッド名など広範囲に日本語化し、ファイル名変更も実施。プロンプトに注意点やXcodeプロジェクトファイルへの対応を指示。ウクライナ語やアラビア語でも同様に作業が完了。ソースコードリーディング、学習コンテンツとしての活用も期待できる。
+HIBARIの中野氏が、Google AI StudioのStream機能に着目し、ずんだもんとリアルタイム会話できるシステムを開発。音声認識、Geminiによるキャラクター設定と応答生成、VOICEVOX音声合成を連携。GitHubで公開され、Python、APIキー、VOICEVOXを使い、誰でも簡単に試せる。会話終了機能も搭載。
 
 ---
 
-### [Claude Codeの頭が悪くなった？？AnthropicのDiscord日本語チャンネルで質問してみた（2025.7.30）](https://qiita.com/SFITB/items/9608d079f9aa925ca171)
-**Published:** 2025-07-29 20:49:07 UTC
+### [【4ヶ月の苦闘】Anthropic契約不要！Windows DesktopアプリでDatabricks Claude 4を使い倒す方法](https://qiita.com/ikejiri-makoto2/items/704d989a503aff95c070)
+**Published:** 2025-07-31 03:03:42 UTC
 **Likes:** 1
-**Tags:** AI, discord, Anthropic, ClaudeCode
+**Tags:** Databricks, Claude
 
 **Digest:**
-X（旧Twitter）で、AnthropicのClaude Codeの性能低下に関する意見が拡散。GitHubのissueを根拠にv1.0.24へのダウングレードが提案されました。公式Discordの日本語チャンネルで質問したところ、7/30に回答があり、問題は他国では起きていない可能性、v1.0.24への対応でも解決しないことが判明しました。Discordは開発者と意見交換できる貴重な場です。
+Anthropic契約不要でClaude 4をDatabricksで利用する方法を紹介。Windowsアプリ「Chatbox AI」を使い、月額料金を節約しつつ、企業のプロキシ環境でも動作可能。Databricks PATとChatbox AIの設定が重要で、APIホストとAPIパスの分解がポイント。4ヶ月の試行錯誤の末、WindowsデスクトップでのClaude利用を実現。Web検索も連携可能で、コード生成や長文要約にも対応。
 
 ---
 
-### [claude codeの状況を可視化するccguiをつくった](https://qiita.com/jun910/items/f50c4a24e392751457a4)
-**Published:** 2025-07-29 07:06:34 UTC
+### [金曜の夜、プロンプトで日報地獄から解放された話【実体験】生成AIで40分→5分に時短成功](https://qiita.com/k_nabe/items/43164a665a40cadfdf6f)
+**Published:** 2025-07-31 02:22:19 UTC
 **Likes:** 1
-**Tags:** npm, Claude, ClaudeCode
+**Tags:** 業務自動化, プロンプトエンジニアリング, Claude, 実装事例
 
 **Digest:**
-Claude Codeの利用を効率化するGUIツール「CCGUI」が登場。**Claude Code** のセッション履歴を可視化し、使用量分析、プロジェクト管理を可能にします。**npm** パッケージとして提供され、インストールは簡単。**CC Vibe** 機能で爆速開発もサポート。開発過程でもClaude Codeを活用し、効果的な使い方のコツも紹介。
+エンジニアが、プロンプトエンジニアリングで日報作成時間を40分から5分に短縮し、売上130%アップを達成。AIへの指示設計技術で、営業日報の質と効率を向上。**具体的なプロンプト例**を公開し、営業活動のメモをAIに渡すだけで、高品質な日報を自動生成。その結果、営業活動時間の増加と、チーム全体のレベルアップに繋がった。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Scaling generative AI in the cloud: Enterprise use cases for driving secure innovation](https://azure.microsoft.com/en-us/blog/scaling-generative-ai-in-the-cloud-enterprise-use-cases-for-driving-secure-innovation/)
-**Source:** Azure AI Blog
-**Published:** 2025-07-29 15:00:00 UTC
-**Tags:** AI + machine learning, Internet of things, AI, Generative AI
-
-**Digest:**
-クラウド移行は、ビジネスにおけるAI活用を加速させる鍵です。Azureは、柔軟性、スケーラビリティ、ツールを提供し、RAG、エンタープライズワークフローへの統合、生成検索、AIエージェントなどのユースケースで企業変革を支援します。Azure AIサービスを活用することで、安全かつ迅速なAI導入を実現し、競争力を高めることができます。
-
----
-
-### [Mistral-Small-3.2-24B-Instruct-2506 is now available on Amazon Bedrock Marketplace and Amazon SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/mistral-small-3-2-24b-instruct-2506-is-now-available-on-amazon-bedrock-marketplace-and-amazon-sagemaker-jumpstart/)
+### [Automate the creation of handout notes using Amazon Bedrock Data Automation](https://aws.amazon.com/blogs/machine-learning/automate-the-creation-of-handout-notes-using-amazon-bedrock-data-automation/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-29 23:35:20 UTC
-**Tags:** Amazon Bedrock, Amazon SageMaker JumpStart
+**Published:** 2025-07-30 16:22:27 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Data Automation, AWS Cloud Development Kit, AWS Step Functions, Education, Generative AI*, How-To, Serverless, Technical How-to
 
 **Digest:**
-Mistral AIの240億パラメータLLM、Mistral-Small-3.2-24B-Instruct-2506がAmazon SageMaker JumpStartとBedrock Marketplaceで利用可能に。命令追従性と繰り返しエラーを改善。画像・テキスト処理も可能に。SageMaker JumpStart UIやSDK、Amazon Bedrock Marketplaceから容易にデプロイでき、様々なユースケースで活用できます。
+Amazon Bedrock Data Automationを活用し、ウェビナーを自動でハンドアウト化するサーバーレスソリューションを構築。動画をS3にアップロードすると、Step Functionsで処理が開始。Bedrockでスライド遷移を検出し、音声を文字起こし・リファインし、FFmpegでスクリーンショットを生成。最終的に、Python-PPTXで内容が同期されたハンドアウトを作成しS3に保存。AWS CDKでデプロイ可能。
 
 ---
 
-### [Generate suspicious transaction report drafts for financial compliance using generative AI](https://aws.amazon.com/blogs/machine-learning/generate-suspicious-transaction-report-drafts-for-financial-compliance-using-generative-ai/)
+### [Streamline GitHub workflows with generative AI using Amazon Bedrock and MCP](https://aws.amazon.com/blogs/machine-learning/streamline-github-workflows-with-generative-ai-using-amazon-bedrock-and-mcp/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-29 18:57:44 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Agents, Artificial Intelligence, Generative AI, Technical How-to
+**Published:** 2025-07-30 16:16:30 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Artificial Intelligence, Generative AI, How-To, AI/ML
 
 **Digest:**
-金融コンプライアンスの自動化は、AWSの生成AIで実現可能。Amazon Bedrockを活用し、疑わしい取引報告書（STR）の作成を効率化します。**Amazon Bedrock Knowledge BasesとAgents**が、LLMによるSTR草案生成を支援。ウェブサイトからの情報収集や、OpenSearch Serverlessによる知識ベースの検索も可能にし、コンプライアンス報告の精度と迅速性を向上させます。
+Amazon Bedrock、LangGraph、GitHub MCP Serverを連携させ、GitHub issueの分析、修正、プルリクエスト生成を自動化するAIエージェントを紹介。MCPによるツール統合簡素化、Amazon BedrockのLLM活用が特徴。開発チームは、特定の要件に合わせてAmazon Q Developerかカスタムソリューションを選択可能。
 
 ---
 
-### [Fine-tune and deploy Meta Llama 3.2 Vision for generative AI-powered web automation using AWS DLCs, Amazon EKS, and Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/fine-tune-and-deploy-meta-llama-3-2-vision-for-generative-ai-powered-web-automation-using-aws-dlcs-amazon-eks-and-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-07-29 18:55:23 UTC
-**Tags:** Amazon Bedrock, Amazon Elastic Kubernetes Service, Artificial Intelligence, Generative AI, Intermediate (200)
+### [Introducing Security Agent in Power Pages: Your AI-Powered Security Assistant (Preview)](https://www.microsoft.com/en-us/power-platform/blog/2025/07/30/introducing-security-agent-in-power-pages-your-ai-powered-security-assistant-preview/)
+**Source:** Microsoft Power Platform Blog
+**Published:** 2025-07-30 07:26:08 UTC
 
 **Digest:**
-大規模言語モデル(LLM)のファインチューニングは、AWS Deep Learning Containers (DLC)とAmazon EKSを活用し、コストを抑えながら専門タスク向けAIを実現する重要技術。本記事では、Llama-3.2-11B-Vision-InstructモデルをEKSでファインチューニングし、Amazon Bedrockでデプロイ、Web自動化ツールSeeActとの連携を実演。FSDPによるメモリ効率化や、EFAによる高速ネットワークも利用。
+Power PagesのSecurity Agent（パブリックプレビュー）が登場。AIによる推奨、自動スキャン、リアルタイム監視でサイトのセキュリティを強化します。37の業界標準ルール（OWASPベース）による自動スキャンと、Microsoft Sentinelを活用したライブトラフィック監視で、セキュリティ問題を発見し、具体的な対策を提示。カスタマイズ可能な通知機能も搭載。セキュリティ対策を簡単に始められます。
 
 ---
 
-### [How Nippon India Mutual Fund improved the accuracy of AI assistant responses using advanced RAG methods on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/how-nippon-india-mutual-fund-improved-the-accuracy-of-ai-assistant-responses-using-advanced-rag-methods-on-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-07-29 14:57:29 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Guardrails, Amazon Bedrock Knowledge Bases, Amazon Machine Learning, Artificial Intelligence, Customer Solutions
-
-**Digest:**
-Nippon Life India Asset Managementは、Amazon Bedrock Knowledge Basesを活用し、RAG（Retrieval Augmented Generation）手法を用いて大規模文書からの情報検索精度を向上。複雑な質問を分割、検索結果を再ランキングする高度なRAG技術を採用。Amazon Textractで文書を解析し、セマンティックチャンキングやマルチクエリRAG、リランキングを組み合わせ、回答の正確性向上を目指しています。
-
----
-
-### [Cloud Shell から Azure SQL Database の名前を変更する](https://blog.jbs.co.jp/entry/2025/07/30/125001)
+### [Power Appsで入力した値を削除して繰り上げる方法](https://blog.jbs.co.jp/entry/2025/07/31/141056)
 **Source:** JBS Blog
-**Published:** 2025-07-30 03:50:01 UTC
-**Tags:** Azure, Azure SQLDB, Azure SQL Database
+**Published:** 2025-07-31 05:10:56 UTC
+**Tags:** Power Apps, Power Platform, Microsoft 365
 
 **Digest:**
-Azure SQL Databaseのポイントインタイムリストアでは、リストア後のデータベース名を変更する必要があります。SSMS、SQLクエリ、AzureポータルのCloud Shellを利用した3つの方法を紹介。名前変更手順を理解し、スムーズなリストア作業を行いましょう。
+複数の入力欄で、入力値の削除と次の欄への繰り上げを同時に行う方法を紹介します。これにより、入力効率が向上します。具体的な手順や実装方法は、この記事で詳しく解説しています。
 
 ---
 
-### [【Microsoft×生成AI連載】Microsoft 365 Copilot の生成機能 – インフォグラフィック生成とドキュメントの下書き生成の活用例](https://blog.jbs.co.jp/entry/2025/07/30/090959)
+### [【AWS】AWS Configでリソースタグのチェックをする-ルール設定編-](https://blog.jbs.co.jp/entry/2025/07/31/105550)
 **Source:** JBS Blog
-**Published:** 2025-07-30 00:09:59 UTC
-**Tags:** Microsoft×生成AI連載, 生成AI, Copilot, Copilot for Microsoft 365, Microsoft 365 Copilot
+**Published:** 2025-07-31 01:55:50 UTC
+**Tags:** AWS, AWS Config
 
 **Digest:**
-Microsoft 365 Copilot の生成機能、インフォグラフィック作成とドキュメント下書きに焦点を当てた記事。利用シーン、メリット、注意点も解説。本連載では、Copilot を活用した様々な生成機能をシリーズで紹介しており、過去記事へのリンクも掲載。
+前回、AWS Configを有効化しました。今回は、リソースタグのチェックを行うマネージドルールの設定方法を解説します。AWS Configを利用し、**リソースタグ**の**コンプライアンス**を**自動化**し、**モニタリング**することで、インフラ管理を効率化します。
 
 ---
