@@ -1,107 +1,128 @@
-# AI Tech Trends Digest (2025-07-31)
+# AI Tech Trends Digest (2025-08-01)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [【テンプレ配布】Kiroの仕様駆動開発をClaude Codeで再現する方法！ドキュメント3点セットで実現](https://qiita.com/tomada/items/a67aa0739b95273bf487)
-**Published:** 2025-07-30 17:10:00 UTC
-**Likes:** 4
-**Tags:** 生成AI, Claude, AIエージェント, ClaudeCode, Kiro
+### [Bedrock AgentCore Runtime で Remote MCP サーバー (OpenAI o3 Web search) をデプロイし，Strands Agents から利用する](https://qiita.com/ren8k/items/1ef730d343c870b71e50)
+**Published:** 2025-07-31 23:47:24 UTC
+**Likes:** 8
+**Tags:** AWS, MCP, Agent, OpenAI, bedrock
 
 **Digest:**
-AI開発ツールClaude Codeでの仕様駆動開発を紹介。AWS Kiroの「仕様駆動開発」に着想を得て、Claude Codeで要件定義、設計、タスク管理を自動生成するテンプレートを開発。`/kiro`コマンドで仕様書を生成し、**開発効率を向上**。**GitHubテンプレート**公開。これにより、**一貫性のあるコード生成**、**ブレない方向性**、**段階的な機能実装**が可能に。Todoアプリ作成例も示し、開発手法としての重要性を強調。
+NTTデータが、Amazon Bedrock AgentCoreのRemote MCPサーバーをデプロイし、Strands Agentsから利用する検証を実施。OpenAI o3とWeb検索ツールを用いたMCPサーバーを実装し、CognitoでOAuth認証を設定。実装はGitHubで公開。Python SDKの課題に対処するため、PydanticのFieldで引数説明を付与。ローカル確認後、AgentCore Runtimeにデプロイし動作検証。
 
 ---
 
-### [OpenAI  Agents SDK for TypeScriptを使った音声エージェント開発](https://qiita.com/toshikifu/items/6692cfc53e79eb7331e5)
-**Published:** 2025-07-30 06:34:54 UTC
-**Likes:** 3
-**Tags:** TypeScript, SDK, React, OpenAI, AIエージェント
+### [【完全保存版】SuperClaudeコマンドチート集 - ゼロから始めるつよつよAI開発エージェント環境構築](https://qiita.com/akira_papa_AI/items/b350c2a6911408b45e59)
+**Published:** 2025-07-31 18:05:25 UTC
+**Likes:** 5
+**Tags:** Claude, AI駆動開発, AIエージェント, ClaudeCode, SuperClaude
 
 **Digest:**
-OpenAI Agents SDK for TypeScriptを用いた音声エージェント開発を紹介。OpenAIのSDKでリッチなUIと低遅延音声チャットを構築、Next.jsでNext.jsのプロジェクト作成し、SDKとZodをインストール。クライアント用エフェメラルトークンを生成し、エージェントを作成、UIを実装。最終的に、サーバーサイドでトークンを自動取得するよう修正し、音声対話アプリを完成させた。
+SuperClaudeの使い方解説記事のダイジェスト。Python環境構築から始め、SuperClaudeのインストール、基本コマンド、実践的な活用法、トラブルシューティングまで網羅。コード生成、バグ修正、設計書作成など、開発効率を劇的に向上させるAI拡張ツール。pipやuvでのインストール方法、Wave Modeやトークン節約術などの上級テクニックも紹介。
 
 ---
 
-### [Geminiを使ってずんだもんと会話してみた](https://qiita.com/nakano0328/items/2c4542fc97417f9e015d)
-**Published:** 2025-07-30 16:34:53 UTC
+### [第2回：社内業務にLLMを導入するための準備と設計](https://qiita.com/Akkami/items/95af49acb27c5f461806)
+**Published:** 2025-08-01 00:46:21 UTC
 **Likes:** 2
-**Tags:** Python, AI, Gemini, VOICEVOX
+**Tags:** 生成AI, ChatGPT, LLM, プロンプト設計
 
 **Digest:**
-HIBARIの中野氏が、Google AI StudioのStream機能に着目し、ずんだもんとリアルタイム会話できるシステムを開発。音声認識、Geminiによるキャラクター設定と応答生成、VOICEVOX音声合成を連携。GitHubで公開され、Python、APIキー、VOICEVOXを使い、誰でも簡単に試せる。会話終了機能も搭載。
+社内LLM導入の準備と設計について解説。PoC成功には、プロンプト設計、データ管理、セキュリティが重要です。対象業務とKPI、ユーザーと用途を明確化し、**プロンプト設計**では「人が使う言葉遣い」を意識。**セキュリティ**面では機密情報漏洩に注意し、ログ管理も必要です。**RAG**構成（検索拡張生成）で「社内版ChatGPT」を実現。**導入形態**は、使いやすいUI（チャットボットなど）がポイント。
 
 ---
 
-### [【4ヶ月の苦闘】Anthropic契約不要！Windows DesktopアプリでDatabricks Claude 4を使い倒す方法](https://qiita.com/ikejiri-makoto2/items/704d989a503aff95c070)
-**Published:** 2025-07-31 03:03:42 UTC
-**Likes:** 1
-**Tags:** Databricks, Claude
+### [Claude Code 5分でわかる便利コマンドまとめ🚀 ](https://qiita.com/hiro_program17/items/4036f3d69173d1a5674d)
+**Published:** 2025-07-31 11:03:44 UTC
+**Likes:** 2
+**Tags:** 備忘録, AI, エンジニア, Claude, ClaudeCode
 
 **Digest:**
-Anthropic契約不要でClaude 4をDatabricksで利用する方法を紹介。Windowsアプリ「Chatbox AI」を使い、月額料金を節約しつつ、企業のプロキシ環境でも動作可能。Databricks PATとChatbox AIの設定が重要で、APIホストとAPIパスの分解がポイント。4ヶ月の試行錯誤の末、WindowsデスクトップでのClaude利用を実現。Web検索も連携可能で、コード生成や長文要約にも対応。
+AIコーディングアシスタント、Claude Codeの便利なコマンドを解説。`/init`でプロジェクト初期化、`/clear`で会話リセット、`/help`でコマンド一覧表示。 `/model`でAIモデル切替、`/review`でコードレビューも可能。ファイル参照やショートカットも充実。新機能開発、バグ修正、リファクタリングなど実践的なワークフロー例も紹介。開発効率向上、バグ早期発見に役立ちます。
 
 ---
 
-### [金曜の夜、プロンプトで日報地獄から解放された話【実体験】生成AIで40分→5分に時短成功](https://qiita.com/k_nabe/items/43164a665a40cadfdf6f)
-**Published:** 2025-07-31 02:22:19 UTC
+### [【Claude開発】小泉構文メーカーを作って2ヶ月で1.3万回使われた話【Gemini API × JavaScript】](https://qiita.com/5naokichi/items/739e3a1adce94e5bde49)
+**Published:** 2025-07-31 06:54:44 UTC
 **Likes:** 1
-**Tags:** 業務自動化, プロンプトエンジニアリング, Claude, 実装事例
+**Tags:** JavaScript, WordPress, Gemini, Claude, GeminiAPI
 
 **Digest:**
-エンジニアが、プロンプトエンジニアリングで日報作成時間を40分から5分に短縮し、売上130%アップを達成。AIへの指示設計技術で、営業日報の質と効率を向上。**具体的なプロンプト例**を公開し、営業活動のメモをAIに渡すだけで、高品質な日報を自動生成。その結果、営業活動時間の増加と、チーム全体のレベルアップに繋がった。
+ホネグミ代表が、Google Gemini APIとWordPressを使い「小泉構文」生成Webアプリを個人開発。2ヶ月で13,000回利用され、Gemini APIのフォールバック、WordPress Ajax実装、UI/UX最適化が成功要因。API制限への対応、エラーハンドリング、話題性もポイント。今後は機能追加、レスポンス速度向上を目指す。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Automate the creation of handout notes using Amazon Bedrock Data Automation](https://aws.amazon.com/blogs/machine-learning/automate-the-creation-of-handout-notes-using-amazon-bedrock-data-automation/)
+### [Introducing AWS Batch Support for Amazon SageMaker Training jobs](https://aws.amazon.com/blogs/machine-learning/introducing-aws-batch-support-for-amazon-sagemaker-training-jobs/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-30 16:22:27 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Data Automation, AWS Cloud Development Kit, AWS Step Functions, Education, Generative AI*, How-To, Serverless, Technical How-to
+**Published:** 2025-07-31 17:44:31 UTC
+**Tags:** Amazon SageMaker, Amazon SageMaker AI, Announcements, AWS Batch
 
 **Digest:**
-Amazon Bedrock Data Automationを活用し、ウェビナーを自動でハンドアウト化するサーバーレスソリューションを構築。動画をS3にアップロードすると、Step Functionsで処理が開始。Bedrockでスライド遷移を検出し、音声を文字起こし・リファインし、FFmpegでスクリーンショットを生成。最終的に、Python-PPTXで内容が同期されたハンドアウトを作成しS3に保存。AWS CDKでデプロイ可能。
+AWS BatchとSageMaker Training Jobsが統合され、MLチームはGPU待ち時間を短縮し、インフラ管理から解放されます。AWS Batchは自動リトライやジョブスケジューリングを提供し、リソースを効率利用。Python SDKでジョブの投入やステータス監視が可能になり、Toyota Research Instituteのような企業で効果を発揮。FIFOキュー、サービス環境を活用し、SageMaker Flexible Training Planとも連携できます。
 
 ---
 
-### [Streamline GitHub workflows with generative AI using Amazon Bedrock and MCP](https://aws.amazon.com/blogs/machine-learning/streamline-github-workflows-with-generative-ai-using-amazon-bedrock-and-mcp/)
+### [Structured outputs with Amazon Nova: A guide for builders](https://aws.amazon.com/blogs/machine-learning/structured-outputs-with-amazon-nova-a-guide-for-builders/)
 **Source:** AWS ML Blog
-**Published:** 2025-07-30 16:16:30 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Artificial Intelligence, Generative AI, How-To, AI/ML
+**Published:** 2025-07-31 16:44:42 UTC
+**Tags:** Amazon Bedrock, Amazon Nova, Artificial Intelligence, Best Practices, Technical How-to, AI/ML, Generative AI
 
 **Digest:**
-Amazon Bedrock、LangGraph、GitHub MCP Serverを連携させ、GitHub issueの分析、修正、プルリクエスト生成を自動化するAIエージェントを紹介。MCPによるツール統合簡素化、Amazon BedrockのLLM活用が特徴。開発チームは、特定の要件に合わせてAmazon Q Developerかカスタムソリューションを選択可能。
+AIアプリケーション開発における構造化データ生成の課題に対し、Amazon Novaモデルは**constrained decoding**により解決。ツール利用時のエラーを95%以上削減。**ツール設定**で出力スキーマを定義し、**Converse API**を通じてレシピ抽出等のユースケースに対応。モデル出力の正確性向上と、複雑なスキーマへの対応を実現しています。
 
 ---
 
-### [Introducing Security Agent in Power Pages: Your AI-Powered Security Assistant (Preview)](https://www.microsoft.com/en-us/power-platform/blog/2025/07/30/introducing-security-agent-in-power-pages-your-ai-powered-security-assistant-preview/)
-**Source:** Microsoft Power Platform Blog
-**Published:** 2025-07-30 07:26:08 UTC
+### [AI agents unifying structured and unstructured data: Transforming support analytics and beyond with Amazon Q Plugins](https://aws.amazon.com/blogs/machine-learning/ai-agents-unifying-structured-and-unstructured-data-transforming-support-analytics-and-beyond-with-amazon-q-plugins/)
+**Source:** AWS ML Blog
+**Published:** 2025-07-31 16:28:37 UTC
+**Tags:** Amazon Q, Amazon Q Business, Intermediate (200), Generative AI
 
 **Digest:**
-Power PagesのSecurity Agent（パブリックプレビュー）が登場。AIによる推奨、自動スキャン、リアルタイム監視でサイトのセキュリティを強化します。37の業界標準ルール（OWASPベース）による自動スキャンと、Microsoft Sentinelを活用したライブトラフィック監視で、セキュリティ問題を発見し、具体的な対策を提示。カスタマイズ可能な通知機能も搭載。セキュリティ対策を簡単に始められます。
+AWSのサポートデータから価値を引き出すため、RAGと構造化データクエリを組み合わせたAmazon Q Businessの拡張手法を紹介。従来のRAGは数値分析に課題があったが、カスタムプラグインで自然言語をSQLに変換しAthenaで実行することで精度が向上。これにより、AWS Supportに関する分析クエリへの正確な回答と、詳細なインサイト提供が可能になった。
 
 ---
 
-### [Power Appsで入力した値を削除して繰り上げる方法](https://blog.jbs.co.jp/entry/2025/07/31/141056)
+### [Amazon Strands Agents SDK: A technical deep dive into agent architectures and observability](https://aws.amazon.com/blogs/machine-learning/amazon-strands-agents-sdk-a-technical-deep-dive-into-agent-architectures-and-observability/)
+**Source:** AWS ML Blog
+**Published:** 2025-07-31 16:22:07 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Machine Learning, Artificial Intelligence, Generative AI, Open Source
+
+**Digest:**
+AmazonのStrands Agents SDKは、LLMを活用したAIエージェント構築のオープンソースフレームワークです。モデル駆動型で、プロンプトとツールでエージェントを作成し、LLMが自律的に計画とツール利用を決定します。AWS環境との統合、スケーラビリティ、監視機能が特徴で、シングルエージェントから、協調する複数エージェントのネットワーク（スウォーム、ピアツーピア）や、専門家エージェントを呼び出すスーパーバイザー型モデルまで対応しています。
+
+---
+
+### [Build dynamic web research agents with the Strands Agents SDK and Tavily](https://aws.amazon.com/blogs/machine-learning/build-dynamic-web-research-agents-with-the-strands-agents-sdk-and-tavily/)
+**Source:** AWS ML Blog
+**Published:** 2025-07-31 14:35:10 UTC
+**Tags:** Amazon Bedrock, Artificial Intelligence, Generative AI, Generative AI*, Partner solutions
+
+**Digest:**
+Tavily が AWS Marketplace に登場し、Amazon Bedrock AgentCore Gateway と統合。Strands Agents SDK と組み合わせることで、開発者はリアルタイムの Web 情報に基づく安全な AI エージェントを構築可能に。Tavily は、高速で安全な Web インテリジェンスを提供し、研究や情報収集を支援。AWS は、そのエンタープライズ対応とシームレスな統合を評価している。
+
+---
+
+### [【Microsoft Entra 管理センター】クラウドユーザーを対象にした動的グループのルール設定](https://blog.jbs.co.jp/entry/2025/08/01/120501)
 **Source:** JBS Blog
-**Published:** 2025-07-31 05:10:56 UTC
-**Tags:** Power Apps, Power Platform, Microsoft 365
+**Published:** 2025-08-01 03:05:01 UTC
+**Tags:** MicrosoftEntraID
 
 **Digest:**
-複数の入力欄で、入力値の削除と次の欄への繰り上げを同時に行う方法を紹介します。これにより、入力効率が向上します。具体的な手順や実装方法は、この記事で詳しく解説しています。
+Microsoft Entra IDで、オンプレミスとクラウドユーザー混在環境におけるクラウドユーザー限定の動的グループ作成方法を紹介。重要なのは「onPremisesDistinguishedName」属性で、これが空の場合、クラウドユーザーと判断できます。記事では、ルール設定、グループ検証、そして「onPremisesDistinguishedName」属性の詳細について解説しています。
 
 ---
 
-### [【AWS】AWS Configでリソースタグのチェックをする-ルール設定編-](https://blog.jbs.co.jp/entry/2025/07/31/105550)
+### [【Microsoft×生成AI連載】【Agents】Microsoft Copilot Studioで検索対象を自動で変更する実装をしてみた](https://blog.jbs.co.jp/entry/2025/08/01/085321)
 **Source:** JBS Blog
-**Published:** 2025-07-31 01:55:50 UTC
-**Tags:** AWS, AWS Config
+**Published:** 2025-07-31 23:53:21 UTC
+**Tags:** Copilot, Microsoft 365 Copilot, Microsoft Copilot, Microsoft×生成AI連載, 生成AI
 
 **Digest:**
-前回、AWS Configを有効化しました。今回は、リソースタグのチェックを行うマネージドルールの設定方法を解説します。AWS Configを利用し、**リソースタグ**の**コンプライアンス**を**自動化**し、**モニタリング**することで、インフラ管理を効率化します。
+Microsoft Copilot Studioで、SharePoint Onlineをデータソースとして、特定のフォルダのみを検索するエージェントを実装する方法を紹介。SharePointサイト内のフォルダ構成を前提とし、検索範囲を絞り込むことで、より効率的な情報取得を実現します。記事の情報は2025年7月23日時点のものです。
 
 ---
