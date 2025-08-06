@@ -1,157 +1,128 @@
-# AI Tech Trends Digest (2025-08-05)
+# AI Tech Trends Digest (2025-08-06)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [「Claude × Draw.io × スイムレーン」で業務フロー図のたたきを瞬時に作るプロンプト](https://qiita.com/WdknWdkn/items/de2aeced1faf948ac125)
-**Published:** 2025-08-04 09:33:22 UTC
-**Likes:** 20
-**Tags:** プロジェクト管理, プロンプト, Draw.io, 生成AI, Claude
+### [gpt-ossがAWSに来てる！](https://qiita.com/moritalous/items/09495649c2ad7151a2fc)
+**Published:** 2025-08-05 21:40:56 UTC
+**Likes:** 14
+**Tags:** AWS, OpenAI, SageMaker, bedrock, gpt-oss
 
 **Digest:**
-Cursor→Claudeを使った開発PMが、プロンプトでワークフロー図作成の課題解決に挑戦。ヒアリング漏れ防止のため、質問をプロンプト化し、ChatGPTに肩代わりさせます。分析アシスタントと図作成プロンプトを提供。**draw.io形式**で、スイムレーンやレイアウトの設計原則を指示し、若手でも使いやすい図を生成。**実践Tips**でよくある詰みを回避し、最初の30分をChatGPTに丸投げしてレビューする運用を推奨しています。
+SageMaker JumpStart に OpenAI のモデルが登場！gpt-oss-20bとgpt-oss-120bが利用可能に。Deployボタンからデプロイを試みるも、ml.p5.48xlargeなどの高価なP5インスタンスが必要で、クォーター制限により起動できず。Jupyter環境でのノートブック実行も、SageMakerライブラリーのバージョン問題でエラーとなり、今後の動作報告に期待。
 
 ---
 
-### [ClaudeCodeでSerenaMCP導入時にTerraformファイルがあるとエラーになる事がある](https://qiita.com/sodafloatlab/items/79958a7a492ba4e05188)
-**Published:** 2025-08-04 17:06:42 UTC
+### [Claude Code暴走対策 | gomiコマンドでrmの事故を防ぐ](https://qiita.com/Enokisan/items/0d498fa6943f3c463675)
+**Published:** 2025-08-05 11:43:20 UTC
+**Likes:** 5
+**Tags:** Claude, ClaudeCode
+
+**Digest:**
+AI開発ツールClaude Code使用時、`rm`コマンド誤実行によるファイル削除リスクを軽減するため、`gomi`コマンドを紹介。`rm`の代替として機能し、ゴミ箱への移動で復元可能。Homebrewで簡単にインストールし、シェル設定で`rm`を`gomi`にエイリアス設定することで既存ワークフローを変えずに安全性を向上。TUIでファイルの閲覧・復元も容易で、安全なターミナル操作を実現します。
+
+---
+
+### [OpenAIのオープンモデルgpt-ossがDatabricksで利用可能に](https://qiita.com/taka_yayoi/items/f2aec363e1840e0cb743)
+**Published:** 2025-08-05 21:43:41 UTC
 **Likes:** 2
-**Tags:** Terraform, Serena, MCP, Claude, ClaudeCode
+**Tags:** OpenAI, Databricks, gpt-oss
 
 **Digest:**
-ClaudeCodeでSerenaMCPサーバ導入時にTerraformエラーが発生。原因は、2025/8/5時点でSerenaMCPがTerraform未対応であること。解決策は、「~/.serena/project.yml」のlanguageをpythonに、ignored_pathsにTerraform管理パスを追加すること。これにより、SerenaMCPサーバの初期化に成功しました。
+OpenAIの新たなオープンモデル、GPT OSSモデルがDatabricksのMosaic AIモデルサービングで利用可能になりました。GPT OSS 20Bと120Bの2種類があり、トークン従量課金APIでアクセスできます。東京リージョンでも利用でき、Playgroundでの使用も可能です。Provisioned ThroughputとAI Functionsのサポートは今後段階的に提供される予定です。
 
 ---
 
-### [Claude活用術：量子物理学ゲーム「フォトン・ハーモニー」を3分で実装する方法](https://qiita.com/daisuke-team-ai/items/fc142e82bd4a3834ffa5)
-**Published:** 2025-08-05 00:17:53 UTC
-**Likes:** 1
-**Tags:** JavaScript, AI, プロンプトエンジニアリング, Claude, VibeCoding
+### [🚀 AI大手2社が同日発表！Claude Opus 4.1とOpenAI GPT-OSSが切り開く新時代](https://qiita.com/Ameyanagi/items/dab8c6fdb0fc8ab83dea)
+**Published:** 2025-08-05 21:43:24 UTC
+**Likes:** 2
+**Tags:** AI, オープンソース, OpenAI, LLM, Claude
 
 **Digest:**
-Claude Sonnet 4を用いて、Web Audio APIや物理演算を活用した教育ゲーム「フォトン・ハーモニー」を3分で実装。波長と音階のマップ、動的色変換、物理シミュレーション機能を搭載。AIへの段階的指示と物理的正確性の重視、ユーザビリティへの配慮が成功の鍵。VR/AR、機械学習、マルチプレイヤー対応など、今後の展開も期待されます。
+2025年8月5日、Anthropicの**Claude Opus 4.1**とOpenAIの**GPT-OSS**シリーズが発表。Claude Opus 4.1はエージェントタスクやコーディング能力が向上。GPT-OSSはApache 2.0ライセンスのオープンソースモデルで、**120B**と**20B**モデルを展開、透明性と**Mixture-of-Experts**などの技術が特徴。開発者にとって選択肢拡大、AI民主化、競争促進に繋がる。
 
 ---
 
-### [ChatGPT/Claude活用術：Conway's Game of Life の人工生命を3分で実装する方法](https://qiita.com/daisuke-team-ai/items/dd3eb40479cf1a04e5a3)
-**Published:** 2025-08-05 00:10:33 UTC
-**Likes:** 1
-**Tags:** JavaScript, AI, プロンプトエンジニアリング, Claude, VibeCoding
+### [LLM活用プロンプトエンジニアリング | ベストプラクティス集](https://qiita.com/nolanlover0527/items/f91e47bc8ad576788bc9)
+**Published:** 2025-08-05 06:41:35 UTC
+**Likes:** 2
+**Tags:** AI, ベストプラクティス, LLM, プロンプトエンジニアリング, AI活用
 
 **Digest:**
-AIを活用した**Vibe Coding**で、**3分**でConway's Game of Lifeを実装！  JavaScriptとAIの協働で、**インタラクティブなキャンバス**、再生/一時停止、プリセット、統計表示などを実現。効果的なプロンプト設計、UI改善、機能拡張の手法を公開。生命シミュレーションの基本概念と**AI活用開発**を学べます。
-
----
-
-### [Google AI Studio (Gemini) API と LangChain で、RAG を実装してみた](https://qiita.com/nakano0328/items/916a4284f264b848c947)
-**Published:** 2025-08-04 23:37:36 UTC
-**Likes:** 1
-**Tags:** AI, Gemini, rag, LLM
-
-**Digest:**
-株式会社HIBARIの中野氏が、Google AI StudioのGemini APIとLangChainを活用したRAGシステムを開発。`data`ディレクトリのテキストファイルをナレッジベースとし、質問に回答します。`build_vectordb.py`でベクトルデータベースを構築、`chat.py`で質問応答。APIキー設定、依存関係インストール後、`build_vectordb.py`でデータベースを構築し、`chat.py`でチャットを開始できます。
+2025年8月時点のLLM活用では、プロンプトエンジニアリングが不可欠。明確・具体的に記述し、コンテキストや役割、出力形式を指定するのが基本。思考の連鎖や思考の木、Few-shotといった最新テクニックも有効。モデル特性に合わせ、セキュリティ対策やプロンプト評価、テンプレート管理、バイアス検証も重要。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Cost tracking multi-tenant model inference on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/cost-tracking-multi-tenant-model-inference-on-amazon-bedrock/)
+### [OpenAI’s open‑source model: gpt‑oss on Azure AI Foundry and Windows AI Foundry](https://azure.microsoft.com/en-us/blog/openais-open%e2%80%91source-model-gpt%e2%80%91oss-on-azure-ai-foundry-and-windows-ai-foundry/)
+**Source:** Azure AI Blog
+**Published:** 2025-08-05 17:00:00 UTC
+**Tags:** AI + machine learning, AI
+
+**Digest:**
+マイクロソフトは、AIを基盤とするプラットフォームを構築。Azure AI Foundryでgpt-ossモデル（gpt-oss-120b、gpt-oss-20b）の利用が可能になり、開発者はクラウドとエッジでAIを自在に活用できます。Windows AI FoundryやFoundry Localにより、Windows環境でのローカルAI開発も実現。オープンモデルにより、カスタマイズや柔軟な展開が可能となり、AI開発の可能性を広げます。
+
+---
+
+### [Build an AI assistant using Amazon Q Business with Amazon S3 clickable URLs](https://aws.amazon.com/blogs/machine-learning/build-an-ai-assistant-using-amazon-q-business-with-amazon-s3-clickable-urls/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-05 01:17:30 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon QuickSight, Cloud Cost Optimization
+**Published:** 2025-08-06 01:16:43 UTC
+**Tags:** Amazon Q Business, Amazon Simple Storage Service (S3)
 
 **Digest:**
-Amazon BedrockのConverse APIで、テナント別のモデル利用状況を分析する方法を紹介。`requestMetadata`パラメータでテナントIDなどを付与し、AWS GlueとQuickSightで可視化。これにより、コスト追跡、利用パターン分析、テナントごとの最適化が可能に。Application Inference Profilesと組み合わせて、より詳細なコスト管理も実現します。
+Amazon Q Businessで、S3に保存された企業ドキュメントを参照できるAIアシスタントを構築する方法を紹介。AIが生成した回答の出典URLをクリックすることで、安全にドキュメントにアクセスし、検証できます。S3のドキュメントは、Amazon Q Businessが認証されたユーザーにのみアクセスを許可。この機能を利用するには、IAM Identity CenterまたはIAMフェデレーションでのユーザーアクセス管理が必要です。
 
 ---
 
-### [AI judging AI: Scaling unstructured text analysis with Amazon Nova](https://aws.amazon.com/blogs/machine-learning/ai-judging-ai-scaling-unstructured-text-analysis-with-amazon-nova/)
+### [GPT OSS models from OpenAI are now available on SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/gpt-oss-models-from-openai-are-now-available-on-sagemaker-jumpstart/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-04 17:51:08 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, Artificial Intelligence, Technical How-to
+**Published:** 2025-08-05 23:16:48 UTC
+**Tags:** Amazon SageMaker, Amazon SageMaker JumpStart, Announcements, Artificial Intelligence
 
 **Digest:**
-Amazon Bedrockを活用したLLM（大規模言語モデル） Jury Systemを紹介。顧客フィードバック分析を例に、複数LLMを「審査員」として活用し、テーマ別要約の質を評価します。Anthropic Claude 3 SonnetやAmazon Nova ProなどのモデルをAmazon SageMakerで展開。評価指標には、合意率、Cohen's kappa、Spearman's rho、Krippendorff's alphaを使用。効率的なデータ分析と、人手を介した監督の重要性を強調しています。
+Amazon SageMaker JumpStartでOpenAIのGPT OSSモデル`gpt-oss-120b`と`gpt-oss-20b`が利用可能に。コーディング、科学分析、数学的推論に優れ、最大128Kのコンテキストウィンドウと調整可能な推論レベルが特徴。EXAによるウェブ検索、SageMaker Python SDK、SageMaker Studio UIからのデプロイが可能で、エンタープライズグレードのセキュリティとスケーラビリティを提供します。
 
 ---
 
-### [Building an AI-driven course content generation system using Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/building-an-ai-driven-course-content-generation-system-using-amazon-bedrock/)
+### [Discover insights from Microsoft Exchange with the Microsoft Exchange connector for Amazon Q Business](https://aws.amazon.com/blogs/machine-learning/discover-insights-from-microsoft-exchange-with-the-microsoft-exchange-connector-for-amazon-q-business/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-04 17:46:30 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Machine Learning, Education, Generative AI, Higher education, Public Sector, Technical How-to
+**Published:** 2025-08-05 17:01:57 UTC
+**Tags:** Amazon Q Business, Generative AI, Intermediate (200), Technical How-to
 
 **Digest:**
-教育現場の課題解決のため、AWS上でAnthropicのClaude 3.5を利用し、AIが講義資料を生成するシステムを構築。**コースアウトライン**と**コンテンツ生成**の2つのコアモジュールを**WebSocket API**で連携。**Amazon Cognito**による認証、**AWS WAF**と**CloudFront**によるセキュリティとパフォーマンス向上も実現。AWS CDKでインフラをコード化。
+Amazon Q Businessは、企業がデータや知識を活用できるよう支援するAIアシスタントです。Microsoft Exchangeコネクタを使用し、メールやカレンダー情報を統合。**Microsoft** **Exchange**データを一元的に検索・アクセス可能にし、自然言語での検索や要約生成を実現。**Amazon Q** Business内で、業務効率化と意思決定を支援します。
 
 ---
 
-### [How Handmade.com modernizes product image and description handling with Amazon Bedrock and Amazon OpenSearch Service](https://aws.amazon.com/blogs/machine-learning/how-handmade-com-modernizes-product-image-and-description-handling-with-amazon-bedrock-and-amazon-opensearch-service/)
-**Source:** AWS ML Blog
-**Published:** 2025-08-04 17:21:16 UTC
-**Tags:** Amazon Bedrock, Amazon OpenSearch Service, Customer Solutions
+### [OpenAI open weight models now available on AWS](https://aws.amazon.com/blogs/aws/openai-open-weight-models-now-available-on-aws/)
+**Source:** AWS News Blog
+**Published:** 2025-08-06 05:56:44 UTC
+**Tags:** Amazon Bedrock, Amazon Machine Learning, Amazon SageMaker, Amazon SageMaker JumpStart, Announcements, Artificial Intelligence, Launch, News, Open Source
 
 **Digest:**
-Handmade.comは、手作り品マーケットプレイスで、商品詳細の自動化を目指し、AIとベクトル検索を導入。AnthropicのClaude 3.7 Sonnetで初期説明を生成、Amazon OpenSearch Serviceでベクトル検索を実施。RAGでSEO最適化された説明を生成し、多言語対応も視野に。これにより、出品者向けコンテンツ作成を効率化し、顧客体験向上を目指しています。
+AWSがOpenAIのオープンウェイトモデル**gpt-oss-120b**と**gpt-oss-20b**を**Amazon Bedrock**と**SageMaker JumpStart**で提供開始。テキスト生成や推論に特化し、128Kコンテキストウィンドウ、調整可能な推論レベルをサポート。**Bedrock**ではOpenAI互換エンドポイントで利用でき、**SageMaker JumpStart**ではモデルの評価、カスタマイズ、本番環境へのデプロイが可能。コード、分析、数理能力に優れ、AWSでAI開発の自由度を向上させます。
 
 ---
 
-### [How we’re using AI to help track and predict cyclones](https://blog.google/technology/google-deepmind/weather-lab-ai-cyclone-prediction-tracking/)
-**Source:** Google DeepMind
-**Published:** 2025-08-04 19:00:00 UTC
-**Tags:** Research, Google DeepMind, AI
-
-**Digest:**
-今シーズン、我々はハリケーンの予測と警報を支援するため、国立ハリケーンセンターと提携します。このパートナーシップにより、より正確なハリケーン情報が提供され、災害への備えが強化されることが期待されます。
-
----
-
-### [Rethinking how we measure AI intelligence](https://blog.google/technology/ai/kaggle-game-arena/)
-**Source:** Google DeepMind
-**Published:** 2025-08-04 16:00:00 UTC
-**Tags:** Google DeepMind, AI
-
-**Digest:**
-Kaggleが、AIモデルが戦略ゲームで直接対決する新プラットフォーム「Kaggle Game Arena」を公開。複雑なゲーム環境で、AI同士が競い合い、その能力を試す場を提供します。これにより、AI技術の進化を促進し、新たな可能性を引き出すことが期待されます。
-
----
-
-### [What’s new in Copilot Studio: July 2025](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/whats-new-in-copilot-studio-july-2025/)
-**Source:** Microsoft 365 Blog
-**Published:** 2025-08-04 15:05:00 UTC
-
-**Digest:**
-2025年7月のMicrosoft Copilot Studio新機能に関する月例まとめ記事をお届けします。詳細はMicrosoft 365 Blog内の「Copilot Studio新機能：2025年7月」で公開されており、今回のアップデート内容が詳しく解説されています。
-
----
-
-### [Surface セルフサービスポータルに関する情報まとめ](https://blogs.windows.com/japan/2025/08/04/summary-of-information-about-the-surface-self-service-portal/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-08-04 07:56:41 UTC
-**Tags:** Surface
-
-**Digest:**
-法人・教育機関向けSurfaceサポートは、Services Hub経由での提供が8月31日で終了。最新サポートはSurfaceサポートポータルとSurface管理ポータルに移行し、既に利用可能です。移行のため、紹介動画や移行マニュアル一式を参考に、早めの切り替えを検討しましょう。詳細はWindows Blog for Japanで公開されています。
-
----
-
-### [【OpManager使ってみた】第5回 OpManagerでのイベントログ・サービス監視](https://blog.jbs.co.jp/entry/2025/08/05/110845)
+### [Teams Phoneで代理人を設定する](https://blog.jbs.co.jp/entry/2025/08/06/110206)
 **Source:** JBS Blog
-**Published:** 2025-08-05 02:08:45 UTC
-**Tags:** Tech, OpManager, 監視, Windows
+**Published:** 2025-08-06 02:02:06 UTC
+**Tags:** Teams Phone
 
 **Digest:**
-OpManagerのイベントログとサービス監視を紹介。第5回では、イベントログ監視でWindowsのログを監視し、サービス監視でサービスの稼働状況を確認します。前回のリソース監視設定完了後、これらの設定手順を解説。設定方法と動作確認を行い、OpManagerでのシステム管理をより効率的にします。
+Teams Phoneの代理人機能は、他のユーザーに通話の受発信を代行させることが可能です。Teams内で代理人を設定すると、指定されたユーザーは自分の代わりに電話に出たり、発信したりできるようになります。設定方法について解説します。
 
 ---
 
-### [Teams Phone通話キューの新機能「コールバック」を使ってみる](https://blog.jbs.co.jp/entry/2025/08/05/090812)
+### [【Microsoft×生成AI連載】【PowerPoint】Copilot in PowerPointの新機能を紹介](https://blog.jbs.co.jp/entry/2025/08/06/085241)
 **Source:** JBS Blog
-**Published:** 2025-08-05 00:08:12 UTC
-**Tags:** Teams Phone, Microsoft Teams
+**Published:** 2025-08-05 23:52:41 UTC
+**Tags:** Copilot, Microsoft Copilot, 生成AI, Microsoft×生成AI連載, PowerPoint
 
 **Digest:**
-Teams Phoneの通話キューに「コールバック」機能が追加されました。今回はその設定と動作を検証。これにより、通話キューで応答できなかった場合に、相手にコールバックを促すことが可能になります。通話体験の向上に繋がる新機能、ぜひ活用したいですね。
+Microsoft PowerPointのCopilotに、新たな機能が追加されました。本記事では、その新機能の中からいくつかを紹介します。PowerPointのCopilotは、プレゼンテーション作成を効率化するAIアシスタントとして、今後も様々な機能追加が期待されます。
 
 ---
