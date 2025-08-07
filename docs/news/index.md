@@ -1,128 +1,138 @@
-# AI Tech Trends Digest (2025-08-06)
+# AI Tech Trends Digest (2025-08-07)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [gpt-ossがAWSに来てる！](https://qiita.com/moritalous/items/09495649c2ad7151a2fc)
-**Published:** 2025-08-05 21:40:56 UTC
-**Likes:** 14
-**Tags:** AWS, OpenAI, SageMaker, bedrock, gpt-oss
-
-**Digest:**
-SageMaker JumpStart に OpenAI のモデルが登場！gpt-oss-20bとgpt-oss-120bが利用可能に。Deployボタンからデプロイを試みるも、ml.p5.48xlargeなどの高価なP5インスタンスが必要で、クォーター制限により起動できず。Jupyter環境でのノートブック実行も、SageMakerライブラリーのバージョン問題でエラーとなり、今後の動作報告に期待。
-
----
-
-### [Claude Code暴走対策 | gomiコマンドでrmの事故を防ぐ](https://qiita.com/Enokisan/items/0d498fa6943f3c463675)
-**Published:** 2025-08-05 11:43:20 UTC
-**Likes:** 5
-**Tags:** Claude, ClaudeCode
-
-**Digest:**
-AI開発ツールClaude Code使用時、`rm`コマンド誤実行によるファイル削除リスクを軽減するため、`gomi`コマンドを紹介。`rm`の代替として機能し、ゴミ箱への移動で復元可能。Homebrewで簡単にインストールし、シェル設定で`rm`を`gomi`にエイリアス設定することで既存ワークフローを変えずに安全性を向上。TUIでファイルの閲覧・復元も容易で、安全なターミナル操作を実現します。
-
----
-
-### [OpenAIのオープンモデルgpt-ossがDatabricksで利用可能に](https://qiita.com/taka_yayoi/items/f2aec363e1840e0cb743)
-**Published:** 2025-08-05 21:43:41 UTC
+### [GitHubで最もスターを獲得したオープンソースAIプロジェクト20選](https://qiita.com/zhanglucy/items/ed7a76e9e80af6a82276)
+**Published:** 2025-08-07 02:59:53 UTC
 **Likes:** 2
-**Tags:** OpenAI, Databricks, gpt-oss
+**Tags:** GitHub, AI, MCP, OpenAI, LLM
 
 **Digest:**
-OpenAIの新たなオープンモデル、GPT OSSモデルがDatabricksのMosaic AIモデルサービングで利用可能になりました。GPT OSS 20Bと120Bの2種類があり、トークン従量課金APIでアクセスできます。東京リージョンでも利用でき、Playgroundでの使用も可能です。Provisioned ThroughputとAI Functionsのサポートは今後段階的に提供される予定です。
+OpenAIがオープンソースLLMを公開し、GitHubのAIプロジェクトに注目が集まっています。本記事では、GitHubスター数トップ20のAIプロジェクトを機能別に整理。**AutoGPT**、**Stable Diffusion Web UI**、**LangChain**など、インテリジェントエージェント、マルチモーダル生成、チャットUI、知識QA、モデル学習に関する多様なオープンソースプロジェクトが紹介されています。
 
 ---
 
-### [🚀 AI大手2社が同日発表！Claude Opus 4.1とOpenAI GPT-OSSが切り開く新時代](https://qiita.com/Ameyanagi/items/dab8c6fdb0fc8ab83dea)
-**Published:** 2025-08-05 21:43:24 UTC
+### [Gemini Pro（3.4万円）に10月まで無料で申請できるの知ってる？](https://qiita.com/socialmediadev/items/4fb262fc6a6460522a77)
+**Published:** 2025-08-07 02:26:08 UTC
 **Likes:** 2
-**Tags:** AI, オープンソース, OpenAI, LLM, Claude
+**Tags:** AI, 大学生, Gemini, 生成AI, ChatGPT
 
 **Digest:**
-2025年8月5日、Anthropicの**Claude Opus 4.1**とOpenAIの**GPT-OSS**シリーズが発表。Claude Opus 4.1はエージェントタスクやコーディング能力が向上。GPT-OSSはApache 2.0ライセンスのオープンソースモデルで、**120B**と**20B**モデルを展開、透明性と**Mixture-of-Experts**などの技術が特徴。開発者にとって選択肢拡大、AI民主化、競争促進に繋がる。
+GoogleのGemini Pro（Google AI Pro）が、学生向けに1年間無料提供中です。2025年10月6日までの申請で、月額2900円相当のプランが利用可能。プログラミング学習などに役立ちます。学生証や在学証明書で認証できますが、1年後の自動課金には注意が必要です。また、放送大学は低コストで学べる選択肢の一つとして紹介されています。
 
 ---
 
-### [LLM活用プロンプトエンジニアリング | ベストプラクティス集](https://qiita.com/nolanlover0527/items/f91e47bc8ad576788bc9)
-**Published:** 2025-08-05 06:41:35 UTC
+### [Kiroで徹底的に仕様と設計を煮詰める ~ requirements, design, tasklist 別プロンプト ~](https://qiita.com/pianopia/items/79950fb7bff1fa485d14)
+**Published:** 2025-08-06 09:56:40 UTC
 **Likes:** 2
-**Tags:** AI, ベストプラクティス, LLM, プロンプトエンジニアリング, AI活用
+**Tags:** 設計, AI, 仕様書, LLM, Kiro
 
 **Digest:**
-2025年8月時点のLLM活用では、プロンプトエンジニアリングが不可欠。明確・具体的に記述し、コンテキストや役割、出力形式を指定するのが基本。思考の連鎖や思考の木、Few-shotといった最新テクニックも有効。モデル特性に合わせ、セキュリティ対策やプロンプト評価、テンプレート管理、バイアス検証も重要。
+LLM「Kiro」でのSpec開発で、要件定義、設計、実装タスクを見逃さないためのポイントを解説。具体例として、**要件定義**では達成目標、デバイス、収益モデルなどを明確に。**設計**では画面構成、ログ設計、キャッシュ戦略などを詳細に指示。**実装タスク**ではドキュメント作成、デプロイ用スクリプトなどを指定。網羅的な設計を促すためのプロンプト例も提示。
+
+---
+
+### [【Node.js】 Hugging Face の「How to use OpenAI’s GPT OSS」に書かれている内容を試してみた（OpenAI の gpt-oss-120b を API で使う）](https://qiita.com/youtoy/items/8a6fed0448a9a2cfb180)
+**Published:** 2025-08-06 16:13:19 UTC
+**Likes:** 1
+**Tags:** Node.js, OpenAI, huggingface, gpt-oss, gpt-oss-120b
+
+**Digest:**
+Hugging Face Inference Providers を利用し、OpenAIのGPT OSSを試した結果を報告。APIキー取得と環境変数設定、npmでのパッケージインストール後、2つのサンプルコードを実行。一つ目はp5.jsの説明、二つ目はAIの説明をストリーミングで表示。無料枠で試せ、レスポンス速度も良好だった。参考記事として、n0bisuke氏の「Hugging Face Inference Providers で gpt-oss を使うとレスポンスの速度が良い」記事を紹介。
+
+---
+
+### [【保存版】ITエンジニアが知らない巨大IT企業の「闇戦略」—あなたのキャリアとスキルが操作されています](https://qiita.com/ayu-miyazawa_IT_social-science/items/eac21cb9c6c15290c5b5)
+**Published:** 2025-08-06 14:05:32 UTC
+**Likes:** 1
+**Tags:** キャリア, React, スキルアップ, Claude, AIエージェント
+
+**Digest:**
+IT技術者は自由に選択しているのか？ 実は、企業戦略の「掌」で技術トレンドが作られ、オープンソースも労働力集約の罠かもしれない。技術トレンドは企業の収益源と連動し、特定の技術エコシステムでの専門家になる危険性も。API変更など「梯子外し」の歴史から、技術への依存分散やメタスキル重視が重要。AI時代にはプログラミングスキルも変化、企業の意図を理解し、主体的に行動し、自己価値を高める事が重要だ。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [OpenAI’s open‑source model: gpt‑oss on Azure AI Foundry and Windows AI Foundry](https://azure.microsoft.com/en-us/blog/openais-open%e2%80%91source-model-gpt%e2%80%91oss-on-azure-ai-foundry-and-windows-ai-foundry/)
-**Source:** Azure AI Blog
-**Published:** 2025-08-05 17:00:00 UTC
-**Tags:** AI + machine learning, AI
-
-**Digest:**
-マイクロソフトは、AIを基盤とするプラットフォームを構築。Azure AI Foundryでgpt-ossモデル（gpt-oss-120b、gpt-oss-20b）の利用が可能になり、開発者はクラウドとエッジでAIを自在に活用できます。Windows AI FoundryやFoundry Localにより、Windows環境でのローカルAI開発も実現。オープンモデルにより、カスタマイズや柔軟な展開が可能となり、AI開発の可能性を広げます。
-
----
-
-### [Build an AI assistant using Amazon Q Business with Amazon S3 clickable URLs](https://aws.amazon.com/blogs/machine-learning/build-an-ai-assistant-using-amazon-q-business-with-amazon-s3-clickable-urls/)
+### [Pioneering AI workflows at scale: A deep dive into Asana AI Studio and Amazon Q index collaboration](https://aws.amazon.com/blogs/machine-learning/pioneering-ai-workflows-at-scale-a-deep-dive-into-asana-ai-studio-and-amazon-q-index-collaboration/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-06 01:16:43 UTC
-**Tags:** Amazon Q Business, Amazon Simple Storage Service (S3)
+**Published:** 2025-08-06 21:43:10 UTC
+**Tags:** Amazon Q, Amazon Q Business, Customer Solutions, Technical How-to, Amazon Machine Learning, Generative AI
 
 **Digest:**
-Amazon Q Businessで、S3に保存された企業ドキュメントを参照できるAIアシスタントを構築する方法を紹介。AIが生成した回答の出典URLをクリックすることで、安全にドキュメントにアクセスし、検証できます。S3のドキュメントは、Amazon Q Businessが認証されたユーザーにのみアクセスを許可。この機能を利用するには、IAM Identity CenterまたはIAMフェデレーションでのユーザーアクセス管理が必要です。
+Asana AI StudioとAmazon Q indexの統合を発表。これにより、Asana内でAIワークフローを構築し、プロジェクト管理やキャンペーン管理などを効率化。Amazon Q indexは、企業データの検索を可能にし、セキュリティを維持。設定には、Amazon Q Businessでのデータアクセサの追加と、Asana admin consoleでの接続が必要。チームの生産性と意思決定を向上させ、情報サイロを解消する。
 
 ---
 
-### [GPT OSS models from OpenAI are now available on SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/gpt-oss-models-from-openai-are-now-available-on-sagemaker-jumpstart/)
+### [Responsible AI for the payments industry – Part 1](https://aws.amazon.com/blogs/machine-learning/responsible-ai-for-the-payments-industry-part-1/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-05 23:16:48 UTC
-**Tags:** Amazon SageMaker, Amazon SageMaker JumpStart, Announcements, Artificial Intelligence
+**Published:** 2025-08-06 19:13:14 UTC
+**Tags:** Best Practices, Financial Services, Intermediate (200), Responsible AI
 
 **Digest:**
-Amazon SageMaker JumpStartでOpenAIのGPT OSSモデル`gpt-oss-120b`と`gpt-oss-20b`が利用可能に。コーディング、科学分析、数学的推論に優れ、最大128Kのコンテキストウィンドウと調整可能な推論レベルが特徴。EXAによるウェブ検索、SageMaker Python SDK、SageMaker Studio UIからのデプロイが可能で、エンタープライズグレードのセキュリティとスケーラビリティを提供します。
+決済業界はAIを活用したデジタル変革の最前線にあり、不正検知や顧客サービスで利用されています。2027年までにデジタル決済取引は15兆ドルを超えると予測。データプライバシーやリアルタイム処理、グローバルな規制対応が課題です。AWSは、責任あるAIの実装を支援し、公平性、透明性、説明可能性を重視。金融包摂と規制遵守も重要であり、安全で信頼できるAI決済システムの構築が求められています。
 
 ---
 
-### [Discover insights from Microsoft Exchange with the Microsoft Exchange connector for Amazon Q Business](https://aws.amazon.com/blogs/machine-learning/discover-insights-from-microsoft-exchange-with-the-microsoft-exchange-connector-for-amazon-q-business/)
+### [Responsible AI for the payments industry – Part 2](https://aws.amazon.com/blogs/machine-learning/responsible-ai-for-the-payments-industry-part-2/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-05 17:01:57 UTC
-**Tags:** Amazon Q Business, Generative AI, Intermediate (200), Technical How-to
+**Published:** 2025-08-06 19:11:28 UTC
+**Tags:** Best Practices, Financial Services, Industries, Intermediate (200), Responsible AI
 
 **Digest:**
-Amazon Q Businessは、企業がデータや知識を活用できるよう支援するAIアシスタントです。Microsoft Exchangeコネクタを使用し、メールやカレンダー情報を統合。**Microsoft** **Exchange**データを一元的に検索・アクセス可能にし、自然言語での検索や要約生成を実現。**Amazon Q** Business内で、業務効率化と意思決定を支援します。
+決済業界における責任あるAIの実践的導入について解説。AI責任委員会設立、部門間の連携強化、ポリシー文書化が重要。AI開発ライフサイクル全体で責任を考慮し、バイアス試験も実施。設計・開発・デプロイ・運用各段階で、リスク評価、データ代表性の確保、継続的なモニタリングとフィードバックが不可欠。透明性、公平性、継続的改善を重視し、信頼関係構築を目指す。
 
 ---
 
-### [OpenAI open weight models now available on AWS](https://aws.amazon.com/blogs/aws/openai-open-weight-models-now-available-on-aws/)
+### [Process multi-page documents with human review using Amazon Bedrock Data Automation and Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/process-multi-page-documents-with-human-review-using-amazon-bedrock-data-automation-and-amazon-sagemaker-ai/)
+**Source:** AWS ML Blog
+**Published:** 2025-08-06 19:04:41 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Data Automation, Amazon SageMaker AI, Amazon SageMaker Ground Truth, Customer Solutions, Technical How-to
+
+**Digest:**
+AWSは2025年3月に、多ページ文書からの情報抽出を自動化する「Amazon Bedrock Data Automation」を発表。これとSageMaker AIを組み合わせ、人間によるレビューを組み込んだIDPを実現。**自信度スコア**に基づき人手を介し、精度を向上。S3、Lambda、Step Functionsなどを活用したアーキテクチャを構築。GitHubレポジトリで実装例を提供し、効率と正確性を両立する文書処理の可能性を示している。
+
+---
+
+### [Minimize AI hallucinations and deliver up to 99% verification accuracy with Automated Reasoning checks: Now available](https://aws.amazon.com/blogs/aws/minimize-ai-hallucinations-and-deliver-up-to-99-verification-accuracy-with-automated-reasoning-checks-now-available/)
 **Source:** AWS News Blog
-**Published:** 2025-08-06 05:56:44 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Amazon SageMaker, Amazon SageMaker JumpStart, Announcements, Artificial Intelligence, Launch, News, Open Source
+**Published:** 2025-08-06 15:06:47 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Guardrails, Announcements, Artificial Intelligence, Generative AI, Launch, News, Responsible AI
 
 **Digest:**
-AWSがOpenAIのオープンウェイトモデル**gpt-oss-120b**と**gpt-oss-20b**を**Amazon Bedrock**と**SageMaker JumpStart**で提供開始。テキスト生成や推論に特化し、128Kコンテキストウィンドウ、調整可能な推論レベルをサポート。**Bedrock**ではOpenAI互換エンドポイントで利用でき、**SageMaker JumpStart**ではモデルの評価、カスタマイズ、本番環境へのデプロイが可能。コード、分析、数理能力に優れ、AWSでAI開発の自由度を向上させます。
+Amazon Bedrock Guardrailsの**Automated Reasoning checks**が一般公開。これは、生成AIの出力精度を検証し、AIのハルシネーション（事実誤認）を最大99%の精度で検出します。論理検証技術で定義したルールに基づき、大規模ドキュメントへの対応、テストの自動生成、フィードバック機能などが追加。**Amazon Bedrock**上で、住宅ローン承認ポリシーなどの構築が可能で、PwCとの協業による電力会社向けアウトゲージ管理システムへの活用事例も紹介されています。
 
 ---
 
-### [Teams Phoneで代理人を設定する](https://blog.jbs.co.jp/entry/2025/08/06/110206)
-**Source:** JBS Blog
-**Published:** 2025-08-06 02:02:06 UTC
-**Tags:** Teams Phone
+### [法人向け Surface Laptop with 5G と Surface の Copilot+ PC でモバイル ワークの生産性を向上](https://blogs.windows.com/japan/2025/08/06/boost-mobile-productivity-with-surface-laptop-5g-for-business-and-surface-copilo/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-08-06 08:59:25 UTC
+**Tags:** Surface, 5G, Copilot+ PC, Surface Laptop, Surface Pro
 
 **Digest:**
-Teams Phoneの代理人機能は、他のユーザーに通話の受発信を代行させることが可能です。Teams内で代理人を設定すると、指定されたユーザーは自分の代わりに電話に出たり、発信したりできるようになります。設定方法について解説します。
+Microsoftは、法人向け Surface Laptop with 5Gなど、Copilot+ PCでモバイルワークを支援。高速5G、AI処理、セキュリティを重視し、ハイブリッドワークをサポートする。カスタムアンテナや長時間バッテリー、Intel Core Ultraプロセッサ搭載。Windows AutopilotやIntuneによるデバイス管理も可能。法人向け Surface Laptop 13インチとPro 12インチも登場。
 
 ---
 
-### [【Microsoft×生成AI連載】【PowerPoint】Copilot in PowerPointの新機能を紹介](https://blog.jbs.co.jp/entry/2025/08/06/085241)
+### [管理者必見：デバイスをデバイス名からセキュリティグループへ一括登録するPowerShellスクリプト](https://blog.jbs.co.jp/entry/2025/08/07/130816)
 **Source:** JBS Blog
-**Published:** 2025-08-05 23:52:41 UTC
-**Tags:** Copilot, Microsoft Copilot, 生成AI, Microsoft×生成AI連載, PowerPoint
+**Published:** 2025-08-07 04:08:16 UTC
+**Tags:** Intune, Microsoft Entra ID, PowerShell, Microsoft Intune, Microsoft 365
 
 **Digest:**
-Microsoft PowerPointのCopilotに、新たな機能が追加されました。本記事では、その新機能の中からいくつかを紹介します。PowerPointのCopilotは、プレゼンテーション作成を効率化するAIアシスタントとして、今後も様々な機能追加が期待されます。
+CSVファイルでデバイス名を指定し、PowerShellを活用してMicrosoft Entra IDのグループにデバイスを一括追加する方法を紹介。PowerShellスクリプトとCSVファイルの連携により、**デバイス名**リストに基づいた**グループ**への**デバイス**登録を効率的に実行。これにより、**Microsoft Entra ID**における大量のデバイス管理が簡素化されます。
+
+---
+
+### [Zscaler導入の第一歩：App ProfileとForwarding Profileの役割・作り方](https://blog.jbs.co.jp/entry/2025/08/07/094951)
+**Source:** JBS Blog
+**Published:** 2025-08-07 00:49:51 UTC
+**Tags:** Zscaler, Tech, SSE, Forwarding Profile, App Profile, ZCC, セキュリティ, ゼロトラスト
+
+**Digest:**
+ZscalerのApp ProfileとForwarding Profileの作成手順を解説。App Profileは、特定のアプリケーションのトラフィックを定義し、Forwarding Profileは、そのトラフィックの転送方法を決定します。Zscaler環境での効率的なトラフィック制御には、これらのプロファイル設定が不可欠です。
 
 ---
