@@ -1,138 +1,158 @@
-# AI Tech Trends Digest (2025-08-07)
+# AI Tech Trends Digest (2025-08-08)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [GitHubで最もスターを獲得したオープンソースAIプロジェクト20選](https://qiita.com/zhanglucy/items/ed7a76e9e80af6a82276)
-**Published:** 2025-08-07 02:59:53 UTC
-**Likes:** 2
-**Tags:** GitHub, AI, MCP, OpenAI, LLM
+### [ついに登場！GPT-5の性能差をCursorで感じてみる](https://qiita.com/kyuko/items/47113b442b136787ed2c)
+**Published:** 2025-08-07 21:20:26 UTC
+**Likes:** 14
+**Tags:** レビュー, cursor, OpenAI, GPT-5
 
 **Digest:**
-OpenAIがオープンソースLLMを公開し、GitHubのAIプロジェクトに注目が集まっています。本記事では、GitHubスター数トップ20のAIプロジェクトを機能別に整理。**AutoGPT**、**Stable Diffusion Web UI**、**LangChain**など、インテリジェントエージェント、マルチモーダル生成、チャットUI、知識QA、モデル学習に関する多様なオープンソースプロジェクトが紹介されています。
+OpenAIの最新LLM、GPT-5が登場。コーディング性能が向上し、高速・低コストなmini/nano版も。記事ではホームページ作成やゲーム作成を試した結果、GPT-4より圧倒的に高品質なアウトプットを実現。リアルタイムルーターによる効率的な動作も特徴。まだAGIレベルの実感はないものの、今後の発展に期待。
 
 ---
 
-### [Gemini Pro（3.4万円）に10月まで無料で申請できるの知ってる？](https://qiita.com/socialmediadev/items/4fb262fc6a6460522a77)
-**Published:** 2025-08-07 02:26:08 UTC
-**Likes:** 2
-**Tags:** AI, 大学生, Gemini, 生成AI, ChatGPT
+### [GPT-5がついに登場！OpenAI Summer Update速報まとめ](https://qiita.com/naopen/items/692396b0ef9d65b492ac)
+**Published:** 2025-08-07 21:50:30 UTC
+**Likes:** 9
+**Tags:** OpenAI, 生成AI, ChatGPT, LLM, GPT-5
 
 **Digest:**
-GoogleのGemini Pro（Google AI Pro）が、学生向けに1年間無料提供中です。2025年10月6日までの申請で、月額2900円相当のプランが利用可能。プログラミング学習などに役立ちます。学生証や在学証明書で認証できますが、1年後の自動課金には注意が必要です。また、放送大学は低コストで学べる選択肢の一つとして紹介されています。
+2025年8月8日、OpenAIより「GPT-5」が発表。**博士号レベルの専門家**に匹敵し、ハイブリッド推論で速度と品質を両立。コーディング能力、問題解決能力が大幅向上。**ChatGPT**は無料ユーザーも利用可能になり、APIでは3つの新モデルと新機能が登場。セーフティーチームは安全な応答を提示。医療分野での活用事例も紹介され、さまざまなデモでその実力を披露した。
 
 ---
 
-### [Kiroで徹底的に仕様と設計を煮詰める ~ requirements, design, tasklist 別プロンプト ~](https://qiita.com/pianopia/items/79950fb7bff1fa485d14)
-**Published:** 2025-08-06 09:56:40 UTC
-**Likes:** 2
-**Tags:** 設計, AI, 仕様書, LLM, Kiro
+### [MCPで様々なデータモデルを分析してみる　～AI Ready Data時代に最適なデータストアを検証～](https://qiita.com/ksonoda/items/058e4868635c2c76b86e)
+**Published:** 2025-08-07 09:31:34 UTC
+**Likes:** 7
+**Tags:** MCP, oraclecloud, OracleDatabase, LLM, Claude
 
 **Digest:**
-LLM「Kiro」でのSpec開発で、要件定義、設計、実装タスクを見逃さないためのポイントを解説。具体例として、**要件定義**では達成目標、デバイス、収益モデルなどを明確に。**設計**では画面構成、ログ設計、キャッシュ戦略などを詳細に指示。**実装タスク**ではドキュメント作成、デプロイ用スクリプトなどを指定。網羅的な設計を促すためのプロンプト例も提示。
+日本オラクルのMeetupで発表予定の「AI Ready Data」をテーマにした記事のダイジェストです。AI活用で注目される「AI Ready Data」は、アクセス性、データ構造、意味付け、セキュリティなどを備えた、AIが即座に使えるデータのこと。Oracle Databaseを用いて、グラフ、時系列、空間データなど様々なデータモデルを単一のデータストアで扱い、生成AIアプリでの利用を紹介します。
 
 ---
 
-### [【Node.js】 Hugging Face の「How to use OpenAI’s GPT OSS」に書かれている内容を試してみた（OpenAI の gpt-oss-120b を API で使う）](https://qiita.com/youtoy/items/8a6fed0448a9a2cfb180)
-**Published:** 2025-08-06 16:13:19 UTC
-**Likes:** 1
-**Tags:** Node.js, OpenAI, huggingface, gpt-oss, gpt-oss-120b
+### [「30分間でClaude Code × Vibe Coding」した軌跡①～大学時間割作成アプリ～](https://qiita.com/WdknWdkn/items/86c46663739653fd7b34)
+**Published:** 2025-08-08 03:24:58 UTC
+**Likes:** 6
+**Tags:** 要件定義, プロダクトマネジメント, 生成AI, Claude, VibeCoding
 
 **Digest:**
-Hugging Face Inference Providers を利用し、OpenAIのGPT OSSを試した結果を報告。APIキー取得と環境変数設定、npmでのパッケージインストール後、2つのサンプルコードを実行。一つ目はp5.jsの説明、二つ目はAIの説明をストリーミングで表示。無料枠で試せ、レスポンス速度も良好だった。参考記事として、n0bisuke氏の「Hugging Face Inference Providers で gpt-oss を使うとレスポンスの速度が良い」記事を紹介。
+ProgateBarでのVibe Codeging体験を基に、大学時間割アプリをAIと共同開発。要件定義では「自動」を再定義し、PoCのMVPを決定。設計では軽量化と将来の拡張性を考慮。実装では探索アルゴリズムの選択とログ記録が重要。デプロイ・デバッグでは、一次対応と恒久対策を区別し、SRE Runbookを活用。AIの役割分担と品質維持のための作法を提示。
 
 ---
 
-### [【保存版】ITエンジニアが知らない巨大IT企業の「闇戦略」—あなたのキャリアとスキルが操作されています](https://qiita.com/ayu-miyazawa_IT_social-science/items/eac21cb9c6c15290c5b5)
-**Published:** 2025-08-06 14:05:32 UTC
-**Likes:** 1
-**Tags:** キャリア, React, スキルアップ, Claude, AIエージェント
+### [OpenAI公式の情報をもとに GPT-5 の API をさっそく試す【Node.js】](https://qiita.com/youtoy/items/a6a266b04ef929abc616)
+**Published:** 2025-08-07 21:28:51 UTC
+**Likes:** 5
+**Tags:** Node.js, OpenAI, GPT-5, gpt-5-nano, gpt-5-mini
 
 **Digest:**
-IT技術者は自由に選択しているのか？ 実は、企業戦略の「掌」で技術トレンドが作られ、オープンソースも労働力集約の罠かもしれない。技術トレンドは企業の収益源と連動し、特定の技術エコシステムでの専門家になる危険性も。API変更など「梯子外し」の歴史から、技術への依存分散やメタスキル重視が重要。AI時代にはプログラミングスキルも変化、企業の意図を理解し、主体的に行動し、自己価値を高める事が重要だ。
+GPT-5の公式発表とAPI利用について解説。OpenAIのライブストリーミング後、公式ポストや記事が公開。ChatGPTでは全ユーザーが利用可能に。APIでは、gpt-5、gpt-5-mini、gpt-5-nano、gpt-5-chat-latestの4モデルが登場し、無料枠も。Node.jsでAPIを試した結果、ストリーミング出力や3種類のモデルの出力を確認した。プレイグラウンドでの利用も可能。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Pioneering AI workflows at scale: A deep dive into Asana AI Studio and Amazon Q index collaboration](https://aws.amazon.com/blogs/machine-learning/pioneering-ai-workflows-at-scale-a-deep-dive-into-asana-ai-studio-and-amazon-q-index-collaboration/)
+### [GPT-5 in Azure AI Foundry: The future of AI apps and agents starts here](https://azure.microsoft.com/en-us/blog/gpt-5-in-azure-ai-foundry-the-future-of-ai-apps-and-agents-starts-here/)
+**Source:** Azure AI Blog
+**Published:** 2025-08-07 17:00:00 UTC
+**Tags:** AI + machine learning, AI, Azure AI
+
+**Digest:**
+マイクロソフトは、**GPT-5** の一般提供を **Azure AI Foundry** で開始。高度な推論、コード生成、自然言語処理を統合し、**モデルルーター** でコスト効率も向上。**GitHub Copilot** や **Visual Studio Code** への展開で、開発者がコードをより高速かつ高品質に。セキュリティ、安全性、ガバナンスも重視。**SAP** や **Relativity** などが活用し、AIアプリとエージェントの未来を加速します。
+
+---
+
+### [The DIVA logistics agent, powered by Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/the-diva-logistics-agent-powered-by-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-06 21:43:10 UTC
-**Tags:** Amazon Q, Amazon Q Business, Customer Solutions, Technical How-to, Amazon Machine Learning, Generative AI
+**Published:** 2025-08-07 16:44:17 UTC
+**Tags:** Amazon Bedrock, Artificial Intelligence, Customer Solutions
 
 **Digest:**
-Asana AI StudioとAmazon Q indexの統合を発表。これにより、Asana内でAIワークフローを構築し、プロジェクト管理やキャンペーン管理などを効率化。Amazon Q indexは、企業データの検索を可能にし、セキュリティを維持。設定には、Amazon Q Businessでのデータアクセサの追加と、Asana admin consoleでの接続が必要。チームの生産性と意思決定を向上させ、情報サイロを解消する。
+インドの物流大手DTDCは、Amazon BedrockとShellKodeを活用し、AI搭載物流エージェント「DIVA 2.0」を開発。顧客からの月間40万件超の問い合わせに対し、自然言語処理で柔軟に対応し、追跡、料金照会などを実現。93%の精度で回答し、サポートチームへの負担を51.4%削減。これにより、顧客体験向上と業務効率化を達成しました。
 
 ---
 
-### [Responsible AI for the payments industry – Part 1](https://aws.amazon.com/blogs/machine-learning/responsible-ai-for-the-payments-industry-part-1/)
+### [Automate enterprise workflows by integrating Salesforce Agentforce with Amazon Bedrock Agents](https://aws.amazon.com/blogs/machine-learning/automate-enterprise-workflows-by-integrating-salesforce-agentforce-with-amazon-bedrock-agents/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-06 19:13:14 UTC
-**Tags:** Best Practices, Financial Services, Intermediate (200), Responsible AI
+**Published:** 2025-08-07 16:40:46 UTC
+**Tags:** Amazon Bedrock Agents, Artificial Intelligence, AWS Partner Network, Intermediate (200), Partner solutions, Technical How-to
 
 **Digest:**
-決済業界はAIを活用したデジタル変革の最前線にあり、不正検知や顧客サービスで利用されています。2027年までにデジタル決済取引は15兆ドルを超えると予測。データプライバシーやリアルタイム処理、グローバルな規制対応が課題です。AWSは、責任あるAIの実装を支援し、公平性、透明性、説明可能性を重視。金融包摂と規制遵守も重要であり、安全で信頼できるAI決済システムの構築が求められています。
+AIエージェントは企業業務を変革し、Salesforce AgentforceとAmazon Bedrock Agentsを統合することで、複雑なワークフローを自動化します。Amazon Redshiftのデータと連携し、IoTセンサーからの情報に基づいて、異常を検知しAgentforceでケースを作成。これにより、**SalesforceとAWSの連携**による**AIワークフロー自動化**を実現し、業務効率化と顧客体験向上を目指します。
 
 ---
 
-### [Responsible AI for the payments industry – Part 2](https://aws.amazon.com/blogs/machine-learning/responsible-ai-for-the-payments-industry-part-2/)
+### [How Amazon Bedrock powers next-generation account planning at AWS](https://aws.amazon.com/blogs/machine-learning/how-amazon-bedrock-powers-next-generation-account-planning-at-aws/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-06 19:11:28 UTC
-**Tags:** Best Practices, Financial Services, Industries, Intermediate (200), Responsible AI
+**Published:** 2025-08-07 13:56:17 UTC
+**Tags:** Amazon Bedrock, Artificial Intelligence, Technical How-to
 
 **Digest:**
-決済業界における責任あるAIの実践的導入について解説。AI責任委員会設立、部門間の連携強化、ポリシー文書化が重要。AI開発ライフサイクル全体で責任を考慮し、バイアス試験も実施。設計・開発・デプロイ・運用各段階で、リスク評価、データ代表性の確保、継続的なモニタリングとフィードバックが不可欠。透明性、公平性、継続的改善を重視し、信頼関係構築を目指す。
+AWSは、顧客の目標を深く理解するアカウント計画を自動化するため、生成AIツール「Account Plan Pulse」をAmazon Bedrockで開発。2025年1月に導入し、計画の質を37%向上、レビュー時間を52%削減。計画の評価、分析、インサイト抽出を行い、Salesチームの顧客対応を強化。エンジニアリングで出力のばらつきを抑え、信頼性を確保。今後は、計画実行の測定や、新機能の活用を進める。
 
 ---
 
-### [Process multi-page documents with human review using Amazon Bedrock Data Automation and Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/process-multi-page-documents-with-human-review-using-amazon-bedrock-data-automation-and-amazon-sagemaker-ai/)
-**Source:** AWS ML Blog
-**Published:** 2025-08-06 19:04:41 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Data Automation, Amazon SageMaker AI, Amazon SageMaker Ground Truth, Customer Solutions, Technical How-to
+### [The latest AI news we announced in July](https://blog.google/technology/ai/google-ai-updates-july-2025/)
+**Source:** Google DeepMind
+**Published:** 2025-08-07 14:30:00 UTC
+**Tags:** Search, Google DeepMind, Google Labs, Shopping, Gemini, AI, Public Policy, Safety & Security, Photos
 
 **Digest:**
-AWSは2025年3月に、多ページ文書からの情報抽出を自動化する「Amazon Bedrock Data Automation」を発表。これとSageMaker AIを組み合わせ、人間によるレビューを組み込んだIDPを実現。**自信度スコア**に基づき人手を介し、精度を向上。S3、Lambda、Step Functionsなどを活用したアーキテクチャを構築。GitHubレポジトリで実装例を提供し、効率と正確性を両立する文書処理の可能性を示している。
+Googleは2025年7月の最新AIアップデートを発表。大規模言語モデルの進化、画像生成技術の向上、AIを活用した検索機能の強化、そしてAIによるクリエイティブツールの拡充が主な内容です。これらの新機能は、ユーザー体験を大きく向上させることを目指しています。
 
 ---
 
-### [Minimize AI hallucinations and deliver up to 99% verification accuracy with Automated Reasoning checks: Now available](https://aws.amazon.com/blogs/aws/minimize-ai-hallucinations-and-deliver-up-to-99-verification-accuracy-with-automated-reasoning-checks-now-available/)
-**Source:** AWS News Blog
-**Published:** 2025-08-06 15:06:47 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Guardrails, Announcements, Artificial Intelligence, Generative AI, Launch, News, Responsible AI
+### [Available today: GPT-5 in Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365/blog/2025/08/07/available-today-gpt-5-in-microsoft-365-copilot/)
+**Source:** Microsoft 365 Blog
+**Published:** 2025-08-07 17:06:29 UTC
+**Tags:** AI
 
 **Digest:**
-Amazon Bedrock Guardrailsの**Automated Reasoning checks**が一般公開。これは、生成AIの出力精度を検証し、AIのハルシネーション（事実誤認）を最大99%の精度で検出します。論理検証技術で定義したルールに基づき、大規模ドキュメントへの対応、テストの自動生成、フィードバック機能などが追加。**Amazon Bedrock**上で、住宅ローン承認ポリシーなどの構築が可能で、PwCとの協業による電力会社向けアウトゲージ管理システムへの活用事例も紹介されています。
+本日、OpenAIの最新AIシステム「GPT-5」が、Microsoft 365 CopilotとMicrosoft Copilot Studioで世界的に利用開始されました。Microsoft 365ブログによると、この発表はMicrosoft 365 Copilotの機能強化を意味しています。
 
 ---
 
-### [法人向け Surface Laptop with 5G と Surface の Copilot+ PC でモバイル ワークの生産性を向上](https://blogs.windows.com/japan/2025/08/06/boost-mobile-productivity-with-surface-laptop-5g-for-business-and-surface-copilo/)
+### [本日より利用可能: Microsoft 365 Copilot に GPT-5 を搭載](https://blogs.windows.com/japan/2025/08/08/available-today-gpt-5-in-microsoft-365-copilot/)
 **Source:** Windows Blog for Japan
-**Published:** 2025-08-06 08:59:25 UTC
-**Tags:** Surface, 5G, Copilot+ PC, Surface Laptop, Surface Pro
+**Published:** 2025-08-08 05:33:25 UTC
+**Tags:** Copilot, GPT-5
 
 **Digest:**
-Microsoftは、法人向け Surface Laptop with 5Gなど、Copilot+ PCでモバイルワークを支援。高速5G、AI処理、セキュリティを重視し、ハイブリッドワークをサポートする。カスタムアンテナや長時間バッテリー、Intel Core Ultraプロセッサ搭載。Windows AutopilotやIntuneによるデバイス管理も可能。法人向け Surface Laptop 13インチとPro 12インチも登場。
+OpenAIの最新AI「GPT-5」が、Microsoft 365 CopilotとCopilot Studioで利用可能に。CopilotはGPT-5の異なるモデルを使い分け、迅速な回答と深い分析の両立を実現。ライセンス所有者は本日より、未所有者も数週間以内に利用開始。業務データに基づいた文脈理解が向上し、Copilot StudioでもGPT-5を選択できます。
 
 ---
 
-### [管理者必見：デバイスをデバイス名からセキュリティグループへ一括登録するPowerShellスクリプト](https://blog.jbs.co.jp/entry/2025/08/07/130816)
-**Source:** JBS Blog
-**Published:** 2025-08-07 04:08:16 UTC
-**Tags:** Intune, Microsoft Entra ID, PowerShell, Microsoft Intune, Microsoft 365
+### [【大塚商会イベント紹介】「いよいよカウントダウン! Windows 10 EOS 直前の PC 選定ポイントと未来を見据えた AI 活用」セミナー・展示会](https://blogs.windows.com/japan/2025/08/08/otsuka-shokai-event-introduction-windows-10-eos/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-08-08 01:00:08 UTC
+**Tags:** Surface, AI, PC, Windows
 
 **Digest:**
-CSVファイルでデバイス名を指定し、PowerShellを活用してMicrosoft Entra IDのグループにデバイスを一括追加する方法を紹介。PowerShellスクリプトとCSVファイルの連携により、**デバイス名**リストに基づいた**グループ**への**デバイス**登録を効率的に実行。これにより、**Microsoft Entra ID**における大量のデバイス管理が簡素化されます。
+2025年9月4日、御茶ノ水ソラシティで、大塚商会主催の無料セミナー「Windows 10 EOS 直前の PC 選定とAI活用」が開催。最新PC選定、AI活用術、セキュリティ対策を解説。事前申込制で、参加者にはノベルティも。Windows 11、Microsoft 365 Copilotなど、注目テーマも。PC入れ替えやIT環境刷新を検討中の方に最適です。
 
 ---
 
-### [Zscaler導入の第一歩：App ProfileとForwarding Profileの役割・作り方](https://blog.jbs.co.jp/entry/2025/08/07/094951)
+### [Azure で Oracle Database を利用する（FOR と @ のはなし）](https://blog.jbs.co.jp/entry/2025/08/08/105248)
 **Source:** JBS Blog
-**Published:** 2025-08-07 00:49:51 UTC
-**Tags:** Zscaler, Tech, SSE, Forwarding Profile, App Profile, ZCC, セキュリティ, ゼロトラスト
+**Published:** 2025-08-08 01:52:48 UTC
+**Tags:** Azure, Oracle Cloud Infrastructure, Oracle Database, マルチクラウド, Oracle
 
 **Digest:**
-ZscalerのApp ProfileとForwarding Profileの作成手順を解説。App Profileは、特定のアプリケーションのトラフィックを定義し、Forwarding Profileは、そのトラフィックの転送方法を決定します。Zscaler環境での効率的なトラフィック制御には、これらのプロファイル設定が不可欠です。
+AzureでOracle Databaseを利用する方法として、仮想マシンにOracle Databaseを構築する従来の方法に加え、マネージドサービスが登場。Azureからアクセス可能なOracle Database Serviceは、運用の手間を軽減します。本記事では、2025年6月時点の情報に基づき、このマネージドサービスについて解説します。
+
+---
+
+### [【Microsoft×生成AI連載】【Agents】ナレッジにOutlookメールを設定してみた](https://blog.jbs.co.jp/entry/2025/08/08/090608)
+**Source:** JBS Blog
+**Published:** 2025-08-08 00:06:08 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
+
+**Digest:**
+Microsoft Copilot Studioのエージェントビルダーが進化し、Outlookメールをナレッジとして設定可能に。これにより、メールボックスから条件に合致するメールを取得し、返信案を生成できます。業務効率化に貢献する一方、利用シーンと注意点も存在します。詳細は過去の連載記事で確認できます。
 
 ---
