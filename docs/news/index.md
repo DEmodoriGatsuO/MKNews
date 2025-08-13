@@ -1,108 +1,128 @@
-# AI Tech Trends Digest (2025-08-12)
+# AI Tech Trends Digest (2025-08-13)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Claude Code カスタムコマンドで品質チェック！レビュー指摘を激減させてみんなハッピー大作戦](https://qiita.com/tomada/items/5e6d566684b19b34759a)
-**Published:** 2025-08-11 23:26:30 UTC
+### [AWSで手書き日本語OCR](https://qiita.com/IEFBR13/items/4804caf6c87903b823fa)
+**Published:** 2025-08-13 00:35:52 UTC
 **Likes:** 2
-**Tags:** 初心者向け, 生成AI, Claude, AIエージェント, ClaudeCode
+**Tags:** AWS, OCR, bedrock, Claude
 
 **Digest:**
-Claude Code のカスタムコマンドを活用した品質チェック自動化を紹介。セキュリティ、パフォーマンス、SEOなどを実装直後にチェックし、レビュー指摘を激減させる。総合レビュー、パフォーマンス、セキュリティ、SEO、テストカバレッジ、UI/UXなど多角的なチェックが可能。問題の早期発見と修正により、実装者の不安を解消し、高品質なコード作成を促進する。
+AWS Textractの日本語対応がない中、BedrockのClaudeがPDFサポートを開始し、手書き文字の日本語OCRに活用可能に。PythonでPDF化し、Claude 4 Sonnetで読み解く例を紹介。精度が高く、座標指定不要、コストも良心的で、プロンプト次第で応用も効きそう。
 
 ---
 
-### [Hierarchical Reasoning Model (HRM)をRTX 3060 (VRAM 12GB)1つで再現実装する](https://qiita.com/CLRR/items/e061c5bb33c51ada30c6)
-**Published:** 2025-08-11 11:01:39 UTC
+### [Claude Codeで並列開発を実現する！git worktreeの活用術](https://qiita.com/awakia/items/eaeb40c5180c292eecb5)
+**Published:** 2025-08-12 12:28:41 UTC
 **Likes:** 2
-**Tags:** AI, WSL2, LLM, 推論モデル, HRM
+**Tags:** Git, worktree, Claude, ClaudeCode
 
 **Digest:**
-新しい推論AI、Hierarchical Reasoning Model (HRM)を、VRAM 12GBのGPUで数独Extremeの学習・評価を試みた。結果は論文通りだが、学習に1日7時間38分、推論に1時間25分と時間がかかった。正解率は48.2%で、論文の55%を下回るも範囲内。VRAMの小さいGPUでは高速な学習・推論は難しく、高性能GPUが必須。
+Rimoでバックエンド開発者が、AnthropicのClaude Code利用時の並列開発課題を、**git worktree** で解決する方法を紹介。親ディレクトリへのアクセス制限を、サブディレクトリにworktreeを作成することで回避。`.gitignore` で管理し、 `wt-` プレフィックスの命名規則を採用。複数ブランチ同時作業が可能になり、タブ補完も便利に。作業後は削除を忘れずに。
 
 ---
 
-### [Gemini Storybookで自動でサウンドイラストノベル作成](https://qiita.com/Yh_Taguchi/items/40df48fafb13f394afb8)
-**Published:** 2025-08-11 21:49:07 UTC
+### [LLM学習の常識を覆す：小さなバッチサイズでも高性能を実現する新手法](https://qiita.com/teppei_nakano/items/860ae0cc3a548f4955c3)
+**Published:** 2025-08-12 09:18:24 UTC
+**Likes:** 2
+**Tags:** 機械学習, バッチサイズ, LLM, 中野哲平
+
+**Digest:**
+LLM学習で、バッチサイズ1でもSGDとβ2調整で安定学習、性能劣化を防ぐ新発見。学習率は3倍程度、SGDはハイパラに頑健。勾配蓄積不要で、LoRAより完全ファインチューニングが有効に。演算スループット最大化の最小バッチサイズが推奨。分散学習の通信ボトルネックや大規模モデルへの適用が今後の課題。学習コスト削減、実装簡素化に貢献。
+
+---
+
+### [Anthropicの中の人からMCPを学ぶ](https://qiita.com/hiromichinomata/items/f200b5665cb4cda12f83)
+**Published:** 2025-08-12 12:55:52 UTC
 **Likes:** 1
-**Tags:** storybook, Gemini
+**Tags:** 機械学習, MCP, Claude
 
 **Digest:**
-生成AIでアニメ制作が実現する未来を提唱。ChatGPTとGemini Storybookを使い、過去に作成したラノベを元に、Gemini Storybookが約3分のサウンドイラストノベルを生成。物語は変更されるものの、設定丸投げで絵本化できる点がポイント。まさに「朝起きて生成AIにアニメ制作を依頼」に近づき、その実現もそう遠くないと感じている。
+deeplearning.aiのMCPショートコース受講報告。Anthropic社が提唱するModel Context Protocol(MCP)を2時間弱で学べる。LLMの外部API連携をプロキシとして実現。メリットは短時間で学べる点と、開発方針を直接聞けること。一方、Jupyter Notebookとの相性が悪く、ローカル環境での実践が中心となるため、プラットフォーム利用のメリットが薄いと感じた。Claude Codeのコースも提供。
 
 ---
 
-### [Selenaを使ってみる | Claude Codeに長期記憶を持たせる](https://qiita.com/usayamadausako/items/bddd227c6de290ef07f7)
-**Published:** 2025-08-11 06:01:30 UTC
+### [Softmax注意機構を数学で解き明かす：なぜ線形注意は性能が劣るのか？](https://qiita.com/huntersai/items/7c4225df43b14c0557cf)
+**Published:** 2025-08-12 09:26:41 UTC
 **Likes:** 1
-**Tags:** Serena, LLM, Claude, ClaudeCode, VibeCoding
+**Tags:** AWS, softmax, LLM, 中野哲平, 中野哲平と学ぶSoftmax
 
 **Digest:**
-Selenaは、Claude Codeのセッション内容を`.serena/memories/`に.md形式で保存するツールです。これにより、Claude Codeがセッションを忘れる問題を解決し、トークンの無駄遣いを防ぎます。インストールはuvを使用し、`claude mcp add-json`コマンドでMCPに登録。プロジェクトディレクトリで実行すると、`claude`起動時に自動起動します。セッション内容の要約やコード変更記録にも活用可能です。
-
----
-
-### [ubuntu へのLM Studio Install方法](https://qiita.com/gonnta/items/e33dbf7314159756d5d7)
-**Published:** 2025-08-12 05:43:32 UTC
-**Likes:** 0
-**Tags:** 生成AI, LLM, ローカルLLM
-
-**Digest:**
-UbuntuへのLM Studioインストール手順は以下の通りです。まず、公式サイトからLinux版をダウンロードし、`sudo apt update`でパッケージを更新します。次に`libfuse2t64`をインストールし、LM StudioのAppImageファイルを`/opt/LMStudio`に配置します。最後に、デスクトップに起動アイコンを作成すれば、LM Studioを利用できるようになります。
+Transformerの注意機構、特にSoftmaxの計算量問題に対し、テイラー展開とクロネッカー積を用いた数学的分析で、線形注意機構の性能劣化の謎を解明。高次項の重要性と、確率分布でなく正規化効果が本質と判明。これにより、表現力豊かな高次相互作用と、適切な正規化が注意機構設計の鍵となり、今後の効率的で高性能なモデル開発への道筋を示した。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Demystifying Amazon Bedrock Pricing for a Chatbot Assistant](https://aws.amazon.com/blogs/machine-learning/demystifying-amazon-bedrock-pricing-for-a-chatbot-assistant/)
+### [Train and deploy AI models at trillion-parameter scale with Amazon SageMaker HyperPod support for P6e-GB200 UltraServers](https://aws.amazon.com/blogs/machine-learning/train-and-deploy-ai-models-at-trillion-parameter-scale-with-amazon-sagemaker-hyperpod-support-for-p6e-gb200-ultraservers/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-11 19:33:10 UTC
-**Tags:** Amazon Bedrock, Cloud Cost Optimization, Foundational (100), Generative AI, Intermediate (200), Thought Leadership
+**Published:** 2025-08-12 19:57:57 UTC
+**Tags:** Amazon SageMaker HyperPod, NVIDIA
 
 **Digest:**
-Amazon Bedrockの費用を理解するための記事。顧客サービスチャットボットを例に、トークン、埋め込み、モデル選択など、主要コンポーネントに分解してコストを見積もる方法を解説。オンデマンド料金体系で、ClaudeやAmazon Nova、Meta Llamaといった様々なモデルの月額費用を試算。トークン単価を比較し、性能とコストのバランスを考慮した最適なモデル選択を推奨しています。
+Amazon SageMaker HyperPodが、最大72基のNVIDIA Blackwell GPUを搭載したP6e-GB200 UltraServersのサポートを開始。FP8 360PFLOPS、FP4 1.4EFLOPSの演算性能を実現し、大規模AIモデルの開発・デプロイを加速します。NVLinkによる高速接続、13.4TBの高速メモリ、Topology-awareなスケジューリングで、最先端AIモデルの学習・推論を効率化し、柔軟なトレーニングプランも提供します。
 
 ---
 
-### [Fine-tune OpenAI GPT-OSS models on Amazon SageMaker AI using Hugging Face libraries](https://aws.amazon.com/blogs/machine-learning/fine-tune-openai-gpt-oss-models-on-amazon-sagemaker-ai-using-hugging-face-libraries/)
+### [How Indegene’s AI-powered social intelligence for life sciences turns social media conversations into insights](https://aws.amazon.com/blogs/machine-learning/how-indegenes-ai-powered-social-intelligence-for-life-sciences-turns-social-media-conversations-into-insights/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-11 19:25:19 UTC
-**Tags:** Amazon SageMaker, Amazon SageMaker AI, Announcements, Artificial Intelligence, Foundation models
+**Published:** 2025-08-12 18:41:36 UTC
+**Tags:** Amazon Bedrock, Amazon SageMaker AI, Analytics, Artificial Intelligence, Customer Solutions, Healthcare, Intermediate (200), Life Sciences, AI/ML, Generative AI
 
 **Digest:**
-OpenAIのGPT-OSSモデル（gpt-oss-20b/120b）がAmazon SageMaker AIとBedrockで利用可能に。MoEアーキテクチャで推論性能と低コストを実現し、コード、科学分析、数学的推論に特化。128,000のコンテキスト長、多言語対応、CoTによる推論も可能。SageMaker AIで、Hugging Face TRL/Accelerate、DeepSpeed ZeRO-3などを活用し、多言語推論データセットでファインチューニングできます。
+Indegeneは、Amazon BedrockやSageMakerを活用し、製薬会社向けにデジタル医療会話から有益な情報を抽出するSocial Intelligence Solutionを提供。HCPのソーシャルメディア利用増加に対応し、複雑な医療用語の分析や、感情分析、HCPの特定を実現。AWSのサービスを駆使し、データ収集、管理、AI/ML処理を行い、顧客体験向上とビジネス成果を支援します。
 
 ---
 
-### [Azure AI Foundry Agent ServiceのDeep Researchを使ってみた](https://blog.jbs.co.jp/entry/2025/08/12/130459)
+### [Unlocking enhanced legal document review with Lexbe and Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/unlocking-enhanced-legal-document-review-with-lexbe-and-amazon-bedrock/)
+**Source:** AWS ML Blog
+**Published:** 2025-08-12 18:38:03 UTC
+**Tags:** Amazon Bedrock, Amazon Machine Learning, Artificial Intelligence, Intermediate (200)
+
+**Digest:**
+Lexbeは、Amazon Bedrockを活用し、法律文書レビューを効率化。AIと機械学習で膨大な文書から重要情報を抽出、時間とコストを削減。Amazon Bedrock Knowledge Basesにより、キーワード検索を超え、コンテキストに基づいた結果を提供。Amazon OpenSearch、AWS Fargateも活用し、スケーラブルで高精度なeDiscoveryソリューションを実現しています。
+
+---
+
+### [Automate AIOps with SageMaker Unified Studio Projects, Part 2: Technical implementation](https://aws.amazon.com/blogs/machine-learning/automate-aiops-with-sagemaker-unified-studio-projects-part-2-technical-implementation/)
+**Source:** AWS ML Blog
+**Published:** 2025-08-12 18:31:19 UTC
+**Tags:** Amazon SageMaker Unified Studio, Best Practices, Technical How-to, AIML, Amazon SageMaker, automation, MLOps
+
+**Digest:**
+本記事は、Amazon SageMaker Unified Studioを用いたエンタープライズAI/ML環境構築を解説。**管理者**が自動化されたテンプレートでガバナンスとインフラを構築し、**データサイエンティスト**はインフラ管理なしでモデル開発が可能。**プロジェクト初期化**、**開発**、**デプロイ**の各フェーズで、GitHub ActionsやLambda関数を活用し、効率的で安全なAIOps環境を実現。
+
+---
+
+### [Automate AIOps with Amazon SageMaker Unified Studio projects, Part 1: Solution architecture](https://aws.amazon.com/blogs/machine-learning/automate-aiops-with-amazon-sagemaker-unified-studio-projects-part-1-solution-architecture/)
+**Source:** AWS ML Blog
+**Published:** 2025-08-12 18:31:15 UTC
+**Tags:** Amazon SageMaker, Amazon SageMaker AI, Best Practices, Technical How-to, AIML, automation, MLOps
+
+**Digest:**
+Amazon SageMaker Unified Studio で AI/ML ライフサイクルを統合する際の課題として、スケーリング、自動化、分離、マルチテナンシー、CI/CD が挙げられます。 この記事では、マルチアカウントアーキテクチャを提案し、SageMaker Catalog やプロジェクト構造、マルチテナンシーを活用した AIOps の自動化とガバナンスを両立するソリューションを紹介しています。
+
+---
+
+### [Dell SmartFabric OS10でVRF(Virtual Routing and Forwarding)を設定してみた](https://blog.jbs.co.jp/entry/2025/08/13/115531)
 **Source:** JBS Blog
-**Published:** 2025-08-12 04:04:59 UTC
-**Tags:** Azure AI Foundry Agent Service, 大規模言語モデル, Python
+**Published:** 2025-08-13 02:55:31 UTC
+**Tags:** OS10, VRF
 
 **Digest:**
-Deep ResearchがAzure AI Foundry Agent Serviceに登場し、Web情報取得と調査結果組み込みが可能に。検証のため、Python環境でポータル設定とソースコード実装を実施。Bing Search利用条件やストリーミング非推奨事項に注意し、azure-ai-agentsライブラリを用いて動作を確認しました。
+VRFは、1台のルータで複数のルーティングテーブルを分離・運用する技術です。これにより、ルータを仮想的に分割し、独立したルーティング空間を構成可能。Dell SmartFabric OS10でVRFを設定することで、ネットワークの分離やマルチテナント環境構築に役立ちます。
 
 ---
 
-### [Microsoft FabricのEventstreamとEventhouseを使ってみた](https://blog.jbs.co.jp/entry/2025/08/12/102527)
+### [【Microsoft×生成AI連載】【やってみた】Copilot Studioで作成したエージェントをTeamsとMicrosoft 365 Copilotに公開](https://blog.jbs.co.jp/entry/2025/08/13/085001)
 **Source:** JBS Blog
-**Published:** 2025-08-12 01:25:27 UTC
-**Tags:** Microsoft Fabric
+**Published:** 2025-08-12 23:50:01 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
 
 **Digest:**
-Microsoft FabricのEventstreamとEventhouseを試用。Eventstreamはリアルタイムデータ処理、Eventhouseはデータ保存に利用。サンプルデータで簡単に試せる。Eventstream作成、ストリーム設定編集、Eventhouseでのデータ確認が可能。Fabricで手軽にリアルタイムデータ分析を始められます。
-
----
-
-### [Microsoft Purview : 電子情報開示のコマンドレットの接続性の変更](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/08/microsoft-purvi-b2aa.html)
-**Source:** SharePoint Technical Notes
-**Published:** 2025-08-11 12:24:41 UTC
-**Tags:** Microsoft Purview
-
-**Digest:**
-Microsoftは、セキュア フィーチャー イニチアチブ（SFI）の一環として、Windowsのセキュリティ強化に注力しています。具体的には、安全な機能のデフォルト化や、脆弱性リスクの低減を目指し、OSの信頼性向上を図っています。これにより、ユーザーはより安全なWindows環境でPCを利用できるようになります。
+Microsoft Copilot Studioで作成したAIエージェントを、TeamsとMicrosoft 365 Copilotで利用可能にする公開手順を解説。実践的なガイドとして、Copilot Studioで構築したエージェントをTeamsで展開し、Microsoft 365 Copilotとの連携方法を紹介。AIエージェントの活用を促進するための、分かりやすいステップが示されています。
 
 ---
