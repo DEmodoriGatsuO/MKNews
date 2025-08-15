@@ -1,128 +1,138 @@
-# AI Tech Trends Digest (2025-08-14)
+# AI Tech Trends Digest (2025-08-15)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Claude Codeを使ったら2時間でFigmaのプラグインが作れました](https://qiita.com/kabechiyo13/items/9f65c2c5976923e3fea0)
-**Published:** 2025-08-13 10:20:34 UTC
-**Likes:** 18
-**Tags:** Figma, Claude, ClaudeCode
+### [【2025年最新版】個人開発者必見！Claude CodeとMCPサーバーで作る自動化＆生産性アップ術](https://qiita.com/suzukiichirou00/items/2eb85dc2855b7e03e9df)
+**Published:** 2025-08-14 07:00:07 UTC
+**Likes:** 9
+**Tags:** 生成AI, LLM, MCPサーバー, ClaudeCode, AIプログラミング
 
 **Digest:**
-primeNumberのUIデザイナーかべちよ氏が、Claude Codeを活用し、Figmaプラグイン「Frame to YAML」を2時間で開発。FigmaのFrame情報をYAML形式で出力し、フロントエンド開発に役立てる試み。コード知識不要で、Claudeとの対話と微調整で機能とUIを改善。Vibe codingへの活用も行い、その精度に手応えを感じています。
+Claude CodeとMCPサーバーの組み合わせで開発効率が劇的に向上した体験を紹介。GitHub、ファイルシステム、PostgreSQLなど10個のMCPサーバーを解説し、Apidog、Puppeteer、ZapierなどのAPI連携、自動化も実現。セットアップ方法や使用例も提示。使いやすさや拡張性で選び、Slash Commandsや複数サーバー連携などの活用術も。
 
 ---
 
-### [【Python】日本語LLMをChatGPTライクなGUIで表示する](https://qiita.com/k-keita/items/c80c6d28c8f4dfdd7236)
-**Published:** 2025-08-13 10:25:15 UTC
+### [「Claude Codeで『〇〇なりきりなんちゃってBOT』」を作成するプロンプト](https://qiita.com/WdknWdkn/items/8e9eaaf56b5cd8cdc5f5)
+**Published:** 2025-08-14 06:43:34 UTC
 **Likes:** 2
-**Tags:** Python, AI, ChatGPT, LLM, AIエージェント
+**Tags:** bot, プロンプト, 生成AI, Claude, ClaudeCode
 
 **Digest:**
-ローカルLLMをGUIで利用する方法を解説。Ubuntu環境で、Ollamaと日本語対応モデルを構築。DockerでOpenWebUIを起動し、Ollamaに接続して利用。設定はdocker-compose.ymlで記述し、外部からのアクセスを許可。 Ollamaの設定変更も解説し、GUIでLLMを利用できる状態にする手順を説明しています。
+AIで文章スタイルを再現するBOT作成には、データ収集、分析、プロンプト設計、検証、改善の6段階が必要です。100件以上の文章収集と、思考パターン分析が重要です。最終的なシステムプロンプトは、価値観、表現、思考プロセスを具体化し、用途別のプロンプトも用意します。A/Bテストで評価し、継続的な改善と倫理的配慮が不可欠です。
 
 ---
 
-### [Claude Codeの使い方が無料で学べる「Claude Code in Action」を受講してみよう！](https://qiita.com/Akmikami/items/6b3ffd9309f2fa304a2a)
-**Published:** 2025-08-13 09:48:07 UTC
-**Likes:** 2
-**Tags:** 未経験エンジニア, Claude, AI駆動開発, AIエージェント, ClaudeCode
-
-**Digest:**
-Anthropicの無料オンラインコース「Claude Code in Action」は、AI支援開発を学べるプロ向けトレーニング。コマンドラインで動作するClaude Codeを使い、コード分析、Git操作、カスタム自動化などを習得。自己ペースで進められ、GitHub統合やMCPサーバー統合も可能。中級者向けで、登録後すぐに全コンテンツにアクセスできます。
-
----
-
-### [既存のLLMとClaude Opus4.1の性能について比較](https://qiita.com/Akmikami/items/c44dff6450780b095298)
-**Published:** 2025-08-13 09:47:35 UTC
-**Likes:** 2
-**Tags:** 未経験エンジニア, Claude, AI駆動開発, AIエージェント, ClaudeCode
-
-**Digest:**
-Anthropicの最新LLM、Claude Opus 4.1が2025年8月に登場。SWE-benchで74.5%を記録し、ソフトウェア開発で圧倒的な性能を発揮。20万トークンのコンテキスト長、高いデバッグ能力も特徴。GPT-4oより優位性も。高コストが課題だが、本番環境での活用が期待され、業界の技術水準向上に貢献する見込みです。
-
----
-
-### [Multimodal Live APIを使った簡単なアプリ作ってみる](https://qiita.com/innovator_samoyed/items/82e2b3cb6154ee4a94fa)
-**Published:** 2025-08-13 16:54:12 UTC
+### [AI モデル比較](https://qiita.com/iroirotool/items/33a0e2fd58824b572c65)
+**Published:** 2025-08-15 04:11:24 UTC
 **Likes:** 1
-**Tags:** Python, React, MultiModal, Gemini, GoogleCloud
+**Tags:** AI, Gemini, ChatGPT, ClaudeCode
 
 **Digest:**
-GoogleのMultimodal Live APIを使って、テキストと音声でリアルタイム会話できるWebアプリを構築。FastAPIバックエンドとReactフロントエンドで実装。音声入力はGemini APIが未対応のため、音声認識でテキスト化しGeminiに渡し、応答を音声で返す。webrtcvadとSpeechRecognition、gTTSを使用。ソースコードはGitHubで公開。
+2025/08/15に、Gemini、ChatGPT、Claude CodeでGoogle CloudのIAM設定のMermaid図を比較検証。Geminiは基本的なIAM、サービスアカウント、フォルダ構成を図示。ChatGPTはプリンシパル、ロール、リソースを要素とし、継承や条件付きポリシーについても言及。Claude Codeは、IAMの構成要素、ロールタイプ、リソース階層、アクセス制御などを包括的に表現したMermaid図を出力。
+
+---
+
+### [生成AIの「信頼性」をどう担保するか？説明可能性（XAI）とファクトチェックの最新技術](https://qiita.com/k_nabe/items/d3e8649ef86d61c40458)
+**Published:** 2025-08-15 02:08:40 UTC
+**Likes:** 1
+**Tags:** API, 技術調査, プロンプトエンジニアリング, Claude
+
+**Digest:**
+生成AIの嘘問題に対処する最新技術を解説。2025年、ハルシネーション問題は深刻化。XAI（説明可能なAI）で判断過程を可視化、LIMEやSHAPが活躍。ファクトチェック技術も進化し、マルチモーダル検証や次世代検索エンジンが真偽をチェック。プロンプトエンジニアリング、RAG、多層防御で精度向上。医療、金融、法務での信頼性確保が重要。AIとの適切な距離感と、人間とAIの協働が成功の鍵。
+
+---
+
+### [VS Code + DevContainer を利用して、{any AI} CLI 環境をチーム間で揃える](https://qiita.com/mitsuharu_e/items/fa27436a1bb77cd4f267)
+**Published:** 2025-08-14 07:07:32 UTC
+**Likes:** 1
+**Tags:** Docker, VSCode, Gemini
+
+**Digest:**
+CLIツールのグローバルインストールは、バージョン不一致や設定共有の課題がある。本記事は、チーム開発での課題解決のため、ローカルインストールと、VS Code + DevContainer を活用する方法を提案。Gemini CLI を例に、Dockerコンテナ内でNode.jsとCLIツールを構築し、開発環境を共有する。GitHubのサンプルリポジトリも公開。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Securely launch and scale your agents and tools on Amazon Bedrock AgentCore Runtime](https://aws.amazon.com/blogs/machine-learning/securely-launch-and-scale-your-agents-and-tools-on-amazon-bedrock-agentcore-runtime/)
+### [Scalable intelligent document processing using Amazon Bedrock Data Automation](https://aws.amazon.com/blogs/machine-learning/scalable-intelligent-document-processing-using-amazon-bedrock-data-automation/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-13 21:59:24 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Artificial Intelligence
+**Published:** 2025-08-14 17:53:40 UTC
+**Tags:** Amazon Augmented AI, Amazon Bedrock, Amazon Bedrock Data Automation, Amazon Comprehend, Amazon SageMaker AI, Amazon SageMaker Ground Truth, Amazon Textract
 
 **Digest:**
-Amazon Bedrock AgentCore Runtimeは、AIエージェントの課題を解決するサーバーレス環境です。異なるフレームワークやモデルに対応し、4行のコードでデプロイ、スケーリング、ストリーミングを実現。セッション分離と埋め込みIDによるセキュリティ強化も特徴です。また、最大8時間持続するセッションで状態を保持し、大規模データ処理も可能です。
+Amazon Bedrock Data Automationは、**IDP**を強化する技術で、高度なMLと生成AIを活用し、ドキュメントからの情報抽出を効率化します。このソリューションは、**自動分類**、**正規化**、**変換**、**検証**機能を備え、開発期間短縮、データ品質向上、スケーラブルなIDPを実現します。Amazon Bedrock Data Automationは、**信頼度スコア**や**境界ボックスデータ**も提供し、人間のレビュープロセスとの統合も可能です。
 
 ---
 
-### [PwC and AWS Build Responsible AI with Automated Reasoning on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/pwc-and-aws-build-responsible-ai-with-automated-reasoning-on-amazon-bedrock/)
+### [Whiteboard to cloud in minutes using Amazon Q, Amazon Bedrock Data Automation, and Model Context Protocol](https://aws.amazon.com/blogs/machine-learning/whiteboard-to-cloud-in-minutes-using-amazon-q-amazon-bedrock-data-automation-and-model-context-protocol/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-13 19:32:01 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Customer Solutions, Generative AI
+**Published:** 2025-08-14 17:31:51 UTC
+**Tags:** Amazon API Gateway, Amazon Bedrock Data Automation, Amazon Q, Amazon Q Developer
 
 **Digest:**
-PwCとAWSは、生成AIの正確性、セキュリティ、コンプライアンスを両立するため、Amazon Bedrock Guardrailsの自動推論チェックを開発。金融、製薬、電力など規制業種での活用事例を紹介し、EU AI Actへの対応や、リスク管理、コンテンツレビュー、アウト...
+レガシーシステム刷新の課題に対し、Amazon Q Developer、Amazon Bedrock Data Automation、AnthropicのMCPが解決策を提供。Amazon Q CLIとMCPサーバーの連携により、ホワイトボードのアイデアから、安全でスケーラブルなクラウドアーキテクチャを数分で実現。Bedrock Data Automationは、エンタープライズデータのETLを自動化し、より迅速な意思決定と深い洞察を可能にします。
 
 ---
 
-### [How Amazon scaled Rufus by building multi-node inference using AWS Trainium chips and vLLM](https://aws.amazon.com/blogs/machine-learning/how-amazon-scaled-rufus-by-building-multi-node-inference-using-aws-trainium-chips-and-vllm/)
+### [Bringing agentic Retrieval Augmented Generation to Amazon Q Business](https://aws.amazon.com/blogs/machine-learning/bringing-agentic-retrieval-augmented-generation-to-amazon-q-business/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-13 17:01:52 UTC
-**Tags:** Amazon EC2, Amazon Elastic Container Service, Architecture, AWS Trainium, Customer Solutions
+**Published:** 2025-08-14 17:14:30 UTC
+**Tags:** Amazon Machine Learning, Amazon Q, Amazon Q Business, Artificial Intelligence, Generative AI
 
 **Digest:**
-Amazonは、大規模言語モデル(LLM)を搭載したショッピングアシスタント「Rufus」を、AWS TrainiumとvLLMを活用して実現。マルチノード推論により、低レイテンシとコスト効率を両立。モデルを複数のノードに分散し、ハイブリッド並列処理で性能を向上。Amazon ECS 上に管理層を構築し、信頼性とスケーラビリティを実現。Elastic Fabric Adapter (EFA)を利用した高速なノード間通信も実現し、Prime Dayのトラフィックにも対応しました。
+Amazon Q Businessは、**Agentic RAG**という新機能により、企業データの活用を強化。複雑な質問を分解し、複数の検索ツールを駆使して正確な回答を生成します。これにより、複数ステップのクエリや会話形式でのやり取りが可能になり、従来のRAGよりも高度な情報検索を実現。企業は、詳細な質問を通じて、より深いインサイトを得られます。
 
 ---
 
-### [Build an intelligent financial analysis agent with LangGraph and Strands Agents](https://aws.amazon.com/blogs/machine-learning/build-an-intelligent-financial-analysis-agent-with-langgraph-and-strands-agents/)
+### [Empowering students with disabilities: University Startups’ generative AI solution for personalized student pathways](https://aws.amazon.com/blogs/machine-learning/empowering-students-with-disabilities-university-startups-generative-ai-solution-for-personalized-student-pathways/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-13 16:32:20 UTC
-**Tags:** Amazon Bedrock
+**Published:** 2025-08-14 16:10:57 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Bedrock Guardrails, Amazon Bedrock Knowledge Bases, Customer Solutions
 
 **Digest:**
-金融業界向けのAgentic AIアーキテクチャを紹介。LangGraphでワークフローを、Strands Agentsで推論を、MCPでツール統合を実現。動的分析フローとデータソース統合の課題に対応し、柔軟な実行パスと状態管理を実現。専門ツールとの連携で分析精度向上。MCPによる標準化で、多種多様な金融ツールとの接続を簡素化しています。
+University Startupsは、Amazon Bedrockを活用し、高校生の進路計画を支援するAIアシスタント「Trinity」を開発。特に障害を持つ生徒の個別教育計画(IEP)策定を支援し、Amazon Bedrock AgentsやGuardrailsにより安全性を確保。パイロットプログラムで、生徒は進路を探索し、教員は時間短縮を実現。15州で展開中で、教育の民主化を目指しています。
 
 ---
 
-### [Amazon Bedrock AgentCore Memory: Building context-aware agents](https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-memory-building-context-aware-agents/)
+### [Citations with Amazon Nova understanding models](https://aws.amazon.com/blogs/machine-learning/citations-with-amazon-nova-understanding-models/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-13 16:30:00 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Artificial Intelligence
+**Published:** 2025-08-14 15:56:20 UTC
+**Tags:** Amazon Bedrock, Amazon Machine Learning, Amazon Nova, Artificial Intelligence, Intermediate (200)
 
 **Digest:**
-AWSが発表した「Amazon Bedrock AgentCore Memory」は、AIエージェントの記憶管理サービスです。 短期・長期の情報を保持し、対話の継続性を実現します。会話履歴やユーザー設定を記憶し、パーソナライズされた体験を提供。  **AgentCore Memory** は、複雑なインフラ管理を不要にし、 **短期的** な会話文脈と **長期的** なインサイトの保存を実現。メモリ戦略と名前空間でデータ整理も可能。
+大規模言語モデル（LLM）の信頼性向上のため、Amazon Novaモデルで引用を促す方法を解説。指示により、回答と引用を両立。Nova Proは株主レターからの質問に正確に回答し、引用も提示。LLM-as-a-judge手法で評価し、高いスコアを獲得。これにより、AIの信頼性と透明性が向上。
 
 ---
 
-### [Teamsの音声分離機能を使ってみる](https://blog.jbs.co.jp/entry/2025/08/14/132549)
+### [Microsoft Teams のタグ情報を Graph API で一括取得し、Excel に出力する方法](https://blog.jbs.co.jp/entry/2025/08/15/100044)
 **Source:** JBS Blog
-**Published:** 2025-08-14 04:25:49 UTC
-**Tags:** Microsoft Teams
+**Published:** 2025-08-15 01:00:44 UTC
+**Tags:** PoweShell, Microsoft Graph, Microsoft Teams
 
 **Digest:**
-Teams会議で周囲の音で困っていませんか？Microsoft Teamsの音声分離機能を使えば、クリアな音声で会話できます。これはAIが自身の声と周囲の音を区別し、ノイズを除去する機能です。設定画面から有効/無効を切り替えられ、会議の聞き取りやすさを向上させます。
+Microsoft Teamsの100人超のタグ管理を効率化する自動化手法を紹介。Graph APIとPowerShellを駆使し、複数のチームのタグとメンバー情報をExcelに出力。これにより、タグの管理工数を大幅に削減し、大規模なチーム運営をスムーズにします。
 
 ---
 
-### [Intuneポータルの外観をカスタマイズしてみた](https://blog.jbs.co.jp/entry/2025/08/14/110106)
+### [【Microsoft×生成AI連載】【Power Platform】Microsoft Power AutomateでMicrosoft Copilotを使ってみた 2](https://blog.jbs.co.jp/entry/2025/08/15/090404)
 **Source:** JBS Blog
-**Published:** 2025-08-14 02:01:06 UTC
-**Tags:** Intune
+**Published:** 2025-08-15 00:04:04 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載, Power Automate
 
 **Digest:**
-Intuneポータルをカスタマイズし、iOSデバイスでの外観を確認しました。企業ロゴや背景画像を設定することで、**ブランドイメージ**に合わせた**UI**を実現できます。**Intuneポータル**の**iOS**での見た目について、設定方法と実際の表示を解説します。
+Power AutomateのCopilot機能が進化し、JSON、ODataクエリ、PowerFx式といったパラメーター生成で精度が向上しています。以前紹介された「フロー全体の生成」や「アクションの生成」に加え、今回の機能はより実用的で、Power Automateの活用をさらに促進しそうです。
+
+---
+
+### [Microsoft Graph APIを用いてカスタムロールを作成する方法](https://blog.jbs.co.jp/entry/2025/08/14/155114)
+**Source:** JBS Blog
+**Published:** 2025-08-14 06:51:14 UTC
+**Tags:** Microsoft, M365, Microsoft Graph, Microsoft Entra ID
+
+**Digest:**
+Microsoft Entra管理センターでカスタムロール作成時、権限が表示されない問題が発生。これは、権限がMicrosoft Graphに依存し、画面に未反映なため。本記事では、Microsoft Graph APIを用いて、不足する権限を明示的に付与したカスタムロールを作成する方法を紹介します。必要な準備と管理者権限について解説します。
 
 ---
