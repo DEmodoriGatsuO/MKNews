@@ -1,78 +1,107 @@
-# AI Tech Trends Digest (2025-08-18)
+# AI Tech Trends Digest (2025-08-19)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [お盆休みに「AIで議事録ツールをつくって。簡単なのでいいから」と言われたときのレシピ](https://qiita.com/R_28/items/dbcce690a69bf7964423)
-**Published:** 2025-08-17 07:33:27 UTC
-**Likes:** 7
-**Tags:** Python, Gemini
+### [にゃん助（LINE bot）に知能を持たせたら大変なことになったw](https://qiita.com/ahya_emon/items/b5e8623d7015d6276fba)
+**Published:** 2025-08-18 08:33:13 UTC
+**Likes:** 3
+**Tags:** bot, AI, 猫, linebot, Claude
 
 **Digest:**
-お盆休みに、AI議事録ツール開発に挑戦。GitHub Copilot Agentを活用し、会議音声を録音、Whisperでテキスト化、Gemini APIで要約するツールをPythonで作成。GUIも実装し、ローカルで完結。FFmpegやループバック録音の事前準備が必要。Copilot Agentのおかげで短期間で完成したが、知識と経験による修正も不可欠。完成品はGitHubで公開。
+知り合いの誕生日にLINE bot「にゃん助」をプレゼントした著者は、AI搭載で猫に返答させるように進化させました。Claude 4 Sonnetを使い、LINE Messaging API、Cloudflare Workersを連携。当初はタイムアウト問題がありましたが、waitUntilで非同期処理を実現。卑屈な性格の猫というプロンプトで、辛辣な返答をする「にゃん助」が完成し、満足しています。
 
 ---
 
-### [Claude CodeでGit Worktreeの移動→Issueの着手→PRの作成までをコマンド一発で行う](https://qiita.com/getty104/items/388fb3d834f9e2a4f84e)
-**Published:** 2025-08-17 11:10:21 UTC
-**Likes:** 5
-**Tags:** LLM, Claude, AIエージェント, ClaudeCode, バイブコーディング
+### [Gemini API と Veo3 を活用した AI 動画生成の実践ガイド](https://qiita.com/jiahuih561/items/bf92e13a7b0c224db43a)
+**Published:** 2025-08-19 05:33:45 UTC
+**Likes:** 0
+**Tags:** Gemini, 動画生成, 動画生成AI, GeminiAPI, veo3
 
 **Digest:**
-Claude CodeでGit Worktreeを活用し、Issue着手からPR作成までをコマンド一発で実現する方法を紹介。並列タスク実行のため、Git Worktreeのセットアップを簡略化。GitHub CLIとオプションでSerenaを使用し、`/exec-issue`スラッシュコマンドでWorktree作成、環境構築、タスク実行、PR作成を自動化。`.git-worktrees`を`.config/git/ignore`に追加し、gitによるignoreも可能。
+Google Gemini APIとVeo3を活用した動画生成技術を紹介。テキストや画像から高品質な動画を生成可能で、TopMediaiなどのツールで手軽に利用できます。Pythonコード例も示し、SNS、教育、広告など幅広い用途に適用できます。Veo3は最大8秒の動画を生成、料金や利用制限に注意が必要です。
 
 ---
 
-### [実プロダクト実装：Gemini APIとプロンプト設計の実践](https://qiita.com/kaminuma/items/138475ebbc405e777749)
-**Published:** 2025-08-17 17:18:13 UTC
-**Likes:** 1
-**Tags:** AI, LLM, プロンプトエンジニアリング, GeminiAPI, システムプロンプト
+### [生成AIとは？メリットからできることや仕組みについて徹底解説！](https://qiita.com/keiichileograph/items/a8418559bd992b86bf24)
+**Published:** 2025-08-19 03:18:30 UTC
+**Likes:** 0
+**Tags:** 機械学習, AI, OpenAI, 生成AI, ChatGPT
 
 **Digest:**
-生活記録アプリにGemini APIを活用した**AIライフガイド機能**を実装。ユーザーの記録データから行動パターンを分析し、パーソナライズされたアドバイスを生成します。  プロンプトエンジニアリングでAIに役割、分析方針、出力形式を指示し、JSON形式で回答を要求。  活動記録や気分記録を整形し、Gemini APIを呼び出し、分析結果を表示する流れです。
+生成AIは、テキスト、画像、音声、動画を生成する技術で、2022年後半から普及。LLMを活用し、文章要約、翻訳、画像編集、映像解釈、音楽作成など多様な用途に展開。従来のAIとの違いは「創造」力で、作業時間短縮、重複作業削減などメリット多数。LLM構築は膨大なデータ収集、トークン化、エンベディングを経て、推論、サンプリング、デコーディングによる生成プロセス。
 
 ---
 
-### [EARS記法 × LLM：Webアプリ要件をEARS記法で整理する](https://qiita.com/NaokiIshimura/items/490faa689a44c161070f)
-**Published:** 2025-08-17 15:04:12 UTC
-**Likes:** 1
-**Tags:** ears, LLM
+### [【2025年版】ローカルLLM導入ガイド：プライバシー重視のAI環境構築完全マニュアル](https://qiita.com/k_nabe/items/0acabec991802e510652)
+**Published:** 2025-08-19 02:01:24 UTC
+**Likes:** 0
+**Tags:** API, プロンプトエンジニアリング, Claude, 実装事例
 
 **Digest:**
-EARS記法は、Webアプリの要求仕様を自然言語で表現する手法で、**曖昧さを減らし、読みやすい仕様書**作成に役立ちます。5つの形式があり、**LLM（大規模言語モデル）**との組み合わせで、要件整理、**コード生成**、レビュー、大量の**ユースケース**自動生成など、開発効率化に貢献します。要件定義から実装までをAIで繋ぐ新しい開発スタイルを提案します。
+2025年版ローカルLLM導入ガイド。**プライバシー保護**を重視する企業向けに、**コスト削減**と**カスタマイズ性**を両立する技術を解説。**ローカルLLM**は、PCやサーバーで動作し、データ漏洩リスクをゼロに。初期設定から推奨スペック、運用の注意点まで網羅し、金融・医療など機密情報を扱う業界にも適しています。GPUが重要で、モデル選択とセキュリティ対策が鍵です。
 
 ---
 
-### [生成AIの「苦手」を理解する](https://qiita.com/tyoko010/items/606ddc11bfb1193255b6)
-**Published:** 2025-08-17 14:18:57 UTC
-**Likes:** 1
-**Tags:** 生成AI, LLM, ハルシネーション
+### [あなたの成長か、AIの成長か：エンジニアと「共育」するAIは？](https://qiita.com/Shawin/items/5b4c12a6dd9fb896dfa5)
+**Published:** 2025-08-19 00:13:24 UTC
+**Likes:** 0
+**Tags:** 初心者, AI, 人工知能, LLM, AIエージェント
 
 **Digest:**
-生成AI（LLM）は万能ではなく、数値計算、トークン単位での情報処理、嘘を真実らしく説明する点が苦手です。例えば、計算間違いや単語内の文字数誤認識、存在しない機能の説明が挙げられます。正確な情報処理には外部ツールや検索機能と連携するなど、工夫が必要です。
+AI進化でエンジニアの仕事は変革期。単なるツールではなく「共育」が重要。AIの個性を理解し、論理思考型、情報収集型、創造型と使い分け、自身の能力を伸ばす。教師として学習、壁打ち相手として思考整理、共同作業者として創造性を高める。AIと連携し、創造的かつ効率的なエンジニアへ進化する。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [SaaS版のFLYにて移行レポートおよびエラーレポートを取得する手順](https://blog.jbs.co.jp/entry/2025/08/18/141422)
-**Source:** JBS Blog
-**Published:** 2025-08-18 05:14:22 UTC
-**Tags:** FLY, FLYSaaS
+### [Create a travel planning agentic workflow with Amazon Nova](https://aws.amazon.com/blogs/machine-learning/create-a-travel-planning-agentic-workflow-with-amazon-nova/)
+**Source:** AWS ML Blog
+**Published:** 2025-08-18 20:30:15 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Amazon Nova, Generative AI
 
 **Digest:**
-SaaS版FLYのリリースに伴い、データ移行が活発化。移行の詳細確認のため、FLYにおける移行レポートとエラーレポート生成の手順が重要に。円滑なデータ移行には、これらのレポートを活用し、問題点を迅速に把握することが求められます。
+Amazon NovaとLangGraphを活用し、旅行計画を簡素化するAIエージェントを紹介。React.jsのチャットインターフェースで、LLMによる自然言語理解と外部API連携を実現。**Amazon Nova Pro/Lite**モデルを使用し、**LangGraph**による複雑な処理を効率化。**DynamoDB**で状態管理、**Secrets Manager**でAPIキーを保護。デプロイはAWS CDKで、GitHubリポジトリでコード公開。
 
 ---
 
-### [【Exchange Online】リソースメールボックスごとに予約できるユーザーを絞る](https://blog.jbs.co.jp/entry/2025/08/18/115605)
-**Source:** JBS Blog
-**Published:** 2025-08-18 02:56:05 UTC
-**Tags:** Exchange Online, Microsoft 365
+### [Take Charge and Stay Ahead with Power Platform Monitor Alerts](https://www.microsoft.com/en-us/power-platform/blog/power-apps/take-charge-and-stay-ahead-with-power-platform-monitor-alerts/)
+**Source:** Microsoft Power Automate Blog
+**Published:** 2025-08-18 15:00:40 UTC
 
 **Digest:**
-会議室やプロジェクター予約を効率化するリソースメールボックス。特定ユーザーへの予約制限方法を解説します。予約の承認/拒否オプション設定や、予約時間帯の制限、ユーザーグループによるアクセス制御などを活用し、会議室利用を最適化。
+Power Platformの「Monitor Alerts」は、Power Platform管理者に問題発生前の対策を可能にします。カスタムの**ヘルスしきい値**を設定し、アプリやフローのパフォーマンス低下を**通知**。**Power Platform管理センター**で利用可能、設定不要で、**キャンバスアプリ**、**モデル駆動型アプリ**、**クラウドフロー**、**デスクトップフロー**に対応。**アラート**から迅速な対応が可能になり、問題解決に集中できます。
+
+---
+
+### [条件付きアクセスを活用した Exchange(OWA) のダウンロード制御](https://blog.jbs.co.jp/entry/2025/08/19/145120)
+**Source:** JBS Blog
+**Published:** 2025-08-19 05:51:20 UTC
+**Tags:** 条件付きアクセス, Azure AD, Microsoft Entra ID, Exchange Online
+
+**Digest:**
+以前解説したSharePointのファイルダウンロード制御は、Exchange Onlineでも可能です。この記事では、ダウンロード制御の概要、注意事項、PowerShell設定、条件付きアクセス設定、ポリシー内容、設定後の動作を解説。SharePoint、OneDrive、Teamsに加え、Exchange Onlineでのファイルダウンロード制御を実現できます。
+
+---
+
+### [Azure Monitorメトリックをメトリックスエクスプローラーで可視化する](https://blog.jbs.co.jp/entry/2025/08/19/114129)
+**Source:** JBS Blog
+**Published:** 2025-08-19 02:41:29 UTC
+**Tags:** Azure, Azure Portal, Azure Monitor, Tech
+
+**Digest:**
+Azureリソースの性能監視には、Azure Monitorメトリックとメトリックスエクスプローラーが役立ちます。Azure Monitorメトリックは、ネイティブプラットフォームメトリックを提供し、課金によって長期保存やアラート設定が可能。メトリックスエクスプローラーでは、グラフ作成、メトリック比較、ダッシュボード保存による可視化が実現できます。
+
+---
+
+### [条件付きアクセスを活用した SharePoint のダウンロード制御](https://blog.jbs.co.jp/entry/2025/08/19/100337)
+**Source:** JBS Blog
+**Published:** 2025-08-19 01:03:37 UTC
+**Tags:** 条件付きアクセス, Azure AD, Microsoft Entra ID, SharePoint
+
+**Digest:**
+リモートワーク普及で情報漏洩リスクが高まる中、Microsoft Entra IDの条件付きアクセスポリシーを活用した「ダウンロード制御」が重要です。SharePoint Onlineでのファイルダウンロード制御について、概要と設定方法を解説します。機密ファイルのダウンロード対策として、ダウンロード制御の活用を検討しましょう。
 
 ---
