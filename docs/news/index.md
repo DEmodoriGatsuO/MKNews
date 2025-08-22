@@ -1,56 +1,56 @@
-# AI Tech Trends Digest (2025-08-21)
+# AI Tech Trends Digest (2025-08-22)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [大規模言語モデル（LLM）を自社開発できた方がいいのか](https://qiita.com/eiji-noguchi/items/dfedf2cf47eaa12a2e4a)
-**Published:** 2025-08-20 10:28:31 UTC
-**Likes:** 5
-**Tags:** ファインチューニング, 生成AI, LLM, 大規模モデル
-
-**Digest:**
-生成AI開発について、著者は「活用」「統合」「開発」の3つの意味を提示。特に「開発」は、モデル自体の学習を指し、**追加学習**が重要と説く。自社開発の利点として、**コスト削減**、**セキュリティ向上**、**応答速度**の改善を挙げ、大規模モデル利用の課題を指摘。高スループット、厳密な出力、閉域運用など、特定の要件には**LLM開発**が合理的と結論づけています。GPU購入のお願いで締めくくられています。
-
----
-
-### [Amazon Bedrock から 4 つの方法で gpt-oss を streaming で利用する](https://qiita.com/ren8k/items/5e1388d5af0f6541d9c4)
-**Published:** 2025-08-20 13:16:10 UTC
+### [Amazon BedrockのPrompt CachingでMCP TOOL部分のトークン数を削減しよう](https://qiita.com/marudog/items/58ef942417cddd4b594f)
+**Published:** 2025-08-21 14:48:55 UTC
 **Likes:** 4
-**Tags:** Python, AWS, OpenAI, bedrock, 生成AI
+**Tags:** bedrock, Anthropic, PromptCaching
 
 **Digest:**
-NTTデータデジタルサクセスソリューション事業部の ren8k 氏が、OpenAIのgpt-oss-120b/20bをAmazon Bedrockでストリーミング利用するサンプルコードを公開。ConverseStream API、OpenAI Completions API、Strands Agentsに対応。APIのバグにより、一部で推論部が出力に含まれる可能性あり。GitHubリポジトリでサンプルコードを公開。
+Amazon Bedrock経由のClaude Sonnet 4でPrompt Cachingを検証。MCP利用時のトークン消費削減のため、2回利用で費用回収、10回で約22%の料金に。Playwright MCPでは約3,000トークン消費するツールがあり、SystemMessageに`cachePoint`設定が重要。キャッシュON/OFFで効果を確認。短時間での複数指示にも有効。基盤モデルにより対応状況が異なる点に注意。
 
 ---
 
-### [AIを「物知り博士」から「知的パートナー」へ。「背理系」プロンプトエンジニアリング](https://qiita.com/makotosaekit/items/ca9f707f8718d7c2471d)
-**Published:** 2025-08-20 14:35:53 UTC
+### [設計書駆動で品質を保証する「Agentic Coding」実践ガイド](https://qiita.com/shinpr/items/98771c2b8d2e15cafcd5)
+**Published:** 2025-08-21 10:18:34 UTC
 **Likes:** 2
-**Tags:** AI, プロンプト, 思考法, ChatGPT, LLM
+**Tags:** TDD, LLM, ClaudeCode
 
 **Digest:**
-「背理系フレームワーク」は、AIとの対話で「問題の構造」を暴き出す思考技術。目的背理で前提を外し、構造背理で問いを投げかけ、原則背理で知見を定着。具体例では、リモートワーク課題をOSSの知見とアナロジーで解決。SystemPromptへの適用でAIの思考OSを書き換え、知的資産を継承。AIを「思考の彫刻パートナー」に変え、知的パートナーシップを築くことを目指す。
+複数のAIエージェントが協調し、設計から実装、品質保証までを自律的に行うAgentic Codingを紹介。ルールと設計を体系化するContext EngineeringでLLMの判断精度を向上、ボイラープレートで実践可能。TDDや設計書駆動開発を実践し、メタ認知アプローチも採用。実際に試せるプロジェクトも公開。
 
 ---
 
-### [医療業務効率化システム「KarteLink」の開発 | Qiita × FastDOCTOR Health Tech Hackathon](https://qiita.com/PocoPota/items/67c381f8f7c21babb44e)
-**Published:** 2025-08-20 13:18:18 UTC
-**Likes:** 2
-**Tags:** Gemini, QiitaFastDOCTOR
+### [ドルコスト平均法じゃ満足できない！！効率の良いアルゴリズムの模索[第一回]](https://qiita.com/rikutoyamada01/items/d5e9c00166b1a68f7856)
+**Published:** 2025-08-21 12:09:57 UTC
+**Likes:** 1
+**Tags:** 自動化, AI, 投資, Gemini, ドルコスト平均法
 
 **Digest:**
-都内ハッカソンで、チーム`Shimekiri_Keeper`が医療DXを目指し、AIと連携した医療業務効率化システム「KarteLink」を開発。**事前問診、会話録音、カルテ自動生成**の3ステップで、**AI**を活用し、医者の業務効率化と患者対応数増加を目指しました。**Next.js、Firebase、Gemini API**などを利用し、課題解決と将来性を探求しました。
+ドルコスト平均法のメリットを活かし、投資額を株価変動に合わせて調整する「AAVC」というアルゴリズムを提案。過去のボラティリティと乖離率を元に、安く多く買い、高く少なく買う戦略を目指す。シミュレーションではDCAを上回るリターン率を達成。非対称性係数などのパラメータで戦略をカスタマイズ可能。今後、計算式と検証を進める予定です。
 
 ---
 
-### [Health Tech Hackathonで病院の業務効率化支援ソフトを作成しました](https://qiita.com/zobio/items/4c64c3852e2e7b20c4f4)
-**Published:** 2025-08-20 12:52:50 UTC
-**Likes:** 2
-**Tags:** hackathon, TypeScript, React, Gemini, QiitaFastDOCTOR
+### [【Claude×JavaScript】ポモドーロタイマーのWebアプリをAIと共同開発してみた](https://qiita.com/5naokichi/items/e4385521a66b3e7f3979)
+**Published:** 2025-08-22 05:10:05 UTC
+**Likes:** 0
+**Tags:** HTML, CSS, JavaScript, Claude, ClaudeCode
 
 **Digest:**
-「Qiita × FastDOCTOR Health Tech Hackathon」に参加。**医療現場の課題**に着目し、**AI**を活用した**事前問診、文字起こし、カルテ自動作成**サービスを開発。**Gemini**を用いてカルテ生成に挑戦するも、文字起こしデータの精度向上に苦戦。**プロンプト**の工夫や**LLM**との向き合い方を学び、**ユーザー目線**での開発の重要性を痛感。貴重な経験を通して成長を実感した。
+ポモドーロテクニックWebタイマーアプリを開発。25分集中と5分休憩を繰り返す時間管理術を、Page Visibility API、HTML5 Audio API、ローカルストレージを活用し実現。高精度タイマー、自動切り替え、UI設計、日次データ管理などを実装。バックグラウンド動作やUXにも配慮し、AI Claude Codeと協業して開発。
+
+---
+
+### [松尾・岩澤研究室公開講座【現在募集中の講座一覧】の紹介 & 東大、生成AI講座の動画を無料公開　小中高生・保護者・教員向けに全5講座](https://qiita.com/Shawin/items/52d8cb6965baec6fc393)
+**Published:** 2025-08-22 05:00:19 UTC
+**Likes:** 0
+**Tags:** 機械学習, AI, 生成AI, LLM, AIエージェント
+
+**Digest:**
+東京大学 松尾・岩澤研究室の公開講座情報をまとめました。10/7開講の「GCI」、10/1開講の「LLM基礎」、10/9開講の「深層学習」、12/3開講の「LLM応用」があります。対象者は学生や社会人で、締め切りや前提条件は講座によって異なります。詳細はリンク先でご確認ください。
 
 ---
 
@@ -63,7 +63,7 @@ NTTデータデジタルサクセスソリューション事業部の ren8k 氏�
 **Tags:** Pixel
 
 **Digest:**
-Google Pixel Buds Aシリーズは、アクティブノイズキャンセリング、没入感あるサウンド、快適な装着感を特徴とするイヤホンです。手頃な価格ながら、高い音質と使い心地を実現しており、日常使いに最適です。
+Google Pixel Buds A-Seriesが登場。アクティブノイズキャンセリングこそないものの、没入感のあるサウンドと快適な装着感を両立し、手頃な価格を実現したイヤホンです。一日中使えるバッテリーも魅力です。
 
 ---
 
@@ -73,7 +73,7 @@ Google Pixel Buds Aシリーズは、アクティブノイズキャンセリン�
 **Tags:** Pixel
 
 **Digest:**
-Google Pixel Watch 4 が登場！バッテリー駆動時間が向上し、業界初のドーム型 Actua 360 ディスプレイを搭載。ジェスチャー操作により、手を挙げるだけで Gemini を起動し、音声アシスタント機能が利用可能になりました。
+Google Pixel Watch 4 が登場、新機能満載！長時間のバッテリー駆動と、業界初のドーム型 Actua 360 ディスプレイを搭載。さらに、手を挙げるだけで Gemini が利用可能となり、スマートウォッチとしての利便性が大きく向上しました。
 
 ---
 
@@ -83,76 +83,115 @@ Google Pixel Watch 4 が登場！バッテリー駆動時間が向上し、業�
 **Tags:** Pixel
 
 **Digest:**
-Google Pixel 10 のデザインに最適化された、新たなアクセサリーが登場します。アダプター、スタンド、ケースがラインナップされ、Pixel 10 シリーズの利便性と外観をさらに向上させるでしょう。
+Google Pixel 10シリーズのデザインに最適化された周辺アクセサリーが発表されました。アダプター、スタンド、ケースなどがラインナップされ、Pixel 10の外観と調和する洗練されたデザインが特徴です。
 
 ---
 
-### [Google Pixel Buds Pro 2 に新色や新機能が登場](https://blog.google/intl/ja-jp/feed/new-for-pixel-buds-pro-2/)
-**Source:** Google Japan Blog
-**Published:** 2025-08-21 01:00:00 UTC
-**Tags:** Pixel
-
-**Digest:**
-Google Pixel Buds Pro 2 に新色 Moonstone が登場！Tensor A1 と Gemini を搭載し、Google Pixel 10 シリーズとの相性も抜群です。来月以降にはソフトウェアアップデートで新機能が追加予定。アダプティブオー…（記事はここで途切れています）
-
----
-
-### [Google 史上最高の耐久性を実現した折りたたみスマートフォン、Google Pixel 10 Pro Fold が登場](https://blog.google/intl/ja-jp/products/devices-services/google-pixel-10-pro-fold/)
-**Source:** Google Japan Blog
-**Published:** 2025-08-21 01:00:00 UTC
-**Tags:** Pixel
-
-**Digest:**
-最新の折りたたみスマホは、**ギアレスヒンジ**、**大型外部ディスプレイ**、**IP68**の**防水防塵**、大容量**バッテリー**と**AI**機能が強化。さらに、**Google Pixel 10 Pro Fold**専用の独自機能も搭載し、大幅な進化を遂げています。
-
----
-
-### [Create personalized products and marketing campaigns using Amazon Nova in Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/create-personalized-products-and-marketing-campaigns-using-amazon-nova-in-amazon-bedrock/)
+### [Fine-tune OpenAI GPT-OSS models using Amazon SageMaker HyperPod recipes](https://aws.amazon.com/blogs/machine-learning/fine-tune-openai-gpt-oss-models-using-amazon-sagemaker-hyperpod-recipes/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-20 21:50:24 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, CPG, Generative AI, Industries, Marketing & Advertising, Media & Entertainment, Retail
+**Published:** 2025-08-21 21:35:59 UTC
+**Tags:** Amazon SageMaker, Amazon SageMaker AI, Announcements, Artificial Intelligence, Foundation models
 
 **Digest:**
-AWSは、Cannes Lions 2025で生成AIを活用した「The Fragrance Lab」を披露。Amazon Bedrockで構築され、AIが顧客の好みからパーソナルフレグランスを開発。顧客体験を革新し、広告キャンペーンも生成。Wildlifeとの協業で、香りの選定、広告制作をAIで加速。GoldとSilverのStevie Awardを受賞。
+Amazon SageMaker AI を活用し、GPT-OSS モデルをカスタム化。SageMaker HyperPod Recipes を使用し、Meta's Llama、Mistral、DeepSeek などの FM を数分で fine-tuning。Hugging FaceH4/Multilingual-Thinking データセットで GPT-OSS を fine-tuneし多言語思考能力を向上。SageMaker HyperPod またはトレーニングジョブで実行可能。
 
 ---
 
-### [Tyson Foods elevates customer search experience with an AI-powered conversational assistant](https://aws.amazon.com/blogs/machine-learning/tyson-foods-elevates-customer-search-experience-with-an-ai-powered-conversational-assistant/)
+### [Inline code nodes now supported in Amazon Bedrock Flows in public preview](https://aws.amazon.com/blogs/machine-learning/inline-code-nodes-now-supported-in-amazon-bedrock-flows-in-public-preview/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-20 21:44:28 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon OpenSearch Service, CPG, Customer Solutions, Experience-Based Acceleration
+**Published:** 2025-08-21 20:36:40 UTC
+**Tags:** Amazon Bedrock Prompt Flows, Announcements
 
 **Digest:**
-タイソンフーズは、AIを活用し、食品流通の顧客対応を強化。Amazon Bedrock上のAnthropicのClaude 3.5 SonnetによるAIアシスタントをウェブサイトに導入し、自然言語検索、商品情報提供、販売支援などを実現。顧客ニーズに合わせた情報を提供し、販売促進と顧客理解を深めています。セマンティック検索も強化し、キーワードにとらわれず、より的確な製品情報を提供しています。
+Amazon Bedrock Flowsでインラインコードノードがパブリックプレビュー開始。Pythonスクリプトをワークフロー内で直接記述でき、Lambda不要で、データの前処理・後処理が簡素化。Thomson Reutersでの事例も紹介し、複雑なAIワークフローを簡単に構築可能に。Python3.12以上をサポートし、4MBまでのコードに対応。現在、US East, US West, Europeで利用できます。
 
 ---
 
-### [Enhance AI agents using predictive ML models with Amazon SageMaker AI and Model Context Protocol (MCP)](https://aws.amazon.com/blogs/machine-learning/enhance-ai-agents-using-predictive-ml-models-with-amazon-sagemaker-ai-and-model-context-protocol-mcp/)
+### [Accelerate enterprise AI implementations with Amazon Q Business](https://aws.amazon.com/blogs/machine-learning/accelerate-enterprise-ai-implementations-with-amazon-q-business/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-20 20:26:08 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Machine Learning, Amazon SageMaker AI, Artificial Intelligence, Generative AI, AI/ML, Amazon SageMaker
+**Published:** 2025-08-21 20:29:53 UTC
+**Tags:** Amazon Q Business, Artificial Intelligence, Best Practices, AI/ML, Generative AI
 
 **Digest:**
-Amazon SageMaker AIを活用し、AIエージェントがデータに基づき意思決定できるよう、予測MLモデルとMCPを統合する方法を紹介。従来のMLは予測タスクに、生成AIは創造的なタスクに優れるため、両者を組み合わせたソリューションを提示。XGBoostなどのモデルをSageMaker AIでデプロイし、Strands Agents SDKでAIエージェントと連携。MCPにより、ツール呼び出しを標準化し、スケーラブルでセキュアなAIアプリケーション構築を可能にする。
+Amazon Q Businessは、AWSエンタープライズ顧客向けAIアシスタントで、企業のデータとアプリケーションを横断して情報検索や業務効率化を支援します。複数のデータソースに対応し、セキュリティとプライバシーを重視。Amazon Q Businessは、複雑なデータ環境やセキュリティ要件の高い組織に適しています。初期導入はパイロットケースから始め、段階的に拡張することで、業務効率化と生産性向上を実現できます。
 
 ---
 
-### [C#でAzure AI Foundry Agent ServicesのMCPツールを使う](https://blog.jbs.co.jp/entry/2025/08/21/121413)
+### [Speed up delivery of ML workloads using Code Editor in Amazon SageMaker Unified Studio](https://aws.amazon.com/blogs/machine-learning/speed-up-delivery-of-ml-workloads-using-code-editor-in-amazon-sagemaker-unified-studio/)
+**Source:** AWS ML Blog
+**Published:** 2025-08-21 20:24:35 UTC
+**Tags:** Advanced (300), Amazon SageMaker, Amazon SageMaker Studio, Amazon SageMaker Unified Studio, Announcements, Technical How-to, AI/ML
+
+**Digest:**
+Amazon SageMaker Unified Studio に、Code Editor と複数スペースのサポートが追加されました。Code Editor は VS Code ベースで、ML 開発を効率化し、AWS Q Developer による AI 支援も利用可能です。複数スペースにより、異なる計算ニーズに対応し、並行作業を可能にします。利用には IAM 設定が必要で、インスタンスタイプやストレージは柔軟に管理できます。
+
+---
+
+### [How Infosys Topaz leverages Amazon Bedrock to transform technical help desk operations](https://aws.amazon.com/blogs/machine-learning/how-infosys-topaz-leverages-amazon-bedrock-to-transform-technical-help-desk-operations/)
+**Source:** AWS ML Blog
+**Published:** 2025-08-21 17:25:11 UTC
+**Tags:** Amazon Bedrock, Amazon Machine Learning, Customer Solutions, Partner solutions, Technical How-to
+
+**Digest:**
+企業向けに、生成AIを活用した技術ヘルプデスクを構築する事例を紹介。Amazon BedrockとInfosys Topazを統合し、過去の通話記録から知識ベースを構築。コール時間を短縮し、エージェントの対応品質を向上させる。AWSのサービスを活用し、ロールベースアクセス制御やセキュリティ対策も施されている。Streamlitで構築されたUIも特徴。
+
+---
+
+### [Windows 365とAVDの開発とマーケティングの責任者が語る、Windows Cloud 最新情報 !!](https://blogs.windows.com/japan/2025/08/22/cloud-and-ai-endpoints-summit-in-tokyo/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-08-22 04:12:57 UTC
+**Tags:** Windows 365, AVD, DaaS, VDI
+
+**Digest:**
+9月26日(金)に東京で「Cloud and AI Endpoints Summit」開催。マイクロソフトのWindows 365開発責任者とマーケティング責任者が来日し、**Windows Cloud**戦略や最新情報を発信。**Microsoft Intune**の**AI**活用、**Windows 365**ユーザー登壇も。品川本社で**クラウドPC**展示や懇親会も。**DaaS**や**VDI**に関心のある方は事前登録を。
+
+---
+
+### [Microsoft Endpoint Configuration Managerでの配布ポイントグループ削除手順](https://blog.jbs.co.jp/entry/2025/08/22/144425)
 **Source:** JBS Blog
-**Published:** 2025-08-21 03:14:13 UTC
-**Tags:** MCP, Azure AI Foundry Agent Service, .NET, C#
+**Published:** 2025-08-22 05:44:25 UTC
+**Tags:** MECM, MCM
 
 **Digest:**
-Azure AI Foundry Agent Services（プレビュー）は、エージェント開発を支援するプラットフォームです。Model Context Protocol（MCP）ツールが利用可能で、C# SDKによる動作確認を実施。公式ドキュメントのC#サンプルコードを基に、MCP Serverとの連携を検証しました。記事執筆時点でのSDK対応状況や、環境構築、動作確認について解説しています。
+MECM（Microsoft Endpoint Configuration Manager）の配布ポイントグループを削除する手順を解説します。削除は、管理コンソールから対象の配布ポイントグループを選択し、右クリックで「削除」を選択することで行います。削除前に、グループ内の配布ポイントが他のグループに所属していないか確認し、必要であれば移動させてください。
 
 ---
 
-### [Microsoft Configuration Managerの移行ジョブ手順](https://blog.jbs.co.jp/entry/2025/08/21/104102)
+### [【AWS】AWS Configでリソースタグのチェックをする-通知編-](https://blog.jbs.co.jp/entry/2025/08/22/133920)
 **Source:** JBS Blog
-**Published:** 2025-08-21 01:41:02 UTC
-**Tags:** MCM, MECM, SCCM
+**Published:** 2025-08-22 04:39:20 UTC
 
 **Digest:**
-Microsoft Configuration Manager (MCM) は、ITインフラ管理を効率化する製品で、クライアントPC等の構成管理、ソフトウェア配布、パッチ適用を担います。大規模環境での運用効率向上に貢献し、IT部門の負荷を軽減します。 長期運用では新環境への移行が必要となり、その際に重要なのが「移行ジョブ」です。これは、旧環境の配布ポイントやコンテンツを新環境でも利用できるようにする機能です。
+前回はAWS Configのrequired-tagsルール設定を行いました。今回は、そのルールに非準拠となった際にメール通知する方法を解説します。AWS ConfigとAmazon SNSを連携させ、違反リソースに関する詳細情報を含むメールを送信し、迅速な対応を可能にします。
+
+---
+
+### [【Microsoft Fabric】オンプレミスデータゲートウェイを使ったデータソースへのプライベート接続](https://blog.jbs.co.jp/entry/2025/08/22/115848)
+**Source:** JBS Blog
+**Published:** 2025-08-22 02:58:48 UTC
+**Tags:** Microsoft Fabric
+
+**Digest:**
+Microsoft Fabricのオンプレミスデータゲートウェイを利用し、プライベートエンドポイント経由でAzureストレージに接続する方法を解説。Fabricはデータ統合プラットフォームで、ゲートウェイ設定、プライベートエンドポイント作成、ストレージアカウントのネットワーク設定、データソース接続確認を行います。オンプレミスとクラウドを安全に連携させるための手順を紹介します。
+
+---
+
+### [【Microsoft×生成AI連載】【やってみた】4つのCopilot関連サービスの特徴を比較してみた](https://blog.jbs.co.jp/entry/2025/08/22/085055)
+**Source:** JBS Blog
+**Published:** 2025-08-21 23:50:55 UTC
+**Tags:** Microsoft Copilot, リサーチツール, アナリスト, Microsoft Cop, Microsoft 365 Copilot
+
+**Digest:**
+マイクロソフトの生成AI連載、今回はCopilot関連4サービスを比較。Microsoft 365 Copilot Chat、エージェントビルダー、リサーチツール、アナリストに同じ質問を投げかけ、それぞれの特徴を分析しています。エージェントビルダーやリサーチツールに興味のある方は必見です。記事の情報は2025/8/13時点です。
+
+---
+
+### [Microsoft Endpoint Configuration Managerでの配布ポイントグループ作成手順](https://blog.jbs.co.jp/entry/2025/08/21/154751)
+**Source:** JBS Blog
+**Published:** 2025-08-21 06:47:51 UTC
+**Tags:** MECM, MCM
+
+**Digest:**
+MECM（Microsoft Endpoint Configuration Manager）での配布ポイントグループ作成手順を解説します。配布ポイントグループは、コンテンツを効率的に配布するために不可欠です。グループ作成により、複数の配布ポイントをまとめて管理し、クライアントへの迅速なコンテンツ配信を実現できます。具体的な手順は、MECMコンソール内で容易に実行できます。
 
 ---
