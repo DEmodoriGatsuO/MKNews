@@ -1,197 +1,108 @@
-# AI Tech Trends Digest (2025-08-22)
+# AI Tech Trends Digest (2025-08-23)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Amazon BedrockのPrompt CachingでMCP TOOL部分のトークン数を削減しよう](https://qiita.com/marudog/items/58ef942417cddd4b594f)
-**Published:** 2025-08-21 14:48:55 UTC
-**Likes:** 4
-**Tags:** bedrock, Anthropic, PromptCaching
+### [【2025年最新】開発者必携！Claude CodeとCursorを強化するMCPサーバー15選](https://qiita.com/satokenichi/items/afa59c3605825bdf76f8)
+**Published:** 2025-08-22 06:30:36 UTC
+**Likes:** 26
+**Tags:** GitHub, MCP, OpenAI, LLM, AIエージェント
 
 **Digest:**
-Amazon Bedrock経由のClaude Sonnet 4でPrompt Cachingを検証。MCP利用時のトークン消費削減のため、2回利用で費用回収、10回で約22%の料金に。Playwright MCPでは約3,000トークン消費するツールがあり、SystemMessageに`cachePoint`設定が重要。キャッシュON/OFFで効果を確認。短時間での複数指示にも有効。基盤モデルにより対応状況が異なる点に注意。
+Model Context Protocol (MCP) サーバー15選を紹介。GitHub、GitLab、Apidogなどの**開発効率化**ツールから、PostgreSQL、Supabase、Redisなどの**データベース連携**、AWSやGCPの**クラウド管理**、NotionやGoogle Driveの**コラボレーション**、OpenAIやBrave Searchの**情報収集**まで幅広く網羅。AI IDEと連携し、API開発、コード管理、データ分析などを効率的に行える。
 
 ---
 
-### [設計書駆動で品質を保証する「Agentic Coding」実践ガイド](https://qiita.com/shinpr/items/98771c2b8d2e15cafcd5)
-**Published:** 2025-08-21 10:18:34 UTC
+### [第一原理計算・量子化学計算の相対論的補正（相対論的密度汎関数理論）を説明してみる](https://qiita.com/dc1394/items/c60550b771145cf1853d)
+**Published:** 2025-08-22 13:08:08 UTC
 **Likes:** 2
-**Tags:** TDD, LLM, ClaudeCode
+**Tags:** 物理学, 量子力学, 計算化学, 量子化学, LLM
 
 **Digest:**
-複数のAIエージェントが協調し、設計から実装、品質保証までを自律的に行うAgentic Codingを紹介。ルールと設計を体系化するContext EngineeringでLLMの判断精度を向上、ボイラープレートで実践可能。TDDや設計書駆動開発を実践し、メタ認知アプローチも採用。実際に試せるプロジェクトも公開。
+この記事は、密度汎関数理論（DFT）に（特殊）相対性理論による補正を導入する方法を解説。重元素における相対論効果の重要性を示し、Dirac方程式、Rajagopal-Callawayの定理に基づく相対論的DFT、Dirac-Kohn-Sham方程式を説明。第一原理計算では、擬ポテンシャルを用いてスカラー相対論を適用し、必要に応じてスピン軌道相互作用（SOC）を付加するのが主流と述べています。
 
 ---
 
-### [ドルコスト平均法じゃ満足できない！！効率の良いアルゴリズムの模索[第一回]](https://qiita.com/rikutoyamada01/items/d5e9c00166b1a68f7856)
-**Published:** 2025-08-21 12:09:57 UTC
-**Likes:** 1
-**Tags:** 自動化, AI, 投資, Gemini, ドルコスト平均法
-
-**Digest:**
-ドルコスト平均法のメリットを活かし、投資額を株価変動に合わせて調整する「AAVC」というアルゴリズムを提案。過去のボラティリティと乖離率を元に、安く多く買い、高く少なく買う戦略を目指す。シミュレーションではDCAを上回るリターン率を達成。非対称性係数などのパラメータで戦略をカスタマイズ可能。今後、計算式と検証を進める予定です。
-
----
-
-### [【Claude×JavaScript】ポモドーロタイマーのWebアプリをAIと共同開発してみた](https://qiita.com/5naokichi/items/e4385521a66b3e7f3979)
-**Published:** 2025-08-22 05:10:05 UTC
+### [GPT-OSSの内部構造について](https://qiita.com/coolandsmartrr/items/7d8b283a4793c37066d3)
+**Published:** 2025-08-23 03:11:36 UTC
 **Likes:** 0
-**Tags:** HTML, CSS, JavaScript, Claude, ClaudeCode
+**Tags:** AI, LLM, GPT-4, gpt-oss
 
 **Digest:**
-ポモドーロテクニックWebタイマーアプリを開発。25分集中と5分休憩を繰り返す時間管理術を、Page Visibility API、HTML5 Audio API、ローカルストレージを活用し実現。高精度タイマー、自動切り替え、UI設計、日次データ管理などを実装。バックグラウンド動作やUXにも配慮し、AI Claude Codeと協業して開発。
+Machine Learning Tokyoの勉強会で、Alex Shen氏がOpenAIのGPT-OSSを解説。120Bモデルは単一GPUで、20Bはローカル実行可能。GQA、スライディングウィンドウ・アテンションを採用し、事前学習はテキストデータのみ。MoEや正規化、RoPE、YARNなどアーキテクチャ詳細を説明。ポストトレーニングは強化学習で、New Harmonyチャット形式を導入し、変動的な推論努力レベルに対応しています。
 
 ---
 
-### [松尾・岩澤研究室公開講座【現在募集中の講座一覧】の紹介 & 東大、生成AI講座の動画を無料公開　小中高生・保護者・教員向けに全5講座](https://qiita.com/Shawin/items/52d8cb6965baec6fc393)
-**Published:** 2025-08-22 05:00:19 UTC
+### [SuperClaude とは？Claude Codeのコード品質を30%改善できた神ツールの完全ガイド！](https://qiita.com/tomada/items/2eb1b0623c9f59424235)
+**Published:** 2025-08-22 17:51:21 UTC
 **Likes:** 0
-**Tags:** 機械学習, AI, 生成AI, LLM, AIエージェント
+**Tags:** 個人開発, Claude, AIエージェント, ClaudeCode, SuperClaude
 
 **Digest:**
-東京大学 松尾・岩澤研究室の公開講座情報をまとめました。10/7開講の「GCI」、10/1開講の「LLM基礎」、10/9開講の「深層学習」、12/3開講の「LLM応用」があります。対象者は学生や社会人で、締め切りや前提条件は講座によって異なります。詳細はリンク先でご確認ください。
+**SuperClaude** は Claude Code を拡張する無料ツールで、コード品質改善を支援。16個のカスタムコマンドと専門家ペルソナによる分析・改善が特徴。インストール1分で完了、コード分析で品質を数値化、チーム開発での活用も可能。分析結果を元に自動改善も。日本語対応、アンインストールも簡単。
+
+---
+
+### [Geminiで鷹と遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/ec8379f98eed3203a091)
+**Published:** 2025-08-22 14:15:13 UTC
+**Likes:** 0
+**Tags:** Gemini
+
+**Digest:**
+Geminiで「風の鷹と遊ぶ魔法少女」を描くプロンプトを実行し、その結果の画像を公開。可愛らしいイラストが生成され、その出来栄えを「可愛い」と評価。何かの役に立てばという思いを込めており、シンプルなまとめとなっている。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Google Pixel Buds 2a が新登場](https://blog.google/intl/ja-jp/products/devices-services/google-pixel-buds-2a/)
-**Source:** Google Japan Blog
-**Published:** 2025-08-21 23:00:00 UTC
-**Tags:** Pixel
-
-**Digest:**
-Google Pixel Buds A-Seriesが登場。アクティブノイズキャンセリングこそないものの、没入感のあるサウンドと快適な装着感を両立し、手頃な価格を実現したイヤホンです。一日中使えるバッテリーも魅力です。
-
----
-
-### [Google Pixel Watch 4 新登場、デザイン刷新、進化した AI 機能を搭載](https://blog.google/intl/ja-jp/products/devices-services/pixel-watch-4/)
-**Source:** Google Japan Blog
-**Published:** 2025-08-21 23:00:00 UTC
-**Tags:** Pixel
-
-**Digest:**
-Google Pixel Watch 4 が登場、新機能満載！長時間のバッテリー駆動と、業界初のドーム型 Actua 360 ディスプレイを搭載。さらに、手を挙げるだけで Gemini が利用可能となり、スマートウォッチとしての利便性が大きく向上しました。
-
----
-
-### [Qi2 対応の Pixelsnap アクセサリーが新登場](https://blog.google/intl/ja-jp/products/devices-services/pixelsnap-accessories-charger-ring-stand/)
-**Source:** Google Japan Blog
-**Published:** 2025-08-21 23:00:00 UTC
-**Tags:** Pixel
-
-**Digest:**
-Google Pixel 10シリーズのデザインに最適化された周辺アクセサリーが発表されました。アダプター、スタンド、ケースなどがラインナップされ、Pixel 10の外観と調和する洗練されたデザインが特徴です。
-
----
-
-### [Fine-tune OpenAI GPT-OSS models using Amazon SageMaker HyperPod recipes](https://aws.amazon.com/blogs/machine-learning/fine-tune-openai-gpt-oss-models-using-amazon-sagemaker-hyperpod-recipes/)
+### [Enhance Geospatial Analysis and GIS Workflows with Amazon Bedrock Capabilities](https://aws.amazon.com/blogs/machine-learning/enhance-geospatial-analysis-and-gis-workflows-with-amazon-bedrock-capabilities/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-21 21:35:59 UTC
-**Tags:** Amazon SageMaker, Amazon SageMaker AI, Announcements, Artificial Intelligence, Foundation models
+**Published:** 2025-08-22 17:54:38 UTC
+**Tags:** Amazon Bedrock, Artificial Intelligence, Intermediate (200)
 
 **Digest:**
-Amazon SageMaker AI を活用し、GPT-OSS モデルをカスタム化。SageMaker HyperPod Recipes を使用し、Meta's Llama、Mistral、DeepSeek などの FM を数分で fine-tuning。Hugging FaceH4/Multilingual-Thinking データセットで GPT-OSS を fine-tuneし多言語思考能力を向上。SageMaker HyperPod またはトレーニングジョブで実行可能。
+地理空間データと生成AIを組み合わせ、効率的なインサイト創出を目指す。Amazon Bedrockを活用し、LLMとGISを統合、RAGやエージェントワークフローで分析を簡素化。本記事では、地震分析エージェントを例に、Amazon RedshiftとAmazon Bedrock Agentsを用いて、自然言語でのクエリを可能にする方法を解説しています。
 
 ---
 
-### [Inline code nodes now supported in Amazon Bedrock Flows in public preview](https://aws.amazon.com/blogs/machine-learning/inline-code-nodes-now-supported-in-amazon-bedrock-flows-in-public-preview/)
+### [Beyond the basics: A comprehensive foundation model selection framework for generative AI](https://aws.amazon.com/blogs/machine-learning/beyond-the-basics-a-comprehensive-foundation-model-selection-framework-for-generative-ai/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-21 20:36:40 UTC
-**Tags:** Amazon Bedrock Prompt Flows, Announcements
+**Published:** 2025-08-22 17:31:28 UTC
+**Tags:** Amazon Bedrock, Artificial Intelligence, Best Practices, Foundation models, Generative AI, Thought Leadership
 
 **Digest:**
-Amazon Bedrock Flowsでインラインコードノードがパブリックプレビュー開始。Pythonスクリプトをワークフロー内で直接記述でき、Lambda不要で、データの前処理・後処理が簡素化。Thomson Reutersでの事例も紹介し、複雑なAIワークフローを簡単に構築可能に。Python3.12以上をサポートし、4MBまでのコードに対応。現在、US East, US West, Europeで利用できます。
+Amazon BedrockでFoundation Modelsを選択する際の包括的な評価方法を紹介。従来の精度・速度・コストに加え、タスクパフォーマンス、アーキテクチャ特性、運用面、責任あるAI属性を考慮した多次元評価が重要。4段階評価手法で、要件定義、モデル選定、性能評価、分析を実施。A/Bテスト、継続的評価も推奨。業界特有の要件も考慮し、ビジネス目標に沿ったモデル選択を。
 
 ---
 
-### [Accelerate enterprise AI implementations with Amazon Q Business](https://aws.amazon.com/blogs/machine-learning/accelerate-enterprise-ai-implementations-with-amazon-q-business/)
+### [Accelerate intelligent document processing with generative AI on AWS](https://aws.amazon.com/blogs/machine-learning/accelerate-intelligent-document-processing-with-generative-ai-on-aws/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-21 20:29:53 UTC
-**Tags:** Amazon Q Business, Artificial Intelligence, Best Practices, AI/ML, Generative AI
+**Published:** 2025-08-22 17:26:31 UTC
+**Tags:** Amazon Bedrock Data Automation, Generative AI
 
 **Digest:**
-Amazon Q Businessは、AWSエンタープライズ顧客向けAIアシスタントで、企業のデータとアプリケーションを横断して情報検索や業務効率化を支援します。複数のデータソースに対応し、セキュリティとプライバシーを重視。Amazon Q Businessは、複雑なデータ環境やセキュリティ要件の高い組織に適しています。初期導入はパイロットケースから始め、段階的に拡張することで、業務効率化と生産性向上を実現できます。
+AWSが提供するオープンソースの**GenAI IDP Accelerator**を紹介。これは、請求書、契約書などの文書から情報を**自動抽出**するソリューションで、**OCR**や**LLM**を活用。**AWS**の様々なサービスを使い、数日で構築可能。**Competiscan**や**Ricoh**での導入事例も。GitHubリポジトリで利用可能。
 
 ---
 
-### [Speed up delivery of ML workloads using Code Editor in Amazon SageMaker Unified Studio](https://aws.amazon.com/blogs/machine-learning/speed-up-delivery-of-ml-workloads-using-code-editor-in-amazon-sagemaker-unified-studio/)
+### [Amazon SageMaker HyperPod enhances ML infrastructure with scalability and customizability](https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-hyperpod-enhances-ml-infrastructure-with-scalability-and-customizability/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-21 20:24:35 UTC
-**Tags:** Advanced (300), Amazon SageMaker, Amazon SageMaker Studio, Amazon SageMaker Unified Studio, Announcements, Technical How-to, AI/ML
+**Published:** 2025-08-22 17:14:39 UTC
+**Tags:** Advanced (300), Amazon SageMaker, Amazon SageMaker AI, Amazon SageMaker HyperPod, Compute, Launch, Technical How-to
 
 **Digest:**
-Amazon SageMaker Unified Studio に、Code Editor と複数スペースのサポートが追加されました。Code Editor は VS Code ベースで、ML 開発を効率化し、AWS Q Developer による AI 支援も利用可能です。複数スペースにより、異なる計算ニーズに対応し、並行作業を可能にします。利用には IAM 設定が必要で、インスタンスタイプやストレージは柔軟に管理できます。
+Amazon SageMaker HyperPodは、大規模な基盤モデルのトレーニングと推論を最適化するインフラです。 新機能として、クラスタのスケーラビリティを向上させる「Continuous provisioning」と、ソフトウェアを事前に設定できる「カスタムAMI」が登場。EC2インスタンスへのSSHアクセスや、Cronジョブによるソフトウェアアップデート、ローリングアップデートによる安全なデプロイも可能になり、柔軟性と管理性が向上しました。
 
 ---
 
-### [How Infosys Topaz leverages Amazon Bedrock to transform technical help desk operations](https://aws.amazon.com/blogs/machine-learning/how-infosys-topaz-leverages-amazon-bedrock-to-transform-technical-help-desk-operations/)
-**Source:** AWS ML Blog
-**Published:** 2025-08-21 17:25:11 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Customer Solutions, Partner solutions, Technical How-to
-
-**Digest:**
-企業向けに、生成AIを活用した技術ヘルプデスクを構築する事例を紹介。Amazon BedrockとInfosys Topazを統合し、過去の通話記録から知識ベースを構築。コール時間を短縮し、エージェントの対応品質を向上させる。AWSのサービスを活用し、ロールベースアクセス制御やセキュリティ対策も施されている。Streamlitで構築されたUIも特徴。
-
----
-
-### [Windows 365とAVDの開発とマーケティングの責任者が語る、Windows Cloud 最新情報 !!](https://blogs.windows.com/japan/2025/08/22/cloud-and-ai-endpoints-summit-in-tokyo/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-08-22 04:12:57 UTC
-**Tags:** Windows 365, AVD, DaaS, VDI
-
-**Digest:**
-9月26日(金)に東京で「Cloud and AI Endpoints Summit」開催。マイクロソフトのWindows 365開発責任者とマーケティング責任者が来日し、**Windows Cloud**戦略や最新情報を発信。**Microsoft Intune**の**AI**活用、**Windows 365**ユーザー登壇も。品川本社で**クラウドPC**展示や懇親会も。**DaaS**や**VDI**に関心のある方は事前登録を。
-
----
-
-### [Microsoft Endpoint Configuration Managerでの配布ポイントグループ削除手順](https://blog.jbs.co.jp/entry/2025/08/22/144425)
+### [Microsoft Entraの動的グループを利用してMicrosoft Teamsのチームメンバー管理を自動化する](https://blog.jbs.co.jp/entry/2025/08/22/164137)
 **Source:** JBS Blog
-**Published:** 2025-08-22 05:44:25 UTC
-**Tags:** MECM, MCM
+**Published:** 2025-08-22 07:41:37 UTC
+**Tags:** Microsoft Entra ID, Microsoft Teams
 
 **Digest:**
-MECM（Microsoft Endpoint Configuration Manager）の配布ポイントグループを削除する手順を解説します。削除は、管理コンソールから対象の配布ポイントグループを選択し、右クリックで「削除」を選択することで行います。削除前に、グループ内の配布ポイントが他のグループに所属していないか確認し、必要であれば移動させてください。
-
----
-
-### [【AWS】AWS Configでリソースタグのチェックをする-通知編-](https://blog.jbs.co.jp/entry/2025/08/22/133920)
-**Source:** JBS Blog
-**Published:** 2025-08-22 04:39:20 UTC
-
-**Digest:**
-前回はAWS Configのrequired-tagsルール設定を行いました。今回は、そのルールに非準拠となった際にメール通知する方法を解説します。AWS ConfigとAmazon SNSを連携させ、違反リソースに関する詳細情報を含むメールを送信し、迅速な対応を可能にします。
-
----
-
-### [【Microsoft Fabric】オンプレミスデータゲートウェイを使ったデータソースへのプライベート接続](https://blog.jbs.co.jp/entry/2025/08/22/115848)
-**Source:** JBS Blog
-**Published:** 2025-08-22 02:58:48 UTC
-**Tags:** Microsoft Fabric
-
-**Digest:**
-Microsoft Fabricのオンプレミスデータゲートウェイを利用し、プライベートエンドポイント経由でAzureストレージに接続する方法を解説。Fabricはデータ統合プラットフォームで、ゲートウェイ設定、プライベートエンドポイント作成、ストレージアカウントのネットワーク設定、データソース接続確認を行います。オンプレミスとクラウドを安全に連携させるための手順を紹介します。
-
----
-
-### [【Microsoft×生成AI連載】【やってみた】4つのCopilot関連サービスの特徴を比較してみた](https://blog.jbs.co.jp/entry/2025/08/22/085055)
-**Source:** JBS Blog
-**Published:** 2025-08-21 23:50:55 UTC
-**Tags:** Microsoft Copilot, リサーチツール, アナリスト, Microsoft Cop, Microsoft 365 Copilot
-
-**Digest:**
-マイクロソフトの生成AI連載、今回はCopilot関連4サービスを比較。Microsoft 365 Copilot Chat、エージェントビルダー、リサーチツール、アナリストに同じ質問を投げかけ、それぞれの特徴を分析しています。エージェントビルダーやリサーチツールに興味のある方は必見です。記事の情報は2025/8/13時点です。
-
----
-
-### [Microsoft Endpoint Configuration Managerでの配布ポイントグループ作成手順](https://blog.jbs.co.jp/entry/2025/08/21/154751)
-**Source:** JBS Blog
-**Published:** 2025-08-21 06:47:51 UTC
-**Tags:** MECM, MCM
-
-**Digest:**
-MECM（Microsoft Endpoint Configuration Manager）での配布ポイントグループ作成手順を解説します。配布ポイントグループは、コンテンツを効率的に配布するために不可欠です。グループ作成により、複数の配布ポイントをまとめて管理し、クライアントへの迅速なコンテンツ配信を実現できます。具体的な手順は、MECMコンソール内で容易に実行できます。
+Microsoft Teamsのチーム管理で、部署メンバー改廃の手間に課題を感じている方へ。Microsoft Entraの部署プロパティを利用した動的グループで、チームメンバー管理を自動化できます。本記事では、動的グループ作成、チーム変換の手順、挙動を解説し、チーム所有者がメンバー管理できない点や、動的メンバーシップルールによる運用についても触れます。
 
 ---
