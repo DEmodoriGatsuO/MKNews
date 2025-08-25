@@ -1,55 +1,88 @@
-# AI Tech Trends Digest (2025-08-24)
+# AI Tech Trends Digest (2025-08-25)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [変わりゆく AI 時代のハッカソンのプロトタイプ開発（Claude編）](https://qiita.com/t-kurasawa/items/cf52e8246a35aed8729c)
-**Published:** 2025-08-24 03:59:03 UTC
-**Likes:** 4
-**Tags:** ハッカソン, オープンデータ, シビックテック, Claude, ClaudeCode
-
-**Digest:**
-「都知事杯オープンデータ・ハッカソン」参加レポート。Claude Team Planを使い、オープンデータとAI活用を実践。Claudeは課題特定、解決策の方向性策定、プロトタイプ開発を支援し、ハッカソンの速度を加速。特にプロトタイプの可視化とオープンデータの組み込みが便利。AIとの協働で試行錯誤が容易になり、良い時代だと実感した、という内容です。
-
----
-
-### [cifar10の精度をchatgpt claude geminiで競わせてみた](https://qiita.com/mikannotishiryou/items/095b373379ce086d033a)
-**Published:** 2025-08-23 20:10:45 UTC
-**Likes:** 2
-**Tags:** CNN, Gemini, ChatGPT, ClaudeCode
-
-**Digest:**
-CIFAR-10の精度向上のため、CNNを改良し、データ拡張、BatchNormalization、Dropout、EarlyStoppingなどを導入。Claudeは畳み込み層を深くし、GlobalAveragePooling、学習率調整も実施。検証精度は約88%を達成しました。一方、ChatGPTはCNNとTransformerを組み合わせ、geminiはデータ拡張と正則化を使用しましたが、精度は及びませんでした。
-
----
-
-### [【ローカルLLM】Ollama＋LibreChat で無料ChatGPTライクな環境を構築する（Ubuntu + Docker）](https://qiita.com/ko-he-8/items/859da034014736119a61)
-**Published:** 2025-08-24 02:04:44 UTC
+### [環境の変化と戦う③(Difyプラグイン開発)](https://qiita.com/kitazaki/items/c0605c9ab2960508ec42)
+**Published:** 2025-08-24 09:41:15 UTC
 **Likes:** 1
-**Tags:** Docker, 生成AI, LLM, ollama, ローカルLLM
+**Tags:** Python, OpenAI, Dify
 
 **Digest:**
-OllamaとLibreChatをDockerで連携し、Ubuntu環境にローカルChatGPTライクな環境を構築する手順を解説。Ollamaでllama3モデルを起動し、LibreChatでOllamaをエンドポイントとして設定。 `docker-compose.yml`と`librechat.yaml`を準備し、ブラウザからアクセスして動作確認。無料でLLMチャット環境が手軽に構築できます。
+DifyからAzure OpenAI利用でProxy経由になり、ヘッダ付与が必須に。forward proxyは断念し、Difyプラグインを改修。azure_openaiをベースにYAMLとcommon.pyを修正し、ヘッダ項目を追加。デバッグ後、パッケージ化。署名検証エラーでDify設定変更。mitmproxyでヘッダ確認。
 
 ---
 
-### [AMDの第２世代NPUで動作するLLM基盤に衝撃を受けて興奮が止まらないお話](https://qiita.com/yoheier/items/8ca764b0b95ab5b9d51e)
-**Published:** 2025-08-23 09:26:17 UTC
-**Likes:** 1
-**Tags:** Windows, AMD, LLM, NPU, OpenWebUI
+### [【個人開発】YouTubeと連携するポモドーロタイマー「Pomodoro Flow」をZustandを使って開発した話](https://qiita.com/keni_solopreneur/items/0b110b636351f24d9c5e)
+**Published:** 2025-08-25 04:13:27 UTC
+**Likes:** 0
+**Tags:** React, 個人開発, vite, zustand, LLM
 
 **Digest:**
-AMD NPU第2世代搭載PC向けローカルLLM「FastFlowLM (flm)」を紹介。GitHubで公開されており、OpenWEBUIとの連携も可能。NPUを活用し、低消費電力で推論を実現、CPU/GPU負荷を軽減。qwen3:8bなどHuggingFaceのモデルに対応。開発者は8bモデル中心に開発を進め、NPU向け言語も公開予定。商用利用には注意が必要だが、個人利用ではフィードバックが歓迎されている。
+YouTube連携型ポモドーロタイマー「Pomodoro Flow」の開発記事。React、Vite、TypeScript、Zustandを採用し、YouTube IFrame Player API で動画再生とタイマーを同期。状態管理にZustandを選んだ理由は、シンプルさ。ブラウザの自動再生ポリシー問題は、初回のみ開始ボタンを設置して解決。Zustandは個人開発に最適。
 
 ---
 
-### [AI主導開発前提でのGithub Issueとdocs/以下の棲み分け Claude案](https://qiita.com/awakia/items/ddbbb6755fe785d5fae3)
-**Published:** 2025-08-23 08:55:16 UTC
-**Likes:** 1
-**Tags:** GitHub, Claude, ClaudeCode
+### [この夏バイブコーディングまがいのことをして感じた少し先のコーディング環境](https://qiita.com/hotstaff/items/3f5d04741b8f0d6cc5a9)
+**Published:** 2025-08-25 02:53:08 UTC
+**Likes:** 0
+**Tags:** Firebase, Gemini, ChatGPT, AIエージェント, VibeCoding
 
 **Digest:**
-プロジェクトドキュメント運用ガイドは、**README.md**で概要を示し、**CLAUDE.md**でAI開発コンテキストを定義。ディレクトリ構造は、**docs/**以下にガイド、機能詳細、意思決定を整理し、AIとの協働を促進。新機能開発フローや自動化スクリプトも整備。成功指標は、新規参加者の迅速な開発開始、AIによる正確な実装、過去の設計判断の容易な理解、ドキュメント更新漏れの抑制。
+AIコーディングの未来を考察。著者は、AIによるコーディングが加速し、2025年にはほぼAIが担うと予測。**Replit、Firebase Studio、Cursor**など、自然言語でアプリ開発できるツールが登場し、**バイブコーディング**が普及。問題点として、整形不良や指示ミスによるバグを指摘し、解決策として、統括LLMと複数のコーダーLLMによる分業、自動バリデーションなどを提案。人間は仕様決定に注力する時代が来ると結論づけています。
+
+---
+
+### [Geminiでスズメと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/3a177e57b9d71855b244)
+**Published:** 2025-08-24 21:53:42 UTC
+**Likes:** 0
+**Tags:** Gemini
+
+**Digest:**
+Geminiを用いて、風のスズメと戯れる魔法少女のイラストを生成しました。プロンプトは「風のスズメと遊ぶ魔法少女を描いてください」で、実行結果は画像で確認できます。結果は非常に可愛らしく、何かに活用できればと考えています。
+
+---
+
+### [背理系ってなんやねんそのネーミング](https://qiita.com/makotosaekit/items/daa51142d274c73d21b2)
+**Published:** 2025-08-24 19:47:52 UTC
+**Likes:** 0
+**Tags:** AI, プロンプト, 思考法, ChatGPT, LLM
+
+**Digest:**
+AIに「背理系」について書かせた記事がトレンド入りし、検索候補に「Qiita 怪文書」と表示される事態に。記事は強調スニペットを獲得するも、別の記事公開で消滅。これはキーワードカニバリゼーション、つまり、競合によりGoogleがどちらを「正解」か迷ったため。AIのプロンプトエンジニアリングや、SEOにおける情報生態系の変化を示す事例と言える。
+
+---
+
+## Latest News from RSS Feeds
+
+
+### [/tmpと/var/tmpの役割とファイル削除について](https://blog.jbs.co.jp/entry/2025/08/25/130515)
+**Source:** JBS Blog
+**Published:** 2025-08-25 04:05:15 UTC
+**Tags:** RHEL, Red Hat Enterprise Linux, systemd
+
+**Digest:**
+RHEL 9における`/tmp`と`/var/tmp`は、一時ファイルの保管場所です。`/tmp`は一時的で、システム再起動や一定期間経過でファイルが削除されます。一方、`/var/tmp`はより永続的で、削除タイミングは設定によります。用途、違い、削除設定、確認方法を解説し、過去の事例も紹介します。
+
+---
+
+### [AvePoint Cloud Governanceによるチームの動的メンバーシップ管理](https://blog.jbs.co.jp/entry/2025/08/25/112538)
+**Source:** JBS Blog
+**Published:** 2025-08-25 02:25:38 UTC
+**Tags:** AvePoint, Microsoft Teams
+
+**Digest:**
+Microsoft Teamsのチームメンバーを動的に管理するには、本来Microsoft Entra ID P1/P2ライセンスが必要ですが、AvePoint Cloud Governanceがあれば代替可能です。動的グループ作成や、アクセスレビューによる定期的な棚卸しといった機能が利用でき、より効率的なチーム管理を実現できます。
+
+---
+
+### [Nutanix Moveのご紹介](https://blog.jbs.co.jp/entry/2025/08/25/092327)
+**Source:** JBS Blog
+**Published:** 2025-08-25 00:23:27 UTC
+**Tags:** Nutanix, Tech
+
+**Digest:**
+Nutanix Moveは、**仮想マシンの移行**を簡素化するツールです。異なる仮想化環境間、またはクラウドへの移行を容易にし、**ダウンタイム**を最小限に抑えつつ、効率的な**データ転送**を実現します。これにより、スムーズな移行と運用コスト削減に貢献します。
 
 ---
