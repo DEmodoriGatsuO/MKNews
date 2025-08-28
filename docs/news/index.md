@@ -1,61 +1,81 @@
-# AI Tech Trends Digest (2025-08-27)
+# AI Tech Trends Digest (2025-08-28)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Claude Code UIレビュー：スマホからでもAIコーディングが可能に！開発効率が劇的向上](https://qiita.com/takuya77088/items/518b213b1e6d3264afbe)
-**Published:** 2025-08-26 07:34:33 UTC
-**Likes:** 48
-**Tags:** AI, オープンソース, 可視化ツール, Claude, ClaudeCodeUl
-
-**Digest:**
-AIコーディングアシスタント「Claude Code UI」を発見。Claude CodeとCursor CLIに対応した、サクサク動くオープンソースの可視化ツールです。レスポンシブデザインで、デスクトップ・モバイルで利用可能。チャット、ターミナル、ファイルマネージャー、Git管理、セッション管理機能を搭載。インストールも簡単で、APIキー設定で利用開始。API開発にはApidogとの連携もおすすめ。
-
----
-
-### [（非エンジニア向け）「AI」にどうスクリプトを作らせているか「Backlogの課題一括削除スクリプト」](https://qiita.com/WdknWdkn/items/c71a918982e332a2668a)
-**Published:** 2025-08-26 22:44:39 UTC
-**Likes:** 7
-**Tags:** GoogleAppsScript, Backlog, 業務効率化, 生成AI, Claude
-
-**Digest:**
-非エンジニア向け、AI活用でルーティン作業を自動化する提案。Backlog課題一括削除スクリプト作成例として、ChatGPT等に「雑な指示」と「エラーメッセージ」を伝え、5分で完成。AIは魔法の杖ではないが、めんどくさい作業を解決する相棒になる。カジュアルにAIを使い倒し、創造的な仕事に時間を使いましょう。
-
----
-
-### [【保存版】SuperClaudeカスタムコマンド21個の使い方！オプションや使用シーンまで](https://qiita.com/tomada/items/177b6dbea92caecfb112)
-**Published:** 2025-08-27 03:14:49 UTC
-**Likes:** 4
-**Tags:** 個人開発, Claude, AIエージェント, ClaudeCode, SuperClaude
-
-**Digest:**
-SuperClaudeの21個のカスタムコマンドとオプションを解説。開発効率向上のため、`/sc:` プレフィックスのコマンドを使いこなそう。`/sc:brainstorm` で要件定義、`/sc:implement` で機能実装、`/sc:build` でビルド、`/sc:design` で設計など、開発から分析まで対応。 `--focus` や `--type` などのオプションを使い分けることで、より精度の高い結果を得られる。ブックマークして開発の参考に。
-
----
-
-### [「Gemini 2.5 Flash Image Preview（nano banana）」による画像生成・編集を Google AI Studio で軽く試す](https://qiita.com/youtoy/items/ac88beb6e82b558b0213)
-**Published:** 2025-08-26 14:37:08 UTC
+### [松尾研LLM開発コンペ2025 参加記録まとめ【全6記事リンク・随時更新】](https://qiita.com/hiro7_2kae/items/030bc9ce5431c26ed4ee)
+**Published:** 2025-08-27 21:08:15 UTC
 **Likes:** 3
-**Tags:** Gemini, GoogleAIStudio, Gemini2.5FlashImagePreview, Gemini2.5FlashImage, nanobanana
+**Tags:** 機械学習, 生成AI, LLM, 松尾研LLMコンペ2025
 
 **Digest:**
-「nano banana」こと「Gemini 2.5 Flash Image Preview」がリリース。Google AI Studioで画像生成と編集を試した結果を報告。公式ブログによると、高品質な画像生成と編集が可能で、スタイル変更や構図変換も得意とのこと。Google AI Studioではチャットまたはメディア生成から利用可能。プロンプトによる画像生成・編集を試し、昼夜の変更も実現しました。
+2025年夏開催の松尾研LLM開発コンペに参加した記録をまとめた全6記事のポータルです。製造業の品質管理担当者が、大規模GPU環境でのLLM学習やチーム開発に挑戦。現在は導入編が公開されており、環境構築ガイドが近日公開予定です。随時更新され、シリーズのフォローを歓迎しています。
 
 ---
 
-### [GLiNER-Decoder-Large-v1.0とは？ニュース記事から企業・製品・人物をサクッと抽出](https://qiita.com/john-rocky/items/4ee7bf70b0480a6e22fe)
-**Published:** 2025-08-26 12:54:23 UTC
-**Likes:** 2
-**Tags:** AI, エンジニア, 要約, colaboratory, LLM
+### [OpenAI Codex CLI をバージョンアップ & アンインストール](https://qiita.com/hanaya/items/1d7510327b98f3a59939)
+**Published:** 2025-08-28 01:21:12 UTC
+**Likes:** 1
+**Tags:** OpenAI, codex, CodexCLI
 
 **Digest:**
-GLiNER-Decoder-Large-v1.0は、任意のラベルでニュース記事から情報を抽出できるNERモデル。トヨタとテスラのEV発表記事から、企業、製品、人物、場所、日付、イベントなどを抽出。ゼロショット対応で日本語にも対応し、経済、政治、スポーツなど様々な分野で活用可能。精度調整や使い方のコツも解説。
+OpenAI Codex CLIの最新版へのアップデート方法を紹介。npm経由では`npm install -g @openai/codex@latest`、Homebrewでは`brew update`と`brew upgrade codex`を実行。アンインストールはnpmで`npm uninstall -g @openai/codex`、Homebrewで`brew uninstall codex`。設定ファイル削除は任意で`rm -rf ~/.codex`。
+
+---
+
+### [導入編：松尾研LLM開発コンペ2025に参加して学んだこと](https://qiita.com/hiro7_2kae/items/6a0aade5dd405568ef47)
+**Published:** 2025-08-27 20:56:03 UTC
+**Likes:** 1
+**Tags:** 機械学習, 生成AI, LLM, 松尾研LLMコンペ2025
+
+**Digest:**
+製造業DX担当者が、2025年夏に松尾研LLM開発コンペに参加。**Python・機械学習未経験**ながら、**大規模言語モデル講座**受講を機にLLM開発に挑戦。**大規模GPU環境**でのSFT、RLTによるモデル学習、MLOps的な実験管理を経験し、チーム開発の重要性を実感。基盤モデル学習からファインチューニングまで関わり、研究者以外でもLLM開発に貢献できると確信しました。
+
+---
+
+### [AIコーディングAgentとの向き合い方 - AIを使いこなす3つのプラクティス -](https://qiita.com/eycjur/items/af42d743c39e03eb39fb)
+**Published:** 2025-08-27 13:37:07 UTC
+**Likes:** 1
+**Tags:** AI, LLM, AIエージェント, ClaudeCode, VibeCoding
+
+**Digest:**
+2025年のAI時代に向け、エンジニア向けにAIコーディングAgentとの向き合い方を解説。発表内容を基に、**AI時代の3つのプラクティス**を提示。まず「便利ツール」から始め、次にAIが得意なタスクへの分解を意識し、最終的にTDDや自己学習を通じた**AIの自律的なタスク分解**を目指す。AIを使わないリスクを認識し、積極的に活用することで、AIスキルを向上させることが重要。
+
+---
+
+### [【備忘】VScodeでClaudeCodeを使うときに誤ってセッションを切ってしまったとき。](https://qiita.com/osushisushisushi/items/6c43996813bf3f89c1d7)
+**Published:** 2025-08-27 10:47:25 UTC
+**Likes:** 1
+**Tags:** tips, VSCode, Claude, ClaudeCode
+
+**Digest:**
+VSCode拡張機能ClaudeCodeでセッションが途切れると、Diff表示がされなくなる問題が発生。解決策は、古いチャットを閉じ、ClaudeCodeアイコンから新しいセッションを立ち上げ、"exit"で終了後、ターミナルで`claude --resume`を実行してセッションを再開すること。ターミナル利用との切り替えやDiff表示の不便さを解消するため、この方法が推奨されます。
 
 ---
 
 ## Latest News from RSS Feeds
 
+
+### [Agent Factory: Top 5 agent observability best practices for reliable AI](https://azure.microsoft.com/en-us/blog/agent-factory-top-5-agent-observability-best-practices-for-reliable-ai/)
+**Source:** Azure AI Blog
+**Published:** 2025-08-27 15:00:00 UTC
+**Tags:** AI + machine learning, Agent Factory, AI
+
+**Digest:**
+エージェント型AIの信頼性確保には「エージェントオブザーバビリティ」が不可欠。開発から運用まで、深層的な可視化を実現し、問題早期発見、品質・安全性の検証、パフォーマンス最適化に貢献。Azure AI Foundry Observabilityは、評価、モニタリング、トレーシング、ガバナンスを統合し、CI/CD連携も可能。モデル選定、継続的な評価、CI/CDへの統合、AIレッドチームによる脆弱性スキャン、本番環境でのモニタリングが、信頼できるAI構築の鍵となる。
+
+---
+
+### [Google Pixel 10、Google Pixel 10 Pro、Google Pixel 10 Pro XL、本日より発売開始](https://blog.google/intl/ja-jp/feed/pixel-10-available-now/)
+**Source:** Google Japan Blog
+**Published:** 2025-08-28 10:00:00 UTC
+**Tags:** Pixel
+
+**Digest:**
+本日、Google Pixel 10、Pixel 10 Pro、Pixel 10 Pro XL が発売。新開発の Google Tensor G5 チップと Gemini Nano を搭載し、デザインとハードウェアを刷新しました。Google 史上最もパワフルな Pixel シリーズとして、更なる進化を遂げています。
+
+---
 
 ### [Google Tensor G5 が Google Pixel を変革する 5 つの理由](https://blog.google/intl/ja-jp/products/devices-services/tensor-g5-pixel-10/)
 **Source:** Google Japan Blog
@@ -63,26 +83,36 @@ GLiNER-Decoder-Large-v1.0は、任意のラベルでニュース記事から情�
 **Tags:** Pixel
 
 **Digest:**
-Google Pixel 10シリーズに搭載される第5世代Google Tensorチップは、最新のAI技術を搭載し、Pixelシリーズを革新します。このチップは、AI処理能力を大幅に向上させ、ユーザーエクスペリエンスをさらに向上させる可能性を秘めています。
+Google Pixel 10シリーズに搭載される第5世代Google Tensorチップは、最新のAI技術を駆使し、大幅な進化を遂げる見込みです。このチップは、Pixelデバイスのパフォーマンス向上だけでなく、画像処理や音声認識などのAI関連機能においても、更なる進化をもたらすでしょう。
 
 ---
 
-### [Learn how Amazon Health Services improved discovery in Amazon search using AWS ML and gen AI](https://aws.amazon.com/blogs/machine-learning/learn-how-amazon-health-services-improved-discovery-in-amazon-search-using-aws-ml-and-gen-ai/)
+### [Mercury foundation models from Inception Labs are now available in Amazon Bedrock Marketplace and Amazon SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/mercury-foundation-models-from-inception-labs-are-now-available-in-amazon-bedrock-marketplace-and-amazon-sagemaker-jumpstart/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-26 18:37:21 UTC
-**Tags:** Amazon Athena, Amazon Bedrock, Amazon EMR, Amazon SageMaker, AWS Health, Customer Solutions, Healthcare
+**Published:** 2025-08-27 15:39:06 UTC
+**Tags:** Amazon Bedrock, Amazon SageMaker JumpStart, Announcements
 
 **Digest:**
-Amazon Health Servicesは、Amazonのeコマースドメインでヘルスケア検索の課題を解決するため、AWSサービスを活用。ML、NLP、ベクトル検索を組み合わせ、医療用語や顧客意図を理解し、処方薬やプライマリケアサービスなど関連性の高い結果を表示。Amazon BedrockによるLLMを用いて製品情報を拡充、検索とサービスの接続を改善しました。
+Inception LabsのMercuryおよびMercury Coder基盤モデルが、Amazon Bedrock MarketplaceとSageMaker JumpStartで利用可能に。高速生成と高品質なコード生成が特徴で、最大1,100 tokens/秒の速度を実現。Bedrock Marketplaceでは簡単にモデルをデプロイでき、SageMaker JumpStartでも利用可能。コード生成にも利用できます。
 
 ---
 
-### [【Microsoft×生成AI連載】【やってみた】Copilot Studioで作成したエージェントをTeamsチャネルで利用する](https://blog.jbs.co.jp/entry/2025/08/27/090337)
+### [オンプレミス Exchange Server が存在しないハイブリッド ID 環境で、Exchange 管理ツールを利用して Exchange Online 受信者を管理する](https://blog.jbs.co.jp/entry/2025/08/28/130027)
 **Source:** JBS Blog
-**Published:** 2025-08-27 00:03:37 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
+**Published:** 2025-08-28 04:00:27 UTC
+**Tags:** Microsoft 365, Exchange Online, Exchange Server, Tech
 
 **Digest:**
-Microsoft Copilot StudioのエージェントをTeamsで活用するためのガイドを紹介。事前設定からスムーズな利用法まで詳しく解説し、AIエージェントのメリットと注意点にも言及しています。Teams内での効率的な活用を促す情報が満載です。
+ハイブリッドID環境で、オンプレミスExchange Serverを使わずに受信者を管理する方法を紹介。Exchange管理ツールを用いて、Exchange Online環境における**受信者**の作成、変更、削除といった**管理**作業を可能にします。**オンプレミス環境**がなくても、**Exchange Online**を効率的に利用できるようになる手順です。
+
+---
+
+### [【Exchange Online】組織内のメールボックスの優先受信トレイを非表示にする](https://blog.jbs.co.jp/entry/2025/08/28/115629)
+**Source:** JBS Blog
+**Published:** 2025-08-28 02:56:29 UTC
+**Tags:** Microsoft 365, Exchange Online, PoweShell
+
+**Digest:**
+Exchange Onlineで組織内メールボックス管理を効率化する手法。優先受信トレイを非表示にすることで、情報の**一元管理**を促進し、不要な混乱を解消します。これにより、**メール整理**が容易になり、**業務効率**が向上。詳細な設定方法を通じて、より**組織的**なメール運用を目指しましょう。
 
 ---
