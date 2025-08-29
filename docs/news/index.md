@@ -1,71 +1,61 @@
-# AI Tech Trends Digest (2025-08-28)
+# AI Tech Trends Digest (2025-08-29)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [松尾研LLM開発コンペ2025 参加記録まとめ【全6記事リンク・随時更新】](https://qiita.com/hiro7_2kae/items/030bc9ce5431c26ed4ee)
-**Published:** 2025-08-27 21:08:15 UTC
-**Likes:** 3
-**Tags:** 機械学習, 生成AI, LLM, 松尾研LLMコンペ2025
+### [【Dify】OCI Generative AIのセットアップ手順（認証方法が改善されました:v0.0.8以降）](https://qiita.com/yushibats/items/a44b16f47eeb82f7e7eb)
+**Published:** 2025-08-28 06:24:15 UTC
+**Likes:** 4
+**Tags:** oracle, oci, GenerativeAI, Dify, AIエージェント
 
 **Digest:**
-2025年夏開催の松尾研LLM開発コンペに参加した記録をまとめた全6記事のポータルです。製造業の品質管理担当者が、大規模GPU環境でのLLM学習やチーム開発に挑戦。現在は導入編が公開されており、環境構築ガイドが近日公開予定です。随時更新され、シリーズのフォローを歓迎しています。
+Dify v0.0.8以降、OCI Generative AIのセットアップが簡素化。プラグインからOCI Generative AI Serviceを選択し、APIキー認証を設定すれば利用開始可能。APIキー認証では、region、tenancy_ocidなど5つの情報を入力します。OCIコンソールでAPIキーを発行し設定することで、OCI Generative AIモデルをDifyで手軽に活用できます。
 
 ---
 
-### [OpenAI Codex CLI をバージョンアップ & アンインストール](https://qiita.com/hanaya/items/1d7510327b98f3a59939)
-**Published:** 2025-08-28 01:21:12 UTC
+### [自作MCP Serverで業務効率化！Redmine連携サーバーを作ってみた](https://qiita.com/hatsukaze/items/02f1bda9e9bef27121bd)
+**Published:** 2025-08-29 02:06:51 UTC
 **Likes:** 1
-**Tags:** OpenAI, codex, CodexCLI
+**Tags:** Python, MCP, Claude, MCPサーバー
 
 **Digest:**
-OpenAI Codex CLIの最新版へのアップデート方法を紹介。npm経由では`npm install -g @openai/codex@latest`、Homebrewでは`brew update`と`brew upgrade codex`を実行。アンインストールはnpmで`npm uninstall -g @openai/codex`、Homebrewで`brew uninstall codex`。設定ファイル削除は任意で`rm -rf ~/.codex`。
+開発部の天津炒飯氏が、RedmineとClaude Desktopを連携するMCPサーバーを自作。Redmine APIを叩き、プロジェクト一覧取得やチケット作成などのツールを定義。Python 3.10以上必須で、ツール定義が肝心。Claude Desktopの設定ファイルと再起動が重要。ハマりやすいポイントや使用例も紹介。
 
 ---
 
-### [導入編：松尾研LLM開発コンペ2025に参加して学んだこと](https://qiita.com/hiro7_2kae/items/6a0aade5dd405568ef47)
-**Published:** 2025-08-27 20:56:03 UTC
+### [OpenAI:『声』だけじゃない。OpenAIの"gpt-realtime"は『目』と『外部ツール』を手に入れ、リアルタイム対話はここまで進化した](https://qiita.com/RepKuririn/items/89034b4322c46c741603)
+**Published:** 2025-08-28 23:19:16 UTC
 **Likes:** 1
-**Tags:** 機械学習, 生成AI, LLM, 松尾研LLMコンペ2025
+**Tags:** OpenAI, AIエージェント, RealtimeAPI, gpt-realtime
 
 **Digest:**
-製造業DX担当者が、2025年夏に松尾研LLM開発コンペに参加。**Python・機械学習未経験**ながら、**大規模言語モデル講座**受講を機にLLM開発に挑戦。**大規模GPU環境**でのSFT、RLTによるモデル学習、MLOps的な実験管理を経験し、チーム開発の重要性を実感。基盤モデル学習からファインチューニングまで関わり、研究者以外でもLLM開発に貢献できると確信しました。
+OpenAIが、より自然な音声と高度な知能を持つ新モデル「gpt-realtime」とRealtime APIを正式リリース。オーディオ品質、知能、指示追従性、ファンクションコール精度が向上し、外部ツール連携のMCP、画像入力、SIPサポートも追加。安全対策や価格も改定され、音声AIの実用化を加速します。
 
 ---
 
-### [AIコーディングAgentとの向き合い方 - AIを使いこなす3つのプラクティス -](https://qiita.com/eycjur/items/af42d743c39e03eb39fb)
-**Published:** 2025-08-27 13:37:07 UTC
+### [Groq × LangChain ハンズオン（Jupyter 版）](https://qiita.com/shimmy-notat/items/be8b84cbd6c7d79b6ba5)
+**Published:** 2025-08-28 15:01:23 UTC
 **Likes:** 1
-**Tags:** AI, LLM, AIエージェント, ClaudeCode, VibeCoding
+**Tags:** Python, Jupyter, LangChain, LLM, groq
 
 **Digest:**
-2025年のAI時代に向け、エンジニア向けにAIコーディングAgentとの向き合い方を解説。発表内容を基に、**AI時代の3つのプラクティス**を提示。まず「便利ツール」から始め、次にAIが得意なタスクへの分解を意識し、最終的にTDDや自己学習を通じた**AIの自律的なタスク分解**を目指す。AIを使わないリスクを認識し、積極的に活用することで、AIスキルを向上させることが重要。
+Groqの超低レイテンシ推論をLangChainで扱う最小構成のハンズオンを紹介。APIキー設定、ライブラリインストール、`ChatGroq` での応答取得、LCELによるチェーン構築、ストリーミング、構造化出力など、Jupyter Notebook上で体験できます。環境変数の設定や`TypedDict`によるJSON出力も解説。
 
 ---
 
-### [【備忘】VScodeでClaudeCodeを使うときに誤ってセッションを切ってしまったとき。](https://qiita.com/osushisushisushi/items/6c43996813bf3f89c1d7)
-**Published:** 2025-08-27 10:47:25 UTC
+### [超詳細! Gemini Code Assist × VScode の導入](https://qiita.com/mori_166/items/fa183e50138ab721e931)
+**Published:** 2025-08-28 06:43:58 UTC
 **Likes:** 1
-**Tags:** tips, VSCode, Claude, ClaudeCode
+**Tags:** HTML, Web, VSCode, Gemini, VibeCoding
 
 **Digest:**
-VSCode拡張機能ClaudeCodeでセッションが途切れると、Diff表示がされなくなる問題が発生。解決策は、古いチャットを閉じ、ClaudeCodeアイコンから新しいセッションを立ち上げ、"exit"で終了後、ターミナルで`claude --resume`を実行してセッションを再開すること。ターミナル利用との切り替えやDiff表示の不便さを解消するため、この方法が推奨されます。
+VScodeで拡張機能「Gemini Code Assist」をインストールし、Googleアカウントでログイン後、Tech系イベント用Webサイトを実装。無料版Googleアカウントで、HTML、CSS、JavaScriptファイルをGemini Code Assistが生成。ポップでワクワク感のある動的サイトが瞬時に完成しました。
 
 ---
 
 ## Latest News from RSS Feeds
 
-
-### [Agent Factory: Top 5 agent observability best practices for reliable AI](https://azure.microsoft.com/en-us/blog/agent-factory-top-5-agent-observability-best-practices-for-reliable-ai/)
-**Source:** Azure AI Blog
-**Published:** 2025-08-27 15:00:00 UTC
-**Tags:** AI + machine learning, Agent Factory, AI
-
-**Digest:**
-エージェント型AIの信頼性確保には「エージェントオブザーバビリティ」が不可欠。開発から運用まで、深層的な可視化を実現し、問題早期発見、品質・安全性の検証、パフォーマンス最適化に貢献。Azure AI Foundry Observabilityは、評価、モニタリング、トレーシング、ガバナンスを統合し、CI/CD連携も可能。モデル選定、継続的な評価、CI/CDへの統合、AIレッドチームによる脆弱性スキャン、本番環境でのモニタリングが、信頼できるAI構築の鍵となる。
-
----
 
 ### [Google Pixel 10、Google Pixel 10 Pro、Google Pixel 10 Pro XL、本日より発売開始](https://blog.google/intl/ja-jp/feed/pixel-10-available-now/)
 **Source:** Google Japan Blog
@@ -73,46 +63,66 @@ VSCode拡張機能ClaudeCodeでセッションが途切れると、Diff表示が
 **Tags:** Pixel
 
 **Digest:**
-本日、Google Pixel 10、Pixel 10 Pro、Pixel 10 Pro XL が発売。新開発の Google Tensor G5 チップと Gemini Nano を搭載し、デザインとハードウェアを刷新しました。Google 史上最もパワフルな Pixel シリーズとして、更なる進化を遂げています。
+本日、Google Pixel 10、Pixel 10 Pro、Pixel 10 Pro XL が発売されました。新型Google Tensor G5 チップとGemini Nanoを搭載し、デザインとハードウェアを刷新。Google史上最もパワフルなPixelシリーズとして、高いパフォーマンスと革新的な体験を提供します。
 
 ---
 
-### [Google Tensor G5 が Google Pixel を変革する 5 つの理由](https://blog.google/intl/ja-jp/products/devices-services/tensor-g5-pixel-10/)
-**Source:** Google Japan Blog
-**Published:** 2025-08-27 15:00:00 UTC
-**Tags:** Pixel
-
-**Digest:**
-Google Pixel 10シリーズに搭載される第5世代Google Tensorチップは、最新のAI技術を駆使し、大幅な進化を遂げる見込みです。このチップは、Pixelデバイスのパフォーマンス向上だけでなく、画像処理や音声認識などのAI関連機能においても、更なる進化をもたらすでしょう。
-
----
-
-### [Mercury foundation models from Inception Labs are now available in Amazon Bedrock Marketplace and Amazon SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/mercury-foundation-models-from-inception-labs-are-now-available-in-amazon-bedrock-marketplace-and-amazon-sagemaker-jumpstart/)
+### [Meet Boti: The AI assistant transforming how the citizens of Buenos Aires access government information with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/meet-boti-the-ai-assistant-transforming-how-the-citizens-of-buenos-aires-access-government-information-with-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-08-27 15:39:06 UTC
-**Tags:** Amazon Bedrock, Amazon SageMaker JumpStart, Announcements
+**Published:** 2025-08-28 20:25:00 UTC
+**Tags:** Amazon Bedrock, Artificial Intelligence, Customer Solutions, Generative AI
 
 **Digest:**
-Inception LabsのMercuryおよびMercury Coder基盤モデルが、Amazon Bedrock MarketplaceとSageMaker JumpStartで利用可能に。高速生成と高品質なコード生成が特徴で、最大1,100 tokens/秒の速度を実現。Bedrock Marketplaceでは簡単にモデルをデプロイでき、SageMaker JumpStartでも利用可能。コード生成にも利用できます。
+ブエノスアイレス市は、市民サービス向上のため、WhatsApp上のAIアシスタント「Boti」を開発。Amazon BedrockとLangGraphを活用し、有害コンテンツを排除する入力ガードレールと、手続き情報を提供するエージェントを構築しました。**Rioplatenseスペイン語**での会話を実現し、LLMを用いた**Reasoning Retriever**により、標準的な検索よりも**高い精度**で情報検索。専門家も言語表現を高く評価し、市民と政府の新たなコミュニケーションを実現しています。
 
 ---
 
-### [オンプレミス Exchange Server が存在しないハイブリッド ID 環境で、Exchange 管理ツールを利用して Exchange Online 受信者を管理する](https://blog.jbs.co.jp/entry/2025/08/28/130027)
-**Source:** JBS Blog
-**Published:** 2025-08-28 04:00:27 UTC
-**Tags:** Microsoft 365, Exchange Online, Exchange Server, Tech
+### [Empowering air quality research with secure, ML-driven predictive analytics](https://aws.amazon.com/blogs/machine-learning/empowering-air-quality-research-with-secure-ml-driven-predictive-analytics/)
+**Source:** AWS ML Blog
+**Published:** 2025-08-28 20:20:10 UTC
+**Tags:** Advanced (300), Amazon SageMaker Canvas, AWS Cloud Development Kit, Nonprofit, Serverless, Technical How-to
 
 **Digest:**
-ハイブリッドID環境で、オンプレミスExchange Serverを使わずに受信者を管理する方法を紹介。Exchange管理ツールを用いて、Exchange Online環境における**受信者**の作成、変更、削除といった**管理**作業を可能にします。**オンプレミス環境**がなくても、**Exchange Online**を効率的に利用できるようになる手順です。
+アフリカの深刻な大気汚染問題に対し、Amazon SageMaker Canvas を活用し、PM2.5データの欠損を予測するソリューションを開発。 AWS Lambda、Step Functions等で構成され、PM2.5予測モデルを構築。 欠損データ補完により、精度の高いデータ分析と、公衆衛生への貢献を目指します。
 
 ---
 
-### [【Exchange Online】組織内のメールボックスの優先受信トレイを非表示にする](https://blog.jbs.co.jp/entry/2025/08/28/115629)
-**Source:** JBS Blog
-**Published:** 2025-08-28 02:56:29 UTC
-**Tags:** Microsoft 365, Exchange Online, PoweShell
+### [How Amazon Finance built an AI assistant using Amazon Bedrock and Amazon Kendra to support analysts for data discovery and business insights](https://aws.amazon.com/blogs/machine-learning/how-amazon-finance-built-an-ai-assistant-using-amazon-bedrock-and-amazon-kendra-to-support-analysts-for-data-discovery-and-business-insights/)
+**Source:** AWS ML Blog
+**Published:** 2025-08-28 20:14:22 UTC
+**Tags:** Amazon Bedrock, Amazon Kendra, Artificial Intelligence, Customer Solutions
 
 **Digest:**
-Exchange Onlineで組織内メールボックス管理を効率化する手法。優先受信トレイを非表示にすることで、情報の**一元管理**を促進し、不要な混乱を解消します。これにより、**メール整理**が容易になり、**業務効率**が向上。詳細な設定方法を通じて、より**組織的**なメール運用を目指しましょう。
+Amazon Financeは、金融アナリストの課題解決のため、生成AIとAmazon Bedrock、Amazon Kendraを活用したAIアシスタントを開発。自然言語検索でデータ発見を効率化し、検索時間を30%短縮、精度80%向上を実現。AnthropicのClaude LLMとRAGにより、正確な回答を提供し、定型的な検索にかかる時間を85%削減、92%の利用者が満足。
+
+---
+
+### [Copilot StudioのナレッジとしてSharePointを指定する2つの方法を比較](https://blog.jbs.co.jp/entry/2025/08/29/095656)
+**Source:** JBS Blog
+**Published:** 2025-08-29 00:56:56 UTC
+**Tags:** Microsoft Copilot Studio, Microsoft 365 Copilot
+
+**Digest:**
+Copilot Studioでエージェント作成時、SharePointをナレッジとして指定する2つの方法を比較。1つはSharePointを直接、もう1つは非構造化データを経由する方法です。インデックス作成、検索結果、検索対象ファイル、ナレッジソース追加方法などを比較し、テキスト内容に対する検索結果も異なります。
+
+---
+
+### [【Microsoft×生成AI連載】Copilot でGPT-5を使ってみた](https://blog.jbs.co.jp/entry/2025/08/29/090345)
+**Source:** JBS Blog
+**Published:** 2025-08-29 00:03:45 UTC
+**Tags:** Copilot, Microsoft 365 Copilot, Microsoft×生成AI連載, 生成AI, Copilot for Microsoft 365
+
+**Digest:**
+Microsoft 365 CopilotがGPT-5に対応し、機能が進化しました。本記事では、GPT-5の紹介、Copilotでの活用法、Smart Mode比較、利用シーンとメリット・注意点を解説。簡潔な質問から高度な質問まで、その活用方法をまとめた連載記事です。過去の記事はリンクから確認できます。
+
+---
+
+### [Dell SmartFabric OS10で VRRP(Virtual Router Redundancy Protocol)を設定してみた](https://blog.jbs.co.jp/entry/2025/08/28/154318)
+**Source:** JBS Blog
+**Published:** 2025-08-28 06:43:18 UTC
+**Tags:** VRRP, OS10
+
+**Digest:**
+VRRPは、ネットワークのゲートウェイを冗長化するプロトコルで、L3スイッチやルーターで単一障害点回避に利用されます。Dell SmartFabric OS10（OS10）でのVRRP設定手順を解説し、マスタールーター、バックアップルーター、プライオリティ、仮想IP、プリエンプト、インターフェーストラッキングといったキーワードを含めて、基本的な設定方法を紹介します。
 
 ---
