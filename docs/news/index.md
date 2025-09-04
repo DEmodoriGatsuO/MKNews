@@ -1,148 +1,148 @@
-# AI Tech Trends Digest (2025-09-03)
+# AI Tech Trends Digest (2025-09-04)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Geminiの「Nano Banana」でいい感じに「お部屋の家具ステージング画像」を作成するプロンプト](https://qiita.com/WdknWdkn/items/8a01cc7282ed8603c81d)
-**Published:** 2025-09-03 00:33:12 UTC
-**Likes:** 12
-**Tags:** 画像処理, プロンプト, Gemini, 生成AI, nanobanana
+### [「npx create-mastra」で作った Mastra のプロジェクト（ツールを使うエージェントの実装）と LM Studio でのローカルLLM（OpenAI互換API を扱うもの）を組み合わせる](https://qiita.com/youtoy/items/09b953f2f1ef91cb6b6e)
+**Published:** 2025-09-03 15:19:25 UTC
+**Likes:** 2
+**Tags:** OpenAI, LMStudio, ローカルLLM, Mastra, vercelaisdk
 
 **Digest:**
-不動産AIにおける空室写真への家具合成の課題は、スケール感の破綻や動線確保の不足。解決策として、プロンプトのルール化や入力ヒアリング項目の定義が挙げられます。記事では、Gemini/nanobananaを用いた自然な合成例を紹介し、間取りとの整合性を重視したプロンプトアシスタントの有用性を示唆しています。
+MastraでローカルLLMを試す記事。過去記事を組み合わせ、LM Studioでローカルサーバーを準備、OpenAI互換APIを利用。`create-mastra`でプロジェクト作成後、`@ai-sdk/openai-compatible`を導入し、コードを修正。 `weather-agent.ts`でOpenAIの代わりにLM StudioのローカルLLM（jan-v1-4b）を指定。
 
 ---
 
-### [【v1.5.0対応】Cursorの基礎・活用術を徹底解説](https://qiita.com/sakamoto-ryosuke/items/b440986e53ddb5429ac1)
-**Published:** 2025-09-02 10:13:10 UTC
-**Likes:** 12
-**Tags:** AI, cursor, ChatGPT, Claude, AI駆動開発
+### [【生成AI】プロンプトインジェクションを防ぐ方法【LLM】](https://qiita.com/keiichileograph/items/b6d76fcb5f90883ea9f7)
+**Published:** 2025-09-03 09:55:46 UTC
+**Likes:** 2
+**Tags:** アーキテクチャ, プロンプト, 生成AI, LLM, プロンプトエンジニアリング
 
 **Digest:**
-CursorのAI統合型エディタ活用術を紹介。2025年7月導入のポスタスでの利用事例を基に、AI支援機能、コンテキストエンジニアリングの重要性を解説。Tab補完、チャット、インライン編集、プロジェクトルール設定、ファイル除外、@シンボル、/コマンドを駆使し、爆速コーディングを実現。
+プロンプトインジェクションは、生成AIへの悪意ある命令でシステムを不正動作させる攻撃。プロンプトハッキングとの違い、防御策として、リクエスト回数制限、機密情報非開示、String Format、LLM2台構成が有効。LLMへの良いプロンプトはタスクをシンプルにし、XMLライクな記述が推奨される。
 
 ---
 
-### [Imagen 4とGemini 2.5 Flash Image (Nano Banana)の違い【Imagen 4 vs Nano Banana】](https://qiita.com/relu/items/b70a49e42f4d3a81f166)
-**Published:** 2025-09-02 23:50:31 UTC
-**Likes:** 5
-**Tags:** 個人開発, Gemini, 生成AI, ChatGPT, nanobanana
+### [今更だけど「生成AI」「LLM」「AIエージェント」の違いをまとめてみた](https://qiita.com/keiichileograph/items/31b20116cf85e243a150)
+**Published:** 2025-09-04 05:02:04 UTC
+**Likes:** 1
+**Tags:** DeepLearning, AI, 生成AI, ChatGPT, LLM
 
 **Digest:**
-画像比較アプリを開発。GoogleのImagen 4は高品質なテキスト→画像生成に特化し、看板など文字表現に強み。Gemini 2.5 Flash Image (Nano Banana)は、自然言語での画像編集・合成・マルチ画像融合が可能。両モデルともSynthID透かし入り。Imagen 4は\$0.04/枚～、Geminiは出力トークン課金。用途に応じて使い分けを推奨。
+本記事は、LLM、生成AI、AIエージェントの違いを整理。LLMは文章生成に強み、生成AIは画像・音声なども含む広範なAIで、AIエージェントは外部ツールを駆使してタスクを完遂するシステムを指します。OpenAI ChatGPT、Google Imagen、Zoom AI Companionなどが例として挙げられています。
 
 ---
 
-### [トレンド入りする記事をスマホで10分でAIに書かせる方法](https://qiita.com/makotosaekit/items/e38a4fafd1c4f3c8b214)
-**Published:** 2025-09-02 21:08:57 UTC
-**Likes:** 4
-**Tags:** AI, プロンプト, オンラインサロン, 楽したい, LLM
+### [LLM／AGI／ASIこの違いを理解しよう](https://qiita.com/Andhy/items/a88181a9f975a31a3557)
+**Published:** 2025-09-03 13:45:55 UTC
+**Likes:** 1
+**Tags:** agi, ASI, LLM
 
 **Digest:**
-AIのプロンプトには、目的意識と文脈形成が重要。**「ゴミを入れればゴミが出てくる」**の原則に基づき、論理式のような構造化された指示でAIの能力を最大限に引き出す。**Backstep Prompting**で定義や証拠を固め、**認知足場**で思考の「足場」を構築。**第一原理思考**で抽象から具体へ。論文検索でも論理構造化プロンプトの有効性が示唆。
+大規模言語モデル(LLM)は予測変換に特化し、文章生成や翻訳に強みを持つ。一方、汎用人工知能(AGI)は自律的に課題を解決する"何でも屋"、人工超知能(ASI)はAGIを凌駕し人間には理解不能なレベルに達する。LLMは道具、AGIは代理人であり、ASIは人間の知能差を無意味にするほどの能力を持つ。その速度とスケールの暴力は、人間を"魚"のような存在に変える可能性がある。
 
 ---
 
-### [ローカルLLMの歴史を学んで可能性を考える](https://qiita.com/yo_arai/items/f10fc552200f4abfe9d5)
-**Published:** 2025-09-02 14:17:28 UTC
-**Likes:** 4
-**Tags:** OpenAI, 生成AI, LLM, LocalLLM
+### [OpenAI Realtime APIをSIPでつなぐ - Twilio Programmable Voice連携](https://qiita.com/halapolo/items/c71b7783e820c4b4cbff)
+**Published:** 2025-09-04 05:16:45 UTC
+**Likes:** 0
+**Tags:** twilio, sip, voice, OpenAI
 
 **Digest:**
-ローカルLLMの歴史を振り返り、Transformer登場以降の進化を解説。BERTからLLaMA、Mistral、Gemma、OpenELM、そしてgpt-oss-20b/120bに至るまで、様々なモデルが登場し、商用利用可能なオープンモデルも増加。gpt-oss-20b/120bはローカル環境での高性能推論を可能にし、一方、悪用リスクも顕在化。ローカルLLMはIoTなどへの応用が期待されるが、責任ある利用が重要となる。
+OpenAI Realtime API を SIP で Twilio と連携する際、Programmable Voice の設定手順を解説。前回は Elastic SIP Trunking を紹介したが、Programmable Voice は通話制御や TwiML での柔軟なロジック挿入、アウトバウンド発信の容易さがメリット。TwiML 作成、電話番号との紐付けで設定完了。課金体系の違いを考慮し、用途に合わせて使い分けるのが重要です。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Train and deploy models on Amazon SageMaker HyperPod using the new HyperPod CLI and SDK](https://aws.amazon.com/blogs/machine-learning/train-and-deploy-models-on-amazon-sagemaker-hyperpod-using-the-new-hyperpod-cli-and-sdk/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-03 00:12:37 UTC
-**Tags:** Amazon SageMaker HyperPod
+### [9 月の Pixel Drop：Material 3 Expressive などの機能アップデートをご紹介](https://blog.google/intl/ja-jp/products/devices-services/september-2025-pixel-drop/)
+**Source:** Google Japan Blog
+**Published:** 2025-09-04 11:05:00 UTC
+**Tags:** Pixel
 
 **Digest:**
-Amazon SageMaker HyperPodのCLIとSDKがリリースされ、大規模AIモデルの訓練とデプロイを簡素化。CLIは直感的なコマンド操作で、SDKはプログラムによるカスタマイズを可能にします。PythonでHyperPod EKSクラスタに接続し、Meta Llama 3.1 8BモデルをFSDPで訓練する例を紹介。CLIでPyTorchジョブを簡単に実行し、ログ確認も可能です。
+Google Pixel Watchのマップ表示が改善され、Google Pixel Budsにも新機能が追加されました。Pixelデバイスの使い勝手が向上しており、詳細については続報にご期待ください。
 
 ---
 
-### [Build a serverless Amazon Bedrock batch job orchestration workflow using AWS Step Functions](https://aws.amazon.com/blogs/machine-learning/build-a-serverless-amazon-bedrock-batch-job-orchestration-workflow-using-aws-step-functions/)
+### [Authenticate Amazon Q Business data accessors using a trusted token issuer](https://aws.amazon.com/blogs/machine-learning/authenticate-amazon-q-business-data-accessors-using-a-trusted-token-issuer/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-02 18:55:16 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Serverless, Technical How-to, Uncategorized
+**Published:** 2025-09-03 16:44:14 UTC
+**Tags:** Amazon Q, Amazon Q Business, AWS IAM Identity Center
 
 **Digest:**
-Amazon Bedrockのバッチ推論を効率化する、柔軟でスケーラブルなソリューションを紹介。大規模データセットの処理に最適で、入力整形、ジョブ管理、後処理を簡素化します。S3とStep Functionsを活用し、2つの形式のデータセットをサポート。カスタム評価や埋め込み生成など、多様なユースケースに対応し、GitHubで公開されています。
+Amazon Q Businessの**データアクセサー**は、2024年GA以降、ISVが自社SaaSで顧客のエンタープライズデータに安全にアクセス可能に。**TTI**認証により、ISVは自社OIDCプロバイダーでユーザー認証を行い、二重認証を回避しつつセキュリティを維持。IT管理者はISVのOAuth情報からTTIを作成、データアクセサーを設定。ISVは顧客のAmazon Qインデックスに安全にアクセス可能になります。
 
 ---
 
-### [Natural language-based database analytics with Amazon Nova](https://aws.amazon.com/blogs/machine-learning/natural-language-based-database-analytics-with-amazon-nova/)
+### [Unlocking the future of professional services: How Proofpoint uses Amazon Q Business](https://aws.amazon.com/blogs/machine-learning/unlocking-the-future-of-professional-services-how-proofpoint-uses-amazon-q-business/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-02 16:43:47 UTC
-**Tags:** Amazon Athena, Amazon Bedrock, Amazon Nova, Amazon SageMaker, AWS Glue, Generative AI
+**Published:** 2025-09-03 16:39:10 UTC
+**Tags:** Adoption, Amazon Q Business, Business Productivity, Customer Solutions, Enterprise Strategy, Generative AI, Innovation and Reinvention, Intermediate (200)
 
 **Digest:**
-Amazon Nova LLMとLLMエージェントを活用した、自然言語データベース分析の革新的なアプローチを紹介。Amazon Nova FMとReActパターンにより、複雑なSQLクエリを生成、エラーを自己修正。直感的対話を実現し、精度と信頼性を両立。Text2SQL、Text2Pythonなどのツールを統合し、視覚化も可能。評価では高い精度と低レイテンシを示し、データ分析の民主化に貢献。
+Proofpointは、Amazon Q Businessを導入し、顧客サービスを革新。2024年1月に開始、10月にはサービスチームで本稼働、管理業務で40%の生産性向上を実現。年間18,300時間以上の時間短縮を実現し、顧客データ分析、レポート作成、会議の要約などに活用。30以上のカスタムアプリを開発し、顧客対応の効率化と質の向上を図っています。今後は、データソースの拡大、アクションの活用、自動化ワークフローの強化を計画しています。
 
 ---
 
-### [Deploy Amazon Bedrock Knowledge Bases using Terraform for RAG-based generative AI applications](https://aws.amazon.com/blogs/machine-learning/deploy-amazon-bedrock-knowledge-bases-using-terraform-for-rag-based-generative-ai-applications/)
+### [Enhancing LLM accuracy with Coveo Passage Retrieval on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/enhancing-llm-accuracy-with-coveo-passage-retrieval-on-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-02 16:41:49 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Knowledge Bases, Amazon OpenSearch Service, Generative AI, Intermediate (200), Technical How-to
+**Published:** 2025-09-03 16:32:47 UTC
+**Tags:** Amazon Bedrock Agents, Partner solutions, Technical How-to
 
 **Digest:**
-Amazon Bedrock Knowledge BaseをTerraformでIaC構築するソリューションを紹介。RAGワークフローのデプロイを迅速化し、OpenSearch Serverless、IAMロール、S3、Bedrockの連携を実現。前提条件はAWSアカウント、IAM、Terraform、AWS CLI、ドキュメントストレージ。Titan Text Embeddings V2モデルへのアクセスも必要。Terraformの `init`、`plan`、`apply` コマンドでデプロイ。チャンキング戦略やOpenSearch設定もカスタマイズ可能。
+CoveoとAWSが共同で、LLMの信頼性向上を目指すPassage Retrieval APIを紹介。企業内データを元に、Amazon Bedrock Agentsが正確な回答を提供。CoveoのAI-Relevance Platformは、ハイブリッドインデックスとMLで関連情報を高速検索。アクショングループとしてAPIを統合し、企業向けRAGシステムを構築。詳細はGitHubを参照。
 
 ---
 
-### [Document intelligence evolved: Building and evaluating KIE solutions that scale](https://aws.amazon.com/blogs/machine-learning/document-intelligence-evolved-building-and-evaluating-kie-solutions-that-scale/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-02 16:34:27 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Nova, Amazon SageMaker AI, Foundation models, Generative AI, Technical How-to
-
-**Digest:**
-IDP（インテリジェント文書処理）は、様々な文書から情報を自動抽出・分類する技術です。Amazon BedrockのKIE（キー情報抽出）ソリューション構築例として、FATURAデータセットを使用し、LLMを活用。Converse API、Jinja2テンプレートを用いたプロンプトエンジニアリングを紹介し、F1スコア、処理速度、コストを評価指標に設定。
-
----
-
-### [【Microsoft Fabric】Python NotebookでSQL databaseに接続してみる](https://blog.jbs.co.jp/entry/2025/09/03/123701)
+### [Power Automateで事前設定したタイミングに通知メールを送る](https://blog.jbs.co.jp/entry/2025/09/04/145049)
 **Source:** JBS Blog
-**Published:** 2025-09-03 03:37:01 UTC
-**Tags:** Microsoft Fabric
+**Published:** 2025-09-04 05:50:49 UTC
+**Tags:** Power Automate, Power Platform
 
 **Digest:**
-Microsoft Fabric は Microsoft の SaaS 型データ分析基盤で、手軽にデータ分析を試せるのが特徴です。本記事では、Python Notebook から SQL database に接続し、T-SQL コマンドを実行する方法を解説します。SQL database の作成から、データの準備、Python Notebook での接続方法までを説明します。
+Power Automateで、あらかじめ設定したタイミングで通知メールを送信するには工夫が必要です。本記事では、別途用意した「通知日と参加日程の対応表」を参照することで、通知タイミングを柔軟にコントロールする方法を解説します。
 
 ---
 
-### [Oracle Database@Azure ～ サブスクリプション購入とデプロイ方法](https://blog.jbs.co.jp/entry/2025/09/03/112133)
+### [【Copilot Studio エージェントの拡張】 スキルとBot Framework SDKの概要](https://blog.jbs.co.jp/entry/2025/09/04/130325)
 **Source:** JBS Blog
-**Published:** 2025-09-03 02:21:33 UTC
-**Tags:** Oracle Cloud Infrastructure, マルチクラウド, Database, Oracle Database
+**Published:** 2025-09-04 04:03:25 UTC
+**Tags:** Microsoft Copilot Studio, Bot Framework, スキルボット
 
 **Digest:**
-Azure での Oracle Database 運用が劇的に変化！従来はVM構築が必要でしたが、**Oracle Database@Azure** の登場で簡素化されました。本稿では、その利用に必要な手続きとデプロイ方法を解説。**Oracle Database@Azure** サブスクリプション購入や**Autono...** （記事はここで途切れている）
+MicrosoftのBot Framework SDKを用いたスキルボット作成ガイドです。Copilot Studioでの高度なチャットボット開発を支援するため、具体的な手順を詳細に解説しています。これにより、スキルボット構築の基本から応用までを網羅的に理解できます。
 
 ---
 
-### [【Microsoft×生成AI連載】【Agents】Microsoft Copilot StudioでGPT-5を実装してみた](https://blog.jbs.co.jp/entry/2025/09/03/090024)
+### [Palo Alto評価版を使用してみた](https://blog.jbs.co.jp/entry/2025/09/04/102836)
 **Source:** JBS Blog
-**Published:** 2025-09-03 00:00:24 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
+**Published:** 2025-09-04 01:28:36 UTC
+**Tags:** Tech, Paloalto, ネットワーク
 
 **Digest:**
-Microsoft Copilot Studioで、GPT-5の利用が開始されました。2025年8月7日より、プロンプトアクションとしてGPT-5を実装可能に。Power Platformの早期リリースサイクル環境で利用できます。
+Palo Alto Networksの次世代ファイアウォール製品「Palo Alto」は、VMware ESXi/KVM用の仮想アプライアンスも提供。評価版があり、導入前の動作確認、メンバー育成、自主学習に役立ちます。評価版仮想マシンの申請とセットアップ手順を解説する記事があります。
 
 ---
 
-### [Teams：チャネル用の新しいスレッドレイアウトオプションの紹介](https://blog.jbs.co.jp/entry/2025/09/02/150555)
+### [Azure AI Foundryで各種Azure AIサービス・Azure OpenAIモデルを一元管理する](https://blog.jbs.co.jp/entry/2025/09/03/164846)
 **Source:** JBS Blog
-**Published:** 2025-09-02 06:05:55 UTC
-**Tags:** Microsoft 365, Microsoft Teams
+**Published:** 2025-09-03 07:48:46 UTC
+**Tags:** Azure AI Foundry, Azure OpenAI, 大規模言語モデル, Python, AI
 
 **Digest:**
-Microsoft Teamsのチャネルに、Slackのような**スレッド型レイアウト**が導入されます。これにより、Teams内での**会話**をより整理しやすくなり、**カスタマイズ**も可能になります。
+Azure AI FoundryとAI Hubの違いを解説し、Azure OpenAIやCognitive Serviceを含むリソースのデプロイ手順を紹介します。AI FoundryとAI Hub、それぞれの特徴や利用方法、更には具体的なデプロイプロセスについて、分かりやすく説明します。
+
+---
+
+### [ドメイン未参加端末に対するMicrosoft 365 Apps for enterpriseのOffice展開ツールを用いた展開時の懸念事項と対策（共有フォルダを利用するケース）](https://blog.jbs.co.jp/entry/2025/09/03/155245)
+**Source:** JBS Blog
+**Published:** 2025-09-03 06:52:45 UTC
+**Tags:** M365Apps
+
+**Digest:**
+M365AppsのOffice展開で、ドメイン未参加端末がバッチファイルと共有フォルダ経由でインストールする際、ゲストアクセス無効が問題に。解決策として、バッチファイル内に資格情報を記述することで、認証突破しインストール可能に。これにより、ドメイン参加不要で展開を実現できます。
 
 ---
