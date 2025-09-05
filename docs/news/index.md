@@ -1,56 +1,56 @@
-# AI Tech Trends Digest (2025-09-04)
+# AI Tech Trends Digest (2025-09-05)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [「npx create-mastra」で作った Mastra のプロジェクト（ツールを使うエージェントの実装）と LM Studio でのローカルLLM（OpenAI互換API を扱うもの）を組み合わせる](https://qiita.com/youtoy/items/09b953f2f1ef91cb6b6e)
-**Published:** 2025-09-03 15:19:25 UTC
-**Likes:** 2
-**Tags:** OpenAI, LMStudio, ローカルLLM, Mastra, vercelaisdk
+### [「哲学」から見るAIのハルシネーション](https://qiita.com/makotosaekit/items/472a74da335df64a2f09)
+**Published:** 2025-09-04 12:40:29 UTC
+**Likes:** 16
+**Tags:** AI, プロンプト, 思考法, ChatGPT, LLM
 
 **Digest:**
-MastraでローカルLLMを試す記事。過去記事を組み合わせ、LM Studioでローカルサーバーを準備、OpenAI互換APIを利用。`create-mastra`でプロジェクト作成後、`@ai-sdk/openai-compatible`を導入し、コードを修正。 `weather-agent.ts`でOpenAIの代わりにLM StudioのローカルLLM（jan-v1-4b）を指定。
+AIは事実に基づかない情報を真実らしく生成する「ハルシネーション」を起こす。これは、AIが言葉の意味を理解せず、確率に基づき文章を生成するから。その根源は、知識とは何かを問う哲学の「認識論」にあり、AIは「正当化」のみで動く。問題は、バイアスの「質」を誰が決定するか。解決には批判的思考が必要。
 
 ---
 
-### [【生成AI】プロンプトインジェクションを防ぐ方法【LLM】](https://qiita.com/keiichileograph/items/b6d76fcb5f90883ea9f7)
-**Published:** 2025-09-03 09:55:46 UTC
-**Likes:** 2
-**Tags:** アーキテクチャ, プロンプト, 生成AI, LLM, プロンプトエンジニアリング
+### [史上最も『教えない』のに『教え上手』なAI講師を作った](https://qiita.com/ms1546/items/076e1a812bd66abfde1c)
+**Published:** 2025-09-04 15:29:08 UTC
+**Likes:** 4
+**Tags:** 教育, AI, Claude, AIエージェント, ClaudeCode
 
 **Digest:**
-プロンプトインジェクションは、生成AIへの悪意ある命令でシステムを不正動作させる攻撃。プロンプトハッキングとの違い、防御策として、リクエスト回数制限、機密情報非開示、String Format、LLM2台構成が有効。LLMへの良いプロンプトはタスクをシンプルにし、XMLライクな記述が推奨される。
+「Claude-LEC」は、答えを教えないAI講師で、考える力を育む学習システム。ReactやSupabaseなど、様々な技術に対応し、オーダーメイドの学習計画でスキルアップを目指します。エラーの原因を考えさせ、コードレビューで改善点を提示、自分の力で解決する達成感を重視。初心者から経験者まで、レベルに合わせて難易度を調整し、理解を深める学習体験を提供します。
 
 ---
 
-### [今更だけど「生成AI」「LLM」「AIエージェント」の違いをまとめてみた](https://qiita.com/keiichileograph/items/31b20116cf85e243a150)
-**Published:** 2025-09-04 05:02:04 UTC
+### [MCPにおけるセキュリティリスク](https://qiita.com/KawakamiSyota/items/9a81cdcb8e94a38748d7)
+**Published:** 2025-09-05 00:15:50 UTC
 **Likes:** 1
-**Tags:** DeepLearning, AI, 生成AI, ChatGPT, LLM
+**Tags:** Security, OAuth, AI, MCP, LLM
 
 **Digest:**
-本記事は、LLM、生成AI、AIエージェントの違いを整理。LLMは文章生成に強み、生成AIは画像・音声なども含む広範なAIで、AIエージェントは外部ツールを駆使してタスクを完遂するシステムを指します。OpenAI ChatGPT、Google Imagen、Zoom AI Companionなどが例として挙げられています。
+MCPサーバーのセキュリティについて、OAuth認証を利用する際の「混乱した副官問題」に着目。外部認証サーバーとMCPプロキシサーバー間の認証フローで、攻撃者が認可コードを横取りし、不正アクセスを試みる。対策として、リダイレクトURIの厳格な検証、PKCE、Stateパラメータの実装が必要。開発者と利用者の双方でセキュリティ意識を高めることが重要となる。
 
 ---
 
-### [LLM／AGI／ASIこの違いを理解しよう](https://qiita.com/Andhy/items/a88181a9f975a31a3557)
-**Published:** 2025-09-03 13:45:55 UTC
+### [クロスリージョン推論の検証をするときはAnthropicがおすすめ](https://qiita.com/yoshi-taka/items/497531345f4c22a3e9b1)
+**Published:** 2025-09-04 13:25:27 UTC
 **Likes:** 1
-**Tags:** agi, ASI, LLM
+**Tags:** AWS, scp, bedrock, Anthropic, Claude
 
 **Digest:**
-大規模言語モデル(LLM)は予測変換に特化し、文章生成や翻訳に強みを持つ。一方、汎用人工知能(AGI)は自律的に課題を解決する"何でも屋"、人工超知能(ASI)はAGIを凌駕し人間には理解不能なレベルに達する。LLMは道具、AGIは代理人であり、ASIは人間の知能差を無意味にするほどの能力を持つ。その速度とスケールの暴力は、人間を"魚"のような存在に変える可能性がある。
+クロスリージョン推論にはAnthropicモデルが推奨。Amazon Bedrockでは10回の対話で動作する一方、Novaは東京固定の可能性あり。確認にはCloudTrailが有効で、"inferenceRegion"の追加を確認。Bedrock設定でS3/CloudWatch Logsへのモデル呼び出しログ記録も可能。
 
 ---
 
-### [OpenAI Realtime APIをSIPでつなぐ - Twilio Programmable Voice連携](https://qiita.com/halapolo/items/c71b7783e820c4b4cbff)
-**Published:** 2025-09-04 05:16:45 UTC
-**Likes:** 0
-**Tags:** twilio, sip, voice, OpenAI
+### [Claude CodeからCodex CLIへ移行した話 — モバイル/SRE/クラウド視点](https://qiita.com/zukizukizukizuki/items/bfb452ad5e5a04273466)
+**Published:** 2025-09-04 11:00:48 UTC
+**Likes:** 1
+**Tags:** CLI, AI, gpt, codex, Claude
 
 **Digest:**
-OpenAI Realtime API を SIP で Twilio と連携する際、Programmable Voice の設定手順を解説。前回は Elastic SIP Trunking を紹介したが、Programmable Voice は通話制御や TwiML での柔軟なロジック挿入、アウトバウンド発信の容易さがメリット。TwiML 作成、電話番号との紐付けで設定完了。課金体系の違いを考慮し、用途に合わせて使い分けるのが重要です。
+モバイル/SRE/クラウドエンジニアの著者は、Claude CodeからCodex CLIに移行。品質・Windowsでの操作性・コストに不満があり、CLI中心のワークフローに適したCodex CLIがガイドライン遵守、精度、価格面で優れていた。GPT-5 medium利用でレート制限も回避し、手戻りが減少。ガイドの最新化や代替フロー準備が移行のコツ。
 
 ---
 
@@ -63,86 +63,76 @@ OpenAI Realtime API を SIP で Twilio と連携する際、Programmable Voice �
 **Tags:** Pixel
 
 **Digest:**
-Google Pixel Watchのマップ表示が改善され、Google Pixel Budsにも新機能が追加されました。Pixelデバイスの使い勝手が向上しており、詳細については続報にご期待ください。
+Google Pixel Watch向けにマップの視認性が向上、Google Pixel Budsにも新機能が追加されました。Googleは、ウェアラブルデバイスの利便性を高めるため、Pixelシリーズのアップデートを実施。これにより、ユーザーはより快適にナビゲーションや音楽再生を楽しめるようになります。
 
 ---
 
-### [Authenticate Amazon Q Business data accessors using a trusted token issuer](https://aws.amazon.com/blogs/machine-learning/authenticate-amazon-q-business-data-accessors-using-a-trusted-token-issuer/)
+### [Build character consistent storyboards using Amazon Nova in Amazon Bedrock – Part 2](https://aws.amazon.com/blogs/machine-learning/build-character-consistent-storyboards-using-amazon-nova-in-amazon-bedrock-part-2/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-03 16:44:14 UTC
-**Tags:** Amazon Q, Amazon Q Business, AWS IAM Identity Center
+**Published:** 2025-09-04 17:21:03 UTC
+**Tags:** Amazon Bedrock, Amazon Nova, Technical How-to
 
 **Digest:**
-Amazon Q Businessの**データアクセサー**は、2024年GA以降、ISVが自社SaaSで顧客のエンタープライズデータに安全にアクセス可能に。**TTI**認証により、ISVは自社OIDCプロバイダーでユーザー認証を行い、二重認証を回避しつつセキュリティを維持。IT管理者はISVのOAuth情報からTTIを作成、データアクセサーを設定。ISVは顧客のAmazon Qインデックスに安全にアクセス可能になります。
+Amazon Nova Canvasのファインチューニング技術で、特定のキャラクターの表現を統一する方法を紹介。Amazon Web Servicesの短編アニメ「Picchu」の画像を学習データとし、Mayuとその母親のキャラクターに特化したモデルを構築。Amazon S3への動画アップロード、Amazon ECSによるフレーム抽出とキャプション生成、SageMakerでのモデル訓練、Amazon Bedrock APIを利用したファインチューニングを実施。
 
 ---
 
-### [Unlocking the future of professional services: How Proofpoint uses Amazon Q Business](https://aws.amazon.com/blogs/machine-learning/unlocking-the-future-of-professional-services-how-proofpoint-uses-amazon-q-business/)
+### [Build character consistent storyboards using Amazon Nova in Amazon Bedrock – Part 1](https://aws.amazon.com/blogs/machine-learning/build-character-consistent-storyboards-using-amazon-nova-in-amazon-bedrock-part-1/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-03 16:39:10 UTC
-**Tags:** Adoption, Amazon Q Business, Business Productivity, Customer Solutions, Enterprise Strategy, Generative AI, Innovation and Reinvention, Intermediate (200)
+**Published:** 2025-09-04 17:20:11 UTC
+**Tags:** Amazon Bedrock, Amazon Nova, Artificial Intelligence, Generative AI, Amazon SageMaker, artificial-intelligence
 
 **Digest:**
-Proofpointは、Amazon Q Businessを導入し、顧客サービスを革新。2024年1月に開始、10月にはサービスチームで本稼働、管理業務で40%の生産性向上を実現。年間18,300時間以上の時間短縮を実現し、顧客データ分析、レポート作成、会議の要約などに活用。30以上のカスタムアプリを開発し、顧客対応の効率化と質の向上を図っています。今後は、データソースの拡大、アクションの活用、自動化ワークフローの強化を計画しています。
+AIによるストーリーボード制作の現状を解説。Amazon Nova CanvasやReelでテキストや画像をビジュアル化するが、キャラの一貫性が課題。Promptエンジニアリングでキャラデザインを統一し、`seed`や`cfgScale`を調整。Amazon Nova LiteとReelを組み合わせ、動画化も可能。Part2では、さらなる高精度なキャラ表現のためのファインチューニングに言及。
 
 ---
 
-### [Enhancing LLM accuracy with Coveo Passage Retrieval on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/enhancing-llm-accuracy-with-coveo-passage-retrieval-on-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-03 16:32:47 UTC
-**Tags:** Amazon Bedrock Agents, Partner solutions, Technical How-to
+### [【Coplot+ PC 事例公開】ARM 版 Surface Laptop 13 インチの導入で探究による学びと教員の働き方の進化へ](https://blogs.windows.com/japan/2025/09/05/introducing-the-arm-based-surface-laptop-13-inch/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-09-05 02:26:41 UTC
+**Tags:** Surface, ARM, Surface Laptop
 
 **Digest:**
-CoveoとAWSが共同で、LLMの信頼性向上を目指すPassage Retrieval APIを紹介。企業内データを元に、Amazon Bedrock Agentsが正確な回答を提供。CoveoのAI-Relevance Platformは、ハイブリッドインデックスとMLで関連情報を高速検索。アクショングループとしてAPIを統合し、企業向けRAGシステムを構築。詳細はGitHubを参照。
+聖徳大学附属取手聖徳女子高校は、校務と学習の一本化を目指し、AI時代を見据えARM版Surface Laptopを導入。教員の働き方改革と生徒の探究学習を促進し、価格・性能・互換性のバランスを評価。AI活用による授業や校務の効率化、生徒の自己学習支援にも期待。Microsoft 365との連携で、生徒も教員も学びを深める環境を構築しています。
 
 ---
 
-### [Power Automateで事前設定したタイミングに通知メールを送る](https://blog.jbs.co.jp/entry/2025/09/04/145049)
+### [Microsoft Endpoint Configuration Managerのデバイスコレクション作成手順](https://blog.jbs.co.jp/entry/2025/09/05/135940)
 **Source:** JBS Blog
-**Published:** 2025-09-04 05:50:49 UTC
-**Tags:** Power Automate, Power Platform
+**Published:** 2025-09-05 04:59:40 UTC
+**Tags:** MECM, MCM
 
 **Digest:**
-Power Automateで、あらかじめ設定したタイミングで通知メールを送信するには工夫が必要です。本記事では、別途用意した「通知日と参加日程の対応表」を参照することで、通知タイミングを柔軟にコントロールする方法を解説します。
+MECM（Microsoft Endpoint Configuration Manager）におけるデバイスコレクションの作成手順を解説します。デバイスコレクションは、特定の条件を満たすデバイスをグループ化し、ソフトウェア展開や設定変更などの管理タスクを効率的に行うために重要です。この手順を知ることで、組織内のデバイス管理がよりスムーズに進みます。
 
 ---
 
-### [【Copilot Studio エージェントの拡張】 スキルとBot Framework SDKの概要](https://blog.jbs.co.jp/entry/2025/09/04/130325)
+### [Copilot StudioでAzure AI Foundryのモデルを使用する](https://blog.jbs.co.jp/entry/2025/09/05/123243)
 **Source:** JBS Blog
-**Published:** 2025-09-04 04:03:25 UTC
+**Published:** 2025-09-05 03:32:43 UTC
+**Tags:** Microsoft Copilot Studio, Microsoft 365 Copilot
+
+**Digest:**
+Copilot StudioでAzure AI Foundryのモデルを利用する手順を紹介。BYOM機能により、Copilot StudioからAzure AI Foundryにデプロイしたカスタムモデルを使用可能に。現在はプロンプトアク… (記事本文はここで途切れています)
+
+---
+
+### [【Microsoft×生成AI連載】Copilot を使用してドキュメント、会議、ファイルの音声概要を生成する](https://blog.jbs.co.jp/entry/2025/09/05/085306)
+**Source:** JBS Blog
+**Published:** 2025-09-04 23:53:06 UTC
+**Tags:** Copilot, Microsoft Copilot, 生成AI, Microsoft×生成AI連載
+
+**Digest:**
+Microsoft 365 Copilotの新機能、ドキュメントやファイルの音声概要生成を紹介。Copilotは、文書を音声で要約し、忙しいユーザーが効率的に情報収集できるようサポートします。これにより、長文ドキュメントも手軽に把握でき、作業効率が向上します。
+
+---
+
+### [【Copilot Studio エージェントの拡張】 エージェントからスキルを呼び出す](https://blog.jbs.co.jp/entry/2025/09/04/171326)
+**Source:** JBS Blog
+**Published:** 2025-09-04 08:13:26 UTC
 **Tags:** Microsoft Copilot Studio, Bot Framework, スキルボット
 
 **Digest:**
-MicrosoftのBot Framework SDKを用いたスキルボット作成ガイドです。Copilot Studioでの高度なチャットボット開発を支援するため、具体的な手順を詳細に解説しています。これにより、スキルボット構築の基本から応用までを網羅的に理解できます。
-
----
-
-### [Palo Alto評価版を使用してみた](https://blog.jbs.co.jp/entry/2025/09/04/102836)
-**Source:** JBS Blog
-**Published:** 2025-09-04 01:28:36 UTC
-**Tags:** Tech, Paloalto, ネットワーク
-
-**Digest:**
-Palo Alto Networksの次世代ファイアウォール製品「Palo Alto」は、VMware ESXi/KVM用の仮想アプライアンスも提供。評価版があり、導入前の動作確認、メンバー育成、自主学習に役立ちます。評価版仮想マシンの申請とセットアップ手順を解説する記事があります。
-
----
-
-### [Azure AI Foundryで各種Azure AIサービス・Azure OpenAIモデルを一元管理する](https://blog.jbs.co.jp/entry/2025/09/03/164846)
-**Source:** JBS Blog
-**Published:** 2025-09-03 07:48:46 UTC
-**Tags:** Azure AI Foundry, Azure OpenAI, 大規模言語モデル, Python, AI
-
-**Digest:**
-Azure AI FoundryとAI Hubの違いを解説し、Azure OpenAIやCognitive Serviceを含むリソースのデプロイ手順を紹介します。AI FoundryとAI Hub、それぞれの特徴や利用方法、更には具体的なデプロイプロセスについて、分かりやすく説明します。
-
----
-
-### [ドメイン未参加端末に対するMicrosoft 365 Apps for enterpriseのOffice展開ツールを用いた展開時の懸念事項と対策（共有フォルダを利用するケース）](https://blog.jbs.co.jp/entry/2025/09/03/155245)
-**Source:** JBS Blog
-**Published:** 2025-09-03 06:52:45 UTC
-**Tags:** M365Apps
-
-**Digest:**
-M365AppsのOffice展開で、ドメイン未参加端末がバッチファイルと共有フォルダ経由でインストールする際、ゲストアクセス無効が問題に。解決策として、バッチファイル内に資格情報を記述することで、認証突破しインストール可能に。これにより、ドメイン参加不要で展開を実現できます。
+Copilot StudioでDialogSkillBotを統合し、カスタムスキルを活用して高度な会話体験を構築する手順を解説します。これにより、AIエージェントがより複雑なタスクを実行できるようになり、対話の柔軟性と機能を大幅に向上させることが可能です。
 
 ---
