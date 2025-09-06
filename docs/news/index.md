@@ -1,138 +1,88 @@
-# AI Tech Trends Digest (2025-09-05)
+# AI Tech Trends Digest (2025-09-06)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [「哲学」から見るAIのハルシネーション](https://qiita.com/makotosaekit/items/472a74da335df64a2f09)
-**Published:** 2025-09-04 12:40:29 UTC
-**Likes:** 16
-**Tags:** AI, プロンプト, 思考法, ChatGPT, LLM
+### [Context Is All You Need](https://qiita.com/makotosaekit/items/2a08d945dd4cbf1b14ef)
+**Published:** 2025-09-05 20:54:00 UTC
+**Likes:** 8
+**Tags:** AI, プロンプト, ChatGPT, LLM, コンテキストエンジニアリング
 
 **Digest:**
-AIは事実に基づかない情報を真実らしく生成する「ハルシネーション」を起こす。これは、AIが言葉の意味を理解せず、確率に基づき文章を生成するから。その根源は、知識とは何かを問う哲学の「認識論」にあり、AIは「正当化」のみで動く。問題は、バイアスの「質」を誰が決定するか。解決には批判的思考が必要。
+AIの質は入力次第。**文脈工学**では、単なる指示ではなく、AIの思考空間を設計する。まず、**コグニティブ・デザイン**で目的を共有し、次に**背理系フレームワーク**で矛盾を探求、最後に**公理系アプローチ**で方針を定式化する。論文改訂例では、AIが質の高い改訂案を作成。この遠回りが、思考の外部化を促し、結果的に最短距離となる。
 
 ---
 
-### [史上最も『教えない』のに『教え上手』なAI講師を作った](https://qiita.com/ms1546/items/076e1a812bd66abfde1c)
-**Published:** 2025-09-04 15:29:08 UTC
-**Likes:** 4
-**Tags:** 教育, AI, Claude, AIエージェント, ClaudeCode
+### [Claude Codeをより便利・強力に使うためのツールまとめ](https://qiita.com/flowernotfound/items/649711de6fe8caf1eac2)
+**Published:** 2025-09-05 16:35:18 UTC
+**Likes:** 5
+**Tags:** AI, MCP, 生成AI, Claude, ClaudeCode
 
 **Digest:**
-「Claude-LEC」は、答えを教えないAI講師で、考える力を育む学習システム。ReactやSupabaseなど、様々な技術に対応し、オーダーメイドの学習計画でスキルアップを目指します。エラーの原因を考えさせ、コードレビューで改善点を提示、自分の力で解決する達成感を重視。初心者から経験者まで、レベルに合わせて難易度を調整し、理解を深める学習体験を提供します。
+AIエージェント界隈でClaude Codeの優位性は活発なコミュニティにあり、周辺ツールが多数存在。コスト可視化ツールccusage、設定管理ccexp、デスクトップGUIのopcode、拡張フレームワークSuperClaude、ステータスライン、ログ閲覧、カスタムコマンドのCCPluginsなど、開発効率を上げるツール群を紹介。ccpmやspec開発、GUI、Neovim統合、他モデル利用、並列化、オーケストレーションツールも存在し、Claude Codeの可能性を広げている。
 
 ---
 
-### [MCPにおけるセキュリティリスク](https://qiita.com/KawakamiSyota/items/9a81cdcb8e94a38748d7)
-**Published:** 2025-09-05 00:15:50 UTC
+### [OpenAI Agents SDK（TypeScript版）と LM Studio でローカルLLM を使ったエージェントをサクッと試す](https://qiita.com/youtoy/items/a5be9f1789cbac1c4047)
+**Published:** 2025-09-05 17:02:02 UTC
 **Likes:** 1
-**Tags:** Security, OAuth, AI, MCP, LLM
+**Tags:** TypeScript, OpenAI, LMStudio, OpenAIAgentsSDK, vercelaisdk
 
 **Digest:**
-MCPサーバーのセキュリティについて、OAuth認証を利用する際の「混乱した副官問題」に着目。外部認証サーバーとMCPプロキシサーバー間の認証フローで、攻撃者が認可コードを横取りし、不正アクセスを試みる。対策として、リダイレクトURIの厳格な検証、PKCE、Stateパラメータの実装が必要。開発者と利用者の双方でセキュリティ意識を高めることが重要となる。
+OpenAI Agents SDK (TypeScript) でローカルLLMを使ったエージェントを実装。Vercel AI SDK の OpenAI互換プロバイダーと、LM Studio をローカルサーバーとして組み合わせ、OpenAI API を使用せずに動作。パッケージをインストールし、サンプルコードを実行した結果を表示。tracingに関するメッセージへの対処法として環境変数設定も試しました。
 
 ---
 
-### [クロスリージョン推論の検証をするときはAnthropicがおすすめ](https://qiita.com/yoshi-taka/items/497531345f4c22a3e9b1)
-**Published:** 2025-09-04 13:25:27 UTC
-**Likes:** 1
-**Tags:** AWS, scp, bedrock, Anthropic, Claude
+### [あなただけの物語を紡ぐ - LLMゲーム設計の裏側](https://qiita.com/anata_no_story/items/08aff7fd95d636667a9e)
+**Published:** 2025-09-06 05:19:10 UTC
+**Likes:** 0
+**Tags:** ゲーム開発, AI, Gemini, LLM, プロンプトエンジニアリング
 
 **Digest:**
-クロスリージョン推論にはAnthropicモデルが推奨。Amazon Bedrockでは10回の対話で動作する一方、Novaは東京固定の可能性あり。確認にはCloudTrailが有効で、"inferenceRegion"の追加を確認。Bedrock設定でS3/CloudWatch Logsへのモデル呼び出しログ記録も可能。
+LLMで物語ゲームを開発。LLMをゲームマスターとし、キャラクターの「のっぺらぼう化」問題を「骨格」で解決。物語の起承転結を可視化し、周回プレイでも核心を守る。 プレイヤーには見せない裏ステータスで没入感を高め、「見せないシステム」とAI共創でユニークな体験を実現。
 
 ---
 
-### [Claude CodeからCodex CLIへ移行した話 — モバイル/SRE/クラウド視点](https://qiita.com/zukizukizukizuki/items/bfb452ad5e5a04273466)
-**Published:** 2025-09-04 11:00:48 UTC
-**Likes:** 1
-**Tags:** CLI, AI, gpt, codex, Claude
+### [Google Analytics4のデータを生成AIで分析する。](https://qiita.com/hidekazu_higashi/items/0a2dbec800590106e80a)
+**Published:** 2025-09-06 05:16:08 UTC
+**Likes:** 0
+**Tags:** GoogleAnalytics, Claude
 
 **Digest:**
-モバイル/SRE/クラウドエンジニアの著者は、Claude CodeからCodex CLIに移行。品質・Windowsでの操作性・コストに不満があり、CLI中心のワークフローに適したCodex CLIがガイドライン遵守、精度、価格面で優れていた。GPT-5 medium利用でレート制限も回避し、手戻りが減少。ガイドの最新化や代替フロー準備が移行のコツ。
+元デジタルマーケターが、生成AIとGoogle Analytics MCP Server を連携し、Google Analytics4データを分析する試みを紹介。Google Cloudプロジェクト作成、API有効化、サービスアカウント設定、鍵ファイル取得、GA4権限付与、プロパティID取得を経て、Claude Desktopで設定。これにより、「昨日のユーザー数は？」といった質問にAIが回答可能に。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [9 月の Pixel Drop：Material 3 Expressive などの機能アップデートをご紹介](https://blog.google/intl/ja-jp/products/devices-services/september-2025-pixel-drop/)
-**Source:** Google Japan Blog
-**Published:** 2025-09-04 11:05:00 UTC
-**Tags:** Pixel
-
-**Digest:**
-Google Pixel Watch向けにマップの視認性が向上、Google Pixel Budsにも新機能が追加されました。Googleは、ウェアラブルデバイスの利便性を高めるため、Pixelシリーズのアップデートを実施。これにより、ユーザーはより快適にナビゲーションや音楽再生を楽しめるようになります。
-
----
-
-### [Build character consistent storyboards using Amazon Nova in Amazon Bedrock – Part 2](https://aws.amazon.com/blogs/machine-learning/build-character-consistent-storyboards-using-amazon-nova-in-amazon-bedrock-part-2/)
+### [Accelerating HPC and AI research in universities with Amazon SageMaker HyperPod](https://aws.amazon.com/blogs/machine-learning/accelerating-hpc-and-ai-research-in-universities-with-amazon-sagemaker-hyperpod/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-04 17:21:03 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, Technical How-to
+**Published:** 2025-09-05 17:04:49 UTC
+**Tags:** Amazon SageMaker, Amazon SageMaker HyperPod, AWS Solutions Implementations, Technical How-to
 
 **Digest:**
-Amazon Nova Canvasのファインチューニング技術で、特定のキャラクターの表現を統一する方法を紹介。Amazon Web Servicesの短編アニメ「Picchu」の画像を学習データとし、Mayuとその母親のキャラクターに特化したモデルを構築。Amazon S3への動画アップロード、Amazon ECSによるフレーム抽出とキャプション生成、SageMakerでのモデル訓練、Amazon Bedrock APIを利用したファインチューニングを実施。
+Amazon SageMaker HyperPodを活用し、大学の研究を加速。従来のHPC課題を解決するため、SLURMパーティション、GPUリソース管理、コスト追跡、負荷分散を導入。AWS CLIでインフラを構築し、SLURM設定をカスタマイズ、コストをモニタリング。federatedアクセスとログインノードの負荷分散も実現。AI研究の効率化と、予算管理を両立した事例を紹介しています。
 
 ---
 
-### [Build character consistent storyboards using Amazon Nova in Amazon Bedrock – Part 1](https://aws.amazon.com/blogs/machine-learning/build-character-consistent-storyboards-using-amazon-nova-in-amazon-bedrock-part-1/)
+### [Exploring the Real-Time Race Track with Amazon Nova](https://aws.amazon.com/blogs/machine-learning/exploring-the-real-time-race-track-with-amazon-nova/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-04 17:20:11 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, Artificial Intelligence, Generative AI, Amazon SageMaker, artificial-intelligence
+**Published:** 2025-09-05 16:58:36 UTC
+**Tags:** Amazon Nova, Generative AI, Sports
 
 **Digest:**
-AIによるストーリーボード制作の現状を解説。Amazon Nova CanvasやReelでテキストや画像をビジュアル化するが、キャラの一貫性が課題。Promptエンジニアリングでキャラデザインを統一し、`seed`や`cfgScale`を調整。Amazon Nova LiteとReelを組み合わせ、動画化も可能。Part2では、さらなる高精度なキャラ表現のためのファインチューニングに言及。
+Amazon Novaは、F1ファン向けに没入型体験「Real-Time Race Track (RTRT)」を提供。Amazon Bedrockで構築され、ファンは独自のコース設計やAI戦略分析、レトロ風ポスター作成を楽しめます。Amazon Novaは、音声アシスタントや画像生成、低コストで、リアルタイムなインタラクションを実現し、スポーツ観戦の新たな形を創出しています。
 
 ---
 
-### [【Coplot+ PC 事例公開】ARM 版 Surface Laptop 13 インチの導入で探究による学びと教員の働き方の進化へ](https://blogs.windows.com/japan/2025/09/05/introducing-the-arm-based-surface-laptop-13-inch/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-09-05 02:26:41 UTC
-**Tags:** Surface, ARM, Surface Laptop
-
-**Digest:**
-聖徳大学附属取手聖徳女子高校は、校務と学習の一本化を目指し、AI時代を見据えARM版Surface Laptopを導入。教員の働き方改革と生徒の探究学習を促進し、価格・性能・互換性のバランスを評価。AI活用による授業や校務の効率化、生徒の自己学習支援にも期待。Microsoft 365との連携で、生徒も教員も学びを深める環境を構築しています。
-
----
-
-### [Microsoft Endpoint Configuration Managerのデバイスコレクション作成手順](https://blog.jbs.co.jp/entry/2025/09/05/135940)
+### [Azure Cosmos DB における定期的バックアップからのデータ復元手順](https://blog.jbs.co.jp/entry/2025/09/05/151716)
 **Source:** JBS Blog
-**Published:** 2025-09-05 04:59:40 UTC
-**Tags:** MECM, MCM
+**Published:** 2025-09-05 06:17:16 UTC
+**Tags:** Azure Cosmos DB, Azure
 
 **Digest:**
-MECM（Microsoft Endpoint Configuration Manager）におけるデバイスコレクションの作成手順を解説します。デバイスコレクションは、特定の条件を満たすデバイスをグループ化し、ソフトウェア展開や設定変更などの管理タスクを効率的に行うために重要です。この手順を知ることで、組織内のデバイス管理がよりスムーズに進みます。
-
----
-
-### [Copilot StudioでAzure AI Foundryのモデルを使用する](https://blog.jbs.co.jp/entry/2025/09/05/123243)
-**Source:** JBS Blog
-**Published:** 2025-09-05 03:32:43 UTC
-**Tags:** Microsoft Copilot Studio, Microsoft 365 Copilot
-
-**Digest:**
-Copilot StudioでAzure AI Foundryのモデルを利用する手順を紹介。BYOM機能により、Copilot StudioからAzure AI Foundryにデプロイしたカスタムモデルを使用可能に。現在はプロンプトアク… (記事本文はここで途切れています)
-
----
-
-### [【Microsoft×生成AI連載】Copilot を使用してドキュメント、会議、ファイルの音声概要を生成する](https://blog.jbs.co.jp/entry/2025/09/05/085306)
-**Source:** JBS Blog
-**Published:** 2025-09-04 23:53:06 UTC
-**Tags:** Copilot, Microsoft Copilot, 生成AI, Microsoft×生成AI連載
-
-**Digest:**
-Microsoft 365 Copilotの新機能、ドキュメントやファイルの音声概要生成を紹介。Copilotは、文書を音声で要約し、忙しいユーザーが効率的に情報収集できるようサポートします。これにより、長文ドキュメントも手軽に把握でき、作業効率が向上します。
-
----
-
-### [【Copilot Studio エージェントの拡張】 エージェントからスキルを呼び出す](https://blog.jbs.co.jp/entry/2025/09/04/171326)
-**Source:** JBS Blog
-**Published:** 2025-09-04 08:13:26 UTC
-**Tags:** Microsoft Copilot Studio, Bot Framework, スキルボット
-
-**Digest:**
-Copilot StudioでDialogSkillBotを統合し、カスタムスキルを活用して高度な会話体験を構築する手順を解説します。これにより、AIエージェントがより複雑なタスクを実行できるようになり、対話の柔軟性と機能を大幅に向上させることが可能です。
+Azure Cosmos DBの定期バックアップからのデータ復元手順を解説。まず、Azureポータルで対象データベースを選択し、バックアップの復元オプションを選びます。復元時点を指定し、復元先アカウントとデータベース名を決定。最後に、復元を開始すれば、指定した時点のデータが新しいデータベースに復元されます。
 
 ---
