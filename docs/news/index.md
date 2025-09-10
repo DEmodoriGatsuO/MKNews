@@ -1,158 +1,98 @@
-# AI Tech Trends Digest (2025-09-09)
+# AI Tech Trends Digest (2025-09-10)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Claude Codeから乗り換え？ChatGPT Codex CLIローカル環境構築マニュアル](https://qiita.com/takuya77088/items/d19fe1582e4d5cb59708)
-**Published:** 2025-09-08 06:40:37 UTC
-**Likes:** 12
-**Tags:** Node.js, AI, OpenAI, codex, CodexCLI
+### [Vibe Coding から、Drive Coding (欲動のコーディング)へ](https://qiita.com/makotosaekit/items/eba767a0a95bbc7b25b3)
+**Published:** 2025-09-09 09:39:39 UTC
+**Likes:** 37
+**Tags:** AI, プロンプト, 思考法, ChatGPT, LLM
 
 **Digest:**
-Codex CLIの使用体験を紹介。GPT-5公開後、ChatGPTの有料プラン加入者は追加料金なしで利用可能に。Node.jsとGitを準備し、`git clone`等でインストール。起動にはログインまたはAPI Keyが必要。Apidogとの連携でAPIデバッグも可能。日本語プロンプトもOK。開発効率UPに貢献し、今後の進化に期待です。
+AIがコードを書ける今、プロダクト完成の鍵は、AIへの「入力」にある。曖昧な「Vibe（雰囲気）」指示ではなく、プロダクトの魂である「Drive（欲動）」を定義する「マニフェスト」を策定し、AIに「実装」することが重要。マニフェストは、AIが未知の状況でも一貫した判断をするための「憲法」となり、開発者はDrive Architectとしてプロダクトを導く。
 
 ---
 
-### [OpenAI Codex CLI の使い方！ChatGPTサブスクで使えるAIコーディング入門](https://qiita.com/tomada/items/bcd0aef846c641ccbb9b)
-**Published:** 2025-09-09 02:08:11 UTC
-**Likes:** 2
-**Tags:** OpenAI, codex, ChatGPT, AIエージェント, CodexCLI
-
-**Digest:**
-ChatGPT Plus/Proユーザーは、**追加料金なし**でAIコーディングツール「Codex」を利用可能。IDE版とCLI版があり、VS Code拡張機能やターミナルで利用可能。環境構築は5分、Webサイト作成は30分で完了。**AGENTS.md**でプロジェクト理解を深め、`/compact`コマンドでトークン節約を。5時間でリセットされるトークン制限に注意し、効率的に活用しましょう。
-
----
-
-### [Model Context Protocol完全解説 30日間シリーズ - Day 1【MCP入門 #1】Model Context Protocolとは？5分でわかる基本概念](https://qiita.com/555hamano/items/f6a9202757bc901073f9)
-**Published:** 2025-09-09 00:13:24 UTC
-**Likes:** 1
-**Tags:** API, 初心者向け, AI, MCP, Anthropic
-
-**Digest:**
-Model Context Protocol（MCP）は、LLMと外部データやツールを標準化して連携させるオープンプロトコルです。Anthropic社が発表し、2024年11月に登場。LLMの知識制限や連携の課題を解決します。Resources, Tools, Promptsの3機能で、データ連携、機能実行、プロンプト管理を実現し、開発コスト削減、セキュリティ強化、開発者支援も特徴です。
-
----
-
-### [AI Agentを使ったチームマネジメントシミュレーション](https://qiita.com/innovator_samoyed/items/8b07c569e0bd0825641a)
-**Published:** 2025-09-08 22:59:59 UTC
-**Likes:** 1
-**Tags:** Python, mesa, マネジメント, LLM, AIエージェント
-
-**Digest:**
-AI Agentを用いたチームマネジメントのシミュレーションを実施。PythonのMesaとGeminiを利用し、上司・部下を模倣。褒める、何もしない、厳しい指導の3パターンを比較した結果、**褒めるマネジメント**は生産性向上に貢献、**厳しい指導**は組織崩壊を招くことが判明。シミュレーションを通じて、組織運営への示唆を得た。
-
----
-
-### [Android開発30日間マスターシリーズ - 第7回：Androidマニフェストとアプリの権限 - セキュリティとプライバシーの基礎](https://qiita.com/555hamano/items/19afe7cd223dba0310b3)
-**Published:** 2025-09-08 17:31:11 UTC
+### [Android開発30日間マスターシリーズ - Day8: Material Designの実装 - Googleが推奨するデザインガイドラインの実践](https://qiita.com/555hamano/items/23f69e7a5374e77f726d)
+**Published:** 2025-09-10 00:19:34 UTC
 **Likes:** 1
 **Tags:** Android, 初心者, AndroidStudio, LLM, ModelContextProtocol
 
 **Digest:**
-Androidアプリ開発におけるセキュリティとプライバシーの基礎、第7回。`AndroidManifest.xml`はアプリのメタデータを宣言し、権限システムは**最小権限の原則**に基づきます。**通常権限**は自動付与、**危険権限**はランタイムパーミッションが必要で、カメラ、位置情報などが該当。Androidバージョンごとの注意点、**セキュリティのベストプラクティス**に従い、権限を適切に管理することが重要です。
+Material Design 3は、Googleが発表した最新デザインシステムで、パーソナライゼーション、動的カラー、より自然なモーション、アクセシビリティ向上などが特徴です。導入には依存関係追加、テーマ設定が必要。Extended FAB、テキストフィールド、Navigation Rail、ボタンなどのコンポーネントがあります。カスタムカラーパレットはMaterial Theme Builderで生成可能。パフォーマンスとアクセシビリティも重要です。
+
+---
+
+### [rStar2-Agent技術論文を理解する](https://qiita.com/shimajiroxyz/items/e100ffe0ca18966d9564)
+**Published:** 2025-09-09 13:48:26 UTC
+**Likes:** 1
+**Tags:** Python, 論文読み, Agent, LLM
+
+**Digest:**
+rStar2-Agent (Shangら, 2025) は、強化学習 (RL) を用いて数学推論能力を向上させる手法。GRPO-RoC を提案し、ツール利用の過程を学習。学習環境を整備し、大規模モデルを凌駕する性能を実現。応答時間短縮も達成。しかし、比較対象やベンチマーク解釈には注意が必要。
+
+---
+
+### [Gemini API × Gradioで作る！カレー具材検出アプリ](https://qiita.com/Tadataka_Takahashi/items/243ef1aa5b3e61a3a027)
+**Published:** 2025-09-09 12:55:27 UTC
+**Likes:** 1
+**Tags:** Python, 画像認識, 物体検出, Gemini, gradio
+
+**Digest:**
+Gemini API と Gradio を用いて、カレー画像の具材を自動検出する Webアプリを開発。Gemini 2.5 の構造化出力で JSON を取得し、Gradio UI で信頼度調整可能。バウンディングボックスによる位置特定や EXIF 対応も実装。複数の画像をバッチ処理でき、栄養分析への応用も期待できます。
+
+---
+
+### [Difyで就業規則RAGのチャットボットを作ってみた](https://qiita.com/a-kamiya/items/86dc0664253371676068)
+**Published:** 2025-09-09 09:03:53 UTC
+**Likes:** 1
+**Tags:** chatbot, Gemini, rag, ノーコード, Dify
+
+**Digest:**
+Difyクラウド版を使い、架空の就業規則チャットボットを構築。Gemini APIキー設定後、Word形式の就業規則をナレッジとしてアップロードし、質問応答を実現。ノーコードで知識検索機能を実装し、質問への的確な回答を確認。公開URLで社内展開も可能。IF/ELSE等の機能も期待できる。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Google 検索における「AI モード」を日本語で提供開始](https://blog.google/intl/ja-jp/products/explore-get-answers/ai-mode-search/)
-**Source:** Google Japan Blog
-**Published:** 2025-09-09 01:00:00 UTC
-**Tags:** Search, AI
-
-**Digest:**
-GoogleのAI検索体験「AIモード」が日本語に対応し、複雑な質問にもAIが即座に分かりやすく包括的な回答を生成します。関連ウェブリンクも提示され、さらに深掘りも可能。本日より順次利用できるようになり、これまでの検索体験を革新する可能性を秘めています。
-
----
-
-### [Maximize HyperPod Cluster utilization with HyperPod task governance fine-grained quota allocation](https://aws.amazon.com/blogs/machine-learning/maximize-hyperpod-cluster-utilization-with-hyperpod-task-governance-fine-grained-quota-allocation/)
+### [Powering innovation at scale: How AWS is tackling AI infrastructure challenges](https://aws.amazon.com/blogs/machine-learning/powering-innovation-at-scale-how-aws-is-tackling-ai-infrastructure-challenges/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-08 20:50:04 UTC
-**Tags:** Amazon SageMaker HyperPod, Announcements, Artificial Intelligence, Generative AI, Technical How-to
+**Published:** 2025-09-09 17:40:53 UTC
+**Tags:** Amazon SageMaker AI, Amazon SageMaker HyperPod, Announcements, Generative AI
 
 **Digest:**
-Amazon SageMaker HyperPodで、詳細なコンピューティングとメモリのクォータ割り当てが可能になりました。これにより、Amazon EKS上のHyperPodクラスターを最適化し、GPU単位でのリソース配分やチーム間の公平な利用を実現します。管理者は、AWSコンソールまたはCLIを通じて、チームやプロジェクトにインスタンス、GPU、vCPU、メモリ単位でリソースを割り当てられます。Kueueと連携し、効率的なリソース管理とジョブスケジューリングをサポートします。
+AWSは、AIモデルの学習・展開を加速するため、インフラに注力。SageMaker HyperPodでAIインフラを効率化し、ネットワーク性能を向上。10p10uインフラやSIDRプロトコルでボトルネックを解消。NVIDIA Blackwell搭載P6インスタンスやTrainiumチップなど、幅広いコンピューティングオプションを提供し、AI開発を支援します。
 
 ---
 
-### [Build and scale adoption of AI agents for education with Strands Agents, Amazon Bedrock AgentCore, and LibreChat](https://aws.amazon.com/blogs/machine-learning/build-and-scale-adoption-of-ai-agents-for-education-with-strands-agents-amazon-bedrock-agentcore-and-librechat/)
+### [Accelerate your model training with managed tiered checkpointing on Amazon SageMaker HyperPod](https://aws.amazon.com/blogs/machine-learning/accelerate-your-model-training-with-managed-tiered-checkpointing-on-amazon-sagemaker-hyperpod/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-08 19:05:40 UTC
-**Tags:** Amazon Bedrock, Artificial Intelligence, Education, Technical How-to
+**Published:** 2025-09-09 14:35:22 UTC
+**Tags:** Amazon SageMaker HyperPod, Announcements, Artificial Intelligence, Generative AI
 
 **Digest:**
-教育機関向けAIチャットシステム構築の記事。**Strands Agents**と**Amazon Bedrock AgentCore**、**LibreChat**を統合し、学生の成績や履修登録、研究支援等に活用。**API Gateway**による安全なアクセス、**AWS CDK**と**CloudFormation**でデプロイ。**Amazon ECS**や**DocumentDB**等のAWSサービスを活用し、多機能チャットを実現します。
+大規模AIモデルの訓練で、AWS SageMaker HyperPodの**マネージド階層型チェックポインティング**が発表されました。これは、頻繁なチェックポイントにより**高速なリカバリ**と低コストを両立します。**CPUメモリ**を高速ストレージに、S3を永続ストレージとして使用し、PyTorch DCPとの連携で、大規模分散環境での**GPU障害**による学習損失を防ぎ、訓練スループットを向上させます。
 
 ---
 
-### [Skai uses Amazon Bedrock Agents to significantly improve customer insights by revolutionized data access and analysis](https://aws.amazon.com/blogs/machine-learning/skai-uses-amazon-bedrock-agents-to-significantly-improve-customer-insights-by-revolutionized-data-access-and-analysis/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-08 19:03:42 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Customer Solutions, Generative AI
-
-**Digest:**
-Skaiは、Amazon Bedrock Agentsを活用したAIアシスタント「Celeste」を開発。自然言語でのデータ分析を可能にし、レポート作成時間を大幅に短縮。顧客は広告データを簡単に分析し、**競合**キャンペーンとの**衝突**を避けつつ、推奨事項を得られる。Amazon Bedrockの採用により、安全性を確保しつつ、顧客のビジネスに合わせた効率的なデータ分析を実現した。
-
----
-
-### [The power of AI in driving personalized product discovery at Snoonu](https://aws.amazon.com/blogs/machine-learning/the-power-of-ai-in-driving-personalized-product-discovery-at-snoonu/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-08 15:49:54 UTC
-**Tags:** Amazon Bedrock, Amazon ElastiCache, Amazon Kinesis, Amazon MQ, Amazon Personalize, AWS Lambda, Customer Solutions
-
-**Digest:**
-Snoonuは、AIを活用したパーソナライゼーションでECサイトの顧客体験を向上。Amazon Personalizeを導入し、当初の全カテゴリ共通モデルから、食品、食料品、マーケットプレイスごとに個別モデルを開発。その結果、カートへの追加が1600%増加、GMVがモデル投資の47倍に。日次でのモデル更新や、リアルタイムのレコメンデーション、ElastiCacheによるキャッシュなど、顧客エンゲージメントと売上向上に成功しました。
-
----
-
-### [AWS Weekly Roundup: AWS Transform, Amazon Neptune, and more (September 8, 2025)](https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-transform-amazon-neptune-and-more-september-8-2025/)
-**Source:** AWS News Blog
-**Published:** 2025-09-08 17:20:32 UTC
-**Tags:** Amazon Bedrock, Amazon Elastic Container Service, Amazon Neptune, Announcements, AWS Transform, AWS User Notifications, Launch, News, Week in Review
-
-**Digest:**
-オランダ在住の筆者によるAWS週刊まとめ。2週間後の9/24にユトレヒトで開催される「AWS Community Day 2025」では、500人超のクラウド技術者が集結し、25のセッションが開催。先週の発表では、AWS Transformでストレージ分析機能が拡充、Amazon Bedrockでグローバルリージョン間推論が利用可能に。Amazon Neptuneのパブリックエンドポイント、ECS Execのコンソール対応も。AWS User Notificationsの組織通知設定も一般公開。
-
----
-
-### [Microsoft Entra hybrid joinをした端末が802.1X認証でWi-Fiに自動で接続ができない件の解決方法](https://blog.jbs.co.jp/entry/2025/09/09/141537)
+### [メールの転送とリダイレクトの違い](https://blog.jbs.co.jp/entry/2025/09/10/123903)
 **Source:** JBS Blog
-**Published:** 2025-09-09 05:15:37 UTC
-**Tags:** トラブルシュート, M365, MEHJ, Microsoft, Azure
+**Published:** 2025-09-10 03:39:03 UTC
+**Tags:** メール, 転送, リダイレクト, Exchange Online
 
 **Digest:**
-Microsoft Entra hybrid join (MEHJ) 端末で、SCP用GPO適用後に802.1X認証Wi-Fi接続が失敗する事象が発生。トラブルシューティングの結果、原因と解決方法が判明しました。具体的には、PowerShellによる手動読み込み、またはGPOでの配布で対応可能です。
+メールの転送とリダイレクトの違いを解説。転送は差出人が転送者となり、元の差出人は本文に表示。転送先からの自動応答は転送者に届きます。一方、リダイレクトは差出人そのままの形で転送され、宛先には表示されません。Exchangeでのこれらの使い分けを理解し、目的に合った方法を選択しましょう。
 
 ---
 
-### [【Visual Studio 2022】IntelliSenseの初期化が終わらない場合の対処法](https://blog.jbs.co.jp/entry/2025/09/09/125104)
+### [【Microsoft×生成AI連載】【Microsoft 365 Copilot】ショートカットで呼び出してみた](https://blog.jbs.co.jp/entry/2025/09/10/090156)
 **Source:** JBS Blog
-**Published:** 2025-09-09 03:51:04 UTC
-**Tags:** Visual Studio 2022
+**Published:** 2025-09-10 00:01:56 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
 
 **Digest:**
-新しいPCでVisual Studio 2022をインストールし、WindowsフォームアプリでIntelliSenseが初期化されない問題が発生しました。解決策を紹介します。IntelliSenseの不具合は、開発効率を著しく低下させるため、今回の対処法を参考に、スムーズな開発環境を構築しましょう。
-
----
-
-### [Copilot StudioからMCPサーバーに接続する](https://blog.jbs.co.jp/entry/2025/09/09/110444)
-**Source:** JBS Blog
-**Published:** 2025-09-09 02:04:44 UTC
-**Tags:** Microsoft Copilot Studio, Microsoft 365 Copilot, MCP
-
-**Digest:**
-Copilot StudioからMicrosoftのMCPサーバーに接続する手順を解説。MCPはModel Context Serverの略で、公開ツールを呼び出してエージェント機能を拡張可能。Microsoft Learnのドキュメントを参照し、Copilot StudioとMCPを連携させる設定や動作確認についてまとめている。
-
----
-
-### [Outlookにて祝日を複数インポートしてしまい、予定表に重複して表示されてしまう際の消去の仕方](https://blog.jbs.co.jp/entry/2025/09/09/094303)
-**Source:** JBS Blog
-**Published:** 2025-09-09 00:43:03 UTC
-**Tags:** Outlook
-
-**Digest:**
-Outlookで祝日が複数表示される問題の解決策を紹介。デフォルトでは表示されない祝日をインポートする際、誤って複数回行うと重複表示されます。対処法として、予定表を「一覧」表示にし、分類項目が「祝日」のものを右クリックで削除。その後、再度祝日をインポートすることで解決できます。
+Microsoft 365 Copilotがショートカットキーで起動可能に！シリーズ連載の一環として、その利用方法を解説。Copilot Chatのチャット枠内での利用や、作業コンテンツの追加、画像・ファイルのアップロード、エージェントとのチャットなど、多様な機能を紹介。リサーチツールやアナリストの呼び出し、職場とWebの切り替えも可能で、メリットと注意点も解説しています。
 
 ---
