@@ -1,158 +1,138 @@
-# AI Tech Trends Digest (2025-09-11)
+# AI Tech Trends Digest (2025-09-12)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [A2Aでずんだもんに喋ってもらった](https://qiita.com/shuji-k/items/c51ccf695ee7a310948d)
-**Published:** 2025-09-10 06:06:06 UTC
-**Likes:** 2
-**Tags:** Python, TypeScript, AI, Gemini, A2A
+### [Nano bananaのすべて](https://qiita.com/7mpy/items/ee70e3a2930a3bbf4532)
+**Published:** 2025-09-11 08:39:34 UTC
+**Likes:** 6
+**Tags:** AI, Gemini, 生成AI, ChatGPT, nanobanana
 
 **Digest:**
-2025年のGoogle Cloud Nextで発表されたAIエージェント間通信プロトコルA2Aを、マルチモーダルずんだもんとペアプロシステムに導入。バックエンドはPython SDK、フロントエンドはFetch APIを使用しSSEでずんだもん音声をストリーミング。asyncio.queueのjoin()とCloud Endpointsの対応に苦戦しつつ、ヘッダ付加のためFetch APIを採用。
+「Awesome-Nano-Banana🍌-画像集」は、Nano-bananaが生成した画像をまとめたライブラリです。Googleの画像生成活用事例が豊富に掲載され、Twitter/Xや小紅書などのソーシャルメディアから収集。更新情報や作例としてイラストのフィギュア化、地図からの画像生成など、様々な活用例を紹介しています。Starでコレクション追加を推奨。
 
 ---
 
-### [Claudeがファイル生成に革命を起こした！Word・Excel・PDF・PowerPointが秒で完成する衝撃機能を徹底解説](https://qiita.com/k_nabe/items/35ae7052f317ae36f1b1)
-**Published:** 2025-09-11 01:53:52 UTC
+### [DataRobot AIエージェントテンプレート入門：セットアップからデプロイまで](https://qiita.com/DataRobot_PR/items/01db78cd83e741507452)
+**Published:** 2025-09-12 00:59:49 UTC
+**Likes:** 3
+**Tags:** DataRobot, LLM, AgentOps, AIエージェント, agenticai
+
+**Digest:**
+DataRobotユーザー会2025で発表された「AIエージェントテンプレート」は、DataRobotプラットフォーム上でAIエージェント開発を支援します。GitHubリポジトリのチュートリアルで全体像を把握し、CrewAIなどのフレームワークや、Talk to my Docsのようなユースケース特化型テンプレートを利用できます。CLI、build、deployの3つの実行方法があり、デプロイ後の監視も可能です。
+
+---
+
+### [Google NotebookLM完全攻略ガイド - AI音声機能で変わる情報整理術【2025年最新版】](https://qiita.com/k_nabe/items/cc28ec9eef8a9561df7b)
+**Published:** 2025-09-12 01:49:10 UTC
 **Likes:** 1
-**Tags:** API, 業務自動化, Claude, 実装事例
+**Tags:** API, 技術調査, 業務自動化, プロンプトエンジニアリング, Claude
 
 **Digest:**
-AIチャットボットClaudeが、Word・Excel・PDF・PowerPointファイルの生成・編集機能を発表。従来の作業が数分で完了し、月額14,500円のClaude Maxプランで利用可能。日本語処理能力と20万トークンのコンテキストウィンドウが強み。時間短縮、プロレベルの仕上がり、Google Drive連携がメリット。セキュリティリスクやファイルサイズ制限に注意。
+2024年6月に日本でサービス開始したGoogle NotebookLMは、アップロードした資料のみを情報源とするAIツール。2025年4月にはAI音声機能、9月にはフラッシュカード機能が追加予定。会議議事録や競合分析など、様々な活用事例があり、情報信頼性が高い点が強み。無料版でも十分な機能があり、有料版はGoogle One AI Premiumに含まれる。
 
 ---
 
-### [LangChainのチュートリアルを、ローカルLLMでやってみる](https://qiita.com/goroneko/items/f05c6fa7ee156e4802f6)
-**Published:** 2025-09-11 00:22:38 UTC
+### [LangChain Agent Middlewareを使って、柔軟なAIエージェント制御を実現できそう](https://qiita.com/eno49conan/items/287386bb1d2cba2bc5ce)
+**Published:** 2025-09-11 22:20:51 UTC
 **Likes:** 1
-**Tags:** Python, チュートリアル, LangChain, LLM, ローカルLLM
+**Tags:** Python, LangChain, Claude
 
 **Digest:**
-LangChainチュートリアルを基に、LLMアプリケーション構築を解説。**LMStudio**でOpenAI形式のAPIを使用する際の`ChatOpenAI`設定、**プロンプトテンプレート**による入力を構造化する方法を紹介。**Runnable Interface**により、**ストリーミング**や共通の呼び出し方法を実現。**LangSmith**でのログ記録や、メッセージの役割を示す**SystemMessage**、**HumanMessage**の使用についても触れています。
+LangChainのblogで発表されたmiddlewareについて、概要を紹介。認証、ロギング、エラーハンドリングなどの用途に活用可能。3つのパターンでの構築方法が示され、会話の長さに応じてモデルを切り替えるカスタムmiddlewareも実装。しかし、現時点ではpre版であり、本番利用には注意が必要。今後のドキュメントやリポジトリの確認も必要。
 
 ---
 
-### [Android開発30日間マスターシリーズ - 第10回：ViewBindingとDataBinding - 安全で保守性の高いビュー操作方法](https://qiita.com/555hamano/items/82b455b0655f302d0945)
-**Published:** 2025-09-10 16:40:05 UTC
-**Likes:** 1
-**Tags:** Android, 初心者, AndroidStudio, LLM, ModelContextProtocol
-
-**Digest:**
-AndroidアプリのUI操作における`findViewById()`問題解決のため、`ViewBinding`と`DataBinding`が登場。**ViewBinding**はコンパイル時にバインディングクラスを生成し、タイプセーフで高速なビュー参照を実現。一方、**DataBinding**は、UIとデータを直接バインドし、双方向バインディングや式評価などの機能を提供。`ViewBinding`はシンプルで、`DataBinding`は複雑なUIに適しており、使い分けが重要です。
-
----
-
-### [AI導入の本質と業務効率化〜職場で本当に使えるプロンプト設計〜](https://qiita.com/Shawin/items/72421c22411ccdf9bebe)
-**Published:** 2025-09-11 00:13:19 UTC
+### [【Tips】Cloud Run に Next.js アプリをデプロイしたら OpenAI の Project API Key が 401 になった話と解決法](https://qiita.com/popapipapapi/items/ab03a5dd51b186588f0d)
+**Published:** 2025-09-12 05:29:27 UTC
 **Likes:** 0
-**Tags:** 初心者, AI, ChatGPT, LLM, AIエージェント
+**Tags:** API, OpenAI, Next.js, GoogleCloud, CloudRun
 
 **Digest:**
-AI活用はExcel関数と異なり、現場の業務理解と目的意識が不可欠。曖昧な指示では効果が出にくく、業務の「なぜ」を問うなど、質の高い質問（プロンプト）が重要。顧客分析やFAQ作成など、業種・職種別の活用例を紹介。自分仕様のAIマニュアル作成で効率化、長期的な成果向上へ。現場主導のルール作りがAI活用成功の鍵。
+Next.jsアプリをCloud Runにデプロイ後、OpenAI API呼び出しが401エラーに。原因は、Cloud Runのビルド時と実行時の環境変数設定のずれ。解決策は、`--set-build-env-vars`と`--set-env-vars`でAPIキーを両方に設定すること。APIキーはSecret Managerに格納し、安全性を高めるのが推奨される。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [TII Falcon-H1 models now available on Amazon Bedrock Marketplace and Amazon SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/tii-falcon-h1-models-now-available-on-amazon-bedrock-marketplace-and-amazon-sagemaker-jumpstart/)
+### [Enhance video understanding with Amazon Bedrock Data Automation and open-set object detection](https://aws.amazon.com/blogs/machine-learning/enhance-video-understanding-with-amazon-bedrock-data-automation-and-open-set-object-detection/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-10 16:22:09 UTC
-**Tags:** Announcements, Artificial Intelligence, Foundation models, Technical How-to
+**Published:** 2025-09-11 19:20:13 UTC
+**Tags:** Amazon Bedrock Data Automation, Announcements, Artificial Intelligence, Generative AI
 
 **Digest:**
-TIIのFalcon-H1モデルがAmazon Bedrock MarketplaceとSageMaker JumpStartで利用可能に。6つのinstruction-tunedモデル(0.5B～34B)をAWSで利用でき、ハイブリッドアーキテクチャにより高性能と効率性を実現。  日本語、アラビア語など18言語に対応。Amazon BedrockまたはSageMaker JumpStartで簡単にデプロイでき、生成AIアプリケーションの開発を促進します。
+Amazon Bedrock Data Automationは、動画分析に**オープンセットオブジェクト検出（OSOD）** を導入し、既知・未知のオブジェクトを検出可能に。フレームレベルでの柔軟なテキストプロンプトに対応し、広告分析、スマートリサイズ、監視、カスタムラベル作成などに活用できる。動画からの情報抽出を**Amazon Bedrock Data Automation**で効率化し、様々な業界での応用が期待される。
 
 ---
 
-### [Oldcastle accelerates document processing with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/oldcastle-accelerates-document-processing-with-amazon-bedrock/)
+### [How Skello uses Amazon Bedrock to query data in a multi-tenant environment while keeping logical boundaries](https://aws.amazon.com/blogs/machine-learning/how-skello-uses-amazon-bedrock-to-query-data-in-a-multi-tenant-environment-while-keeping-logical-boundaries/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-10 16:11:22 UTC
-**Tags:** Amazon Bedrock, Amazon Textract, Artificial Intelligence, AWS Lambda, Customer Solutions, Foundational (100)
+**Published:** 2025-09-11 17:59:15 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Agents, Amazon Bedrock Guardrails, Customer Solutions, SaaS
 
 **Digest:**
-Oldcastle APGは、配送証明書（POD）の非効率な手作業処理を改善するため、AWSと連携。Amazon TextractとAmazon Bedrockを活用し、毎月20～30万件のPODを自動処理。これにより、精度向上、手作業削減を実現し、年間コストを削減。今後は請求書処理などへの展開も検討し、業務効率化を図っています。
+Skelloは、従業員管理SaaSで、Amazon BedrockとAWS Lambdaを活用し、AIアシスタントを開発。**自然言語**でのデータ検索や可視化を実現し、**Anthropic Claude 3.5 Sonnet** などのLLMを利用。マルチテナント環境での**GDPR**準拠を保ちつつ、セキュリティとパフォーマンスを両立。ユーザーは、専門知識なくデータ可視化でき、企業はより**アクセスしやすいデータ分析**を可能にしました。
 
 ---
 
-### [How London Stock Exchange Group is detecting market abuse with their AI-powered Surveillance Guide on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/how-london-stock-exchange-group-is-detecting-market-abuse-with-their-ai-powered-surveillance-guide-on-amazon-bedrock/)
+### [Create a private workforce on Amazon SageMaker Ground Truth with the AWS CDK](https://aws.amazon.com/blogs/machine-learning/create-a-private-workforce-on-amazon-sagemaker-ground-truth-with-the-aws-cdk/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-10 16:03:14 UTC
-**Tags:** Amazon Bedrock, Artificial Intelligence, Customer Solutions
+**Published:** 2025-09-11 17:56:01 UTC
+**Tags:** Advanced (300), Amazon Cognito, Amazon SageMaker AI, Amazon SageMaker Ground Truth, AWS Cloud Development Kit, AWS CloudFormation, Expert (400), Technical How-to
 
 **Digest:**
-ロンドン証券取引所グループ（LSEG）は、金融市場データとインフラを提供する企業です。Amazon BedrockとAnthropicのClaude Sonnet 3.5を用いて、AIによる市場監視システム「Surveillance Guide」を開発しました。これにより、ニュース記事の価格感応度を自動分析し、市場監視業務の効率化と精度向上を実現。非価格感応性ニュースの特定精度100%、価格感応性コンテンツ検出精度100%を達成しています。
+Amazon SageMaker Ground TruthとAmazon A2I向けプライベートワークフォースを、AWS CDKを使ってIaCで構築する手法を紹介。Amazon CognitoとSageMakerの相互依存性による課題を、CloudFormationカスタムリソースで解決。GitHubリポジトリでカスタマイズ可能な例を提供し、セキュアなデータセット構築を支援します。
 
 ---
 
-### [Build trustworthy AI agents with Amazon Bedrock AgentCore Observability](https://aws.amazon.com/blogs/machine-learning/build-trustworthy-ai-agents-with-amazon-bedrock-agentcore-observability/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-10 15:56:28 UTC
-**Tags:** Amazon Bedrock, Announcements, Artificial Intelligence, Intermediate (200), Technical How-to
-
-**Digest:**
-AIエージェントの信頼性向上には、透明性が不可欠。Amazon Bedrock AgentCore Observabilityは、AIエージェントのモニタリングソリューションを提供し、様々なフレームワークと基盤モデルに対応。Amazon CloudWatchとOpenTelemetryを活用し、詳細なメトリクスやトレースで可視化を実現、デバッグ時間短縮やリソース効率化に貢献。Runtime環境と非Runtime環境の両方で、簡単に導入可能です。
-
----
-
-### [The latest AI news we announced in August](https://blog.google/technology/ai/google-ai-updates-august-2025/)
-**Source:** Google DeepMind
-**Published:** 2025-09-10 16:15:00 UTC
-**Tags:** Search, Translate, Google DeepMind, Google Labs, Learning & Education, Gemini, AI, Pixel, Gemini App, Photos
-
-**Digest:**
-2025年8月のGoogleによる最新AIアップデートを紹介します。具体的な内容は不明ですが、GoogleはAI技術の進歩を継続的に行っており、このアップデートも様々な分野での革新や、より洗練された機能の追加を期待させます。今後の発表に注目が集まります。
-
----
-
-### [Visual Studio 2026 Insiderがリリースされました](https://blog.jbs.co.jp/entry/2025/09/11/141123)
+### [Denodo [1] - Denodo/データ仮想化とはなにか -](https://blog.jbs.co.jp/entry/2025/09/12/141201)
 **Source:** JBS Blog
-**Published:** 2025-09-11 05:11:23 UTC
-**Tags:** .NET, C♯
+**Published:** 2025-09-12 05:12:01 UTC
+**Tags:** Denodo
 
 **Digest:**
-Visual Studio 2026 Insider版が公開。ダウンロードはMicrosoft公式サイトから。リリースノートには新機能が多数記載され、特に注目すべきは独自のモデルをチャットで利用できる点。Anthropic、Google、OpenAIのAPIキー設定に対応し、開発効率を向上させる可能性を秘めています。
+データ＆AI事業本部の里見氏が、データ仮想化製品「Denodo」を紹介。Denodoは、様々なデータソースを論理的に統合し、アクセス管理を容易にします。データ仮想化により、豊富なコネクタによるデータ統合、リアルタイムなデータアクセス、TCO削減、データガバナンス強化を実現。Denodoはデータ統合に役立ちます。
 
 ---
 
-### [Snowflake のApache IcebergテーブルとMicrosoft Fabricの接続 1](https://blog.jbs.co.jp/entry/2025/09/11/125754)
+### [Oracle Database@Azure ～ Autonomous Database を動かす](https://blog.jbs.co.jp/entry/2025/09/12/125026)
 **Source:** JBS Blog
-**Published:** 2025-09-11 03:57:54 UTC
-**Tags:** Snowflake, Microsoft Fabric, Apache Iceberg
+**Published:** 2025-09-12 03:50:26 UTC
+**Tags:** Oracle Cloud Infrastructure, Oracle Database, Oracle
 
 **Digest:**
-SnowflakeのIcebergテーブルとMicrosoft Fabric連携の前提として、Apache Icebergについて解説。Icebergは、データレイク上の大規模分析データセット向けオープンソーステーブルフォーマットです。大量データ処理に特化し、効率的なデータ管理を実現します。本記事ではIcebergの特徴やアーキテクチャについて触れます。
+前回デプロイしたOracle Database@AzureのAutonomous Database(ADB) db201の利用方法を紹介。Azure PortalでADBの削除やクローン、ディザスタリカバリ、バックアップ、監視が可能。さらに、起動/停止、アクセス、表領域作成、ユーザー作成、テーブル作成といったDB操作の手順も解説します。
 
 ---
 
-### [PowerAppsのアプリでSharePointリストアイテムの重複処理エラーを回避する方法](https://blog.jbs.co.jp/entry/2025/09/11/113621)
+### [【Outlook】オフライングローバルアドレス帳の更新方法](https://blog.jbs.co.jp/entry/2025/09/12/101837)
 **Source:** JBS Blog
-**Published:** 2025-09-11 02:36:21 UTC
-**Tags:** Power Apps, SharePoint, Power Platform
+**Published:** 2025-09-12 01:18:37 UTC
+**Tags:** Outlook, Exchange Online, Exchange
 
 **Digest:**
-Power AppsでSharePointリストを操作する際、他ユーザーとの同時編集によるエラーを回避する方法を紹介。最終更新時刻を活用し、更新時に最新版と比較して矛盾があれば更新を中断する設定手順を解説。これにより、データの競合を避け、安全なリスト操作を実現します。
+Outlookのオフラインアドレス帳（OAB）は、Exchange Online/Serverのユーザー情報をローカルPCにキャッシュしますが、情報反映に遅延が生じることも。直近追加のユーザー検索や、部署・メールアドレス変更が反映されない場合、管理者とエンドユーザー双方の手順でOABを手動更新できます。更新されない場合の対処法も解説。
 
 ---
 
-### [Teams：チャットやチャネルのメッセージを保存できるようになります](https://blog.jbs.co.jp/entry/2025/09/11/102912)
+### [【Microsoft×生成AI連載】WordとPowerPoint上でCopilotエージェントが呼び出し可能に](https://blog.jbs.co.jp/entry/2025/09/12/085527)
 **Source:** JBS Blog
-**Published:** 2025-09-11 01:29:12 UTC
-**Tags:** Microsoft 365, Microsoft Teams
+**Published:** 2025-09-11 23:55:27 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
 
 **Digest:**
-8月下旬から、Microsoft Teamsでチャットやチャネルのメッセージ保存が大幅に改善されます。この新機能により、重要な情報を後から簡単に**検索**、**参照**できるようになり、**情報共有**の効率が向上します。これにより、**Teams**の**コミュニケーション**がさらに便利になります。
+Microsoft 365 CopilotがWordとPowerPointで正式に利用開始！文章作成や資料作成をAIエージェントが支援し、作業効率を格段に向上させます。導入方法、メリット、注意点も解説。Copilotを活用して、よりスマートな働き方を実現しましょう。
 
 ---
 
-### [ActiveSyncを組織単位で無効化する方法](https://blog.jbs.co.jp/entry/2025/09/11/095311)
-**Source:** JBS Blog
-**Published:** 2025-09-11 00:53:11 UTC
-**Tags:** Exchange Online, Active Sync
+### [OneDrive および SharePoint のWebパフォーマンスとオフライン機能を維持するためのブラウザーポリシーの構成](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/09/onedrive-sharep-457f.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-09-11 08:12:00 UTC
+**Tags:** Microsoft 365 - SharePoint, Microsoft Lists, OneDrive / OneDrive for Business
 
 **Digest:**
-Exchange OnlineのActiveSyncは、組織単位での一括無効化が可能で、今回はその方法を紹介します。PowerShellを用いて、事前にExchange Onlineへ接続し、`Set-ActiveSyncOrganizationSettings` コマンドレットと `<アクセス許可のパラメーター>` を設定することで実現できます。設定時の注意点も確認しましょう。
+Chromium 141に関する情報です。Google ChromeとMicrosoft Edgeの最新版に対応し、WebGL 2.0やオフスクリーンレンダリングAPIの強化など、グラフィック性能が向上しました。また、WebAssemblyの最適化も行われ、Webアプリケーションのパフォーマンス改善が期待されています。
 
 ---
