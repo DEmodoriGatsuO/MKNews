@@ -1,138 +1,98 @@
-# AI Tech Trends Digest (2025-09-12)
+# AI Tech Trends Digest (2025-09-13)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Nano bananaのすべて](https://qiita.com/7mpy/items/ee70e3a2930a3bbf4532)
-**Published:** 2025-09-11 08:39:34 UTC
-**Likes:** 6
-**Tags:** AI, Gemini, 生成AI, ChatGPT, nanobanana
-
-**Digest:**
-「Awesome-Nano-Banana🍌-画像集」は、Nano-bananaが生成した画像をまとめたライブラリです。Googleの画像生成活用事例が豊富に掲載され、Twitter/Xや小紅書などのソーシャルメディアから収集。更新情報や作例としてイラストのフィギュア化、地図からの画像生成など、様々な活用例を紹介しています。Starでコレクション追加を推奨。
-
----
-
-### [DataRobot AIエージェントテンプレート入門：セットアップからデプロイまで](https://qiita.com/DataRobot_PR/items/01db78cd83e741507452)
-**Published:** 2025-09-12 00:59:49 UTC
-**Likes:** 3
-**Tags:** DataRobot, LLM, AgentOps, AIエージェント, agenticai
-
-**Digest:**
-DataRobotユーザー会2025で発表された「AIエージェントテンプレート」は、DataRobotプラットフォーム上でAIエージェント開発を支援します。GitHubリポジトリのチュートリアルで全体像を把握し、CrewAIなどのフレームワークや、Talk to my Docsのようなユースケース特化型テンプレートを利用できます。CLI、build、deployの3つの実行方法があり、デプロイ後の監視も可能です。
-
----
-
-### [Google NotebookLM完全攻略ガイド - AI音声機能で変わる情報整理術【2025年最新版】](https://qiita.com/k_nabe/items/cc28ec9eef8a9561df7b)
-**Published:** 2025-09-12 01:49:10 UTC
+### [【ついに来た】Genspark AIブラウザがWindows対応！169種類のAIモデルを完全無料で使える「未来のブラウザ体験」を実際に使ってみた](https://qiita.com/k_nabe/items/a775c152fe0ba05bafda)
+**Published:** 2025-09-13 01:44:34 UTC
 **Likes:** 1
-**Tags:** API, 技術調査, 業務自動化, プロンプトエンジニアリング, Claude
+**Tags:** 業務自動化, プロンプトエンジニアリング, Claude, 実装事例
 
 **Digest:**
-2024年6月に日本でサービス開始したGoogle NotebookLMは、アップロードした資料のみを情報源とするAIツール。2025年4月にはAI音声機能、9月にはフラッシュカード機能が追加予定。会議議事録や競合分析など、様々な活用事例があり、情報信頼性が高い点が強み。無料版でも十分な機能があり、有料版はGoogle One AI Premiumに含まれる。
+Genspark AIブラウザがWindowsに対応し、世界初の169種類AIモデルをデバイス上で実行可能に。価格比較や動画要約を全自動、無料で提供。従来のブラウザとは一線を画し、プライバシー保護も万全。無料版でも十分な機能で、リサーチやショッピング、学習効率を劇的に向上させる革新的なブラウザ体験を提供。
 
 ---
 
-### [LangChain Agent Middlewareを使って、柔軟なAIエージェント制御を実現できそう](https://qiita.com/eno49conan/items/287386bb1d2cba2bc5ce)
-**Published:** 2025-09-11 22:20:51 UTC
+### [【個人開発】 UI コンポーネントコピペサイトを Next.js + Prisma で作った話](https://qiita.com/hekizi/items/355aecaec97698222069)
+**Published:** 2025-09-13 00:53:53 UTC
 **Likes:** 1
-**Tags:** Python, LangChain, Claude
+**Tags:** React, 個人開発, Next.js, Claude, ClaudeCode
 
 **Digest:**
-LangChainのblogで発表されたmiddlewareについて、概要を紹介。認証、ロギング、エラーハンドリングなどの用途に活用可能。3つのパターンでの構築方法が示され、会話の長さに応じてモデルを切り替えるカスタムmiddlewareも実装。しかし、現時点ではpre版であり、本番利用には注意が必要。今後のドキュメントやリポジトリの確認も必要。
+バックエンド開発者が、**Claude Code**をきっかけにフロントエンド開発に挑戦し、**コピペ UI 部品館**というWebサービスを公開。2400以上の**UIコンポーネント**をHTML/CSS/JavaScriptで提供し、ワンクリックでコピペ可能。**Next.js**と**Prisma**で構築され、**Vercel**と**supabase**で運用。**Monaco Editor**でのリアルタイムプレビューも可能で、サイトの表示速度改善も図られています。
 
 ---
 
-### [【Tips】Cloud Run に Next.js アプリをデプロイしたら OpenAI の Project API Key が 401 になった話と解決法](https://qiita.com/popapipapapi/items/ab03a5dd51b186588f0d)
-**Published:** 2025-09-12 05:29:27 UTC
+### [Domain Driven Ignition  ―― 或いはAIに代筆してもらった記事が評された事を贅沢に貧相なオツムで思慮する](https://qiita.com/manzyun/items/c897a348ca13b07a65c8)
+**Published:** 2025-09-12 12:32:27 UTC
+**Likes:** 1
+**Tags:** ポエム, 思考法, LLM
+
+**Digest:**
+ErgoDashでEmacsを使い、生成AI代筆記事に感銘を受けた筆者が、Qiita記事への考察を随筆。AIに論理式を指示する技術に感服し、自身のラフな思考との対比を語る。プロレスのヒール役を自認し、技術習得と実例の重要性を強調。筆者の考察は、makotosaekit氏の記事に対する評価と欲動に駆られた人力文章生成の試みでもある。
+
+---
+
+### [Anthropic: 従来のソフトウェア開発手法ではAIエージェントの未来が「終わる」。非確定的システムに対応する、協調型開発へのパラダイムシフト](https://qiita.com/RepKuririn/items/0716d679538de000956b)
+**Published:** 2025-09-12 06:09:23 UTC
+**Likes:** 1
+**Tags:** Anthropic, AIエージェント, ClaudeCode
+
+**Digest:**
+Anthropicの記事は、AIエージェント向けツールの開発方法を解説。**非確定的システム**への対応が重要で、**プロトタイプ構築**、**評価**、**分析**、**改善**の反復サイクルを提唱。**5つの原則**として、**適切なツール選択**、**名前空間整理**、**コンテキストの返却**、**トークン効率化**、**プロンプトエンジニアリング**を提示。AIエージェントと協調した進化が未来を拓くと結論づけています。
+
+---
+
+### [Anthropicの最新記事「Writing tools for agents」を読み解く](https://qiita.com/Dinn/items/16602b78f1edfda5820e)
+**Published:** 2025-09-13 05:45:34 UTC
 **Likes:** 0
-**Tags:** API, OpenAI, Next.js, GoogleCloud, CloudRun
+**Tags:** AI, LLM, Claude, AIエージェント, ClaudeCode
 
 **Digest:**
-Next.jsアプリをCloud Runにデプロイ後、OpenAI API呼び出しが401エラーに。原因は、Cloud Runのビルド時と実行時の環境変数設定のずれ。解決策は、`--set-build-env-vars`と`--set-env-vars`でAPIキーを両方に設定すること。APIキーはSecret Managerに格納し、安全性を高めるのが推奨される。
+AnthropicがAIエージェント向けツール設計に関する技術記事を公開。ツール設計は「新しい種類のソフトウェア」であり、性能を左右する。記事では、統合型ツール、柔軟な出力形式、意味のあるエラーメッセージの3原則を提示。評価駆動開発やClaude Codeの活用も示唆。トークン効率、ネームスペースの活用も推奨され、開発の新しいパラダイムを提示しています。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Enhance video understanding with Amazon Bedrock Data Automation and open-set object detection](https://aws.amazon.com/blogs/machine-learning/enhance-video-understanding-with-amazon-bedrock-data-automation-and-open-set-object-detection/)
+### [Automate advanced agentic RAG pipeline with Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/automate-advanced-agentic-rag-pipeline-with-amazon-sagemaker-ai/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-11 19:20:13 UTC
-**Tags:** Amazon Bedrock Data Automation, Announcements, Artificial Intelligence, Generative AI
+**Published:** 2025-09-12 17:36:19 UTC
+**Tags:** Amazon SageMaker AI, Customer Solutions, Technical How-to, Amazon SageMaker, Amazon SageMaker Pipelines, Generative AI, MLOps
 
 **Digest:**
-Amazon Bedrock Data Automationは、動画分析に**オープンセットオブジェクト検出（OSOD）** を導入し、既知・未知のオブジェクトを検出可能に。フレームレベルでの柔軟なテキストプロンプトに対応し、広告分析、スマートリサイズ、監視、カスタムラベル作成などに活用できる。動画からの情報抽出を**Amazon Bedrock Data Automation**で効率化し、様々な業界での応用が期待される。
+Amazon SageMaker AIを活用し、RAGパイプライン開発を効率化する方法を紹介。実験から自動化までを支援し、SageMaker managed MLflowで実験を追跡、SageMaker Pipelinesで自動化を実現。これにより、再現性、コラボレーション、継続的な改善を促進。Amazon BedrockやOpenSearch Serviceなどの活用も示し、本番環境へのスムーズな移行を可能にする。
 
 ---
 
-### [How Skello uses Amazon Bedrock to query data in a multi-tenant environment while keeping logical boundaries](https://aws.amazon.com/blogs/machine-learning/how-skello-uses-amazon-bedrock-to-query-data-in-a-multi-tenant-environment-while-keeping-logical-boundaries/)
+### [Unlock model insights with log probability support for Amazon Bedrock Custom Model Import](https://aws.amazon.com/blogs/machine-learning/unlock-model-insights-with-log-probability-support-for-amazon-bedrock-custom-model-import/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-11 17:59:15 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock Agents, Amazon Bedrock Guardrails, Customer Solutions, SaaS
+**Published:** 2025-09-12 17:34:16 UTC
+**Tags:** Amazon Bedrock, Announcements, Technical How-to
 
 **Digest:**
-Skelloは、従業員管理SaaSで、Amazon BedrockとAWS Lambdaを活用し、AIアシスタントを開発。**自然言語**でのデータ検索や可視化を実現し、**Anthropic Claude 3.5 Sonnet** などのLLMを利用。マルチテナント環境での**GDPR**準拠を保ちつつ、セキュリティとパフォーマンスを両立。ユーザーは、専門知識なくデータ可視化でき、企業はより**アクセスしやすいデータ分析**を可能にしました。
+Amazon BedrockのCustom Model Importで、LlamaやMistralなどのカスタムモデルの統合が可能に。トークンレベルのログ確率により、モデルの予測信頼度を可視化し、ハルシネーション検出、RAG最適化、ファインチューニングモデルの評価に役立つ。InvokeModel APIで`return_logprobs: true`を指定することで、プロンプトと生成トークンのログ確率を取得でき、より信頼性の高いAIアプリケーション開発に貢献します。
 
 ---
 
-### [Create a private workforce on Amazon SageMaker Ground Truth with the AWS CDK](https://aws.amazon.com/blogs/machine-learning/create-a-private-workforce-on-amazon-sagemaker-ground-truth-with-the-aws-cdk/)
+### [Migrate from Anthropic’s Claude 3.5 Sonnet to Claude 4 Sonnet on Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/migrate-from-anthropics-claude-3-5-sonnet-to-claude-4-sonnet-on-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-11 17:56:01 UTC
-**Tags:** Advanced (300), Amazon Cognito, Amazon SageMaker AI, Amazon SageMaker Ground Truth, AWS Cloud Development Kit, AWS CloudFormation, Expert (400), Technical How-to
+**Published:** 2025-09-12 17:31:19 UTC
+**Tags:** Amazon Bedrock, Best Practices, Intermediate (200), Technical How-to
 
 **Digest:**
-Amazon SageMaker Ground TruthとAmazon A2I向けプライベートワークフォースを、AWS CDKを使ってIaCで構築する手法を紹介。Amazon CognitoとSageMakerの相互依存性による課題を、CloudFormationカスタムリソースで解決。GitHubリポジトリでカスタマイズ可能な例を提供し、セキュアなデータセット構築を支援します。
+Amazon BedrockでAnthropicのClaude 4 Sonnetがリリース、Claude 3.5 Sonnetの廃止に伴い、移行が必須です。主な変更点は、コンテキストウィンドウの拡大、ネイティブな推論機能、高度なツール使用など。APIの更新や、プロンプトエンジニアリング、新機能のExtended thinkingへの対応が重要です。自社データによる評価と自動化されたCI/CDパイプライン構築も不可欠です。
 
 ---
 
-### [Denodo [1] - Denodo/データ仮想化とはなにか -](https://blog.jbs.co.jp/entry/2025/09/12/141201)
-**Source:** JBS Blog
-**Published:** 2025-09-12 05:12:01 UTC
-**Tags:** Denodo
+### [10 examples of our new native image editing in the Gemini app](https://blog.google/products/gemini/gemini-nano-banana-examples/)
+**Source:** Google DeepMind
+**Published:** 2025-09-12 16:00:00 UTC
+**Tags:** Gemini, Google DeepMind, AI
 
 **Digest:**
-データ＆AI事業本部の里見氏が、データ仮想化製品「Denodo」を紹介。Denodoは、様々なデータソースを論理的に統合し、アクセス管理を容易にします。データ仮想化により、豊富なコネクタによるデータ統合、リアルタイムなデータアクセス、TCO削減、データガバナンス強化を実現。Denodoはデータ統合に役立ちます。
-
----
-
-### [Oracle Database@Azure ～ Autonomous Database を動かす](https://blog.jbs.co.jp/entry/2025/09/12/125026)
-**Source:** JBS Blog
-**Published:** 2025-09-12 03:50:26 UTC
-**Tags:** Oracle Cloud Infrastructure, Oracle Database, Oracle
-
-**Digest:**
-前回デプロイしたOracle Database@AzureのAutonomous Database(ADB) db201の利用方法を紹介。Azure PortalでADBの削除やクローン、ディザスタリカバリ、バックアップ、監視が可能。さらに、起動/停止、アクセス、表領域作成、ユーザー作成、テーブル作成といったDB操作の手順も解説します。
-
----
-
-### [【Outlook】オフライングローバルアドレス帳の更新方法](https://blog.jbs.co.jp/entry/2025/09/12/101837)
-**Source:** JBS Blog
-**Published:** 2025-09-12 01:18:37 UTC
-**Tags:** Outlook, Exchange Online, Exchange
-
-**Digest:**
-Outlookのオフラインアドレス帳（OAB）は、Exchange Online/Serverのユーザー情報をローカルPCにキャッシュしますが、情報反映に遅延が生じることも。直近追加のユーザー検索や、部署・メールアドレス変更が反映されない場合、管理者とエンドユーザー双方の手順でOABを手動更新できます。更新されない場合の対処法も解説。
-
----
-
-### [【Microsoft×生成AI連載】WordとPowerPoint上でCopilotエージェントが呼び出し可能に](https://blog.jbs.co.jp/entry/2025/09/12/085527)
-**Source:** JBS Blog
-**Published:** 2025-09-11 23:55:27 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
-
-**Digest:**
-Microsoft 365 CopilotがWordとPowerPointで正式に利用開始！文章作成や資料作成をAIエージェントが支援し、作業効率を格段に向上させます。導入方法、メリット、注意点も解説。Copilotを活用して、よりスマートな働き方を実現しましょう。
-
----
-
-### [OneDrive および SharePoint のWebパフォーマンスとオフライン機能を維持するためのブラウザーポリシーの構成](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/09/onedrive-sharep-457f.html)
-**Source:** SharePoint Technical Notes
-**Published:** 2025-09-11 08:12:00 UTC
-**Tags:** Microsoft 365 - SharePoint, Microsoft Lists, OneDrive / OneDrive for Business
-
-**Digest:**
-Chromium 141に関する情報です。Google ChromeとMicrosoft Edgeの最新版に対応し、WebGL 2.0やオフスクリーンレンダリングAPIの強化など、グラフィック性能が向上しました。また、WebAssemblyの最適化も行われ、Webアプリケーションのパフォーマンス改善が期待されています。
+Google DeepMindの新型画像編集モデル「Nano Banana」が、Geminiアプリに搭載されました。これにより、写真のブレンドや編集におけるクリエイティブな表現が向上。ユーザーは、様々な編集オプションを通じて、より自由度の高い画像加工を楽しめるようになりました。
 
 ---
