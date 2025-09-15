@@ -1,55 +1,55 @@
-# AI Tech Trends Digest (2025-09-14)
+# AI Tech Trends Digest (2025-09-15)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [コンテキストエンジニアリングの源流へ、AIと心理学](https://qiita.com/makotosaekit/items/c4d37b91258ec44c0cbf)
-**Published:** 2025-09-13 18:03:31 UTC
-**Likes:** 4
-**Tags:** AI, プロンプト, ChatGPT, LLM, コンテキストエンジニアリング
+### [AIによる自律型ソフトウェア開発システム構想](https://qiita.com/s-age/items/6cd9748c174d3ae3c59b)
+**Published:** 2025-09-15 00:25:26 UTC
+**Likes:** 1
+**Tags:** AI, LLM
 
 **Digest:**
-AIの「知能」は、情報科学に加え、心理学の影響を強く受けている。人間を模倣するAIは、「人間とは何か」という問いに迫る必要があり、認知心理学の実験やオントロジー、LLMといった技術革新を経て、発達心理学に基づいた「自己」と「成長」の概念を取り込むことで進化を目指している。
+マルチエージェントAIの将来性を考察。巨大LLMの限界を見据え、NVIDIAのMoEのような複数エージェントによる協調を予測。GeminiのDeep Research機能を例に、検索・評価・要約などの役割分担を解説。Planning、Orchestration、Execution各レイヤーでAIが自律的に機能し、自己改善や市場分析も行う。課題は人間との協調や法的責任。VSCodeプラグインによる実装も視野に、AGI/ASI実現に向けた構想を示す。
 
 ---
 
-### [Codex CLIのカスタムコマンドを完全攻略！よく使う指示を瞬時に呼び出す方法](https://qiita.com/tomada/items/37d260807c4324c9898d)
-**Published:** 2025-09-14 02:31:30 UTC
-**Likes:** 2
-**Tags:** OpenAI, codex, ChatGPT, AIエージェント, CodexCLI
+### [今さらながら OpenAI の「Codex IDE extension」を VS Code で少し試してみる（公式情報なども見つつ）](https://qiita.com/youtoy/items/e5c8732340a483633257)
+**Published:** 2025-09-14 14:30:12 UTC
+**Likes:** 1
+**Tags:** VSCode, OpenAI, codex, CodexCLI, CodexIDEextension
 
 **Digest:**
-Codex CLIのカスタムコマンドは、定型指示を`/コマンド名`で呼び出せる機能。`~/.codex/prompts/`にMarkdownファイルを置き、CLI再起動で反映。コードレビューやテスト生成など、頻繁に使う指示を効率化。IDE拡張版よりCLI版推奨。命名規則やトラブルシューティングも解説。動画で実践的な活用例を紹介。
+OpenAIの「Codex IDE extension」をVS Codeで試用。ChatGPTのProプランを利用し、VS Code拡張をインストール後、画像をもとにHTML+CSSを生成。AI道場のもくもく会がきっかけで、Web版と同様のタスクを試す。今後は、IDEならではの機能やGitHub連携を模索予定。
 
 ---
 
-### [AI駆動の自動テストフレームワーク「AgentiTest」で始める次世代テスト自動化](https://qiita.com/rairaii/items/a37972388eac6a8d55b3)
-**Published:** 2025-09-13 09:05:36 UTC
-**Likes:** 2
-**Tags:** 自動テスト, Allure, LLM, browser-use, AgentiTest
+### [ぎりぎり使える Local Vibe Coding (Roo-Code+llama4-Scout編)](https://qiita.com/Mr_A/items/63efbab1ca6cd3eee0fd)
+**Published:** 2025-09-15 05:50:06 UTC
+**Likes:** 0
+**Tags:** 妄想, LLM, ローカルLLM, VibeCoding, Llama4
 
 **Digest:**
-AgentiTestは、UI変更に強いAI駆動の次世代Webアプリ自動テストフレームワークです。自然言語でテストを記述し、LLMが画面を理解して実行。従来のSelenium等での「UI変更でテスト全滅」を解決します。Google Cloud Communityの大幅変更時も、自然言語修正とChatGPT提案で対応。pytest、browser-use、Allure Reportを統合し、テスト保守コスト削減、動的自己解決、可視化を実現。
+ローカルLLMのllama4とVSCodeのRoo-Codeを使い、GUI電卓を生成する実験。VibeCodingで、仕様入力後にボタン操作だけでPythonコードが生成された。ArchitectモードとCodeモードを切り替え、ファイル名や出力フォルダ指定も可能。日本語メッセージがコードに入り込む問題も。GPU負荷は上がらず、Roo-CodeがReasoning Modelのように機能。ゲームチェンジ感があり、プログラマー不要な時代も？
 
 ---
 
-### [Geminiでアゲハチョウと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/324740ca8f09d9af56af)
-**Published:** 2025-09-14 02:38:29 UTC
+### [Colabでgpt-oss120Bを動かす（ Colab のプラン検討者向け）](https://qiita.com/kanata564/items/58967c8e8c4e09fa73ec)
+**Published:** 2025-09-15 05:42:06 UTC
+**Likes:** 0
+**Tags:** Python, colaboratory, 生成AI, LLM, gpt-oss
+
+**Digest:**
+Google ColabでA100 80GBが利用可能になり、gpt-oss120Bも実行可能に。プラン加入者向けに使用感が共有され、動作コード、モデルダウンロード時間、推論時間が示されています。A100ハイメモリ環境で、モデルダウンロードには6分、推論には25秒かかりました。実験計画を立ててから実行することを推奨しています。
+
+---
+
+### [Geminiでミツバチと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/68aa871651b4fde6d7af)
+**Published:** 2025-09-15 00:39:19 UTC
 **Likes:** 0
 **Tags:** Gemini
 
 **Digest:**
-Geminiで生成した、アゲハチョウと遊ぶ魔法少女のイラストを紹介。プロンプトは「アゲハチョウと遊ぶ魔法少女を描いてください」で、画像が出力された。結果は「可愛い」の一言。何かの役に立てば嬉しいとのことです。
-
----
-
-### [OpenAI と Anthropic（Claude）の JSON スキーマ／ツール呼び出し／マルチモーダル／SSE 比較](https://qiita.com/nogataka/items/003b501dd9bd93f1b598)
-**Published:** 2025-09-14 02:36:26 UTC
-**Likes:** 0
-**Tags:** API, JSON, OpenAI, LLM, Anthropic
-
-**Digest:**
-OpenAIとAnthropicのLLM APIを比較。両社ともJSONスキーマ指定やツール呼び出し機能を持つが、OpenAIはスキーマ厳格化「Structured Outputs」が特徴。OpenAIは`tool_calls`、Anthropicは`tool_use`ブロックでツール実行。画像を含むマルチモーダル対応も可能。SSEでのデルタ結合によるストリーミング実装例も提示。
+Geminiで生成された画像を紹介。プロンプト「ミツバチと遊ぶ魔法少女を描いてください」で実行した結果、可愛い魔法少女のイラストが生成されました。この画像は、ミツバチと共に楽しげな様子を描いており、何かの役に立てばという想いが込められています。
 
 ---
