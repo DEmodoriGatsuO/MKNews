@@ -1,118 +1,128 @@
-# AI Tech Trends Digest (2025-09-16)
+# AI Tech Trends Digest (2025-09-17)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [「文字」というオカルト](https://qiita.com/makotosaekit/items/9c53cf233f5a835b498f)
-**Published:** 2025-09-15 09:18:50 UTC
-**Likes:** 9
-**Tags:** AI, プロンプト, 思考法, ChatGPT, LLM
+### [Brave APIキーをAWSのマーケットプレースでサブスクしてOpenAI互換APIとして呼ぶ](https://qiita.com/moritalous/items/36b1d32c5e208e394d3d)
+**Published:** 2025-09-16 09:30:20 UTC
+**Likes:** 3
+**Tags:** AWS, OpenAI, マーケットプレイス, brave
 
 **Digest:**
-国学と民俗学を背景に、現代ビジネスで軽視されがちな「文字」の持つ「オカルト」な力に注目。フォントの情緒的価値や、文法の非合理性、AIの確率的推論が人間の「分かったつもり」を映す鏡であると論じる。AIを自己を疑う合理的な道具として活用する視点を提示。
+プライバシー重視のブラウザBraveが提供するBrave SearchのAPIについて。無料を含む13プランがあり、AWSマーケットプレイス経由でも購入可能。Data for AIのProプランは、OpenAI互換のSummarizer Search APIを利用でき、OpenAIライクなコードで検索が可能。Amazon Bedrock AgentCoreについての詳細な情報も得られるなど、活用範囲が広がります。
 
 ---
 
-### [AWS-AIFを受けにいこう！その3](https://qiita.com/gozengoji/items/e6f33e81111e4227262f)
-**Published:** 2025-09-15 16:12:09 UTC
+### [AIと仲良くなる方法：実践的な3つのステップ](https://qiita.com/s-age/items/5fe8b0aa457a2396c0fb)
+**Published:** 2025-09-16 09:13:55 UTC
 **Likes:** 1
-**Tags:** AWS, AI, LLM, AIF-C01
+**Tags:** AI, LLM
 
 **Digest:**
-AIF学習内容の整理として、モデル選定基準、推論パラメータ、関連技術、プロンプト設計、プロンプト攻撃対策について解説。**ファウンデーションモデル**の応用、**RAG**や**ベクトルDB**の重要性、**責任あるAI**の原則、**AWS共有責任モデル**、**IAM**や**暗号化**などのセキュリティ対策、データライフサイクル管理など、広範囲な内容を網羅しています。無事試験にも合格！
+AI活用はツールに偏りがちでLLMへの理解が不足していると指摘。まずは触り、次にCLI操作など明確なタスクをAIに任せ指示の出し方を習得、ルールやロジックの実装に挑戦しAIの思考を理解することが重要。**観察、分析、言語化**の繰り返しでLLMの特性を掴み、ツールの強み弱みを予測できる人材を目指すべきです。
 
 ---
 
-### [前提重視ChatGPTカスタムプロンプト実用版【GPT-5】可読性と柔軟性](https://qiita.com/ceedarr/items/a3f6ec77effd587b702c)
-**Published:** 2025-09-15 14:46:08 UTC
-**Likes:** 1
-**Tags:** ChatGPT, LLM, プロンプトエンジニアリング, GPTs, カスタム指示
-
-**Digest:**
-「私のChatGPTカスタムプロンプト」の改善版として、問題点だったAIの柔軟性とプロンプトの可読性を向上させました。具体的には、初回回答での0章（問題定義）の安定化と、冗長な記述の抑制を図りました。料理相談や用語解説の会話例を示し、より使いやすく改善されたプロンプトの利用を促しています。
-
----
-
-### [openai-realtime-agents で「次の会話へ」ボタンを実装する4つの方法](https://qiita.com/hoshianaaa/items/bb6ea5f33aec1bd3fa02)
-**Published:** 2025-09-16 03:38:24 UTC
+### [RAGChecker with Azure OpenAI](https://qiita.com/suzookita/items/0ab6a8a99211a32dc605)
+**Published:** 2025-09-17 05:53:02 UTC
 **Likes:** 0
-**Tags:** OpenAI
+**Tags:** rag, LLM, AzureOpenAI, litellm, ragchecker
 
 **Digest:**
-OpenAI Realtime APIのデモ（openai-realtime-agents）で「次の会話へ」ボタンを実装する方法を解説。**URLクエリによる再接続（A）が最短で、session.update（B）で高速切替も可能**。本番では会話ID永続化（D）が推奨。**UX、実装コスト、拡張性、ランニングコストなどを5段階評価**し、目的に合わせた最適な実装方法を提案。
+RAGCheckerでAzure OpenAIを利用する方法の備忘録。**LiteLLM**を用いてAzure OpenAIのモデルを呼び出すため、`azure/`プレフィックスとデプロイ名を指定。`AZURE_API_KEY`、`AZURE_API_BASE`、`AZURE_API_VERSION`を環境変数かコード内で設定。RAGCheckerとLiteLLMをインストールし、Python SDKで評価を実行。JSONファイルからの読み込みも可能。
 
 ---
 
-### [LLM（生成AI）から業務システムにMCPサーバーを経由してアクセスする](https://qiita.com/miyakiyo/items/992e848291e5dfdef3a1)
-**Published:** 2025-09-16 01:24:22 UTC
+### [Python × LLMでPDFからデータ抽出！JSON化の罠とデバッグ方法](https://qiita.com/maskot1977/items/6c5dc0dbcda5032e78f0)
+**Published:** 2025-09-17 05:30:01 UTC
 **Likes:** 0
-**Tags:** MCP, 生成AI, LLM, AIエージェント
+**Tags:** Python, PDF, JSON, ChatGPT, LLM
 
 **Digest:**
-LLM（生成AI）から業務システムへの安全なアクセスを実現するため、Model Context Protocol (MCP)サーバーを介したアプローチを解説。MCPは、LLMと社内システム間の連携を標準化し、情報取得だけでなく、将来的にはデータ登録・更新も可能に。具体的には、PDF請求書からの情報抽出や、売上データからのグラフ生成などを実現。MCPは、セキュリティ、セッション管理、ツール管理等の機能を持ち、AIアシスタント基盤構築の足がかりとなります。
+LangChainとAzure OpenAIを用いたPDF解析で、`"Missing some input keys"`エラーを解決。原因はPromptTemplateの`input_variables`設定ミスで、`["context", "question"]` に修正。`safe_invoke`はシンプルに`qa_chain.invoke({"query": prompt_text})`に。修正後のコードを提示し、df.head()表示後の列名正規化に進む。
+
+---
+
+### [SimAI完全ガイド｜DifyやN8Nを超える次世代AIワークフローツールの全て【2025年最新】](https://qiita.com/k_nabe/items/35b492af2d9e5ca6afb0)
+**Published:** 2025-09-17 01:50:15 UTC
+**Likes:** 0
+**Tags:** API, 技術調査, 業務自動化, プロンプトエンジニアリング, Claude
+
+**Digest:**
+AIがワークフローを自動化する新ツール「SimAI」が登場。日本語で指示するだけでAIがワークフローを構築、DifyやN8Nを超える。AIエージェント中心設計、Copilot機能で簡単操作、Apache 2.0ライセンスで商用利用もフリー。クラウド版、セルフホスティング、ローカルLLM連携も可能。無料プランから始められ、働き方を変える可能性を秘めている。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Schedule topology-aware workloads using Amazon SageMaker HyperPod task governance](https://aws.amazon.com/blogs/machine-learning/schedule-topology-aware-workloads-using-amazon-sagemaker-hyperpod-task-governance/)
+### [FabCon Vienna: Build data-rich agents on an enterprise-ready foundation](https://www.microsoft.com/en-us/microsoft-fabric/blog/2025/09/16/fabcon-vienna-build-data-rich-agents-on-an-enterprise-ready-foundation)
+**Source:** Azure AI Blog
+**Published:** 2025-09-16 11:23:54 UTC
+**Tags:** AI + machine learning, Analytics, Azure AI, Microsoft Fabric
+
+**Digest:**
+Microsoft Fabric Community Conferenceがオーストリア・ウィーンで開催。Fabricは急速に成長し、Fortune 500社の約8割が利用。OneLakeの機能強化、GraphデータベースとMapsのプレビュー、開発者ツールの拡充、セキュリティ向上を発表。Synapseからの移行も容易に。Snowflakeとの連携も強化。2026年のFabConはアトランタで開催予定。
+
+---
+
+### [Streamline access to ISO-rating content changes with Verisk rating insights and Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/streamline-access-to-iso-rating-content-changes-with-verisk-rating-insights-and-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-15 17:15:20 UTC
-**Tags:** Amazon SageMaker HyperPod, Announcements, Artificial Intelligence, Generative AI, Technical How-to
+**Published:** 2025-09-16 16:43:42 UTC
+**Tags:** Amazon Bedrock, Amazon ElastiCache, Amazon OpenSearch Service, Artificial Intelligence, Customer Solutions, Generative AI
 
 **Digest:**
-Amazon SageMaker HyperPod のタスクガバナンスが、AIワークロードのトレーニング効率とネットワーク遅延を最適化。EC2インスタンスのトポロジー情報を活用し、ネットワークホップを最小化。KubernetesマニフェストやCLIで、同一ネットワークノード上のタスクを優先的にスケジューリング可能に。LLMトレーニングにおけるデータ交換の効率化に貢献します。
+Veriskは、ISO Ratingの変更概要を提供する「Rating Insights」を、生成AIとAWSで刷新。AnthropicのClaudeやRAGを活用し、ユーザーは自然言語で質問し、関連情報を即座に取得可能に。手作業でのデータ検索や分析を削減し、顧客サポートの効率も向上。今後は、より高度な検索とプラットフォームの拡張を目指す。
 
 ---
 
-### [How msg enhanced HR workforce transformation with Amazon Bedrock and msg.ProfileMap](https://aws.amazon.com/blogs/machine-learning/how-msg-enhanced-hr-workforce-transformation-with-amazon-bedrock-and-msg-profilemap/)
+### [Unified multimodal access layer for Quora’s Poe using Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/unified-multimodal-access-layer-for-quoras-poe-using-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-15 17:05:18 UTC
-**Tags:** Amazon Bedrock, Amazon Neptune, Customer Solutions, Generative AI, Partner solutions
+**Published:** 2025-09-16 16:40:11 UTC
+**Tags:** Amazon Bedrock, Customer Solutions, Foundation models, Generative AI
 
 **Digest:**
-msgは、スキルと能力管理SaaS「msg.ProfileMap」で、Amazon Bedrockを活用し、AIによるデータハーモナイゼーションを自動化。人材関連データの精度向上、手作業削減、EU AI ActとGDPRへの準拠を実現。内部テストで高精度を達成し、OAEIベンチマークでもトップを獲得。Amazon Bedrockにより、低レイテンシ、柔軟なスケーリング、コンプライアンス対応も実現しました。
+AWS Generative AI Innovation CenterとQuoraは、Amazon BedrockのモデルをQuoraのPoeシステムに迅速統合するため、統一APIフレームワークを開発。ServerSentEventsとREST APIのブリッジング、テンプレートベース設定でデプロイを15分に短縮。30以上のモデルを統合し、コード変更を最大95%削減。
 
 ---
 
-### [AWS Weekly Roundup: Strands Agents 1M+ downloads, Cloud Club Captain, AI Agent Hackathon, and more (September 15, 2025)](https://aws.amazon.com/blogs/aws/aws-weekly-roundup-strands-agents-1m-downloads-cloud-club-captain-ai-agent-hackathon-and-more-september-15-2025/)
-**Source:** AWS News Blog
-**Published:** 2025-09-15 16:45:14 UTC
-**Tags:** Amazon CloudFront, Amazon EC2 Mac Instances, AWS Cloud Development Kit, AWS CloudTrail, AWS Lambda, AWS Trainium, News, Open Source, Startup, Week in Review
-
-**Digest:**
-先週、エージェントAI SDK「Strands Agents」が公開から4ヶ月で100万ダウンロード、3,000以上のGitHub Starsを獲得。M4 Macインスタンス、VS CodeへのLocalStack統合、AWS CDK Refactor (プレビュー) など新発表も。また、AWS AI Agent Global HackathonやGen AI Loftsなど、AWSイベント情報も盛りだくさんです。
-
----
-
-### [Azure で 1年以上前の利用料を確認する方法](https://blog.jbs.co.jp/entry/2025/09/16/143957)
+### [GitHub Copilot Custom Chat Modesで独自エージェントを作成](https://blog.jbs.co.jp/entry/2025/09/17/145028)
 **Source:** JBS Blog
-**Published:** 2025-09-16 05:39:57 UTC
-**Tags:** Azure, Cost, Cost Management, Microsoft
+**Published:** 2025-09-17 05:50:28 UTC
+**Tags:** VS Code, Copilot, GitHub, GitHub Copilot
 
 **Digest:**
-Azureの利用料はポータルで過去13ヶ月までしか確認できませんが、Cost Managementでは少なくとも7年間データが保持されます。ポータルのコスト分析やエクスポート、コスト詳細APIも13ヶ月分のデータを提供します。
+GitHub CopilotのVS Code向け新機能「Custom Chat Modes」が登場。2025年5月リリース版から、独自のAIチャットモード作成が可能に。Ask、Edit、Agentに加え、目的に特化したAI体験を実現。例えば、コード解説専門AIモードを構築し、開発効率を格段に向上させる活用方法も紹介します。
 
 ---
 
-### [【Power Platform】要求数制限#2 Power Automateで消費を抑える設計と運用](https://blog.jbs.co.jp/entry/2025/09/16/112049)
+### [Power Apps：「SortByColumns」関数を使ってSharePointリストの内容を並び替えて表示させる](https://blog.jbs.co.jp/entry/2025/09/17/130733)
 **Source:** JBS Blog
-**Published:** 2025-09-16 02:20:49 UTC
-**Tags:** Microsoft 365, Power Platform, Power Automate, Live Support
+**Published:** 2025-09-17 04:07:33 UTC
+**Tags:** PowerPlatfirm, Power Apps, 初心者向け
 
 **Digest:**
-Power Platformの要求数制限対策として、Power Automateの効率的な運用方法を解説。トリガーの最適化、アクションの削減、並列処理の活用など、具体的な削減テクニックを紹介し、Power Automateのパフォーマンス向上と要求数の抑制を実現します。
+Power AppsでSharePointリストを昇順・降順に並び替える方法を紹介。**SortByColumns関数**を使用し、リスト内の特定の列を基準に並べ替えられます。これにより、SharePointリストの表示を**昇順**または**降順**に簡単に設定し、データの見やすさを向上させることが可能です。
 
 ---
 
-### [SaaS版FLYにて移行をするために必要な準備](https://blog.jbs.co.jp/entry/2025/09/16/101534)
+### [iDRACを使ったRAID構築方法と注意点](https://blog.jbs.co.jp/entry/2025/09/17/110740)
 **Source:** JBS Blog
-**Published:** 2025-09-16 01:15:34 UTC
-**Tags:** FLYSaaS, FLY
+**Published:** 2025-09-17 02:07:40 UTC
+**Tags:** iDRAC, Windows Server, Tech
 
 **Digest:**
-FLY移行に必要な準備をまとめた記事です。具体的な内容は不明ですが、FLYへのスムーズな移行を目指し、事前の計画や必要な手続き、環境整備など、様々な準備について解説していると推測されます。移行を成功させるための重要な情報が網羅されているでしょう。
+iDRACでRAIDを構築する方法を解説。RAID設定はiDRAC Web UIから行い、仮想ディスク作成でRAIDレベル、ディスク選択、名前などを指定します。構築には時間が必要で、再起動も伴います。構築後の確認も忘れずに。手順と注意点をまとめた情報です。
+
+---
+
+### [【Microsoft×生成AI連載】【Power Platform】Microsoft Power AutomateでMicrosoft Copilotを使ってみた 3](https://blog.jbs.co.jp/entry/2025/09/17/090047)
+**Source:** JBS Blog
+**Published:** 2025-09-17 00:00:47 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載, Power Automate
+
+**Digest:**
+Power AutomateのCopilot機能を使ったフロー作成を試します。前回紹介した多様なCopilot機能を活用し、フローを構築します。Power AutomateとCopilotの連携により、より効率的な自動化フローの作成が期待できます。
 
 ---
