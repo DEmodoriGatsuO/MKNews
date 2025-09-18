@@ -1,128 +1,138 @@
-# AI Tech Trends Digest (2025-09-17)
+# AI Tech Trends Digest (2025-09-18)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Brave APIキーをAWSのマーケットプレースでサブスクしてOpenAI互換APIとして呼ぶ](https://qiita.com/moritalous/items/36b1d32c5e208e394d3d)
-**Published:** 2025-09-16 09:30:20 UTC
-**Likes:** 3
-**Tags:** AWS, OpenAI, マーケットプレイス, brave
+### [Claude:DocBaseのリモートMCPサーバがついにリリースされたので今度はWeb版Claudeと連携させてみる](https://qiita.com/Fuses-Garage/items/a4c5ab5258f442a87e66)
+**Published:** 2025-09-17 06:54:13 UTC
+**Likes:** 2
+**Tags:** MCP, DocBase, 生成AI, Claude
 
 **Digest:**
-プライバシー重視のブラウザBraveが提供するBrave SearchのAPIについて。無料を含む13プランがあり、AWSマーケットプレイス経由でも購入可能。Data for AIのProプランは、OpenAI互換のSummarizer Search APIを利用でき、OpenAIライクなコードで検索が可能。Amazon Bedrock AgentCoreについての詳細な情報も得られるなど、活用範囲が広がります。
+ECN技術部のFuse氏が、DocBaseとWeb版Claudeを連携させ、DocBaseの情報をClaudeで扱えるようにする手順を解説。DocBase公式リモートMCPサーバーを活用し、Claudeのカスタムコネクタ設定、OAuth2認証による連携を完了。連携テストでは、DocBase内の情報に基づき、ECNホームセンターのミッション、ビジョン、バリューをClaudeが回答。
 
 ---
 
-### [AIと仲良くなる方法：実践的な3つのステップ](https://qiita.com/s-age/items/5fe8b0aa457a2396c0fb)
-**Published:** 2025-09-16 09:13:55 UTC
+### [Gemini CLI 高度な使い方まとめ](https://qiita.com/yang_zaiqi/items/a147728f6cf24f0f8705)
+**Published:** 2025-09-18 00:39:09 UTC
 **Likes:** 1
-**Tags:** AI, LLM
+**Tags:** TOML, Gemini, AIエージェント
 
 **Digest:**
-AI活用はツールに偏りがちでLLMへの理解が不足していると指摘。まずは触り、次にCLI操作など明確なタスクをAIに任せ指示の出し方を習得、ルールやロジックの実装に挑戦しAIの思考を理解することが重要。**観察、分析、言語化**の繰り返しでLLMの特性を掴み、ツールの強み弱みを予測できる人材を目指すべきです。
+Gemini CLI の高度な使い方を紹介。TOML でカスタムコマンド作成、GEMINI.md でプロジェクトの文脈管理、チェックポイントで安心な状態復元が可能。テーマや Vim モードでのカスタマイズも。自分専用の開発アシスタントとして、爆速ワークフロー構築や好みの環境設定が可能です。
 
 ---
 
-### [RAGChecker with Azure OpenAI](https://qiita.com/suzookita/items/0ab6a8a99211a32dc605)
-**Published:** 2025-09-17 05:53:02 UTC
-**Likes:** 0
-**Tags:** rag, LLM, AzureOpenAI, litellm, ragchecker
+### [⌚考えています 標準？ じっくり？思考時間って何！違いは？【GPT-5 Thinking】](https://qiita.com/7mpy/items/9665b77fb75435eecf93)
+**Published:** 2025-09-18 00:24:31 UTC
+**Likes:** 1
+**Tags:** AI, OpenAI, 生成AI, ChatGPT, LLM
 
 **Digest:**
-RAGCheckerでAzure OpenAIを利用する方法の備忘録。**LiteLLM**を用いてAzure OpenAIのモデルを呼び出すため、`azure/`プレフィックスとデプロイ名を指定。`AZURE_API_KEY`、`AZURE_API_BASE`、`AZURE_API_VERSION`を環境変数かコード内で設定。RAGCheckerとLiteLLMをインストールし、Python SDKで評価を実行。JSONファイルからの読み込みも可能。
+ChatGPTの思考時間設定について、OpenAIのリリースノートを基に解説。Standardは速さと推論のバランス、Extendedは深い推論、Pro版ではLight/Heavyも選択可。思考時間は入力欄のチップから切り替え、設定は保存される。Auto/Fast/ThinkingモデルからThinkingを選び、タスクに応じて使い分ける。
 
 ---
 
-### [Python × LLMでPDFからデータ抽出！JSON化の罠とデバッグ方法](https://qiita.com/maskot1977/items/6c5dc0dbcda5032e78f0)
-**Published:** 2025-09-17 05:30:01 UTC
-**Likes:** 0
-**Tags:** Python, PDF, JSON, ChatGPT, LLM
+### [LLMのローカル推論が進化していて驚いた件](https://qiita.com/Sora_Yamamoto/items/098e63fd841ac6cf5588)
+**Published:** 2025-09-17 23:29:55 UTC
+**Likes:** 1
+**Tags:** CPU, 量子化, LLM, Unsloth
 
 **Digest:**
-LangChainとAzure OpenAIを用いたPDF解析で、`"Missing some input keys"`エラーを解決。原因はPromptTemplateの`input_variables`設定ミスで、`["context", "question"]` に修正。`safe_invoke`はシンプルに`qa_chain.invoke({"query": prompt_text})`に。修正後のコードを提示し、df.head()表示後の列名正規化に進む。
+`Unsloth Dynamic 2.0 GGUF`を試した結果、驚くべき性能に。`ollama`と`Google Colab`のCPU環境で`qwen3-next-30b-a3b-instruct`を動かす手順を紹介。1bit量子化で約8GBのモデルが無料枠で動作し、高速な推論を実現。ハイメモリCPUでは更に高速化。LLMの量子化技術は日進月歩であり、注目すべきです。
 
 ---
 
-### [SimAI完全ガイド｜DifyやN8Nを超える次世代AIワークフローツールの全て【2025年最新】](https://qiita.com/k_nabe/items/35b492af2d9e5ca6afb0)
-**Published:** 2025-09-17 01:50:15 UTC
-**Likes:** 0
-**Tags:** API, 技術調査, 業務自動化, プロンプトエンジニアリング, Claude
+### [【話題の論文】なぜ大規模言語モデルはハルシネーションを起こすのか？【要約】](https://qiita.com/meta77/items/3e358591ff8bcd698c88)
+**Published:** 2025-09-17 11:09:09 UTC
+**Likes:** 1
+**Tags:** 機械学習, AI, LLM, ハルシネーション
 
 **Digest:**
-AIがワークフローを自動化する新ツール「SimAI」が登場。日本語で指示するだけでAIがワークフローを構築、DifyやN8Nを超える。AIエージェント中心設計、Copilot機能で簡単操作、Apache 2.0ライセンスで商用利用もフリー。クラウド版、セルフホスティング、ローカルLLM連携も可能。無料プランから始められ、働き方を変える可能性を秘めている。
+OpenAIの論文は、AIがもっともらしい嘘（ハルシネーション）をつく原因を、事前学習での統計的エラーと評価方法にあると分析。簡略化された正誤判定問題での誤答率が、ハルシネーション率の少なくとも2倍以上になるという数式**err ≥ 2 ⋅ err_iiv - |V|/|E| - δ**を提示。AIが推測する方が得な評価方法を改め、信頼度を明記したテストで改善を提案。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [FabCon Vienna: Build data-rich agents on an enterprise-ready foundation](https://www.microsoft.com/en-us/microsoft-fabric/blog/2025/09/16/fabcon-vienna-build-data-rich-agents-on-an-enterprise-ready-foundation)
-**Source:** Azure AI Blog
-**Published:** 2025-09-16 11:23:54 UTC
-**Tags:** AI + machine learning, Analytics, Azure AI, Microsoft Fabric
-
-**Digest:**
-Microsoft Fabric Community Conferenceがオーストリア・ウィーンで開催。Fabricは急速に成長し、Fortune 500社の約8割が利用。OneLakeの機能強化、GraphデータベースとMapsのプレビュー、開発者ツールの拡充、セキュリティ向上を発表。Synapseからの移行も容易に。Snowflakeとの連携も強化。2026年のFabConはアトランタで開催予定。
-
----
-
-### [Streamline access to ISO-rating content changes with Verisk rating insights and Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/streamline-access-to-iso-rating-content-changes-with-verisk-rating-insights-and-amazon-bedrock/)
+### [Supercharge your organization’s productivity with the Amazon Q Business browser extension](https://aws.amazon.com/blogs/machine-learning/supercharge-your-organizations-productivity-with-the-amazon-q-business-browser-extension/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-16 16:43:42 UTC
-**Tags:** Amazon Bedrock, Amazon ElastiCache, Amazon OpenSearch Service, Artificial Intelligence, Customer Solutions, Generative AI
+**Published:** 2025-09-17 19:37:32 UTC
+**Tags:** Amazon Q Business, Technical How-to, AI/ML, AIML, Generative AI
 
 **Digest:**
-Veriskは、ISO Ratingの変更概要を提供する「Rating Insights」を、生成AIとAWSで刷新。AnthropicのClaudeやRAGを活用し、ユーザーは自然言語で質問し、関連情報を即座に取得可能に。手作業でのデータ検索や分析を削減し、顧客サポートの効率も向上。今後は、より高度な検索とプラットフォームの拡張を目指す。
+Amazon Q Businessは、業務効率化を目指す企業向けに、ブラウザ拡張機能を発表しました。この拡張機能は、ウェブコンテンツの分析やコンテンツ品質向上に役立ち、Amazon Q Businessと連携して利用できます。設定には前提条件があり、管理者向けには、ユーザーへの展開やカスタマイズ方法、さらに、無効化や削除の手順も解説されています。
 
 ---
 
-### [Unified multimodal access layer for Quora’s Poe using Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/unified-multimodal-access-layer-for-quoras-poe-using-amazon-bedrock/)
+### [Build Agentic Workflows with OpenAI GPT OSS on Amazon SageMaker AI and Amazon Bedrock AgentCore](https://aws.amazon.com/blogs/machine-learning/build-agentic-workflows-with-openai-gpt-oss-on-amazon-sagemaker-ai-and-amazon-bedrock-agentcore/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-16 16:40:11 UTC
-**Tags:** Amazon Bedrock, Customer Solutions, Foundation models, Generative AI
+**Published:** 2025-09-17 19:31:44 UTC
+**Tags:** Amazon Bedrock, Amazon SageMaker AI, Amazon SageMaker Unified Studio, Artificial Intelligence, Customer Solutions
 
 **Digest:**
-AWS Generative AI Innovation CenterとQuoraは、Amazon BedrockのモデルをQuoraのPoeシステムに迅速統合するため、統一APIフレームワークを開発。ServerSentEventsとREST APIのブリッジング、テンプレートベース設定でデプロイを15分に短縮。30以上のモデルを統合し、コード変更を最大95%削減。
+OpenAIのGPT-OSSモデル(`gpt-oss-20b`など)を、SageMaker AIで展開する方法を紹介。LangGraphを用いて、株価分析エージェントを構築し、Amazon Bedrock AgentCoreでデプロイ。モデルはvLLMで実行、MXFP4量子化でリソースを節約。エージェントは、データ収集、分析、レポート生成を連携。Bedrock AgentCoreはインフラ管理を抽象化し、スケーラブルな運用を実現します。
 
 ---
 
-### [GitHub Copilot Custom Chat Modesで独自エージェントを作成](https://blog.jbs.co.jp/entry/2025/09/17/145028)
-**Source:** JBS Blog
-**Published:** 2025-09-17 05:50:28 UTC
-**Tags:** VS Code, Copilot, GitHub, GitHub Copilot
+### [Microsoft 365 Copilot で営業、カスタマー サービス、財務部門をフロンティアへと導く](https://blogs.windows.com/japan/2025/09/18/moving-sales-service-and-finance-to-the-frontier-with-microsoft-365-copilot/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-09-18 02:40:22 UTC
+**Tags:** Copilot, AI, Dynamics 365, Microsoft 365 Copilot
 
 **Digest:**
-GitHub CopilotのVS Code向け新機能「Custom Chat Modes」が登場。2025年5月リリース版から、独自のAIチャットモード作成が可能に。Ask、Edit、Agentに加え、目的に特化したAI体験を実現。例えば、コード解説専門AIモードを構築し、開発効率を格段に向上させる活用方法も紹介します。
+Microsoft 365 Copilot が、営業、カスタマーサービス、財務向けに機能拡充。**AI** を中心に据え、顧客体験と生産性を改革する「フロンティア組織」を支援。営業は CRM と連携し顧客対応を効率化、カスタマーサービスは問題解決を迅速化、財務は ERP データと連携して業務効率化。2025年10月より提供開始、**Dynamics 365** や **SAP** 等のツールとも連携可能。
 
 ---
 
-### [Power Apps：「SortByColumns」関数を使ってSharePointリストの内容を並び替えて表示させる](https://blog.jbs.co.jp/entry/2025/09/17/130733)
+### [Copilotでユーザーデータの差分を自動抽出](https://blog.jbs.co.jp/entry/2025/09/18/122649)
 **Source:** JBS Blog
-**Published:** 2025-09-17 04:07:33 UTC
-**Tags:** PowerPlatfirm, Power Apps, 初心者向け
+**Published:** 2025-09-18 03:26:49 UTC
+**Tags:** AI, Copilot, CSV, Tech
 
 **Digest:**
-Power AppsでSharePointリストを昇順・降順に並び替える方法を紹介。**SortByColumns関数**を使用し、リスト内の特定の列を基準に並べ替えられます。これにより、SharePointリストの表示を**昇順**または**降順**に簡単に設定し、データの見やすさを向上させることが可能です。
+毎月のユーザーデータ分析、手作業での差分探しは大変ですよね。この記事では、Microsoft Copilotを活用し、CSVファイルの差分を自動抽出する方法を紹介します。先月と今月のユーザーデータを用意し、Copilotに特定のプロンプトを入力することで、追加されたユーザーなどを簡単に把握できます。
 
 ---
 
-### [iDRACを使ったRAID構築方法と注意点](https://blog.jbs.co.jp/entry/2025/09/17/110740)
+### [Azure AutomationでFabric容量の自動停止を実現する方法](https://blog.jbs.co.jp/entry/2025/09/18/113344)
 **Source:** JBS Blog
-**Published:** 2025-09-17 02:07:40 UTC
-**Tags:** iDRAC, Windows Server, Tech
+**Published:** 2025-09-18 02:33:44 UTC
+**Tags:** Microsoft Fabric, Azure Automation
 
 **Digest:**
-iDRACでRAIDを構築する方法を解説。RAID設定はiDRAC Web UIから行い、仮想ディスク作成でRAIDレベル、ディスク選択、名前などを指定します。構築には時間が必要で、再起動も伴います。構築後の確認も忘れずに。手順と注意点をまとめた情報です。
+Azure Automationを活用し、Microsoft Fabric容量を自動停止する方法を解説。コスト削減のため、Runbookを作成し、PowerShellコードでFabric容量を停止します。スケジュール設定で運用を自動化し、無駄なリソース消費を防ぎます。
 
 ---
 
-### [【Microsoft×生成AI連載】【Power Platform】Microsoft Power AutomateでMicrosoft Copilotを使ってみた 3](https://blog.jbs.co.jp/entry/2025/09/17/090047)
+### [PCにプリインストールされているMicrosoftアプリのアンインストール](https://blog.jbs.co.jp/entry/2025/09/18/103500)
 **Source:** JBS Blog
-**Published:** 2025-09-17 00:00:47 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載, Power Automate
+**Published:** 2025-09-18 01:35:00 UTC
+**Tags:** OneDrive, コマンドプロンプト
 
 **Digest:**
-Power AutomateのCopilot機能を使ったフロー作成を試します。前回紹介した多様なCopilot機能を活用し、フローを構築します。Power AutomateとCopilotの連携により、より効率的な自動化フローの作成が期待できます。
+Microsoft 365 Apps (M365Apps) を Office展開ツール (ODT) で展開する際、既存Office製品のアンインストール設定で OneDriveとOneNote for Windows 10が削除されない問題が発生しました。 今回は、PCプリインストール版アプリをコマンドでアンインストールする方法を紹介します。
+
+---
+
+### [Intuneを使用してWindows11のスタートメニューレイアウトを展開する](https://blog.jbs.co.jp/entry/2025/09/18/090211)
+**Source:** JBS Blog
+**Published:** 2025-09-18 00:02:11 UTC
+**Tags:** Intune
+
+**Digest:**
+Windows 11では、スタートメニューがタイルからピン留め形式に変わり、フォーマットもXMLからJSONに変更されました。IntuneでWindows 10のスタートメニューを構成していた場合、設定方法が異なります。この記事では、Intuneを用いたWindows 11でのスタートメニューレイアウト構成について解説しています。
+
+---
+
+### [Copilotでアンケートの自由記述を分析する方法](https://blog.jbs.co.jp/entry/2025/09/17/171959)
+**Source:** JBS Blog
+**Published:** 2025-09-17 08:19:59 UTC
+**Tags:** Copilot, AI, Tech
+
+**Digest:**
+社内アンケートの自由記述分析を効率化！ Copilotを活用し、時間を有効活用する方法を紹介します。WebタブでアンケートをCopilotに作成させ、分析まで行います。記事では、プロンプト例や具体的な手順を解説し、アンケート準備から分析、まとめまでを網羅しています。
 
 ---
