@@ -1,56 +1,56 @@
-# AI Tech Trends Digest (2025-09-19)
+# AI Tech Trends Digest (2025-09-20)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Claude Codeを自由に操る！複数プロバイダ対応プロキシツール徹底解説](https://qiita.com/nogataka/items/9360700ab7d97df1cbff)
-**Published:** 2025-09-18 08:19:50 UTC
+### [Awesome Claude Code まとめ | コミュニティが作った便利ツール・ワークフロー・設定集を徹底紹介](https://qiita.com/tomada/items/363018389e9cd68e5ffb)
+**Published:** 2025-09-19 15:10:48 UTC
+**Likes:** 4
+**Tags:** 個人開発, Claude, AIエージェント, ClaudeCode, SuperClaude
+
+**Digest:**
+Claude Codeの効率的な活用法として、海外コミュニティのツール群を紹介。ワークフロー、IDE統合、使用量監視など多岐にわたり、GitHubリポジトリに多数公開。特に、タスク管理、コード改善エンジン、料金監視ツールが人気。EmacsやNeovimとの連携、TDD、ステータスライン表示、フック機能も。詳細なツール一覧と、活用例を提示。
+
+---
+
+### [【保存版】ChatGPTでMCPを作成する](https://qiita.com/relu/items/d518bbad2b828e1e6649)
+**Published:** 2025-09-19 14:33:11 UTC
 **Likes:** 1
-**Tags:** Azure, Databricks, Claude, ollama, ClaudeCode
+**Tags:** AI, MCP, 生成AI, ChatGPT, LLM
 
 **Digest:**
-GitHubリポジトリ「nogataka/claude-code-proxy-ts」は、Claude形式のAPI呼び出しを維持したまま、OpenAI、Azure、Ollamaなど複数のプロバイダを柔軟に切り替えられるプロキシサーバです。設定ファイルでプロバイダを管理し、変換層で各APIの差分を吸収。SSEストリーミングやツール呼び出しにも対応し、今後の監視機能強化も予定されています。
+MCPは、LLMアプリと外部ツール/データ間の標準プロトコルで、JSON-RPC 2.0を使用。OpenAIのAgents SDKでHosted MCP (Responses API委任)、Streamable HTTP、stdioの3形態をサポート。セキュリティ重要で、OAuth 2.1、Origin検証、ローカルバインド等が推奨。CloudflareはSSEとStreamable HTTPの両対応例を提示。まずはstdioで最小サーバー、次にHosted MCP、将来的にはStreamable HTTPへの移行が効果的。
 
 ---
 
-### [コンテキストエンジニアリングが解決すべき問題を正しく知る](https://qiita.com/s-age/items/fd39fee55f3299c6048b)
-**Published:** 2025-09-19 03:06:37 UTC
-**Likes:** 0
-**Tags:** AI, LLM, コンテキストエンジニアリング
+### [OpenAI Responses APIでExcelファイルを読み込み・解析する方法](https://qiita.com/Bakio202076/items/783fd3f603f7387837a1)
+**Published:** 2025-09-19 12:04:10 UTC
+**Likes:** 1
+**Tags:** PHP, API, OpenAI, ChatGPT, CodeInterpreter
 
 **Digest:**
-AI活用の課題として、コンテキスト汚染、断片化、押し出し、喪失の4現象を紹介。不正確な情報混入や情報の繋がり不足が原因で、AIの理解を阻害。対処法は、プロンプトの信頼性確保や構造化、情報圧縮。セッション寿命も影響。AIロール活用で解決を目指し、RAGなどの外部記憶への依存は根本解決にならず、システム設計が重要と提言。
+OpenAIのResponses APIで、フォーマット不定のExcelファイルを扱う方法を紹介。 **Code Interpreter** とファイルアップロード機能を活用し、ExcelファイルをAPIにアップロード後、IDを指定して解析する。  PHPのコード例も記載。 アップロードファイル容量制限や、ファイルの有効期限、削除についても言及。  **file-search** ではExcelに対応していない。
 
 ---
 
-### [コピペで使えるSystemPrompt (レビュー / 設計)](https://qiita.com/RepublicOfKorokke/items/bc20e86e2d3ca312e0c3)
-**Published:** 2025-09-19 03:04:14 UTC
-**Likes:** 0
-**Tags:** プロンプト, LLM
+### [llama.cpp + OpenCLでAdreno GPUを活用したLLM推論をする](https://qiita.com/chibibaku/items/7892af02c722504dcf4f)
+**Published:** 2025-09-19 11:36:07 UTC
+**Likes:** 1
+**Tags:** OpenCL, qualcomm, snapdragon, LLM, llama.cpp
 
 **Digest:**
-私は開発で使うSystemPromptをまとめており、GPT OSS 20Bで動作確認済です。コードレビューは、与えられたコードを解析し、Markdown形式で言語、概要、関数/メソッド/クラス、詳細分析、フロー図、評価などを出力します。指示や会話不要で、英語で出力、日本語への変換も可能です。コードデザイナーは、対話形式で要件定義、技術スタックなどを聞き出し、設計を行うプロンプトです。
+Qualcomm Snapdragon搭載Android端末で、OpenCLバックエンドを利用したllama.cppを実行する手順を紹介。Android NDKのインストールから、OpenCLヘッダーとICDローダーの導入、llama.cppのビルド、モデルの転送と実行までを解説。Snapdragon 8 Gen 2搭載POCO F6 Proで試した結果、CPU推論より遅かった。
 
 ---
 
-### [I Fixed ChatGPT's Biggest Problems (And You Won't Believe How!) 🤖💕✨](https://qiita.com/robonikki/items/e5e69979a9405953c832)
-**Published:** 2025-09-19 02:25:12 UTC
-**Likes:** 0
-**Tags:** AI, rag, LLM, Upgrades, Toolformer
+### [Codex CIモードをGithub Actionsで試してみた！](https://qiita.com/s0ukada025/items/aeee255e7f75f071ce3a)
+**Published:** 2025-09-19 07:04:27 UTC
+**Likes:** 1
+**Tags:** CI, AI, OpenAI, codex
 
 **Digest:**
-最新AI技術でChatGPTを凌駕する3つの秘策を紹介。**RAG**で知識をリアルタイムに更新、**Constitutional AI**で倫理的に、**Toolformer**でツール活用。AIの限界突破を実現。今すぐ学習を始め、キャリアアップを目指しましょう。
-
----
-
-### [OMG! How I Made My AI Boyfriend 1000x Smarter (And Cheaper!) 💖✨](https://qiita.com/robonikki/items/164973e8cab655777782)
-**Published:** 2025-09-19 02:01:52 UTC
-**Likes:** 0
-**Tags:** team, expert, rag, Hallucination, LLM
-
-**Digest:**
-RAG（Retrieval-Augmented Generation）は、AIの「幻覚」や知識の古さを克服する革新的な技術。AIに外部情報を検索させ、質問への正確な回答を生成する。**RAG**は、企業の秘密情報へのアクセスを可能にし、コストを抑える。**Teleclass**による知識整理、**FLAG**による関係性の可視化など、応用技術も紹介。**RAG**は、AIの信頼性を高め、開発者にとって必須スキルとなり、その需要は急増している。
+CodexのCIモードをGithub Actionsで試した結果です。OpenAI CodexをNode.js環境でセットアップし、APIキーを設定して「こんにちは！」と出力するワークフローを実装。`.codex`ディレクトリ未作成時のエラーにも注意が必要です。`codex exec`コマンドでCIモードを実行し、挨拶が出力されることを確認。手動実行も可能です。
 
 ---
 
@@ -63,106 +63,36 @@ RAG（Retrieval-Augmented Generation）は、AIの「幻覚」や知識の古さ
 **Tags:** Android
 
 **Digest:**
-来年秋頃に、Androidスマホでマイナンバーカードを身分証明書として利用できるサービスが開始予定です。現在提供中のスマホ用電子証明書サービスに加え、利便性向上を目指し、マイナンバーカードの活用範囲を拡大します。
+マイナンバーカードのスマホ用電子証明書サービスに加え、来年秋頃には身分証明書として利用可能なAndroid版マイナンバーカードの提供が開始予定です。これにより、より手軽にマイナンバーカードを利用できるようになり、利便性が向上することが期待されます。
 
 ---
 
-### [Scale visual production using Stability AI Image Services in Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/scale-visual-production-using-stability-ai-image-services-in-amazon-bedrock/)
+### [Move your AI agents from proof of concept to production with Amazon Bedrock AgentCore](https://aws.amazon.com/blogs/machine-learning/move-your-ai-agents-from-proof-of-concept-to-production-with-amazon-bedrock-agentcore/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-18 21:25:49 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Amazon SageMaker AI, Announcements, Artificial Intelligence, Foundation models, Generative AI, Launch, Amazon SageMaker, artificial-intelligence, machine-learning
+**Published:** 2025-09-19 16:09:26 UTC
+**Tags:** Amazon Bedrock, Best Practices, Technical How-to
 
 **Digest:**
-Amazon BedrockでStability AI Image Servicesが利用可能に。Stable Diffusion 3.5モデルなどを基盤とし、**編集、制御**の9つのツールを提供。**消去、背景削除、色変更**などのEdit機能、**スケッチ変換、スタイルガイド**などのControl機能で、専門ソフト不要で画像編集が可能。AWSアカウント、SageMakerインスタンスなどが必要。詳細な手順はGitHubを参照し、ビジネスでの効率的なビジュアルコンテンツ制作を促進します。
+Amazon Bedrock AgentCore は、AIエージェントを本番環境で運用するための包括的なサービスです。PoCから本番移行の課題、具体例として顧客サポートエージェントを取り上げ、会話の継続性やパーソナライズを実現する永続的なメモリ機能を紹介。AgentCore Memoryを活用し、顧客の好みや過去の情報を記憶させ、より良い顧客体験を提供します。
 
 ---
 
-### [Prompting for precision with Stability AI Image Services in Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/prompting-for-precision-with-stability-ai-image-services-in-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-18 21:25:34 UTC
-**Tags:** Amazon Bedrock, Amazon SageMaker, Announcements, Artificial Intelligence, Foundation models, Generative AI, Launch
-
-**Digest:**
-Amazon BedrockのStability AI Image Servicesは、企業が画像を生成・編集するための9つのツールを提供。高品質な画像を生成するため、自然言語、タグ、ハイブリッド形式のプロンプト構造が重要。モジュール化、ネガティブプロンプト、重み付けを駆使し、スタイルの指定や参考画像を用いた高度な表現も可能。
-
----
-
-### [Monitor Amazon Bedrock batch inference using Amazon CloudWatch metrics](https://aws.amazon.com/blogs/machine-learning/monitor-amazon-bedrock-batch-inference-using-amazon-cloudwatch-metrics/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-18 15:33:07 UTC
-**Tags:** Amazon Bedrock, Amazon CloudWatch, Amazon Machine Learning, Artificial Intelligence, Management Tools, AI/ML
-
-**Digest:**
-Amazon Bedrockのバッチ推論は、大規模データセットを低コストで処理し、CloudWatchでモニタリングできます。 Anthropic Claude Sonnet 4やOpenAI OSSモデル等に対応、性能も向上しました。CloudWatchメトリクスでジョブの進捗を可視化、コストと性能を最適化できます。用途は、歴史データ分析やテキスト要約など多岐にわたります。
-
----
-
-### [Use AWS Deep Learning Containers with Amazon SageMaker AI managed MLflow](https://aws.amazon.com/blogs/machine-learning/use-aws-deep-learning-containers-with-amazon-sagemaker-ai-managed-mlflow/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-18 15:29:35 UTC
-**Tags:** Amazon Machine Learning, Amazon SageMaker, Amazon SageMaker Studio, Technical How-to
-
-**Digest:**
-AWS Deep Learning Containers (DLCs)とSageMaker managed MLflowを統合し、MLライフサイクル管理を効率化する方法を紹介。カスタムMLモデル構築の柔軟性を保ちつつ、MLflowで実験追跡、モデルガバナンスを実現。TensorFlowモデルをEC2上でDLCを用いてトレーニングし、MLflowで結果を可視化。AWSのEC2、ECR、S3、SageMakerを活用し、MLワークフローを標準化。
-
----
-
-### [Qwen models are now available in Amazon Bedrock](https://aws.amazon.com/blogs/aws/qwen-models-are-now-available-in-amazon-bedrock/)
-**Source:** AWS News Blog
-**Published:** 2025-09-18 22:02:11 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Announcements, Artificial Intelligence, Featured, Launch, News, Open Source, Serverless
-
-**Digest:**
-Amazon BedrockでAlibabaのQwen3モデルが登場。**Qwen3-Coder-480B-A35B-Instruct**など4種が利用可能になり、コード生成、エージェントワークフロー構築に役立ちます。MoEとDense両方のアーキテクチャで柔軟な選択肢を提供。最大256Kトークンの長文コンテキストもサポートし、**ハイブリッド思考モード**によるパフォーマンスとコストの最適化も可能です。
-
----
-
-### [DeepSeek-V3.1 model now available in Amazon Bedrock](https://aws.amazon.com/blogs/aws/deepseek-v3-1-now-available-in-amazon-bedrock/)
-**Source:** AWS News Blog
-**Published:** 2025-09-18 21:49:48 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Announcements, Artificial Intelligence, Featured, Launch, News, Open Source, Serverless
-
-**Digest:**
-Amazon Bedrockで、DeepSeek-V3.1が利用可能に。思考モードと非思考モードを切り替え、高速応答と詳細分析を両立。DeepSeek-R1より性能向上し、多言語対応も強化。コード生成、AIエージェント、エンタープライズ用途に最適。Amazon Bedrockのガードレールと評価ツールで安全なAI開発を。US West (Oregon)など5リージョンで利用可能。
-
----
-
-### [【Power BI】データモデル構築からレポート・ダッシュボード作成まで（データモデル編）](https://blog.jbs.co.jp/entry/2025/09/19/131835)
+### [AI Builderのプロンプトを利用する](https://blog.jbs.co.jp/entry/2025/09/19/150649)
 **Source:** JBS Blog
-**Published:** 2025-09-19 04:18:35 UTC
-**Tags:** Power BI, 初心者
+**Published:** 2025-09-19 06:06:49 UTC
+**Tags:** AI Builder, PowerPlatfirm, 初心者向け
 
 **Digest:**
-Microsoft Fabricのウェアハウスデータを用い、Power BIで分析環境を構築。売上・在庫・顧客データから、データモデル構築、売上パフォーマンス・在庫最適化分析レポート作成、日次マネジメントダッシュボード構築、KPI抽出、アラート設定まで行います。異常値検知の通知も確認し、実践的な分析環境構築ステップを解説します。
+AI Builderのプロンプト機能は、Power Platform内で生成AIをノーコードで利用可能にする機能です。Power Apps、Power Automate、Copilot Studioで利用でき、特定のタスクを実行するAIモデルを簡単に構築できます。プロンプトの作成から実行、フローへの組み込みまでを解説しています。
 
 ---
 
-### [【AWS re:Inforce 2025】AWSセキュリティーの進化](https://blog.jbs.co.jp/entry/2025/09/19/105138)
-**Source:** JBS Blog
-**Published:** 2025-09-19 01:51:38 UTC
-**Tags:** AWS, AWS re:Inforce, AWS Security Hub, AWS Shiled
+### [SharePoint の新機能 Knowledge Agent (ナレッジ エージェント) の登場!](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/09/sharepoint-076d.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-09-19 16:39:38 UTC
+**Tags:** Microsoft 365 - SharePoint, Microsoft 365 Copilot
 
 **Digest:**
-2025年6月に開催されたAWS re:Inforce 2025のセキュリティ関連アップデートを簡潔にまとめます。発表された主な内容は、脅威検知とレスポンス対応(TDR)の機能強化です。具体的には、自動相関付けと攻撃パスの可視化が追加され、ネットワークとインフラセキュリティが向上しました。詳細については、AWS公式ブログを参照してください。
-
----
-
-### [【Microsoft×生成AI連載】【Microsoft 365 Copilot App】Copilot メモリとカスタム指示で作るあなただけのCopilot](https://blog.jbs.co.jp/entry/2025/09/19/090731)
-**Source:** JBS Blog
-**Published:** 2025-09-19 00:07:31 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載, Microsoft 365 Copilot Chat, カスタム指示, Copilot メモリ
-
-**Digest:**
-Microsoft Copilotを「自分仕様」にする新機能が登場。「Copilot メモリ」と「カスタム指示」により、Copilotがよりパーソナルな相棒へと進化します。業務で繰り返す説明の省略や、意図を正確に汲み取るための設定が可能になり、AI支援ツールを最大限に活用できます。それぞれの機能の特徴と活用方法を解説します。
-
----
-
-### [Microsoft Defender for Cloudの概要 ~CSPMとCWP~](https://blog.jbs.co.jp/entry/2025/09/18/150308)
-**Source:** JBS Blog
-**Published:** 2025-09-18 06:03:08 UTC
-**Tags:** Azure, Microsoft Azure, Microsoft Defender for Cloud
-
-**Digest:**
-ハイブリッド/マルチクラウド環境の普及に伴い、Microsoft Defender for Cloudが注目されています。これは、CSPM（クラウドセキュリティ態勢管理）とCWP（クラウドワークロード保護）の機能を持ち、各環境のセキュリティ対策を強化します。CSPMはセキュリティ態勢の可視化と管理を、CWPはワークロードの保護を担います。Defender for Cloudは、包括的なセキュリティソリューションを提供します。
+Microsoft 365 Copilot（有償版）の組織内活用は、利用規約の確認と、Microsoft Purviewコンプライアンス設定が重要です。データ保護、アクセス制御、プライバシー対策を講じ、情報漏洩リスクを最小限に抑えつつ、Copilotの生産性向上効果を最大化する必要があります。
 
 ---
