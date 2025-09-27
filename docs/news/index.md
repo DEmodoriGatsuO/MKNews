@@ -1,56 +1,56 @@
-# AI Tech Trends Digest (2025-09-26)
+# AI Tech Trends Digest (2025-09-27)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [AIと『対話しない』対話法、モノローグ法](https://qiita.com/makotosaekit/items/2e5c7d3b4504aeccf456)
-**Published:** 2025-09-25 19:15:57 UTC
-**Likes:** 22
-**Tags:** AI, プロンプト, ChatGPT, LLM, コンテキストエンジニアリング
+### [Awesome Gemini Roboticsを紹介：Gemini Robotics-ER 1.5のユースケース＆プロンプト集](https://qiita.com/7mpy/items/6200677472d65cefe54c)
+**Published:** 2025-09-26 15:59:40 UTC
+**Likes:** 6
+**Tags:** AI, robotics, Gemini, 生成AI, LLM
 
 **Digest:**
-プロンプトエンジニアリングの新手法、**Backstep Prompting**と**Scaffolding**を紹介。これらはLLMの精度向上に貢献するが、複雑さも課題。著者は、思考を言語化する「**モノローグ法**」を提案。AIを思考のパートナーとし、Iで始まる独り言形式で思考を深める。AIの控えめな応答は思考の触媒となり、無視する自由が**自己修正**を促す。
+Googleの**Gemini Robotics-ER 1.5**向けオープンソースギャラリー「Awesome Gemini Robotics」は、実践的なユースケースとコピペ可能なプロンプト集。**空間理解**、**長期タスク計画**、**ツール呼び出し**に長けたER 1.5を、最小コード（Python）で試せます。**MITライセンス**で、PRも歓迎。2025年9月25日に**Gemini API**でプレビュー公開。
 
 ---
 
-### [AIでLINEスタンプ風イラストを作成してみた！🍚](https://qiita.com/akutsu0402/items/35f29834230a64684ddb)
-**Published:** 2025-09-25 06:29:46 UTC
-**Likes:** 2
-**Tags:** AI, プロンプト, Gemini, 生成AI, AIエージェント
-
-**Digest:**
-GeminiとIllustratorを活用し、オリジナルキャラクター「ごはんちゃま」のLINEスタンプを制作。原画とプロンプトを用意し、Geminiで画像を生成、Illustratorで文字入れや装飾を施した。プロンプトではAIの役割を明確にし、制約条件や詳細設定で表現をコントロール。計16種類のスタンプを完成させ、AIによるキャラの具現化の楽しさを伝えている。
-
----
-
-### [【2025年最新】Gumloopとは？3時間で分かったAI自動化の衝撃と、正直すぎる使用感レビュー](https://qiita.com/k_nabe/items/7cdf3853ba59a2e16e72)
-**Published:** 2025-09-26 01:52:48 UTC
+### [AIに110個のSQLテストを作らせたら地獄を見た話 〜Claudeとの問答で見えた真実〜](https://qiita.com/yo2158/items/e3782ead62c353b3f1a1)
+**Published:** 2025-09-27 04:37:17 UTC
 **Likes:** 1
-**Tags:** API, 業務自動化, プロンプトエンジニアリング, Claude, 実装事例
+**Tags:** 失敗談, 生成AI, Claude, ClaudeCode, GeminiCLI
 
 **Digest:**
-GumloopはAI中心の次世代自動化プラットフォームで、3時間でYouTube動画要約システムを構築可能。Instacart CEOが収益207%向上と絶賛。非エンジニアでもドラッグ&ドロップでAIワークフロー作成。AIによる判断・生成に特化し、GPT-4o等AI選択可。料金は月額$0から。コンテンツ制作、データ分析、マーケティングに強み。
+AI(ClaudeCode)に110のSQLテストケース作成を依頼も、40個目から品質崩壊。原因はコンテキスト圧縮による「疲労」で、憲法やロックシステムも無効。10個分割も失敗。AIの「できます」は30%品質、200ccコップに10L入れるようなものと認識。GeminiCLIでは成功も、モデルごとの相性がある。
 
 ---
 
-### [【検証】Chrome DevToolsのMCPをGeminiCLIで試す！E2Eテストへの可能性と課題](https://qiita.com/ho-rai/items/97b1141f378c63071268)
-**Published:** 2025-09-25 21:28:58 UTC
+### [LLMへのプロンプト例。SQLクエリ編](https://qiita.com/ken1math/items/e4cef540ab950163437e)
+**Published:** 2025-09-26 21:03:15 UTC
 **Likes:** 1
-**Tags:** Chrome, e2e, MCP, Gemini, GeminiCLI
+**Tags:** SQL, プロンプト, LLM
 
 **Digest:**
-Chrome DevToolsのMCPをGeminiCLIで試した結果、LLMによるブラウザ操作でE2Eテストの可能性を示唆。設定は容易だが、検索サジェストの誤動作、トークン消費の多さ、連続操作の不安定さが課題。無料枠ではレートリミットに達しやすく、プロセス残存への対処も必要。今後の改善でWebテスト手法の進化に期待。
+LLMにSQLクエリ作成を依頼したプロンプト例を公開。ストアドプロシージャ、テーブル値関数、スカラー値関数など、様々なSQLコード生成に成功。プロンプト次第で実用的なコードが得られ、修正も容易。一方で、LLM利用により「自分で書く力」の低下も懸念されるため、コード理解の重要性を強調しています。
 
 ---
 
-### [Agentspace を使用したエージェント開発](https://qiita.com/daisuke-yamamoto/items/5f15f11974d9b68715d6)
-**Published:** 2025-09-25 11:13:18 UTC
+### [OpenAI、ChatGPT Pulseを発表。朝刊を自動作成](https://qiita.com/brookszd129/items/f88e27dc0995b4b3dcd6)
+**Published:** 2025-09-26 16:02:17 UTC
 **Likes:** 1
-**Tags:** GoogleCloud, LLM, AIエージェント, agentspace, AgentEngine
+**Tags:** OpenAI, Gemini, ChatGPT
 
 **Digest:**
-Google Cloud の **Agentspace** はエージェント開発プラットフォームで、**Custom Agent**（Agent Engine）を登録し機能拡張できます。この記事では、Agentspace での Custom Agent 利用について解説。`config.json` を設定後、CLI で登録します。2025年7月31日に GA。Custom Agent により、特定タスクに対応するエージェントを迅速に提供できます。
+OpenAIが、ChatGPTの新たな能動的機能「ChatGPT Pulse」を発表。Proサブスクリプションユーザー向けに、毎日の予定やニュースなどパーソナライズされた更新情報を提供する。AIが過去のチャット履歴や接続アプリからデータを収集し、朝刊のように情報を提示。将来的には全ユーザーへの展開を目指す。プライバシーや計算能力の課題はあるものの、自律性の向上も視野に入れている。
+
+---
+
+### [続・「AIがルールを無視する」の正体](https://qiita.com/s-age/items/8c931ae8abfffb400e1b)
+**Published:** 2025-09-27 05:00:20 UTC
+**Likes:** 0
+**Tags:** AI, マルチエージェントシステム, LLM
+
+**Digest:**
+FizzBuzz実験の失敗原因はLLMのSpecificity Bias、つまり具体的な条件優先にあり、ルール順序で結果が変化。ルール上書きプロトコルを追加も、Geminiコマンド認識やサブエージェント起動問題が発生。API制限対策の逐次実行や単一セッション実行の失敗も。AIは推論エンジンであり、コンテキスト最小化によるFew-Shot Learning効果で精度向上。
 
 ---
 
@@ -63,96 +63,46 @@ Google Cloud の **Agentspace** はエージェント開発プラットフォー
 **Tags:** AI
 
 **Digest:**
-Googleは、現実世界への応用を目指し、マルチモーダル理解力を備えたGeminiロボティクスファミリーに続き、高度な思考力と自律タスク遂行能力を持つ2つの新モデルを発表。これらは、インテリジェントで汎用的なロボットの実現に向けた、エージェント体験を可能にする重要な一歩となるでしょう。
+Googleは、現実世界での応用を目指し、Geminiのマルチモーダルな理解力を発展させています。本日、高度な思考力で自律的にタスクをこなし、エージェント体験を提供する2つの新モデルを発表しました。これにより、インテリジェントで汎用的なロボットの実現へ大きく近づいています。
 
 ---
 
-### [DoWhile loops now supported in Amazon Bedrock Flows](https://aws.amazon.com/blogs/machine-learning/dowhile-loops-now-supported-in-amazon-bedrock-flows/)
+### [Building health care agents using Amazon Bedrock AgentCore](https://aws.amazon.com/blogs/machine-learning/building-health-care-agents-using-amazon-bedrock-agentcore/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-25 20:25:08 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Prompt Flows, Announcements
+**Published:** 2025-09-26 16:03:41 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Artificial Intelligence, AWS HealthLake, Technical How-to, AI/ML, Generative AI
 
 **Digest:**
-Amazon Bedrock FlowsにDoWhileループが導入され、繰り返し処理が可能に。Promptノード、Lambda、S3などと連携し、条件分岐による動的処理やコンテンツ洗練を実現。生成AIアプリ開発を簡素化し、再帰的な分析や多段階処理を可能に。APIやコンソールから利用でき、トレースによる可視化も。
+Amazon Bedrock AgentCoreを活用し、医療におけるAIエージェントの革新を紹介。 Innovaccerは、Amazon Bedrock AgentCore Gatewayを用いて、既存のAPIをHMCPツールに変換し、セキュリティとコンプライアンスを確保。患者の予防接種予約を自動化するなど、AIエージェントの導入で、医療機関の負担軽減と患者体験向上を目指します。
 
 ---
 
-### [How PropHero built an intelligent property investment advisor with continuous evaluation using Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/how-prophero-built-an-intelligent-property-investment-advisor-with-continuous-evaluation-using-amazon-bedrock/)
+### [Build multi-agent site reliability engineering assistants with Amazon Bedrock AgentCore](https://aws.amazon.com/blogs/machine-learning/build-multi-agent-site-reliability-engineering-assistants-with-amazon-bedrock-agentcore/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-25 19:25:23 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, Artificial Intelligence, Customer Solutions, Generative AI
+**Published:** 2025-09-26 15:58:34 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Bedrock Knowledge Bases, Amazon Machine Learning, Artificial Intelligence, Generative AI, Technical How-to
 
 **Digest:**
-PropHeroは、AWSの生成AIと多言語対応で、不動産投資アドバイスを提供するAIアシスタントを開発。Amazon BedrockのLLMを活用し、マルチエージェント構造で、質問応答や専門アドバイスを実現。継続的な評価システムで精度を向上させ、顧客エンゲージメントと運用効率を向上。スペイン語対応で市場拡大にも貢献しています。
+SREチームは、Amazon Bedrock AgentCoreとLangGraph、MCPを活用した多エージェントAIアシスタントを構築。Kubernetes、ログ、メトリクス、ランブックを連携し、自然言語での問い合わせに対応。インシデント対応を効率化し、原因特定や対策を支援。Amazon Bedrock AgentCore GatewayとMemory、Runtime、Observabilityなどの機能も活用し、本番環境へのデプロイを容易にしている。
 
 ---
 
-### [Accelerate benefits claims processing with Amazon Bedrock Data Automation](https://aws.amazon.com/blogs/machine-learning/accelerate-benefits-claims-processing-with-amazon-bedrock-data-automation/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-25 19:20:16 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Data Automation, Generative AI, Technical How-to
+### [Microsoft 365 Copilot の新機能 | 2025 年 8 月](https://blogs.windows.com/japan/2025/09/26/whats-new-in-microsoft-365-copilot-august-2025/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-09-26 07:16:55 UTC
+**Tags:** Copilot, What's new in Copilot
 
 **Digest:**
-benefits administrationにおける**クレーム処理**は、迅速な給付とコスト管理を両立させる重要業務。課題は、レガシーシステムや手作業による遅延、エラー、コスト増。Amazon Bedrock Data Automationを活用すると、**文書処理**の自動化、**AI**による不正検知が可能となり、効率化とコンプライアンス強化を実現。**AWS**基盤での構築例を紹介。
+2025年8月のMicrosoft 365 Copilot最新情報では、管理センターでCopilot Search利用状況の指標確認や、リスクの高いAI利用の特定が可能に。ユーザー向けには、SharePointエージェントへのCopilotアプリからのアクセス簡素化、Copilot ChatのGPT-5対応、画像推論・編集機能追加、Edge for Businessでの要約、Teamsでのカスタム辞書対応などが発表されました。
 
 ---
 
-### [CloudFormationを利用したSCPの作成と適用](https://blog.jbs.co.jp/entry/2025/09/26/131302)
+### [VSCodeとGitHub Copilotで始めるテストデータ・ファイルの自動生成](https://blog.jbs.co.jp/entry/2025/09/26/151049)
 **Source:** JBS Blog
-**Published:** 2025-09-26 04:13:02 UTC
-**Tags:** AWS, Organizations, CloudFormation, SCP
+**Published:** 2025-09-26 06:10:49 UTC
+**Tags:** VS Code, Copilot, GitHub, GitHub Copilot
 
 **Digest:**
-AWSで複数のアカウントやOUに一括でサービスコントロールポリシー（SCP）を適用したい場合、CloudFormationが役立ちます。本記事では、CloudFormationテンプレートを用いたSCP付与の方法を紹介し、公式ドキュメントや実践的なスタック作成手順、適用確認までを解説します。異なる組織へのSCP適用にも応用可能です。
-
----
-
-### [【Microsoft Purview】インサイダーリスク管理：分析レポートの利用に必要な権限](https://blog.jbs.co.jp/entry/2025/09/26/115955)
-**Source:** JBS Blog
-**Published:** 2025-09-26 02:59:55 UTC
-**Tags:** Microsoft Purview, セキュリティ
-
-**Digest:**
-Microsoft Purviewのインサイダーリスク管理機能は、組織全体のデータガバナンスを強化します。分析レポートの権限設定を詳細に解説し、リスクの可視化を支援。これにより、Microsoft Purviewは、データ管理におけるリスクを軽減し、組織のデータ保護を促進します。
-
----
-
-### [Azureテナント間の仮想ネットワークのリンク追加方法](https://blog.jbs.co.jp/entry/2025/09/26/104516)
-**Source:** JBS Blog
-**Published:** 2025-09-26 01:45:16 UTC
-**Tags:** Azure, プライベートDNSゾーン
-
-**Digest:**
-本記事では、異なるテナント間の仮想ネットワークリンク追加手順を解説。AzureプライベートDNSゾーンと仮想ネットワークをリンクすることで、仮想マシンがプライベートDNSゾーンにアクセス可能に。具体的には、仮想ネットワークのリソースID取得とリンク追加方法を紹介。前提として、プライベートDNSゾーンと仮想ネットワークは異なるテナントに存在します。
-
----
-
-### [【Copilot / Power Platform】ローコードでドキュメント翻訳を実装する方法と精度](https://blog.jbs.co.jp/entry/2025/09/26/090953)
-**Source:** JBS Blog
-**Published:** 2025-09-26 00:09:53 UTC
-**Tags:** Copilot for Microsoft 365, Copilot, Azure AI Translator
-
-**Digest:**
-PowerPointやWord文書をローコードで翻訳する方法を解説。翻訳精度と実装の難易度を比較検討し、最適なアプローチを探ります。ローコードを活用することで、効率的な翻訳ワークフローを構築し、翻訳コスト削減も目指せるかもしれません。
-
----
-
-### [【Microsoft Fabric】REST APIを使ったレポートのリバインド](https://blog.jbs.co.jp/entry/2025/09/25/153026)
-**Source:** JBS Blog
-**Published:** 2025-09-25 06:30:26 UTC
-**Tags:** Microsoft Fabric
-
-**Digest:**
-Microsoft Fabricは、データ分析に必要な機能を統合したSaaS型プラットフォームです。レポートをセマンティックモデル間で切り替える際、リバインド操作で再作成の手間を省けます。今回は、REST APIを用いて、ImportモードからDirectLakeモードへのセマンティックモデルのリバインド方法を紹介します。
-
----
-
-### [SharePoint サイトの Out-of-box のエージェントがナレッジエージェントに](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/09/sharepoint-out--926f.html)
-**Source:** SharePoint Technical Notes
-**Published:** 2025-09-25 06:58:31 UTC
-**Tags:** Microsoft 365, Microsoft 365 - SharePoint, Microsoft 365 Copilot
-
-**Digest:**
-Microsoft 365 Copilotの有償版ユーザーは、Officeアプリ内で**Copilot**を直接呼び出して利用できる**機能**が提供されています。これにより、**Word**での文章作成、**Excel**でのデータ分析、**PowerPoint**でのプレゼン資料作成などが格段に効率化されます。**Teams**との連携も強化され、会議の議事録作成もスムーズに行えます。
+ソフトウェア開発の品質確保にはテストが不可欠。特に、テストデータ準備に多くの時間と手間がかかっている。巨大ファイル（199MBや200MB）、10万文字以上のテキストファイル、2000ページ以上のPDFファイルなど、手作業での作成は大変。閾値テストや、長文テキスト、大量ドキュメント処理性能の検証で必要となる、こうした面倒なテストデータ作成が課題。
 
 ---
