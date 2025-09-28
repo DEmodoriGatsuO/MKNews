@@ -1,108 +1,55 @@
-# AI Tech Trends Digest (2025-09-27)
+# AI Tech Trends Digest (2025-09-28)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Awesome Gemini Roboticsを紹介：Gemini Robotics-ER 1.5のユースケース＆プロンプト集](https://qiita.com/7mpy/items/6200677472d65cefe54c)
-**Published:** 2025-09-26 15:59:40 UTC
-**Likes:** 6
-**Tags:** AI, robotics, Gemini, 生成AI, LLM
-
-**Digest:**
-Googleの**Gemini Robotics-ER 1.5**向けオープンソースギャラリー「Awesome Gemini Robotics」は、実践的なユースケースとコピペ可能なプロンプト集。**空間理解**、**長期タスク計画**、**ツール呼び出し**に長けたER 1.5を、最小コード（Python）で試せます。**MITライセンス**で、PRも歓迎。2025年9月25日に**Gemini API**でプレビュー公開。
-
----
-
-### [AIに110個のSQLテストを作らせたら地獄を見た話 〜Claudeとの問答で見えた真実〜](https://qiita.com/yo2158/items/e3782ead62c353b3f1a1)
-**Published:** 2025-09-27 04:37:17 UTC
+### [RAG精度改善を解説する本を出版しました](https://qiita.com/xxyc/items/3d9bac8b9da2ebf92f03)
+**Published:** 2025-09-28 03:26:00 UTC
 **Likes:** 1
-**Tags:** 失敗談, 生成AI, Claude, ClaudeCode, GeminiCLI
+**Tags:** rag, ChatGPT, LLM, AIAgent, RAG精度向上
 
 **Digest:**
-AI(ClaudeCode)に110のSQLテストケース作成を依頼も、40個目から品質崩壊。原因はコンテキスト圧縮による「疲労」で、憲法やロックシステムも無効。10個分割も失敗。AIの「できます」は30%品質、200ccコップに10L入れるようなものと認識。GeminiCLIでは成功も、モデルごとの相性がある。
+AmazonでRAG（Retrieval-Augmented Generation）精度改善に関する書籍を出版しました。RAGの基本から評価方法、実践的な改善策まで、実務に役立つ内容です。前処理、検索精度、生成精度の向上を三つの章で解説。論文やオープンソースを基に、著者の実践経験に基づいた「本当に使える」手法を紹介しています。Kindle Unlimited会員は無料で読めます。
 
 ---
 
-### [LLMへのプロンプト例。SQLクエリ編](https://qiita.com/ken1math/items/e4cef540ab950163437e)
-**Published:** 2025-09-26 21:03:15 UTC
+### [期間限定プログラムGoogle Cloud GenAI Skillup Japanのすゝめ](https://qiita.com/kanata564/items/363c9b6dddff543f9da0)
+**Published:** 2025-09-28 03:21:37 UTC
 **Likes:** 1
-**Tags:** SQL, プロンプト, LLM
+**Tags:** 初心者, 資格勉強, Gemini, GoogleCloud, 生成AI
 
 **Digest:**
-LLMにSQLクエリ作成を依頼したプロンプト例を公開。ストアドプロシージャ、テーブル値関数、スカラー値関数など、様々なSQLコード生成に成功。プロンプト次第で実用的なコードが得られ、修正も容易。一方で、LLM利用により「自分で書く力」の低下も懸念されるため、コード理解の重要性を強調しています。
+「Google Cloud GenAI Skillup Japan」は、生成AIスキルを無料で学べるプログラムです。2025年8月28日～11月14日にかけて、Google Cloud Skills Boostを利用し、生成AIの知識や200クレジット、Generative AI Leader認定資格無料バウチャー（先着500名）、特製グッズ獲得のチャンスがあります。5コース、プログラミング不要でRAGやVertex AIも学習。キックオフ動画参照や、コース資料翻訳に注意が必要です。
 
 ---
 
-### [OpenAI、ChatGPT Pulseを発表。朝刊を自動作成](https://qiita.com/brookszd129/items/f88e27dc0995b4b3dcd6)
-**Published:** 2025-09-26 16:02:17 UTC
+### [Claude Codeのポストモーテム](https://qiita.com/Shisa_07/items/aa43981323e755f62a7e)
+**Published:** 2025-09-28 02:51:16 UTC
 **Likes:** 1
-**Tags:** OpenAI, Gemini, ChatGPT
+**Tags:** LLM, ClaudeCode
 
 **Digest:**
-OpenAIが、ChatGPTの新たな能動的機能「ChatGPT Pulse」を発表。Proサブスクリプションユーザー向けに、毎日の予定やニュースなどパーソナライズされた更新情報を提供する。AIが過去のチャット履歴や接続アプリからデータを収集し、朝刊のように情報を提示。将来的には全ユーザーへの展開を目指す。プライバシーや計算能力の課題はあるものの、自律性の向上も視野に入れている。
+AnthropicのClaudeで8〜9月上旬に発生した応答品質低下の原因を分析。コンテキストウィンドウのルーティングエラー、出力データ破損、TPUコンパイラのバグが判明。**XLAコンパイラ**の近似top-k演算バグが原因の一つ。影響範囲は限定的。対応として、ルーティング修正、ロールバック、XLAチームとの連携を実施。評価システム、プライバシー保護が検出遅れの一因。今後は評価強化、デバッグ環境整備で改善。ユーザーからのフィードバックを求めている。
 
 ---
 
-### [続・「AIがルールを無視する」の正体](https://qiita.com/s-age/items/8c931ae8abfffb400e1b)
-**Published:** 2025-09-27 05:00:20 UTC
-**Likes:** 0
-**Tags:** AI, マルチエージェントシステム, LLM
+### [中国の生成AI規制体系：技術的・法的分析レポート](https://qiita.com/n_hiraoka/items/5ad305727e0e6bf3276f)
+**Published:** 2025-09-28 00:36:18 UTC
+**Likes:** 1
+**Tags:** AI, CHINA, datasecurity, regulation, GenerativeAI
 
 **Digest:**
-FizzBuzz実験の失敗原因はLLMのSpecificity Bias、つまり具体的な条件優先にあり、ルール順序で結果が変化。ルール上書きプロトコルを追加も、Geminiコマンド認識やサブエージェント起動問題が発生。API制限対策の逐次実行や単一セッション実行の失敗も。AIは推論エンジンであり、コンテキスト最小化によるFew-Shot Learning効果で精度向上。
+中国の生成AI規制は2023年8月より運用開始、西側と異なり、イデオロギー統制を重視。社会主義核心価値観に沿った出力を義務付け、346サービスが政府監督下に。アルゴリズム届出制度による全面監視体制とデータ越境規制も実施。国際企業は、中国市場参入に際し、これらの技術的・法的要件への対応が必須となる。
 
 ---
 
-## Latest News from RSS Feeds
-
-
-### [Gemini Robotics 1.5 を発表、AI エージェントを物理世界に](https://blog.google/intl/ja-jp/company-news/technology/gemini-robotics-15-ai/)
-**Source:** Google Japan Blog
-**Published:** 2025-09-26 09:55:00 UTC
-**Tags:** AI
+### [MCPの活用や応用への考察 - AIとMCP：高品質な学習データ生成とモデル改善への活用](https://qiita.com/555hamano/items/ac171a99c5cbc4bed606)
+**Published:** 2025-09-27 16:53:14 UTC
+**Likes:** 1
+**Tags:** API, Security, LLM, AIエージェント, ModelContextProtocol
 
 **Digest:**
-Googleは、現実世界での応用を目指し、Geminiのマルチモーダルな理解力を発展させています。本日、高度な思考力で自律的にタスクをこなし、エージェント体験を提供する2つの新モデルを発表しました。これにより、インテリジェントで汎用的なロボットの実現へ大きく近づいています。
-
----
-
-### [Building health care agents using Amazon Bedrock AgentCore](https://aws.amazon.com/blogs/machine-learning/building-health-care-agents-using-amazon-bedrock-agentcore/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-26 16:03:41 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Artificial Intelligence, AWS HealthLake, Technical How-to, AI/ML, Generative AI
-
-**Digest:**
-Amazon Bedrock AgentCoreを活用し、医療におけるAIエージェントの革新を紹介。 Innovaccerは、Amazon Bedrock AgentCore Gatewayを用いて、既存のAPIをHMCPツールに変換し、セキュリティとコンプライアンスを確保。患者の予防接種予約を自動化するなど、AIエージェントの導入で、医療機関の負担軽減と患者体験向上を目指します。
-
----
-
-### [Build multi-agent site reliability engineering assistants with Amazon Bedrock AgentCore](https://aws.amazon.com/blogs/machine-learning/build-multi-agent-site-reliability-engineering-assistants-with-amazon-bedrock-agentcore/)
-**Source:** AWS ML Blog
-**Published:** 2025-09-26 15:58:34 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Bedrock Knowledge Bases, Amazon Machine Learning, Artificial Intelligence, Generative AI, Technical How-to
-
-**Digest:**
-SREチームは、Amazon Bedrock AgentCoreとLangGraph、MCPを活用した多エージェントAIアシスタントを構築。Kubernetes、ログ、メトリクス、ランブックを連携し、自然言語での問い合わせに対応。インシデント対応を効率化し、原因特定や対策を支援。Amazon Bedrock AgentCore GatewayとMemory、Runtime、Observabilityなどの機能も活用し、本番環境へのデプロイを容易にしている。
-
----
-
-### [Microsoft 365 Copilot の新機能 | 2025 年 8 月](https://blogs.windows.com/japan/2025/09/26/whats-new-in-microsoft-365-copilot-august-2025/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-09-26 07:16:55 UTC
-**Tags:** Copilot, What's new in Copilot
-
-**Digest:**
-2025年8月のMicrosoft 365 Copilot最新情報では、管理センターでCopilot Search利用状況の指標確認や、リスクの高いAI利用の特定が可能に。ユーザー向けには、SharePointエージェントへのCopilotアプリからのアクセス簡素化、Copilot ChatのGPT-5対応、画像推論・編集機能追加、Edge for Businessでの要約、Teamsでのカスタム辞書対応などが発表されました。
-
----
-
-### [VSCodeとGitHub Copilotで始めるテストデータ・ファイルの自動生成](https://blog.jbs.co.jp/entry/2025/09/26/151049)
-**Source:** JBS Blog
-**Published:** 2025-09-26 06:10:49 UTC
-**Tags:** VS Code, Copilot, GitHub, GitHub Copilot
-
-**Digest:**
-ソフトウェア開発の品質確保にはテストが不可欠。特に、テストデータ準備に多くの時間と手間がかかっている。巨大ファイル（199MBや200MB）、10万文字以上のテキストファイル、2000ページ以上のPDFファイルなど、手作業での作成は大変。閾値テストや、長文テキスト、大量ドキュメント処理性能の検証で必要となる、こうした面倒なテストデータ作成が課題。
+Model Context Protocol (MCP) は、AIと外部データソース間の標準化された相互作用により、高品質で構造化されたデータを生成します。従来のWebデータと異なり、AIの動作パターンを記録し、実用的なコンテキスト情報も付与。プロンプトエンジニアリング自動化やRAGシステム高度化に貢献し、自己改善型のデータセットを構築。プライバシー保護とスケーラビリティも考慮し、様々なAIモデル開発に活用可能です。
 
 ---
