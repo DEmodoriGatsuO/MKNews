@@ -1,118 +1,147 @@
-# AI Tech Trends Digest (2025-10-01)
+# AI Tech Trends Digest (2025-10-02)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [バックエンドエンジニアがReactでVibe Codingしてみた](https://qiita.com/shin-gee/items/3aafe4f007c639ee3a34)
-**Published:** 2025-09-30 08:53:27 UTC
+### [【招待コードあり】Veo3超え？！Sora2使ってみた！無料で使える！次世代AI動画生成の未来](https://qiita.com/nanato12/items/d199738dde6ae616ed1c)
+**Published:** 2025-10-01 21:43:14 UTC
+**Likes:** 30
+**Tags:** AI, OpenAI, 生成AI, ChatGPT, Sora2
+
+**Digest:**
+OpenAIの動画生成AI「Sora 2」が登場。リアルな映像表現が特徴で、現在は完全招待制で利用可能。GoogleのVeo 3と比較し、Sora 2は物理法則も再現する。無料で使えるが、招待コードが必要。招待された人は次の招待コードを共有する形で、みんなで利用を広げよう。著作権などの法的リスクに注意が必要。
+
+---
+
+### [【映画製作】Sora2で10秒以上の動画を作成する方法【無限Sora編】](https://qiita.com/7mpy/items/779d0b6bec99bc6bc281)
+**Published:** 2025-10-01 11:44:31 UTC
+**Likes:** 7
+**Tags:** AI, OpenAI, 生成AI, ChatGPT, Sora2
+
+**Digest:**
+「百聞は一見に如かず」というテーマで、婚活パーティーの様子を映したYouTube動画3本が紹介されています。これらの動画では、婚活パーティーへの参加や、そこで出会った相手とのカフェ、映画鑑賞の様子が記録されています。記事では、Remix機能を使った動画作成手順や、動画結合ツールについても触れられており、Windowsでのffmpegコマンド例も提示されています。
+
+---
+
+### [Sora 2によって失われる職業ランキング](https://qiita.com/7mpy/items/10768c5c719d7af8a490)
+**Published:** 2025-10-01 23:15:13 UTC
+**Likes:** 5
+**Tags:** AI, OpenAI, 生成AI, ChatGPT, Sora2
+
+**Digest:**
+2025年10月2日版、生成AI動画が仕事に与える影響を実務目線で解説。OpenAIのSora 2登場で動画と音声の同時自動化が進み、ストック系カメラマン、声優、俳優などが置換の対象に。一方、契約・権利、一次性、専門性が残る価値となり、AI時代には「AI込みの制作パイプライン」を設計・監督できる人材が求められる。
+
+---
+
+### [claude code と codex (GPT-5 high)は結局両方必要という結論](https://qiita.com/peka2/items/02749f8e77f065341920)
+**Published:** 2025-10-01 13:23:59 UTC
 **Likes:** 2
-**Tags:** React, cursor, Gemini, Vercel, VibeCoding
+**Tags:** codex, GPT-5, Claude, ClaudeCode, CodexCLI
 
 **Digest:**
-5年目のエンジニアが、AIのAgentモードでVibe Codingに挑戦。Geminiと壁打ちし、サンリオキャラクター大賞分析サイトをReact、SPAで開発。Cursor Proでコーディングし、Vercelで公開。JSONデータ管理や、ランキング推移分析など、AIの提案を活用し2日で完成。GitHubリポジトリとPC推奨の分析サイトはこちらです。
+結論、最高の使い方は、まずCodexで現状のコードを把握し、計画を立てます。次に、その計画をClaude Codeに渡し実装させます。Claude Codeは素直にコードを書き、Codexは複雑なロジックやコードリーディングに強いため、両者の長所を活かした方法です。これにより、安定して高品質な作業を進められます。
 
 ---
 
-### [ナレッジグラフの設計で仕様書記述の落とし穴を回避](https://qiita.com/s-age/items/13e2c5d52cf08146b566)
-**Published:** 2025-09-30 22:38:10 UTC
-**Likes:** 1
-**Tags:** AI, ナレッジグラフ, LLM
+### [Claude Codeでスクラッチから開発する実践ガイド](https://qiita.com/kiyotaman/items/1646c6b764f030d08238)
+**Published:** 2025-10-01 08:13:22 UTC
+**Likes:** 2
+**Tags:** GitHub, Claude, AIエージェント, ClaudeCode
 
 **Digest:**
-仕様書における「〜すること」形式の統一は、LLMやナレッジグラフの誤分類を招き、システムの信頼性を損なう。解決策として、助動詞「すべき」「してはならない」でエッジの極性を明確化し、`<ol>`ではなく`<ul>`を使用することで、誤った関連付けを防ぐ。これによりコード生成エラーや誤推論を低減し、API設計やデータベース設計にも応用可能。
-
----
-
-### [Imagine with Claudeが示すバイブコーディングの未来](https://qiita.com/takaaki_yayoi/items/55b56923b109e854b595)
-**Published:** 2025-09-30 22:25:52 UTC
-**Likes:** 1
-**Tags:** Anthropic, Claude, バイブコーディング
-
-**Digest:**
-Anthropicの最新モデル、Claude Sonnet 4.5発表に合わせ、リサーチプレビュー機能「Imagine with Claude」がMaxユーザー向けに期間限定公開。リアルタイムでソフトウェアを生成し、指示に応じて適応します。筆者は「江戸時代のメールクライアント」を試用し、その可能性に興奮。将来的にはプロンプトでアプリ作成が可能となり、業務効率化に繋がる未来を期待しています。
-
----
-
-### [Claude Code Actionで設計書更新を楽にしたい PR作成時にレビュー + ドキュメント修正を任せる仕組みを構築](https://qiita.com/eno49conan/items/448a48c6fb014e9f586f)
-**Published:** 2025-09-30 22:18:39 UTC
-**Likes:** 1
-**Tags:** 設計, Flutter, GitHubActions, Claude, ClaudeCode
-
-**Digest:**
-設計書と実装の不一致を、生成AI「Claude」で解決する試み。PR時にClaudeがコードレビューと設計書修正を自動化。Flutterプロジェクトで、コードからMarkdown形式の設計書を生成し、GitHub ActionsとGitHub Appsを利用。プロンプトの工夫で設計書の質向上を目指し、今後は他リポジトリ参照やBot連携も視野に、開発効率化を探求。
-
----
-
-### [Amazon Bedrock でも Claude Sonnet 4.5 が利用可能になったとのことなのでぼんやり比較してみた](https://qiita.com/leomarokun/items/c887dc69b03a79200557)
-**Published:** 2025-09-30 11:50:55 UTC
-**Likes:** 1
-**Tags:** AWS, AI, bedrock, 生成AI, Claude
-
-**Digest:**
-Amazon Bedrock で Anthropic の **Claude Sonnet 4.5** が利用可能に。Claude Opus 4.1 を上回る性能も。日本リージョン向け **JP Anthropic Claude Sonnet 4.5** が登場し、会話のスマート化、ツール使用効率化、会話間メモリなどの機能が追加。料金体系はトークン数で変動し、**Global Cross-region**より割高な場合も。実際に Bedrock API を使い、以前のモデルと比較した結果も掲載。
+Claude Codeを活用した**スクラッチ開発**の効率化について解説。要件定義からテストまで、**各フェーズ**でClaude Codeを使い、**Issue Templates**で開発を支援。**ai_docs/**構築による段階的な成長を促し、**プロトタイプから本番**までの一貫したワークフローを提示。**設計**、**プロトタイピング**、**テスト**での注意点と対策も詳述。新規プロジェクトやアイデアを形にしたい方におすすめです。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Gboard チームからの新しいキーボードのご提案 2025](https://blog.google/intl/ja-jp/products/android-chrome-play/gboard-2025/)
+### [Gemini のために生まれ変わった Google Home アプリが登場](https://blog.google/intl/ja-jp/products/devices-services/google-home-app-gemini-redesign/)
 **Source:** Google Japan Blog
-**Published:** 2025-10-01 10:01:00 UTC
-**Tags:** Android
+**Published:** 2025-10-01 22:00:00 UTC
+**Tags:** Google Nest
 
 **Digest:**
-GoogleのGboardチームが、第14世代の新提案を発表。洗練されたデザインと最新UI、スムーズな文字入力、そして斬新なアイデアが特徴です。より使いやすく進化したGboardに期待が高まります。
+Googleは、Gemini対応を見据え、Google Homeアプリを簡素化しました。これにより、ユーザーインターフェースが改善され、操作性が向上する見込みです。より洗練されたデザインで、スマートホームデバイスの管理が更に快適になるでしょう。
 
 ---
 
-### [Modernize fraud prevention: GraphStorm v0.5 for real-time inference](https://aws.amazon.com/blogs/machine-learning/modernize-fraud-prevention-graphstorm-v0-5-for-real-time-inference/)
+### [Gemini 向けに設計した、最新の Google Home デバイスが新登場](https://blog.google/intl/ja-jp/products/devices-services/new-nest-cams-home-speaker/)
+**Source:** Google Japan Blog
+**Published:** 2025-10-01 22:00:00 UTC
+**Tags:** Google Nest
+
+**Digest:**
+Googleは、AI「Gemini」を搭載した最新のNest Camと、2026年春発売予定のGoogle Homeスピーカーを発表しました。スマートホーム体験を向上させるこれらの新製品は、より高度な機能と、ユーザーフレンドリーな操作性を提供する予定です。
+
+---
+
+### [How Hapag-Lloyd improved schedule reliability with ML-powered vessel schedule predictions using Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/how-hapag-lloyd-improved-schedule-reliability-with-ml-powered-vessel-schedule-predictions-using-amazon-sagemaker/)
 **Source:** AWS ML Blog
-**Published:** 2025-09-30 20:29:46 UTC
-**Tags:** Advanced (300), Amazon Neptune, Amazon SageMaker AI, Expert (400), Financial Services, Technical How-to
+**Published:** 2025-10-01 18:19:37 UTC
+**Tags:** Amazon Machine Learning, Amazon SageMaker, Amazon SageMaker AI, Artificial Intelligence, AWS Glue, Customer Solutions, Technical How-to, AI/ML
 
 **Digest:**
-2024年、米国の消費者詐欺被害は25%増の125億ドルに。GraphStorm v0.5で、GNNを用いたリアルタイム不正検知を実現。GraphStormは、複雑化する詐欺に対応するため、関係性を分析。データセットをNeptuneに読み込み、GNNを訓練し、SageMaker AIでリアルタイムエンドポイントをデプロイ。シンプルなコマンドで、運用効率の良いGNNソリューション構築が可能。
+世界的大手海運会社Hapag-Lloydは、Amazon SageMakerを活用し、機械学習(ML)による到着・出発時間予測アシスタントを開発。これにより、スケジュール信頼性の向上を実現。複数モデルを連携させ、データ連携やMLOpsを強化。リアルタイムAPIとバッチ処理を組み合わせ、精度向上と応答速度80%以上改善。スケジュール信頼性ランキングも向上しました。
 
 ---
 
-### [【Microsoft Graph PowerShell SDK】Entra IDユーザー作成からグループ割当を自動化](https://blog.jbs.co.jp/entry/2025/10/01/142209)
-**Source:** JBS Blog
-**Published:** 2025-10-01 05:22:09 UTC
-**Tags:** Microsoft Graph, Microsoft EntraID, PowerShell
+### [Rox accelerates sales productivity with AI agents powered by Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/rox-accelerates-sales-productivity-with-ai-agents-powered-by-amazon-bedrock/)
+**Source:** AWS ML Blog
+**Published:** 2025-10-01 18:13:41 UTC
+**Tags:** Amazon Bedrock, Amazon Machine Learning, Customer Solutions
 
 **Digest:**
-Entra IDの効率的な運用には、大量のユーザー作成とグループ管理が重要です。この記事では、Microsoft Graph PowerShell SDKを用いて、CSVファイルからEntra IDユーザーを任意のグループに一括作成する方法を紹介します。Graphモジュールを導入し、ユーザーとグループを作成、そしてユーザーをグループに追加する手順を解説しています。
+Roxは、AIを活用した新しい収益オペレーティングシステムで、Amazon Bedrockと連携し、CRMやマーケティングデータを統合。営業チーム向けに、リアルタイムの情報と自動化を提供します。一般提供が開始され、AWS上で稼働、Web、Slack、iOS、macOSに対応。 AnthropicのClaude Sonnet 4を活用し、営業担当者の生産性向上や売上増加に貢献します。
 
 ---
 
-### [Power BIで自動フラグ立てを設定する](https://blog.jbs.co.jp/entry/2025/10/01/105035)
-**Source:** JBS Blog
-**Published:** 2025-10-01 01:50:35 UTC
-**Tags:** Power BI Desktop, Power BI, Power Platform, 初心者向け
+### [From sketches to prototype: Designing with generative AI](https://blog.google/technology/google-deepmind/ross-lovegrove-design/)
+**Source:** Google DeepMind
+**Published:** 2025-10-01 16:00:00 UTC
+**Tags:** Google DeepMind, AI
 
 **Digest:**
-Power BIでデータ分析効率UP！ 複数のクエリで取得したデータの完全一致に基づき、自動フラグを立てる方法を解説します。Power BIの機能を活用し、データの整合性を保ちながら、分析作業を大幅に効率化する具体的な手順をご紹介します。
+Google DeepMind が、デザイナーのロス・ラヴグローヴとデザインオフィス Modem と共同でプロジェクトを進めました。彼らの協力により、革新的なデザインや技術的な取り組みが実現した可能性があります。今後の展開に注目が集まっています。
 
 ---
 
-### [GitHub Copilot AgentモードでWebアプリケーションのリファクタリングを自動実践](https://blog.jbs.co.jp/entry/2025/10/01/092223)
-**Source:** JBS Blog
-**Published:** 2025-10-01 00:22:23 UTC
-**Tags:** VS Code, Copilot, GitHub, GitHub Copilot
+### [【法人・教育機関向け】Surface 在庫一掃キャンペーン](https://blogs.windows.com/japan/2025/10/02/surface-stock-clearance-campaign-2/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-10-02 02:37:17 UTC
+**Tags:** Surface
 
 **Digest:**
-GitHub Copilotが進化し、VS Code 1.101でAgentモードが大幅強化。複数ファイル編集やリファクタリングを自動化し、開発効率を向上させます。プロジェクト全体を俯瞰し、保守しやすいコード構造を目指す革新的な機能で、開発現場に新たな風を吹き込みます。
+法人・教育機関向けSurfaceの在庫一掃キャンペーン実施中。場所を選ばず業務を効率化できるSurface Pro 10やLaptop 6など、**AI**対応の**2 in 1 PC**やノートPCがお得な価格で提供。**NPU**搭載でパフォーマンス向上、**ハイブリッドワーク**を支援。2025年10月～12月納品分が対象。詳細は**Surface**認定リセラーへ。
 
 ---
 
-### [オンプレミスExchangeとExchange Onlineの違い](https://blog.jbs.co.jp/entry/2025/09/30/170410)
-**Source:** JBS Blog
-**Published:** 2025-09-30 08:04:10 UTC
-**Tags:** Microsoft 365, Active Directory, Exchange, Exchange Online
+### [未来を強化する: Copilot+ PC 用 Arm アプリのエコシステムを拡大](https://blogs.windows.com/japan/2025/10/02/empowering-the-future-the-expanding-arm-app-ecosystem-for-copilot-pcs/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-10-02 00:36:53 UTC
+**Tags:** Surface, Windows 11
 
 **Digest:**
-Exchangeの利用で、オンプレミス版とExchange Online（クラウド）のどちらを選ぶか迷う場合、両者の違いを理解することが重要です。Exchange Onlineは手軽に利用開始できますが、容量や機能に制限があります。一方、オンプレミス版は自由度が高いですが、初期設定や運用に手間がかかります。
+Microsoftは、Copilot+ PC向けにArmアプリのエコシステムを拡大。セキュリティ、VPN、管理、生産性、クリエイティブ、SNSなど多岐にわたるアプリが利用可能に。Armネイティブアプリは高いパフォーマンスを発揮し、AI処理能力も向上。Windows 10サポート終了に向け、Arm Advisory Serviceが移行を支援。詳細なリストは、www.worksonwoa.comで公開されています。
+
+---
+
+### [CData Syncの特徴と導入方法](https://blog.jbs.co.jp/entry/2025/10/02/125916)
+**Source:** JBS Blog
+**Published:** 2025-10-02 03:59:16 UTC
+**Tags:** ETL, CData, CData Sync, AWS, Snowflake
+
+**Digest:**
+JBSの稲留氏が、CData Syncを用いたニアリアルタイムデータ連携パイプラインを構築。インストール型導入の背景や構築方法を解説します。CData Syncは、多様なデータソース対応、ノーコード設定、サーバーライセンス、フルコントロールが特徴。EC2インスタンスにCData Syncを構築し、安定運用を実現しました。
+
+---
+
+### [RHEL 8からRHEL 9へのインプレースアップグレード（前編）](https://blog.jbs.co.jp/entry/2025/10/02/084335)
+**Source:** JBS Blog
+**Published:** 2025-10-01 23:43:35 UTC
+
+**Digest:**
+Red Hat Enterprise Linux (RHEL) のインプレースアップグレード、今回はRHEL 8から9への移行を取り上げます。 前編では、アップグレード前の重要な確認事項を解説。 具体的には、システム要件、アップグレードパス、バックアップ取得、サブスクリプションとリポジトリの確認など、事前の準備について説明します。
 
 ---
