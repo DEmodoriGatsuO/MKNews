@@ -1,147 +1,128 @@
-# AI Tech Trends Digest (2025-10-02)
+# AI Tech Trends Digest (2025-10-03)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [【招待コードあり】Veo3超え？！Sora2使ってみた！無料で使える！次世代AI動画生成の未来](https://qiita.com/nanato12/items/d199738dde6ae616ed1c)
-**Published:** 2025-10-01 21:43:14 UTC
-**Likes:** 30
-**Tags:** AI, OpenAI, 生成AI, ChatGPT, Sora2
+### [Sora2完全解説 - 動画生成AI最前線](https://qiita.com/GeneLab_999/items/fd1c23c249a2b790ddfc)
+**Published:** 2025-10-02 23:59:13 UTC
+**Likes:** 1
+**Tags:** AI, OpenAI, sora, Sora2
 
 **Digest:**
-OpenAIの動画生成AI「Sora 2」が登場。リアルな映像表現が特徴で、現在は完全招待制で利用可能。GoogleのVeo 3と比較し、Sora 2は物理法則も再現する。無料で使えるが、招待コードが必要。招待された人は次の招待コードを共有する形で、みんなで利用を広げよう。著作権などの法的リスクに注意が必要。
+OpenAIの動画生成AI「Sora2」は、2025年9月発表の次世代モデル。最大20秒の動画を生成し、音声同期や物理法則の再現性を向上。**カメオ機能**で自身を登場させ、HD画質出力も可能。ChatGPT Pro契約で利用でき、**C2PAメタデータ**でAI生成を証明。米国とカナダで招待制、日本での提供は未定。課題は動画時間の制限、複雑な物理現象再現、著作権とプライバシーリスク。
 
 ---
 
-### [【映画製作】Sora2で10秒以上の動画を作成する方法【無限Sora編】](https://qiita.com/7mpy/items/779d0b6bec99bc6bc281)
-**Published:** 2025-10-01 11:44:31 UTC
-**Likes:** 7
-**Tags:** AI, OpenAI, 生成AI, ChatGPT, Sora2
+### [OpenHands でエージェント AI を体験](https://qiita.com/yutowac/items/d243cccf6e5b246a2307)
+**Published:** 2025-10-02 14:11:22 UTC
+**Likes:** 1
+**Tags:** GitHub, AI, アプリ開発, Devin, LLM
 
 **Digest:**
-「百聞は一見に如かず」というテーマで、婚活パーティーの様子を映したYouTube動画3本が紹介されています。これらの動画では、婚活パーティーへの参加や、そこで出会った相手とのカフェ、映画鑑賞の様子が記録されています。記事では、Remix機能を使った動画作成手順や、動画結合ツールについても触れられており、Windowsでのffmpegコマンド例も提示されています。
+LLMベースのOSSフレームワーク「OpenHands」を紹介。モジュール単位で機能拡張可能で、天気API連携エージェントAIを15分で構築。OpenWeatherMap APIと自作モジュールで、都市の天気とおすすめアクティビティを提案。UI化、Memory、複数ツール連携も可能で、自由にカスタマイズできます。
 
 ---
 
-### [Sora 2によって失われる職業ランキング](https://qiita.com/7mpy/items/10768c5c719d7af8a490)
-**Published:** 2025-10-01 23:15:13 UTC
-**Likes:** 5
-**Tags:** AI, OpenAI, 生成AI, ChatGPT, Sora2
+### [SMSを送信する！？AIエージェントを構築するハンズオンに参加した話](https://qiita.com/aaaaa_326/items/b4da14c0aba66fc9c790)
+**Published:** 2025-10-03 04:20:18 UTC
+**Likes:** 0
+**Tags:** AI, Vonage, Claude, AIエージェント
 
 **Digest:**
-2025年10月2日版、生成AI動画が仕事に与える影響を実務目線で解説。OpenAIのSora 2登場で動画と音声の同時自動化が進み、ストック系カメラマン、声優、俳優などが置換の対象に。一方、契約・権利、一次性、専門性が残る価値となり、AI時代には「AI込みの制作パイプライン」を設計・監督できる人材が求められる。
+AIエージェントを活用したハンズオンイベントに参加し、Vonage MCPサーバーでSMS送信や電話発信を体験。AnthropicのClaudeを介して、Vonageの音声通話とSMS機能をAPIで連携、Postmanでテストも実施。電話とSMSがAIで実現可能となり、業務効率化の可能性を感じ、AIスキル習得の重要性を再認識した。
 
 ---
 
-### [claude code と codex (GPT-5 high)は結局両方必要という結論](https://qiita.com/peka2/items/02749f8e77f065341920)
-**Published:** 2025-10-01 13:23:59 UTC
-**Likes:** 2
-**Tags:** codex, GPT-5, Claude, ClaudeCode, CodexCLI
+### [Bedrock のモデルアクセス拒否設定を入れる](https://qiita.com/ulutimo/items/9f88e50cd799c6f6b657)
+**Published:** 2025-10-03 02:16:47 UTC
+**Likes:** 0
+**Tags:** AWS, IAM, bedrock, IAMポリシー, LLM
 
 **Digest:**
-結論、最高の使い方は、まずCodexで現状のコードを把握し、計画を立てます。次に、その計画をClaude Codeに渡し実装させます。Claude Codeは素直にコードを書き、Codexは複雑なロジックやコードリーディングに強いため、両者の長所を活かした方法です。これにより、安定して高品質な作業を進められます。
+2025年9月29日より、AWS Bedrockのモデルアクセスが自動的に有効化されました。これに伴い、IAMロールで特定のモデルへのアクセスを拒否する必要が生じました。DeepSeekを拒否するため、IAMポリシーを変更し、Deny設定を追加することで実現しています。ただし、モデルIDをフルで指定しても拒否されない場合があるため、注意が必要です。
 
 ---
 
-### [Claude Codeでスクラッチから開発する実践ガイド](https://qiita.com/kiyotaman/items/1646c6b764f030d08238)
-**Published:** 2025-10-01 08:13:22 UTC
-**Likes:** 2
-**Tags:** GitHub, Claude, AIエージェント, ClaudeCode
+### [AIコーディングエージェントベンチマーク、実装のすべて【実装編】](https://qiita.com/nogataka/items/2303f9b3a2eeab9dc976)
+**Published:** 2025-10-03 01:32:24 UTC
+**Likes:** 0
+**Tags:** AI, OpenAI, Claude, AIエージェント, VibeCoding
 
 **Digest:**
-Claude Codeを活用した**スクラッチ開発**の効率化について解説。要件定義からテストまで、**各フェーズ**でClaude Codeを使い、**Issue Templates**で開発を支援。**ai_docs/**構築による段階的な成長を促し、**プロトタイプから本番**までの一貫したワークフローを提示。**設計**、**プロトタイピング**、**テスト**での注意点と対策も詳述。新規プロジェクトやアイデアを形にしたい方におすすめです。
+AIコーディングエージェントのベンチマークシステム実装について、設計思想と実装の詳細を解説。型定義でエラーを防止し、アダプタパターンで異なるエージェントを統一的に扱い、JSONと正規表現によるテスト結果パース戦略を採用。メインランナーは、タスクとエージェントをシャッフルし、Git操作、プロンプト生成、エージェント実行、スコアリングを管理。ハマりポイントとして、作業ディレクトリやISO形式の日時、色付きコードへの対応などを紹介。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Gemini のために生まれ変わった Google Home アプリが登場](https://blog.google/intl/ja-jp/products/devices-services/google-home-app-gemini-redesign/)
-**Source:** Google Japan Blog
-**Published:** 2025-10-01 22:00:00 UTC
-**Tags:** Google Nest
-
-**Digest:**
-Googleは、Gemini対応を見据え、Google Homeアプリを簡素化しました。これにより、ユーザーインターフェースが改善され、操作性が向上する見込みです。より洗練されたデザインで、スマートホームデバイスの管理が更に快適になるでしょう。
-
----
-
-### [Gemini 向けに設計した、最新の Google Home デバイスが新登場](https://blog.google/intl/ja-jp/products/devices-services/new-nest-cams-home-speaker/)
-**Source:** Google Japan Blog
-**Published:** 2025-10-01 22:00:00 UTC
-**Tags:** Google Nest
-
-**Digest:**
-Googleは、AI「Gemini」を搭載した最新のNest Camと、2026年春発売予定のGoogle Homeスピーカーを発表しました。スマートホーム体験を向上させるこれらの新製品は、より高度な機能と、ユーザーフレンドリーな操作性を提供する予定です。
-
----
-
-### [How Hapag-Lloyd improved schedule reliability with ML-powered vessel schedule predictions using Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/how-hapag-lloyd-improved-schedule-reliability-with-ml-powered-vessel-schedule-predictions-using-amazon-sagemaker/)
+### [Enhance agentic workflows with enterprise search using Kore.ai and Amazon Q Business](https://aws.amazon.com/blogs/machine-learning/enhance-agentic-workflows-with-enterprise-search-using-kore-ai-and-amazon-q-business/)
 **Source:** AWS ML Blog
-**Published:** 2025-10-01 18:19:37 UTC
-**Tags:** Amazon Machine Learning, Amazon SageMaker, Amazon SageMaker AI, Artificial Intelligence, AWS Glue, Customer Solutions, Technical How-to, AI/ML
+**Published:** 2025-10-02 22:14:23 UTC
+**Tags:** Amazon Q Business, Customer Solutions
 
 **Digest:**
-世界的大手海運会社Hapag-Lloydは、Amazon SageMakerを活用し、機械学習(ML)による到着・出発時間予測アシスタントを開発。これにより、スケジュール信頼性の向上を実現。複数モデルを連携させ、データ連携やMLOpsを強化。リアルタイムAPIとバッチ処理を組み合わせ、精度向上と応答速度80%以上改善。スケジュール信頼性ランキングも向上しました。
+Kore.aiのAI for WorkとAmazon Q Businessの連携により、企業は従業員の生産性を向上できます。IDC調査によると、情報検索に費やす時間が30%削減可能。90以上のコネクタで高度な検索、エージェントワークフローを実現し、単一のクエリで情報収集、ロードマップ作成、顧客対応など、業務を効率化。Amazon Q BusinessのデータアクセサーとしてAI for Workを設定し、ステップごとの設定ガイドも提供。
 
 ---
 
-### [Rox accelerates sales productivity with AI agents powered by Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/rox-accelerates-sales-productivity-with-ai-agents-powered-by-amazon-bedrock/)
+### [Accelerate development with the Amazon Bedrock AgentCore MCP server](https://aws.amazon.com/blogs/machine-learning/accelerate-development-with-the-amazon-bedrock-agentcore-mcpserver/)
 **Source:** AWS ML Blog
-**Published:** 2025-10-01 18:13:41 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Customer Solutions
+**Published:** 2025-10-02 21:12:34 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Announcements, Generative AI
 
 **Digest:**
-Roxは、AIを活用した新しい収益オペレーティングシステムで、Amazon Bedrockと連携し、CRMやマーケティングデータを統合。営業チーム向けに、リアルタイムの情報と自動化を提供します。一般提供が開始され、AWS上で稼働、Web、Slack、iOS、macOSに対応。 AnthropicのClaude Sonnet 4を活用し、営業担当者の生産性向上や売上増加に貢献します。
+Amazon Bedrock AgentCore MCP Serverが発表され、Kiro、Claude CodeなどのIDEで利用可能に。Bedrock AgentCoreとの連携を高速化し、エージェントのライフサイクルを自動化。Runtime統合、ツール統合、テストを簡素化し、開発の負担を軽減。GitHubリポジトリで入手可能で、各IDEのmcp.json設定方法も紹介。
 
 ---
 
-### [From sketches to prototype: Designing with generative AI](https://blog.google/technology/google-deepmind/ross-lovegrove-design/)
-**Source:** Google DeepMind
-**Published:** 2025-10-01 16:00:00 UTC
-**Tags:** Google DeepMind, AI
-
-**Digest:**
-Google DeepMind が、デザイナーのロス・ラヴグローヴとデザインオフィス Modem と共同でプロジェクトを進めました。彼らの協力により、革新的なデザインや技術的な取り組みが実現した可能性があります。今後の展開に注目が集まっています。
-
----
-
-### [【法人・教育機関向け】Surface 在庫一掃キャンペーン](https://blogs.windows.com/japan/2025/10/02/surface-stock-clearance-campaign-2/)
+### [Microsoft 365 Premium のご紹介: AI と生産性の革新をもたらす新プラン](https://blogs.windows.com/japan/2025/10/02/meet-microsoft-365-premium-your-ai-and-productivity-powerhouse/)
 **Source:** Windows Blog for Japan
-**Published:** 2025-10-02 02:37:17 UTC
-**Tags:** Surface
+**Published:** 2025-10-02 06:14:47 UTC
+**Tags:** Microsoft 365, Copilot, Microsoft 365 Premium
 
 **Digest:**
-法人・教育機関向けSurfaceの在庫一掃キャンペーン実施中。場所を選ばず業務を効率化できるSurface Pro 10やLaptop 6など、**AI**対応の**2 in 1 PC**やノートPCがお得な価格で提供。**NPU**搭載でパフォーマンス向上、**ハイブリッドワーク**を支援。2025年10月～12月納品分が対象。詳細は**Surface**認定リセラーへ。
+Microsoftは、個人向けAI搭載の新プラン「Microsoft 365 Premium」を発表。月額3,200円でCopilotやResearcher、Analystなど、高度なAI機能と1TBのストレージを提供。既存プランのCopilot機能も強化。さらに、Microsoft 365アプリのCopilot Chatも利用可能に。学生向け1年無料オファーも拡大、新アイコンも導入。
 
 ---
 
-### [未来を強化する: Copilot+ PC 用 Arm アプリのエコシステムを拡大](https://blogs.windows.com/japan/2025/10/02/empowering-the-future-the-expanding-arm-app-ecosystem-for-copilot-pcs/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-10-02 00:36:53 UTC
-**Tags:** Surface, Windows 11
-
-**Digest:**
-Microsoftは、Copilot+ PC向けにArmアプリのエコシステムを拡大。セキュリティ、VPN、管理、生産性、クリエイティブ、SNSなど多岐にわたるアプリが利用可能に。Armネイティブアプリは高いパフォーマンスを発揮し、AI処理能力も向上。Windows 10サポート終了に向け、Arm Advisory Serviceが移行を支援。詳細なリストは、www.worksonwoa.comで公開されています。
-
----
-
-### [CData Syncの特徴と導入方法](https://blog.jbs.co.jp/entry/2025/10/02/125916)
+### [Copilotで始める「AIエージェント」入門｜初心者でも簡単に自分専用アシスタントを作る方法](https://blog.jbs.co.jp/entry/2025/10/03/145007)
 **Source:** JBS Blog
-**Published:** 2025-10-02 03:59:16 UTC
-**Tags:** ETL, CData, CData Sync, AWS, Snowflake
+**Published:** 2025-10-03 05:50:07 UTC
+**Tags:** Tech, AI Agent, Copilot
 
 **Digest:**
-JBSの稲留氏が、CData Syncを用いたニアリアルタイムデータ連携パイプラインを構築。インストール型導入の背景や構築方法を解説します。CData Syncは、多様なデータソース対応、ノーコード設定、サーバーライセンス、フルコントロールが特徴。EC2インスタンスにCData Syncを構築し、安定運用を実現しました。
+生成AI「Copilot」が話題です。Microsoftが提供するAIアシスタントで、WordやExcelでの文章提案、Teamsの会話要約など、働き方を支援します。本記事では、Copilotの生成AI機能の一つである「エージェント機能」について解説し、その作成方法を5ステップで紹介しています。
 
 ---
 
-### [RHEL 8からRHEL 9へのインプレースアップグレード（前編）](https://blog.jbs.co.jp/entry/2025/10/02/084335)
+### [【Microsoft Entra ID】Entra Private Accessを検証してみた](https://blog.jbs.co.jp/entry/2025/10/03/125620)
 **Source:** JBS Blog
-**Published:** 2025-10-01 23:43:35 UTC
+**Published:** 2025-10-03 03:56:20 UTC
+**Tags:** microsoft
 
 **Digest:**
-Red Hat Enterprise Linux (RHEL) のインプレースアップグレード、今回はRHEL 8から9への移行を取り上げます。 前編では、アップグレード前の重要な確認事項を解説。 具体的には、システム要件、アップグレードパス、バックアップ取得、サブスクリプションとリポジトリの確認など、事前の準備について説明します。
+Microsoft Entra ID の Entra Private Access を検証しました。Entra Private Access は、Azure AD ユーザーがプライベートネットワーク上のリソースに安全にアクセスできるようにするサービスです。今回の検証では、その動作を実際に確認し、設定や接続の仕組みを理解しました。
+
+---
+
+### [Microsoft Entra Private Access × PIMで実現する安全な社内アクセス](https://blog.jbs.co.jp/entry/2025/10/03/093957)
+**Source:** JBS Blog
+**Published:** 2025-10-03 00:39:57 UTC
+**Tags:** Microsoft, Microsoft Entra Private Access, Privileged Identity Management, ZTNA, PIM
+
+**Digest:**
+クラウド利用拡大に伴い、安全な社内アクセスが重要に。Microsoft Entra Private Accessと、特権アクセスを一時的に許可するMicrosoft Entra PIMを組み合わせ、セキュリティ強化環境を構築する方法を紹介。グループ作成、PIMオンボード、メンバーシップ割り当て、クイックアクセス設定を行い、特権アクセス有効化の確認まで解説します。
+
+---
+
+### [SQL Server on Azure Virtual Machines の日本語化手順](https://blog.jbs.co.jp/entry/2025/10/02/165254)
+**Source:** JBS Blog
+**Published:** 2025-10-02 07:52:54 UTC
+**Tags:** Azure, Azure Virtual Machines, SQL Server
+
+**Digest:**
+Azure VM上のSQL Serverを日本語環境で利用する際の注意点について解説します。インストール後、**SQL Server**の**照合順序**を適切に設定し、**日本語**の**文字化け**を防ぐ必要があります。これにより、**日本語**のデータが正しく表示され、スムーズな運用が可能になります。
 
 ---
