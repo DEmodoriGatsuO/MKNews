@@ -1,55 +1,68 @@
-# AI Tech Trends Digest (2025-10-05)
+# AI Tech Trends Digest (2025-10-06)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [M5Stack LLM8850 モジュールを Raspberry Pi 5 で動かしてみた(LLM編)](https://qiita.com/uzuki_aoba/items/78e1944b8ccb60107d5c)
-**Published:** 2025-10-05 02:30:47 UTC
-**Likes:** 2
-**Tags:** RaspberryPi, M5stack, LLM
+### [生成AIとプロンプトインジェクション：最新事例・研究動向と「見えない命令」の脅威](https://qiita.com/Shawin/items/191db867ea4e3728b674)
+**Published:** 2025-10-05 23:04:49 UTC
+**Likes:** 1
+**Tags:** AI, 人工知能, 生成AI, LLM, AIエージェント
 
 **Digest:**
-Maker Faire Tokyo 2025 でスイッチサイエンスのブースで見かけた M5Stack LLM8850 モジュールは、AXERA AX8850 チップ搭載の AI アクセラレータ。Raspberry Pi 5 に M.2 HAT+ を介して接続し、公式手順で環境設定。ドライバインストール後、モデルベンチマークで動作確認。Qwen3-0.6B モデルを実行し、約13-14トークン/秒の速度を確認。
+生成AIを操る「プロンプトインジェクション」が新たな脅威に。不可視命令を埋め込み、情報漏洩や改ざんを狙う攻撃です。Gmail、論文、毒文書など実例が報告され、2025年には最大の脅威と位置づけられています。対策として、フィルタリング、ゼロトラスト、セキュリティ教育が重要。トレンドマイクロなど生成AI特化サービスも登場しています。
 
 ---
 
-### [一次情報で政治を知る：日本語RAGシステムで高市早苗新総裁の公式サイトを分析](https://qiita.com/shinonome_taku/items/92abee445fe2804b8430)
-**Published:** 2025-10-05 00:44:30 UTC
+### [コンテキストウインドウ押し出しの正体](https://qiita.com/s-age/items/b7aa79e497c09ad4ae28)
+**Published:** 2025-10-05 22:26:40 UTC
 **Likes:** 1
-**Tags:** Python, AI, OpenAI, rag, duckdb
+**Tags:** AI, LLM, コンテキストエンジニアリング
 
 **Digest:**
-高市早苗氏の公式ウェブサイト情報を基にした、RAGシステム構築プロジェクト。一次情報へのアクセス困難を解決するため、**RAGLite**と**DuckDB**を採用し、**日本語対応**に特化した。**EmbeddingとReranker**の最適化、丁寧な**スクレイピング**で、一次情報を効率的に検索・質問できるWeb UIを開発。
+LLMはステートレスで、会話は過去の履歴と質問を結合した「文脈の再構築」によるもの。コンテキストウィンドウの制約（計算コスト、VRAM容量）から、古い履歴を削除する「コンテキスト押し出し」が発生。外部記憶（ベクトルDB）を活用するRAGで長期記憶を実現。高密度プロンプト設計と外部知識活用が重要。チャットエージェントはマルチエージェントの一種である。
 
 ---
 
-### [AutoGen の進化の歴史を見てきたアーキテクトが分析する Microsoft Agent Framework の改良ポイント](https://qiita.com/nohanaga/items/2ed726f9a0ff092b3f36)
-**Published:** 2025-10-04 15:44:35 UTC
+### [MCPの活用や応用への考察 - MCP実装のセキュリティ監査：プロトコル連携における脆弱性チェックリスト](https://qiita.com/555hamano/items/d973a008a1ec16556081)
+**Published:** 2025-10-05 14:05:26 UTC
 **Likes:** 1
-**Tags:** Microsoft, Azure, OpenAI, AutoGen
+**Tags:** API, Security, LLM, AIエージェント, ModelContextProtocol
 
 **Digest:**
-Microsoft Agent Framework が発表。AutoGen の革新性と Semantic Kernel の安定性を目指し、2025年10月1日に登場。オープンソースで、チームは本番環境を気にせず展開可能。AutoGen の課題を解決する、統一ワークフロー、型安全性、Human-in-the-Loop ネイティブサポートなど、多数の改良を実現。コンテキストエンジニアリングの観点から、スレッドによる会話状態管理や、データフローベースのワークフローが特徴。
+AnthropicのModel Context Protocol (MCP)利用時のセキュリティ監査は重要で、データ漏洩や不正アクセスを防ぐために、データ連携層とアクセス制御に焦点を当てる。ユーザー間のデータ分離、推論後のコンテキストクリア、機密性タグチェック、出力フィルタリングを検証。Tool認証の分離、データソース認証、最小権限、プロンプトインジェクション対策、ログとアラートの監視も必須。定期的な監査と文書化が、セキュリティレベル向上に繋がる。
 
 ---
 
-### [Claude Code に GitHub MCP サーバーを設定してみた](https://qiita.com/ymtdir/items/4d17b5ebac0b025eb825)
-**Published:** 2025-10-04 14:12:09 UTC
-**Likes:** 1
-**Tags:** GitHub, AI, MCP, LLM, ClaudeCode
+### [松尾・岩澤研究室「大規模言語モデル講座基礎」　第1回に参加しました](https://qiita.com/mihosato/items/661b67b0bfa4c4366284)
+**Published:** 2025-10-06 02:10:01 UTC
+**Likes:** 0
+**Tags:** LLM, 大規模言語モデル,
 
 **Digest:**
-Claude Code Proで**GitHub MCP**を設定し、IssueやPR管理を試みた。GitHub Personal Access Tokenを取得後、環境変数設定と`.mcp.json`ファイル作成で連携。Claude CodeでGitHub情報取得やIssue作成に成功。MCPで**外部ツール**との連携可能性を感じ、データベースやSlackなど他のMCPサーバーとの組み合わせにも期待。
+東大松尾・岩澤研の「大規模言語モデル講座基礎」第1回に参加。推論特化モデルやSWE Benchなどの高度化されたベンチマーク、GPT-3/4の学習データ量やGPU規模といった**具体的な数値**も提示され、研究開発の規模を実感。**RX-X Project**など、言語モデルの**ロボティクス応用**にも触れ、データ収集・加工とベンチマーク評価の講義増設も。
 
 ---
 
-### [Claude Desktop（Win）にAWS Knowledge MCP Serverを導入してみる](https://qiita.com/eiji-noguchi/items/d050715ee4c07131a6f8)
-**Published:** 2025-10-04 12:43:26 UTC
-**Likes:** 1
-**Tags:** AWS, MCP, Claude, ClaudeDesktop, MCPサーバー
+### [[翻訳] 効果的なエージェントの構築](https://qiita.com/taka_yayoi/items/fd2fa849163553038b71)
+**Published:** 2025-10-06 02:05:03 UTC
+**Likes:** 0
+**Tags:** エージェント, Anthropic, Claude
 
 **Digest:**
-AWS Knowledge MCP Serverが10/1にGAとなり、費用やAWSアカウント不要で利用可能になりました。Claude Desktopに設定を追加し、fastmcpユーティリティを利用します。`claude_desktop_config.json`を編集し、再起動後にサーバーが追加されていることを確認。AWSドキュメント検索ツールを活用し、Amazon Bedrockに関する質問への回答も生成されました。
+AnthropicのLLMエージェント構築に関する記事のダイジェストです。シンプルで組み合わせ可能なパターンが成功の鍵で、ワークフローとエージェントの違いを解説。拡張LLM、プロンプト連鎖、ルーティング、並列化、エバリュエーターなど、多様なワークフローを紹介。エージェントは自律性を持つが、テストと透明性が重要。カスタマーサポートやコーディングエージェントでの活用例も示唆。ツール設計におけるプロンプトエンジニアリングの重要性も強調しています。
+
+---
+
+## Latest News from RSS Feeds
+
+
+### [【Teams会議】ミラーリング機能とカスタム背景画像の比率：完全解説](https://blog.jbs.co.jp/entry/2025/10/06/141616)
+**Source:** JBS Blog
+**Published:** 2025-10-06 05:16:16 UTC
+**Tags:** Tech, Teams会議, ミラーリング, カスタム背景画像
+
+**Digest:**
+オンライン会議でのプレゼン、困った経験ありませんか？ 背景説明で手の左右が逆になる、背景画像が見切れるといった問題は、事前の設定不足が原因です。ミラーリング機能や推奨アスペクト比（16:9）の確認が重要です。本記事では、筆者の体験談に基づき、これらの問題とその解決策を詳しく解説します。
 
 ---
