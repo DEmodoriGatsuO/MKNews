@@ -1,118 +1,128 @@
-# AI Tech Trends Digest (2025-10-07)
+# AI Tech Trends Digest (2025-10-08)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [OpenAI Agent Builderを触ってみた：Difyとの違いと実践Tips](https://qiita.com/akira_papa_AI/items/7344e21b9204526e5127)
-**Published:** 2025-10-06 21:06:36 UTC
-**Likes:** 9
-**Tags:** OpenAI, ChatGPT, Dify, OpenAIAgentBuilder
+### [OpenAI DevDay 2025レポート：OpenAIが創る「AI OS」構想！](https://qiita.com/ryosuke_ohori/items/e925e920b92c08601752)
+**Published:** 2025-10-08 02:15:09 UTC
+**Likes:** 7
+**Tags:** Python, AI, OpenAI, ChatGPT, DevDay
 
 **Digest:**
-OpenAIのAgent Builderは、ビジュアルでAIエージェントを構築できる新ツール。OpenAI公式で、GPT-5/5-miniと連携、ChatKit統合も容易。Difyとの比較では、シンプルでOpenAIエコシステムに最適。主要機能はノードベースのワークフロー設計で、セキュリティ対策、コスト管理が重要。プロトタイプ開発に強く、ChatKitによるUI実装も容易。テンプレート活用や、Human approvalの適切な配置がポイント。
+OpenAI DevDay 2025では、ChatGPTのアプリプラットフォーム化とAgentKitによるエージェント構築基盤が発表。Apps SDKでChatGPT内アプリ開発が可能になり、Agent Builderで視覚的なワークフロー構築も実現。GPT-5 ProやSora 2のAPI強化、小型モデルも登場。開発者はUI/UXやコスト、セキュリティに注意しつつ、PoCから始めるのが賢明です。
 
 ---
 
-### [『疾走する散文』法、AIと対話しないモノローグ法の発展形](https://qiita.com/makotosaekit/items/f40f2f9917f81dd5714e)
-**Published:** 2025-10-06 19:44:13 UTC
-**Likes:** 5
-**Tags:** AI, プロンプト, ChatGPT, LLM, コンテキストエンジニアリング
-
-**Digest:**
-AIとの対話手法「疾走する散文法」を解説。ヘミングウェイの氷山理論を応用し、AIに思考の断片を与え、創造を促す。従来の仕様書作成ではなく、思想を共有し、AIを「代筆者」にする手法。巨視的フィードバックと二つの問いで思考を深め、日記アプリの設計哲学を具体化。AIを「思想的パートナー」として活用するプロンプト戦略。
-
----
-
-### [Chrome DevTools MCP を使ってAIにブラウザ操作とエラーデバッグをさせてみる（Gemini CLI 環境構築手順付）](https://qiita.com/t-kurasawa/items/4bca79596548ada3c445)
-**Published:** 2025-10-06 10:27:02 UTC
-**Likes:** 2
-**Tags:** Chrome, ChromeDevTool, MCP, Gemini, GeminiCLI
-
-**Digest:**
-Googleが2025/9/23に公開したChrome DevTools MCPプレビュー版は、**生成AIによるブラウザ操作とデバッグを可能**にします。Gemini CLIと連携し、環境構築と基本的な使い方を解説。**ToDoリスト作成やエラーデバッグ**を通して、**フロントエンド開発における強力なツール**としての可能性を示唆しています。
-
----
-
-### [PageIndexで「埋め込みなしのRAG」を試してみた](https://qiita.com/yo_arai/items/79f1e5ff858852d58b47)
-**Published:** 2025-10-07 04:11:45 UTC
+### [OpenAI DevDay 2025 完全まとめ：ChatGPTが“アプリのOS”へ](https://qiita.com/softbase/items/fe35f326df4bd7efda07)
+**Published:** 2025-10-07 13:47:02 UTC
 **Likes:** 1
-**Tags:** OCR, OpenAI, rag, 生成AI, PageIndex
+**Tags:** OpenAI, DevDay2025
 
 **Digest:**
-PageIndexのVectorless RAGを紹介。OCR、Markdown、ツリー構造化により、ベクトル検索不要で章節検索を実現。PythonでAPIを利用し、PDFをアップロード、関連情報をLLMが回答。料金プランは無料から。ハンズオンでは、PageIndex APIキー取得、OpenAI APIキー設定、RAGパイプライン構築の手順と結果を解説。
+OpenAI DevDay 2025では、ChatGPTを"次のOS"として位置づけ、アプリ実行環境へと進化。Apps SDKでチャット内にアプリを実装、AgentKitとSDKでAIエージェント開発を標準化。Codex GA、GPT-5/Sora 2発表、AMDとのGPU契約も。開発者はUI/UX再設計、権限・監査への配慮が重要。会話中心のアプリ体験が加速する。
 
 ---
 
-### [discord連携の利点と課題 with MCP by ChatGPT](https://qiita.com/kaizen_nagoya/items/879b807c19ed67b6ef24)
-**Published:** 2025-10-06 23:55:30 UTC
+### [Apps in ChatGPTとApps SDK概要 Figma Appを使ってみる](https://qiita.com/wondercoms/items/094e8de780d4d44c5703)
+**Published:** 2025-10-07 12:10:22 UTC
 **Likes:** 1
-**Tags:** MCP, discord, ChatGPT, LLM
+**Tags:** OpenAI, Figma, ChatGPT
 
 **Digest:**
-大規模言語モデル（LLM）研究におけるDiscord連携について、ChatGPTは、リアルタイムコミュニケーション、Botによる自動化、コミュニティ活用、マルチモーダル対応の利点を提示。課題として、データ管理、スケーラビリティ、セキュリティ、運用の複雑さを指摘。Pythonとdiscord.py、Hugging Faceのモデルを用いた複数チャンネル対応や、キューイングによる負荷分散、VIPユーザー優先、GPU分散、ストリーミング応答のサンプルコードを紹介。
+OpenAIが、ChatGPT内で外部サービスを操作できる新機能「Apps in ChatGPT」を発表、開発基盤「Apps SDK」も公開しました。地図やプレイリストなどのインタラクティブUIがチャット内に表示され、EU圏外のFree/Go/Plus/Proプランで利用可能。SDKはオープンソースで、年内にはアプリ公開、審査、マネタイズも予定。安全性を重視し、データ収集は最小限に、許可設計は透明化。Figmaアプリを例に使い方も紹介されています。
+
+---
+
+### [松尾研AIコミュニティ@Qiita](https://qiita.com/kaizen_nagoya/items/6b904eacbbd9a55185cf)
+**Published:** 2025-10-07 10:24:05 UTC
+**Likes:** 1
+**Tags:** Qiita, AI, LLM
+
+**Digest:**
+Qiitaの松尾研AIコミュニティ関連情報をまとめたダイジェストです。LLM講座、開発コンペ、コミュニティ運営、技術メモなど、34件の記事を収録したCSVをダウンロードできます。ロードマップ、コンペ体験記、Axolotlチュートリアルなど、多様なテーマの記事があり、LLMやAIエンジニアリングに関する情報が豊富です。
+
+---
+
+### [Slack × Notion × GPT連携で実現する OODA自動回転エコシステム](https://qiita.com/ota-tsutomu/items/d3a3db77d67e44f35492)
+**Published:** 2025-10-08 04:50:45 UTC
+**Likes:** 0
+**Tags:** Slack, OODA, Notion, ChatGPT, Claude
+
+**Digest:**
+OODAループを習慣化するため、Slack・Notion・AIを連携した「自動回転エコシステム」を紹介。課題解決のため、Slackで開始、GPTがOrient支援、Notion記録、KPI可視化を実現。ChatGPTとClaudeを比較し、チーム改善のPDCAを回す方法を解説。事例では、プロダクト開発、受託開発、営業部門での活用を紹介。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Responsible AI: How PowerSchool safeguards millions of students with AI-powered content filtering using Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/responsible-ai-how-powerschool-safeguards-millions-of-students-with-ai-powered-content-filtering-using-amazon-sagemaker-ai/)
+### [Automate Amazon QuickSight data stories creation with agentic AI using Amazon Nova Act](https://aws.amazon.com/blogs/machine-learning/automate-amazon-quicksight-data-stories-creation-with-agentic-ai-using-amazon-nova-act/)
 **Source:** AWS ML Blog
-**Published:** 2025-10-06 19:14:40 UTC
-**Tags:** Advanced (300), Amazon SageMaker, Customer Solutions, Uncategorized
+**Published:** 2025-10-07 17:43:26 UTC
+**Tags:** Amazon Nova, Amazon QuickSight, Artificial Intelligence, Customer Solutions, Technical How-to, Uncategorized, AI/ML
 
 **Digest:**
-PowerSchoolは、教育向けAIアシスタントPowerBuddyの安全性を高めるため、Amazon SageMaker AIでカスタムコンテンツフィルタリングを構築。Llama 3.1 8Bをファインチューニングし、93%の精度と低誤検知率を実現。有害コンテンツを検出しつつ、教育的な議論を保護。今後はSageMakerのマルチアダプタ機能で特化型SLMを導入予定。
+Amazon Nova Actを活用し、QuickSightのデータストーリー作成を自動化する手法を紹介。手作業による時間とリソースの消費を削減し、データに基づいた意思決定を加速します。Nova Actは複雑なWeb操作を自動化し、複数のダッシュボードから必要な情報を抽出し、対話的なストーリーを生成することで、組織の生産性向上に貢献します。
 
 ---
 
-### [How we’re securing the AI frontier](https://blog.google/technology/safety-security/ai-security-frontier-strategy-tools/)
+### [Implement automated monitoring for Amazon Bedrock batch inference](https://aws.amazon.com/blogs/machine-learning/implement-automated-monitoring-for-amazon-bedrock-batch-inference/)
+**Source:** AWS ML Blog
+**Published:** 2025-10-07 17:39:32 UTC
+**Tags:** Amazon EventBridge, Artificial Intelligence, AWS Lambda, Generative AI
+
+**Digest:**
+Amazon Bedrockのバッチ推論向け自動モニタリングソリューションを紹介。金融機関の顧客データ処理を例に、AWS Lambda、EventBridge、DynamoDBを活用し、バッチジョブの状態を可視化。S3へのデータ入出力、DynamoDBでのジョブステータス管理を実現し、コスト効率良く、金融商品のレコメンドなど大量データ処理を可能に。CloudFormationテンプレートによる簡単なデプロイ方法も解説。
+
+---
+
+### [Introducing the Gemini 2.5 Computer Use model](https://blog.google/technology/google-deepmind/gemini-computer-use-model/)
 **Source:** Google DeepMind
-**Published:** 2025-10-06 13:00:00 UTC
-**Tags:** Google DeepMind, Safety & Security, AI
+**Published:** 2025-10-07 19:00:00 UTC
+**Tags:** Gemini Models, Google DeepMind, AI
 
 **Digest:**
-Googleの包括的なAIエコシステムセキュリティ戦略を概観。内部からの脅威に対処するため、AI開発・運用全体でのセキュリティを重視。**AIセキュリティ**、**内部からの脅威**への対策、**包括的戦略**がキーワード。データ保護、モデルの安全性、アクセス制御などを強化し、**AIの安全な利用**を推進しています。
+Googleは本日、Gemini 2.5 Computer UseモデルをAPI経由でリリースしました。これは、ブラウザやモバイルタスクにおいて、既存の主要な競合製品よりも優れた性能を発揮します。
 
 ---
 
-### [Azure上にCisco ASAvを構築する方法](https://blog.jbs.co.jp/entry/2025/10/07/143542)
-**Source:** JBS Blog
-**Published:** 2025-10-07 05:35:42 UTC
-**Tags:** ASA, ASAv, Cisco, Microsoft Azure, Firewall, ASDM
+### [Windows 11 2025 Updateの入手方法](https://blogs.windows.com/japan/2025/10/08/how-to-get-the-windows-11-2025-update/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-10-08 02:54:11 UTC
+**Tags:** Windows 11, Windows
 
 **Digest:**
-Azure 上に Cisco の仮想アプライアンス、ASAv を構築する方法を紹介します。ASA 実機がなくとも、Azure 環境で ASAv の設定画面確認や検証が可能です。この記事を参考に、Azure 上での ASAv 構築に挑戦してみましょう。
+Windows 11 バージョン 25H2 が発表され、2025 年 9 月 30 日に公開されました。セキュリティを重視し、軽量化されたアップデートで、Windows 11 バージョン 24H2 ユーザー向けに提供開始。法人・教育機関向けには、Wi-Fi 7対応やプリインストールアプリ削除機能も追加。年次更新プログラムとして、サポート期間がリセットされ、Windows リリース ヘルス ハブで詳細情報が提供されます。
 
 ---
 
-### [既存のSharePointリストを元に別のSharePointリストを作成する](https://blog.jbs.co.jp/entry/2025/10/07/130557)
+### [【Windows 365】クリップボードのリダイレクト機能設定](https://blog.jbs.co.jp/entry/2025/10/08/134847)
 **Source:** JBS Blog
-**Published:** 2025-10-07 04:05:57 UTC
-**Tags:** Tech, SharePoint, SharePointリスト, Microsoft Lists
+**Published:** 2025-10-08 04:48:47 UTC
+**Tags:** Microsoft, Windows 365, Intune, クラウド
 
 **Digest:**
-SharePointリストを別のSharePointサイトへ複製する、つまり**リストのコピー**方法を紹介。**既存リストの設定**を基に新しいリストを作成し、効率的なデータ移行を実現します。リストの**構造**や**設定**をそのまま引き継ぎたい場合に有効です。
+Windows 365のクラウドPCは、2025年8月以降のプロビジョニングでセキュリティ強化のため、ドライブ、クリップボード、USB、プリンターのリダイレクトがデフォルト無効に。従来は有効でしたが、現在は手動での有効化が必要です。本記事では、クリップボードのリダイレクトを有効にする方法を解説します。
 
 ---
 
-### [Windows Autopilot実行までの工程](https://blog.jbs.co.jp/entry/2025/10/07/092349)
+### [Terraformでmovedブロックを利用してローカル名を変更する](https://blog.jbs.co.jp/entry/2025/10/08/110049)
 **Source:** JBS Blog
-**Published:** 2025-10-07 00:23:49 UTC
-**Tags:** Autopilot, Windows, Intune
+**Published:** 2025-10-08 02:00:49 UTC
+**Tags:** Azure, Terraform
 
 **Digest:**
-Windows Autopilotは、クラウド経由でWindowsデバイスを初期設定するソリューションです。HWID取得、Autopilotデバイス登録、PC初期化などの工程を経て実行されます。Intune連携によるデバイス自動登録や展開プロファイル作成も重要です。Autopilotは、手間のかかるデバイスセットアップを効率化し、運用管理を容易にするメリットがあります。
+Terraformの`moved`ブロックは、リソースを再作成せずにローカル名を変更できる強力な機能です。記事では、この機能の試用を通して、`moved`ブロックを使わない場合との比較や、Terraform定義ファイルの作成方法、`moved`ブロック`の使用例を解説しています。
 
 ---
 
-### [Microsoft Azure スナップショットを使用したWindows VMの複製](https://blog.jbs.co.jp/entry/2025/10/06/155307)
+### [【備忘】Teams Roomsについて調べてみた](https://blog.jbs.co.jp/entry/2025/10/08/090323)
 **Source:** JBS Blog
-**Published:** 2025-10-06 06:53:07 UTC
-**Tags:** Azure, Microsoft Azure
+**Published:** 2025-10-08 00:03:23 UTC
+**Tags:** Teams, Teams rooms
 
 **Digest:**
-Microsoft Azure のスナップショットを用いた Windows VM 複製手順を解説。Azure ポータルまたは PowerShell で、OS ディスクのスナップショット作成、マネージドディスクからの VM 作成、そしてネットワーク設定を行います。これにより、Windows VM の迅速な複製が可能となります。
+Teams Roomsについて調べた結果をまとめます。Microsoft Teams Roomsは、会議室での快適なコラボレーションを実現するソリューションです。ハードウェアとソフトウェアを組み合わせ、ビデオ会議やコンテンツ共有を容易にします。様々なサイズの会議室に対応し、シンプルな操作性で会議をスムーズに進められます。
 
 ---
