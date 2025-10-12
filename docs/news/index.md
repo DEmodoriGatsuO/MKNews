@@ -1,78 +1,68 @@
-# AI Tech Trends Digest (2025-10-11)
+# AI Tech Trends Digest (2025-10-12)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Amazon Bedrock GuardrailsによるAIエージェントの安全対策入門！](https://qiita.com/eno49conan/items/e4ca8be64afb984c5a68)
-**Published:** 2025-10-10 10:19:54 UTC
-**Likes:** 5
-**Tags:** Python, AWS, AI, bedrock, LLM
+### [M5Stack LLM8850 モジュールと Raspberry Pi 5 で動かせるAI関連についての現状の整理](https://qiita.com/uzuki_aoba/items/e69b8d3f03bb368199fa)
+**Published:** 2025-10-11 15:44:52 UTC
+**Likes:** 3
+**Tags:** RaspberryPi, M5stack, LLM, StackFlow, LLM8850
 
 **Digest:**
-2025年発売の書籍「AIエージェント開発/運用入門」を読み、Amazon Bedrockの**Guardrails**を試した。犯罪関連プロンプトに対する対策として、**Prompt Injection**防止のGuardrailsを作成。**Bedrock**のGuardrailsは、LLMとユーザーの間に位置し、入力検証、LLM処理、出力検証を行い安全性を高める。今後は実践的なワークフロー構築や、OWASP TOP 10への取り組みも予定。
+LLM8850でのLLM・TTS利用について、現状は2系統の情報源が存在。一つはデモ中心のLLM8850ユーザーガイド、もう一つはAPI提供を目指すStackFlow。StackFlowはまだ整備中だが、OpenAI API形式での利用を模索。現在は、API利用にはStackFlow、試用にはユーザーガイドのデモが中心。AXERAデモのAPIサーバは未確認。StackFlowの今後の動向に注目。
 
 ---
 
-### [生成AI活用　データベーススペシャリストの過去問の解説を読込ませて、他の年度の解説を作成する](https://qiita.com/RYA234/items/4101ab27d285cf902f80)
-**Published:** 2025-10-10 21:43:30 UTC
-**Likes:** 2
-**Tags:** データベーススペシャリスト, 生成AI, Claude
-
-**Digest:**
-データベーススペシャリスト試験対策として、生成AI「Claude for Windows」を活用し、午後問題の解説文作成を試みました。IPA過去問と参考書をJPEG化し、プロンプトで解説文生成を指示。Node.js環境でファイルシステムを操作し、GitHubで成果を公開。試験勉強への活用に期待が高まっています。
-
----
-
-### [Qwen × Chat Template徹底解説](https://qiita.com/softbase/items/cdb5087005cf92ffd6ab)
-**Published:** 2025-10-10 12:38:00 UTC
+### [Claude Codeで100個のファイルが爆誕した話](https://qiita.com/ktdatascience/items/dcbf914e2f341564e7ef)
+**Published:** 2025-10-12 04:09:36 UTC
 **Likes:** 1
-**Tags:** LLM, Qwen, ChatTemplate
+**Tags:** 失敗談, Claude, ClaudeCode, バイブコーディング, AI稼働開発
 
 **Digest:**
-LLMとの会話構築を、Qwenシリーズを例に解説。**messages構造**作成、**Chat Template**適用、トークナイズ、モデル推論、デコードの5ステップで構成。会話履歴は`role`と`content`のペアで表現し、Chat Templateでテキスト化。FastAPIでのAPI化や、独自のテンプレートカスタマイズも可能。最終的には会話の継続（コンテキスト保持）も実現します。
+AI活用アプリ開発で、チームが「Claude Code」を盲信しバックエンドがカオスに。計画不足と理解不足で、AI提案のコードを丸投げした結果、不要ファイルが蓄積し、コンテキスト肥大化。AIの能力低下も招き、リポジトリは混乱。AIは万能ではなく、計画・理解・整理・段階的コミットが重要。コードを捨てる決断も必要と学んだ。
 
 ---
 
-### [🦙 LLaMA Factory 入門：よく使う重要項目をやさしく解説](https://qiita.com/softbase/items/b6227587a072ae577d5f)
-**Published:** 2025-10-11 05:51:41 UTC
-**Likes:** 0
-**Tags:** FineTuning, LLM, LLaMAFactory
+### [IBM: PoCから本番運用へ繋げる - LLM × DMNで作る意思決定システムへの移行戦略](https://qiita.com/RepKuririn/items/03849082afa1c4f2350a)
+**Published:** 2025-10-12 02:48:50 UTC
+**Likes:** 1
+**Tags:** DMN, PoC, LLM, AIエージェント
 
 **Digest:**
-LLaMA FactoryでのLLMファインチューニング解説。LoRA/QLoRAによる軽量学習に焦点を当て、モデル選択、学習方法、学習率、エポック数、バッチサイズ、シーケンス長、LoRA rankなど、**初心者がつまづきやすい重要項目**を解説。**GPUメモリ**を考慮した設定例も提示し、**日本語チャットボット**作成を念頭に置いた調整方法を紹介しています。
+生成AIの意思決定課題解決に、LLMとデシジョンエージェントの協調が重要。DMN（Decision Model and Notation）を活用し、ビジネスルールを可視化・実行可能な「デシジョンサービス」を構築。LLMはDMNモデル構築支援に貢献。LLMの柔軟性とDMNの厳密性を組み合わせ、信頼性の高い自律型AIシステムを目指す。
 
 ---
 
-### [Geminiでチャーハンと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/45c87a69da0235ca64b1)
-**Published:** 2025-10-11 03:23:11 UTC
+### [🪄 Oasis Sync v0.1.0 リリース！Gemini と GitHub Actions でブログのマルチプラットフォーム配信を自動化](https://qiita.com/Maki-HamarukiLab/items/2f1f61948334fd0d2e67)
+**Published:** 2025-10-12 05:40:22 UTC
 **Likes:** 0
-**Tags:** Gemini
+**Tags:** automation, OASIS, Gemini, GitHubActions
 
 **Digest:**
-Geminiを使って「チャーハンと遊ぶ魔法少女」のイラストを生成しました。具体的なプロンプトは「チャーハンと遊ぶ魔法少女を描いてください」で、結果として可愛らしい画像が得られました。この試みが、何かの役に立つことを願っています。
+**Oasis Sync v0.1.0** リリース！ Google **Gemini** と **GitHub Actions** を活用し、Zenn や Qiita などの複数プラットフォームへの記事配信を完全自動化するツールです。単一の Markdown 記事から、各プラットフォーム向けに最適な形式へ変換、メタデータ生成も自動化。記事追加でトリガーされ、各リポジトリへ自動プッシュされます。今すぐ GitHub リポジトリで試せます！
+
+---
+
+### [LLMの常識が変わる？最新AIモデルから学ぶ、3つの衝撃的な事実](https://qiita.com/Maki-HamarukiLab/items/ba16ef4d1f5c5d05a903)
+**Published:** 2025-10-12 05:40:22 UTC
+**Likes:** 0
+**Tags:** NVIDIA, DeepLearning, AI, LLM, MoE
+
+**Digest:**
+LLMの進化は加速し、3つの衝撃的事実が明らかに。**MoE**アーキテクチャで巨大モデルの効率化、**思考プロセス可視化**でAIの透明性向上、そして多様な育成戦略による**自律エージェント**への道が開かれました。NVIDIA、LongCat、Tongyiがそれぞれ異なるアプローチで未来を切り開いています。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Gemini Enterprise：Google AI へのビジネスの新しい入口](https://blog.google/intl/ja-jp/company-news/technology/gemini-enterprisegoogle-ai/)
-**Source:** Google Japan Blog
-**Published:** 2025-10-10 13:41:00 UTC
-**Tags:** Google Cloud
+### [OneDrive 2025年秋の最新情報: Copilot + OneDrive](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/10/onedrive-2025-c-d9e9.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-10-12 03:22:15 UTC
+**Tags:** Microsoft 365, Microsoft 365 - SharePoint, Microsoft 365 Copilot, OneDrive / OneDrive for Business
 
 **Digest:**
-2025年のGoogle Cloudは好調で、年間の売上高が500億ドルを突破しました。13の製品ラインナップが年間10億ドル以上の収益を上げ、AI製品がその成長を牽引しています。顧客の65%がGoogleのAI製品を採用し、目覚ましい成長を見せています。
-
----
-
-### [【Power BI】データモデル構築からレポート・ダッシュボード作成まで（レポート編）](https://blog.jbs.co.jp/entry/2025/10/10/152019)
-**Source:** JBS Blog
-**Published:** 2025-10-10 06:20:19 UTC
-**Tags:** Power BI
-
-**Digest:**
-Microsoft Fabricのウェアハウスデータを用いたPower BI分析環境構築、今回はレポート編です。売上パフォーマンスと在庫最適化の2つの視点から、レポート設計と作成方法を解説。データモデル構築に続き、前回用いたダミーデータを利用し、実践的なステップを紹介します。Power BIで効果的なデータ分析を実現しましょう。
+2025年10月8日午前9時（米国時間）から、OneDriveの最新機能が発表されました。**個人用Vault**の強化や、**ファイル共有**機能の改善、**ストレージ**容量に関する新しいプランなど、ユーザーの利便性向上を目指した様々なアップデートが予定されています。詳細な情報は、Microsoftの公式発表をご確認ください。
 
 ---
