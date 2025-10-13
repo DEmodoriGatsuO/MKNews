@@ -1,68 +1,55 @@
-# AI Tech Trends Digest (2025-10-12)
+# AI Tech Trends Digest (2025-10-13)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [M5Stack LLM8850 モジュールと Raspberry Pi 5 で動かせるAI関連についての現状の整理](https://qiita.com/uzuki_aoba/items/e69b8d3f03bb368199fa)
-**Published:** 2025-10-11 15:44:52 UTC
-**Likes:** 3
-**Tags:** RaspberryPi, M5stack, LLM, StackFlow, LLM8850
+### [【コンテキストエンジニアリングシリーズ】2)コーディングエージェントのメモリ設計 - 長期記憶システムの実装](https://qiita.com/nogataka/items/3c40975a7271b8e8cf90)
+**Published:** 2025-10-12 07:12:03 UTC
+**Likes:** 4
+**Tags:** AI, Claude, AI駆動開発, AIエージェント, VibeCoding
 
 **Digest:**
-LLM8850でのLLM・TTS利用について、現状は2系統の情報源が存在。一つはデモ中心のLLM8850ユーザーガイド、もう一つはAPI提供を目指すStackFlow。StackFlowはまだ整備中だが、OpenAI API形式での利用を模索。現在は、API利用にはStackFlow、試用にはユーザーガイドのデモが中心。AXERAデモのAPIサーバは未確認。StackFlowの今後の動向に注目。
+AIエージェントに「忘れない記憶」を実装する実践ガイドでは、長期記憶システムの構築を解説。コンテキストエンジニアリングシリーズの続編で、**ベクトルデータベース**を活用し、**セマンティック検索**や**RAG**による情報検索を実現。Chroma DBの利用、**メモリアーキテクチャ**設計、既存Markdownからのインデックス化、ハイブリッド検索の実装など、**長期記憶システム**構築の具体的手順を紹介します。
 
 ---
 
-### [Claude Codeで100個のファイルが爆誕した話](https://qiita.com/ktdatascience/items/dcbf914e2f341564e7ef)
-**Published:** 2025-10-12 04:09:36 UTC
+### [Transformersライブラリ基礎](https://qiita.com/_kawauso_/items/523128d9b1c9722bb0a8)
+**Published:** 2025-10-12 23:31:48 UTC
 **Likes:** 1
-**Tags:** 失敗談, Claude, ClaudeCode, バイブコーディング, AI稼働開発
+**Tags:** Python, 自然言語処理, transformers, huggingface, LLM
 
 **Digest:**
-AI活用アプリ開発で、チームが「Claude Code」を盲信しバックエンドがカオスに。計画不足と理解不足で、AI提案のコードを丸投げした結果、不要ファイルが蓄積し、コンテキスト肥大化。AIの能力低下も招き、リポジトリは混乱。AIは万能ではなく、計画・理解・整理・段階的コミットが重要。コードを捨てる決断も必要と学んだ。
+ChatGPT以降、Transformersライブラリに触れ、AutoClassesの使い方を整理。Hugging Face HubでLLMやデータセットを共有。AutoTokenizerはタスクによらず利用でき、AutoModelはタスクに応じたサブクラスを選択。文章分類、要約、テキスト生成の例を示し、トークナイザのエンコード・デコード方法を解説。
 
 ---
 
-### [IBM: PoCから本番運用へ繋げる - LLM × DMNで作る意思決定システムへの移行戦略](https://qiita.com/RepKuririn/items/03849082afa1c4f2350a)
-**Published:** 2025-10-12 02:48:50 UTC
+### [Gemini(AI)で作るテスト仕様書プロンプト](https://qiita.com/enomoso_pm/items/c83aca6f611ac84333e4)
+**Published:** 2025-10-12 18:30:23 UTC
 **Likes:** 1
-**Tags:** DMN, PoC, LLM, AIエージェント
+**Tags:** AI, プロンプト, テスト仕様書, Gemini, テスト設計
 
 **Digest:**
-生成AIの意思決定課題解決に、LLMとデシジョンエージェントの協調が重要。DMN（Decision Model and Notation）を活用し、ビジネスルールを可視化・実行可能な「デシジョンサービス」を構築。LLMはDMNモデル構築支援に貢献。LLMの柔軟性とDMNの厳密性を組み合わせ、信頼性の高い自律型AIシステムを目指す。
+テスト仕様書の自動生成について、Gemini利用を前提に、仕様書を読み込み網羅的なテスト項目書を6列TSV形式で作成するプロンプトを紹介。ID、機能カテゴリ、正常/異常、テスト内容、期待結果、参照を定義し、思考プロセス、テスト粒度、記述指針を提示。最終的に100点を目指し、出力内容を繰り返し改善する。
 
 ---
 
-### [🪄 Oasis Sync v0.1.0 リリース！Gemini と GitHub Actions でブログのマルチプラットフォーム配信を自動化](https://qiita.com/Maki-HamarukiLab/items/2f1f61948334fd0d2e67)
-**Published:** 2025-10-12 05:40:22 UTC
-**Likes:** 0
-**Tags:** automation, OASIS, Gemini, GitHubActions
+### [MCPの活用や応用への考察 - MCPログ分析による異常検知：コンテンツセキュリティ運用への応用](https://qiita.com/555hamano/items/9570cf105ca544af26a5)
+**Published:** 2025-10-12 14:49:49 UTC
+**Likes:** 1
+**Tags:** API, Security, LLM, AIエージェント, ModelContextProtocol
 
 **Digest:**
-**Oasis Sync v0.1.0** リリース！ Google **Gemini** と **GitHub Actions** を活用し、Zenn や Qiita などの複数プラットフォームへの記事配信を完全自動化するツールです。単一の Markdown 記事から、各プラットフォーム向けに最適な形式へ変換、メタデータ生成も自動化。記事追加でトリガーされ、各リポジトリへ自動プッシュされます。今すぐ GitHub リポジトリで試せます！
+Model Context Protocol (MCP) のログ分析と異常検知手法で、LLMアプリのセキュリティインシデントを早期発見するアプローチを解説。ツール呼び出し、リソースアクセスなどのログから特徴量を抽出し、Isolation ForestやOne-Class SVMなどの教師なし学習で異常を検知。アラートレベル、対応フローを設計し、誤検知対策や継続的な改善の重要性を示唆。
 
 ---
 
-### [LLMの常識が変わる？最新AIモデルから学ぶ、3つの衝撃的な事実](https://qiita.com/Maki-HamarukiLab/items/ba16ef4d1f5c5d05a903)
-**Published:** 2025-10-12 05:40:22 UTC
-**Likes:** 0
-**Tags:** NVIDIA, DeepLearning, AI, LLM, MoE
+### [【コンテキストエンジニアリングシリーズ】4)コンテキスト駆動開発(CDD) - AIファーストな開発手法](https://qiita.com/nogataka/items/c74b25d66d8d1f7f5a11)
+**Published:** 2025-10-12 07:50:11 UTC
+**Likes:** 1
+**Tags:** AI, Claude, AI駆動開発, AIエージェント, VibeCoding
 
 **Digest:**
-LLMの進化は加速し、3つの衝撃的事実が明らかに。**MoE**アーキテクチャで巨大モデルの効率化、**思考プロセス可視化**でAIの透明性向上、そして多様な育成戦略による**自律エージェント**への道が開かれました。NVIDIA、LongCat、Tongyiがそれぞれ異なるアプローチで未来を切り開いています。
-
----
-
-## Latest News from RSS Feeds
-
-
-### [OneDrive 2025年秋の最新情報: Copilot + OneDrive](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/10/onedrive-2025-c-d9e9.html)
-**Source:** SharePoint Technical Notes
-**Published:** 2025-10-12 03:22:15 UTC
-**Tags:** Microsoft 365, Microsoft 365 - SharePoint, Microsoft 365 Copilot, OneDrive / OneDrive for Business
-
-**Digest:**
-2025年10月8日午前9時（米国時間）から、OneDriveの最新機能が発表されました。**個人用Vault**の強化や、**ファイル共有**機能の改善、**ストレージ**容量に関する新しいプランなど、ユーザーの利便性向上を目指した様々なアップデートが予定されています。詳細な情報は、Microsoftの公式発表をご確認ください。
+AIエージェント時代の開発手法「コンテキスト駆動開発（CDD）」は、コードよりコンテキストを重視。AIと人間の両方が理解可能な「実行可能なドキュメント」としてコンテキストを扱い、開発効率と品質を向上。TDDやDDDを強化し、コンテキストファーストな開発フローを採用。コンテキストの進化がプロダクト品質を決定。
 
 ---
