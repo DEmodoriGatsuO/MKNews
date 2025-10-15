@@ -1,128 +1,108 @@
-# AI Tech Trends Digest (2025-10-14)
+# AI Tech Trends Digest (2025-10-15)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [大規模言語モデルのためのデータベース・パフォーマンス：エージェント型AIを成功させる](https://qiita.com/kousenko/items/8f376a140ff5151b8c7a)
-**Published:** 2025-10-14 04:44:05 UTC
-**Likes:** 3
-**Tags:** vmware, Cloud, KVM, インフラ, LLM
+### [Servicenow上でGeminiを使えるようにする方法](https://qiita.com/macha_soda7/items/aa4b2accb378e5c810dc)
+**Published:** 2025-10-15 05:13:36 UTC
+**Likes:** 0
+**Tags:** JavaScript, 初心者, ServiceNow, Gemini, GeminiAPI
 
 **Digest:**
-マルチテナントAIクラウドにおけるデータサービスの最適化が重要。LLM活用の中心で、データベース性能は事業成否を左右する。AIエージェントには、リアルタイムなデータベース対話が不可欠で、低性能は遅延やコスト増を招く。ZadaraとNode4のDBaaSは、高速アクセス、スケーラブル性能、マルチテナント分離、専門家による管理を提供。AIモデルだけでなく、データパフォーマンスに着目し、信頼とコスト削減を目指す。
+ServicenowでGeminiを活用する方法を紹介。大学生が独学で、Gemini APIとServicenowを連携し、質問に対する回答を生成するUI Actionを実装。個人情報や過去の会話履歴を基にした回答も可能に。推奨コースはSNAF、ADF。最終的に、テーブルからGeminiへ質問し、回答を得るシステムを構築します。
 
 ---
 
-### [OpenAI の「Agent Builder」を試してみた！](https://qiita.com/fujisho1216/items/38596bd87da7489d8bf5)
-**Published:** 2025-10-13 06:16:41 UTC
-**Likes:** 3
-**Tags:** ワークフロー, AI, OpenAI, Agentbuilder
+### [Visual Studio 2026 Insiders：AI駆動の未来的な開発体験](https://qiita.com/axzxs2001/items/2db54f9ab3d91e71b1b0)
+**Published:** 2025-10-15 03:50:34 UTC
+**Likes:** 0
+**Tags:** C#, .NET, AI, OpenAI, GPT-4
 
 **Digest:**
-OpenAI DevDay 2025で発表されたAIエージェント向けプラットフォーム「Agent Kit」の「Agent Builder」を解説。APIトークン購入や組織認証後、ユーザー入力を分類し、フライトや滞在プランを提案するワークフローを構築。Web検索やChatKitのWidget連携も実現。GuardrailsやMCPなど他のノードも紹介し、Agent Builderの可能性を示唆。
+マイクロソフトが発表したVisual Studio 2026 Insidersは、AIアシスタント「GitHub Copilot」統合で開発効率を向上。UI刷新、高速化、並行インストール対応で、スムーズなアップグレードを実現。 .NET 10、C# 14、モダンC++、クラウドネイティブなど現代開発ニーズに対応し、Git/CI/CD連携も強化。既存拡張機能も利用可能で、次世代IDEとして開発者の生産性を高めます。
 
 ---
 
-### [AIに『Hello Worldを書いて』って頼んだら、どの言語で書いてくれるんだろう？【主要LLMにそれぞれ100回聞いてみた】](https://qiita.com/JavaLangRuntimeException/items/3710cdb033a20daafa23)
-**Published:** 2025-10-14 02:51:13 UTC
-**Likes:** 2
-**Tags:** AI, Gemini, ChatGPT, LLM, Claude
+### [Claude × Instana MCP Server Extension で発生した SSL 証明書エラーの解決まとめ（macOS）](https://qiita.com/jackyxu/items/c2b36ad32f3ccdaf2e60)
+**Published:** 2025-10-15 03:02:56 UTC
+**Likes:** 0
+**Tags:** MCP, INSTANA, observability, Claude, MCPサーバー
 
 **Digest:**
-AIが「Hello World」をどの言語で書くか実験した結果、**Python**は3つのLLM全てで100%選択。**GPT-5**はPythonとJavaScriptをほぼ固定で選択、**Gemini**はPythonに加え多様な言語、**Claude**は最も多言語で平均3つ提示。GPT-5は安定、Geminiはバランス、Claudeは教育的な選択傾向を示した。
+Claude DesktopのInstana MCP Server ExtensionでSSL証明書検証エラーが発生。原因はmacOSのPythonでCA証明書が未設定なため。解決策は`/Applications/Python*/Install Certificates.command`を実行し、Claudeを再起動すること。これにより、Instana APIへの接続が正常化し、メトリクス取得が可能になる。
 
 ---
 
-### [Gemini 2.5 Computer Use modelの概要とクイックスタート+α](https://qiita.com/ShinyaNakayama/items/5ae090a54eb25a41436c)
-**Published:** 2025-10-13 09:26:26 UTC
-**Likes:** 2
-**Tags:** Gemini, GoogleCloud
+### [資料作成が5分で終わる衝撃!イルシルAIで作業時間を1/3に削減した話](https://qiita.com/k_nabe/items/b75d15f61812d0ba508d)
+**Published:** 2025-10-15 01:56:29 UTC
+**Likes:** 0
+**Tags:** API, 業務効率化, 業務自動化, Claude
 
 **Digest:**
-Google DeepMindから発表されたGemini 2.5 Computer Useモデルは、Gemini 2.5 Proを基盤とし、UIとの対話に特化。スクリーンショットを認識し、UIアクションを生成して操作可能。ウェブサイトでのデータ入力、テスト自動化、情報収集などに活用。プレビュー版のため監督推奨、安全対策も必要。  クイックスタートで「Hello World」検索、応用でAmazonレビュー検索を試した。
+イルシルAIは、国産AIスライド生成ツールで、キーワード入力で自動作成、AIチャット機能も搭載。3,000種以上のテンプレート、PDF/PPTX出力可。月額1,680円の個人向けプランあり。作業時間85%削減、デザイン不要でプロ級資料作成が可能。無料トライアルも提供。注意点としてPC版のみ、情報入力の精度が重要。
 
 ---
 
-### [Excelが「考えて動く」時代へ。MicrosoftのAgent Mode完全解説](https://qiita.com/k_nabe/items/cc728018eec122a5bdc3)
-**Published:** 2025-10-14 01:53:45 UTC
-**Likes:** 1
-**Tags:** API, 技術調査, プロンプトエンジニアリング, Claude
+### [OpenAIのResponsesAPIから呼ばれるMCP serverはstatelessモードにしよう](https://qiita.com/behiron/items/a9721dda42169f5d3602)
+**Published:** 2025-10-15 00:21:54 UTC
+**Likes:** 0
+**Tags:** MCP, OpenAI, LLM
 
 **Digest:**
-Microsoftは2025年9月、Excelを"考える"「Agent Mode」を発表。OpenAIの推論モデルで、自然言語指示から自動分析、グラフ作成を実現。SpreadsheetBench精度57.2%で、財務分析レポート自動生成やローン計算機構築が可能。利用はWeb版Excel、Office Agentは米国個人向け。Copilotライセンス必須で、コストと精度には注意が必要。
+OpenAIのResponsesAPIでMCPサーバ接続エラーが発生。原因は、Go SDKで構築したMCPサーバがセッションを正しく扱えないこと。解決策は、サーバの`Stateless`オプションを`True`に設定すること。これにより、`Mcp-Session-Id`ヘッダの検証を無効にし、サーバからクライアントへのリクエストを制限します。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Transforming the physical world with AI: the next frontier in intelligent automation](https://aws.amazon.com/blogs/machine-learning/transforming-the-physical-world-with-ai-the-next-frontier-in-intelligent-automation/)
+### [Build a device management agent with Amazon Bedrock AgentCore](https://aws.amazon.com/blogs/machine-learning/build-a-device-management-agent-with-amazon-bedrock-agentcore/)
 **Source:** AWS ML Blog
-**Published:** 2025-10-13 22:21:26 UTC
-**Tags:** Announcements, Artificial Intelligence, Robotics
+**Published:** 2025-10-14 16:42:21 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Agents, Amazon Cognito, AWS Lambda, Internet of Things, Technical How-to
 
 **Digest:**
-AIと物理世界の融合「Physical AI」が産業を変革。AWSが支援するPhysical AI Fellowshipが、ロボットや自動化のスタートアップを育成。Bedrock Robotics、Blue Water Autonomyなど8社が参加。レベル分けされた自律性や、高度な制御、マルチモーダルセンサー、デジタルツインなどの技術が重要。AIロボット市場は急成長、投資も活発。Amazonの効率化、医療での手術時間短縮など実績も。
+IoTデバイス管理の課題を解決するAmazon Bedrock AgentCoreを活用した会話型AIシステムを紹介。複雑なUIを排除し、自然言語でデバイス管理を実現。Amazon Bedrock AgentCore Gateway、Runtime、Lambdaなどを利用し、デバイスの状態確認、WiFi設定、ユーザー管理を可能に。セキュリティとパフォーマンスも重視し、包括的なIoT環境管理を実現します。
 
 ---
 
-### [Medical reports analysis dashboard using Amazon Bedrock, LangChain, and Streamlit](https://aws.amazon.com/blogs/machine-learning/medical-reports-analysis-dashboard-using-amazon-bedrock-langchain-and-streamlit/)
+### [How Amazon Bedrock Custom Model Import streamlined LLM deployment for Salesforce](https://aws.amazon.com/blogs/machine-learning/how-amazon-bedrock-custom-model-import-streamlined-llm-deployment-for-salesforce/)
 **Source:** AWS ML Blog
-**Published:** 2025-10-13 20:56:14 UTC
-**Tags:** Amazon Bedrock, Healthcare, Intermediate (200), Technical How-to
+**Published:** 2025-10-14 16:33:57 UTC
+**Tags:** Amazon Bedrock, Amazon SageMaker AI, Customer Solutions
 
 **Digest:**
-Amazon Bedrock、LangChain、Streamlitを用いた医療レポート分析ダッシュボードを紹介。自然言語で質問し、可視化されたデータで解釈を支援。Amazon S3に保存されたCSV形式のレポートを、会話形式で分析可能。モデル選択やパラメータ比較、トレンド表示機能も搭載。デプロイ手順やセキュリティ対策、AWSの各サービス設定についても言及。
+Salesforceは、LLMの運用負荷を軽減するため、Amazon Bedrock Custom Model Importを導入。Llama、Qwenなどのカスタムモデルを容易にデプロイし、既存APIを維持。30%のデプロイ高速化と40%のコスト削減を実現。スケーラビリティ検証も行い、ApexGuruモデルで高負荷にも対応。移行は段階的に、SageMakerプロキシも活用。
 
 ---
 
-### [Kitsa transforms clinical trial site selection with Amazon Quick Automate](https://aws.amazon.com/blogs/machine-learning/kitsa-transforms-clinical-trial-site-selection-with-amazon-quick-automate/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-13 17:26:05 UTC
-**Tags:** Amazon Quick Suite, Customer Solutions
+### [Microsoft 365 Personal で、よりスマートな仕事と創造の方法を見つけましょう](https://blogs.windows.com/japan/2025/10/15/discover-smarter-ways-to-work-and-create-with-microsoft-365-personal/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-10-15 01:37:56 UTC
+**Tags:** Microsoft 365, Copilot+ PC, Microsoft 365 Personal
 
 **Digest:**
-臨床試験の課題、サイト選定を解決するため、KitsaはAmazon Quick Automateを活用。**データ抽出の96%カバー率、91%のコスト削減、96%のデータ取得高速化**を実現。AIエージェントがサイトのデータ分析を自動化し、製薬会社が客観的な判断を下せるように。規制の厳しい医療業界でも、コンプライアンスを確保し、効率的なサイト選定を可能にしました。
+Copilot+ PC 登場で、Microsoft 365 Personal が進化。対象PC購入者は、Word、Excel、PowerPointなどのAI搭載アプリを含む Microsoft 365 Personal を24ヶ月間無料で利用可能に。1TB OneDrive、Defender、Clipchampも。学生からビジネスパーソンまで、Windows 11 との連携で、よりスマートな働き方を実現します。
 
 ---
 
-### [Connect Amazon Quick Suite to enterprise apps and agents with MCP](https://aws.amazon.com/blogs/machine-learning/connect-amazon-quick-suite-to-enterprise-apps-and-agents-with-mcp/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-13 17:21:02 UTC
-**Tags:** Amazon Quick Suite, Artificial Intelligence, Business Productivity, Technical How-to
-
-**Digest:**
-Amazon Quick Suiteで、組織のデータ連携を安全に行うModel Context Protocol (MCP) Actions統合について解説。Asana, Jira, Confluenceなどと連携し、Amazon Bedrock AgentCore Gateway経由でAIエージェントや既存ソリューションも統合可能。Atlassianとの連携例や、AWS Knowledge MCP Serverとの接続、Amazon Bedrock AgentCore Gatewayの活用方法を紹介。
-
----
-
-### [Make agents a reality with Amazon Bedrock AgentCore: Now generally available](https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-is-now-generally-available/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-13 14:10:44 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Announcements, Thought Leadership
-
-**Digest:**
-AWSは、AIエージェントのエンタープライズ向けプラットフォーム「AgentCore」を一般公開。セキュアでスケーラブルな運用基盤を提供し、開発期間短縮を実現。AgentCoreは、様々なフレームワークやモデルに対応し、コード実行、ウェブ連携、メモリ機能、可視化、高信頼性、セキュリティを包括的に提供。Cohere Health、Ericsson、Sonyなど、ヘルスケア、通信、エンタメ分野で活用され、生産性向上に貢献。
-
----
-
-### [【AWS】Amazon DCV 構築編](https://blog.jbs.co.jp/entry/2025/10/14/131030)
+### [はじめてのSnowflake　【環境構築編】](https://blog.jbs.co.jp/entry/2025/10/15/112532)
 **Source:** JBS Blog
-**Published:** 2025-10-14 04:10:30 UTC
-**Tags:** AWS, Amazon DCV
+**Published:** 2025-10-15 02:25:32 UTC
+**Tags:** Snowflake, 初心者向け
 
 **Digest:**
-AWS上でDCVサーバーを構築し、クライアントから接続する手順を解説。高解像度・低遅延のリモートデスクトップを実現するAmazon DCVについて、前回の記事を基に、環境構築、セキュリティグループ設定、DCVインストール、接続確認をステップごとに説明します。
+データ活用が必須の現代、企業はデータ管理と分析が重要課題です。注目は革新的なデータウェアハウス「Snowflake」。基本情報入力、Edition、クラウドプロバイダー、リージョンを選択し、無料トライアルでSnowflakeを体験できます。Snowflakeは、その強みにより多くの企業から支持されています。
 
 ---
 
-### [VM watchでAzure Virtual Machineの正常性を監視する](https://blog.jbs.co.jp/entry/2025/10/14/083846)
+### [JamfとIntuneにおけるアプリケーション配布方法](https://blog.jbs.co.jp/entry/2025/10/14/161745)
 **Source:** JBS Blog
-**Published:** 2025-10-13 23:38:46 UTC
-**Tags:** Azure, Azure Virtual Machines, 監視
+**Published:** 2025-10-14 07:17:45 UTC
+**Tags:** Jamf, Jamf Pro, Intune, Microsoft Intune
 
 **Digest:**
-Azure仮想マシンとスケールセットの正常性監視機能「VM watch」が登場。従来別々に必要だったネットワークやアプリケーション監視が、リソース構成なしで可能に。今回は概要とインストール方法を解説。2025年9月時点ではパブリックプレビュー版として利用できます。
+Jamf ProとIntuneはデバイス管理ツールで、アプリをパッケージ化して配信できます。IntuneはWindows、iOS、Androidに対応しますが、Jamf ProはmacOS、iOS、iPadOSといったAppleデバイスに特化しています。本記事では、両製品の「パッケージ化されたアプリ配信」方法の違いに焦点を当てて解説します。
 
 ---
