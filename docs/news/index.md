@@ -1,98 +1,55 @@
-# AI Tech Trends Digest (2025-10-18)
+# AI Tech Trends Digest (2025-10-19)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [デザインをそのままにスライド型PDFを翻訳するツール](https://qiita.com/rairaii/items/a40b26e2fa1576415c86)
-**Published:** 2025-10-18 03:44:57 UTC
+### [MCPの活用や応用への考察 - MCP開発者が知っておくべき一般的な脆弱性とその対策](https://qiita.com/555hamano/items/a31c3dfdb3c58877a666)
+**Published:** 2025-10-18 16:03:00 UTC
 **Likes:** 2
-**Tags:** Python, PDF, 翻訳, OpenAI, PDF翻訳
+**Tags:** API, Security, LLM, AIエージェント, ModelContextProtocol
 
 **Digest:**
-PDFの見た目を保ったまま翻訳するツールを紹介。コマンドラインで動作し、**レイアウト崩れ**を防ぎ、**アノテーション**で編集も容易。英語PDFを日本語に、日本語PDFを英語に変換可能で、**OPENAI API**を利用。内部ではテキスト抽出、翻訳、テキスト削除、再描画の4ステップで処理。**オープンソース**で、スライド翻訳に特化し、論文翻訳には不向き。
+AnthropicのModel Context Protocol（MCP）はLLMと外部ツールを繋ぐ標準だが、プロンプトインジェクション、認証情報漏洩、RCE、監査の盲点など、新たな脆弱性リスクがある。対策として、入力フィルタリング、安全な認証情報管理、サンドボックス化、詳細なロギングが重要。多層防御と継続的な監査で、安全なMCP環境を構築することが求められる。
 
 ---
 
-### [Geminiとブレーンストーミングしてみた。](https://qiita.com/kawamo55/items/25e8f20f6db6011b527c)
-**Published:** 2025-10-17 23:34:00 UTC
+### [Anthropicが発表した「Claude Skills」：AIをあなたの業務に最適化する新時代の機能](https://qiita.com/Maki-HamarukiLab/items/23a0bc27842e4b4b7a4e)
+**Published:** 2025-10-18 15:41:14 UTC
+**Likes:** 2
+**Tags:** AI, Agent, SKILLS, Anthropic, Claude
+
+**Digest:**
+Anthropicが2025年10月に発表したClaudeの新機能「Skills」は、AIアシスタントとの働き方を革新します。タスク特化型AIモジュールで、指示・リソースを含むフォルダー構造を持ち、状況に応じて**スタック**や**切り替え**が可能。**マーケティング支援**や**会計業務**など、幅広い応用例が示されています。**Xでの反応**も高く、開発者からは「MCPを超える」との評価も。**セキュリティ**対策も施されていますが、今後の課題も存在し、**スキル文化**の到来が期待されています。
+
+---
+
+### [MCPの活用や応用への考察 - MCPと外部データ：コンテンツの信頼性をどう確保するか](https://qiita.com/555hamano/items/b45fb4982952cac29f23)
+**Published:** 2025-10-18 15:39:54 UTC
 **Likes:** 1
-**Tags:** Docker, 開発環境構築, 現場, ブレーンストーミング, Gemini
+**Tags:** API, Security, LLM, AIエージェント, ModelContextProtocol
 
 **Digest:**
-Dockerは、ホストOSを汚染せず、古いOS環境を隔離して利用できる技術。Geminiとのブレーンストーミングで、Docker導入時に古いOSイメージが「混入」する懸念は、技術的には否定的だが、運用上はサポート切れOSの利用によるセキュリティリスクとして存在すると結論付けられました。レガシーシステムの延命や開発テストで意図的に古い環境を使う場合も、セキュリティ対策が不可欠です。
+MCP環境におけるLLMの推論品質向上のため、外部データソースの信頼性確保が重要です。データの完全性（ハッシュ値、暗号化）、鮮度（タイムスタンプ、TTL）、データソースの認証（OAuth、信頼度スコア）を保証。これらを組み合わせ、改ざん防止、情報鮮度維持、ソース信頼性評価を実現し、LLMの安全で正確な推論を支えます。
 
 ---
 
-### [Geminiでピーナッツチョコと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/5c2a37b5b9de78d829c8)
-**Published:** 2025-10-18 05:25:56 UTC
+### [たった5行で自分専用のClaude Codeを作れる ― Claude Agent SDK詳解](https://qiita.com/Dinn/items/3aecd7f8e96f419f2817)
+**Published:** 2025-10-19 05:45:34 UTC
 **Likes:** 0
-**Tags:** Gemini
+**Tags:** SDK, AI, Claude, AIエージェント, ClaudeCode
 
 **Digest:**
-Geminiを使って、ピーナッツチョコと遊ぶ魔法少女のイラストを生成しました。シンプルなプロンプト「ピーナッツチョコと遊ぶ魔法少女を描いてください」を実行した結果、可愛らしい画像が得られました。今回の試みが、何かの役に立てば幸いです。
+Anthropicは、Claude Sonnet 4.5と同時期に「Claude Agent SDK」をリリース。わずか数行でClaude Code相当のエージェント構築が可能で、カスタムツールも簡単に実装できる。PythonとTypeScriptに対応し、自動コンテキスト管理や豊富なツールエコシステムが特徴。ReActパターンも自然に実現し、マルチエージェントもサポート。 Claude Agent SDKはAIエージェント開発の新たな標準となる可能性を秘めている。
 
 ---
 
-### [【要約】12-factor-agents：本番環境で動くLLMアプリケーションを構築するための原則](https://qiita.com/mtmt_factory/items/2fa8b9a92c26164aa653)
-**Published:** 2025-10-18 05:05:47 UTC
+### [【OpenAI API】画像情報から、テキスト情報を JSON形式で出力（TypeScript, Node.js）](https://qiita.com/NagaJun/items/9ea4403ae7f130f20e8e)
+**Published:** 2025-10-19 04:27:31 UTC
 **Likes:** 0
-**Tags:** AWS, LLM, AIエージェント
+**Tags:** Node.js, TypeScript, OpenAI, OpenaiAPI
 
 **Digest:**
-12ファクターエージェントは、本番環境で動くAIエージェントの構築方法論で、[12ファクターアプリ](https://12factor.net/)の精神を継承しています。プロンプト管理やコンテキスト管理など12の原則があり、既存プロダクトへの組み込みを推奨。Dex氏による多数のフレームワーク検証と技術系創業者との協働経験から生まれ、段階的な実装と、信頼性・保守性・スケーラビリティ向上に貢献します。
-
----
-
-### [【Google Cloud認定】Generative AI Leader 合格体験記](https://qiita.com/mkt_tmng/items/7eb78fe1decaf04d4b68)
-**Published:** 2025-10-18 03:41:45 UTC
-**Likes:** 0
-**Tags:** AI, 資格, Gemini, GoogleCloud, GenerativeAI
-
-**Digest:**
-「Generative AI Leader」試験に合格し、概要と勉強法を解説。試験は、**生成 AI の基礎**、**Google Cloud サービス**、**出力改善手法**、**ビジネス戦略**の4分野を評価。特に、ビジネス課題に最適な Google Cloud サービスを選択する能力が重要。**Vertex AI** の各サービスの違いを理解し、**RAG** と **ファインチューニング** の使い分けもポイント。自作問題集アプリも活用し、隙間時間を活用した学習で合格。
-
----
-
-## Latest News from RSS Feeds
-
-
-### [How TP ICAP transformed CRM data into real-time insights with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/how-tp-icap-transformed-crm-data-into-real-time-insights-with-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-17 16:15:25 UTC
-**Tags:** Amazon Bedrock, Customer Solutions, Generative AI, Technical How-to
-
-**Digest:**
-TP ICAPは、顧客データ分析にAmazon Bedrockを活用し、CRMの膨大な会議録からAIで洞察を抽出する「ClientIQ」を開発。RAGとtext-to-SQLを組み合わせ、自然言語で質問できるCRMアシスタントを実現。Amazon Bedrock Knowledge BasesやEvaluationsにより、セキュリティと精度を向上。結果、リサーチ時間を75%削減、質の高い情報提供を達成。
-
----
-
-### [Principal Financial Group accelerates build, test, and deployment of Amazon Lex V2 bots through automation](https://aws.amazon.com/blogs/machine-learning/principal-financial-group-accelerates-build-test-and-deployment-of-amazon-lex-v2-bots-through-automation/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-17 16:13:18 UTC
-**Tags:** Amazon DynamoDB, Amazon Lex, Amazon Simple Storage Service (S3), Contact Center, Customer Solutions, Financial Services
-
-**Digest:**
-Principal Financial Groupは、Amazon Lex V2ボットの構築、テスト、デプロイを自動化し、開発を50%加速。Genesys Cloud、Amazon Lex、QuickSightなどを活用し、GitHub CI/CDパイプラインとTest Workbench API連携で、インフラをコード化。これにより、開発の信頼性と効率性を向上、顧客への質の高い対話体験を提供。
-
----
-
-### [Beyond vibes: How to properly select the right LLM for the right task](https://aws.amazon.com/blogs/machine-learning/beyond-vibes-how-to-properly-select-the-right-llm-for-the-right-task/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-17 16:09:22 UTC
-**Tags:** Best Practices, Generative AI
-
-**Digest:**
-LLMの適切な選択は重要だが、現状は「雰囲気」での評価になりがち。客観的な指標に基づき、精度、速度、コストなどを多角的に評価する必要がある。**360-Eval**のようなツールを活用し、人間やLLMによる評価を組み合わせることで、より信頼性の高いモデル選定が可能になる。
-
----
-
-### [Splash Music transforms music generation using AWS Trainium and Amazon SageMaker HyperPod](https://aws.amazon.com/blogs/machine-learning/splash-music-transforms-music-generation-using-aws-trainium-and-amazon-sagemaker-hyperpod/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-17 16:06:01 UTC
-**Tags:** Amazon Elastic Container Service, Amazon FSx for Lustre, Amazon SageMaker HyperPod, Amazon Simple Storage Service (S3), Artificial Intelligence, AWS Lambda, AWS Trainium, Customer Solutions
-
-**Digest:**
-生成AI音楽プラットフォームSplash Musicは、AWSを活用し、HummingLMという基盤モデルで高品質な楽曲生成を実現。Amazon SageMaker HyperPodとAWS Trainiumにより、トレーニングコストを54%削減、高速化も達成。6億回以上のストリーミングを誇り、ユーザーの好みに合わせた音楽制作を可能に。AWS Generative AI Acceleratorにも選出され、音楽生成の革新を加速しています。
+Qiitaマイページの画像からユーザー名、貢献数、フォロー数などの情報をJSON形式で取得するサンプルを紹介。Node.jsとOpenAIを用いて、画像をbase64エンコードし、`image_url`で読み込みます。`response_format`にJSONスキーマを定義することで、JSON形式の出力を実現。サンプルコードと実行方法、期待されるJSON出力も提示しています。
 
 ---
