@@ -1,55 +1,78 @@
-# AI Tech Trends Digest (2025-10-19)
+# AI Tech Trends Digest (2025-10-20)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [MCPの活用や応用への考察 - MCP開発者が知っておくべき一般的な脆弱性とその対策](https://qiita.com/555hamano/items/a31c3dfdb3c58877a666)
-**Published:** 2025-10-18 16:03:00 UTC
-**Likes:** 2
-**Tags:** API, Security, LLM, AIエージェント, ModelContextProtocol
+### [ReActを使ったAIエージェントによる自律的ワークフローをOracle DBの機能だけで実装してみた (26ai Select AI Agent)](https://qiita.com/ssfujita/items/80454001845fa1493495)
+**Published:** 2025-10-19 23:32:56 UTC
+**Likes:** 9
+**Tags:** oracle, Database, LLM, AIエージェント, 26ai
 
 **Digest:**
-AnthropicのModel Context Protocol（MCP）はLLMと外部ツールを繋ぐ標準だが、プロンプトインジェクション、認証情報漏洩、RCE、監査の盲点など、新たな脆弱性リスクがある。対策として、入力フィルタリング、安全な認証情報管理、サンドボックス化、詳細なロギングが重要。多層防御と継続的な監査で、安全なMCP環境を構築することが求められる。
+Oracle AI Database 26aiに「Select AI Agent」機能が追加され、ReActフレームワークに基づきAIエージェントを構築可能に。SQL、RAG、Web検索などのツールを組み合わせ、自律的なワークフローを実現します。検証では、配送ルート計画のための交通情報をAIエージェントが取得。内部動作も履歴で確認でき、様々なユースケースに適用できそうです。
 
 ---
 
-### [Anthropicが発表した「Claude Skills」：AIをあなたの業務に最適化する新時代の機能](https://qiita.com/Maki-HamarukiLab/items/23a0bc27842e4b4b7a4e)
-**Published:** 2025-10-18 15:41:14 UTC
-**Likes:** 2
-**Tags:** AI, Agent, SKILLS, Anthropic, Claude
+### [Claude Code にAWS Knowledge MCP Serverを導入してみる](https://qiita.com/eiji-noguchi/items/6c5444a785595ae1f8b9)
+**Published:** 2025-10-19 10:34:23 UTC
+**Likes:** 3
+**Tags:** AWS, MCP, Claude, MCPサーバー, ClaudeCode
 
 **Digest:**
-Anthropicが2025年10月に発表したClaudeの新機能「Skills」は、AIアシスタントとの働き方を革新します。タスク特化型AIモジュールで、指示・リソースを含むフォルダー構造を持ち、状況に応じて**スタック**や**切り替え**が可能。**マーケティング支援**や**会計業務**など、幅広い応用例が示されています。**Xでの反応**も高く、開発者からは「MCPを超える」との評価も。**セキュリティ**対策も施されていますが、今後の課題も存在し、**スキル文化**の到来が期待されています。
+AWS Knowledge MCP Serverの一般提供開始を受け、Claude Codeへの導入手順を解説。ターミナルで `claude mcp add` コマンドを実行し、HTTPでAWS Knowledge MCP ServerのURLを指定する。ユーザースコープで全プロジェクト利用可能に。`/mcp` コマンドで追加を確認し、AWSに関する質問でMCPを活用することで、より正確な回答を得られることが示されています。
 
 ---
 
-### [MCPの活用や応用への考察 - MCPと外部データ：コンテンツの信頼性をどう確保するか](https://qiita.com/555hamano/items/b45fb4982952cac29f23)
-**Published:** 2025-10-18 15:39:54 UTC
+### [オンコール対応から解放される日は来るのか？ Datadog Summit Tokyo 2025参加レポート](https://qiita.com/kitsune_yk/items/4034756dce944517e9cb)
+**Published:** 2025-10-20 00:01:22 UTC
+**Likes:** 2
+**Tags:** Datadog, SRE, observability, 生成AI, LLM
+
+**Digest:**
+2025年のDatadog Summit Tokyoに参加。AI時代を見据え、Datadogプラットフォームの進化と活用事例を学んだ。特に「Bits AI」シリーズによる自律運用や、LLM Observabilityによるプロトタイピング高速化が印象的。OpenTelemetry活用事例や、RUM・Session Replayの活用、ASMによるセキュリティ対策も紹介され、統合監視の重要性を再認識した。
+
+---
+
+### [プロンプトだけじゃない！Claude Skillsで広がるAI活用の可能性](https://qiita.com/iineineno03k/items/bb9ec1ff47ace14fb57d)
+**Published:** 2025-10-19 10:37:26 UTC
+**Likes:** 2
+**Tags:** 初心者, SKILL, 生成AI, Claude, ClaudeCode
+
+**Digest:**
+Anthropicは2025年10月、Claudeに新機能「Skills」を発表。特定のタスクに特化した専門知識をパッケージ化し、高速・効率的な応答を実現します。Claude Desktopでは設定画面からスキルを有効化、ZIP形式でカスタムスキル追加も可能。Claude CodeではGitHubリポジトリからプラグインとしてインストールでき、カスタムスキルも作成可能。PowerPoint作成例のように、業務効率化に繋がる、AI開発支援の新スタンダードとなる可能性を秘めています。
+
+---
+
+### [Claude Skills を使ってプレゼンテーション資料を作成するよ](https://qiita.com/eiji-noguchi/items/aeef7b7126c99c39383b)
+**Published:** 2025-10-20 04:28:14 UTC
 **Likes:** 1
-**Tags:** API, Security, LLM, AIエージェント, ModelContextProtocol
+**Tags:** 資料作成, 生成AI, Claude, ClaudeSkills, AgentSkills
 
 **Digest:**
-MCP環境におけるLLMの推論品質向上のため、外部データソースの信頼性確保が重要です。データの完全性（ハッシュ値、暗号化）、鮮度（タイムスタンプ、TTL）、データソースの認証（OAuth、信頼度スコア）を保証。これらを組み合わせ、改ざん防止、情報鮮度維持、ソース信頼性評価を実現し、LLMの安全で正確な推論を支えます。
+10月に発表されたClaudeの「Skills」機能を解説。プレゼン資料作成Skillを使い、Claude.aiで1週間の献立資料を作成。デフォルトのPowerPointなどのスキルに加え、カスタムスキル「テーマファクトリー」でテーマも変更可能。ChatGPTとの比較も。SkillsによりClaudeの資料作成能力が向上し、カスタムスキルで更なる拡張も期待できる。
 
 ---
 
-### [たった5行で自分専用のClaude Codeを作れる ― Claude Agent SDK詳解](https://qiita.com/Dinn/items/3aecd7f8e96f419f2817)
-**Published:** 2025-10-19 05:45:34 UTC
-**Likes:** 0
-**Tags:** SDK, AI, Claude, AIエージェント, ClaudeCode
+## Latest News from RSS Feeds
+
+
+### [Surface 製品における搭載 Office 変更のお知らせ](https://blogs.windows.com/japan/2025/10/20/notice-regarding-changes-to-office-software-pre-installed-on-surface-products/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-10-20 01:53:05 UTC
+**Tags:** Surface, Copilot+ PC, Microsoft 365 Personal, Office Home & Business 2024
 
 **Digest:**
-Anthropicは、Claude Sonnet 4.5と同時期に「Claude Agent SDK」をリリース。わずか数行でClaude Code相当のエージェント構築が可能で、カスタムツールも簡単に実装できる。PythonとTypeScriptに対応し、自動コンテキスト管理や豊富なツールエコシステムが特徴。ReActパターンも自然に実現し、マルチエージェントもサポート。 Claude Agent SDKはAIエージェント開発の新たな標準となる可能性を秘めている。
+2025年11月4日より、Surface Copilot+ PCで「Microsoft 365 Personal (24か月版)」または「Office Home & Business 2024」を選択可能に。これにより、多様なニーズに対応。Microsoft 365 Personal購入者は3か月無料体験、AI機能やクラウドストレージを利用できます。Surface Pro (第11世代)などが対象。詳細は公式サイトで確認を。
 
 ---
 
-### [【OpenAI API】画像情報から、テキスト情報を JSON形式で出力（TypeScript, Node.js）](https://qiita.com/NagaJun/items/9ea4403ae7f130f20e8e)
-**Published:** 2025-10-19 04:27:31 UTC
-**Likes:** 0
-**Tags:** Node.js, TypeScript, OpenAI, OpenaiAPI
+### [Windows Hello for BusinessでPINの回復が利用できない事象の解決方法](https://blog.jbs.co.jp/entry/2025/10/20/113014)
+**Source:** JBS Blog
+**Published:** 2025-10-20 02:30:14 UTC
+**Tags:** Microsoft, Windows Hello for Business, M365, PINのリセット
 
 **Digest:**
-Qiitaマイページの画像からユーザー名、貢献数、フォロー数などの情報をJSON形式で取得するサンプルを紹介。Node.jsとOpenAIを用いて、画像をbase64エンコードし、`image_url`で読み込みます。`response_format`にJSONスキーマを定義することで、JSON形式の出力を実現。サンプルコードと実行方法、期待されるJSON出力も提示しています。
+Windows Hello for Business (WHfB) でPIN回復ができない問題が発生。解決策として、Windowsビルド番号の更新、レジストリ値（Enable LUA）を有効化する方法を紹介。PINを忘れた場合、サインイン画面で回復できない事象への対応です。
 
 ---
