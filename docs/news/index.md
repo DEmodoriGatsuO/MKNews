@@ -1,78 +1,78 @@
-# AI Tech Trends Digest (2025-10-20)
+# AI Tech Trends Digest (2025-10-21)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [ReActを使ったAIエージェントによる自律的ワークフローをOracle DBの機能だけで実装してみた (26ai Select AI Agent)](https://qiita.com/ssfujita/items/80454001845fa1493495)
-**Published:** 2025-10-19 23:32:56 UTC
-**Likes:** 9
-**Tags:** oracle, Database, LLM, AIエージェント, 26ai
-
-**Digest:**
-Oracle AI Database 26aiに「Select AI Agent」機能が追加され、ReActフレームワークに基づきAIエージェントを構築可能に。SQL、RAG、Web検索などのツールを組み合わせ、自律的なワークフローを実現します。検証では、配送ルート計画のための交通情報をAIエージェントが取得。内部動作も履歴で確認でき、様々なユースケースに適用できそうです。
-
----
-
-### [Claude Code にAWS Knowledge MCP Serverを導入してみる](https://qiita.com/eiji-noguchi/items/6c5444a785595ae1f8b9)
-**Published:** 2025-10-19 10:34:23 UTC
-**Likes:** 3
-**Tags:** AWS, MCP, Claude, MCPサーバー, ClaudeCode
-
-**Digest:**
-AWS Knowledge MCP Serverの一般提供開始を受け、Claude Codeへの導入手順を解説。ターミナルで `claude mcp add` コマンドを実行し、HTTPでAWS Knowledge MCP ServerのURLを指定する。ユーザースコープで全プロジェクト利用可能に。`/mcp` コマンドで追加を確認し、AWSに関する質問でMCPを活用することで、より正確な回答を得られることが示されています。
-
----
-
-### [オンコール対応から解放される日は来るのか？ Datadog Summit Tokyo 2025参加レポート](https://qiita.com/kitsune_yk/items/4034756dce944517e9cb)
-**Published:** 2025-10-20 00:01:22 UTC
-**Likes:** 2
-**Tags:** Datadog, SRE, observability, 生成AI, LLM
-
-**Digest:**
-2025年のDatadog Summit Tokyoに参加。AI時代を見据え、Datadogプラットフォームの進化と活用事例を学んだ。特に「Bits AI」シリーズによる自律運用や、LLM Observabilityによるプロトタイピング高速化が印象的。OpenTelemetry活用事例や、RUM・Session Replayの活用、ASMによるセキュリティ対策も紹介され、統合監視の重要性を再認識した。
-
----
-
-### [プロンプトだけじゃない！Claude Skillsで広がるAI活用の可能性](https://qiita.com/iineineno03k/items/bb9ec1ff47ace14fb57d)
-**Published:** 2025-10-19 10:37:26 UTC
-**Likes:** 2
-**Tags:** 初心者, SKILL, 生成AI, Claude, ClaudeCode
-
-**Digest:**
-Anthropicは2025年10月、Claudeに新機能「Skills」を発表。特定のタスクに特化した専門知識をパッケージ化し、高速・効率的な応答を実現します。Claude Desktopでは設定画面からスキルを有効化、ZIP形式でカスタムスキル追加も可能。Claude CodeではGitHubリポジトリからプラグインとしてインストールでき、カスタムスキルも作成可能。PowerPoint作成例のように、業務効率化に繋がる、AI開発支援の新スタンダードとなる可能性を秘めています。
-
----
-
-### [Claude Skills を使ってプレゼンテーション資料を作成するよ](https://qiita.com/eiji-noguchi/items/aeef7b7126c99c39383b)
-**Published:** 2025-10-20 04:28:14 UTC
+### [オープンソースで「自分専用のPerplexity」を構築する ─ SurfSenseの魅力と可能性を探る](https://qiita.com/s_tsuchida/items/a5139ad204efc78580bd)
+**Published:** 2025-10-20 12:34:31 UTC
 **Likes:** 1
-**Tags:** 資料作成, 生成AI, Claude, ClaudeSkills, AgentSkills
+**Tags:** devops, AI, OSS, LLM, research-agent
 
 **Digest:**
-10月に発表されたClaudeの「Skills」機能を解説。プレゼン資料作成Skillを使い、Claude.aiで1週間の献立資料を作成。デフォルトのPowerPointなどのスキルに加え、カスタムスキル「テーマファクトリー」でテーマも変更可能。ChatGPTとの比較も。SkillsによりClaudeの資料作成能力が向上し、カスタムスキルで更なる拡張も期待できる。
+**SurfSense**は、**Perplexity**や**NotebookLM**のオープンソース代替となるAIリサーチエージェント。Web検索、社内ナレッジ統合、ローカルLLM（**Ollama**など）連携が可能で、情報ソースのカスタマイズやデータプライバシー保護に貢献。**引用付き回答**生成や**Docker**での簡単デプロイも魅力。エンジニアリング情報収集や社内検索エンジンとしての活用も見込める。
+
+---
+
+### [１年ぶりでIBM Granite 4になってるし Ollama進化してパパっと使えた話](https://qiita.com/simonTokyo/items/13953f3d7e3629a29bd2)
+**Published:** 2025-10-21 02:23:08 UTC
+**Likes:** 0
+**Tags:** IBM, Granite, LLM, watsonx.ai, ollama
+
+**Digest:**
+2025年10月リリースのIBM Granite 4は、オープンソースで商用利用も可能なLLM。ローカル環境ではOllamaを使い、GUIでのモデル管理やチャット機能で簡単に試せる。日本語性能が向上し、watsonx.aiでのクラウド利用や、LangFlowとの連携によるノーコード活用も可能。ローカルとクラウドを組み合わせた、シームレスなLLM利用が実現しています。
+
+---
+
+### [Ollama使ってみた](https://qiita.com/Integral-07/items/4147983a45bbb460e66f)
+**Published:** 2025-10-21 01:58:12 UTC
+**Likes:** 0
+**Tags:** LLM, ollama
+
+**Digest:**
+OllamaはローカルでLLMを実行できるオープンソースツールで、GPU利用も可能。モデルは公式サイトからダウンロードし、`ollama run <model>`で対話、`ollama run <model> <prompt>`でワンショット実行できます。REST APIも提供し、Modelfileでモデルをカスタマイズ可能。Modelfileでは、システムプロンプトやパラメータ設定、LoRAアダプター適用、カスタムモデルの作成、管理ができます。
+
+---
+
+### [Geminiで梅干しと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/531143744f4a010b27ec)
+**Published:** 2025-10-20 21:51:10 UTC
+**Likes:** 0
+**Tags:** Gemini
+
+**Digest:**
+Geminiで生成した画像を公開。プロンプト「梅干しと遊ぶ魔法少女を描いてください」の結果として、魔法少女が梅干しと戯れる可愛らしいイラストが登場。詳細は画像を参照。何かの活用に繋がればという想いが込められています。
+
+---
+
+### [【個人開発】OTAMESHI FIGHTERS: OFFICEゲームを作ってみた。](https://qiita.com/cabacho/items/514b8b22915b97a7410b)
+**Published:** 2025-10-20 13:34:28 UTC
+**Likes:** 0
+**Tags:** React, 個人開発, Netlify, Claude
+
+**Digest:**
+「OTAMESHI FIGHTERS: OFFICEゲーム」を紹介。上司らの「試し行動」にメンタルをやられる人向けに、おためしおじさん対応アプリをReact/Viteで開発、Netlifyで公開。ChatGPTとClaudeをAI活用。AIとの対話でテーマ変更も。開発を通して、仕様固めより試行錯誤が自身に合うと再認識。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Surface 製品における搭載 Office 変更のお知らせ](https://blogs.windows.com/japan/2025/10/20/notice-regarding-changes-to-office-software-pre-installed-on-surface-products/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-10-20 01:53:05 UTC
-**Tags:** Surface, Copilot+ PC, Microsoft 365 Personal, Office Home & Business 2024
+### [【Microsoft Fabric】APIを使用したメタデータの取得](https://blog.jbs.co.jp/entry/2025/10/21/090811)
+**Source:** JBS Blog
+**Published:** 2025-10-21 00:08:11 UTC
+**Tags:** Microsoft Fabric, Azure REST API, Fabric
 
 **Digest:**
-2025年11月4日より、Surface Copilot+ PCで「Microsoft 365 Personal (24か月版)」または「Office Home & Business 2024」を選択可能に。これにより、多様なニーズに対応。Microsoft 365 Personal購入者は3か月無料体験、AI機能やクラウドストレージを利用できます。Surface Pro (第11世代)などが対象。詳細は公式サイトで確認を。
+Microsoft FabricのAPIを用いて、FabricワークスペースIDの一覧を取得する手順を解説します。対象はFabric管理者またはグローバル管理者権限を持つユーザーで、Azureポータル、Fabricポータル、PowerShellの操作スキルが前提です。API利用設定、Azure/Fabricポータルの設定を経て、APIを実行します。
 
 ---
 
-### [Windows Hello for BusinessでPINの回復が利用できない事象の解決方法](https://blog.jbs.co.jp/entry/2025/10/20/113014)
-**Source:** JBS Blog
-**Published:** 2025-10-20 02:30:14 UTC
-**Tags:** Microsoft, Windows Hello for Business, M365, PINのリセット
+### [Microsoft が再び Teams バンドルでの Microsoft 365 E3 および E5 を販売可能に](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/10/micro.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-10-21 03:59:30 UTC
+**Tags:** Microsoft 365
 
 **Digest:**
-Windows Hello for Business (WHfB) でPIN回復ができない問題が発生。解決策として、Windowsビルド番号の更新、レジストリ値（Enable LUA）を有効化する方法を紹介。PINを忘れた場合、サインイン画面で回復できない事象への対応です。
+Microsoftは欧州委員会との合意に基づき、2025年11月からMicrosoft Teamsを含むMicrosoft 365 E3/E5のバンドル販売を再開します。Slackからの提訴を受け、競争調査の結果、Teamsあり・なしの選択肢が導入され、ライセンス体系が変更。価格差は7年間固定、EEA向けには追加保証も提供されます。
 
 ---
