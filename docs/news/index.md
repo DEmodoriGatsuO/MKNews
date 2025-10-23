@@ -1,61 +1,71 @@
-# AI Tech Trends Digest (2025-10-22)
+# AI Tech Trends Digest (2025-10-23)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Claude × MCPで社内DBに話しかけてみた](https://qiita.com/kunitomo926/items/3424fbab1160de8ed9ed)
-**Published:** 2025-10-21 23:03:38 UTC
-**Likes:** 5
-**Tags:** TypeScript, MCP, AzureSQLDatabase, Claude, MCPサーバー
+### [Mermaid図経由でCopilotから情報流出 - 間接プロンプト注入型攻撃の新たな形](https://qiita.com/___nix___/items/90b157d20c819b2db2fa)
+**Published:** 2025-10-22 11:23:07 UTC
+**Likes:** 9
+**Tags:** Security, AI, copilot, LLM, echoleak
 
 **Digest:**
-ローカルPC上で動作するMCPサーバーをTypeScriptで構築し、Claude Desktopと連携、自然言語でSQLを実行する対話を実現する記事。MCPサーバーはstdio経由でClaudeと通信し、DBに安全にアクセス。`.env` で環境変数を設定し、`query_database` ツールでSELECTクエリを実行。MCP Inspectorで動作確認後、Claude Desktopに設定を追加し、Claudeに話しかけてDB情報を取得。 LangChain不要でSQL変換をLLMに委ねる設計は、オーケストレーション層構築の工数削減に繋がる。
+Microsoft 365 Copilotの脆弱性に関する注意喚起。Copilotは業務データにアクセスでき、悪意ある文書による情報漏洩リスクがある。GBHackersが報告した「Mermaid型」攻撃は、Copilotによる内部データ収集と偽UI生成により、ユーザが誘導されるワンクリック型の情報流出。対策として、自動解析の無効化、コネクタ権限最小化、パッチ適用、ユーザ教育などが重要です。
 
 ---
 
-### [【番外編】Qwen3-Omniの仕組み完全分解：その心臓部と学習戦略の深層](https://qiita.com/harusato2806/items/dfd35973b96d22e26b1b)
-**Published:** 2025-10-21 11:35:23 UTC
+### [Mastra + Next.jsをECSで動かす際のPPTX画像認識](https://qiita.com/Syoitu/items/d8e546f0d70260941212)
+**Published:** 2025-10-22 09:09:48 UTC
+**Likes:** 3
+**Tags:** OCR, ECS, Next.js, Claude, Mastra
+
+**Digest:**
+Mastra製のAIエージェントでPPTXの画像と文字を認識させるため、外部サービスを使わず実装。Amazon BedrockのCitations機能は不採用。LibreOfficeでPDF化し、ImageMagickとGhostscriptでPNGに変換、Base64化してMastraに渡す方法を採用。解像度調整でClaude APIの画像サイズ制限に対応。ECS環境では依存ライブラリインストールと`readonlyRootFilesystem`設定が必要。
+
+---
+
+### [Next.js + SQLite で開発できる Claude Code の Plugin を作ってみた](https://qiita.com/megmogmog1965/items/992f1a25f87e5915c295)
+**Published:** 2025-10-23 03:12:14 UTC
 **Likes:** 1
-**Tags:** AI, omni, LLM, Qwen3
+**Tags:** TypeScript, Next.js, LLM, Claude, ClaudeCode
 
 **Digest:**
-Qwen3-Omniは、**Thinker-Talker MoE**をLLMバックボーンに採用し、**低遅延ストリーミング音声合成**を実現。モデルは、複数のエンコーダとプロジェクション層、LLMバックボーン、Audio Decoderで構成。音声は離散トークン化、軽量ConvNetによる高速生成、ストリーミング処理で低遅延化。統一された学習目標と大規模データセット、段階的学習戦略により、マルチモーダルな能力を獲得。
+[Claude Code] を用いた Next.js + SQLite アプリ開発の効率化事例。プラグインで Subagents, Agent Skills, Hooks などを統合し、なんちゃって手順書を卒業。`/init` で初期設定、`/spec` で実装計画書生成、指示で実装開始。これにより、Next.js と SQLite を使った Web アプリ開発が手順書なしで可能に。プラグインは Slash Commands, Subagents, Agent Skills, Hooks を含み、開発を自動化します。
 
 ---
 
-### [【解説】Qwen3-Omniはどれだけ賢いのか？（応用・性能編）](https://qiita.com/harusato2806/items/d6e8c8dfb91a3b3def25)
-**Published:** 2025-10-21 11:17:26 UTC
+### [ChatGPT Atlas プロンプトインジェクションで遊ぼう](https://qiita.com/numekudi/items/4e9922da7b8324dcad37)
+**Published:** 2025-10-22 16:07:14 UTC
 **Likes:** 1
-**Tags:** AI, omni, LLM, Qwen3
+**Tags:** OpenAI, ChatGPT
 
 **Digest:**
-Qwen3-Omniは音声認識や翻訳で専門モデルを超える性能を示し、オーディオキャプショニングなどの新しい応用例を開拓。**ベンチマーク**結果から、画像とテキストの推論能力も高く、単体タスクでも高性能を維持。AIが**マルチモーダル**な情報を統合し、人間と自然に対話する未来を描く。
+ChatGPT謹製のAIブラウザ「Atlas」が登場。チャットUIが特徴で、Webサイトを読み取りLLMとツールで楽しくしてくれる。著者は、プロンプトインジェクションの実験を行い、Webサイトの指示で猫化に成功。悪意あるテキストの影響を否定できず、情報源確認の重要性を指摘。スキル診断では過大評価ながら客観評価の可能性も示唆している。
 
 ---
 
-### [一つのモデルが全てを理解する未来 - Qwen3-Omniとは何か？（仕組み解説編）](https://qiita.com/harusato2806/items/2c4779b480de4a0f35d3)
-**Published:** 2025-10-21 11:14:10 UTC
+### [Jules APIが公開されたのでVSCode拡張機能を作ってみた](https://qiita.com/Opabinium/items/190eff0194cd6cef4b78)
+**Published:** 2025-10-22 13:26:52 UTC
 **Likes:** 1
-**Tags:** AI, omni, LLM, Qwen3
+**Tags:** AI, VSCode, Gemini, AIエージェント, Jules
 
 **Digest:**
-Qwen3-Omniは、テキスト、画像、音声、動画を単一モデルで処理するマルチモーダルAI。**Thinker-Talker MoEアーキテクチャ**により、高度な処理を実現し、特に音声タスクで既存モデルを凌駕。**ストリーミング方式**と**軽量ConvNet**採用で、低遅延な音声合成を実現。人間との自然な会話を目指す技術革新が特徴。
-
----
-
-### [シスコのProject CodeGuardで生成AIによるコードセキュリティチェック(+日本語化)](https://qiita.com/shivase/items/7af71bf95cdbcef3ad39)
-**Published:** 2025-10-22 03:53:01 UTC
-**Likes:** 0
-**Tags:** Security, 生成AI, Claude, ClaudeCode
-
-**Digest:**
-シスコが公開した生成AI向けセキュリティルールセット「Project CodeGuard」を、筆者がClaude Codeで日本語化し、プラグインとして実装しました。インストールは`claude plugin marketplace add sumik5/project-codeguard-ja`で、`/codeguard-security:software-security`を実行。これにより、セキュアなコードパターン提案や脆弱性検出を日本語で実施できます。
+GoogleのAIコーディングエージェント「Jules」のVSCode拡張機能「Jules Extension」を紹介。**GitHub**連携し**非同期**でバグ修正や機能追加を行うJules APIを活用し、VSCodeからセッション管理が可能に。Gemini 2.5 Proベースで無料利用でき、カスタムプロンプトや自動更新機能も搭載。2025年10月にはJules APIが公開され、拡張機能の可能性が広がる。
 
 ---
 
 ## Latest News from RSS Feeds
 
+
+### [Quantic Echoes を発表、量子コンピューティングの実用化に向けた大きな一歩](https://blog.google/intl/ja-jp/company-news/technology/quantic-echoes/)
+**Source:** Google Japan Blog
+**Published:** 2025-10-23 08:16:00 UTC
+**Tags:** AI
+
+**Digest:**
+本日、量子コンピュータが従来型スーパーコンピュータの13,000倍の速度で、検証可能なアルゴリズムをハードウェア実行することに成功しました。これにより、分子構造計算が可能となり、実用化への大きな一歩を踏み出しました。長年の研究と6年間のブレークスルーを経て実現した画期的な成果です。
+
+---
 
 ### [プライバシー サンドボックス技術に関する計画の最新情報](https://blog.google/intl/ja-jp/products/android-chrome-play/update-on-plans-for-privacy-sandbox-technologies/)
 **Source:** Google Japan Blog
@@ -63,46 +73,66 @@ Qwen3-Omniは、テキスト、画像、音声、動画を単一モデルで処�
 **Tags:** Android, Chrome
 
 **Digest:**
-Googleは、ChromeのサードパーティCookie廃止に向け、プライバシーサンドボックス関連APIの今後の方向性を決定するため、エコシステムからのフィードバックを基に検討を進めています。ビジネス、デベロッパー、ユーザーにとって最大の価値を見出すべく、今後の重点分野とAPIの変更に関する最新情報を発表しました。
+Googleは、ChromeのサードパーティCookie廃止に向け、プライバシーサンドボックス関連APIの方向性を決定するため、エコシステムからのフィードバックを基に検討を重ねています。その結果、今後の重点分野と、APIの変更に関する最新情報を発表しました。ビジネス、開発者、ユーザーにとって最大の価値を提供することを目指しています。
 
 ---
 
-### [Serverless deployment for your Amazon SageMaker Canvas models](https://aws.amazon.com/blogs/machine-learning/serverless-deployment-for-your-amazon-sagemaker-canvas-models/)
+### [Build scalable creative solutions for product teams with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/build-scalable-creative-solutions-for-product-teams-with-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-10-21 19:03:19 UTC
-**Tags:** Amazon SageMaker Canvas, Intermediate (200), Technical How-to
+**Published:** 2025-10-22 23:02:04 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock Guardrails, Amazon Bedrock Knowledge Bases, Amazon Machine Learning, Amazon OpenSearch Service, AI/ML
 
 **Digest:**
-Amazon SageMaker Canvasで作成したMLモデルを、SageMaker Serverless Inferenceを用いて本番環境にデプロイする方法を紹介。SageMaker Model Registryへのモデル登録、モデル・エンドポイント設定、エンドポイント作成の手順を解説。可変トラフィックに最適で、インフラ管理不要。CloudFormationによる自動化も可能で、迅速かつ効率的なMLモデルの本番運用を実現します。
+Amazon Bedrockを活用し、クリエイティブワークフローを加速する方法を紹介。**Amazon Nova**モデルで商品紹介やマーケティングコピーを生成、**Amazon Bedrock**でブランドガイドラインを遵守。**知識ベース**で情報集約し、**Guardrails**で統制。**Amazon S3**へのアセット保存から、**API Gateway**を通じた**Lambda**関数による情報連携まで、一連の流れを解説。
 
 ---
 
-### [Building a multi-agent voice assistant with Amazon Nova Sonic and Amazon Bedrock AgentCore](https://aws.amazon.com/blogs/machine-learning/building-a-multi-agent-voice-assistant-with-amazon-nova-sonic-and-amazon-bedrock-agentcore/)
+### [Build a proactive AI cost management system for Amazon Bedrock – Part 2](https://aws.amazon.com/blogs/machine-learning/build-a-proactive-ai-cost-management-system-for-amazon-bedrock-part-2/)
 **Source:** AWS ML Blog
-**Published:** 2025-10-21 17:31:05 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Machine Learning, Amazon Nova, Artificial Intelligence, Generative AI, Technical How-to
+**Published:** 2025-10-22 18:58:16 UTC
+**Tags:** Advanced (300), Amazon Bedrock, AWS Step Functions, Cloud Cost Optimization, Generative AI, Technical How-to
 
 **Digest:**
-Amazon Nova Sonic は、自然な会話を実現する基盤モデルで、音声対話型の生成 AI アプリを構築します。記事では、Nova Sonic と AgentCore を連携させ、Strands Agents を活用したマルチエージェントシステムの構築について解説。銀行の音声アシスタントを例に、専門のエージェントを組み合わせることで、複雑なタスクを効率的に処理し、スケーラビリティと柔軟性を高める方法を示しています。また、音声応答の最適化や、状態管理の考慮事項についても触れています。
+Amazon Bedrockのコスト管理強化として、APIリクエストへのタグ付与による詳細なコスト配分を実現。AWS Step Functionsでリアルタイム制限、CloudWatchでメトリクス分析、Cost Explorerで可視化します。アプリケーションインテリジェンスプロファイルを使用し、コストセンター、環境、アプリケーションごとの費用を可視化し、予算管理を強化します。
 
 ---
 
-### [Accelerate large-scale AI training with Amazon SageMaker HyperPod training operator](https://aws.amazon.com/blogs/machine-learning/accelerate-large-scale-ai-training-with-amazon-sagemaker-hyperpod-training-operator/)
+### [Build a proactive AI cost management system for Amazon Bedrock – Part 1](https://aws.amazon.com/blogs/machine-learning/build-a-proactive-ai-cost-management-system-for-amazon-bedrock-part-1/)
 **Source:** AWS ML Blog
-**Published:** 2025-10-21 17:26:32 UTC
-**Tags:** Amazon Elastic Kubernetes Service, Amazon SageMaker HyperPod, Technical How-to
+**Published:** 2025-10-22 18:58:05 UTC
+**Tags:** Advanced (300), Amazon Bedrock, AWS Step Functions, Cloud Cost Optimization, Generative AI, Technical How-to
 
 **Digest:**
-Amazon SageMaker HyperPodトレーニングオペレーターは、GPUクラスターでのAIモデル開発を加速します。障害復旧機能を備え、従来の完全再起動を回避し、最大40%の学習時間短縮を実現。EKSアドオンとしてインストールし、トレーニングプロセスを監視・再開可能。ログ監視設定により、問題発生を検出し、迅速な対応を可能にします。
+Amazon Bedrockのトークン料金管理課題に対応し、AWS Step FunctionsとDynamoDBを活用した**コスト管理ソリューション**を紹介。**先行指標**と**後行指標**を組み合わせ、トークン使用量制限を設定することで、予算超過を防ぎます。**CloudWatch**でトークン使用量を監視し、DynamoDBでモデルごとの予算を設定。テストでは、低コストかつ高いパフォーマンスを示し、**Step Functions Express**の利用で月額3.75ドルで10万リクエストに対応可能です。
 
 ---
 
-### [Log Analyticsシンプルモードを使ってみる](https://blog.jbs.co.jp/entry/2025/10/22/094339)
+### [Streamline code migration using Amazon Nova Premier with an agentic workflow](https://aws.amazon.com/blogs/machine-learning/streamline-code-migration-using-amazon-nova-premier-with-an-agentic-workflow/)
+**Source:** AWS ML Blog
+**Published:** 2025-10-22 18:48:48 UTC
+**Tags:** Amazon Bedrock, Amazon Nova, Technical How-to, Generative AI
+
+**Digest:**
+Amazon Bedrock Converse APIとAmazon Nova Premierを利用し、レガシーCコードをJava/Springへ移行する手法。専門エージェントを使い、コード分析から変換、検証、統合までを段階的に実施。**自動化で時間とコストを削減、コード品質向上、リスク最小化**を実現。Strandsフレームワークとカスタム処理で、トークン制限を克服。
+
+---
+
+### [Metagenomi generates millions of novel enzymes cost-effectively using AWS Inferentia](https://aws.amazon.com/blogs/machine-learning/metagenomi-generates-millions-of-novel-enzymes-cost-effectively-using-aws-inferentia/)
+**Source:** AWS ML Blog
+**Published:** 2025-10-22 13:53:20 UTC
+**Tags:** AWS Inferentia, AWS Neuron, Customer Solutions, Life Sciences
+
+**Digest:**
+Metagenomiは、AIを活用した酵素バリアント生成のコスト削減を目指し、Progen2モデルをAWS Inferentiaで実装。AWS BatchとEC2 Spot Instancesを使用し、最大56%のコスト削減を達成しました。検証の結果、GPUと比較してInf2は高効率で、大規模なタンパク質シーケンス生成に適していることが示されました。
+
+---
+
+### [Microsoft Authenticator アプリを使った3つのサインイン方法](https://blog.jbs.co.jp/entry/2025/10/23/094646)
 **Source:** JBS Blog
-**Published:** 2025-10-22 00:43:39 UTC
-**Tags:** Azure, Azure Log Analytics, Log
+**Published:** 2025-10-23 00:46:46 UTC
+**Tags:** MFA, Microsoft Authenticator, Microsoft, 多要素認証(MFA)
 
 **Digest:**
-Log Analyticsのシンプルモードは、複雑な設定不要でログデータの分析、可視化、異常検知を可能にする直感的な機能です。誰でも使いやすいインターフェースが特徴で、使用方法を解説します。シンプルモードは、Log Analyticsへのアクセス、モード選択、テーブル選択、フィルターといったステップで簡単に利用を開始できます。
+Microsoft Authenticatorアプリのサインイン方法を解説。プッシュ通知、ワンタイムパスワード（OTP）、パスキーの特徴を説明し、設定方法や動作検証まで解説します。アプリ登録、サインイン設定、各方法での検証手順を網羅。Microsoft Authenticatorを活用し、安全なサインインを実現しましょう。
 
 ---
