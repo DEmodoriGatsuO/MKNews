@@ -1,98 +1,78 @@
-# AI Tech Trends Digest (2025-10-24)
+# AI Tech Trends Digest (2025-10-25)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Claude Skills: AIが本当に賢くなる秘密](https://qiita.com/QueryPieAI/items/0bd0758d77d2fa3ccba0)
-**Published:** 2025-10-23 08:44:01 UTC
+### [個人的GitHub Copilotの使い方メモ](https://qiita.com/Nozomuts/items/430261fa996cba5fd466)
+**Published:** 2025-10-24 10:42:06 UTC
+**Likes:** 3
+**Tags:** GitHub, AI, VSCode, LLM
+
+**Digest:**
+GitHub Copilotを愛用、VSCodeで利用(2025/10時点)しています。料金の安さ、エディタ中心の作業、多様なモデル利用が利点。速度や精度は課題も、通知機能で対応。Claude Codeとの機能比較では、GitHub Actions連携は劣るものの、VSCodeとの連携や料金面で優位性。設定項目も調整。カスタムプロンプトで効率化を図っています。
+
+---
+
+### [Prompt Cachingをもう少し踏み込んで動かしてみた(Anthropic)](https://qiita.com/marudog/items/7e9edb841e28f8e7783b)
+**Published:** 2025-10-24 14:32:55 UTC
 **Likes:** 2
-**Tags:** 効率化, MCP, SKILL, Claude, AIエージェント
+**Tags:** bedrock, Anthropic, PromptCaching
 
 **Digest:**
-AIアシスタントClaudeの「Skills」機能が進化し、まるで専門家のように業務を効率化。従来のAIが苦手だったエクセルレポート作成やコードレビューも、必要なスキルを呼び出し瞬時に完了します。Boxでのプレゼン資料作成時間短縮、楽天の会計業務の劇的改善など、導入企業では大幅なコスト削減と作業時間短縮を実現。開発者は自作スキルで業務を自動化でき、トークン効率も大幅向上。Claude Skillsを試して、AI革新の波に乗りましょう！
+AnthropicのPrompt Cachingを実際に動かして検証。メッセージにチェックポイントでtoolやsystemもキャッシュ、合計トークン数が最小トークン数超えでキャッシュ、完全一致が条件。キャッシュ済みの状態で増分キャッシュは最小トークン数未満でもOK。これにより、会話履歴削減よりキャッシュ維持が有効と判明。Bedrock利用時はトークン制限にも有利に働く。
 
 ---
 
-### [2025年版 MCP(Model Context Protocol)で変わるAI統合の新常識](https://qiita.com/ABC-KeisukeKashio/items/8ff2f5d8f87dca0a4858)
-**Published:** 2025-10-23 06:33:02 UTC
-**Likes:** 2
-**Tags:** AI, MCP, LLM, Claude, AI統合
-
-**Digest:**
-2024年発表の**Model Context Protocol（MCP）**は、AIと外部データ連携を繋ぐオープン標準。2025年に**Anthropic, OpenAI, Google, Microsoft, AWS**などが対応し、業界標準化が進む。**JSON-RPC 2.0**ベースで、セキュリティ面ではOAuth 2.0など対策が必要。Anthropicの参照実装やSDKを活用し、本格導入にはロードマップ確認、セキュリティ検討、パイロットプロジェクトが重要。
-
----
-
-### [自分のClaude Codeの環境をプラグイン化する](https://qiita.com/getty104/items/f9cb334778dfe624de81)
-**Published:** 2025-10-23 12:32:57 UTC
+### [Dockerを用いたOllamaの実行手順まとめ](https://qiita.com/Chi_corp_123/items/7b3e2617e901a656ede4)
+**Published:** 2025-10-24 11:50:38 UTC
 **Likes:** 1
-**Tags:** AI, LLM, Claude, AIエージェント, ClaudeCode
+**Tags:** Python, JavaScript, Docker, LLM, ollama
 
 **Digest:**
-2025年10月10日にリリースされたClaude Codeのプラグイン機能を解説。自身のツールセットをプラグイン化する手順として、リポジトリ作成、`.claude-plugin/marketplace.json`定義、プラグイン実装を紹介。カスタムコマンドやサブエージェント、MCP設定などをパッケージ化し、簡単にインストール・配布可能に。プラグインインストールも容易で、dotfilesより手軽な環境構築を実現。
+ローカルLLM実行ツールOllamaをDockerで動かす手順を解説。Dockerの準備として、ollama/ollamaイメージを取得し起動、動作確認を行う。モデル（gemma3, llama3, gpt-oss）の入手後、curlやPython、JavaScriptを用いて推論を実行。pipやnpmでollamaをインストールし、コード例を通して推論結果を確認できます。
 
 ---
 
-### [VSCodeに連携したCodexを使って趣味のVOICEVOXでの文章朗読アプリ(AIによる配役)を作ってみた](https://qiita.com/roripika/items/aa121641ce119df9cbe2)
-**Published:** 2025-10-23 10:19:39 UTC
+### [LLMは味覚を理解できるか？新ベンチマーク「カレーベンチ」](https://qiita.com/estyle-koho/items/803db6fbb294098980ce)
+**Published:** 2025-10-24 06:13:34 UTC
 **Likes:** 1
-**Tags:** OpenAI, codex, GeminiCLI
+**Tags:** エンジニアブログ, 生成AI, LLM
 
 **Digest:**
-エンジニアがVOICEVOX朗読アプリをAIと対話しながら開発。きっかけは小説作成支援。GitHubで公開。ChatGPTのCodexを利用し、VOICEVOX自動配役やGUI化を実現。GeminiなどLLM対応やWSL環境整備も。最終的にJSON解析問題やトークン制限など課題を克服し、約2ヶ月で完成。AIとの対話による開発手法を重視。
+LLMの味覚・創造性を評価する新ベンチマーク「カレーベンチ」を実施。Gemini-2.5-Proが「味噌とカカオ」の斬新レシピで優勝、LLMの味覚推論能力を示唆。GPT-5やClaudeも参加、モデル間の性能差が明らかに。DeepSeekは水量の誤りで評価外に。官能評価で味のプロファイルも分析、今後に期待。
 
 ---
 
-### [【GAS】Gemini in Meetの議事録を自動タスク化しようとしたら、7つの沼にハマった話（最終コードあり）](https://qiita.com/wagateee/items/c801aac452a11cffaa5d)
-**Published:** 2025-10-24 01:27:07 UTC
+### [Geminiでニンジンと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/df09a88ac4b2bbad4447)
+**Published:** 2025-10-24 21:46:05 UTC
 **Likes:** 0
-**Tags:** GoogleAppsScript, GAS, Gemini
+**Tags:** Gemini
 
 **Digest:**
-Google WorkspaceのGeminiによる会議議事録自動生成とタスク管理の自動化を目指し、GASでメールからドキュメントURLを取得するも、ファイルがPDFだったため、OCRでGoogleドキュメントに変換してパースする複雑な処理に。最終的に、Drive API v3でOCR、独自のパース処理、一時ファイルの削除で、タスク抽出に成功。設定項目をまとめた全コードも公開。
+Geminiを用いて、ニンジンと遊ぶ魔法少女のイラストを生成しました。プロンプトは「ニンジンと遊ぶ魔法少女を描いてください」で、その結果として可愛らしい画像が得られました。この試みが、何かの役に立つことを願っています。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Quantum Echoes を発表、量子コンピューティングの実用化に向けた大きな一歩](https://blog.google/intl/ja-jp/company-news/technology/quantic-echoes/)
-**Source:** Google Japan Blog
-**Published:** 2025-10-23 08:16:00 UTC
-**Tags:** AI
-
-**Digest:**
-本日、量子コンピュータが、従来のスーパーコンピュータの13,000倍の速さで検証可能なアルゴリズムを実行する研究成果を発表。分子構造計算が可能になり、実用化への道が開かれます。これは、数十年の研究と6年間の大きな進歩に基づき築かれた画期的な成果です。
-
----
-
-### [Generate Gremlin queries using Amazon Bedrock models](https://aws.amazon.com/blogs/machine-learning/generate-gremlin-queries-using-amazon-bedrock-models/)
+### [Responsible AI design in healthcare and life sciences](https://aws.amazon.com/blogs/machine-learning/responsible-ai-design-in-healthcare-and-life-sciences/)
 **Source:** AWS ML Blog
-**Published:** 2025-10-23 20:57:29 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Amazon Neptune, Amazon Nova, Artificial Intelligence, Database
+**Published:** 2025-10-24 17:25:39 UTC
+**Tags:** Best Practices, Foundational (100), Generative AI, Responsible AI
 
 **Digest:**
-Amazon Bedrockのモデル、特にNova Proを活用し、自然言語からGremlinクエリを生成する手法を紹介。複雑なグラフデータベースへのアクセスを容易にするため、知識抽出、テキスト to SQL類似の構造化、クエリ生成の3段階で実現。評価にはLLMを使用し、正確性、効率性、コストを分析。実験結果では、Nova Proが他のモデルより高速かつ低コストで、高い精度を示した。
+生成AIは医療を変革し、患者エンゲージメントやケア管理を向上させる。LLMを活用し診断支援、個別化提案で医療の質向上も期待される。安全で責任あるAIアプリケーション構築には、入力と出力のシステムレベルポリシー定義が重要。Confabulation（誤情報生成）やBias（偏見）リスクへの対策として、明確なコンテンツポリシーやガードレールの導入、透明性の確保が不可欠。
 
 ---
 
-### [Incorporating responsible AI into generative AI project prioritization](https://aws.amazon.com/blogs/machine-learning/incorporating-responsible-ai-into-generative-ai-project-prioritization/)
+### [Beyond pilots: A proven framework for scaling AI to production](https://aws.amazon.com/blogs/machine-learning/beyond-pilots-a-proven-framework-for-scaling-ai-to-production/)
 **Source:** AWS ML Blog
-**Published:** 2025-10-23 20:51:41 UTC
-**Tags:** Best Practices, Generative AI, Responsible AI
+**Published:** 2025-10-24 14:42:41 UTC
+**Tags:** Best Practices, Generative AI, Thought Leadership
 
 **Digest:**
-生成AIプロジェクトの優先順位付けで、AWSは**責任あるAI**の実践を推奨。公平性、安全性などの8つの観点を考慮し、リスク評価を初期段階で行います。**WSJF法**を用いてビジネス価値とコストを比較し、リスク軽減策を**ジョブサイズ**に含めます。製品説明生成と画像生成の2つのプロジェクトを例に、リスク評価後の優先順位の変化を示し、より適切なプロジェクト選定を可能にしています。
-
----
-
-### [Azure Data Lake Storage Gen2 コネクタで Microsoft 365 Copilot を拡張する方法](https://blog.jbs.co.jp/entry/2025/10/24/095421)
-**Source:** JBS Blog
-**Published:** 2025-10-24 00:54:21 UTC
-**Tags:** Copilot, Microsoft Graph Connectors, Azure Data Lake Storage Gen2
-
-**Digest:**
-近年、企業データ増大に伴い、Azure Data Lake Storage Gen2 (ADLS Gen2) が分析用データ保存に活用されています。Microsoft 365 Copilot は業務効率化に貢献しますが、効果を最大化するには、ADLS Gen2を含む様々なデータソースとの連携が不可欠です。
+AWSの生成AIは、65%の顧客プロジェクトがコンセプトから本番に移行し、中には45日でローンチ。その秘訣は、**The Five V's Framework**。これは、価値、可視化、検証、確認、冒険の5段階で、顧客ニーズを重視し、NFLのゲーム統計、Druvaのカスタマーサポートなど、様々な業界で活用。EPAの文書処理時間85%削減も実現。AWSは、専門家によるガイダンスや自己学習リソースを提供し、AIの本番導入を支援しています。
 
 ---
