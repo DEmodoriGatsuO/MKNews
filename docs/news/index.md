@@ -1,78 +1,55 @@
-# AI Tech Trends Digest (2025-10-25)
+# AI Tech Trends Digest (2025-10-26)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [個人的GitHub Copilotの使い方メモ](https://qiita.com/Nozomuts/items/430261fa996cba5fd466)
-**Published:** 2025-10-24 10:42:06 UTC
-**Likes:** 3
-**Tags:** GitHub, AI, VSCode, LLM
-
-**Digest:**
-GitHub Copilotを愛用、VSCodeで利用(2025/10時点)しています。料金の安さ、エディタ中心の作業、多様なモデル利用が利点。速度や精度は課題も、通知機能で対応。Claude Codeとの機能比較では、GitHub Actions連携は劣るものの、VSCodeとの連携や料金面で優位性。設定項目も調整。カスタムプロンプトで効率化を図っています。
-
----
-
-### [Prompt Cachingをもう少し踏み込んで動かしてみた(Anthropic)](https://qiita.com/marudog/items/7e9edb841e28f8e7783b)
-**Published:** 2025-10-24 14:32:55 UTC
-**Likes:** 2
-**Tags:** bedrock, Anthropic, PromptCaching
-
-**Digest:**
-AnthropicのPrompt Cachingを実際に動かして検証。メッセージにチェックポイントでtoolやsystemもキャッシュ、合計トークン数が最小トークン数超えでキャッシュ、完全一致が条件。キャッシュ済みの状態で増分キャッシュは最小トークン数未満でもOK。これにより、会話履歴削減よりキャッシュ維持が有効と判明。Bedrock利用時はトークン制限にも有利に働く。
-
----
-
-### [Dockerを用いたOllamaの実行手順まとめ](https://qiita.com/Chi_corp_123/items/7b3e2617e901a656ede4)
-**Published:** 2025-10-24 11:50:38 UTC
+### [ローカルgpt-oss:120bでCodex IDE extensionを動かす](https://qiita.com/irochigai-mono/items/146805262830efee5f7f)
+**Published:** 2025-10-25 06:47:29 UTC
 **Likes:** 1
-**Tags:** Python, JavaScript, Docker, LLM, ollama
+**Tags:** MCP, LLM, gpt-oss-120b, CodexIDEextension
 
 **Digest:**
-ローカルLLM実行ツールOllamaをDockerで動かす手順を解説。Dockerの準備として、ollama/ollamaイメージを取得し起動、動作確認を行う。モデル（gemma3, llama3, gpt-oss）の入手後、curlやPython、JavaScriptを用いて推論を実行。pipやnpmでollamaをインストールし、コード例を通して推論結果を確認できます。
+ローカルLLM「gpt-oss:120b」でVSCode拡張機能Codexを利用する方法を紹介。設定ファイル`config.toml`にモデル情報を記述するだけで、コーディングエージェントを無料で使い放題に。web検索は別途MCPを導入する必要がある。詳しい設定手順と、ローカルLLMの事前知識を解説。
 
 ---
 
-### [LLMは味覚を理解できるか？新ベンチマーク「カレーベンチ」](https://qiita.com/estyle-koho/items/803db6fbb294098980ce)
-**Published:** 2025-10-24 06:13:34 UTC
-**Likes:** 1
-**Tags:** エンジニアブログ, 生成AI, LLM
-
-**Digest:**
-LLMの味覚・創造性を評価する新ベンチマーク「カレーベンチ」を実施。Gemini-2.5-Proが「味噌とカカオ」の斬新レシピで優勝、LLMの味覚推論能力を示唆。GPT-5やClaudeも参加、モデル間の性能差が明らかに。DeepSeekは水量の誤りで評価外に。官能評価で味のプロファイルも分析、今後に期待。
-
----
-
-### [Geminiでニンジンと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/df09a88ac4b2bbad4447)
-**Published:** 2025-10-24 21:46:05 UTC
+### [Docker Composeでllama‑serverを動かす](https://qiita.com/irochigai-mono/items/3975dc01c0cb3a5f104f)
+**Published:** 2025-10-26 05:24:11 UTC
 **Likes:** 0
-**Tags:** Gemini
+**Tags:** 初心者, docker-compose, docker-compose.yml, LLM, llama.cpp
 
 **Digest:**
-Geminiを用いて、ニンジンと遊ぶ魔法少女のイラストを生成しました。プロンプトは「ニンジンと遊ぶ魔法少女を描いてください」で、その結果として可愛らしい画像が得られました。この試みが、何かの役に立つことを願っています。
+ローカルLLM運用はDocker Composeで手軽に。`llama.cpp` のサーバーコンテナを使い、YAMLファイルで環境構築。`image`、`ports`、`environment`、`command` を設定し、GPU利用や各種パラメータを調整可能。`restart: unless-stopped` で自動再起動。Dockerの基礎知識と、ログローテーション、永続ボリューム定義も解説。
 
 ---
 
-## Latest News from RSS Feeds
-
-
-### [Responsible AI design in healthcare and life sciences](https://aws.amazon.com/blogs/machine-learning/responsible-ai-design-in-healthcare-and-life-sciences/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-24 17:25:39 UTC
-**Tags:** Best Practices, Foundational (100), Generative AI, Responsible AI
+### [【Claude】 Skillsを試してみよう、機能概要からスクリプトの制約までを理解](https://qiita.com/eno49conan/items/a303d3e8aa770c6e2448)
+**Published:** 2025-10-26 03:47:25 UTC
+**Likes:** 0
+**Tags:** Python, Claude, ClaudeCode
 
 **Digest:**
-生成AIは医療を変革し、患者エンゲージメントやケア管理を向上させる。LLMを活用し診断支援、個別化提案で医療の質向上も期待される。安全で責任あるAIアプリケーション構築には、入力と出力のシステムレベルポリシー定義が重要。Confabulation（誤情報生成）やBias（偏見）リスクへの対策として、明確なコンテンツポリシーやガードレールの導入、透明性の確保が不可欠。
+AnthropicがClaude向け新機能「Skills」を公開。Markdownとリソースファイルで構成され、繰り返しタスクや専門知識に有効。**Claude Desktop**で検証し、パッケージ一覧取得Skillを作成、アップロード。**Playwright**でローカルHTMLのスクリーンショット取得は成功、**外部ネットワークアクセス**は不可。Claude Codeからも利用可能。MCPサーバー連携など今後の展開に注目。制約を理解し、他ツールとの連携で柔軟なワークフロー構築が期待される。
 
 ---
 
-### [Beyond pilots: A proven framework for scaling AI to production](https://aws.amazon.com/blogs/machine-learning/beyond-pilots-a-proven-framework-for-scaling-ai-to-production/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-24 14:42:41 UTC
-**Tags:** Best Practices, Generative AI, Thought Leadership
+### [マニュアルや設定記事を1回も読まずにServiceNow の AI Agentを設定した話](https://qiita.com/oichan00/items/2ac0b221a6d106f4fa79)
+**Published:** 2025-10-26 03:20:05 UTC
+**Likes:** 0
+**Tags:** ServiceNow, Gemini, GPT-5, システムプロンプト, AI_Agent
 
 **Digest:**
-AWSの生成AIは、65%の顧客プロジェクトがコンセプトから本番に移行し、中には45日でローンチ。その秘訣は、**The Five V's Framework**。これは、価値、可視化、検証、確認、冒険の5段階で、顧客ニーズを重視し、NFLのゲーム統計、Druvaのカスタマーサポートなど、様々な業界で活用。EPAの文書処理時間85%削減も実現。AWSは、専門家によるガイダンスや自己学習リソースを提供し、AIの本番導入を支援しています。
+ServiceNowハッカソンで、2週間でAI Agent開発に挑むため、生成AIとGUI開発を進める方法を解説。DeepResearchで情報を収集し、それをAIに読み込ませ、スクリーンショットと共に開発を進めます。AIに設定方法や自然言語指示の作成をサポートしてもらい、エラー解消もAIに頼ることで、半日程度でAI Agentの基礎を構築できます。
+
+---
+
+### [AdCraft AI - 次世代のコマーシャル動画制作体験 | AI  Agent Hackathon 2025](https://qiita.com/oharu121/items/a21b4fea599028d5d59c)
+**Published:** 2025-10-26 02:59:54 UTC
+**Likes:** 0
+**Tags:** Gemini, GoogleCloud, AIAgent, veo3, Imagen
+
+**Digest:**
+AI Agent Hackathonで開発された「AdCraft AI」は、Google Veo 3などを活用し、商品画像から高品質なコマーシャル動画を自動生成するシステムです。Maya、David、Zaraの3つのAIエージェントが連携し、低コストで迅速、高品質な動画制作を実現。画像からの動画生成、プロンプト最適化、多言語対応などが特徴で、課題解決と今後の展望を示しています。
 
 ---
