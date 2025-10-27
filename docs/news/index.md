@@ -1,55 +1,68 @@
-# AI Tech Trends Digest (2025-10-26)
+# AI Tech Trends Digest (2025-10-27)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [ローカルgpt-oss:120bでCodex IDE extensionを動かす](https://qiita.com/irochigai-mono/items/146805262830efee5f7f)
-**Published:** 2025-10-25 06:47:29 UTC
-**Likes:** 1
-**Tags:** MCP, LLM, gpt-oss-120b, CodexIDEextension
+### [SELECT AIがオンプレでも使えると聞いて試してみた (Oracle AI Database 26ai)](https://qiita.com/ssfujita/items/79c253269f94d2895c7a)
+**Published:** 2025-10-26 23:17:23 UTC
+**Likes:** 3
+**Tags:** oracle, Database, rag, LLM, 26ai
 
 **Digest:**
-ローカルLLM「gpt-oss:120b」でVSCode拡張機能Codexを利用する方法を紹介。設定ファイル`config.toml`にモデル情報を記述するだけで、コーディングエージェントを無料で使い放題に。web検索は別途MCPを導入する必要がある。詳しい設定手順と、ローカルLLMの事前知識を解説。
+Oracle AI Database 26ai (Free版) でSELECT AI (NL2SQL) が利用可能に。`DBMS_CLOUD`、`DBMS_CLOUD_AI` パッケージを導入し、SSLウォレット、ACEを設定。OCI生成AIサービス Cohere を利用し、サンプルスキーマでSQL生成と結果の自然言語表示を確認。より高精度な回答にはコメント付与も有効です。
 
 ---
 
-### [Docker Composeでllama‑serverを動かす](https://qiita.com/irochigai-mono/items/3975dc01c0cb3a5f104f)
-**Published:** 2025-10-26 05:24:11 UTC
+### [GeminiでGoogleスライドにエクスポート可能なスライドが作れるようになっていた！！](https://qiita.com/Nozomuts/items/198fceb42a261a3914e0)
+**Published:** 2025-10-27 03:10:56 UTC
 **Likes:** 0
-**Tags:** 初心者, docker-compose, docker-compose.yml, LLM, llama.cpp
+**Tags:** AI, Googleスライド, Gemini, LLM
 
 **Digest:**
-ローカルLLM運用はDocker Composeで手軽に。`llama.cpp` のサーバーコンテナを使い、YAMLファイルで環境構築。`image`、`ports`、`environment`、`command` を設定し、GPU利用や各種パラメータを調整可能。`restart: unless-stopped` で自動再起動。Dockerの基礎知識と、ログローテーション、永続ボリューム定義も解説。
+GeminiのCanvas機能で、Googleスライドにエクスポート可能なスライド作成が可能に。10月のGemini Dropsで紹介され、Proプランで利用開始。まだ利用できない人もいる模様。Markdownファイルからスライド生成を試した結果、一部表示崩れはあるものの、内容に忠実。Googleスライドで編集もでき、スライドの叩き台として便利。
 
 ---
 
-### [【Claude】 Skillsを試してみよう、機能概要からスクリプトの制約までを理解](https://qiita.com/eno49conan/items/a303d3e8aa770c6e2448)
-**Published:** 2025-10-26 03:47:25 UTC
+### [【初心者向け】LangChainって何？大学生でもわかるAIアプリ開発入門](https://qiita.com/huntersai/items/90cf2614a1e198502c1e)
+**Published:** 2025-10-27 01:32:39 UTC
 **Likes:** 0
-**Tags:** Python, Claude, ClaudeCode
+**Tags:** OpenAI, LangChain, LLM, 中野哲平, 初心者向けのLangchain解説講座by中野哲平
 
 **Digest:**
-AnthropicがClaude向け新機能「Skills」を公開。Markdownとリソースファイルで構成され、繰り返しタスクや専門知識に有効。**Claude Desktop**で検証し、パッケージ一覧取得Skillを作成、アップロード。**Playwright**でローカルHTMLのスクリーンショット取得は成功、**外部ネットワークアクセス**は不可。Claude Codeからも利用可能。MCPサーバー連携など今後の展開に注目。制約を理解し、他ツールとの連携で柔軟なワークフロー構築が期待される。
+**LangChain**は、AIアプリを簡単に作る**フレームワーク**。初心者向けに解説し、チャットボット作成、**長期記憶**、**RAG（質問応答）**、AIエージェントなどの機能を紹介。PythonとOpenAI APIキーがあれば始められ、大学のレポート作成などにも活用可能。注意点として、API利用は有料で、データのプライバシーや回答の正確性にも注意が必要です。
 
 ---
 
-### [マニュアルや設定記事を1回も読まずにServiceNow の AI Agentを設定した話](https://qiita.com/oichan00/items/2ac0b221a6d106f4fa79)
-**Published:** 2025-10-26 03:20:05 UTC
+### [「動物ではなく幽霊を召喚している」: Andrej Karpathyが語るLLMの真髄と技術者が今すべきこと](https://qiita.com/s_tsuchida/items/02f6fb2ef0c626bcc1c2)
+**Published:** 2025-10-27 01:26:17 UTC
 **Likes:** 0
-**Tags:** ServiceNow, Gemini, GPT-5, システムプロンプト, AI_Agent
+**Tags:** AI, 学習法, エージェント, LLM, Karpathy
 
 **Digest:**
-ServiceNowハッカソンで、2週間でAI Agent開発に挑むため、生成AIとGUI開発を進める方法を解説。DeepResearchで情報を収集し、それをAIに読み込ませ、スクリーンショットと共に開発を進めます。AIに設定方法や自然言語指示の作成をサポートしてもらい、エラー解消もAIに頼ることで、半日程度でAI Agentの基礎を構築できます。
+元OpenAIのAndrej Karpathy氏が、Dwarkesh PodcastでLLMの本質を語った。彼はLLMを「動物」ではなく「幽霊」と表現し、AIエージェントの過度な期待に警鐘を鳴らした。技術者には「ブログよりコードを」と実装を重視する姿勢を促し、記憶構造や学習法についても言及。**「Working Memory」と「Hazy Recollection」**という人間の記憶に例えた説明や、人に説明することが重要という学習アプローチも示唆した。
 
 ---
 
-### [AdCraft AI - 次世代のコマーシャル動画制作体験 | AI  Agent Hackathon 2025](https://qiita.com/oharu121/items/a21b4fea599028d5d59c)
-**Published:** 2025-10-26 02:59:54 UTC
+### [MCPの活用や応用への考察 -  MCP監査ログを活用した機械学習による不正検知システムの構築](https://qiita.com/555hamano/items/a3b1ac448d62e14f841f)
+**Published:** 2025-10-27 00:34:13 UTC
 **Likes:** 0
-**Tags:** Gemini, GoogleCloud, AIAgent, veo3, Imagen
+**Tags:** API, Security, LLM, AIエージェント, ModelContextProtocol
 
 **Digest:**
-AI Agent Hackathonで開発された「AdCraft AI」は、Google Veo 3などを活用し、商品画像から高品質なコマーシャル動画を自動生成するシステムです。Maya、David、Zaraの3つのAIエージェントが連携し、低コストで迅速、高品質な動画制作を実現。画像からの動画生成、プロンプト最適化、多言語対応などが特徴で、課題解決と今後の展望を示しています。
+Model Context Protocol (MCP)監査ログを用いた機械学習による不正利用検知システム構築を解説。**Tool実行履歴、リソースアクセス、プロンプト**などから特徴量を抽出し、**Isolation Forest、LSTM Autoencoder**等の異常検知モデルで**未知の脅威**に対応。**リアルタイム検知、自動レスポンス、フィードバックループ**を構築し、精度と再現率を評価。**段階的な実装**で堅牢なセキュリティシステムを構築。
+
+---
+
+## Latest News from RSS Feeds
+
+
+### [Power Appsのモデル駆動アプリのフォームにカスタムページをダイアログ形式で表示してみる](https://blog.jbs.co.jp/entry/2025/10/27/105406)
+**Source:** JBS Blog
+**Published:** 2025-10-27 01:54:06 UTC
+**Tags:** Power Apps, PowerPlatform
+
+**Digest:**
+モデル駆動型アプリで独自のダイアログや追加情報表示が必要な場合、カスタムページが有効です。簡易表示やサブグリッドは高度なコーディングやデザイン性が課題でしたが、カスタムページを組み込むことで解決。今回は、モデル駆動型アプリのフォームにコマンドボタンを配置し、カスタムページをダイアログとして表示する方法を紹介します。
 
 ---
