@@ -1,68 +1,80 @@
-# AI Tech Trends Digest (2025-10-27)
+# AI Tech Trends Digest (2025-10-28)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [SELECT AIがオンプレでも使えると聞いて試してみた (Oracle AI Database 26ai)](https://qiita.com/ssfujita/items/79c253269f94d2895c7a)
-**Published:** 2025-10-26 23:17:23 UTC
-**Likes:** 3
-**Tags:** oracle, Database, rag, LLM, 26ai
+### [LLMの性能、どこで見てる？SWE-bench Verified ベンチマークとは](https://qiita.com/GeneLab_999/items/a557780347f52a7cda49)
+**Published:** 2025-10-27 21:04:40 UTC
+**Likes:** 1
+**Tags:** AI, AI入門, LLM
 
 **Digest:**
-Oracle AI Database 26ai (Free版) でSELECT AI (NL2SQL) が利用可能に。`DBMS_CLOUD`、`DBMS_CLOUD_AI` パッケージを導入し、SSLウォレット、ACEを設定。OCI生成AIサービス Cohere を利用し、サンプルスキーマでSQL生成と結果の自然言語表示を確認。より高精度な回答にはコメント付与も有効です。
+SWE-bench Verifiedは、AIのソフトウェアエンジニアリング能力を評価する業界標準ベンチマーク。OpenAIとSWE-bench開発チームが共同でリリースし、500問の問題でAIのコード修正能力を検証。Claude Sonnet 4.5が77.2%のスコアを記録。SWE-bench公式サイト、Vals AIなどが情報源。
 
 ---
 
-### [GeminiでGoogleスライドにエクスポート可能なスライドが作れるようになっていた！！](https://qiita.com/Nozomuts/items/198fceb42a261a3914e0)
-**Published:** 2025-10-27 03:10:56 UTC
-**Likes:** 0
-**Tags:** AI, Googleスライド, Gemini, LLM
+### [AIコスト最適化 — 精度、演算リソース、ROIの最適な両立🔧
+
+実務で使える、モデル精度とインフラ負荷・投資対効果を天秤にかけるための実践ガイド💡](https://qiita.com/AInsights/items/59ccfb0e2a57bcf0f6fd)
+**Published:** 2025-10-27 20:45:22 UTC
+**Likes:** 1
+**Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-GeminiのCanvas機能で、Googleスライドにエクスポート可能なスライド作成が可能に。10月のGemini Dropsで紹介され、Proプランで利用開始。まだ利用できない人もいる模様。Markdownファイルからスライド生成を試した結果、一部表示崩れはあるものの、内容に忠実。Googleスライドで編集もでき、スライドの叩き台として便利。
+AIコスト最適化は、精度、計算リソース、ROIのバランスが重要。隠れたコスト、可視化不足、過剰設計などが課題。TCO、ROI連動KPI、コスト配賦、段階的ライフサイクルを意識し、モデルの適正サイズ化やハイブリッドデプロイが有効。ベストプラクティスに基づき、組織ロードマップと戦略的インパクトを理解し、持続可能なAI活用を目指しましょう。
 
 ---
 
-### [【初心者向け】LangChainって何？大学生でもわかるAIアプリ開発入門](https://qiita.com/huntersai/items/90cf2614a1e198502c1e)
-**Published:** 2025-10-27 01:32:39 UTC
-**Likes:** 0
-**Tags:** OpenAI, LangChain, LLM, 中野哲平, 初心者向けのLangchain解説講座by中野哲平
+### [テストコードからPRの質を上げる](https://qiita.com/OtsukaTomoaki/items/74181af9ec8c7af13f4c)
+**Published:** 2025-10-27 08:00:07 UTC
+**Likes:** 1
+**Tags:** レビュー, LT, Devin, Claude, AIエージェント
 
 **Digest:**
-**LangChain**は、AIアプリを簡単に作る**フレームワーク**。初心者向けに解説し、チャットボット作成、**長期記憶**、**RAG（質問応答）**、AIエージェントなどの機能を紹介。PythonとOpenAI APIキーがあれば始められ、大学のレポート作成などにも活用可能。注意点として、API利用は有料で、データのプライバシーや回答の正確性にも注意が必要です。
+目黒LTにて発表したスライドです！ Speaker Deckに公開されており、埋め込みコードをブログに掲載しました。スライドの比率は16:9で、埋め込みコードにより簡単に表示できます。
 
 ---
 
-### [「動物ではなく幽霊を召喚している」: Andrej Karpathyが語るLLMの真髄と技術者が今すべきこと](https://qiita.com/s_tsuchida/items/02f6fb2ef0c626bcc1c2)
-**Published:** 2025-10-27 01:26:17 UTC
+### [なぜGoogleやByteaDanceはDiffusion LLMに投資するのか？推論速度10倍の秘密](https://qiita.com/RepKuririn/items/2391bace39093d9ab199)
+**Published:** 2025-10-28 00:25:06 UTC
 **Likes:** 0
-**Tags:** AI, 学習法, エージェント, LLM, Karpathy
+**Tags:** 機械学習, diffusionmodel, LLM, AIエージェント
 
 **Digest:**
-元OpenAIのAndrej Karpathy氏が、Dwarkesh PodcastでLLMの本質を語った。彼はLLMを「動物」ではなく「幽霊」と表現し、AIエージェントの過度な期待に警鐘を鳴らした。技術者には「ブログよりコードを」と実装を重視する姿勢を促し、記憶構造や学習法についても言及。**「Working Memory」と「Hazy Recollection」**という人間の記憶に例えた説明や、人に説明することが重要という学習アプローチも示唆した。
+Text Diffusionは、自己回帰型LLMとは異なる、テキストを一度に生成し洗練する新技術。推論速度最大10倍、Fill-in-the-Middleに強み。GoogleのGemini DiffusionやInception LabsのMercury Coderが実用化。マルコフ連鎖で離散的なトークン空間に適用。コーディングタスクで競争力を持ち、LLMの進化方向性を示唆。しかし、訓練効率や品質の一貫性が課題。
 
 ---
 
-### [MCPの活用や応用への考察 -  MCP監査ログを活用した機械学習による不正検知システムの構築](https://qiita.com/555hamano/items/a3b1ac448d62e14f841f)
-**Published:** 2025-10-27 00:34:13 UTC
+### [FlutterとGemini API (Function Calling) で、AIが自律的にメモを操作するAIエージェントメモアプリを個人開発した話](https://qiita.com/Hanull/items/fb52469a3758243ffd23)
+**Published:** 2025-10-27 23:36:45 UTC
 **Likes:** 0
-**Tags:** API, Security, LLM, AIエージェント, ModelContextProtocol
+**Tags:** Flutter, 個人開発, Gemini, AIエージェント
 
 **Digest:**
-Model Context Protocol (MCP)監査ログを用いた機械学習による不正利用検知システム構築を解説。**Tool実行履歴、リソースアクセス、プロンプト**などから特徴量を抽出し、**Isolation Forest、LSTM Autoencoder**等の異常検知モデルで**未知の脅威**に対応。**リアルタイム検知、自動レスポンス、フィードバックループ**を構築し、精度と再現率を評価。**段階的な実装**で堅牢なセキュリティシステムを構築。
+個人開発アプリ『Note Agent AI』は、チャット指示でAIがメモ作成・編集・読み込みを行う未来型メモアプリ。FlutterとGoogle Gemini APIのFunction Callingを駆使し、AIエージェントを実装。技術スタックはFlutter、Firebase AI Logic、Riverpod。AIにツールを定義し、関数呼び出しをハンドリング、結果をフィードバックする対話ループが重要。プロンプト調整や状態管理にも工夫。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Power Appsのモデル駆動アプリのフォームにカスタムページをダイアログ形式で表示してみる](https://blog.jbs.co.jp/entry/2025/10/27/105406)
+### [Azure Functions × Semantic Kernelで複数エージェントの回答をストリーミング配信するエンドポイントの実装](https://blog.jbs.co.jp/entry/2025/10/28/110829)
 **Source:** JBS Blog
-**Published:** 2025-10-27 01:54:06 UTC
-**Tags:** Power Apps, PowerPlatform
+**Published:** 2025-10-28 02:08:29 UTC
+**Tags:** AI, AI Agent, Semantic Kernel, OpenAI, LLM, Azure OpenAI, マルチエージェント
 
 **Digest:**
-モデル駆動型アプリで独自のダイアログや追加情報表示が必要な場合、カスタムページが有効です。簡易表示やサブグリッドは高度なコーディングやデザイン性が課題でしたが、カスタムページを組み込むことで解決。今回は、モデル駆動型アプリのフォームにコマンドボタンを配置し、カスタムページをダイアログとして表示する方法を紹介します。
+Semantic Kernelを用いて、Azure Functionsで複数エージェント回答をストリーミング送信する方法を紹介。Python 3.12とSemantic Kernel 1.37.0を使用し、Azure Functionsでエンドポイントを実装。Blazor WASMクライアントで動作確認。記事では、実装環境、準備、処理の流れ、コード例、動作画面、クライアントコード、参考情報が掲載されています。
+
+---
+
+### [Copilot Studio エージェント フローと Multistage approval (preview) :多段階承認の取り扱いについて](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/10/copilot-studio--e630.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-10-27 12:23:09 UTC
+**Tags:** Copilot Studio, Microsoft 365 - SharePoint
+
+**Digest:**
+Copilot Studioの「エージェントフロー」は、タスクを自動化する機能です。これは、ユーザーの要求に応じてAIが複数のタスクを実行し、業務効率を向上させるものです。エージェントフローは、複雑なプロセスをシンプルにし、様々なシステムとの連携も可能です。
 
 ---
