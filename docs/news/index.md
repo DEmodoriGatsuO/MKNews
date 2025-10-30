@@ -1,88 +1,78 @@
-# AI Tech Trends Digest (2025-10-29)
+# AI Tech Trends Digest (2025-10-30)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [NPU搭載PCでLLMを動かすまでの話 〜第一弾 Docker Model Runnerとの出会い〜](https://qiita.com/gnt0608/items/22964b5fbc028074ccf3)
-**Published:** 2025-10-28 09:25:09 UTC
+### [DatabricksにGPT-5がやってきました！](https://qiita.com/taka_yayoi/items/90adabd89a785f56f4f7)
+**Published:** 2025-10-29 22:55:04 UTC
 **Likes:** 1
-**Tags:** LLM, NPU, DockerModelRunner
+**Tags:** Databricks, LLM, GPT-5
 
 **Digest:**
-Intel NPU搭載AI PCでローカルLLMを試すため、Docker Model Runner を利用。SmolLM3 を起動し、挨拶応答まで約5秒。API実行では35秒かかる。GPT-OSSも試したが、応答に21秒かかり、モデルサイズの差が影響か。NPUやGPUは未利用のため、今後の課題。
+DatabricksのMosaic AI Model Servingで、OpenAIのGPT-5モデル（GPT-5, GPT-5 mini, GPT-5 nano）が一般提供開始。GeminiやAnthropicモデルに続き、主要AIベンダーのモデルが揃う。AWS東京リージョンで動作確認済み。AI Playgroundやノートブックでの利用例も紹介されており、`databricks-gpt-5`でアクセス可能。
 
 ---
 
-### [DatabricksにGeminiがやってきました！](https://qiita.com/taka_yayoi/items/6fb444f637a4eec3fe34)
-**Published:** 2025-10-29 05:34:10 UTC
-**Likes:** 0
-**Tags:** Google, Databricks, Gemini
+### [【完全無料】Google SkillsがAI時代のキャリアを加速する！技術者・ビジネスパーソンのための活用戦略](https://qiita.com/Shawin/items/cc677ea1b9ca751d9370)
+**Published:** 2025-10-29 22:43:54 UTC
+**Likes:** 1
+**Tags:** Google, 初心者, AI, Gemini, LLM
 
 **Digest:**
-DatabricksがGemini 2.5 ProとFlashモデルのサポートを開始。Foundation Model APIsのpay-per-tokenで利用可能となり、Function callingやStructured outputにも対応。AWS東京リージョンで動作確認済み。推論モデルのクエリも試せる。
+Google Skillsは、3000以上のAI・技術コースを提供する無料学習プラットフォームです。Google Cloudのハンズオンラボで実践力を高め、Google認定でスキルを証明。エンジニアはGemini Code Assist、非エンジニアは学習パスでAI活用を。10分コンテンツやリファレンス活用も。AI時代に必要な継続的なスキル習得を支援し、キャリアを加速させます。
 
 ---
 
-### [AI Shell 入門 — PowerShell とスタンドアローンで始める AI シェル運用ガイド](https://qiita.com/ochtum/items/a511a0a2de74bdf46663)
-**Published:** 2025-10-29 03:52:03 UTC
-**Likes:** 0
-**Tags:** Azure, PowerShell, AI, OpenAI, AIShell
+### [🎯 ローカルで動作するAIコーディングアシスタントを構築する：Qwen3 + Ollama + Continue.dev — 超高速で完全プライベート 💻🔒🚀](https://qiita.com/AInsights/items/d9b1130d2b4397f9b46b)
+**Published:** 2025-10-29 17:59:44 UTC
+**Likes:** 1
+**Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-AI Shellは、PowerShell上でAIエージェントと対話できるツールです。Windows環境でのインストールはPSGalleryから可能で、`/code`コマンドでコード生成、`Start-AIShell`でPowerShell連携。スタンドアローン版も存在し、トラブルシューティングとベストプラクティスも解説。簡単なプロンプト設計テンプレートと導入チェックリストも提供、開発効率化に貢献します。
+GitHub Copilotなど外部AIコーディング支援からの脱却を目指し、ローカルで高速・高品質なQwen3モデル＋Ollama＋Continue.dev環境を構築する実体験を紹介。Qwen3の高速推論、APIキー不要、データ漏洩リスクの低減が魅力。MacとWindowsでのOllamaインストール、モデル取得、VS Code設定手順を解説。プライバシー保護、オフライン動作、GPT-4o/Claude 3.7級の性能も実現可能。
 
 ---
 
-### [Claude Code v2.0.27 - v2.0.28 リリースノート](https://qiita.com/NaokiIshimura/items/3e86e53c8ce4a5294e7a)
-**Published:** 2025-10-28 23:23:09 UTC
-**Likes:** 0
-**Tags:** Claude
+### [AppsSDKを使ってみた](https://qiita.com/yusan25c/items/665889a806440355f09c)
+**Published:** 2025-10-29 11:17:27 UTC
+**Likes:** 1
+**Tags:** MCP, ChatGPT, LLM, DevDay, AppsSDK
 
 **Digest:**
-Claude Codeがv2.0.28とv2.0.27にアップデート。v2.0.28ではPlanモードのPlanサブエージェント導入、サブエージェント再開、動的モデル選択、`--max-budget-usd`フラグ追加、スラッシュコマンド検出改善、Gitベースプラグインでのフラグメント構文対応など。v2.0.27ではUI刷新、セッション再開画面改善、VSCode拡張機能の改善、バグ修正が行われました。インストールは`npm`で。
+ChatGPTのAppsSDKは、チャット内でウィジェットを表示できるSDKです。MCPのメタデータを拡張し、HTMLを埋め込むことで実現。ウィジェットは、呼び出しパラメータ取得や他ツール呼び出し、ChatGPTへのメッセージ入力も可能。動作にはMCPサーバとWebサーバが必要で、S3とCloudFrontでの構築例も。アプリ申請も可能になり、ChatGPTの利便性向上が期待されています。
 
 ---
 
-### [Geminiでサツマイモと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/d4ed8af53c1e7d129bd2)
-**Published:** 2025-10-28 21:50:28 UTC
+### [PostgreSQL + pgvector + OpenAIで「AI記憶DB」を構築するまでの手順（Windows編）](https://qiita.com/root_9/items/bd532685d7449ebfadbb)
+**Published:** 2025-10-30 01:29:23 UTC
 **Likes:** 0
-**Tags:** Gemini
+**Tags:** Windows, PostgreSQL, OpenAI, pgvector
 
 **Digest:**
-Geminiを用いて、サツマイモと遊ぶ魔法少女のイラストを生成しました。シンプルなプロンプト「サツマイモと遊ぶ魔法少女を描いてください」を実行した結果、画像が生成されました。可愛らしい出来栄えで、何かの役に立てば嬉しいという思いが込められています。
+PostgreSQL、pgvector、OpenAI Embedding APIを組み合わせ、ローカルで動作するAI記憶データベースを構築する手順を解説。PostgreSQL 18をインストールし、pgvector拡張を導入。Python環境を準備し、OpenAI APIを使ってテキストをベクトル化、pgvectorで意味検索を行うコードを実行。結果として、記憶の登録と検索が実現。トラブルシューティングもまとめている。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Hosting NVIDIA speech NIM models on Amazon SageMaker AI: Parakeet ASR](https://aws.amazon.com/blogs/machine-learning/hosting-nvidia-speech-nim-models-on-amazon-sagemaker-ai-parakeet-asr/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-28 18:09:48 UTC
-**Tags:** Amazon SageMaker AI, Generative AI, Technical How-to
+### [Accelerating discovery with the AI for Math Initiative](https://blog.google/technology/google-deepmind/ai-for-math/)
+**Source:** Google DeepMind
+**Published:** 2025-10-29 14:00:00 UTC
+**Tags:** Google.org, Google DeepMind
 
 **Digest:**
-NVIDIAとAmazon SageMaker AIを活用した音声処理の拡張性を解説。NVIDIA Parakeet ASRモデルを非同期エンドポイントにデプロイし、大規模な音声データ（顧客コール、会議録音など）を効率的にテキスト化。NVIDIA NIM、LMIコンテナ、PyTorchコンテナでの実装例を紹介し、SageMaker、S3、Bedrock LLM、DynamoDBを組み合わせたパイプラインを構築します。
+AI for Math Initiativeは、世界屈指の5つの研究機関が連携するプロジェクトです。数学分野におけるAIの研究を加速させ、革新的な成果を目指しています。各機関が持つ専門知識と技術を結集し、数学AIの発展に大きく貢献することでしょう。
 
 ---
 
-### [Amazon Nova Multimodal Embeddings: State-of-the-art embedding model for agentic RAG and semantic search](https://aws.amazon.com/blogs/aws/amazon-nova-multimodal-embeddings-now-available-in-amazon-bedrock/)
-**Source:** AWS News Blog
-**Published:** 2025-10-28 15:12:38 UTC
-**Tags:** *Post Types, Amazon Bedrock, Amazon Machine Learning, Announcements, Artificial Intelligence, Generative AI, Launch, News
-
-**Digest:**
-Amazon Bedrockで利用可能な、Nova Multimodal Embeddingsを発表。テキスト、画像、動画、音声に対応し、単一モデルで高精度な検索を実現します。最大8Kトークンのコンテキスト長、200言語以上のテキストをサポート。非構造化データから価値を引き出し、クロスモーダル検索、RAG、類似性比較などに活用できます。
-
----
-
-### [【Microsoft×生成AI連載】Skillsエージェントにより組織のスキル検索が便利に](https://blog.jbs.co.jp/entry/2025/10/29/100233)
+### [Fabric容量で CU 消費率に応じてアラートを発報する方法](https://blog.jbs.co.jp/entry/2025/10/30/113023)
 **Source:** JBS Blog
-**Published:** 2025-10-29 01:02:33 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
+**Published:** 2025-10-30 02:30:23 UTC
+**Tags:** Microsoft Fabric
 
 **Digest:**
-Microsoftの生成AI連載シーズン4では、SkillsエージェントとPeople Skillsが焦点です。組織内の**スキル管理**を効率化し、**エキスパート探索**を支援するAI機能が詳しく解説されています。これらの新機能は、Microsoftが提供する**AI**技術を活用し、組織の**人材活用**を促進するものです。
+Microsoft Fabric Premium 容量のCU消費率80%到達時にアラートを設定する方法を紹介。管理ポータルでの通知設定手順、前提条件、構成ポイントを解説し、容量の安定運用を支援。リソース不足を未然に防ぎ、Fabricの最適な運用に役立つ実践ガイドです。
 
 ---
