@@ -1,90 +1,108 @@
-# AI Tech Trends Digest (2025-10-31)
+# AI Tech Trends Digest (2025-11-01)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [【実例付き】Claude × Clineで数時間でWebアプリ開発！無料企画→自動実装の完全ガイド](https://qiita.com/tomota53/items/a79befc442689c3204d4)
-**Published:** 2025-10-30 10:42:13 UTC
-**Likes:** 6
-**Tags:** React, VSCode, vite, Claude, cline
-
-**Digest:**
-無料のAI「Claude」とVSCodeの拡張機能Clineを活用し、企画・設計から実装までを自動化する開発手法を紹介。戦国武将学習アプリを3時間、数百円で開発した事例も。API利用料は従量課金。AIによるコード生成はレビュー必須だが、開発速度とコスト効率を大幅に向上。マークダウンで詳細な開発手順を作成し、段階的に実装するのがコツ。
-
----
-
-### [# LLMを効果的にトレーニングする方法 — 実践ガイド 🚀
-
-自前のLLMを実用レベルに育てるための要点を、データ準備、トレーニング手法、評価、デプロイ、そして安全対策まで包括的にわかりやすくまとめ](https://qiita.com/AInsights/items/3bfda1a9b646b779ee03)
-**Published:** 2025-10-30 17:51:28 UTC
-**Likes:** 2
+### [AzureでAI構築—Azure AI Foundry実践教訓](https://qiita.com/AInsights/items/1ddb5e84968f786e2745)
+**Published:** 2025-10-31 20:27:05 UTC
+**Likes:** 1
 **Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-LLM訓練は粘土細工のようで、事前学習で土台を築き、SFTやDPOで振る舞いを調整。DeepSeek-V3は14.8Tトークン、Kimi K2は15.5Tトークンで学習。ポストトレーニングではDPOで好みを制御、GRPOで自己比較し報酬を与え、検証可能な報酬でRLを効率化。データ収集・整形が重要で、モデルの能力を最大化します。
+Azure AIのハンズオン経験を基に、Azure OpenAI、Azure AI Foundry、AIサービスを試用。マルチサービスリソースと単体サービスの使い分け、FoundryのHubsとProjectsによる開発効率化を実感。Prompt Flowの活用や、リージョン、コスト、セキュリティへの注意も重要。実践的なワークフローと、本番運用を見据えた設計がポイントです。
 
 ---
 
-### [Research→Experience API を作りました！課題から論文→示唆→次アクションまで一気通貫](https://qiita.com/beachone1155/items/b6bcfb81eb04fcfed7d6)
-**Published:** 2025-10-31 05:28:06 UTC
-**Likes:** 0
-**Tags:** Docker, arXiv, FastAPI, LLM, pgvector
+### [複数ファイルを生成AIのチャットで貼り付ける作業を補助するツール](https://qiita.com/ya-man-kys/items/92623bdece481762ef50)
+**Published:** 2025-10-31 08:10:38 UTC
+**Likes:** 1
+**Tags:** PowerShell, Claude
 
 **Digest:**
-課題を自然言語で入力すると、関連論文検索、根拠収集、LLMによる示唆やビジネス含意を提供するAPI「Research→Experience API」のPoC。FastAPIとPostgreSQL(pgvector)を使用し、arXivから論文を取得。OSS/OpenAI切り替え可能で、ローカルデモも。今後の改善として、フロントエンド、エージェント合議、ハイブリッド検索、PDF対応、多言語対応などを計画。
+Claudeのファイルアップロード障害に対応した、PowerShell製のファイルクリップボード管理ツール。複数のファイルをグループ管理し、コードフェンスで囲んでテキスト化、BOM変換、Windows/WSL2パス対応など、Claude AIとの連携を効率化します。ファイルパス登録と、フェンス付きテキスト登録の2つのクリップボード登録方式を実装。GitHubでソースコード公開。
 
 ---
 
-### [Insiders版じゃなくてもGitHub CopilotのPlanモードとサブエージェントを使う（再現する）方法](https://qiita.com/Nozomuts/items/81af4542551627193dfd)
-**Published:** 2025-10-31 00:07:39 UTC
+### [Claude Code on the webを使ってみる](https://qiita.com/miriwo/items/db37a8b13fd180d6a25d)
+**Published:** 2025-11-01 02:15:58 UTC
 **Likes:** 0
-**Tags:** GitHub, AI, githubcopilot, LLM
+**Tags:** Claude, ClaudeCode, ClaudeCodeOnTheWeb
 
 **Digest:**
-GitHub Universeのアップデートで、VSCode Insiders版で利用可能なGitHub CopilotのPlanモードやサブエージェント機能を、通常版でも使える方法を紹介。カスタムチャットモードを作成し、設定で`github.copilot.chat.executePrompt.enabled`を`true`にすることで実現。Insiders版との差分や実行例も解説。業務利用も可能だが、通常版リリース後は削除推奨。
+Claude Code on the webを試用。Pro/Maxプラン契約とGitHub連携が前提。ウェブ上でコード生成を指示し、GitHubリポジトリに接続。初期設定後、HTMLとCSSの生成を依頼すると、Claude Codeがブランチ作成、コミット、プッシュまで自動で行う。最終的にプルリクエストも生成可能。ローカルリポジトリ作成など、事前の準備も重要。
 
 ---
 
-### [Geminiでモミジと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/1c54c4488b08da9f12c0)
-**Published:** 2025-10-30 22:39:35 UTC
+### [Geminiでイチョウと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/ccefb632c625ef3b3a67)
+**Published:** 2025-10-31 16:10:32 UTC
 **Likes:** 0
 **Tags:** Gemini
 
 **Digest:**
-Google Geminiで生成した、モミジと遊ぶ魔法少女のイラストを紹介。プロンプト「モミジと遊ぶ魔法少女を描いてください」の結果を画像で提示しています。シンプルながらも可愛らしいイラストで、何かの役に立てればという想いが込められています。
+Geminiを使って、イチョウと遊ぶ魔法少女のイラストを生成しました。シンプルなプロンプト「イチョウと遊ぶ魔法少女を描いてください」を実行した結果、可愛らしい画像が得られました。このイラストが、何かの役に立つことを願っています。
+
+---
+
+### [PythonでBing検索をスクレイピングする方法](https://qiita.com/AInsights/items/1174033b1c6e46ff6e03)
+**Published:** 2025-10-31 14:26:24 UTC
+**Likes:** 0
+**Tags:** Python, 機械学習, AI, ChatGPT, LLM
+
+**Digest:**
+PythonでBing検索をスクレイピングし、キーワードや順位などのSERPデータを抽出する方法を解説。httpx, playwright, parselなどのPythonパッケージを使用し、検索結果の解析、ページネーション、キーワード抽出を実装。ブロック回避のためプロキシ、フィンガープリント、レート制御が重要。データ検証とエラーハンドリングも必須。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Reduce CAPTCHAs for AI agents browsing the web with Web Bot Auth (Preview) in Amazon Bedrock AgentCore Browser](https://aws.amazon.com/blogs/machine-learning/reduce-captchas-for-ai-agents-browsing-the-web-with-web-bot-auth-preview-in-amazon-bedrock-agentcore-browser/)
+### [Build reliable AI systems with Automated Reasoning on Amazon Bedrock – Part 1](https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-systems-with-automated-reasoning-on-amazon-bedrock-part-1/)
 **Source:** AWS ML Blog
-**Published:** 2025-10-30 21:55:03 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Machine Learning, Artificial Intelligence, Intermediate (200)
+**Published:** 2025-10-31 21:44:24 UTC
+**Tags:** Amazon Bedrock Guardrails, Announcements, Technical How-to
 
 **Digest:**
-AWSは、AIエージェントのWebブラウジングにおけるCAPTCHAなどの問題を解決するため、Amazon Bedrock AgentCore BrowserでWeb Bot Auth (プレビュー)を導入。これは、エージェントに検証可能な暗号化IDを提供し、Cloudflareなど主要WAFプロバイダーとの連携により、承認されたボットとして認識されることで、CAPTCHAの回避を目指します。将来的には、顧客固有のキー発行も予定されています。
+Amazon Bedrock GuardrailsのAutomated Reasoningチェックは、AI応答の数学的検証を実現し、規制業界で重要です。正式検証技術でビジネスルールや知識を評価、透明性も確保。ドキュメント処理能力向上、シナリオ生成、テスト管理システムも追加。ポリシー作成、テスト、統合を詳細に説明。医療など厳格な検証が求められる分野での利用に最適です。
 
 ---
 
-### [Microsoft 365 Copilot の新機能 | 2025 年 9 月](https://blogs.windows.com/japan/2025/10/30/whats-new-in-microsoft-365-copilot-september-2025/)
+### [Custom Intelligence: Building AI that matches your business DNA](https://aws.amazon.com/blogs/machine-learning/custom-intelligence-building-ai-that-matches-your-business-dna/)
+**Source:** AWS ML Blog
+**Published:** 2025-10-31 16:07:19 UTC
+**Tags:** Generative AI, Thought Leadership
+
+**Digest:**
+AWS Generative AI Innovation Centerは、2024年にカスタムモデルプログラムを開始し、企業向けにモデルカスタマイズを支援。法的、金融、医療など多様な業界で、特化型AIを構築。Cosine AIはAmazon SageMakerを活用し、AIエンジニアリングアシスタントで性能を向上。成功の鍵は、ビジネス目標から逆算したアプローチ、適切なカスタマイズ手法選択、評価指標設定、ハードウェア最適化、そして、多様なモデルの活用です。
+
+---
+
+### [Clario streamlines clinical trial software configurations using Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/clario-streamlines-clinical-trial-software-configurations-using-amazon-bedrock/)
+**Source:** AWS ML Blog
+**Published:** 2025-10-31 15:49:09 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Amazon Elastic Container Service, Amazon Machine Learning, AWS Direct Connect, Customer Solutions
+
+**Digest:**
+Clarioは臨床試験のソフトウェア設定を効率化するため、Amazon Bedrock上のAnthropic Claude 3.7 Sonnetを活用したGenie AI Serviceを開発。PDFからのデータ抽出、検証、XML生成を自動化し、手作業を削減。これにより、設定時間の短縮と品質向上を実現し、チーム間の連携も強化。**AI、臨床試験、データ抽出**がキーです。
+
+---
+
+### [Introducing Amazon Bedrock cross-Region inference for Claude Sonnet 4.5 and Haiku 4.5 in Japan and Australia](https://aws.amazon.com/blogs/machine-learning/introducing-amazon-bedrock-cross-region-inference-for-claude-sonnet-4-5-and-haiku-4-5-in-japan-and-australia/)
+**Source:** AWS ML Blog
+**Published:** 2025-10-31 14:45:37 UTC
+**Tags:** Amazon Bedrock, Amazon Machine Learning, Announcements, Artificial Intelligence
+
+**Digest:**
+Amazon Bedrockで、Anthropicの**Claude Sonnet 4.5**と**Claude Haiku 4.5**が、日本とオーストラリアで地理限定の**Cross-Region inference (CRIS)** を利用可能に。データローカル処理要件に対応し、東京/大阪、シドニー/メルボルン間で自動ルーティング。IAM設定、インフェレンスプロファイル、配分管理について説明。Claude 3.5からの移行を推奨し、**GEO CRIS**はデータ処理の地理的制約がある場合に最適です。
+
+---
+
+### [ダイワボウ情報システム株式会社主催 AI × Surface で変わる働き方! Copilot+ PC ハンズオンセミナー 開催のお知らせ](https://blogs.windows.com/japan/2025/10/31/ai-surface-transforming-the-way-we-work-copilot-pc-hands-on-seminar-announcement/)
 **Source:** Windows Blog for Japan
-**Published:** 2025-10-30 09:06:45 UTC
-**Tags:** Copilot, What's new in Copilot
+**Published:** 2025-10-31 07:49:09 UTC
+**Tags:** Surface, Copilot+ PC
 
 **Digest:**
-2025年9月のMicrosoft 365 Copilotは、Copilot Chatの品質向上ロードマップ公開、Outlook連携強化、Excel数式補完、Teamsスレッド要約など機能拡充。Microsoft Purviewによるデータセキュリティ管理も強化。エージェント機能も、リサーチ、スキル、SharePoint、ファシリテーター、チャネル、Viva Engageコミュニティなどで進化。
-
----
-
-### [【Microsoft×生成AI連載】SharePointナレッジエージェント機能紹介](https://blog.jbs.co.jp/entry/2025/10/31/084701)
-**Source:** JBS Blog
-**Published:** 2025-10-30 23:47:01 UTC
-**Tags:** Copilot for Microsoft 365, SharePoint Agents, SharePoint, Copilot, SharePointナレッジエージェント
-
-**Digest:**
-Microsoft SharePointナレッジエージェントの機能を解説。Microsoft 365 CopilotやSharePointユーザー向けで、2025/10/22時点の情報に基づいています。記事では、SharePointエージェントの概要やメタデータ化の重要性、AIが情報を理解しやすくするための工夫などが紹介されています。
+ダイワボウ情報システムが主催する「AI × Surface で変わる働き方!」セミナーが開催。AI時代に最適な Surface を体験でき、Copilot+ PC の特長や Surface の選び方を解説。Microsoft 365 Copilot を活用した業務効率化も体験可能。対象は Surface リセラー、パソコンリセラー。名古屋、東京、広島で開催、ハンズオンも実施。申し込みはオンラインで受付中です。
 
 ---
