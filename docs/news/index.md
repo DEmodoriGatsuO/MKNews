@@ -1,108 +1,55 @@
-# AI Tech Trends Digest (2025-11-01)
+# AI Tech Trends Digest (2025-11-02)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [AzureでAI構築—Azure AI Foundry実践教訓](https://qiita.com/AInsights/items/1ddb5e84968f786e2745)
-**Published:** 2025-10-31 20:27:05 UTC
+### [Bedrock Agents対Bedrock Agentcore比較](https://qiita.com/AInsights/items/3157e0e107e590ed2273)
+**Published:** 2025-11-01 15:55:34 UTC
 **Likes:** 1
 **Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-Azure AIのハンズオン経験を基に、Azure OpenAI、Azure AI Foundry、AIサービスを試用。マルチサービスリソースと単体サービスの使い分け、FoundryのHubsとProjectsによる開発効率化を実感。Prompt Flowの活用や、リージョン、コスト、セキュリティへの注意も重要。実践的なワークフローと、本番運用を見据えた設計がポイントです。
+Amazon BedrockのAIエージェント、**Agents** はフルマネージドで簡単導入、**AgentCore** は柔軟なインフラを提供。Agentsは設定中心、AgentCoreは既存フレームワーク連携に強み。AgentCoreは現在プレビューで、実行環境やツール制御が可能。どちらを選ぶかは、開発速度、運用負荷、セキュリティなどを考慮し、ハイブリッド利用も検討。実装時は、**Identity**、**可観測性**、**コスト**管理が重要。
 
 ---
 
-### [複数ファイルを生成AIのチャットで貼り付ける作業を補助するツール](https://qiita.com/ya-man-kys/items/92623bdece481762ef50)
-**Published:** 2025-10-31 08:10:38 UTC
+### [nanochatを全て解説する](https://qiita.com/Shin_unity3dcg/items/2da1c76d0f733678b1d3)
+**Published:** 2025-11-01 15:54:02 UTC
 **Likes:** 1
-**Tags:** PowerShell, Claude
+**Tags:** AI, gpt, Transformer, LLM, Nanochat
 
 **Digest:**
-Claudeのファイルアップロード障害に対応した、PowerShell製のファイルクリップボード管理ツール。複数のファイルをグループ管理し、コードフェンスで囲んでテキスト化、BOM変換、Windows/WSL2パス対応など、Claude AIとの連携を効率化します。ファイルパス登録と、フェンス付きテキスト登録の2つのクリップボード登録方式を実装。GitHubでソースコード公開。
+Karpathy氏作のTransformer「nanochat」は、**事前学習**、**事後学習**、**評価**をコマンド一つで行えるリポジトリ。GPTをベースとし、**RoPE**や**RushBPE**を取り入れ、読みやすいコードが特徴。12層モデル(185Mパラメータ)で**簡単な会話**が可能。**fineweb-edu-100b** で事前学習し、**Muon**と**AdamW**を組み合わせたオプティマイザを使用。**評価タスク**は22個、事後学習は6つのタスクで評価される。
 
 ---
 
-### [Claude Code on the webを使ってみる](https://qiita.com/miriwo/items/db37a8b13fd180d6a25d)
-**Published:** 2025-11-01 02:15:58 UTC
-**Likes:** 0
-**Tags:** Claude, ClaudeCode, ClaudeCodeOnTheWeb
-
-**Digest:**
-Claude Code on the webを試用。Pro/Maxプラン契約とGitHub連携が前提。ウェブ上でコード生成を指示し、GitHubリポジトリに接続。初期設定後、HTMLとCSSの生成を依頼すると、Claude Codeがブランチ作成、コミット、プッシュまで自動で行う。最終的にプルリクエストも生成可能。ローカルリポジトリ作成など、事前の準備も重要。
-
----
-
-### [Geminiでイチョウと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/ccefb632c625ef3b3a67)
-**Published:** 2025-10-31 16:10:32 UTC
-**Likes:** 0
-**Tags:** Gemini
-
-**Digest:**
-Geminiを使って、イチョウと遊ぶ魔法少女のイラストを生成しました。シンプルなプロンプト「イチョウと遊ぶ魔法少女を描いてください」を実行した結果、可愛らしい画像が得られました。このイラストが、何かの役に立つことを願っています。
-
----
-
-### [PythonでBing検索をスクレイピングする方法](https://qiita.com/AInsights/items/1174033b1c6e46ff6e03)
-**Published:** 2025-10-31 14:26:24 UTC
-**Likes:** 0
+### [Amp新戦略：広告支援AIによるコーディング収益化](https://qiita.com/AInsights/items/a452e9c964f5f1a80660)
+**Published:** 2025-11-01 15:47:36 UTC
+**Likes:** 1
 **Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-PythonでBing検索をスクレイピングし、キーワードや順位などのSERPデータを抽出する方法を解説。httpx, playwright, parselなどのPythonパッケージを使用し、検索結果の解析、ページネーション、キーワード抽出を実装。ブロック回避のためプロキシ、フィンガープリント、レート制御が重要。データ検証とエラーハンドリングも必須。
+SourcegraphのAIコーディングツールAmpが、広告とデータ共有で無料利用できる「Amp Free」を開始。開発者の時間・データと引き換えに広告表示、トレーニングデータを提供。個人向けだが企業利用は制限。無料版は限定モデル、有償版は高性能。データ共有への懸念や回避策も提示。教育面での可能性も指摘され、AIコーディングの新たな経済モデルになるか注目が集まります。
 
 ---
 
-## Latest News from RSS Feeds
-
-
-### [Build reliable AI systems with Automated Reasoning on Amazon Bedrock – Part 1](https://aws.amazon.com/blogs/machine-learning/build-reliable-ai-systems-with-automated-reasoning-on-amazon-bedrock-part-1/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-31 21:44:24 UTC
-**Tags:** Amazon Bedrock Guardrails, Announcements, Technical How-to
+### [Gemini CLi対Claude Code どっち優秀？](https://qiita.com/AInsights/items/c6d7143c3156255a0361)
+**Published:** 2025-11-01 11:05:35 UTC
+**Likes:** 1
+**Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-Amazon Bedrock GuardrailsのAutomated Reasoningチェックは、AI応答の数学的検証を実現し、規制業界で重要です。正式検証技術でビジネスルールや知識を評価、透明性も確保。ドキュメント処理能力向上、シナリオ生成、テスト管理システムも追加。ポリシー作成、テスト、統合を詳細に説明。医療など厳格な検証が求められる分野での利用に最適です。
+GoogleのGemini CLIとAnthropicのClaude Codeを比較した結果、Claude Codeが速度、コスト効率、UX、コード品質で優位に。Geminiは手動介入や高コスト、トークン消費の多さが課題。Claudeは自動化、高品質コード生成、洗練されたUXが特徴。Geminiは無料利用可能で、今後の改善に期待。ハイブリッド運用やトークン管理、CI/CD連携などの実用的なワークフローも提案。
 
 ---
 
-### [Custom Intelligence: Building AI that matches your business DNA](https://aws.amazon.com/blogs/machine-learning/custom-intelligence-building-ai-that-matches-your-business-dna/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-31 16:07:19 UTC
-**Tags:** Generative AI, Thought Leadership
+### [【無料，日本語】生成AIを学べるオンラインコースまとめ](https://qiita.com/PenguinCabinet/items/44c9bc7f6ded7350fc64)
+**Published:** 2025-11-01 06:09:04 UTC
+**Likes:** 1
+**Tags:** AI, Gemini, 生成AI, ChatGPT
 
 **Digest:**
-AWS Generative AI Innovation Centerは、2024年にカスタムモデルプログラムを開始し、企業向けにモデルカスタマイズを支援。法的、金融、医療など多様な業界で、特化型AIを構築。Cosine AIはAmazon SageMakerを活用し、AIエンジニアリングアシスタントで性能を向上。成功の鍵は、ビジネス目標から逆算したアプローチ、適切なカスタマイズ手法選択、評価指標設定、ハードウェア最適化、そして、多様なモデルの活用です。
-
----
-
-### [Clario streamlines clinical trial software configurations using Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/clario-streamlines-clinical-trial-software-configurations-using-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-31 15:49:09 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Elastic Container Service, Amazon Machine Learning, AWS Direct Connect, Customer Solutions
-
-**Digest:**
-Clarioは臨床試験のソフトウェア設定を効率化するため、Amazon Bedrock上のAnthropic Claude 3.7 Sonnetを活用したGenie AI Serviceを開発。PDFからのデータ抽出、検証、XML生成を自動化し、手作業を削減。これにより、設定時間の短縮と品質向上を実現し、チーム間の連携も強化。**AI、臨床試験、データ抽出**がキーです。
-
----
-
-### [Introducing Amazon Bedrock cross-Region inference for Claude Sonnet 4.5 and Haiku 4.5 in Japan and Australia](https://aws.amazon.com/blogs/machine-learning/introducing-amazon-bedrock-cross-region-inference-for-claude-sonnet-4-5-and-haiku-4-5-in-japan-and-australia/)
-**Source:** AWS ML Blog
-**Published:** 2025-10-31 14:45:37 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Announcements, Artificial Intelligence
-
-**Digest:**
-Amazon Bedrockで、Anthropicの**Claude Sonnet 4.5**と**Claude Haiku 4.5**が、日本とオーストラリアで地理限定の**Cross-Region inference (CRIS)** を利用可能に。データローカル処理要件に対応し、東京/大阪、シドニー/メルボルン間で自動ルーティング。IAM設定、インフェレンスプロファイル、配分管理について説明。Claude 3.5からの移行を推奨し、**GEO CRIS**はデータ処理の地理的制約がある場合に最適です。
-
----
-
-### [ダイワボウ情報システム株式会社主催 AI × Surface で変わる働き方! Copilot+ PC ハンズオンセミナー 開催のお知らせ](https://blogs.windows.com/japan/2025/10/31/ai-surface-transforming-the-way-we-work-copilot-pc-hands-on-seminar-announcement/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-10-31 07:49:09 UTC
-**Tags:** Surface, Copilot+ PC
-
-**Digest:**
-ダイワボウ情報システムが主催する「AI × Surface で変わる働き方!」セミナーが開催。AI時代に最適な Surface を体験でき、Copilot+ PC の特長や Surface の選び方を解説。Microsoft 365 Copilot を活用した業務効率化も体験可能。対象は Surface リセラー、パソコンリセラー。名古屋、東京、広島で開催、ハンズオンも実施。申し込みはオンラインで受付中です。
+生成AIを学べる無料オンラインコースを紹介。IBM SkillsBuildの「AI Foundations」はAI全般を、「Generative AI in Action」はプロンプトエンジニアリングやLLMを学べます。AWS Skill Builderの「Foundations of Prompt Engineering」はプロンプト設計を、Google Skills Boostの入門講座では生成AIの概要を学べます。
 
 ---
