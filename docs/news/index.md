@@ -1,78 +1,98 @@
-# AI Tech Trends Digest (2025-11-04)
+# AI Tech Trends Digest (2025-11-05)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [小型LLM同士を"橋渡し"して性能向上！Gated Cross-Attention Bridgeの実装と効果](https://qiita.com/katsuki_ono/items/bb41b1e01b8750381c8f)
-**Published:** 2025-11-03 17:09:25 UTC
+### [「notebooklm-skill」でClaude CodeからNotebookLMへ直接アクセスできるようになったので試してみた](https://qiita.com/mamoru-ngy/items/a73607a1a0392b5d2c6c)
+**Published:** 2025-11-04 23:55:25 UTC
 **Likes:** 2
-**Tags:** Python, 機械学習, PyTorch, Transformer, LLM
+**Tags:** 生成AI, LLM, Claude, NotebookLM, notebooklm-skill
 
 **Digest:**
-**Qwen2.5-3B**と**Gemma-2-2B**を繋ぐ**Gated Cross-Attention Bridge**を発表。学習不要で、Gemmaの知識をQwenが参照し、より正確な出力を実現。4層にゲートを配置し、ベイズの定理説明タスクで改善を確認。SDPA対応でA100での高速動作も可能。
+Claude Codeから、NotebookLMに直接アクセスできる「notebook-skill」が登場。アップロード済みの資料に基づき回答するため、情報精度が向上。Pro/Maxユーザーは、CLIとChrome、Googleアカウントで利用可能。セットアップ後、NotebookLMにノートを追加し、質問すれば、例えば東京と大阪の天気の違いなど、アップロードされた情報に基づいた回答が得られる。議事録や企画書の分析に役立つ。
 
 ---
 
-### [LLMの力を100%引き出す「プロンプトノウハウ」勉強会資料](https://qiita.com/suetaketakaya/items/b90ca9ea5b618dda9a64)
-**Published:** 2025-11-03 14:59:41 UTC
+### [【Gemini】【プロンプト有】Canvasと「@ktrk2002の利き手クイズ」を作ったレポート](https://qiita.com/ktrk2002/items/a6fb8b383805487f6dbf)
+**Published:** 2025-11-04 10:19:07 UTC
 **Likes:** 2
-**Tags:** gherkin, AI, ChatGPT, LLM, プロンプトエンジニアリング
+**Tags:** クイズ, Gemini, 生成AI
 
 **Digest:**
-AI社内勉強会のダイジェスト。LLMは**条件付き確率**に基づき、膨大なテキストデータから単語間の関係性を学習します。Transformerモデルと**Attention**機構により高性能化。得意なのは、学習済みの知識を組み合わせる「**内挿**」で、プロンプトでは明確な指示、役割設定、文脈提供が重要です。基本原則を踏まえ、構造化やFew-shotなどの技術を駆使して能力を引き出します。
+Gemini Canvasで、利き手に関する二択クイズを自作。動作によって利き手が異なるという@ktrk2002さんの情報を基に、Geminiにクイズ生成を依頼。スプレッドシート読み込みは不可だったが、コードを生成。UIフリーズ問題が発生したが、起動高速化などの対策をプロンプトに加えることで改善。Canvasのスライド機能にも期待。
 
 ---
 
-### [【AIエージェントの新常識】MCP（Model Context Protocol）サーバーとは？仕組みと活用法を徹底解説](https://qiita.com/okokok/items/cbe416a82249e3de6d85)
-**Published:** 2025-11-03 08:19:49 UTC
+### [ChatGPTの「良い人フィルター」を外して本音を引き出してみた](https://qiita.com/nolanlover0527/items/a11443658edbcbe18d38)
+**Published:** 2025-11-05 04:55:19 UTC
 **Likes:** 1
-**Tags:** プロトコル, AI, MCP, LLM, MCPサーバー
+**Tags:** AI, プロンプト, ChatGPT, プロンプトエンジニアリング, Claude
 
 **Digest:**
-大規模言語モデル（LLM）と外部の連携を可能にする「AIのUSBポート」ことMCPサーバー。Anthropic提唱のMCP規格に基づき、AIがツール、リソース、プロンプトを通じて外部と通信します。PCのUSB-Cポートのように、AIと様々なデータやツールを繋ぎ、リアルタイム情報取得や外部システム操作を実現。クライアント/サーバー構造で動作し、AIエージェントの可能性を広げ、AIの活用を高度化します。
+ChatGPTなどのAIが持つ「良い人フィルター」問題に対し、辛口アドバイスを引き出すプロンプトが話題に。Reddit発信で、辛辣な指摘を促すプロンプトをAIに与え、改善点を具体的に指摘させることが可能に。実験では、フィルター除去により、AIからのフィードバック精度が向上。Sonnetは特に厳しく、核心を突いた批判も。応用例として、チェックリスト形式や複数の視点からの評価も有効。
 
 ---
 
-### [AI開発ツールの「気づきの壁」 - 非エンジニアの95%が知らない選択肢](https://qiita.com/tomota53/items/8f7ce67d78cf35989832)
-**Published:** 2025-11-03 22:52:22 UTC
-**Likes:** 0
-**Tags:** ポエム, キャリア, ChatGPT, Claude, AI活用
+### [2026年までにトップ1%データアナリストになる方法](https://qiita.com/AInsights/items/a1c2fa07e9e7ad325382)
+**Published:** 2025-11-04 15:59:31 UTC
+**Likes:** 1
+**Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-エンジニアが1週間で4つの教育アプリを開発。ClineとClaude APIを使った経験から、AI開発ツールの情報格差を指摘。非エンジニアは「AIでアプリ制作」を知らない現状に警鐘を鳴らし、情報不足、専門用語の壁、無関心が原因と分析。情報格差を埋めるため、発信、翻訳、正直な情報伝達を呼びかけ、人への情報伝達が重要と訴えています。
+2026年、データアナリストはツールの知識より思考力、コミュニケーション、AI活用が重要に。トップ1%はインサイトを影響力に変え、コンサル思考で課題を設計。AIとの対話やストーリーテリングが必須で、SQL、Power BI、ビジネス理解、AI活用を。ポートフォリオ公開や社内影響力構築も不可欠です。
 
 ---
 
-### [Codex CLIの/reviewコマンドを使ってコードレビューを効率化する方法](https://qiita.com/tomada/items/6c11d5c4750ba2724fdf)
-**Published:** 2025-11-03 15:34:49 UTC
-**Likes:** 0
-**Tags:** OpenAI, codex, ChatGPT, AIエージェント, CodexCLI
+### [リモートMCPで始めるカスタムコネクタ入門実践ガイド](https://qiita.com/AInsights/items/6d662c4e5906faa57778)
+**Published:** 2025-11-04 15:16:00 UTC
+**Likes:** 1
+**Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-Codexの`/review`コマンドは、AIがコードをチェックし、問題点指摘に役立ちます。4つのプリセットがあり、ブランチ差分（PR Style）、未コミット変更、過去コミット、カスタム指示に対応。ローカル開発段階やコミット前、AI生成コードの確認、プロジェクト固有ルールにも対応可能です。内部ではバグ報告基準やコメント作成ルールが定義され、効率的なコードレビューを実現します。
+Claudeのカスタムコネクタは、未検証の外部サービスとの接続を可能にし、セキュリティリスクに注意が必要です。信頼できる組織のコネクタのみ使用し、ツールの呼び出しリクエストを慎重に確認、不要なツールは無効化しましょう。悪意あるサーバーは脆弱性公開プログラムに報告、AssetはGitHubを選択。ツール挙動の変化にも注意し、機密データからの分離を推奨します。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [How Switchboard, MD automates real-time call transcription in clinical contact centers with Amazon Nova Sonic](https://aws.amazon.com/blogs/machine-learning/how-switchboard-md-automates-real-time-call-transcription-in-clinical-contact-centers-with-amazon-nova-sonic/)
+### [Iterate faster with Amazon Bedrock AgentCore Runtime direct code deployment](https://aws.amazon.com/blogs/machine-learning/iterate-faster-with-amazon-bedrock-agentcore-runtime-direct-code-deployment/)
 **Source:** AWS ML Blog
-**Published:** 2025-11-03 17:25:22 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, AWS Lambda, Kinesis Video Streams
+**Published:** 2025-11-04 18:30:44 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Machine Learning, Launch
 
 **Digest:**
-Switchboard, MDは、医療現場でのAI活用を目指し、リアルタイム音声認識に課題を抱えていた。Amazon Nova Sonicを採用し、高い精度と低コストを実現。Amazon ConnectとKinesis Video Streamsを活用したサーバーレスアーキテクチャにより、75%の待ち時間削減と59%の放棄率削減を達成。正確な文字起こしで、電子カルテ連携や業務効率化を促進し、患者とのコミュニケーションに注力できる環境を構築した。
+Amazon Bedrock AgentCore Runtime で、Python の **直接コードデプロイ** が利用可能に。Docker不要で、コードと依存関係を ZIP でまとめ、S3 に配置することで、エージェントを迅速にデプロイできます。これにより、開発者は、 **AgentCore Starter Toolkit** を使用して、迅速なプロトタイピングと反復が可能になります。**コンテナベース** よりも開発サイクルが短縮され、迅速なイテレーションが可能です。
 
 ---
 
-### [ファイルサーバーのデータをCopilotで活用する方法](https://blog.jbs.co.jp/entry/2025/11/04/085652)
-**Source:** JBS Blog
-**Published:** 2025-11-03 23:56:52 UTC
-**Tags:** Microsoft 365 Copilot Chat, Copilot, ファイルサーバー, ファイル共有Microsoft 365 Copilot コネクタ
+### [The latest AI news we announced in October](https://blog.google/technology/ai/google-ai-updates-october-2025/)
+**Source:** Google DeepMind
+**Published:** 2025-11-04 17:00:00 UTC
+**Tags:** Android, Google DeepMind, Developers, Google Labs, Learning & Education, Gemini, Google Cloud, AI, Gemini Features, Research, Safety & Security, Google Nest
 
 **Digest:**
-Microsoft 365 Copilotで、オンプレミスファイルサーバーのデータ活用が可能に。ファイルサーバー内のドキュメントやマニュアルを自然言語で検索、要約し、業務効率化を実現します。前提条件、構成、導入手順を解説しており、情報活用を加速させるための具体的な方法を紹介しています。
+Googleは2025年10月に、最新の**AI**アップデートを発表しました。具体的な内容は不明ながら、**Google**が**AI**分野で引き続き革新を進めていることが示唆されます。今後の動向に注目し、詳細な情報公開を待ちましょう。
+
+---
+
+### [販売から修理まで一気通貫! 日本初 Surface 認定リセラー修理プロバイダーの大塚商会が提供する Surface の新しい保守サービス](https://blogs.windows.com/japan/2025/11/05/otsuka-offers-a-new-surface-maintenance-service/)
+**Source:** Windows Blog for Japan
+**Published:** 2025-11-05 05:37:13 UTC
+**Tags:** Surface
+
+**Digest:**
+大塚商会が、法人向けSurfaceの修理・運用支援サービス「たよれーる Surface ワンストップサービス」を2025年3月から開始。マイクロソフトのASP認定を受け、販売から修理まで一貫したサービスを提供します。月額1,650円で、電話・リモートサポート、修理、ネットワーク復旧支援に対応。同社のノウハウを活かした"顔の見える"サービスで、Surfaceの導入から運用までをサポートします。
+
+---
+
+### [【Microsoft×生成AI連載】【Power Platform】Microsoft Power PagesでMicrosoft Copilotを使ってみた](https://blog.jbs.co.jp/entry/2025/11/05/105642)
+**Source:** JBS Blog
+**Published:** 2025-11-05 01:56:42 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載, Power Pages
+
+**Digest:**
+Microsoft Power Pagesで利用できるCopilot機能が登場し、ウェブサイト作成がより効率的に。**AI**を活用し、サイトの**設計**、**コンテンツ生成**、**コード作成**などを支援します。これにより、**ローコード**開発プラットフォームでの**ウェブサイト構築**がさらに容易になり、時間と労力の削減につながります。
 
 ---
