@@ -1,98 +1,98 @@
-# AI Tech Trends Digest (2025-11-05)
+# AI Tech Trends Digest (2025-11-06)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [「notebooklm-skill」でClaude CodeからNotebookLMへ直接アクセスできるようになったので試してみた](https://qiita.com/mamoru-ngy/items/a73607a1a0392b5d2c6c)
-**Published:** 2025-11-04 23:55:25 UTC
+### [Claude Code vs Cursor：AI開発ツール比較](https://qiita.com/AInsights/items/85031b236bbcdac82cf8)
+**Published:** 2025-11-05 16:05:25 UTC
 **Likes:** 2
-**Tags:** 生成AI, LLM, Claude, NotebookLM, notebooklm-skill
-
-**Digest:**
-Claude Codeから、NotebookLMに直接アクセスできる「notebook-skill」が登場。アップロード済みの資料に基づき回答するため、情報精度が向上。Pro/Maxユーザーは、CLIとChrome、Googleアカウントで利用可能。セットアップ後、NotebookLMにノートを追加し、質問すれば、例えば東京と大阪の天気の違いなど、アップロードされた情報に基づいた回答が得られる。議事録や企画書の分析に役立つ。
-
----
-
-### [【Gemini】【プロンプト有】Canvasと「@ktrk2002の利き手クイズ」を作ったレポート](https://qiita.com/ktrk2002/items/a6fb8b383805487f6dbf)
-**Published:** 2025-11-04 10:19:07 UTC
-**Likes:** 2
-**Tags:** クイズ, Gemini, 生成AI
-
-**Digest:**
-Gemini Canvasで、利き手に関する二択クイズを自作。動作によって利き手が異なるという@ktrk2002さんの情報を基に、Geminiにクイズ生成を依頼。スプレッドシート読み込みは不可だったが、コードを生成。UIフリーズ問題が発生したが、起動高速化などの対策をプロンプトに加えることで改善。Canvasのスライド機能にも期待。
-
----
-
-### [ChatGPTの「良い人フィルター」を外して本音を引き出してみた](https://qiita.com/nolanlover0527/items/a11443658edbcbe18d38)
-**Published:** 2025-11-05 04:55:19 UTC
-**Likes:** 1
-**Tags:** AI, プロンプト, ChatGPT, プロンプトエンジニアリング, Claude
-
-**Digest:**
-ChatGPTなどのAIが持つ「良い人フィルター」問題に対し、辛口アドバイスを引き出すプロンプトが話題に。Reddit発信で、辛辣な指摘を促すプロンプトをAIに与え、改善点を具体的に指摘させることが可能に。実験では、フィルター除去により、AIからのフィードバック精度が向上。Sonnetは特に厳しく、核心を突いた批判も。応用例として、チェックリスト形式や複数の視点からの評価も有効。
-
----
-
-### [2026年までにトップ1%データアナリストになる方法](https://qiita.com/AInsights/items/a1c2fa07e9e7ad325382)
-**Published:** 2025-11-04 15:59:31 UTC
-**Likes:** 1
 **Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-2026年、データアナリストはツールの知識より思考力、コミュニケーション、AI活用が重要に。トップ1%はインサイトを影響力に変え、コンサル思考で課題を設計。AIとの対話やストーリーテリングが必須で、SQL、Power BI、ビジネス理解、AI活用を。ポートフォリオ公開や社内影響力構築も不可欠です。
+AIコーディングツール、**Claude Code**と**Cursor**を比較。Claude Codeはターミナルベースで大規模プロジェクトやアーキテクチャに強く、CursorはIDEでUIや迅速な開発に適しています。両者とも高品質なコード生成、ドキュメントアクセス、価格設定に違いがあり、自身のワークフローに合わせて選択が重要です。両方使用も推奨されています。
 
 ---
 
-### [リモートMCPで始めるカスタムコネクタ入門実践ガイド](https://qiita.com/AInsights/items/6d662c4e5906faa57778)
-**Published:** 2025-11-04 15:16:00 UTC
-**Likes:** 1
+### [Python Webスクレイピング厳選10ライブラリ](https://qiita.com/AInsights/items/d5e6c1922854261a84de)
+**Published:** 2025-11-05 16:03:14 UTC
+**Likes:** 2
 **Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-Claudeのカスタムコネクタは、未検証の外部サービスとの接続を可能にし、セキュリティリスクに注意が必要です。信頼できる組織のコネクタのみ使用し、ツールの呼び出しリクエストを慎重に確認、不要なツールは無効化しましょう。悪意あるサーバーは脆弱性公開プログラムに報告、AssetはGitHubを選択。ツール挙動の変化にも注意し、機密データからの分離を推奨します。
+Pythonのウェブスクレイピングに必須のライブラリ10選を紹介。HTTP通信には**HTTPX**、HTML解析には**BeautifulSoup**や**Parsel**、ブラウザ自動化には**Selenium**や**Playwright**、JSON処理には**JMESPath**、**JSONPath**が有効。データ検証には**Pydantic**や**Cerberus**、大規模プロジェクトには**Scrapy**が最適。プロジェクト規模や目的に合わせ、これらのライブラリを組み合わせることで効率的なスクレイピングが可能。
+
+---
+
+### [主要AIサービスのセキュリティ比較：データ学習させないためには](https://qiita.com/messshi/items/92857f894774818166e4)
+**Published:** 2025-11-05 07:14:28 UTC
+**Likes:** 2
+**Tags:** AI, セキュリティ対策, Gemini, ChatGPT, Claude
+
+**Digest:**
+AIサービス利用における**データプライバシー**に関する記事のダイジェストです。ChatGPT等10種のAIを比較し、学習利用、リスク、対策を紹介。**Grok**は漏洩リスクが極めて高く注意。**ローカル型Ollama**は安全性が高い。機密情報入力回避、企業向けプラン検討、ポリシー確認、ローカル実行が重要。2025年11月時点の情報で、各サービスは学習機能をデフォルトでONにする傾向にあるため、注意が必要です。
+
+---
+
+### [学習なしで“体感”を上げる：Qwenに層コンセンサスとMC合議を差し込んで比較](https://qiita.com/katsuki_ono/items/cab4e31073e16fb8ed2b)
+**Published:** 2025-11-06 02:22:21 UTC
+**Likes:** 1
+**Tags:** Python, 自然言語処理, PyTorch, transformers, LLM
+
+**Digest:**
+学習なしでQwenの推論を改善。**層コンセンサス（A）**と**MC合議（B）**による推論器改造を検証し、取り違え・冗長化の抑制を試みた。Aは安定性があり、Bは多様性があるが、長尺では冗長化しやすい傾向。**重みは不変**で、A常用、Bは状況に応じて併用が推奨されている。 Colabノートで再現可能。
+
+---
+
+### [Windows環境でLLMエージェント開発環境を10ドルで構築した話](https://qiita.com/RNA4219/items/6bcc3b733347e853f4a6)
+**Published:** 2025-11-06 04:44:50 UTC
+**Likes:** 0
+**Tags:** codex, LLM, litellm, OpenRouter
+
+**Digest:**
+2025/11/06投稿。**OpenAI Codex**の枠を使い果たし、LLM無職になった著者は、**Vibe Kanban**と**LiteLLM Proxy**、**OpenRouter**、**Qwen Code CLI**を組み合わせた格安LLM開発環境を構築。OpenRouterに$10課金で、1日1000reqまで無料モデルが利用可能。Vibe KanbanとLiteLLM Proxyを常時起動し、Qwen Code CLIは必要時に起動。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Iterate faster with Amazon Bedrock AgentCore Runtime direct code deployment](https://aws.amazon.com/blogs/machine-learning/iterate-faster-with-amazon-bedrock-agentcore-runtime-direct-code-deployment/)
+### [Android と iOS の Chrome ブラウザで AI モードがさらに使いやすくなりました](https://blog.google/intl/ja-jp/feed/ai-mode-in-chrome-ios-android/)
+**Source:** Google Japan Blog
+**Published:** 2025-11-06 11:55:00 UTC
+**Tags:** Chrome
+
+**Digest:**
+ChromeブラウザAndroid/iOS版で、AI検索体験「AIモード」へのアクセスが向上しました。米国で本日より、Chromeの「新しいタブ」ページを開くと、検索バー下にAIモードボタンが表示され、複雑な質問や追加質問、関連情報の検索がより簡単に。外出先でも手軽にAI検索を利用できます。
+
+---
+
+### [How Amazon Search increased ML training twofold using AWS Batch for Amazon SageMaker Training jobs](https://aws.amazon.com/blogs/machine-learning/how-amazon-search-increased-ml-training-twofold-using-aws-batch-for-amazon-sagemaker-training-jobs/)
 **Source:** AWS ML Blog
-**Published:** 2025-11-04 18:30:44 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Machine Learning, Launch
+**Published:** 2025-11-05 17:15:35 UTC
+**Tags:** Advanced (300), Amazon SageMaker AI, Artificial Intelligence, Customer Solutions, Technical How-to
 
 **Digest:**
-Amazon Bedrock AgentCore Runtime で、Python の **直接コードデプロイ** が利用可能に。Docker不要で、コードと依存関係を ZIP でまとめ、S3 に配置することで、エージェントを迅速にデプロイできます。これにより、開発者は、 **AgentCore Starter Toolkit** を使用して、迅速なプロトタイピングと反復が可能になります。**コンテナベース** よりも開発サイクルが短縮され、迅速なイテレーションが可能です。
+Amazon Searchは、AWS BatchとSageMaker Trainingを連携し、GPUインスタンスの利用率を向上。フェアシェアスケジューリングでGPU利用を40%から80%以上に。Service Environments、Share Identifiers、CloudWatchを活用し、優先順位付けと監視を実現。LLMファインチューニングなど、GPUリソースを効率的に利用する手法を紹介。
 
 ---
 
-### [The latest AI news we announced in October](https://blog.google/technology/ai/google-ai-updates-october-2025/)
+### [Listen to the Brazilian rainforests and help contribute to AI research](https://blog.google/outreach-initiatives/arts-culture/forest-listeners/)
 **Source:** Google DeepMind
-**Published:** 2025-11-04 17:00:00 UTC
-**Tags:** Android, Google DeepMind, Developers, Google Labs, Learning & Education, Gemini, Google Cloud, AI, Gemini Features, Research, Safety & Security, Google Nest
+**Published:** 2025-11-05 12:00:00 UTC
+**Tags:** Arts & Culture, Google DeepMind
 
 **Digest:**
-Googleは2025年10月に、最新の**AI**アップデートを発表しました。具体的な内容は不明ながら、**Google**が**AI**分野で引き続き革新を進めていることが示唆されます。今後の動向に注目し、詳細な情報公開を待ちましょう。
+Google Arts & Cultureが、ブラジルの熱帯雨林の音を聴き、そのモニタリングに貢献する新たなNature & AI実験を開始しました。世界中の人々が参加可能で、AIを活用して生態系の保全に繋がる可能性を秘めています。
 
 ---
 
-### [販売から修理まで一気通貫! 日本初 Surface 認定リセラー修理プロバイダーの大塚商会が提供する Surface の新しい保守サービス](https://blogs.windows.com/japan/2025/11/05/otsuka-offers-a-new-surface-maintenance-service/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-11-05 05:37:13 UTC
-**Tags:** Surface
-
-**Digest:**
-大塚商会が、法人向けSurfaceの修理・運用支援サービス「たよれーる Surface ワンストップサービス」を2025年3月から開始。マイクロソフトのASP認定を受け、販売から修理まで一貫したサービスを提供します。月額1,650円で、電話・リモートサポート、修理、ネットワーク復旧支援に対応。同社のノウハウを活かした"顔の見える"サービスで、Surfaceの導入から運用までをサポートします。
-
----
-
-### [【Microsoft×生成AI連載】【Power Platform】Microsoft Power PagesでMicrosoft Copilotを使ってみた](https://blog.jbs.co.jp/entry/2025/11/05/105642)
+### [Snowflake未経験エンジニアがSnowflake Notebooksを触ってみた](https://blog.jbs.co.jp/entry/2025/11/06/104012)
 **Source:** JBS Blog
-**Published:** 2025-11-05 01:56:42 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載, Power Pages
+**Published:** 2025-11-06 01:40:12 UTC
+**Tags:** Snowflake
 
 **Digest:**
-Microsoft Power Pagesで利用できるCopilot機能が登場し、ウェブサイト作成がより効率的に。**AI**を活用し、サイトの**設計**、**コンテンツ生成**、**コード作成**などを支援します。これにより、**ローコード**開発プラットフォームでの**ウェブサイト構築**がさらに容易になり、時間と労力の削減につながります。
+Snowflake Notebooksを初めて触った所感をまとめた記事。SnowflakeはSaaS型クラウドデータプラットフォームで、柔軟な拡張性と従量課金制が特徴。本記事では、Snowflake Notebooksに焦点を当て、特徴やノートブック作成、プログラム実行、SQLからPythonへの出力、グラフ化の仕組みについて言及。
 
 ---
