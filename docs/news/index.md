@@ -1,56 +1,56 @@
-# AI Tech Trends Digest (2025-11-06)
+# AI Tech Trends Digest (2025-11-07)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [Claude Code vs Cursor：AI開発ツール比較](https://qiita.com/AInsights/items/85031b236bbcdac82cf8)
-**Published:** 2025-11-05 16:05:25 UTC
-**Likes:** 2
-**Tags:** Python, 機械学習, AI, ChatGPT, LLM
+### [【続】8割自動化で終わらせたくなかった新人、OCR×Geminiで“なが〜いレシート”の誤読率3%を達成！](https://qiita.com/ishikawa_slj/items/d24b88966fbad0174162)
+**Published:** 2025-11-06 17:06:55 UTC
+**Likes:** 9
+**Tags:** 初心者, AI, OCR, React, Gemini
 
 **Digest:**
-AIコーディングツール、**Claude Code**と**Cursor**を比較。Claude Codeはターミナルベースで大規模プロジェクトやアーキテクチャに強く、CursorはIDEでUIや迅速な開発に適しています。両者とも高品質なコード生成、ドキュメントアクセス、価格設定に違いがあり、自身のワークフローに合わせて選択が重要です。両方使用も推奨されています。
+GitHub Copilotを活用したWebアプリ開発のアップデート記事です。OCRアプリをCloud Vision APIとGemini APIで改善し、激長レシートのフォーム入力を実現。AIでOCR精度を向上させ、申請フローとUI/UXも改善。管理者画面新設やフィルター検索対応など機能追加し、実用レベルに近づきました。
 
 ---
 
-### [Python Webスクレイピング厳選10ライブラリ](https://qiita.com/AInsights/items/d5e6c1922854261a84de)
-**Published:** 2025-11-05 16:03:14 UTC
-**Likes:** 2
-**Tags:** Python, 機械学習, AI, ChatGPT, LLM
+### [生成AIが“狭い構図”しか出さない問題を、Photoshopの「生成塗りつぶし」で解決する](https://qiita.com/GIFCat/items/540abc290ca5d8c3ef12)
+**Published:** 2025-11-07 00:01:16 UTC
+**Likes:** 3
+**Tags:** #photoshop, Gemini, ChatGPT, #生成AI, #AI画像生成
 
 **Digest:**
-Pythonのウェブスクレイピングに必須のライブラリ10選を紹介。HTTP通信には**HTTPX**、HTML解析には**BeautifulSoup**や**Parsel**、ブラウザ自動化には**Selenium**や**Playwright**、JSON処理には**JMESPath**、**JSONPath**が有効。データ検証には**Pydantic**や**Cerberus**、大規模プロジェクトには**Scrapy**が最適。プロジェクト規模や目的に合わせ、これらのライブラリを組み合わせることで効率的なスクレイピングが可能。
+生成AIで作成した画像が構図やアスペクト比で物足りない時、Adobe Photoshopの「生成塗りつぶし」機能が役立ちます。AI生成画像を拡張し、サムネイルやバナーに使えるように。使い方は、Photoshopで画像を開き、キャンバスサイズを広げ、空白部分を選択して「生成塗りつぶし」を実行するだけ。背景の自然な拡張や、人物の全身補完も可能で、指示文なしでも違和感なく仕上がります。
 
 ---
 
-### [主要AIサービスのセキュリティ比較：データ学習させないためには](https://qiita.com/messshi/items/92857f894774818166e4)
-**Published:** 2025-11-05 07:14:28 UTC
+### [AI VTuber「牡丹プロジェクト」技術全体マップ - 配信デビューまでのロードマップと現在地](https://qiita.com/koshikawa-masato/items/39cb9fc4a03a4fb3222e)
+**Published:** 2025-11-07 03:10:43 UTC
 **Likes:** 2
-**Tags:** AI, セキュリティ対策, Gemini, ChatGPT, Claude
+**Tags:** Python, PostgreSQL, AI, Vtuber, LLM
 
 **Digest:**
-AIサービス利用における**データプライバシー**に関する記事のダイジェストです。ChatGPT等10種のAIを比較し、学習利用、リスク、対策を紹介。**Grok**は漏洩リスクが極めて高く注意。**ローカル型Ollama**は安全性が高い。機密情報入力回避、企業向けプラン検討、ポリシー確認、ローカル実行が重要。2025年11月時点の情報で、各サービスは学習機能をデフォルトでONにする傾向にあるため、注意が必要です。
+「牡丹プロジェクト」は、過去の記憶を持つAI VTuber三姉妹を実現するプロジェクト。長女Kasho、次女牡丹、三女ユリが個性豊かに過去を語り、自律的に行動するAIを目指しています。基盤システムと記憶システムを構築し、現在、過去の人生生成に着手。安全性を確保するセンシティブ判定システムも実装済み。技術スタックはPython、LLM、PostgreSQLなど。最終目標は、三姉妹が自らの意思で配信デビューすることです。
 
 ---
 
-### [学習なしで“体感”を上げる：Qwenに層コンセンサスとMC合議を差し込んで比較](https://qiita.com/katsuki_ono/items/cab4e31073e16fb8ed2b)
-**Published:** 2025-11-06 02:22:21 UTC
+### [ADK Visual Agent Builder とは？ GUI で直感的に Agent 開発！](https://qiita.com/te_yama/items/a229191c663a6b4cc44e)
+**Published:** 2025-11-06 23:46:01 UTC
+**Likes:** 2
+**Tags:** Gemini, GoogleCloud, LLM, AIエージェント, AgentDevelopmentKit
+
+**Digest:**
+Agent Development Kit (ADK) v1.18.0 で追加された「ADK Visual Agent Builder」を紹介。GUI で直感的に Agent を構築でき、Tools や Sub Agent の追加も容易です。さらに、Assistant 機能により、自然言語での指示だけで設定ファイルやツールを自動生成し、Agent 開発のハードルを下げ、効率を向上させます。
+
+---
+
+### [AI VTuberに「記憶」を持たせたい - RAGを試して気づいたこと【牡丹プロジェクト技術解説・記憶システム編 第1弾】](https://qiita.com/koshikawa-masato/items/ba2a5d0105c2ea173ff7)
+**Published:** 2025-11-07 02:13:56 UTC
 **Likes:** 1
-**Tags:** Python, 自然言語処理, PyTorch, transformers, LLM
+**Tags:** Python, AI, Vtuber, rag, LLM
 
 **Digest:**
-学習なしでQwenの推論を改善。**層コンセンサス（A）**と**MC合議（B）**による推論器改造を検証し、取り違え・冗長化の抑制を試みた。Aは安定性があり、Bは多様性があるが、長尺では冗長化しやすい傾向。**重みは不変**で、A常用、Bは状況に応じて併用が推奨されている。 Colabノートで再現可能。
-
----
-
-### [Windows環境でLLMエージェント開発環境を10ドルで構築した話](https://qiita.com/RNA4219/items/6bcc3b733347e853f4a6)
-**Published:** 2025-11-06 04:44:50 UTC
-**Likes:** 0
-**Tags:** codex, LLM, litellm, OpenRouter
-
-**Digest:**
-2025/11/06投稿。**OpenAI Codex**の枠を使い果たし、LLM無職になった著者は、**Vibe Kanban**と**LiteLLM Proxy**、**OpenRouter**、**Qwen Code CLI**を組み合わせた格安LLM開発環境を構築。OpenRouterに$10課金で、1日1000reqまで無料モデルが利用可能。Vibe KanbanとLiteLLM Proxyを常時起動し、Qwen Code CLIは必要時に起動。
+AI VTuber三姉妹の記憶システム設計技術解説第1弾として、**AI VTuber「牡丹」**の記憶にRAGを試みた結果を解説。RAGの基本実装と課題を述べ、主観性の欠如、時系列管理の難しさ、関係性の表現不足を指摘。最終的に**独自システム「記憶製造機」**の開発を決意。次回は構造化記憶設計について詳述。
 
 ---
 
@@ -63,36 +63,26 @@ AIサービス利用における**データプライバシー**に関する記�
 **Tags:** Chrome
 
 **Digest:**
-ChromeブラウザAndroid/iOS版で、AI検索体験「AIモード」へのアクセスが向上しました。米国で本日より、Chromeの「新しいタブ」ページを開くと、検索バー下にAIモードボタンが表示され、複雑な質問や追加質問、関連情報の検索がより簡単に。外出先でも手軽にAI検索を利用できます。
+ChromeのAndroid/iOS版で、AI検索機能「AIモード」へのアクセスが向上しました。米国では、新しいタブを開くと検索バー下にAIモードボタンが表示され、より簡単にAIを活用できます。これにより、複雑な質問や、追加の質問への対応が外出先でもスムーズに行えるようになりました。
 
 ---
 
-### [How Amazon Search increased ML training twofold using AWS Batch for Amazon SageMaker Training jobs](https://aws.amazon.com/blogs/machine-learning/how-amazon-search-increased-ml-training-twofold-using-aws-batch-for-amazon-sagemaker-training-jobs/)
+### [Transform your MCP architecture: Unite MCP servers through AgentCore Gateway](https://aws.amazon.com/blogs/machine-learning/transform-your-mcp-architecture-unite-mcp-servers-through-agentcore-gateway/)
 **Source:** AWS ML Blog
-**Published:** 2025-11-05 17:15:35 UTC
-**Tags:** Advanced (300), Amazon SageMaker AI, Artificial Intelligence, Customer Solutions, Technical How-to
+**Published:** 2025-11-06 17:43:23 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Machine Learning, Artificial Intelligence, Intermediate (200)
 
 **Digest:**
-Amazon Searchは、AWS BatchとSageMaker Trainingを連携し、GPUインスタンスの利用率を向上。フェアシェアスケジューリングでGPU利用を40%から80%以上に。Service Environments、Share Identifiers、CloudWatchを活用し、優先順位付けと監視を実現。LLMファインチューニングなど、GPUリソースを効率的に利用する手法を紹介。
+Amazon Bedrock AgentCore Gateway が、AIエージェント向けMCPサーバー統合を強化。複数のMCPサーバーを単一インターフェースで管理可能にし、認証の一元化、ツール共有を容易にします。eコマース例のように、チーム毎のMCPサーバーを統合し、柔軟な組織構造とアクセス制御を実現。  SDK、コンソール、CLIなどで設定でき、MCPサーバーをターゲットとして追加できます。
 
 ---
 
-### [Listen to the Brazilian rainforests and help contribute to AI research](https://blog.google/outreach-initiatives/arts-culture/forest-listeners/)
-**Source:** Google DeepMind
-**Published:** 2025-11-05 12:00:00 UTC
-**Tags:** Arts & Culture, Google DeepMind
-
-**Digest:**
-Google Arts & Cultureが、ブラジルの熱帯雨林の音を聴き、そのモニタリングに貢献する新たなNature & AI実験を開始しました。世界中の人々が参加可能で、AIを活用して生態系の保全に繋がる可能性を秘めています。
-
----
-
-### [Snowflake未経験エンジニアがSnowflake Notebooksを触ってみた](https://blog.jbs.co.jp/entry/2025/11/06/104012)
+### [【Microsoft×生成AI連載】【Agents】Microsoft Copilot Studioのコードインタープリター機能を使ってみた](https://blog.jbs.co.jp/entry/2025/11/07/090926)
 **Source:** JBS Blog
-**Published:** 2025-11-06 01:40:12 UTC
-**Tags:** Snowflake
+**Published:** 2025-11-07 00:09:26 UTC
+**Tags:** Copilot, Microsoft 365 Copilot, Microsoft Copilot, Microsoft×生成AI連載, 生成AI
 
 **Digest:**
-Snowflake Notebooksを初めて触った所感をまとめた記事。SnowflakeはSaaS型クラウドデータプラットフォームで、柔軟な拡張性と従量課金制が特徴。本記事では、Snowflake Notebooksに焦点を当て、特徴やノートブック作成、プログラム実行、SQLからPythonへの出力、グラフ化の仕組みについて言及。
+マイクロソフト連載、今回はCopilot Studioのコードインタープリター機能を検証。Excelファイルを読み込み、ExcelとPDFファイルを出力する流れを解説しています。Power Platform管理センターでの有効化や、プロンプト・エージェント指示による実装方法、利用シーン、メリット・注意点などを紹介。記事公開は2025年10月30日時点の情報に基づいています。
 
 ---
