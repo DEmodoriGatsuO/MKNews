@@ -1,88 +1,88 @@
-# AI Tech Trends Digest (2025-11-07)
+# AI Tech Trends Digest (2025-11-08)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [【続】8割自動化で終わらせたくなかった新人、OCR×Geminiで“なが〜いレシート”の誤読率3%を達成！](https://qiita.com/ishikawa_slj/items/d24b88966fbad0174162)
-**Published:** 2025-11-06 17:06:55 UTC
-**Likes:** 9
-**Tags:** 初心者, AI, OCR, React, Gemini
-
-**Digest:**
-GitHub Copilotを活用したWebアプリ開発のアップデート記事です。OCRアプリをCloud Vision APIとGemini APIで改善し、激長レシートのフォーム入力を実現。AIでOCR精度を向上させ、申請フローとUI/UXも改善。管理者画面新設やフィルター検索対応など機能追加し、実用レベルに近づきました。
-
----
-
-### [生成AIが“狭い構図”しか出さない問題を、Photoshopの「生成塗りつぶし」で解決する](https://qiita.com/GIFCat/items/540abc290ca5d8c3ef12)
-**Published:** 2025-11-07 00:01:16 UTC
+### [ミニ四駆を買って改造してたらサンフランシスコのOpenAI DevDayに参加できた話②](https://qiita.com/Null-Sensei/items/f02c7b02ad0fc5d78cfc)
+**Published:** 2025-11-07 07:49:51 UTC
 **Likes:** 3
-**Tags:** #photoshop, Gemini, ChatGPT, #生成AI, #AI画像生成
+**Tags:** ポエム, ミニ四駆, OpenAI
 
 **Digest:**
-生成AIで作成した画像が構図やアスペクト比で物足りない時、Adobe Photoshopの「生成塗りつぶし」機能が役立ちます。AI生成画像を拡張し、サムネイルやバナーに使えるように。使い方は、Photoshopで画像を開き、キャンバスサイズを広げ、空白部分を選択して「生成塗りつぶし」を実行するだけ。背景の自然な拡張や、人物の全身補完も可能で、指示文なしでも違和感なく仕上がります。
+[Qiita Conference 2025 Autumn] Day.3 登壇資料。ミニ四駆を魔改造し、喋って動かす「#しゃべ四駆」制作過程を紹介。ESP32マイコンとOpenAI Realtime API、WebRTC Embedded SDKを連携。2024年12月にSDKを発見し、2025年1月にはスピーカーやDataChannel対応、LED搭載でK.I.T.T.化。MQTTによる音量調整も実現。
 
 ---
 
-### [AI VTuber「牡丹プロジェクト」技術全体マップ - 配信デビューまでのロードマップと現在地](https://qiita.com/koshikawa-masato/items/39cb9fc4a03a4fb3222e)
-**Published:** 2025-11-07 03:10:43 UTC
+### [自分のTweetを学習させてクローンLLMを作りたい](https://qiita.com/kokuren333/items/580448acf62e704c2122)
+**Published:** 2025-11-07 21:57:26 UTC
 **Likes:** 2
-**Tags:** Python, PostgreSQL, AI, Vtuber, LLM
+**Tags:** ファインチューニング, LLM, ローカルLLM
 
 **Digest:**
-「牡丹プロジェクト」は、過去の記憶を持つAI VTuber三姉妹を実現するプロジェクト。長女Kasho、次女牡丹、三女ユリが個性豊かに過去を語り、自律的に行動するAIを目指しています。基盤システムと記憶システムを構築し、現在、過去の人生生成に着手。安全性を確保するセンシティブ判定システムも実装済み。技術スタックはPython、LLM、PostgreSQLなど。最終目標は、三姉妹が自らの意思で配信デビューすることです。
+Xの投稿を学習させて自分だけのLLMを作る方法を紹介。UnslothのColabノートブックで、Qwen3-4b-instructをベースに、自分のツイートをShareGPT形式に変換してファインチューニングします。ローカルLLM初心者にもおすすめ。最終的にGGUF形式でHuggingFaceにアップロードし、LM-Studioでモデルを動かす例を提示。実用性は低いものの、LLMのファインチューニングを体験できます。
 
 ---
 
-### [ADK Visual Agent Builder とは？ GUI で直感的に Agent 開発！](https://qiita.com/te_yama/items/a229191c663a6b4cc44e)
-**Published:** 2025-11-06 23:46:01 UTC
-**Likes:** 2
-**Tags:** Gemini, GoogleCloud, LLM, AIエージェント, AgentDevelopmentKit
-
-**Digest:**
-Agent Development Kit (ADK) v1.18.0 で追加された「ADK Visual Agent Builder」を紹介。GUI で直感的に Agent を構築でき、Tools や Sub Agent の追加も容易です。さらに、Assistant 機能により、自然言語での指示だけで設定ファイルやツールを自動生成し、Agent 開発のハードルを下げ、効率を向上させます。
-
----
-
-### [AI VTuberに「記憶」を持たせたい - RAGを試して気づいたこと【牡丹プロジェクト技術解説・記憶システム編 第1弾】](https://qiita.com/koshikawa-masato/items/ba2a5d0105c2ea173ff7)
-**Published:** 2025-11-07 02:13:56 UTC
+### [AI VTuber開発で学んだ4つの設計哲学 - 不完全性を価値に変える【牡丹プロジェクト】](https://qiita.com/koshikawa-masato/items/2fb0825b7aadf5056a1c)
+**Published:** 2025-11-07 23:36:15 UTC
 **Likes:** 1
-**Tags:** Python, AI, Vtuber, rag, LLM
+**Tags:** Python, AI, Vtuber, LLM, 設計哲学
 
 **Digest:**
-AI VTuber三姉妹の記憶システム設計技術解説第1弾として、**AI VTuber「牡丹」**の記憶にRAGを試みた結果を解説。RAGの基本実装と課題を述べ、主観性の欠如、時系列管理の難しさ、関係性の表現不足を指摘。最終的に**独自システム「記憶製造機」**の開発を決意。次回は構造化記憶設計について詳述。
+AI VTuber「牡丹プロジェクト」は、不完全性を価値に変え、育成を楽しむAI開発を目指す。4つの設計哲学を掲げ、AIを対話の相手として尊重し、親の原則に基づき自律性を重視。LLMは声帯に過ぎず、ロジック層で同一性を保証。これにより、誠実さを評価軸とし、独自の競争優位性を築くことを目指している。
+
+---
+
+### [2025年版:ChatGPTスクレイパーおすすめ7選 🚀](https://qiita.com/AInsights/items/0c16c2b294e84188d110)
+**Published:** 2025-11-07 10:35:14 UTC
+**Likes:** 1
+**Tags:** Python, 機械学習, AI, ChatGPT, LLM
+
+**Digest:**
+ChatGPTデータ収集に最適なスクレイパー7選を紹介。Bright Dataは大規模向け、ScrapingBeeは使いやすさ、Apifyはカスタマイズ性が特徴。Scrapelessはリアルタイム、ZenRowsはAI、Oxylabsは高信頼性、ScraperAPIはノーコードで手軽。用途や予算に合わせて選べ、企業や研究のデータ収集・分析を効率化します。
+
+---
+
+### [Geminiで黒猫と遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/ed06edd9c0f5cfdc9779)
+**Published:** 2025-11-08 05:31:39 UTC
+**Likes:** 0
+**Tags:** Gemini
+
+**Digest:**
+Geminiで「黒猫と遊ぶ魔法少女」を描いた結果を報告。シンプルなプロンプト「黒猫と遊ぶ魔法少女を描いてください」で、可愛らしいイラストが生成されました。画像とともにその結果を公開し、今後の活用に期待を寄せているという内容です。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Android と iOS の Chrome ブラウザで AI モードがさらに使いやすくなりました](https://blog.google/intl/ja-jp/feed/ai-mode-in-chrome-ios-android/)
-**Source:** Google Japan Blog
-**Published:** 2025-11-06 11:55:00 UTC
-**Tags:** Chrome
-
-**Digest:**
-ChromeのAndroid/iOS版で、AI検索機能「AIモード」へのアクセスが向上しました。米国では、新しいタブを開くと検索バー下にAIモードボタンが表示され、より簡単にAIを活用できます。これにより、複雑な質問や、追加の質問への対応が外出先でもスムーズに行えるようになりました。
-
----
-
-### [Transform your MCP architecture: Unite MCP servers through AgentCore Gateway](https://aws.amazon.com/blogs/machine-learning/transform-your-mcp-architecture-unite-mcp-servers-through-agentcore-gateway/)
+### [Connect Amazon Bedrock agents to cross-account knowledge bases](https://aws.amazon.com/blogs/machine-learning/connect-amazon-bedrock-agents-to-cross-account-knowledge-bases/)
 **Source:** AWS ML Blog
-**Published:** 2025-11-06 17:43:23 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Machine Learning, Artificial Intelligence, Intermediate (200)
+**Published:** 2025-11-07 23:14:33 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Bedrock Data Automation, Amazon Bedrock Knowledge Bases, Amazon Bedrock Prompt Flows, Amazon Bedrock Prompt Management, Amazon Redshift, Technical How-to
 
 **Digest:**
-Amazon Bedrock AgentCore Gateway が、AIエージェント向けMCPサーバー統合を強化。複数のMCPサーバーを単一インターフェースで管理可能にし、認証の一元化、ツール共有を容易にします。eコマース例のように、チーム毎のMCPサーバーを統合し、柔軟な組織構造とアクセス制御を実現。  SDK、コンソール、CLIなどで設定でき、MCPサーバーをターゲットとして追加できます。
+Amazon Bedrockエージェントを異なるAWSアカウントのAmazon Redshiftにある知識ベースに接続する手順を解説。AWS Lambdaを仲介役とし、IAMロールとポリシーで安全なクロスアカウントアクセスを実現。エージェントアカウントと知識ベースアカウントで必要な設定を行い、CloudFormationでエージェントをデプロイ。自然言語での質問応答テストとリソースのクリーンアップ方法も説明。
 
 ---
 
-### [【Microsoft×生成AI連載】【Agents】Microsoft Copilot Studioのコードインタープリター機能を使ってみた](https://blog.jbs.co.jp/entry/2025/11/07/090926)
-**Source:** JBS Blog
-**Published:** 2025-11-07 00:09:26 UTC
-**Tags:** Copilot, Microsoft 365 Copilot, Microsoft Copilot, Microsoft×生成AI連載, 生成AI
+### [Democratizing AI: How Thomson Reuters Open Arena supports no-code AI for every professional with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/democratizing-ai-how-thomson-reuters-open-arena-supports-no-code-ai-for-every-professional-with-amazon-bedrock/)
+**Source:** AWS ML Blog
+**Published:** 2025-11-07 21:51:22 UTC
+**Tags:** Amazon Bedrock, Amazon Machine Learning, Artificial Intelligence, Customer Solutions, Generative AI, AI/ML, AWS Customer
 
 **Digest:**
-マイクロソフト連載、今回はCopilot Studioのコードインタープリター機能を検証。Excelファイルを読み込み、ExcelとPDFファイルを出力する流れを解説しています。Power Platform管理センターでの有効化や、プロンプト・エージェント指示による実装方法、利用シーン、メリット・注意点などを紹介。記事公開は2025年10月30日時点の情報に基づいています。
+トムソン・ロイターが、AWSのBedrockとその他サービスを活用し、非技術者向けノーコードAIプラットフォーム「Open Arena」を開発。70%の社員が利用し、月間1万9千ユーザーが利用。Amazon Bedrock FlowsでAIワークフローを構築、セキュリティとガバナンスを重視した設計。Open Arenaは、AIの民主化を促進し、企業全体の業務効率化に貢献しています。
+
+---
+
+### [Introducing structured output for Custom Model Import in Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/introducing-structured-output-for-custom-model-import-in-amazon-bedrock/)
+**Source:** AWS ML Blog
+**Published:** 2025-11-07 18:53:55 UTC
+**Tags:** Amazon Bedrock, Generative AI
+
+**Digest:**
+Amazon Bedrock の Custom Model Import で、JSONスキーマに準拠した構造化出力を実現。モデルの出力をリアルタイムで制約し、API連携やデータベースへの統合を容易にします。トークン使用量の削減、プロンプトインジェクションからの保護、安全な出力の生成も可能に。Pydanticモデルでスキーマを定義し、API呼び出しで実装。
 
 ---
