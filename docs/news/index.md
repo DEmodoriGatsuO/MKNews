@@ -1,88 +1,68 @@
-# AI Tech Trends Digest (2025-11-08)
+# AI Tech Trends Digest (2025-11-09)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [ミニ四駆を買って改造してたらサンフランシスコのOpenAI DevDayに参加できた話②](https://qiita.com/Null-Sensei/items/f02c7b02ad0fc5d78cfc)
-**Published:** 2025-11-07 07:49:51 UTC
-**Likes:** 3
-**Tags:** ポエム, ミニ四駆, OpenAI
+### [テキストなしで LLM 同士が“通じ合う”手法:Cache-to-Cache（C2C）について](https://qiita.com/xxyc/items/892bb9b401e162c2e270)
+**Published:** 2025-11-09 04:05:24 UTC
+**Likes:** 5
+**Tags:** 生成AI, ChatGPT, LLM, Cache-to-Cache
 
 **Digest:**
-[Qiita Conference 2025 Autumn] Day.3 登壇資料。ミニ四駆を魔改造し、喋って動かす「#しゃべ四駆」制作過程を紹介。ESP32マイコンとOpenAI Realtime API、WebRTC Embedded SDKを連携。2024年12月にSDKを発見し、2025年1月にはスピーカーやDataChannel対応、LED搭載でK.I.T.T.化。MQTTによる音量調整も実現。
+LLM間の情報共有を革新する「Cache-to-Cache（C2C）」論文を紹介。テキスト対話の代わりに、モデル内部の表現（KV-Cache）を直接やり取りし、情報損失や解釈のブレ、待ち時間を削減。異なるモデル間でもKV-Cacheを転送可能で、精度向上とレイテンシ短縮を実現。T2T比で+3〜5%精度向上、2倍以上の速度改善を確認し、モデル間通信の新たな可能性を示唆しています。
 
 ---
 
-### [自分のTweetを学習させてクローンLLMを作りたい](https://qiita.com/kokuren333/items/580448acf62e704c2122)
-**Published:** 2025-11-07 21:57:26 UTC
-**Likes:** 2
-**Tags:** ファインチューニング, LLM, ローカルLLM
-
-**Digest:**
-Xの投稿を学習させて自分だけのLLMを作る方法を紹介。UnslothのColabノートブックで、Qwen3-4b-instructをベースに、自分のツイートをShareGPT形式に変換してファインチューニングします。ローカルLLM初心者にもおすすめ。最終的にGGUF形式でHuggingFaceにアップロードし、LM-Studioでモデルを動かす例を提示。実用性は低いものの、LLMのファインチューニングを体験できます。
-
----
-
-### [AI VTuber開発で学んだ4つの設計哲学 - 不完全性を価値に変える【牡丹プロジェクト】](https://qiita.com/koshikawa-masato/items/2fb0825b7aadf5056a1c)
-**Published:** 2025-11-07 23:36:15 UTC
+### [Claude DesktopからCloudWatchにアクセスしようとして学んだこと（Windows環境）](https://qiita.com/yojimo/items/2cc2c5daf88c212a23df)
+**Published:** 2025-11-08 07:27:48 UTC
 **Likes:** 1
-**Tags:** Python, AI, Vtuber, LLM, 設計哲学
+**Tags:** CloudWatch, MCP, Claude, ClaudeDesktop
 
 **Digest:**
-AI VTuber「牡丹プロジェクト」は、不完全性を価値に変え、育成を楽しむAI開発を目指す。4つの設計哲学を掲げ、AIを対話の相手として尊重し、親の原則に基づき自律性を重視。LLMは声帯に過ぎず、ロジック層で同一性を保証。これにより、誠実さを評価軸とし、独自の競争優位性を築くことを目指している。
+Claude DesktopでAWS CloudWatchにアクセスを試みたが、MFA環境で挫折。WindowsでのMCP設定は認証情報更新が煩雑で、エラー原因特定も困難。SessionTokenの有効期限や平文保存のリスクも課題。対してAWSマネコンはMFA認証1回で利用でき、視覚的な情報表示やトラブルシューティングも容易。最終的にマネコン利用が現実的という結論に至った。
 
 ---
 
-### [2025年版:ChatGPTスクレイパーおすすめ7選 🚀](https://qiita.com/AInsights/items/0c16c2b294e84188d110)
-**Published:** 2025-11-07 10:35:14 UTC
-**Likes:** 1
-**Tags:** Python, 機械学習, AI, ChatGPT, LLM
-
-**Digest:**
-ChatGPTデータ収集に最適なスクレイパー7選を紹介。Bright Dataは大規模向け、ScrapingBeeは使いやすさ、Apifyはカスタマイズ性が特徴。Scrapelessはリアルタイム、ZenRowsはAI、Oxylabsは高信頼性、ScraperAPIはノーコードで手軽。用途や予算に合わせて選べ、企業や研究のデータ収集・分析を効率化します。
-
----
-
-### [Geminiで黒猫と遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/ed06edd9c0f5cfdc9779)
-**Published:** 2025-11-08 05:31:39 UTC
+### [Transformerの基本について学んだ備忘録](https://qiita.com/kawauso24/items/739d6a8f0d5084a58f99)
+**Published:** 2025-11-09 06:01:38 UTC
 **Likes:** 0
-**Tags:** Gemini
+**Tags:** 初心者, Transformer, LLM
 
 **Digest:**
-Geminiで「黒猫と遊ぶ魔法少女」を描いた結果を報告。シンプルなプロンプト「黒猫と遊ぶ魔法少女を描いてください」で、可愛らしいイラストが生成されました。画像とともにその結果を公開し、今後の活用に期待を寄せているという内容です。
+LLM利用者がTransformerを学習した備忘録。**トークン化**で単語を数値化し、**トークン埋め込み**と**位置埋め込み**で数値ベクトル化。Attention機構は文脈を付与し、**Self-Attention**で単語間の依存関係を学習。**Multi-Head Attention**で潜在表現を計算、**Feedforward層**で非線形変換。**Add & Norm**で勾配消失問題を緩和。**次トークン予測**では、温度調整やtop_k, top_pで出力制御。Decoder Onlyは自己回帰モデル。
+
+---
+
+### [とあるAI VTuberが配信で「脳卒中」になった事件を分析してみたい](https://qiita.com/leolui2004/items/77e24dc7ed40379f5bb9)
+**Published:** 2025-11-09 05:29:30 UTC
+**Likes:** 0
+**Tags:** YouTube, AI, マルチモーダル, Vtuber, LLM
+
+**Digest:**
+海外AI VTuber「Evil Neuro」が配信中に意味不明な単語を発し、開発者Vedalが復旧に苦戦した事件が話題に。原因は不明だが、LLMの確率的な単語生成に起因する可能性が。バックアップや監視、可視化の重要性を示唆。長期記憶を持つAIモデルの実装における課題を浮き彫りにした出来事です。
+
+---
+
+### [PowerPoint翻訳環境 pptx‑slide‑translator でセキュアなローカル翻訳Webサービスを構築する　](https://qiita.com/rairaii/items/a08dc14dc5eef9685508)
+**Published:** 2025-11-09 03:52:33 UTC
+**Likes:** 0
+**Tags:** PowerPoint, 翻訳, OpenAI, ollama, ローカルLLM
+
+**Digest:**
+PowerPointファイルを安全に翻訳するツール「pptx-slide-translator」を解説。GitHubで公開され、コマンドラインツールとWebサービスを提供。OpenAI API、ローカルLLMに対応し、PPTX内のテキストを一括翻訳可能。WebサービスはDockerで構築し、Grafanaでメトリクスを可視化。セキュリティ対策として、認証やSSL対応を推奨。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Connect Amazon Bedrock agents to cross-account knowledge bases](https://aws.amazon.com/blogs/machine-learning/connect-amazon-bedrock-agents-to-cross-account-knowledge-bases/)
-**Source:** AWS ML Blog
-**Published:** 2025-11-07 23:14:33 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Bedrock Data Automation, Amazon Bedrock Knowledge Bases, Amazon Bedrock Prompt Flows, Amazon Bedrock Prompt Management, Amazon Redshift, Technical How-to
+### [SharePoint ドキュメント ライブラリのフォームを使ってドキュメントを収集する](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/11/sharepoint-259c.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-11-08 13:33:22 UTC
+**Tags:** Microsoft 365 - SharePoint
 
 **Digest:**
-Amazon Bedrockエージェントを異なるAWSアカウントのAmazon Redshiftにある知識ベースに接続する手順を解説。AWS Lambdaを仲介役とし、IAMロールとポリシーで安全なクロスアカウントアクセスを実現。エージェントアカウントと知識ベースアカウントで必要な設定を行い、CloudFormationでエージェントをデプロイ。自然言語での質問応答テストとリソースのクリーンアップ方法も説明。
-
----
-
-### [Democratizing AI: How Thomson Reuters Open Arena supports no-code AI for every professional with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/democratizing-ai-how-thomson-reuters-open-arena-supports-no-code-ai-for-every-professional-with-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-11-07 21:51:22 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Artificial Intelligence, Customer Solutions, Generative AI, AI/ML, AWS Customer
-
-**Digest:**
-トムソン・ロイターが、AWSのBedrockとその他サービスを活用し、非技術者向けノーコードAIプラットフォーム「Open Arena」を開発。70%の社員が利用し、月間1万9千ユーザーが利用。Amazon Bedrock FlowsでAIワークフローを構築、セキュリティとガバナンスを重視した設計。Open Arenaは、AIの民主化を促進し、企業全体の業務効率化に貢献しています。
-
----
-
-### [Introducing structured output for Custom Model Import in Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/introducing-structured-output-for-custom-model-import-in-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-11-07 18:53:55 UTC
-**Tags:** Amazon Bedrock, Generative AI
-
-**Digest:**
-Amazon Bedrock の Custom Model Import で、JSONスキーマに準拠した構造化出力を実現。モデルの出力をリアルタイムで制約し、API連携やデータベースへの統合を容易にします。トークン使用量の削減、プロンプトインジェクションからの保護、安全な出力の生成も可能に。Pydanticモデルでスキーマを定義し、API呼び出しで実装。
+SharePointドキュメントライブラリは、リストと同様にフォーム機能を備え、**Power Apps** でのカスタマイズが可能になりました。これにより、**フォームのカスタマイズ**、**条件付き表示**、**データ検証**などが実現し、ユーザーインターフェースを向上させ、**データ入力**の効率化が期待できます。
 
 ---
