@@ -1,148 +1,68 @@
-# AI Tech Trends Digest (2025-11-12)
+# AI Tech Trends Digest (2025-11-13)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [n8n vs Apache Airflow徹底比較](https://qiita.com/AInsights/items/6aca533e8589555e0fba)
-**Published:** 2025-11-11 14:25:32 UTC
-**Likes:** 2
-**Tags:** Python, 機械学習, AI, ChatGPT, LLM
+### [# LLMコンペをハックする：「戦わずして勝つ」戦略の舞台裏](https://qiita.com/heat1390/items/b1ec44b527e09526f9bb)
+**Published:** 2025-11-13 05:47:58 UTC
+**Likes:** 0
+**Tags:** AI, ChatGPT, LLM, AIエージェント, 松尾研LLM開発コンペ2025
 
 **Digest:**
-ノーコード/ローコード自動化ツール「n8n」と、データエンジニア向けワークフローオーケストレーションプラットフォーム「Apache Airflow」を比較。n8nは視覚的で初心者向け、AirflowはPythonベースで高機能。n8nは迅速な自動化に、Airflowは大規模データ処理に適す。価格と学習曲線も異なり、用途に応じて選択肢が変わる。
+松尾研LLMコンペで、約30人から70人のチームをPMとして率いた佐藤氏。予選1位通過の裏には、DeepSeekからQwen3への大胆な戦略転換、データ部門解体という決断があった。限られたリソースで成果を出すため、情報一元化、会議設計、適材適所を実践。「勝つための別の経路」を探る「ハッキング思考」が勝利の鍵となった。
 
 ---
 
-### [Claudeに3つのサブエージェントにそれぞれ人格を持たせて多角的に投資について議論させてみた](https://qiita.com/hiroelza/items/008e021b7deec5b9cb69)
-**Published:** 2025-11-11 13:27:56 UTC
-**Likes:** 2
-**Tags:** Python, AI, 投資, 個人開発, Claude
+### [DS-STAR: データサイエンスマルチエージェントを Microsoft Agent Framework で実装する](https://qiita.com/nohanaga/items/5e5621738fd181c015ed)
+**Published:** 2025-11-13 03:34:04 UTC
+**Likes:** 0
+**Tags:** Azure, OpenAI, AutoGen, AgentFramework
 
 **Digest:**
-AIチャットbot「Claude」に3つの人格（哲学、統計、税制）を持たせ、投資判断を多角的に評価するシステムを構築。米国株100%ポートフォリオや積立停止の是非を議論し、感情的な判断や偏りを防ぐ効果を確認。GitHubで公開。エージェント間の議論深化や数値根拠の明確化を今後の課題としており、投資判断の参考になる。
+Google CloudのDS-STARは、LLMを活用したデータサイエンスエージェントの新アプローチ。異種データ対応と計画妥当性検証の課題を解決し、DABStep、KramaBench、DA-CodeでSOTAを達成。Microsoft Agent Frameworkを使い、データファイル分析、LLM検証、逐次計画で構成。5万行の仮想データで売上分析を実行し、1回の反復で正解。GitHubで参考実装も公開。
 
 ---
 
-### [【リリースノート】gas-gemini-filesearch-api-webpdf v0.1.0 - Google Driveファイル検索APIの初期リリース](https://qiita.com/Maki-HamarukiLab/items/ab80aa541c9a2367a4fd)
-**Published:** 2025-11-11 17:55:57 UTC
-**Likes:** 1
-**Tags:** API, GoogleAppsScript, GAS, GoogleDrive, Gemini
+### [【AI倫理】AI開発の「空虚な競争」にブレーキを：社会的適応性の原則](https://qiita.com/Shawin/items/a6eca391b1ad24f80cfa)
+**Published:** 2025-11-12 23:02:10 UTC
+**Likes:** 0
+**Tags:** 初心者, AI, エンジニア, ChatGPT, LLM
 
 **Digest:**
-Google Drive内を横断検索するAPI `gas-gemini-filesearch-api-webpdf` の初期バージョンv0.1.0をリリース。Google Apps Script (GAS)ベースで、Gemini Pro Vision連携によりPDFや画像も検索対象に。キーワード、フォルダID指定で検索し、JSON形式で結果を返却。シンプルなHTMLフロントエンドも同梱。ドキュメントと自動化も整備。
+生成AIの進化と労働負荷増大のパラドックスに対応し、新しい倫理的枠組み「社会的適応性の原則」を策定。グローバル公平性と格差防止、人間の自律性尊重を重視し、AI開発者は社会適応性を評価軸に。具体的には、AIインフラの包摂性、文化の多元化、収益の再投資、批判的思考の促し、決定権の明確化、実践的自立支援などを目指し、AIが真に人類に貢献する存在となることを目指します。
 
 ---
 
-### [n8n vs Node-RED 完全比較ガイド2025](https://qiita.com/AInsights/items/4fa36f11118daf406226)
-**Published:** 2025-11-11 14:15:59 UTC
-**Likes:** 1
-**Tags:** Python, 機械学習, AI, n8n.io, LLM
+### [Weights & Biases AI developer platform ](https://qiita.com/kaizen_nagoya/items/845300cf7100bfb0dede)
+**Published:** 2025-11-12 22:29:21 UTC
+**Likes:** 0
+**Tags:** W&B, ChatGPT, LLM
 
 **Digest:**
-n8nとNode-REDはワークフロー自動化ツール。n8nはパブリッククラウド、Node-REDはプライベートデータソースに強み。n8nはAI連携に優れ、LangSmithでAI倫理対応も。Node-REDは可視化に優れるが、AI処理はFlowise AIとの連携が必要。どちらもデータの情報変換に貢献し、状況に応じて使い分けるのが良いでしょう。
+Weights & Biases (W&B) は、機械学習と大規模言語モデル（LLM）の**開発・実験・運用（MLOps/LLMOps）**を支援するプラットフォームです。実験追跡、可視化、モデル管理、クラウド連携など多様な機能を持ち、生成AI、LLM対応を強化中。**AzureやAWS**との統合、日本での導入も進んでいます。**W&B Weave**といった生成AI特化機能にも注目です。
 
 ---
 
-### [ChatGPT と Claude を使った「Vibe Coding」で始めるモダン開発入門（2025年版）](https://qiita.com/takaaki_yayoi/items/f0c7d63f651a927ced61)
-**Published:** 2025-11-11 11:18:43 UTC
-**Likes:** 1
-**Tags:** AI, 生成AI, ChatGPT, Claude, VibeCoding
+### [LLM勉強メモ1](https://qiita.com/hayato0522/items/450a931852cab6b1a696)
+**Published:** 2025-11-12 14:44:09 UTC
+**Likes:** 0
+**Tags:** LLM
 
 **Digest:**
-2025年版Vibe Coding入門。ChatGPT（GPT-5）とClaude Codeを活用し、AIと並走する新しい開発スタイルを解説。要件定義を自然言語でAIに伝え、ReactのToDoアプリを生成・修正。AIはコード生成、ファイル構造編集、バグ修正、デザイン改善、デプロイまで担当。人間の役割は企画・判断にシフト。個人開発は「企画力ゲー」へ。
+Hugging Face Transformersライブラリを用いて、日本語LLM「open-calm-small」で単語の続きを予測するコード。入力文を数値化し、モデルが最大5トークン分の単語を生成。例えば「琵琶湖は、」の入力に対し「海から遠いので、」と出力。今後はファインチューニングで出力を改善していく予定です。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [11 月の Pixel Drop：便利な通話メモ機能や、生物多様性を伝える北海道の大自然の音声などをご紹介](https://blog.google/intl/ja-jp/products/devices-services/november-2025-pixel-drop/)
-**Source:** Google Japan Blog
-**Published:** 2025-11-11 08:00:00 UTC
-**Tags:** Pixel
-
-**Digest:**
-Google Pixelの最新機能を紹介。通話内容を記録できる便利な「通話メモ機能」が追加され、通話の記録がより便利になりました。さらに、北海道の大自然をテーマにした新しいサウンドテーマも登場し、Pixelの表現力が向上しています。
-
----
-
-### [Introducing agent-to-agent protocol support in Amazon Bedrock AgentCore Runtime](https://aws.amazon.com/blogs/machine-learning/introducing-agent-to-agent-protocol-support-in-amazon-bedrock-agentcore-runtime/)
-**Source:** AWS ML Blog
-**Published:** 2025-11-11 21:32:31 UTC
-**Tags:** Amazon Bedrock AgentCore, Generative AI
-
-**Digest:**
-Amazon Bedrock AgentCore Runtime で、Agent-to-Agent (A2A) プロトコルがサポート開始。異なるフレームワークで構築されたAIエージェント間で、標準化された通信による連携を実現。AgentCore Runtime は、セキュアなサーバーレス環境を提供し、エージェント間の連携を可能にします。事例として、インシデント対応に特化した複数エージェントシステムを構築。各エージェントは、AgentCard で能力を共有し、タスクを連携。
-
----
-
-### [Powering enterprise search with the Cohere Embed 4 multimodal embeddings model in Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/powering-enterprise-search-with-the-cohere-embed-4-multimodal-embeddings-model-in-amazon-bedrock/)
-**Source:** AWS ML Blog
-**Published:** 2025-11-11 20:59:54 UTC
-**Tags:** Amazon Bedrock, Amazon Machine Learning, Artificial Intelligence, Intermediate (200), Technical How-to
-
-**Digest:**
-Amazon BedrockでCohere Embed 4が利用可能になり、マルチモーダル埋め込みモデルとしてサーバーレスで提供。企業向け検索に最適化され、多言語対応とEmbed 3からの改善を実現。Strands Agents、S3 Vectors、Bedrock AgentCoreとの連携により、RAGワークフローを構築可能。最大128,000トークン対応、圧縮埋め込みでコスト削減も。
-
----
-
-### [A guide to building AI agents in GxP environments](https://aws.amazon.com/blogs/machine-learning/a-guide-to-building-ai-agents-in-gxp-environments/)
-**Source:** AWS ML Blog
-**Published:** 2025-11-11 20:33:09 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Machine Learning, Artificial Intelligence, Compliance, Configuration, compliance, and auditing, Generative AI, Industries, Life Sciences, Management & Governance, Security, Identity, & Compliance
-
-**Digest:**
-ヘルスケアとライフサイエンス分野で、生成AIエージェントが創薬、医療機器、患者ケアを変革。GｘP規制への準拠が不可欠で、リスクに基づいた実装が重要。FDAのCSAフレームワークに基づき、AIの用途に応じたリスク評価と、適切な制御が求められる。AWSとの責任分担を理解し、IAM、モニタリング、ドキュメント化などの対策を講じることで、GxP準拠のAIエージェント構築が可能となる。
-
----
-
-### [Multi-Agent collaboration patterns with Strands Agents and Amazon Nova](https://aws.amazon.com/blogs/machine-learning/multi-agent-collaboration-patterns-with-strands-agents-and-amazon-nova/)
-**Source:** AWS ML Blog
-**Published:** 2025-11-11 20:28:14 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, Artificial Intelligence, Best Practices, Technical How-to
-
-**Digest:**
-マルチエージェント生成AIは、複数の専門AIエージェントが連携し、単一モデルでは困難な複雑なタスクを処理。成功率は最大70%向上。Amazon Novaは、高速処理（200tokens/秒以上）、構造化出力、低コストを実現し、Agents as Tools、Swarms、Agent Graph、Agent Workflowなどのコラボレーションパターンを可能に。Strands SDKを活用することで、容易に実装できる。
-
----
-
-### [Microsoft 365 Business Premium 向け新たなセキュリティおよびコンプライアンス アドオンのご紹介](https://blogs.windows.com/japan/2025/11/11/introducing-new-security-and-compliance-add-ons-for-microsoft-365-business-premi/)
-**Source:** Windows Blog for Japan
-**Published:** 2025-11-11 07:09:41 UTC
-**Tags:** Security, Business Premium, Defender, Purview, SMB
-
-**Digest:**
-Microsoftは、中小企業向けMicrosoft 365 Business Premiumのセキュリティとコンプライアンスを強化する3つのアドオンを発表。**Microsoft Defender Suite** (10ドル/ユーザー/月)はID保護、デバイスセキュリティ、メール保護、クラウドアプリ保護を提供。**Microsoft Purview Suite** (10ドル/ユーザー/月)は内部脅威対策、データ保護、コンプライアンス機能を提供。両者を統合した**Microsoft Defender & Purview Suites** (15ドル/ユーザー/月)もあり。2025年9月発売予定、最大300ユーザーまで。
-
----
-
-### [Cisco Live 2025 Melbourne 現地レポート Day2](https://blog.jbs.co.jp/entry/2025/11/12/105524)
+### [Cisco Live 2025 Melbourne 現地レポート Day3](https://blog.jbs.co.jp/entry/2025/11/13/074709)
 **Source:** JBS Blog
-**Published:** 2025-11-12 01:55:24 UTC
-**Tags:** Cisco, Tech
+**Published:** 2025-11-12 22:47:09 UTC
+**Tags:** Cisco, AI, Tech
 
 **Digest:**
-Cisco Live 2025 Melbourneより速報です！現地からイベントの様子をレポートします。Ciscoの最新技術や、ネットワーキング、セキュリティ、クラウド関連の注目ポイントを、ブログで随時発信予定です。最新情報をぜひご覧ください。
-
----
-
-### [【Microsoft×生成AI連載】 ExcelのAgent mode使ってみた](https://blog.jbs.co.jp/entry/2025/11/12/090452)
-**Source:** JBS Blog
-**Published:** 2025-11-12 00:04:52 UTC
-**Tags:** Copilot, Microsoft×生成AI連載, 生成AI, Excel, Copilot for Microsoft 365
-
-**Digest:**
-Microsoft ExcelのAgent modeを紹介する連載記事です。Agent modeは、Excel内で生成機能、分析機能、エラー検出・修正機能を活用できます。本記事では、Agent modeの使用方法や追加方法、利用シーンとメリット、注意点などを解説。Microsoft Copilot Chatによる記事の要約も掲載されています。
-
----
-
-### [Microsoft 365 Copilot Web検索: 複数層によるデータ保護と制御](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/11/microsoft-365-c-f899.html)
-**Source:** SharePoint Technical Notes
-**Published:** 2025-11-11 06:11:07 UTC
-**Tags:** Microsoft 365 Copilot
-
-**Digest:**
-2025年10月8日のMicrosoft 365 Copilotに関する記事では、主要機能と活用事例を解説。AIを活用した業務効率化ツールとしてのCopilotの進化と、その企業への導入効果、さらには今後の展望について言及されています。これにより、ビジネスシーンにおけるAIの可能性が示唆されています。
+Cisco Live 2025メルボルン、3日目の現地レポート！AI対応データセンター、セキュリティソリューション、最新テクノロジーの数々が披露されました。シスコの技術革新が凝縮されたセッションを通して、未来のネットワーク構築のヒントが得られるイベントとなりました。
 
 ---
