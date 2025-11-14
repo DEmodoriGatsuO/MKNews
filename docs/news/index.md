@@ -1,68 +1,88 @@
-# AI Tech Trends Digest (2025-11-13)
+# AI Tech Trends Digest (2025-11-14)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [# LLMコンペをハックする：「戦わずして勝つ」戦略の舞台裏](https://qiita.com/heat1390/items/b1ec44b527e09526f9bb)
-**Published:** 2025-11-13 05:47:58 UTC
-**Likes:** 0
-**Tags:** AI, ChatGPT, LLM, AIエージェント, 松尾研LLM開発コンペ2025
+### [RAMEN-SHIO-235B - 事後学習の軌跡](https://qiita.com/som3ya/items/fb4e2459061ce67634c1)
+**Published:** 2025-11-13 06:44:08 UTC
+**Likes:** 4
+**Tags:** 強化学習, LLM, 松尾研LLMコンペ2025, RAMEN
 
 **Digest:**
-松尾研LLMコンペで、約30人から70人のチームをPMとして率いた佐藤氏。予選1位通過の裏には、DeepSeekからQwen3への大胆な戦略転換、データ部門解体という決断があった。限られたリソースで成果を出すため、情報一元化、会議設計、適材適所を実践。「勝つための別の経路」を探る「ハッキング思考」が勝利の鍵となった。
+東京大学LLM開発コンペ2025で、チームRAMENはQwen3-235Bに追加学習し**RAMEN-SHIO-235B**を開発。3週間の開発期間で、DPO手法を採用し、Humanity's Last Exam (HLE) で**オープンソースモデルトップ性能**を獲得し優勝。SFT試行、GRPO断念を経て、DPOでデータとハイパーパラメータを調整、高スコアを達成。
 
 ---
 
-### [DS-STAR: データサイエンスマルチエージェントを Microsoft Agent Framework で実装する](https://qiita.com/nohanaga/items/5e5621738fd181c015ed)
-**Published:** 2025-11-13 03:34:04 UTC
-**Likes:** 0
-**Tags:** Azure, OpenAI, AutoGen, AgentFramework
+### [クレカ不要!!無料でクラウドWebアプリを作ってみた!!](https://qiita.com/yo_arai/items/1bb5353cca7b3f5e37fe)
+**Published:** 2025-11-14 04:08:06 UTC
+**Likes:** 2
+**Tags:** 学生, Gemini, Supabase, Clerk, Render.com
 
 **Digest:**
-Google CloudのDS-STARは、LLMを活用したデータサイエンスエージェントの新アプローチ。異種データ対応と計画妥当性検証の課題を解決し、DABStep、KramaBench、DA-CodeでSOTAを達成。Microsoft Agent Frameworkを使い、データファイル分析、LLM検証、逐次計画で構成。5万行の仮想データで売上分析を実行し、1回の反復で正解。GitHubで参考実装も公開。
+学生向けに、クレカ登録不要で本格的なWebアプリを0円構築する方法を紹介。Renderでフロント/バックエンド、Supabaseでデータベース、Clerkでユーザー認証、Resendでメール送信、GeminiでAI補助機能を活用。GitHub連携で自動デプロイ、Supabaseでリアルタイム通知、Next.jsとClerk連携など、無料クラウドの組み合わせで実現。団体向けポータルサイト構築例も紹介。
 
 ---
 
-### [【AI倫理】AI開発の「空虚な競争」にブレーキを：社会的適応性の原則](https://qiita.com/Shawin/items/a6eca391b1ad24f80cfa)
-**Published:** 2025-11-12 23:02:10 UTC
-**Likes:** 0
-**Tags:** 初心者, AI, エンジニア, ChatGPT, LLM
+### [NotionとMonday徹底比較ガイド](https://qiita.com/AInsights/items/4eb024fa14369588538d)
+**Published:** 2025-11-13 15:28:40 UTC
+**Likes:** 1
+**Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-生成AIの進化と労働負荷増大のパラドックスに対応し、新しい倫理的枠組み「社会的適応性の原則」を策定。グローバル公平性と格差防止、人間の自律性尊重を重視し、AI開発者は社会適応性を評価軸に。具体的には、AIインフラの包摂性、文化の多元化、収益の再投資、批判的思考の促し、決定権の明確化、実践的自立支援などを目指し、AIが真に人類に貢献する存在となることを目指します。
+NotionとMondayを比較。Notionはタスク、メモ、データベース構築可能なオールインワンで柔軟性が高い。Mondayはプロジェクト管理に特化し、構造化されたインターフェースが特徴。**プロジェクト管理**ではMondayが優勢、**ノート作成**はNotion。両者とも連携機能と料金プランは類似。Notionは**カスタマイズ性**に優れ、Mondayは使いやすさが魅力。目的によって最適なツールが異なる。
 
 ---
 
-### [Weights & Biases AI developer platform ](https://qiita.com/kaizen_nagoya/items/845300cf7100bfb0dede)
-**Published:** 2025-11-12 22:29:21 UTC
-**Likes:** 0
-**Tags:** W&B, ChatGPT, LLM
+### [生成AIが甘やかすことは罪なのか？ 〜道具と人間のダブルスタンダードを問う〜](https://qiita.com/koshikawa-masato/items/75a75aac8efb33e71647)
+**Published:** 2025-11-13 08:17:42 UTC
+**Likes:** 1
+**Tags:** AI, 倫理, 生成AI, ChatGPT, LLM
 
 **Digest:**
-Weights & Biases (W&B) は、機械学習と大規模言語モデル（LLM）の**開発・実験・運用（MLOps/LLMOps）**を支援するプラットフォームです。実験追跡、可視化、モデル管理、クラウド連携など多様な機能を持ち、生成AI、LLM対応を強化中。**AzureやAWS**との統合、日本での導入も進んでいます。**W&B Weave**といった生成AI特化機能にも注目です。
+Xでの「生成AIは甘やかし、人間の思考力を削ぐ」という投稿に対し、著者は強い違和感を表明。人間の行動とのダブルスタンダードや、道具に罪を負わせる点、エビデンスの欠如を指摘し反論。生成AIが思考を深める例も挙げ、実際の問題は環境負荷、ハルシネーション、著作権、格差、依存リスクと整理。最終的に「生成AIが甘やかすのは罪ではない」と結論付け、責任ある使用の重要性を説いています。
 
 ---
 
-### [LLM勉強メモ1](https://qiita.com/hayato0522/items/450a931852cab6b1a696)
-**Published:** 2025-11-12 14:44:09 UTC
+### [【徹底検証】Kimi K2：オープンソース最強AIは本当に実務で使えるのか？](https://qiita.com/iasou24/items/555f10c761ac73209f37)
+**Published:** 2025-11-14 05:23:52 UTC
 **Likes:** 0
-**Tags:** LLM
+**Tags:** 機械学習, オープンソース, AI開発, LLM, Kimi-K2
 
 **Digest:**
-Hugging Face Transformersライブラリを用いて、日本語LLM「open-calm-small」で単語の続きを予測するコード。入力文を数値化し、モデルが最大5トークン分の単語を生成。例えば「琵琶湖は、」の入力に対し「海から遠いので、」と出力。今後はファインチューニングで出力を改善していく予定です。
+**Kimi K2** は、GPT-4.1やClaude Opusを凌ぐ性能を持つOSSのAIモデル。実務でのログ解析やコード修正を通じ、その強さを検証。ログ読解、コード構造理解、設計判断、CLIコマンド生成能力に優れ、特に「再現性のある修正案」提示が特徴。開発者は、数学推論、コーディング能力、ローカル運用容易性から、その実用性に注目しています。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Cisco Live 2025 Melbourne 現地レポート Day3](https://blog.jbs.co.jp/entry/2025/11/13/074709)
+### [Cisco Live 2025 Melbourne 現地レポート 統括（Day4）](https://blog.jbs.co.jp/entry/2025/11/14/095324)
 **Source:** JBS Blog
-**Published:** 2025-11-12 22:47:09 UTC
-**Tags:** Cisco, AI, Tech
+**Published:** 2025-11-14 00:53:24 UTC
+**Tags:** Cisco, AI, Security, Tech
 
 **Digest:**
-Cisco Live 2025メルボルン、3日目の現地レポート！AI対応データセンター、セキュリティソリューション、最新テクノロジーの数々が披露されました。シスコの技術革新が凝縮されたセッションを通して、未来のネットワーク構築のヒントが得られるイベントとなりました。
+メルボルン発、Cisco Live 2025レポート。AIとクラウドを軸としたインフラ戦略が焦点となり、3日間のイベントで様々な発表があった。最新技術の動向や、今後のビジネス展開に繋がる情報が発信され、活気あふれるイベントとなった。
+
+---
+
+### [【Microsoft×生成AI連載】【Teams】ファシリテーターエージェントのご紹介](https://blog.jbs.co.jp/entry/2025/11/14/085913)
+**Source:** JBS Blog
+**Published:** 2025-11-13 23:59:13 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載, Microsoft Teams
+
+**Digest:**
+Microsoft Teamsの新機能「ファシリテータエージェント」が登場。会議の進行を円滑にし、議題管理と発言の公平性を実現します。主催者の負担を軽減し、参加者がより集中できる環境を提供。より生産的な議論を促すのが特徴です。
+
+---
+
+### [メタデータと SharePoint ナレッジ エージェントとが Microsoft 365 Copilot の応答精度をいかに高めるか](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/11/microsoft-365-c-5277.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-11-14 05:42:57 UTC
+**Tags:** Copilot Studio, Microsoft 365 - SharePoint, Microsoft 365 Copilot
+
+**Digest:**
+MicrosoftのSharePointショーケース「メタデータとナビゲーションの力」が開催。**SharePoint**を活用し、**メタデータ**による情報整理と**ナビゲーション**最適化を通じて、情報アクセスを効率化する事例を紹介。**Microsoft 365**環境での運用や、**検索機能**強化による情報発見の容易さも強調。
 
 ---
