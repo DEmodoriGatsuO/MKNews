@@ -1,88 +1,88 @@
-# AI Tech Trends Digest (2025-11-14)
+# AI Tech Trends Digest (2025-11-15)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [RAMEN-SHIO-235B - 事後学習の軌跡](https://qiita.com/som3ya/items/fb4e2459061ce67634c1)
-**Published:** 2025-11-13 06:44:08 UTC
-**Likes:** 4
-**Tags:** 強化学習, LLM, 松尾研LLMコンペ2025, RAMEN
-
-**Digest:**
-東京大学LLM開発コンペ2025で、チームRAMENはQwen3-235Bに追加学習し**RAMEN-SHIO-235B**を開発。3週間の開発期間で、DPO手法を採用し、Humanity's Last Exam (HLE) で**オープンソースモデルトップ性能**を獲得し優勝。SFT試行、GRPO断念を経て、DPOでデータとハイパーパラメータを調整、高スコアを達成。
-
----
-
-### [クレカ不要!!無料でクラウドWebアプリを作ってみた!!](https://qiita.com/yo_arai/items/1bb5353cca7b3f5e37fe)
-**Published:** 2025-11-14 04:08:06 UTC
-**Likes:** 2
-**Tags:** 学生, Gemini, Supabase, Clerk, Render.com
-
-**Digest:**
-学生向けに、クレカ登録不要で本格的なWebアプリを0円構築する方法を紹介。Renderでフロント/バックエンド、Supabaseでデータベース、Clerkでユーザー認証、Resendでメール送信、GeminiでAI補助機能を活用。GitHub連携で自動デプロイ、Supabaseでリアルタイム通知、Next.jsとClerk連携など、無料クラウドの組み合わせで実現。団体向けポータルサイト構築例も紹介。
-
----
-
-### [NotionとMonday徹底比較ガイド](https://qiita.com/AInsights/items/4eb024fa14369588538d)
-**Published:** 2025-11-13 15:28:40 UTC
+### [GASでGA4を使っていたら認証が頻発して面倒だったのでGeminiに聞いてみた](https://qiita.com/MOZK_SEA/items/8108c8d097ce2adc8997)
+**Published:** 2025-11-14 14:31:42 UTC
 **Likes:** 1
-**Tags:** Python, 機械学習, AI, ChatGPT, LLM
+**Tags:** GAS, Gemini, GA4
 
 **Digest:**
-NotionとMondayを比較。Notionはタスク、メモ、データベース構築可能なオールインワンで柔軟性が高い。Mondayはプロジェクト管理に特化し、構造化されたインターフェースが特徴。**プロジェクト管理**ではMondayが優勢、**ノート作成**はNotion。両者とも連携機能と料金プランは類似。Notionは**カスタマイズ性**に優れ、Mondayは使いやすさが魅力。目的によって最適なツールが異なる。
+GASで認証エラーが頻発する問題の解決策として、Geminiの回答を参考に、カスタムGCPプロジェクトを設定する方法を紹介。標準プロジェクトのOAuthトークン有効期限が原因で、カスタムプロジェクトへの紐付けで長期的なアクセス許可を得られるとのこと。GCPプロジェクト作成、GAS設定変更、API有効化、OAuth同意画面構成が必要。テスト環境では承認が失効しやすいため注意。
 
 ---
 
-### [生成AIが甘やかすことは罪なのか？ 〜道具と人間のダブルスタンダードを問う〜](https://qiita.com/koshikawa-masato/items/75a75aac8efb33e71647)
-**Published:** 2025-11-13 08:17:42 UTC
+### [copilotキーをclaudeに変えてみた](https://qiita.com/xe-pc23/items/e6c8ab01135792644e4c)
+**Published:** 2025-11-14 08:20:15 UTC
 **Likes:** 1
-**Tags:** AI, 倫理, 生成AI, ChatGPT, LLM
+**Tags:** copilot, Claude
 
 **Digest:**
-Xでの「生成AIは甘やかし、人間の思考力を削ぐ」という投稿に対し、著者は強い違和感を表明。人間の行動とのダブルスタンダードや、道具に罪を負わせる点、エビデンスの欠如を指摘し反論。生成AIが思考を深める例も挙げ、実際の問題は環境負荷、ハルシネーション、著作権、格差、依存リスクと整理。最終的に「生成AIが甘やかすのは罪ではない」と結論付け、責任ある使用の重要性を説いています。
+最近のWinノートPCの**Copilotキー**を、**Claude**を起動するように設定する方法を紹介。手順は、まずClaude Desktopをインストールし、次に**PowerToys**を導入。PowerToysの**Keyboard Manager**で、CopilotキーをCtrl+Alt+Spaceに再マップ。これにより、Copilotキーを押すとClaudeが起動。他のショートカットにも応用可能。
 
 ---
 
-### [【徹底検証】Kimi K2：オープンソース最強AIは本当に実務で使えるのか？](https://qiita.com/iasou24/items/555f10c761ac73209f37)
-**Published:** 2025-11-14 05:23:52 UTC
+### [GPT-5.1 の新機能の 1つ（「推論なし」設定）を Node.js ＋ API で試す【生成AI：2】](https://qiita.com/youtoy/items/e58079910aedea80faef)
+**Published:** 2025-11-15 03:07:46 UTC
 **Likes:** 0
-**Tags:** 機械学習, オープンソース, AI開発, LLM, Kimi-K2
+**Tags:** JavaScript, Node.js, OpenAI, GPT-5.1
 
 **Digest:**
-**Kimi K2** は、GPT-4.1やClaude Opusを凌ぐ性能を持つOSSのAIモデル。実務でのログ解析やコード修正を通じ、その強さを検証。ログ読解、コード構造理解、設計判断、CLIコマンド生成能力に優れ、特に「再現性のある修正案」提示が特徴。開発者は、数学推論、コーディング能力、ローカル運用容易性から、その実用性に注目しています。
+OpenAIのGPT-5.1をAPIで利用する記事。Node.jsでopenaiパッケージを使い、APIキーを設定して試す。公式ドキュメントを参考に、簡単な質問で試した結果、推論設定を「none」にしても変化は僅かだった。データシェアによる無料枠でGPT-5.1 Codexも利用可能。新機能の"Apply patch"や"Shell"にも触れ、今後の検証を期待。
+
+---
+
+### [GPT-5 移行時に知っておくべきパラメータ変更点 完全ガイド](https://qiita.com/nogataka/items/4913cb7dbc44842ec110)
+**Published:** 2025-11-15 02:09:11 UTC
+**Likes:** 0
+**Tags:** OpenAI, GPT-5
+
+**Digest:**
+GPT-5への移行は、単なるモデル変更ではなくAPI仕様刷新。重要ポイントは、temperatureは1のみ、max_tokensはmax_output_tokensに置換、そしてreasoning_effort/verbosityを活用すること。旧パラメータ削除やプロンプト調整も必須。`incomplete` への対処、テスト、監視も重要。移行チェックリストを参考に安全に進めよう。
+
+---
+
+### [【2025年最新】Qoderとは？Alibaba製AIエージェントIDEの使い方・料金・Cursor比較まで完全ガイド](https://qiita.com/k_nabe/items/88f7c91b20e07854987a)
+**Published:** 2025-11-15 01:57:48 UTC
+**Likes:** 0
+**Tags:** API, 技術調査, Claude
+
+**Digest:**
+Alibabaが2025年8月にリリースしたAIエージェントIDE「Qoder」は、仕様書から設計、コーディング、テストまで自律的に完遂。Cursorとの比較や、無料・有料プランの詳細を解説。Repo Wikiによる自動ドキュメント生成、ハイブリッド検索も特徴。セキュリティリスクへの注意も必要で、個人利用は有望だが、企業利用は慎重な検討が推奨される。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Cisco Live 2025 Melbourne 現地レポート 統括（Day4）](https://blog.jbs.co.jp/entry/2025/11/14/095324)
-**Source:** JBS Blog
-**Published:** 2025-11-14 00:53:24 UTC
-**Tags:** Cisco, AI, Security, Tech
+### [Build a biomedical research agent with Biomni tools and Amazon Bedrock AgentCore Gateway](https://aws.amazon.com/blogs/machine-learning/build-a-biomedical-research-agent-with-biomni-tools-and-amazon-bedrock-agentcore-gateway/)
+**Source:** AWS ML Blog
+**Published:** 2025-11-14 18:28:42 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Machine Learning, Healthcare, Life Sciences, Technical How-to
 
 **Digest:**
-メルボルン発、Cisco Live 2025レポート。AIとクラウドを軸としたインフラ戦略が焦点となり、3日間のイベントで様々な発表があった。最新技術の動向や、今後のビジネス展開に繋がる情報が発信され、活気あふれるイベントとなった。
+Amazon Bedrock AgentCoreを活用し、Biomniの30以上の専門データベースツールにアクセスできる研究エージェントを構築する手法を紹介。AgentCore Gatewayでツールを統合、セマンティック検索も可能。StrandsエージェントとPubMedツールを組み合わせ、エンタープライズセキュリティとセッション管理を備え、研究効率を向上させます。コードはAWSのオープンソースツールキットで公開。
 
 ---
 
-### [【Microsoft×生成AI連載】【Teams】ファシリテーターエージェントのご紹介](https://blog.jbs.co.jp/entry/2025/11/14/085913)
-**Source:** JBS Blog
-**Published:** 2025-11-13 23:59:13 UTC
-**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載, Microsoft Teams
+### [Make your web apps hands-free with Amazon Nova Sonic](https://aws.amazon.com/blogs/machine-learning/make-your-web-apps-hands-free-with-amazon-nova-sonic/)
+**Source:** AWS ML Blog
+**Published:** 2025-11-14 18:18:54 UTC
+**Tags:** Amazon Bedrock, Amazon Nova, Technical How-to, AI/ML, Generative AI
 
 **Digest:**
-Microsoft Teamsの新機能「ファシリテータエージェント」が登場。会議の進行を円滑にし、議題管理と発言の公平性を実現します。主催者の負担を軽減し、参加者がより集中できる環境を提供。より生産的な議論を促すのが特徴です。
+Amazon Bedrockの**Nova Sonic**は、音声対話を実現する基盤モデルです。低遅延のストリーミングAPIにより、アプリとの自然な音声コミュニケーションを可能にします。Smart Todo Appを例に、音声によるタスク管理を解説。バックエンドにはAWSサービスを活用し、ReactでUIを構築。音声による新たなUI体験を提供し、生産性向上を目指します。
 
 ---
 
-### [メタデータと SharePoint ナレッジ エージェントとが Microsoft 365 Copilot の応答精度をいかに高めるか](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/11/microsoft-365-c-5277.html)
-**Source:** SharePoint Technical Notes
-**Published:** 2025-11-14 05:42:57 UTC
-**Tags:** Copilot Studio, Microsoft 365 - SharePoint, Microsoft 365 Copilot
+### [Harnessing the power of generative AI: Druva’s multi-agent copilot for streamlined data protection](https://aws.amazon.com/blogs/machine-learning/harnessing-the-power-of-generative-ai-druvas-multi-agent-copilot-for-streamlined-data-protection/)
+**Source:** AWS ML Blog
+**Published:** 2025-11-14 18:10:20 UTC
+**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock AgentCore, Amazon SageMaker Studio Classic, Customer Solutions, Generative AI, Learning Levels
 
 **Digest:**
-MicrosoftのSharePointショーケース「メタデータとナビゲーションの力」が開催。**SharePoint**を活用し、**メタデータ**による情報整理と**ナビゲーション**最適化を通じて、情報アクセスを効率化する事例を紹介。**Microsoft 365**環境での運用や、**検索機能**強化による情報発見の容易さも強調。
+Druvaは、AWSと協同し、データセキュリティ分野に特化したジェネレーティブAI搭載のマルチエージェントコパイロットを開発。Amazon BedrockとLLMを活用し、自然言語でのデータ管理、セキュリティ洞察、運用支援を実現します。これにより、顧客体験を向上、運用効率化、問題解決時間の短縮を目指します。評価ではAPI選択の精度が重要で、様々なモデルをテスト。実世界でのシナリオテストも実施し、継続的な改善を図ります。
 
 ---
