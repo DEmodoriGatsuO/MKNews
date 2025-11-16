@@ -1,88 +1,67 @@
-# AI Tech Trends Digest (2025-11-15)
+# AI Tech Trends Digest (2025-11-16)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [GASでGA4を使っていたら認証が頻発して面倒だったのでGeminiに聞いてみた](https://qiita.com/MOZK_SEA/items/8108c8d097ce2adc8997)
-**Published:** 2025-11-14 14:31:42 UTC
+### [OpenAI Image API で 画像生成が上手くできないエラーの解決方法](https://qiita.com/takaki-inokuchi/items/c63b7909a0a1fa997090)
+**Published:** 2025-11-15 16:04:10 UTC
 **Likes:** 1
-**Tags:** GAS, Gemini, GA4
+**Tags:** API, OpenAI
 
 **Digest:**
-GASで認証エラーが頻発する問題の解決策として、Geminiの回答を参考に、カスタムGCPプロジェクトを設定する方法を紹介。標準プロジェクトのOAuthトークン有効期限が原因で、カスタムプロジェクトへの紐付けで長期的なアクセス許可を得られるとのこと。GCPプロジェクト作成、GAS設定変更、API有効化、OAuth同意画面構成が必要。テスト環境では承認が失効しやすいため注意。
+OpenAIの画像生成API（gpt-image-1）でエラーが発生。原因は、Node.js環境ではb64_json、Edge環境ではURLが返る仕様の違い。Next.jsのruntime設定でNode.jsを指定すればb64_jsonが利用でき、Edge環境ではURLが使用可能。画像生成時は環境に合わせて適切なデータ形式を選択する必要がある。
 
 ---
 
-### [copilotキーをclaudeに変えてみた](https://qiita.com/xe-pc23/items/e6c8ab01135792644e4c)
-**Published:** 2025-11-14 08:20:15 UTC
+### [2025年最新版：人気AIモデル徹底比較ガイド完全版](https://qiita.com/AInsights/items/559b0247bb766f1a6157)
+**Published:** 2025-11-15 11:53:41 UTC
 **Likes:** 1
-**Tags:** copilot, Claude
+**Tags:** Python, 機械学習, AI, ChatGPT, LLM
 
 **Digest:**
-最近のWinノートPCの**Copilotキー**を、**Claude**を起動するように設定する方法を紹介。手順は、まずClaude Desktopをインストールし、次に**PowerToys**を導入。PowerToysの**Keyboard Manager**で、CopilotキーをCtrl+Alt+Spaceに再マップ。これにより、Copilotキーを押すとClaudeが起動。他のショートカットにも応用可能。
+AIモデルの包括比較分析です。**GPT-5.1**が最高インテリジェンス、**Gemini 2.5 Flash-Lite**が最速、**Command-R**が低レイテンシ、**Gemma 3n E4B**が低コスト、**Llama 4 Scout**が最大コンテキストウィンドウ。各モデルの**インテリジェンス、速度、価格、レイテンシ、コンテキストウィンドウ**を詳細に比較し、用途に応じたモデル選択を支援します。
 
 ---
 
-### [GPT-5.1 の新機能の 1つ（「推論なし」設定）を Node.js ＋ API で試す【生成AI：2】](https://qiita.com/youtoy/items/e58079910aedea80faef)
-**Published:** 2025-11-15 03:07:46 UTC
-**Likes:** 0
-**Tags:** JavaScript, Node.js, OpenAI, GPT-5.1
+### [「GPT-5.1はマジでヤバい」5.0から何が変わった？LLM開発者が驚いた”推論力”と”コード生成”の進化を徹底比較](https://qiita.com/okokok/items/7ae5fbca612553d21b40)
+**Published:** 2025-11-15 06:36:08 UTC
+**Likes:** 1
+**Tags:** ChatGPT, LLM, GPT-5, GPT-5.1
 
 **Digest:**
-OpenAIのGPT-5.1をAPIで利用する記事。Node.jsでopenaiパッケージを使い、APIキーを設定して試す。公式ドキュメントを参考に、簡単な質問で試した結果、推論設定を「none」にしても変化は僅かだった。データシェアによる無料枠でGPT-5.1 Codexも利用可能。新機能の"Apply patch"や"Shell"にも触れ、今後の検証を期待。
+GPT-5.1は、OpenAIの最新版で、推論力とコード生成が向上。**二刀流モデル**を採用し、高速応答のInstantと、高度推論のThinkingを提供。Thinkingは**持続的な推論力**で開発効率を向上。8種のチャットスタイルでUXも進化。開発者は5.1への乗り換えが推奨され、より身近な**My AI**としての活用が期待されます。
 
 ---
 
-### [GPT-5 移行時に知っておくべきパラメータ変更点 完全ガイド](https://qiita.com/nogataka/items/4913cb7dbc44842ec110)
-**Published:** 2025-11-15 02:09:11 UTC
+### [Macbookで最新版Codex(Ver0.58.0)を使用できるようにする手順](https://qiita.com/wozisagi/items/eb795b29883a4ba23c55)
+**Published:** 2025-11-16 02:25:02 UTC
 **Likes:** 0
-**Tags:** OpenAI, GPT-5
+**Tags:** OpenAI, codex
 
 **Digest:**
-GPT-5への移行は、単なるモデル変更ではなくAPI仕様刷新。重要ポイントは、temperatureは1のみ、max_tokensはmax_output_tokensに置換、そしてreasoning_effort/verbosityを活用すること。旧パラメータ削除やプロンプト調整も必須。`incomplete` への対処、テスト、監視も重要。移行チェックリストを参考に安全に進めよう。
+macbookで最新版Codexを動作させる手順を解説。Homebrewでのインストール失敗から、GitHubのリリースからAppleSilicon向けバイナリをダウンロードし、展開・リネームして実行権限付与。Homebrewのbinディレクトリへ移動し、`codex --version`でバージョン確認。M1チップMacbook、Homebrew事前インストール済が前提です。
 
 ---
 
-### [【2025年最新】Qoderとは？Alibaba製AIエージェントIDEの使い方・料金・Cursor比較まで完全ガイド](https://qiita.com/k_nabe/items/88f7c91b20e07854987a)
-**Published:** 2025-11-15 01:57:48 UTC
+### [Geminiでウシと遊ぶ魔法少女を描いてみた。](https://qiita.com/nori-channel/items/5344730d003ef1f153fb)
+**Published:** 2025-11-15 21:32:31 UTC
 **Likes:** 0
-**Tags:** API, 技術調査, Claude
+**Tags:** Gemini
 
 **Digest:**
-Alibabaが2025年8月にリリースしたAIエージェントIDE「Qoder」は、仕様書から設計、コーディング、テストまで自律的に完遂。Cursorとの比較や、無料・有料プランの詳細を解説。Repo Wikiによる自動ドキュメント生成、ハイブリッド検索も特徴。セキュリティリスクへの注意も必要で、個人利用は有望だが、企業利用は慎重な検討が推奨される。
+Geminiで「ウシと遊ぶ魔法少女」を描いた結果を公開。プロンプトは「ウシと遊ぶ魔法少女を描いてください」で、生成された画像も提示されています。シンプルなプロンプトながら、可愛らしいイラストが生成されており、作者は「可愛い」と感想を述べています。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Build a biomedical research agent with Biomni tools and Amazon Bedrock AgentCore Gateway](https://aws.amazon.com/blogs/machine-learning/build-a-biomedical-research-agent-with-biomni-tools-and-amazon-bedrock-agentcore-gateway/)
-**Source:** AWS ML Blog
-**Published:** 2025-11-14 18:28:42 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Machine Learning, Healthcare, Life Sciences, Technical How-to
+### [GPT-5.1 リリース](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/11/gpt-51-ee4b.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-11-16 03:31:06 UTC
 
 **Digest:**
-Amazon Bedrock AgentCoreを活用し、Biomniの30以上の専門データベースツールにアクセスできる研究エージェントを構築する手法を紹介。AgentCore Gatewayでツールを統合、セマンティック検索も可能。StrandsエージェントとPubMedツールを組み合わせ、エンタープライズセキュリティとセッション管理を備え、研究効率を向上させます。コードはAWSのオープンソースツールキットで公開。
-
----
-
-### [Make your web apps hands-free with Amazon Nova Sonic](https://aws.amazon.com/blogs/machine-learning/make-your-web-apps-hands-free-with-amazon-nova-sonic/)
-**Source:** AWS ML Blog
-**Published:** 2025-11-14 18:18:54 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, Technical How-to, AI/ML, Generative AI
-
-**Digest:**
-Amazon Bedrockの**Nova Sonic**は、音声対話を実現する基盤モデルです。低遅延のストリーミングAPIにより、アプリとの自然な音声コミュニケーションを可能にします。Smart Todo Appを例に、音声によるタスク管理を解説。バックエンドにはAWSサービスを活用し、ReactでUIを構築。音声による新たなUI体験を提供し、生産性向上を目指します。
-
----
-
-### [Harnessing the power of generative AI: Druva’s multi-agent copilot for streamlined data protection](https://aws.amazon.com/blogs/machine-learning/harnessing-the-power-of-generative-ai-druvas-multi-agent-copilot-for-streamlined-data-protection/)
-**Source:** AWS ML Blog
-**Published:** 2025-11-14 18:10:20 UTC
-**Tags:** Advanced (300), Amazon Bedrock, Amazon Bedrock AgentCore, Amazon SageMaker Studio Classic, Customer Solutions, Generative AI, Learning Levels
-
-**Digest:**
-Druvaは、AWSと協同し、データセキュリティ分野に特化したジェネレーティブAI搭載のマルチエージェントコパイロットを開発。Amazon BedrockとLLMを活用し、自然言語でのデータ管理、セキュリティ洞察、運用支援を実現します。これにより、顧客体験を向上、運用効率化、問題解決時間の短縮を目指します。評価ではAPI選択の精度が重要で、様々なモデルをテスト。実世界でのシナリオテストも実施し、継続的な改善を図ります。
+2025年11月12日に、GPT-5シリーズのアップグレード版がリリース予定です。この新バージョンでは、**大規模言語モデル（LLM）** の性能向上が期待され、特に**マルチモーダル**な機能が強化される見込みです。また、**API**を通じたアクセスも可能となり、開発者にとって新たな可能性が開かれます。
 
 ---
