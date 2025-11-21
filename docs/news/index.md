@@ -1,148 +1,188 @@
-# AI Tech Trends Digest (2025-11-20)
+# AI Tech Trends Digest (2025-11-21)
 
 
 ## Top Tech Articles from Qiita
 
 
-### [【保存版】Google Antigravity 完全攻略ガイド｜次世代 "エージェント型" IDEのすべてを使い倒すチートシート](https://qiita.com/akira_papa_AI/items/0acf2679e4ce9f7fb153)
-**Published:** 2025-11-20 01:34:26 UTC
-**Likes:** 21
-**Tags:** cursor, Gemini, 生成AI, Windsurf, Antigravity
+### [【徹底比較】AI自律実装ツールでFedGAN論文を実装してみた - Copilot vs Antigravity × Claude/Gemini](https://qiita.com/ntaka329/items/3b02073156239125bd6a)
+**Published:** 2025-11-20 08:38:18 UTC
+**Likes:** 11
+**Tags:** Gemini, githubcopilot, 生成AI, Claude, Antigravity
 
 **Digest:**
-Google Antigravityは、AIエージェントが自律的に開発を支援するIDE。VS Codeベースで、Agentがコード作成、ターミナル操作、ブラウザ検証を担う。  Apple Silicon MacとWindows 10で利用可能。個人Gmailアカウント限定で、エージェントモードやMCP、Browser AgentによるWeb操作が特徴。無料プレビュー中で、成果物はArtifactsとして管理。
+GMOコネクト永田氏が、AI自律実装ツールをFedGAN論文で検証。Antigravity + Claude Sonnet 4.5が実装精度・コード品質・学習結果で最高評価。Gemini 3.0やCopilotは実装不備や学習不安定性が見られた。開発体験、特にPlan段階での質問やログ統合が実装品質を左右し、AntigravityのUIが優れているものの、Agent Managerのフリーズ問題もあった。
 
 ---
 
-### [「純全帯幺九（ジュンチャン）、難易度の割に安すぎないか？」という麻雀の疑問をGemini 3に聞いてみた。](https://qiita.com/inukai-masanori/items/29b3aa79f33858845685)
-**Published:** 2025-11-20 00:13:06 UTC
+### [【速報】Google画像生成AIの新モデル「Nano Banana Pro」登場！Gemini 3ベースの描画力を徹底解説](https://qiita.com/kentaro_kawamura/items/d2b858d9d6e091855757)
+**Published:** 2025-11-20 23:41:03 UTC
 **Likes:** 5
-**Tags:** AI, 麻雀, Gemini
+**Tags:** Google, AI, Gemini
 
 **Digest:**
-麻雀の「ジュンチャン」は、Google Gemini 3による分析で、清一色の約3倍出現しにくいと判明。数学的に有効牌が少なく、難易度が高い一方、3翻という低めの点数は、三色同順との複合による爆発力や高い守備力を考慮したゲームバランスのため。
+Google DeepMindが、Gemini 3 Proを基盤とした画像生成AI「Nano Banana Pro」（Gemini 3 Pro Image）を発表。特徴は、AI特有の謎文字からの脱却、キャラの一貫性保持、ローカル編集によるスタジオ品質の調整。テキストを正確に描写し、最大14枚の参考画像からキャラを固定。GeminiアプリやGoogle Workspaceなどで利用可能で、SynthIDによる透かしも。
 
 ---
 
-### [話題のGemini3で東方風の弾幕シューティングゲームをつくってみた](https://qiita.com/geekman4040/items/fdbf1e71b16d6f6f1a8d)
-**Published:** 2025-11-19 12:13:47 UTC
-**Likes:** 5
-**Tags:** AI, Gemini, GoogleAIStudio, gemini3.0
-
-**Digest:**
-Gemini3でシングルプロンプトによるゲーム制作を検証。Google AI Studioで、詳細な指示を含むプロンプトを入力し、3D弾幕シューティングゲームを生成。ビジュアルやエフェクトも高クオリティで、Reactで構築。ゲームやUIのプロトタイプ開発に非常に有効だが、プレビューは重い。最終的にボス戦まで実装し、itch.ioで公開。
-
----
-
-### [Antigravity使ってみた - Claude Code&CursorユーザーがGoogleの新IDEを触った感想](https://qiita.com/sion_neko/items/105168a19194c67a13d6)
-**Published:** 2025-11-19 16:44:07 UTC
-**Likes:** 3
-**Tags:** AI, Gemini, Antigravity
-
-**Digest:**
-Googleが発表したAI IDE「Antigravity」の使用感レビュー。VS Codeに似たインターフェースで、**Planning機能**や**無制限タブ保管**が便利。**コミットメッセージ自動生成**も魅力的だが英語対応。搭載の**Gemini 3 Pro**は的確な情報提供で高評価。レートリミットあり。VS CodeユーザーやGemini 3 Proの性能を試したい人に特におすすめです。
-
----
-
-### [H2O LLM Studioファインチューニングした結果をElixirで動かす](https://qiita.com/t-yamanashi/items/046fea1a60c2db48f665)
-**Published:** 2025-11-20 01:00:58 UTC
+### [AntigravityがNano Banana Proに対応したらしいので画像生成させてみる](https://qiita.com/rf_p/items/e086c8bb107697fbba39)
+**Published:** 2025-11-20 23:29:49 UTC
 **Likes:** 2
-**Tags:** Mac, Ubuntu, Elixir, AI, LLM
+**Tags:** Gemini, AI駆動開発, nanobanana, Antigravity, GoogleAntigravity
 
 **Digest:**
-H2O LLM StudioでファインチューニングしたモデルをElixirで利用する手順を解説。Ubuntu環境でCUDA ToolkitやH2O LLM Studioをインストールし、学習データでファインチューニングを実施。その後、Mac mini上のElixir環境でBumblebee, Nx, Axon, emlxを用いてモデルを読み込み、質問応答を実行。課題としてファインチューニングの調整を挙げています。
+AntigravityがNano Banana Proに対応したという記事。Antigravityでロゴ画像生成を試み、Nano Banana Proを理解していないことが判明。LPのデザイン生成も試みるも、実装に移行し当初のイメージとは異なる結果に。しかし、AI画像生成ツールImagenを使用し、DeepMindのGemini 3 Pro Image、つまりNano Banana Proで画像生成していると結論づけています。
+
+---
+
+### [トリガーリリース：Dify ワークフローをイベントドリブンへ](https://qiita.com/DifyJapan/items/d68cf1ab5f2c933bf1f8)
+**Published:** 2025-11-21 02:53:29 UTC
+**Likes:** 1
+**Tags:** Workflow, Trigger, LLM, Dify
+
+**Digest:**
+Difyが新機能**Dify Trigger**をリリース。これにより、ワークフローは外部イベントに応じて自動実行が可能に。3種のトリガータイプ、スケジュール、SaaSイベント、Webhookに対応し、イベントドリブンな自動化を実現。例えばGitHub PR作成を検知し、LLMで分析、Slack通知も可能に。起動ロジックの管理を簡素化し、より高度な業務プロセスを構築できます。
+
+---
+
+### [【Google Antigravity】コードを書かずに「重力操作ゲーム」は作れるか？Gemini 3 Proの実力を試してみた](https://qiita.com/Thighs/items/5dcd47b0eed653f670a5)
+**Published:** 2025-11-20 14:34:56 UTC
+**Likes:** 1
+**Tags:** Gemini, AI駆動開発, AIエージェント, Antigravity
+
+**Digest:**
+Googleがリリースした新IDE「Antigravity」は、Gemini 3 Pro搭載の自律型VS Code。指示を出すだけで開発からテストまでAIが実行し、3D重力操作パズルゲームをわずか15分で完成させた。Next.jsプロジェクト作成からライブラリインストール、ゲーム仕様の実装まで、自然言語での指示だけで実現。エラー修正もAIが自動で行う。無料プレビュー版で体験可能。
 
 ---
 
 ## Latest News from RSS Feeds
 
 
-### [Google Play ベスト オブ 2025 発表](https://blog.google/intl/ja-jp/products/android-chrome-play/googleplay-best-of-2025/)
+### [Nano Banana 1 が Google 検索、NotebookLM に登場](https://blog.google/intl/ja-jp/products/connect-communicate/nano-banana-on-search/)
 **Source:** Google Japan Blog
-**Published:** 2025-11-19 18:07:00 UTC
-**Tags:** Google Play
+**Published:** 2025-11-21 14:09:00 UTC
+**Tags:** Search, AI
 
 **Digest:**
-2025年のGoogle Playベストオブが発表され、日本で人気のコンテンツが明らかになりました。ゲーム、アプリ、映画など、様々なカテゴリーで優れた作品が選出されました。詳細は公式発表でご確認ください。
+Google検索に画像編集モデルが導入され、GoogleレンズとAIモードを通じて写真編集が可能になりました。これにより、検索結果から直接、手軽に写真の加工や修正を行えるようになり、ユーザーの利便性が向上します。
 
 ---
 
-### [Gemini 3 での開発](https://blog.google/intl/ja-jp/company-news/technology/gemini-3-developers/)
+### [Nano Banana Pro を発表](https://blog.google/intl/ja-jp/company-news/technology/nano-banana-pro/)
 **Source:** Google Japan Blog
-**Published:** 2025-11-19 16:00:00 UTC
-**Tags:** Gemini Models, Developers
+**Published:** 2025-11-20 15:00:00 UTC
+**Tags:** Gemini App, Gemini Models, Search, AI
 
 **Digest:**
-Gemini 3 が、高度な**エージェント型コーディング**能力を導入し、さらに新しい**エージェント型開発プラットフォーム**「Google **Antigravity**」を発表しました。これにより、AIを活用したソフトウェア開発がより進化することが期待されます。
+Google DeepMindが開発した新しい画像生成・編集モデル「Nano Banana Pro」が登場しました。短い名前ながら、画像生成と編集に特化しており、今後の活用に期待が高まります。
 
 ---
 
-### [Claude Code deployment patterns and best practices with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/claude-code-deployment-patterns-and-best-practices-with-amazon-bedrock/)
+### [MSD explores applying generative Al to improve the deviation management process using AWS services](https://aws.amazon.com/blogs/machine-learning/msd-explores-applying-generative-al-to-improve-the-deviation-management-process-using-aws-services/)
 **Source:** AWS ML Blog
-**Published:** 2025-11-19 23:17:38 UTC
-**Tags:** Amazon Bedrock, Artificial Intelligence, Best Practices, Technical How-to
+**Published:** 2025-11-20 18:21:49 UTC
+**Tags:** Customer Solutions, Generative AI, Life Sciences, Manufacturing, AI/ML, Natural Language Processing
 
 **Digest:**
-AnthropicのClaude CodeをAmazon Bedrockでセキュアにデプロイする方法を紹介。認証はIAMフェデレーションによるDirect IdPが推奨。インフラは専用AWSアカウントとパブリックエンドポイント、モニタリングはOpenTelemetryとCloudWatch。APIキーは短期間、SSOは迅速、Direct IdPは詳細モニタリングに適す。費用対効果の高いLLMゲートウェイは必須ではなく、モニタリングの追加も可能。
+MSDは、製造工程の逸脱管理を効率化するため、Amazon BedrockやOpenSearchを活用した生成AIとベクトルデータベースを導入。過去の逸脱データを知識源として活用し、GMP準拠を維持しつつ調査時間短縮を目指します。Amazon OpenSearchのハイブリッド検索により、類似事例の検索を容易に。これにより、医薬品製造における効率化と品質向上を目指しています。
 
 ---
 
-### [Amazon Bedrock Guardrails expands support for code domain](https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-guardrails-expands-support-for-code-domain/)
+### [Accelerating genomics variant interpretation with AWS HealthOmics and Amazon Bedrock AgentCore](https://aws.amazon.com/blogs/machine-learning/accelerating-genomics-variant-interpretation-with-aws-healthomics-and-amazon-bedrock-agentcore/)
 **Source:** AWS ML Blog
-**Published:** 2025-11-19 22:27:14 UTC
-**Tags:** Amazon Bedrock Guardrails, Technical How-to
+**Published:** 2025-11-20 18:18:21 UTC
+**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Amazon Bedrock Agents, Amazon Machine Learning, Amazon S3 Tables, Artificial Intelligence, AWS HealthOmics, AI/ML, Generative AI
 
 **Digest:**
-Amazon Bedrock Guardrailsが、コード要素内の不適切コンテンツに対する保護を強化。**コード生成**における**プロンプトインジェクション**や**機密情報**の漏洩を防ぎ、12の言語に対応。**コンテンツフィルタ**、**拒否トピック**、**個人情報**の検出など、安全なAI開発を支援します。開発者はGuardrailsを設定し、効率的な開発ワークフローを維持できます。
+ゲノム研究は変革期にあり、膨大なデータ解析にAIが不可欠です。AWS HealthOmicsとBedrock AgentCoreは、VCFファイルの自動処理と自然言語による解析を実現します。研究者は専門知識不要で、VCFファイルをアップロードし「BRCA1に変異を持つ患者は？」などと質問可能に。Strands Agentsは、SQL知識なしで、遺伝子や染色体ごとの解析、患者間の比較、頻度分析を可能にし、研究を加速します。
 
 ---
 
-### [Announcing the AWS Well-Architected Responsible AI Lens](https://aws.amazon.com/blogs/machine-learning/announcing-the-aws-well-architected-responsible-ai-lens/)
+### [How Rufus scales conversational shopping experiences to millions of Amazon customers with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/how-rufus-scales-conversational-shopping-experiences-to-millions-of-amazon-customers-with-amazon-bedrock/)
 **Source:** AWS ML Blog
-**Published:** 2025-11-19 20:03:54 UTC
-**Tags:** Announcements, AWS Well-Architected, Responsible AI
+**Published:** 2025-11-20 18:13:39 UTC
+**Tags:** Amazon Bedrock, Customer Solutions
 
 **Digest:**
-AWSは、AI開発における**責任あるAI**実現に向け、**AWS Well-Architected Responsible AI Lens**を発表。AIライフサイクル全体で、設計から運用まで、**公平性、説明可能性、プライバシー**などの観点を網羅した実践的なガイダンスを提供します。AIビルダー、技術リーダー、専門家向けに、リスク軽減と信頼性向上を支援し、**GitHub**リポジトリから利用可能。
+AmazonのAIショッピングアシスタント「Rufus」は、年間2.5億人以上が利用し、月間ユーザー数は前年比140%増、インタラクションは210%増と急成長。購入完了率も60%向上。Amazon Bedrockの採用により開発を加速、様々なモデルを組み合わせ、Web検索や価格履歴、自動購入などのエージェント機能も実現。結果、顧客体験を向上させ、AI活用のスケールを実証している。
 
 ---
 
-### [How Amazon uses AI agents to support compliance screening of billions of transactions per day](https://aws.amazon.com/blogs/machine-learning/how-amazon-uses-ai-agents-to-support-compliance-screening-of-billions-of-transactions-per-day/)
+### [How Care Access achieved 86% data processing cost reductions and 66% faster data processing with Amazon Bedrock prompt caching](https://aws.amazon.com/blogs/machine-learning/how-care-access-achieved-86-data-processing-cost-reductions-and-66-faster-data-processing-with-amazon-bedrock-prompt-caching/)
 **Source:** AWS ML Blog
-**Published:** 2025-11-19 19:39:18 UTC
-**Tags:** Amazon Bedrock, Amazon Bedrock AgentCore, Artificial Intelligence
+**Published:** 2025-11-20 16:15:04 UTC
+**Tags:** Amazon Bedrock, Customer Solutions
 
 **Digest:**
-Amazonは、制裁措置などに準拠するため、AI駆動のコンプライアンスシステム「Amazon Compliance Screening」を導入。約20億件の取引を毎日審査し、不正取引を防止します。このシステムは、機械学習モデルによるスクリーニング、AIエージェントによる調査を行い、人間によるレビューの負担を軽減。StrandsとAmazon Bedrockを活用し、96%の精度で、60%以上のケースを自動化し、コンプライアンス業務を効率化しています。
+Care Accessは、Amazon Bedrockのプロンプトキャッシングを活用し、医療記録分析のコスト削減と高速化を実現しました。医療記録のLLM分析は、コンプライアンスを維持しつつ、分析速度を3倍、コストを7分の1に。15,000人以上の月間ヘルススクリーニング参加者の記録処理を効率化、臨床試験へのマッチングも促進しました。
 
 ---
 
-### [Build an agentic solution with Amazon Nova, Snowflake, and LangGraph](https://aws.amazon.com/blogs/machine-learning/build-an-agentic-solution-with-amazon-nova-snowflake-and-langgraph/)
-**Source:** AWS ML Blog
-**Published:** 2025-11-19 16:16:49 UTC
-**Tags:** Amazon Bedrock, Amazon Nova, Artificial Intelligence, Best Practices, Partner solutions, Technical How-to
+### [How we’re bringing AI image verification to the Gemini app](https://blog.google/technology/ai/ai-image-verification-gemini-app/)
+**Source:** Google DeepMind
+**Published:** 2025-11-20 15:00:00 UTC
+**Tags:** Gemini App, Google DeepMind, AI
 
 **Digest:**
-SnowflakeとAWSを活用したAgentic AIによる自動車保険の自動化を紹介。Snowflake AI Data Cloudで、ドライバーズライセンスや請求書のデータ抽出、Amazon BedrockのNova Liteで車の損傷画像を分析します。LangGraphで一連の処理を自動化し、データに基づいた意思決定を支援。
+Googleの新しいGeminiアプリ機能は、AIによって作成または編集されたコンテンツを判別するAI画像検証を可能にします。この機能により、生成されたGoogle AI画像の真偽を確認し、AIの関与を特定できます。
 
 ---
 
-### [【Microsoft Ignite 2025】現地レポート 基調講演](https://blog.jbs.co.jp/entry/2025/11/20/141613)
+### [Microsoft Agent Framework を利用し、MCPツールを利用するAIエージェントやマルチエージェントシステムを構築する](https://blog.jbs.co.jp/entry/2025/11/21/093202)
 **Source:** JBS Blog
-**Published:** 2025-11-20 05:16:13 UTC
-**Tags:** Microsoft Ignite, Microsoft
+**Published:** 2025-11-21 00:32:02 UTC
+**Tags:** 生成AI, Azure OpenAI, LLM, マルチエージェント, AIエージェント, Agent Framework, Semantic Kernel
 
 **Digest:**
-Microsoft Ignite 2025がサンフランシスコで開催、現地から速報！**Microsoft Ignite**は最新ITトレンドを紹介する大規模イベント。基調講演では、**Agent 365**による業務自律化、**Work IQ**の知能化レイヤー、**Azure Copilot**と**Agentic Cloud Ops**が発表。さらに、セキュリティ・アイデンティティの進化、クラウドとインフラ強化も。会場の熱気と共にお届けします。
+Microsoft Agent Framework を用いたAIエージェント構築を解説。本記事では、.NETとPython向けオープンソース開発キットである同フレームワークの概要、実行環境設定、MCPツール、シングル・マルチエージェントの構築方法、実行結果を紹介します。ワークフロー構築も可能で、多様なAIエージェント開発に役立つ情報が満載です。
 
 ---
 
-### [【Power BI Desktop】グラフ金額単位を日本円で表示する方法](https://blog.jbs.co.jp/entry/2025/11/20/092911)
+### [【Microsoft×生成AI連載】Copilot Studioで作成したエージェントをTeamsアプリストアに公開](https://blog.jbs.co.jp/entry/2025/11/21/090911)
 **Source:** JBS Blog
-**Published:** 2025-11-20 00:29:11 UTC
-**Tags:** Power BI, Power BI Desktop, Power Platform
+**Published:** 2025-11-21 00:09:11 UTC
+**Tags:** Copilot, Microsoft Copilot, Microsoft 365 Copilot, 生成AI, Microsoft×生成AI連載
 
 **Digest:**
-Power BIで金額を日本円表示する方法を解説。グラフの視覚的表現を向上させるために、通貨設定を調整し、日本円（JPY）で表示できます。詳細な手順を紹介し、データ分析における可読性を高めるための設定方法を説明します。
+Teamsアプリストアで、AIエージェントを公開する手順を詳細に解説。迅速な導入を可能にするステップバイステップ形式で、Teams環境でのAIエージェント利用を促進します。これにより、企業や組織は新たなAI活用を容易に実現できるようになります。
+
+---
+
+### [【Microsoft Ignite 2025】現地レポート Microsoft Igniteで体験できる項目](https://blog.jbs.co.jp/entry/2025/11/21/074422)
+**Source:** JBS Blog
+**Published:** 2025-11-20 22:44:22 UTC
+**Tags:** Microsoft Ignite, Microsoft Fabric
+
+**Digest:**
+Microsoft Igniteの体験を簡潔にまとめます。基調講演に加え、ハンズオン・ラボ、コミュニティ交流、セッション、認定試験、スポンサー体験、On Airプログラム、ランチなど、多岐にわたるプログラムが用意されています。スキルアップや交流を通じて、最新のMicrosoft技術を総合的に体験できるイベントです。
+
+---
+
+### [【Microsoft Ignite 2025】Security Copilot 注目ポイントを紹介](https://blog.jbs.co.jp/entry/2025/11/20/163038)
+**Source:** JBS Blog
+**Published:** 2025-11-20 07:30:38 UTC
+**Tags:** Security Copilot, Microsoft 365 E5, 生成AI, Security
+
+**Digest:**
+2025年11月のMicrosoft Igniteで発表された「Security Copilot」の最新情報と注目ポイントに焦点を当てます。記事では、MicrosoftのAIを活用したセキュリティソリューションであるSecurity Copilotの、具体的な機能や強化された点について解説します。
+
+---
+
+### [【Microsoft Ignite 2025】RAG&Tool Call&MCPでピザを注文するAgentを構築する](https://blog.jbs.co.jp/entry/2025/11/20/162903)
+**Source:** JBS Blog
+**Published:** 2025-11-20 07:29:03 UTC
+**Tags:** AIエージェント, Microsoft Foundry, Azure AI, Azure AI Foundry, MCP, 大規模言語モデル
+
+**Digest:**
+Microsoft Foundry を活用したピザ店 Agent の構築 LAB を紹介。プレーンな Agent 開発から、システムプロンプト、RAG、関数ツール追加、MCP サーバー接続と段階的に発展。最終的に、ピザの注文相談と注文実行が可能なチャットボットを開発します。
+
+---
+
+### [Copilot Mode in Edge: AIブラウザー登場!](https://shanqiai.lekumo.biz/sharepoint_technical_note/2025/11/copilot-mode-in-4952.html)
+**Source:** SharePoint Technical Notes
+**Published:** 2025-11-20 09:39:57 UTC
+**Tags:** Microsoft Edge
+
+**Digest:**
+Microsoft Edgeは、AI機能「Copilot」を統合し、AIブラウザとしての進化を加速させています。Copilotモードでは、ウェブページの要約、質問への回答、文章作成など、様々なAIアシスタント機能を利用可能です。これにより、ユーザーはより効率的に情報収集や作業を行えるようになります。
 
 ---
